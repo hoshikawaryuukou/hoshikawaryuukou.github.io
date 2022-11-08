@@ -51,7 +51,7 @@ body {
     @include hyphens(manual);
   }
   a {
-    color: $color-text;
+    color: $color-link;
     text-decoration: none;
 
     @include underline(5px, $color-text);
