@@ -12,8 +12,8 @@ categories: ["Software Design"]
 筆者發現在使用 Clean Architecture (CA) 時越來越力不從心，因此開始研究 Domain-Driven Design (DDD)，事出有因，列出幾點問題與對應方式。
 
 #### 重複的程式碼
-- 主因是 貧血域模型 (Anemic Domain Model)，表示模型中幾乎只有 Get/Set，這導致了 Domain層 (商業邏輯) 滲透到 Application層 (業務邏輯)，某些對 Domain 的操作重複出現在多個的 Usecase (業務邏輯)。
-- 重新分析系統，區分出不同上下文，設計充血域模型，將商業邏輯設計進去。
+- 主因是 貧血域模型 (Anemic Domain Model)，表示模型中幾乎只有 Get/Set，這導致了 Domain層 (業務邏輯) 滲透到 Application層 (應用邏輯)，某些對 Domain 的操作重複出現在多個的 Usecase (應用邏輯)。
+- 重新分析系統，區分出不同上下文，設計充血域模型，將業務邏輯設計進去。
 
 #### 域模型的一致性問題
 - Domain 面對四面八方的操作，顯得很亂且充滿不確定(會不會模型之間的關係因為更改而被破壞)
