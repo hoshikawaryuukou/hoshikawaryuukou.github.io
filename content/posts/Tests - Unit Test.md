@@ -4,7 +4,6 @@ date: 2022-11-12 21:11:00
 draft: false
 
 tags: ["Test"]
-categories: ["Test"]
 ---
 
 ### Doc
