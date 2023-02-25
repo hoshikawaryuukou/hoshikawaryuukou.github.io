@@ -2,4 +2,11 @@
 可參考這個庫 GuardClauses Extra - Value Object Stop using trivial Guard Clauses! Try this instead
 文章作者避免瑣碎 Guard 的方式，是使用 Value Object，來避免域接受到無效參數。這個作法在筆者看來才是真正意義上的 Fail Fast。(YT評論區也建議閱讀，有許多不錯的討論)
 但不可否認的 Guard Clause 作法在大多情況下是有益的。
-Ref Guard Clause Implementation Patterns: Guard Clause GuardClauses Stop using trivial Guard Clauses! Try this instead</description></item></channel></rss>
+Ref Guard Clause Implementation Patterns: Guard Clause GuardClauses Stop using trivial Guard Clauses! Try this instead</description></item><item><title>通用設計 - 設計原則</title><link>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-%E8%A8%AD%E8%A8%88%E5%8E%9F%E5%89%87/</link><pubDate>Mon, 02 Jan 2023 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-%E8%A8%AD%E8%A8%88%E5%8E%9F%E5%89%87/</guid><description>Library DevIQ Experiences Advice for junior developers Other The Last Responsible Moment DRY is about Knowledge</description></item><item><title>通用設計 - Data Transfer Object (DTO)</title><link>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-data-transfer-object-dto/</link><pubDate>Sun, 11 Dec 2022 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-data-transfer-object-dto/</guid><description>什麼是 DTO？ Data Transfer Object (數據傳輸對象) 是定義如何在應用程序之間發送數據的對象。它僅用於發送和接收數據，本身不包含任何邏輯。
+為什麼使用 DTO？ 輕鬆收發 在沒有任何邏輯的基礎上，可以僅使用序列化與反序列化就保證對象的完整性和可傳遞性。
+避免過度暴露訊息 對分層或模組來說，彼此間應盡量降低耦合。下圖以公園廁所報修為案例。
+這個資料流由鄉公所傳到基層人員手上，中間經過兩個邊界
+鄉公所 | 工程公司 =&amp;gt; DTO (公文) 工程公司 | 基層人員 =&amp;gt; DTO (簡訊) 每個單位的關注點不同，在意的資料也會不同，DTO 做為邊界兩方做最小程度的媒介，隱藏的不該被關注(敏感)的事
+印章對工程公司並不是必要資訊 詳細的時間格式是對基層人員並不是必要資訊 在實作上常被用於轉換 DomainModol -&amp;gt; DomainDto
+注意事項 類別數量增加，請自行評估使用情形
+Ref Cutting Edge - Pros and Cons of Data Transfer Objects The DTO (Data Transfer Object) Data Transfer Objects Clean Architecture : why not using the entity as request model of the use case (interactor) Difference between Entity and DTO</description></item></channel></rss>
