@@ -1,5 +1,5 @@
 ---
-title: "忒修斯之船 (Ship of Theseus)"
+title: "哲學問題 - 忒修斯之船 (Ship of Theseus)"
 date: 2022-11-06 21:20:00
 draft: false
 
