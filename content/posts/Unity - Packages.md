@@ -19,6 +19,19 @@ Scope(s):
 ```
 3. Package manager -> Packages: My Registries -> Install
 
+* [Unity中 .asmdef文件的作用](https://zhuanlan.zhihu.com/p/139090680)
+* [使用OpenUPM发布自己的Unity项目](https://zhuanlan.zhihu.com/p/146565975)
+* [开发Unity PackageManager 插件包](https://www.jianshu.com/p/153841d65846)
+* [Creating Custom Packages for Unity 2018.3](https://neogeek.dev/creating-custom-packages-for-unity-2018.3/)
+* [How to remodel your project for asmdef and UPM](https://gametorrahod.com/how-to-asmdef-upm/?fbclid=IwAR31P12StjzcTi9IO1vDvwWJIwaKHxIEmUQLic6K1LGElmwv6OFRqe8sVig)
+
+
+
+
+## Animation
+- [DOTween](https://github.com/Demigiant/dotween)
+  - [Link](http://dotween.demigiant.com/download.php#download)
+
 ## Async
 - [UniTask](https://github.com/Cysharp/UniTask)    
   - openupm - com.cysharp.unitask
@@ -35,6 +48,15 @@ Scope(s):
 - [VContainer](https://github.com/hadashiA/VContainer)  
   - openupm - jp.hadashikick.vcontainer  
   - [How to avoid Dependency Injection constructor madness?](https://stackoverflow.com/questions/2420193/how-to-avoid-dependency-injection-constructor-madness)
+
+## Dialogue 
+- [YarnSpinner-Unity](https://github.com/YarnSpinnerTool/YarnSpinner-Unity) 
+  - openupm - dev.yarnspinner.unity
+  - [Manual](https://docs.yarnspinner.dev/)
+
+## Editor
+- [NaughtyAttributes](https://github.com/dbrizov/NaughtyAttributes)  
+  - openupm add com.dbrizov.naughtyattributes
 
 ## Messaging 
 - [MessagePipe](https://github.com/HoshikawaRyuukou/UnityDev/main/Note/Package/Messaging/MessagePipe.md)    

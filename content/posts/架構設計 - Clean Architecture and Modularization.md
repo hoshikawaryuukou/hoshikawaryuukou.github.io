@@ -13,8 +13,6 @@ Missing Part 也很重要
 - [Multiple ways of defining Clean Architecture layers](https://proandroiddev.com/multiple-ways-of-defining-clean-architecture-layers-bbb70afa5d4a)
 
 
-
-
 筆者習慣分成以下幾類模塊
   
 ### 核心模塊 (Core Module)

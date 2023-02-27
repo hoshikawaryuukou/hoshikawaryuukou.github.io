@@ -92,6 +92,11 @@ tags: ["Architecture", "Clean Architecture"]
 - [Why data layer has a dependency on the domain layer?](https://github.com/android10/Android-CleanArchitecture/issues/136)
 - [Do Interactors in "clean architecture" violate the Single Responsibility Principle?](https://softwareengineering.stackexchange.com/a/364727)
 - [Layer for Managers and Services that require Android Context](https://github.com/android10/Android-CleanArchitecture/issues/151)
+- [Why you need Use Cases/Interactors](https://proandroiddev.com/why-you-need-use-cases-interactors-142e8a6fe576)
+- [What is the use of DTO instead of Entity?](https://softwareengineering.stackexchange.com/questions/373284/what-is-the-use-of-dto-instead-of-entity)
+- [Clean Architecture: Use case containing the presenter or returning data?](https://softwareengineering.stackexchange.com/questions/357052/clean-architecture-use-case-containing-the-presenter-or-returning-data)
+- [How to make the controller framework independent in Clean Architecture?](https://softwareengineering.stackexchange.com/questions/420323/how-to-make-the-controller-framework-independent-in-clean-architecture)
+- [Clean architecture - where to put input validation logic?](https://stackoverflow.com/questions/57603422/clean-architecture-where-to-put-input-validation-logic)
 
 ### Notes
 一些 CA 的閱讀心得。

@@ -6,26 +6,14 @@ draft: false
 tags: ["Unity"]
 ---
 
-## Sites
-- [游戏石匠Super](https://space.bilibili.com/69585)
-- [L's Blog](http://www.liuocean.com/tag/unity/)
-- [コガネブログ](https://baba-s.hatenablog.com/)
-- [渋谷ほととぎす通信](https://shibuya24.info/)
-- [きゅぶろぐ](https://blog.kyubuns.dev/)
-- [LIGHT11](https://light11.hatenadiary.com/)
-- [Raspberlyのブログ](https://raspberly.hateblo.jp/archive)
-
-## Learning
-- [Unity Learning Materials](https://learning.unity3d.jp/)
-
---------------------------
-
 ## Analysis 
 - [Unity Optimize Your Game Using Profiler](https://sharpcoderblog.com/blog/unity-3d-how-to-use-profiler-to-optimize-your-code)
 - [Unity 手機遊戲最佳化雜談– 內建Profiling](https://www.chunfuchao.com/posts/unity-profiling-tools/)
 
 ## Audio
 - [Unity Audio Clip Import Settings For The Best Performance](https://sharpcoderblog.com/blog/unity-3d-audio-clip-import-settings-for-the-best-performance)
+- [Audio tutorial for Unity: the Audio Mixer](https://www.raywenderlich.com/532-audio-tutorial-for-unity-the-audio-mixer)
+- [The right way to make a volume slider in Unity](https://johnleonardfrench.com/the-right-way-to-make-a-volume-slider-in-unity-using-logarithmic-conversion/)
 
 ## Build
 - [repositories.cfg could not be loaded. unity](https://forum.unity.com/threads/repositories-cfg-could-not-be-loaded-unity.1028959/#post-7174270)
@@ -37,8 +25,13 @@ tags: ["Unity"]
 
 ## Editor
 - [在unity编辑器不同位置添加菜单](https://linkliu.github.io/game-tech-post/posts/%E5%9C%A8Unity%E7%BC%96%E8%BE%91%E5%99%A8%E4%B8%8D%E5%90%8C%E4%BD%8D%E7%BD%AE%E6%B7%BB%E5%8A%A0%E8%8F%9C%E5%8D%95/)
-- 
+- [SerializeReferenceをつけている型をリネーム・削除する時の注意点](https://light11.hatenadiary.com/entry/2021/12/13/194147)
+- [What are EditorBuildSettings config objects used for or how can I use them?](https://forum.unity.com/threads/what-are-editorbuildsettings-config-objects-used-for-or-how-can-i-use-them.712031/)
+- [EditorBuildSettings Example](https://docs.unity.cn/cn/current/ScriptReference/EditorBuildSettings.TryGetConfigObject.html)
 
 ## Publish
 - [Privacy policy for your game? No problem! (generate and publish)](https://www.youtube.com/watch?v=BfIWE172jj0)
 - [Publish your UNITY game on Google Play Store - 2023 guide](https://www.youtube.com/watch?v=UXl_C3ZnRLc)
+
+## TextMeshPro
+- [TextMeshPro Anatomy](https://gametorrahod.com/textmeshpro-anatomy/)
