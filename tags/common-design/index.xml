@@ -9,4 +9,18 @@ Ref Guard Clause Implementation Patterns: Guard Clause GuardClauses Stop using t
 鄉公所 | 工程公司 =&amp;gt; DTO (公文) 工程公司 | 基層人員 =&amp;gt; DTO (簡訊) 每個單位的關注點不同，在意的資料也會不同，DTO 做為邊界兩方做最小程度的媒介，隱藏的不該被關注(敏感)的事
 印章對工程公司並不是必要資訊 詳細的時間格式是對基層人員並不是必要資訊 在實作上常被用於轉換 DomainModol -&amp;gt; DomainDto
 注意事項 類別數量增加，請自行評估使用情形
-Ref Cutting Edge - Pros and Cons of Data Transfer Objects The DTO (Data Transfer Object) Data Transfer Objects Clean Architecture : why not using the entity as request model of the use case (interactor) Difference between Entity and DTO</description></item></channel></rss>
+Ref Cutting Edge - Pros and Cons of Data Transfer Objects The DTO (Data Transfer Object) Data Transfer Objects Clean Architecture : why not using the entity as request model of the use case (interactor) Difference between Entity and DTO</description></item><item><title>通用設計 - Navigation</title><link>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-navigation/</link><pubDate>Wed, 16 Nov 2022 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-navigation/</guid><description>以下 Feature 指的是一個功能獨立的模組，Feature A 將簡稱 A。
+問題 應用程式中有一個由 A 到 B 的導航，那這個導航是誰的責任?
+以下先討論 2 種狀況。
+A 直接依賴 B 簡單粗暴的強耦合破壞了 A 的獨立性。當流程發生變化時，可能需要到各個 Feature 去修改。
+Feature A -&amp;gt; Feature B A 引入導航器間接依賴 B 這作法將導航操作收斂到某個類中，但 A 仍然隱含的知道 B，這同樣破壞了 A 的獨立性。
+Feature A -&amp;gt; INavigator.Route(View.FeatureB) // Enum or Feature A -&amp;gt; INavigator.Route(&amp;#34;FeatureB&amp;#34;) // 魔術字串 or Feature A -&amp;gt; INavigator.RouteFeatureB() 重新思考導航這件事
+Feature 應該知道自己是能夠 被導航 或是 能導航到哪 嗎? 到底 A 能導航到 B 這件事是誰決定的? 應該隱約地感覺到了吧，導航並不屬於 A 也不屬於 B，導航是一個獨立操作，需要一個額外的單位來負責。此外這個單位多是屬於 App 級別的(因為該層級有對其他模組的正當訪問性，畢竟是負責做統合的)。</description></item><item><title>通用設計 - Dependency Inversion Principle (DIP)</title><link>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-dependency-inversion-principle-dip/</link><pubDate>Tue, 15 Nov 2022 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-dependency-inversion-principle-dip/</guid><description>依賴倒置原則 Dependency Inversion Principle，以下皆簡稱 DIP。
+為什麼需要 先來看定義
+高層次的模塊不應該依賴於低層次的模塊，兩者都應該依賴於抽象接口 抽象接口不應該依賴於具體實現。而具體實現則應該依賴於抽象接口 文謅謅的，但重點似乎是抽象。不如直接看個狀況劇:
+有一個 Project A 需要使用播廣告的功能。分別採 2 個做法
+直接依賴 直覺的做法。Project A 直接依賴於廣告模組(UnityAds)，這裡模組 Project A 被迫去了解 UnityAds 的實作細節(怎麼初始化/下載廣告/播廣告)。
+目前沒甚麼問題，運作得很好&amp;hellip; 但很快問題就來了。UnityAds 因為某些原因不能用了! (假設後臺被打了什麼的)。於是找了另一個廣告模組(AdMob)，想要如法炮製，但有幾點可能會不好受。
+要改的地方很分散 (廣告被 Project A 多處使用) Project A 需要處理不同的 API格式 (了解細節，單例、Callback、事件&amp;hellip;) 導致原先依賴 UnityAds 的模組需要重新編譯 (造成浪費時間) 原因是直接依賴外部模組導致的，相對於你的系統 UnityAds 是個外人，是不穩定的，去依賴一個不穩定的東西，也會導致自己變得不穩定。
+依賴倒置 仔細想一下，Project A 直接依賴 UnityAds 是必要的嗎? 需求是播 UnityAds 的廣告? 還是播廣告? 為了實現穩定廣告服務的依賴源，我們將其抽象化
+public interface IAdService { void Initialize(); void Load(); void Show(); } 但 UnityAds 與 AdMob 又不能直接實作這個介面怎麼辦，可以用配接器模式(Adapter Pattern)寫個轉接頭，想辦法讓外部細節符合 IAdService 的需求。現在需要廣告服務的部分均透過 IAdService來操作，不需再知道外部廣告模組的細節。</description></item></channel></rss>
