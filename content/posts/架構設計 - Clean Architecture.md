@@ -79,6 +79,7 @@ tags: ["Architecture", "Clean Architecture"]
 ### Overview 
 概述，這些文章在對於從未知入門的人來說，圖表與條列項，可以為他們先指出一些方向。
 - [Software Architecture - Clean Architecture](https://atomiv.org/knowledgebase/software-architecture/clean-architecture)
+- [Clean Architecture](https://learning-notes.mistermicheels.com/architecture-design/reference-architectures/clean-architecture/)
 
 ### Guide
 以下參考著重在觀念引導，再加上實例輔助，必須說這些參考文都要包含"自己的理解"閱讀價值才得以顯現。
