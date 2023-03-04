@@ -26,8 +26,6 @@ Scope(s):
 * [How to remodel your project for asmdef and UPM](https://gametorrahod.com/how-to-asmdef-upm/?fbclid=IwAR31P12StjzcTi9IO1vDvwWJIwaKHxIEmUQLic6K1LGElmwv6OFRqe8sVig)
 
 
-
-
 ## Animation
 - [DOTween](https://github.com/Demigiant/dotween)
   - [Link](http://dotween.demigiant.com/download.php#download)
@@ -57,6 +55,9 @@ Scope(s):
 ## Editor
 - [NaughtyAttributes](https://github.com/dbrizov/NaughtyAttributes)  
   - openupm add com.dbrizov.naughtyattributes
+
+## Google Service
+- [【Unity】Google APIs for UnityをPackage Managerで管理する](https://kingmo.jp/kumonos/unity-google-apis-for-unity-import-package-manager/)
 
 ## Messaging 
 - [MessagePipe](https://github.com/HoshikawaRyuukou/UnityDev/main/Note/Package/Messaging/MessagePipe.md)    
