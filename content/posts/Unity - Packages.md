@@ -54,7 +54,7 @@ Scope(s):
 
 ## Editor
 - [NaughtyAttributes](https://github.com/dbrizov/NaughtyAttributes)  
-  - openupm add com.dbrizov.naughtyattributes
+  - openupm - com.dbrizov.naughtyattributes
 
 ## Google Service
 - [【Unity】Google APIs for UnityをPackage Managerで管理する](https://kingmo.jp/kumonos/unity-google-apis-for-unity-import-package-manager/)
