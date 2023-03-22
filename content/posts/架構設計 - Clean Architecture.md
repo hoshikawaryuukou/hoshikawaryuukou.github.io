@@ -86,6 +86,7 @@ tags: ["Architecture", "Clean Architecture"]
 - [Getting Started With Clean Architecture for Android [Part 1]](https://www.cobeisfresh.com/blog/getting-started-with-clean-architecture-for-android-part-1)
 - [Clean Architecture on Frontend](https://dev.to/bespoyasov/clean-architecture-on-frontend-4311)
 - [Clean Architecture の勘所は『鎖国』だ。](https://qiita.com/t2-kob/items/02a76572693130c9a66e)
+- [Unityを利用した大規模なゲーム開発にクリーンアーキテクチャを採用した話](https://developers.wonderpla.net/entry/2021/02/18/121932)
 
 ### Discussion 
 以下參考著重觀念釐清，初期探索採坑的地方與一些討論串。

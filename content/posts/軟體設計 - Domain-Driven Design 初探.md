@@ -1,5 +1,5 @@
 ---
-title: "軟體設計 - Domain-Driven Design - 初探"
+title: "軟體設計 - Domain-Driven Design 初探"
 date: 2022-12-15 20:05:00
 draft: false
 

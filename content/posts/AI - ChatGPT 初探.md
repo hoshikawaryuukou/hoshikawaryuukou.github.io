@@ -1,5 +1,5 @@
 ---
-title: "ChatGPT - 初探"
+title: "AI - ChatGPT 初探"
 date: 2023-03-01 21:11:00
 draft: false
 
