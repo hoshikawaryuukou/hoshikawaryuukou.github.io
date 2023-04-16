@@ -73,6 +73,7 @@ Scope(s):
 ## Rx (Reactive Extensions)
 - [UniRx](https://github.com/neuecc/UniRx)    
   - openupm - com.neuecc.unirx
+  - [【Unity框架】UniRx精讲](https://www.bilibili.com/read/cv15236973)
 
 ## State Machine
 - [UnityHFSM](https://github.com/Inspiaaa/UnityHFSM)

@@ -13,6 +13,7 @@ tags: ["Assets"]
 - [ICOOON MONO](https://icooon-mono.com/)
 - [iconmonstr](https://iconmonstr.com/)
 - [Flaticon](https://www.flaticon.com/)
+- [IconKitchen](https://icon.kitchen)
 
 ## Feature Graphics
 - [Google Play Feature Graphics](https://hotpot.ai/templates/google-play-feature-graphic)
@@ -26,3 +27,7 @@ tags: ["Assets"]
 
 ## Image
 - [Unsplash Image API | Free HD Photo API](https://unsplash.com/developers)
+- [Lorem Picsum](https://picsum.photos/)
+
+## Misc
+- [Opengameart](https://opengameart.org/)

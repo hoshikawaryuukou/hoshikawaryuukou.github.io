@@ -99,6 +99,7 @@ tags: ["Architecture", "Clean Architecture"]
 - [Clean Architecture: Use case containing the presenter or returning data?](https://softwareengineering.stackexchange.com/questions/357052/clean-architecture-use-case-containing-the-presenter-or-returning-data)
 - [How to make the controller framework independent in Clean Architecture?](https://softwareengineering.stackexchange.com/questions/420323/how-to-make-the-controller-framework-independent-in-clean-architecture)
 - [Clean architecture - where to put input validation logic?](https://stackoverflow.com/questions/57603422/clean-architecture-where-to-put-input-validation-logic)
+- [How to pass the android dependent data from data-layer to presentation-layer](https://github.com/android10/Android-CleanArchitecture/issues/182)
 
 ### Notes
 一些 CA 的閱讀心得。

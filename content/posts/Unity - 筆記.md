@@ -29,9 +29,12 @@ tags: ["Unity"]
 - [What are EditorBuildSettings config objects used for or how can I use them?](https://forum.unity.com/threads/what-are-editorbuildsettings-config-objects-used-for-or-how-can-i-use-them.712031/)
 - [EditorBuildSettings Example](https://docs.unity.cn/cn/current/ScriptReference/EditorBuildSettings.TryGetConfigObject.html)
 
-## Publish
-- [Privacy policy for your game? No problem! (generate and publish)](https://www.youtube.com/watch?v=BfIWE172jj0)
-- [Publish your UNITY game on Google Play Store - 2023 guide](https://www.youtube.com/watch?v=UXl_C3ZnRLc)
+## Screen
+- [How to capture the screen in Unity (3 methods)](https://gamedevbeginner.com/how-to-capture-the-screen-in-unity-3-methods/)
 
 ## TextMeshPro
 - [TextMeshPro Anatomy](https://gametorrahod.com/textmeshpro-anatomy/)
+
+## UI
+- [Master your Unity UI Buttons! - Unity UI tutorial](https://www.youtube.com/watch?v=cW-E4WEogzE)
+- [How to scale Unity UI objects for every screen - Unity UI tutorial](https://www.youtube.com/watch?v=QnT-2KxVvyk)
