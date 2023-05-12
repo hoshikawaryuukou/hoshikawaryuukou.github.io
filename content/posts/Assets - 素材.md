@@ -24,10 +24,22 @@ tags: ["Assets"]
 
 ## Audio
 - [魔王魂](https://maou.audio/)
+- [効果音ラボ](https://soundeffect-lab.info/)
 
 ## Image
 - [Unsplash Image API | Free HD Photo API](https://unsplash.com/developers)
 - [Lorem Picsum](https://picsum.photos/)
 
+## Textures
+- [Poly Haven](https://polyhaven.com/)
+
+## 背景
+- [OKUMONO](https://sozaino.site/)
+
 ## Misc
 - [Opengameart](https://opengameart.org/)
+- [Kenney](https://www.kenney.nl/assets)
+- [かわいいフリー素材集 いらすとや](https://www.irasutoya.com/)
+
+## Info
+- [網路資源列表| DeTools](https://tools.wingzero.tw/web/page/1)

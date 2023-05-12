@@ -13,17 +13,17 @@ tags: ["AI"]
 ## 基本知識
 - [Features](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features)
 - [【AI绘图】入门必看，一次弄懂所有技术名词](https://www.bilibili.com/video/BV12g4y1t77m/?vd_source=863870bbf22c37b1b09727751205f522)
-- 一些解決方案請參考另一篇文 AI - Stable Diffusion 延伸
 
-## 詞條
+## 輔助
 - [NovelAI tag生成器 V2.1](https://www.toutool.cn/)
 - [魔咒百科词典](https://aitag.top/)
 - [NovelAI魔咒小课堂](https://www.yuque.com/longyuye/lmgcwy)
-- [AI繪圖魔導書](https://docs.google.com/spreadsheets/d/16wR5Zg_aQEbxLdrTOrB9cZf8QmsMrJnSGxFKbZVtrKc/edit?fbclid=IwAR36RQU60QOqzCpSCGJQOstDc5HCr1cB9PBfjIPsrcMu-ZH4vchxcggWiBY#gid=1507276138)
-- [【Stable Diffusion】プロンプト（呪文）ガイド](https://ishikawatsukasa.com/chat/web/4589/#index_id12)
+- [AI繪圖魔導書](https://docs.google.com/spreadsheets/d/16wR5Zg_aQEbxLdrTOrB9cZf8QmsMrJnSGxFKbZVtrKc)
+- [AIツール関係](https://sazano123.com/category/ai%e3%83%84%e3%83%bc%e3%83%ab%e9%96%a2%e4%bf%82)
+- [【Stable Diffusion】プロンプト（呪文）ガイド](https://ishikawatsukasa.com/chat/web/4589/)
 - [髪型の英語名【画像生成AI用】](https://blogcake.net/hair-style/)
 - [【呪文用】少女の服装の英語](https://blogcake.net/costume1/)
-- [AIツール関係](https://sazano123.com/category/ai%e3%83%84%e3%83%bc%e3%83%ab%e9%96%a2%e4%bf%82)
+- [形容顏色深淺，可以不只用dark或light](https://www.eisland.com.tw/Main.php?stat=a_v3Gj8EE)
 
 ## 畫廊 (NSWF)
 - [Prompt Search](https://www.ptsearch.info/home/)
