@@ -29,6 +29,7 @@ tags: ["Assets"]
 ## Image
 - [Unsplash Image API | Free HD Photo API](https://unsplash.com/developers)
 - [Lorem Picsum](https://picsum.photos/)
+- [Photosku](https://photosku.com/)
 
 ## Textures
 - [Poly Haven](https://polyhaven.com/)

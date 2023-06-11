@@ -8,6 +8,7 @@ tags: ["C#"]
 
 ## 語法 
 - [捨棄 - C# 基本概念](https://learn.microsoft.com/zh-tw/dotnet/csharp/fundamentals/functional/discards)
+- [C#中 ??、 ?、 ?: 、?.、?[ ] 问号](https://www.bilibili.com/read/cv14801567)
 
 ## Type
 - [C# 4.0：Covariance 與 Contravariance 觀念入門](https://www.huanlintalk.com/2009/10/c-40covariance-and-contravariance.html)

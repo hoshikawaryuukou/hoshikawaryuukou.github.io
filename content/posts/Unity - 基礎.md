@@ -1,5 +1,5 @@
 ---
-title: "Unity - 筆記"
+title: "Unity - 基礎"
 date: 2023-02-20 21:11:00
 draft: false
 
@@ -9,6 +9,9 @@ tags: ["Unity"]
 ## Analysis 
 - [Unity Optimize Your Game Using Profiler](https://sharpcoderblog.com/blog/unity-3d-how-to-use-profiler-to-optimize-your-code)
 - [Unity 手機遊戲最佳化雜談– 內建Profiling](https://www.chunfuchao.com/posts/unity-profiling-tools/)
+
+## Animation
+- [Introduction to 3D Animation Systems](https://learn.unity.com/course/introduction-to-3d-animation-systems?uv=2019.4)
 
 ## Audio
 - [Unity Audio Clip Import Settings For The Best Performance](https://sharpcoderblog.com/blog/unity-3d-audio-clip-import-settings-for-the-best-performance)
@@ -32,9 +35,16 @@ tags: ["Unity"]
 ## Screen
 - [How to capture the screen in Unity (3 methods)](https://gamedevbeginner.com/how-to-capture-the-screen-in-unity-3-methods/)
 
+## Sprite
+- [【Unity】SpriteをパックするSpriteAtlasの使い方](https://shibuya24.info/entry/unity-spriteatlas)
+- [【2Dゲームで必須】UnityのSprite（スプライト）の単位をわかりやすく解説](https://shibuya24.info/entry/unity-unit)
+- [【間違えやすい】Unityの正しい画像サイズとは](https://shibuya24.info/entry/unity-ui-texture-size)
+
 ## TextMeshPro
 - [TextMeshPro Anatomy](https://gametorrahod.com/textmeshpro-anatomy/)
 
 ## UI
+- [【Unity】3つだけでいい!?覚えるべきUIアンカー](https://shibuya24.info/entry/unity-ui-anchor)
+- [【Unity基礎】スマホ向けゲームUIの作り方！基本的なUI配置から複数解像度対応まで解説](https://shibuya24.info/entry/unity-ui-layout)
 - [Master your Unity UI Buttons! - Unity UI tutorial](https://www.youtube.com/watch?v=cW-E4WEogzE)
 - [How to scale Unity UI objects for every screen - Unity UI tutorial](https://www.youtube.com/watch?v=QnT-2KxVvyk)

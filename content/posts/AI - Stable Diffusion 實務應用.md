@@ -1,5 +1,5 @@
 ---
-title: "AI - Stable Diffusion 操作"
+title: "AI - Stable Diffusion 實務應用"
 date: 2023-04-10 21:11:00
 draft: false
 
@@ -12,23 +12,12 @@ tags: ["AI"]
 - [Stable Diffusion AI協作 +PS 工作紀錄1 -登入圖 WorkFlow](https://www.youtube.com/watch?v=ajFQwra1sxY)
 - [Stable Diffusion+PS - Avatar Remake WorkFlow / Stable Diffusion 協作 +PS 工作紀錄2 - 頭圖復刻](https://www.youtube.com/watch?v=CnjEFZAhg10)
 - [Stable Diffusion + Blender 2DTopGame architecture WorkFlow/ Stable Diffusion AI +Blender 繪製2D遊戲建築](https://www.youtube.com/watch?v=VA4MLgHbzyo)
+- [【Stable diffusion小教程】运用AI实现 草图→清稿→上色→3d效果全流程](https://www.bilibili.com/video/BV1Qo4y1T77V)
 
 
 
+## 仿草圖
+- [lora训练/stable diffusion/AI模仿人类画草图](https://www.bilibili.com/video/BV1dh4y1b7U3)
 
-
-
-
------
-- pout,angry,v-shaped eyebrows,:t|
-- open mouth,smile, closed eyes|
-- closed mouth,smile, closed eyes|
-- open mouth, o_o, shaded face, surprised|
-- empty eyes,empty face,-_-|
-- \>_<,:3, fang|
-- intense glare, disgust, shaded_face, shadow_over_eyes,shadows cast over face, (glaring:1.3)|
-- crazy face,crazy eyes,crazy smile, shaded_face, shadow_over_eyes,shadows cast over face, (glaring:1.3)|
-- fear face,open mouth, glaring|
-- scowl|
-- moaning|
-- teary-eyed
+## 放大算法
+- [解决图片模糊！4这种不同方法实现AI高清放大【Stable diffusion小教程】](https://www.bilibili.com/video/BV1Vm4y1t7Z5)

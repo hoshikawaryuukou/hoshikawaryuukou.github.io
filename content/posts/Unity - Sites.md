@@ -18,6 +18,7 @@ tags: ["Unity"]
 - [やらなイカ？](https://www.nowsprinting.com/)
 - [Game Dev Beginner - Everyone Can Make Games](https://gamedevbeginner.com/)
 - [LianBai](https://lianbai.github.io/)
+- [(:3[kanのメモ帳]](https://kan-kikuchi.hatenablog.com/)
 
 ## Learning
 - [Unity Learning Materials](https://learning.unity3d.jp/)
