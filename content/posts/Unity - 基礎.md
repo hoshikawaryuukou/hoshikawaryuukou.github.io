@@ -35,11 +35,6 @@ tags: ["Unity"]
 ## Screen
 - [How to capture the screen in Unity (3 methods)](https://gamedevbeginner.com/how-to-capture-the-screen-in-unity-3-methods/)
 
-## Sprite
-- [【Unity】SpriteをパックするSpriteAtlasの使い方](https://shibuya24.info/entry/unity-spriteatlas)
-- [【2Dゲームで必須】UnityのSprite（スプライト）の単位をわかりやすく解説](https://shibuya24.info/entry/unity-unit)
-- [【間違えやすい】Unityの正しい画像サイズとは](https://shibuya24.info/entry/unity-ui-texture-size)
-
 ## TextMeshPro
 - [TextMeshPro Anatomy](https://gametorrahod.com/textmeshpro-anatomy/)
 

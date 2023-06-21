@@ -25,11 +25,14 @@ tags: ["Assets"]
 ## Audio
 - [魔王魂](https://maou.audio/)
 - [効果音ラボ](https://soundeffect-lab.info/)
+- [フリーBGM（音楽素材）無料ダウンロード｜DOVA-SYNDROME](https://dova-s.jp/)
+- [フリー効果音素材・無料効果音](https://taira-komori.jpn.org/freesound.html)
 
 ## Image
 - [Unsplash Image API | Free HD Photo API](https://unsplash.com/developers)
 - [Lorem Picsum](https://picsum.photos/)
 - [Photosku](https://photosku.com/)
+- [2023 熱門 47 個可商用無版權免費圖庫懶人包（圖片、圖示、圖標、素材、背景）](https://techmoon.xyz/free-img/)
 
 ## Textures
 - [Poly Haven](https://polyhaven.com/)
@@ -41,6 +44,9 @@ tags: ["Assets"]
 - [Opengameart](https://opengameart.org/)
 - [Kenney](https://www.kenney.nl/assets)
 - [かわいいフリー素材集 いらすとや](https://www.irasutoya.com/)
+
+## Repo
+- [itch.io](https://itch.io/game-assets)
 
 ## Info
 - [網路資源列表| DeTools](https://tools.wingzero.tw/web/page/1)
