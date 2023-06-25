@@ -1,9 +1,14 @@
 {
   "list": [
     {
-      "name":"Memory Master",
-      "url":"https://play.google.com/store/apps/details?id=com.miniaturegardenstudio.memorymaster&hl=zh_TW",
-      "desc":"Memory Matching Game"
+      "name": "Memory Master",
+      "url": "https://play.google.com/store/apps/details?id=com.miniaturegardenstudio.memorymaster&hl=zh_TW",
+      "desc": "Memory Matching Game"
+    },
+    {
+      "name": "Photo Puzzle",
+      "url": "https://play.google.com/store/apps/details?id=com.miniaturegardenstudio.photopuzzle&hl=zh_TW",
+      "desc": "Puzzle Game"
     }
   ]
 }
