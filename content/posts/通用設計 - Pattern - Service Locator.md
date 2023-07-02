@@ -8,6 +8,7 @@ tags: ["Common Design"]
 
 ## 前述
 
+Service Locator 確實也是 IoC 的一種實作方式，不過採用的是 依賴尋找(Dependency Lookup) 的設計。
 筆者之前有一陣子蠻常使用這 pattern，那時對 DI 與 IoC 的概念並不熟悉，只覺得這樣使用依賴變得很方便。
 
 因為我可以在任何地方直接這樣取用資源
@@ -20,7 +21,6 @@ var target = ServiceLocator.Resovle<Target>();
 2. 想用誰就拿誰這件事也有點危險，Ex: View 可以拿到不屬於 Presentation layer 該碰的對象。
 
 所以當 DI 與 IoC 的概念熟悉後，並且使用 DI / IoC Container 後就漸漸不使用這 pattern 了。
-
 
 ## 應用
 
