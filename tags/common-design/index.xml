@@ -1,21 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Common Design on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/common-design/</link><description>Recent content in Common Design on 識之箱庭</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Wed, 28 Jun 2023 20:05:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/common-design/index.xml" rel="self" type="application/rss+xml"/><item><title>通用設計 - Pattern - Service Locator</title><link>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-pattern-service-locator/</link><pubDate>Wed, 28 Jun 2023 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-pattern-service-locator/</guid><description>前述 筆者之前有一陣子蠻常使用這 pattern，那時對 DI 與 IoC 的概念並不熟悉，只覺得這樣使用依賴變得很方便。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Common Design on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/common-design/</link><description>Recent content in Common Design on 識之箱庭</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Wed, 28 Jun 2023 20:05:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/common-design/index.xml" rel="self" type="application/rss+xml"/><item><title>通用設計 - Pattern - Service Locator</title><link>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-pattern-service-locator/</link><pubDate>Wed, 28 Jun 2023 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-pattern-service-locator/</guid><description>前述 Service Locator 確實也是 IoC 的一種實作方式，不過採用的是 依賴尋找(Dependency Lookup) 的設計。 筆者之前有一陣子蠻常使用這 pattern，那時對 DI 與 IoC 的概念並不熟悉，只覺得這樣使用依賴變得很方便。
 因為我可以在任何地方直接這樣取用資源
 var target = ServiceLocator.Resovle&amp;lt;Target&amp;gt;(); 這樣的寫法有以下問題 :
 透過 ServiceLocator 因為這個取用資源的過程是隱性的，不容易被直接發現。 想用誰就拿誰這件事也有點危險，Ex: View 可以拿到不屬於 Presentation layer 該碰的對象。 所以當 DI 與 IoC 的概念熟悉後，並且使用 DI / IoC Container 後就漸漸不使用這 pattern 了。
 應用 但這次工作上反而覺得 Service Locator 可以勝任從 Singleton 過渡到 DI / IoC Container 的中繼階段。
 因為這次接觸到的專案嚴重依賴 Singleton，且組員也已習慣 Singleton 的寫法了，要直切換到 DI / IoC Container 會有不小的陣痛期(當然實務上能不能切又是另一個故事了)。
 於是筆者想起了 Service Locator，有以下理由
-因為在使用上就很像是 Singleton 筆者希望組員能快速感受到 IoC 所帶來的紅利 集中管理依賴 實作 此模式使用稱為「服務定位器」的中央註冊表，它根據請求返回執行特定任務所需的對象。
-以下是一種變體實作
-註冊的對象不強制要實作介面 基本上只當是個容器 因為不使用反射，需要搭配一個 Installer (組合根) // 這裡透過 static 來達到全域使用 public class ServiceLocator { private static readonly Dictionary&amp;lt;Type, object&amp;gt; instances = new Dictionary&amp;lt;Type, object&amp;gt;(); public static void Register&amp;lt;T&amp;gt;(T instance) { instances[typeof(T)] = instance; } public static T Resolve&amp;lt;T&amp;gt;() { if (instances.</description></item><item><title>通用設計 - Inversion of Control (IoC) 與 Dependency Injection (DI)</title><link>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-inversion-of-control-ioc-%E8%88%87-dependency-injection-di/</link><pubDate>Fri, 05 May 2023 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-inversion-of-control-ioc-%E8%88%87-dependency-injection-di/</guid><description>控制反轉 Inversion of Control，以下皆簡稱 IoC。 依賴注入 Dependency Injection，以下皆簡稱 DI。
-之前還有提到過 依賴倒置原則 (Dependency Inversion Principle，DIP)，而筆者理解到這三者的關係是
-DI 是 IoC 的一種實踐方式 DIP 則能為 IoC 提高依賴穩定性 為什麼需要 資源複用: 避免創建重複對象，有些對象只需要實例化一個就夠了，不需要使用方都自己 new 一個新的。
-集中配置依賴項: 依賴需求方操作其依賴項來完成任務才是他主要的責任，如果還要處理依賴項的實例化(更不用說依賴項的依賴項要怎麼處理)，責任就模糊了，因此將依賴項的創建和配置的控制權交給 IoC Container。
-基本操作 通常而 IoC Container 包含以下操作：
-Register：註冊類型和依賴關係 Resolve：創建並註入依賴關係 Dispose：管理生命週期 而實踐方式常見的有兩種
-Service Locator 服務定位器 可以簡單理解為直接使用容器本身，因此依賴需求方在需要依賴的地方可以使用 Locator.Resolve 來取得依賴，但這樣有幾個問題
-Resolve 可以填什麼 ? 是不是有註冊的項目都能任意取得阿 ? 這也是有些人認為服務定位器有反模式味道的點 DI 依賴注入 依賴注入則是間接地使用容器，常透過三種方式注入依賴項，
-建構子(推薦) 屬性 方法 權限相對清晰(建構子注入)，能用依賴項的都在建構子給你了，不過你要額外new 其他東西也是沒人攔得住。此外依賴需求方是不知道容器的存在(理想狀態，但有時會需要一些注入標記)</description></item><item><title>通用設計 - Guard Clauses</title><link>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-guard-clauses/</link><pubDate>Tue, 10 Jan 2023 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-guard-clauses/</guid><description>目的 符合 Fail Fast 的原則，驗證條件並在不滿足條件時立即停止執行。 增加可讀性(更扁平)，減少了巢狀判斷。 例子請參考 Guard Clause Extra - Guard Class 將通用的保護子句封裝在一個專門的類是一種很好的做法，可重用邏輯並編寫更具可讀性的保護子句。
+因為在使用上就很像是 Singleton 筆者希望組員能快速感受到 IoC 所帶來的紅利 集中管理依賴 實作 此模式使用稱為「服務定位器」的中央註冊表，它根據請求返回執行特定任務所需的對象。</description></item><item><title>通用設計 - Inversion of Control (IoC)</title><link>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-inversion-of-control-ioc/</link><pubDate>Fri, 05 May 2023 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-inversion-of-control-ioc/</guid><description>反轉了什麼 ? 依賴對象的獲得被反轉了
+在應用程式中設計總會有多個單元需要合作的情況，這時就會有配置依賴的需求，但這個配置應該由需求方來處理嗎?
+讓依賴需求方自己處理最簡單的方式就是實例化(new)，但這可能會有以下問題:
+不同需求方重複 new 是否會有浪費的問題? 能被共用嗎? 方便共用嗎? 到處 new 來 new 去，依賴的管理變得很亂 那不如找一個單位負責來處理依賴配置。我不自己 new，而是別人 new 完後(注入給我/讓我查找)，這麼所帶來的好處:
+資源複用更方便: 統一由容器創建或保存對象，不需要每個需求方都自己 new 一個新的。 集中配置依賴項: 依賴需求方操作其依賴項來完成任務才是他主要的責任，如果還要處理依賴項的實例化，責任就模糊了，因此將依賴項的創建和配置的控制權交給 IoC Container。 為此需要有一個 IoC Container 來處理，通常容器包含以下操作：
+Register：註冊類型和依賴關係 Resolve：創建並註入依賴關係 Dispose：管理生命週期 實踐方式 最常見的方式分別是 依賴注入（Dependency Injection，DI）與 依賴尋找（Dependency Lookup）。
+依賴尋找 可以簡單理解為 依賴需求方 &amp;laquo; 主動 &amp;raquo; 使用容器來取得依賴。依賴需求方直接使用 Locator.Resolve 取得依賴，但這種作法有些爭議(反模式)，依賴需求方是不是有註冊的項目都能任意取得阿 ?
+Service Locator 服務定位器是依賴尋找的典型實作。
+依賴注入 透過注入依賴項讓 依賴需求方 &amp;laquo; 被動 &amp;raquo; 使用容器來取得依賴，常透過三種方式注入。
+建構子(推薦) 屬性 方法 權限相對清晰(建構子注入)，能用依賴項的都在建構子給你了，不過你要額外new 其他東西也是沒人攔得住。
+這個方式通常透過框架來處理，此外依賴需求方是不知道容器的存在(理想狀態，但有時會需要一些注入標記)。</description></item><item><title>通用設計 - Guard Clauses</title><link>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-guard-clauses/</link><pubDate>Tue, 10 Jan 2023 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-guard-clauses/</guid><description>目的 符合 Fail Fast 的原則，驗證條件並在不滿足條件時立即停止執行。 增加可讀性(更扁平)，減少了巢狀判斷。 例子請參考 Guard Clause Extra - Guard Class 將通用的保護子句封裝在一個專門的類是一種很好的做法，可重用邏輯並編寫更具可讀性的保護子句。
 可參考這個庫 GuardClauses Extra - Value Object Stop using trivial Guard Clauses! Try this instead
 文章作者避免瑣碎 Guard 的方式，是使用 Value Object，來避免域接受到無效參數。這個作法在筆者看來才是真正意義上的 Fail Fast。(YT評論區也建議閱讀，有許多不錯的討論)
 但不可否認的 Guard Clause 作法在大多情況下是有益的。
