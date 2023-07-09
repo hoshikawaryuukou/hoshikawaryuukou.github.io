@@ -8,22 +8,21 @@ tags: ["Unity"]
 
 以下將著重在"程式碼"的熱更。
 
-## 簡述
+## 前述
 HybridCLR 的 github 星數已經超過 ILRuntime 了，且中國那邊的主流框架幾乎都對其加入支援，是備受期待的存在。
 
 其極大簡化過往麻煩且效率不彰的熱更流程。現在主流的方式有兩個：Lua 和 ILRuntime。但主流並不一定是好用的，也有可能只是迫不得已。主流兩者在筆者看來最難受的事是「侵入性」極強，有時為了熱更必須將業務邏輯移到 Lua 和 ILRuntime，搞得綁手綁腳。大家也都抱怨很久了，但也沒有其他可靠方案，直到 HybridCLR 出現。
 
 其最讓人驚豔的地方在於，過往的開發流幾乎不用更動(不用寫 Lua 到處黏來黏去，只要寫好 C# 即可)，僅在打包時調整一下工作流即可。
 
-3.0 版本後流程優化得更順暢了，照著 [快速上手](https://hybridclr.doc.code-philosophy.com/#/beginner/quickstart)可以很快地感受到其優點。
-
 此外 Unity 引擎開發團隊宣布，他們已開始將 Unity 引擎運行時從 Mono 遷移到 .NET CoreCLR。他們還會提供融合 JIT 和 AOT 的解決方案，Unity 團隊計劃在 2024 年發布新編輯器。(雖然常跳票就是了)，因此筆者相信 類 HybridCLR 的作法在未來會成為主流做法，姑且先樂觀其成。
 
-## Official
 - [focus-creative-games/hybridclr](https://github.com/focus-creative-games/hybridclr)
 - [focus-creative-games/hybridclr_trial](https://github.com/focus-creative-games/hybridclr_trial)
 - [focus-creative-games/hybridclr_unity](https://github.com/focus-creative-games/hybridclr_unity)
-- [HybridCLR c#热更新](https://www.zhihu.com/column/c_1489549396035870720)
+
+## 快速上手
+3.0 版本後流程優化得更順暢了，照著 [文件](https://hybridclr.doc.code-philosophy.com/#/beginner/quickstart) 可以很快地感受到
 
 ## 實測
 為此筆者以一個小專案測試
