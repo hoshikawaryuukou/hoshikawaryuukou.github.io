@@ -1,9 +1,9 @@
 ---
-title: "C# - 筆記"
+title: "C-Sharp - 筆記"
 date: 2023-01-05 21:11:00
 draft: false
 
-tags: ["C#"]
+tags: ["C-Sharp"]
 ---
 
 ## 語法 

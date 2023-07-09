@@ -1,9 +1,9 @@
 ---
-title: "C# - Basic - 前置處理器指示詞"
+title: "C-Sharp - Basic - 前置處理器指示詞"
 date: 2023-07-07 21:11:00
 draft: false
 
-tags: ["C#", "Unity"]
+tags: ["C-Sharp", "Unity"]
 ---
 
 ## 前述
