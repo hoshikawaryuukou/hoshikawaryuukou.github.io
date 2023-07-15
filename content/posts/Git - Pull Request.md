@@ -1,6 +1,6 @@
 ---
 title: "Git - Pull Request"
-date: 2023-07-15 13:11:00
+date: 2023-07-14 13:11:00
 draft: false
 
 tags: ["Git"]
@@ -13,7 +13,7 @@ tags: ["Git"]
 
 可以透過 pull request 方式控管權限，由負責管理這個專案的人收到其他開發者的 pull request 並確認無誤後便可進行合併，來確保產品分支處於隨時都是可上線的狀態。
 
-在參與開源專案時，在創建 pull request 之前，建議先在本地分支上運行 git rebase 命令，確保你的更改基於最新的進度以降低審查者的理解難度。
+參與開源專案時，在創建 pull request 之前，建議先在本地分支上運行 git rebase 命令，確保你的更改基於最新的進度以降低審查者的理解難度。
 
 ## Ref
 - [與其它開發者的互動 - 使用 Pull Request（PR）](https://gitbook.tw/chapters/github/pull-request)
