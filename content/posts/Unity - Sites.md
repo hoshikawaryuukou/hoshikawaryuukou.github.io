@@ -19,6 +19,7 @@ tags: ["Unity"]
 - [Game Dev Beginner - Everyone Can Make Games](https://gamedevbeginner.com/)
 - [LianBai](https://lianbai.github.io/)
 - [(:3[kanのメモ帳]](https://kan-kikuchi.hatenablog.com/)
+- [Unityゲーム開発者ギルド](https://qiita.com/organizations/unity-game-dev-guild/items)
 
 ## Engineering Blog
 - [REALITY｜note](https://note.com/reality_eng/)
