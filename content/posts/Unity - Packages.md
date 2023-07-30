@@ -75,5 +75,9 @@ Scope(s):
   - openupm - com.neuecc.unirx
   - [【Unity框架】UniRx精讲](https://www.bilibili.com/read/cv15236973)
 
+## Serialization
+- [Newtonsoft.Json](https://github.com/jilleJr/Newtonsoft.Json-for-Unity/wiki/Install-official-via-UPM)
+  - git - com.unity.nuget.newtonsoft-json
+
 ## State Machine
 - [UnityHFSM](https://github.com/Inspiaaa/UnityHFSM)
