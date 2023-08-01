@@ -1,12 +1,21 @@
 ---
 title: "Unity - Basic - Memory Profiler"
-date: 2023-07-31 21:11:00
+date: 2023-07-30 21:11:00
 draft: false
 
 tags: ["Unity"]
 ---
 
-
+## 注意
+- 由於Unity 無法將性能分析器本身佔用的記憶體與運行模式的記憶體完全分開。要獲得應用程序的更精確數字和記憶體使用情況，應在要運行應用程序的目標設備和操作系統上分析應用程序。
+- 偵測 Leaked Managed Shell 的功能在 Memory Profiler 1.1.0-pre.1 
 
 ## Ref
 - [Memory Profiler](https://docs.unity3d.com/Packages/com.unity.memoryprofiler@1.0/manual/index.html)
+- [Memory Profiler | 1.1.0-pre.1 - Unity - Manual](https://docs.unity3d.com/Packages/com.unity.memoryprofiler@1.1/manual/managed-shell-objects.html)
+- [Unity でメモリリーク？ Memory Profiler で Leaked Managed Shell をチェックしてみよう！](https://www.youtube.com/watch?v=UIwQmpQTtA4)
+- [Inspecting memory with the new Memory Profiler package](https://blog.unity.com/engine-platform/inspecting-memory-with-the-new-memory-profiler-package)
+
+## XX
+可以導出
+- [Unity Memory Profiler](http://blog.coolcoding.cn/?p=4504)
