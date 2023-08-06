@@ -13,6 +13,7 @@ tags: ["AI"]
 - [Stable Diffusion+PS - Avatar Remake WorkFlow / Stable Diffusion 協作 +PS 工作紀錄2 - 頭圖復刻](https://www.youtube.com/watch?v=CnjEFZAhg10)
 - [Stable Diffusion + Blender 2DTopGame architecture WorkFlow/ Stable Diffusion AI +Blender 繪製2D遊戲建築](https://www.youtube.com/watch?v=VA4MLgHbzyo)
 - [【Stable diffusion小教程】运用AI实现 草图→清稿→上色→3d效果全流程](https://www.bilibili.com/video/BV1Qo4y1T77V)
+- [超详细的AI辅助新流程-卡通建筑应用实例](https://www.bilibili.com/video/BV1694y1v78z/?spm_id_from=333.1007.tianma.1-2-2.click&vd_source=863870bbf22c37b1b09727751205f522)
 
 
 

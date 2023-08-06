@@ -7,6 +7,9 @@ tags: ["Git"]
 ---
 
 ## Common
-- [这可能是你看过最通俗易懂的git介绍了](https://www.youtube.com/watch?v=N6YQlPuAamw)
-- [連猴子都能懂的Git入門指南](https://backlog.com/git-tutorial/tw/)
+- [两小时Git教程](https://www.youtube.com/playlist?list=PLDBEQHWAyt9FbN7TANIXlUvtRhdoBCEQ5)
 - [Git忽略规则.gitignore不生效](https://developer.aliyun.com/article/634481)
+
+## Workflow
+- [如何做好分支管理，保证高效CI/CD？](https://zhuanlan.zhihu.com/p/556418580) 
+- [【GeekHour教程】分支管理和工作流模型](https://www.youtube.com/watch?v=vDs3K6Szstg)

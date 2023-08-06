@@ -1,6 +1,6 @@
 ---
 title: "Unity - Packages"
-date: 2022-11-12 21:11:00
+date: 2023-08-03 21:11:00
 draft: false
 
 tags: ["Unity"]
@@ -65,6 +65,7 @@ Scope(s):
 
 ## Network
 - [MagicOnion](https://github.com/Cysharp/MagicOnion)
+- [Mirror](https://github.com/MirrorNetworking/Mirror)
 
 ## Persistence
 - [PlayerPrefs Editor & Utilities](https://github.com/sabresaurus/PlayerPrefsEditor)
@@ -81,3 +82,8 @@ Scope(s):
 
 ## State Machine
 - [UnityHFSM](https://github.com/Inspiaaa/UnityHFSM)
+
+## UI
+- [LoopScrollRect](https://github.com/qiankanglai/LoopScrollRect)
+  - openupm - me.qiankanglai.loopscrollrect
+  - [効率的なスクロールビューを実装するためのOSS『Loop Scroll Rect』使い方まとめ](https://light11.hatenadiary.com/entry/2022/05/16/201949)
