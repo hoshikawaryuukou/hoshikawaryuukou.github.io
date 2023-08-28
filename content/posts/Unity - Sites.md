@@ -21,6 +21,8 @@ tags: ["Unity"]
 - [(:3[kanのメモ帳]](https://kan-kikuchi.hatenablog.com/)
 - [Unityゲーム開発者ギルド](https://qiita.com/organizations/unity-game-dev-guild/items)
 - [老刘@开发笔记](http://blog.coolcoding.cn/)
+- [はなちるのマイノート](https://www.hanachiru-blog.com/)
+- [くものす](https://kingmo.jp/kumonos/)
 
 ## Engineering Blog
 - [REALITY｜note](https://note.com/reality_eng/)

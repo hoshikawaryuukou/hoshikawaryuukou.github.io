@@ -71,6 +71,10 @@ Scope(s):
 - [PlayerPrefs Editor & Utilities](https://github.com/sabresaurus/PlayerPrefsEditor)
   - openupm - com.sabresaurus.playerprefseditor
 
+## Resource Management
+- [YooAsset](https://github.com/tuyoogame/YooAsset)
+  - openupm - com.tuyoogame.yooasset
+
 ## Rx (Reactive Extensions)
 - [UniRx](https://github.com/neuecc/UniRx)    
   - openupm - com.neuecc.unirx
