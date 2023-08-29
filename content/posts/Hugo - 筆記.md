@@ -11,4 +11,5 @@ tags: ["Hugo"]
 
 ## Image
 - [Rendering Images in Markdown Preview of Hugo Site](https://mikefrobbins.com/2023/02/08/rendering-images-in-markdown-preview-of-hugo-site/)
+  - 以管理員權限開啟 cmd 
   - mklink /D images .\static\images

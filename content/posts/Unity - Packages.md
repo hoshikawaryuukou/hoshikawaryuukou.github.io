@@ -60,7 +60,7 @@ Scope(s):
 - [【Unity】Google APIs for UnityをPackage Managerで管理する](https://kingmo.jp/kumonos/unity-google-apis-for-unity-import-package-manager/)
 
 ## Messaging 
-- [MessagePipe](https://github.com/HoshikawaRyuukou/UnityDev/main/Note/Package/Messaging/MessagePipe.md)    
+- [MessagePipe](https://github.com/Cysharp/MessagePipe)    
   - openupm - com.cysharp.messagepipe
 
 ## Network
