@@ -1,5 +1,5 @@
 ---
-title: "通用設計 - Pattern - UiState 與 ViewModel"
+title: "通用設計 - Pattern - ViewModel"
 date: 2023-08-27 20:05:00
 draft: true
 
@@ -8,46 +8,54 @@ tags: ["Common Design"]
 
 ## 前述
 
-此篇的實作方式參考到以下文件
-- [Android Developers 文件/指南/UI 層](https://developer.android.com/topic/architecture/ui-layer?hl=zh-tw)
+此篇的實作參考到以下文件 (提到不少 Presentation layer 設計原則)
+> [Android Developers 文件/指南/UI 層](https://developer.android.com/topic/architecture/ui-layer?hl=zh-tw)
 
-裡面提到一些 Presentation layer 設計方案
-- 定義 UI 狀態
-- 單向資料流
-- 不變性
+該文件的更新頻率算高且會與時俱進，筆者印象中其架構設計從 MVVM -> Domain/Application Driven 設計，可以看出主流架構有產生變化。之後的討論雖然使用 ViewModel 但不會詳細介紹 MVVM 的細節，如果對 MVX 系列不熟，可以先讀筆者之前的文章 **<<通用設計 - Pattern - MVP>>** 裡面的 References。
 
-該文件更新頻率算高且有與時俱進，筆者印象中其架構設計從 MVVM -> 以 Domain/Application 為中心的設計，也可以看出主流架構有在產生變化。此篇不會詳細介紹 MVVM 的細節，如果對 MVX 系列不熟，可以先去讀筆者之前的這篇文章 **<<通用設計 - Pattern - MVP>>** 裡面的 References。
 
-以下將針對一些開發情境進行探討
-- 有沒有辦法在 **沒有服務端** 的情況下，讓客戶能操作到完整的體驗流 ?
-- 有沒有一個地方放著明確的 **狀態** ?
-- 有沒有辦法 UI 只做為一個純粹的撥放器 (使用者輸入源 & 狀態輸出畫布) ?
+## 探索
+
+回到正題，筆者在最近的業務上遇到
+> 如何在 **服務端未完成** 的情況下，讓 Client 獲得完整的體驗流 ?
+
+以下用交叉反問的方式來分析問題
+
+Q: 沒有服務端那資料來源哪來 ?
+A: 使用假資料
+
+Q: 當表現層依賴的是 IService Interface 使用假資料時需要實作什麼 ?
+A: 只需要實作一個 FakeService 來產生假資料即可
+
+Q: 當想要將業務與表現解耦時，很常使用中介者的手法來黏合兩者，如果使用標準的 MVP 實做，Presenter 實際做了哪些事呢 ?
+A: 監聽 View 事件/ 與 Service 互動/ 管理畫面狀態/ 呼叫 View 刷新
+
+Q: Presenter 似乎有點多事情 !
+A: 其實需要視情況而定，情況簡單時直接向 View 倒資料也是完全可以接受的。但當情況複雜時可以選擇導入 ViewModel 來管理狀態，事實上表現層所要呈現的 UI 狀態未必是只跟 Service 的回傳有關，可能需要這樣的控制 條件A + 條件B + 條件C -> 狀態D
+
+Q: 也就是將 UI狀態封裝於 ViewModel 裡管理 !
+A: 對於畫面需求可以定義於 IVewModel 介面，這樣就隔離 Service(隱藏於 ViewModel 實作中)，這樣畫面就可以獨立於 Service 開發，細節將於下一結討論
+
 
 ## Mediator
 
-![ViewModel](/images/ViewModel.png)
+![Mediator](/images/Mediator.png)
+
+✽ FlowController 這裡視為進入點即可
 
 (左邊)
-基於僅 Presenter (MVP) 作為 **業務邏輯** 與 **UI** 的中介，
-Persenter 除了要調用 View/IView 方法
-還要管理狀態，當然有時會直接將狀態塞至 View 中
-但在處理向 循環物件時 View 是會被重複刷的 必須由presenter管理 可以明顯感受到需要 vm 的存在
+- 採用標準的 MVP
+- FlowController/Presenter 需做狀態管理 
 
 (右邊)
-MVP 混用 ViewModel
+- 採用 MVP 混用 ViewModel
+- ViewModel 代替 Presenter 作為 Presentation 的邏輯與畫面的中介
+- FlowController/Presenter 依賴同為 Presentaion 的 IViewModel，這樣表現層邏輯就可以不依賴 Service 獨立開發，等之後在實作對應的 ViewModel 且能根據不同的狀態源(體驗版/正式版)
 
-基於 ViewModel 作為 **業務邏輯** 與 **UI** 的中介
-ViewModel 只專注於畫面狀態，去跟業務溝通轉換成UI狀態
-ViewModel 設計之初的目的便是
-UI 很難測那直接將 ViewModel 作為 Presentation 的終端
-正因為 ViewModel 統合了 Presentation 的所有業務轉換狀態
-Presentation 只測到 viewModel
-
-落實 Data-Driven : 前端畫面的數據源頭
-
-ViewModel 不知道 View 的存在 : ViewModel 更好被測試
-
-將ViewModel作為Presentation的終端：在MVVM中，ViewModel扮演了Presentation Logic（展示邏輯）的角色。這意味著ViewModel負責分區模型獲取的數據進行處理、整理，供View展示。因此，ViewModel成為連接Model和View的中間層，View不再包含複雜的業務邏輯，只負責展示和與ViewModel進行交互。
+ViewModel 的優勢情境
+- 單一職責: 明確的狀態管理單位
+- 單向資料流: 排除了對 View/IView 的依賴，使用觀察者模式，供外部訂閱數據/變化
+- 能對應狀態需要被共用的情境: 得力於狀態被獨立出來，可被多個單位給使用
 
 
 ## Example
