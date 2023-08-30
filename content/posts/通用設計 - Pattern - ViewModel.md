@@ -21,20 +21,20 @@ tags: ["Common Design"]
 
 以下用交叉反問的方式來分析問題
 
-Q: 沒有服務端那資料來源哪來 ?
-A: 使用假資料
+Q: 沒有服務端那資料來源哪來 ?    
+A: 使用假資料    
 
-Q: 當表現層依賴的是 IService Interface 使用假資料時需要實作什麼 ?
-A: 只需要實作一個 FakeService 來產生假資料即可
+Q: 當表現層依賴的是 IService Interface 使用假資料時需要實作什麼 ?    
+A: 只需要實作一個 FakeService 來產生假資料即可    
 
-Q: 當想要將業務與表現解耦時，很常使用中介者的手法來黏合兩者，如果使用標準的 MVP 實做，Presenter 實際做了哪些事呢 ?
-A: 監聽 View 事件/ 與 Service 互動/ 管理畫面狀態/ 呼叫 View 刷新
+Q: 當想要將業務與表現解耦時，很常使用中介者的手法來黏合兩者，如果使用標準的 MVP 實做，Presenter 實際做了哪些事呢 ?    
+A: 監聽 View 事件/ 與 Service 互動/ 管理畫面狀態/ 呼叫 View 刷新    
 
-Q: Presenter 似乎有點多事情 !
-A: 其實需要視情況而定，情況簡單時直接向 View 倒資料也是完全可以接受的。但當情況複雜時可以選擇導入 ViewModel 來管理狀態，事實上表現層所要呈現的 UI 狀態未必是只跟 Service 的回傳有關，可能需要這樣的控制 條件A + 條件B + 條件C -> 狀態D
+Q: Presenter 似乎有點多事情 !    
+A: 其實需要視情況而定，情況簡單時直接向 View 倒資料也是完全可以接受的。但當情況複雜時可以選擇導入 ViewModel 來管理狀態。事實上表現層所要呈現的 UI 狀態未必是只跟 Service 的回傳有關，可能需要這樣的控制 條件A(Service) + 條件B(Local) + 條件C(User Runtime) -> 狀態D    
 
-Q: 也就是將 UI狀態封裝於 ViewModel 裡管理 !
-A: 對於畫面需求可以定義於 IVewModel 介面，這樣就隔離 Service(隱藏於 ViewModel 實作中)，這樣畫面就可以獨立於 Service 開發，細節將於下一結討論
+Q: 也就是將 UI 狀態封裝於 ViewModel 裡管理 !    
+A: 對於畫面需求可以定義於 IVewModel 介面，這樣就隔離了 Service(隱藏於 ViewModel 實作中)，畫面就可以獨立於 Service 開發，細節將於下一結討論    
 
 
 ## Mediator
@@ -49,16 +49,18 @@ A: 對於畫面需求可以定義於 IVewModel 介面，這樣就隔離 Service(
 
 (右邊)
 - 採用 MVP 混用 ViewModel
-- ViewModel 代替 Presenter 作為 Presentation 的邏輯與畫面的中介
+- ViewModel 代替 Presenter 作為邏輯與畫面的中介
 - FlowController/Presenter 依賴同為 Presentaion 的 IViewModel，這樣表現層邏輯就可以不依賴 Service 獨立開發，等之後在實作對應的 ViewModel 且能根據不同的狀態源(體驗版/正式版)
 
 ViewModel 的優勢情境
 - 單一職責: 明確的狀態管理單位
 - 單向資料流: 排除了對 View/IView 的依賴，使用觀察者模式，供外部訂閱數據/變化
-- 能對應狀態需要被共用的情境: 得力於狀態被獨立出來，可被多個單位給使用
+- 能對應狀態需要被共用的狀態: 得力於狀態被獨立出來，可被多個單位給使用
 
 
 ## Example
+
+✽ 觀察者模式採用 UniRx 實作
 
 以一個井字遊戲為例，情境如下
 
@@ -154,4 +156,3 @@ public class GamePlayPresenter
     }
 }
 ```
-
