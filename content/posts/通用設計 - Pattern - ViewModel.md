@@ -1,7 +1,7 @@
 ---
 title: "通用設計 - Pattern - ViewModel"
 date: 2023-08-27 20:05:00
-draft: true
+draft: false
 
 tags: ["Common Design"]
 ---
