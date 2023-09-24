@@ -29,6 +29,7 @@ tags: ["AI"]
 ## 畫廊 (NSWF)
 - [Prompt Search](https://www.ptsearch.info/home/)
 - [chichi-pui](https://www.chichi-pui.com/)
+- [PixAI.Art](https://pixai.art/)
 
 ## Prompt
 注意 Prompt 的效果很大程度取決於使用的 checkpoint (部分 Prompt 會無效)
