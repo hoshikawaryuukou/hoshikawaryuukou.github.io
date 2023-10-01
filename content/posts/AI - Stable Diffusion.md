@@ -24,13 +24,13 @@ tags: ["AI"]
 - [chichi-pui](https://www.chichi-pui.com/)
 - [PixAI.Art](https://pixai.art/)
 
-### Prompt
+## Prompt
 - [AI繪圖魔導書](https://docs.google.com/spreadsheets/d/16wR5Zg_aQEbxLdrTOrB9cZf8QmsMrJnSGxFKbZVtrKc)
 - [NovelAI魔咒小课堂](https://www.yuque.com/longyuye/lmgcwy)
 - [NovelAI tag生成器 V2.1](https://www.toutool.cn/)
 - [【Stable Diffusion】プロンプト（呪文）ガイド](https://ishikawatsukasa.com/chat/web/4589/)
 
-### 優化
+## 優化
 - [【Stable diffusion技巧教程】解决图片模糊！4这种不同方法实现AI高清放大](https://www.bilibili.com/video/BV1Vm4y1t7Z5)
 - [【Stable diffusion技巧教程】深入分析二次元风AI跑图脸崩，假脸的解决方法](https://www.bilibili.com/video/BV1Nu4y1y7By)
 

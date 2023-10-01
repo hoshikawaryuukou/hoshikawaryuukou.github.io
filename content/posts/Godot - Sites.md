@@ -6,4 +6,5 @@ draft: false
 tags: ["Godot"]
 ---
 
-## Channel
+## Sites
+- [2dgames.jp](https://2dgames.jp/category/godot/)
