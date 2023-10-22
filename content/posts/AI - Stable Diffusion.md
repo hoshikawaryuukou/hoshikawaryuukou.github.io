@@ -15,9 +15,9 @@ tags: ["AI"]
 - [杰克艾米立](https://www.youtube.com/@JackEllie/videos)
 - [AIツール関係](https://sazano123.com/category/ai%e3%83%84%e3%83%bc%e3%83%ab%e9%96%a2%e4%bf%82)
 
-## 社群
+## Repo
 - [Civitai](https://civitai.com/)
-- [AI 그림 채널](https://arca.live/b/aiart)
+- [2vXpSwA7](https://huggingface.co/2vXpSwA7)
 
 ## 畫廊
 - [Prompt Search](https://www.ptsearch.info/home/)
@@ -36,3 +36,4 @@ tags: ["AI"]
 
 ## 案例
 - [【Stable diffusion案例教程】运用AI实现 草图→清稿→上色→3d效果全流程](https://www.bilibili.com/video/BV1Qo4y1T77V)
+
