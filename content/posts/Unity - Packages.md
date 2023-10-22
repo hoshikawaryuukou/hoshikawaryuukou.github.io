@@ -53,6 +53,7 @@ Scope(s):
   - [Manual](https://docs.yarnspinner.dev/)
 
 ## Editor
+- [Tri-Inspector](https://github.com/codewriter-packages/Tri-Inspector)
 - [NaughtyAttributes](https://github.com/dbrizov/NaughtyAttributes)  
   - openupm - com.dbrizov.naughtyattributes
 
