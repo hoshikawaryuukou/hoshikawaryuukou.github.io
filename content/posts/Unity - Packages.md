@@ -41,6 +41,7 @@ Scope(s):
 
 ## Debug
 - [UnityIngameDebugConsole](https://github.com/yasirkula/UnityIngameDebugConsole)
+  - openupm - com.yasirkula.ingamedebugconsole
 
 ## Dependency Injection
 - [VContainer](https://github.com/hadashiA/VContainer)  
@@ -59,6 +60,11 @@ Scope(s):
 
 ## Google Service
 - [【Unity】Google APIs for UnityをPackage Managerで管理する](https://kingmo.jp/kumonos/unity-google-apis-for-unity-import-package-manager/)
+
+## HotUpdate
+- [HybridCLR](https://hybridclr.doc.code-philosophy.com/)
+  - git - https://github.com/focus-creative-games/hybridclr_unity.git
+- [xLua](https://github.com/Tencent/xLua)
 
 ## Messaging 
 - [MessagePipe](https://github.com/Cysharp/MessagePipe)    
