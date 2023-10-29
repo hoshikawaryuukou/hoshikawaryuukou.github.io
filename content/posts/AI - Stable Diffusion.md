@@ -15,9 +15,9 @@ tags: ["AI"]
 - [杰克艾米立](https://www.youtube.com/@JackEllie/videos)
 - [AIツール関係](https://sazano123.com/category/ai%e3%83%84%e3%83%bc%e3%83%ab%e9%96%a2%e4%bf%82)
 
-## Repo
+## 社群
 - [Civitai](https://civitai.com/)
-- [2vXpSwA7](https://huggingface.co/2vXpSwA7)
+- [AI 그림 채널](https://arca.live/b/aiart)
 
 ## 畫廊
 - [Prompt Search](https://www.ptsearch.info/home/)
@@ -33,7 +33,7 @@ tags: ["AI"]
 ## 優化
 - [【Stable diffusion技巧教程】解决图片模糊！4这种不同方法实现AI高清放大](https://www.bilibili.com/video/BV1Vm4y1t7Z5)
 - [【Stable diffusion技巧教程】深入分析二次元风AI跑图脸崩，假脸的解决方法](https://www.bilibili.com/video/BV1Nu4y1y7By)
+- [图生图终极指南：从玩具到工具！](https://www.bilibili.com/video/BV1gu4y1t7gW)
 
 ## 案例
 - [【Stable diffusion案例教程】运用AI实现 草图→清稿→上色→3d效果全流程](https://www.bilibili.com/video/BV1Qo4y1T77V)
-
