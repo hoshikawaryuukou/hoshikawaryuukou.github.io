@@ -30,7 +30,8 @@ tags: ["AI"]
 - [NovelAI tag生成器 V2.1](https://www.toutool.cn/)
 - [【Stable Diffusion】プロンプト（呪文）ガイド](https://ishikawatsukasa.com/chat/web/4589/)
 
-## 優化
+## 知識點
+- [Stable diffusion采样器全解析，30种采样算法教程](https://www.bilibili.com/video/BV1FN411i7sB)
 - [【Stable diffusion技巧教程】解决图片模糊！4这种不同方法实现AI高清放大](https://www.bilibili.com/video/BV1Vm4y1t7Z5)
 - [【Stable diffusion技巧教程】深入分析二次元风AI跑图脸崩，假脸的解决方法](https://www.bilibili.com/video/BV1Nu4y1y7By)
 - [图生图终极指南：从玩具到工具！](https://www.bilibili.com/video/BV1gu4y1t7gW)
