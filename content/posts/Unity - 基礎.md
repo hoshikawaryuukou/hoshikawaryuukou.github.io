@@ -26,6 +26,11 @@ tags: ["Unity"]
 - [探寻 Unity Camera 属性之 Clear Flags](https://blog.lujun.co/2019/06/02/unity_camera_clear_flags/#)
 - [Unityの画面のアスペクト比と解像度を自動変換　全スマホ・複数解像度に対応させる](https://3dunity.org/game-create-lesson/clicker-game/mobile-adjustment/)
 
+## Canvas
+- [Designing UI for Multiple Resolutions](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/HOWTO-UIMultiResolution.html)
+- [Unity Canvas Scaler 组件的使用](https://blog.csdn.net/hello_1995/article/details/122130097)
+- [Unity分辨率适配方案设置](https://blog.csdn.net/qq_42672770/article/details/121886944)
+
 ## Editor
 - [在unity编辑器不同位置添加菜单](https://linkliu.github.io/game-tech-post/posts/%E5%9C%A8Unity%E7%BC%96%E8%BE%91%E5%99%A8%E4%B8%8D%E5%90%8C%E4%BD%8D%E7%BD%AE%E6%B7%BB%E5%8A%A0%E8%8F%9C%E5%8D%95/)
 - [SerializeReferenceをつけている型をリネーム・削除する時の注意点](https://light11.hatenadiary.com/entry/2021/12/13/194147)
