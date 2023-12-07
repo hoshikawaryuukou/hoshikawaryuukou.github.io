@@ -8,6 +8,7 @@ tags: ["C-Sharp"]
 
 ## 語法 
 - [C# 的一些冷知识（其一）](https://www.bilibili.com/video/BV1RR4y1r7vj)
+- [C# 的一些冷知识（其二）](https://www.bilibili.com/video/BV1EP4y1B7Er)
 - [捨棄 - C# 基本概念](https://learn.microsoft.com/zh-tw/dotnet/csharp/fundamentals/functional/discards)
 - [C#中 ??、 ?、 ?: 、?.、?[ ] 问号](https://www.bilibili.com/read/cv14801567)
 
