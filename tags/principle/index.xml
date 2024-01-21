@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Principle on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/principle/</link><description>Recent content in Principle on 識之箱庭</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Fri, 05 May 2023 20:05:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/principle/index.xml" rel="self" type="application/rss+xml"/><item><title>通用設計 - Principle - Inversion of Control (IoC)</title><link>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-principle-inversion-of-control-ioc/</link><pubDate>Fri, 05 May 2023 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-principle-inversion-of-control-ioc/</guid><description>反轉了什麼 ? 依賴對象的獲得被反轉了
+在應用程式中設計總會有多個單元需要合作的情況，這時就會有配置依賴的需求，但這個配置應該由需求方來處理嗎?
+讓依賴需求方自己處理最簡單的方式就是實例化(new)，但這可能會有以下問題:
+不同需求方重複 new 是否會有浪費的問題? 能被共用嗎? 方便共用嗎? 到處 new 來 new 去，依賴的管理變得很亂 那不如找一個單位負責來處理依賴配置。我不自己 new，而是別人 new 完後(注入給我/讓我查找)，這麼所帶來的好處:
+資源複用更方便: 統一由容器創建或保存對象，不需要每個需求方都自己 new 一個新的。 建造/使用分離: 依賴需求方操作其依賴項來完成任務才是他主要的責任，如果還要處理依賴項的實例化，責任就模糊了，因此將依賴項的創建和配置的控制權交給 IoC Container。 為此需要有一個 IoC Container 來處理，通常容器包含以下操作：
+Register：註冊類型和依賴關係 Resolve：創建並註入依賴關係 Dispose：管理生命週期 實踐方式 最常見的方式分別是 依賴注入（Dependency Injection，DI）與 依賴尋找（Dependency Lookup）。
+依賴尋找 可以簡單理解為 依賴需求方 &amp;laquo; 主動 &amp;raquo; 使用容器來取得依賴。依賴需求方直接使用 Locator.Resolve 取得依賴，但這種作法有些爭議(反模式)，依賴需求方是不是有註冊的項目都能任意取得阿 ?
+Service Locator 服務定位器是依賴尋找的典型實作。
+依賴注入 透過注入依賴項讓 依賴需求方 &amp;laquo; 被動 &amp;raquo; 使用容器來取得依賴，常透過三種方式注入。
+建構子(推薦) 屬性 方法 權限相對清晰(建構子注入)，能用依賴項的都在建構子給你了，不過你要額外new 其他東西也是沒人攔得住。
+這個方式通常透過框架來處理，此外依賴需求方是不知道容器的存在(理想狀態，但有時會需要一些注入標記)。</description></item><item><title>通用設計 - Principle - Dependency Inversion Principle (DIP)</title><link>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-principle-dependency-inversion-principle-dip/</link><pubDate>Tue, 15 Nov 2022 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-principle-dependency-inversion-principle-dip/</guid><description>依賴倒置原則 Dependency Inversion Principle，以下皆簡稱 DIP。
+為什麼需要 先來看定義
+高層次的模塊不應該依賴於低層次的模塊，兩者都應該依賴於抽象接口 抽象接口不應該依賴於具體實現。而具體實現則應該依賴於抽象接口 文謅謅的，但重點似乎是抽象。不如直接看個狀況劇:
+有一個 Project A 需要使用播廣告的功能。分別採 2 個做法
+直接依賴 直覺的做法。Project A 直接依賴於廣告模組(UnityAds)，這裡模組 Project A 被迫去了解 UnityAds 的實作細節(怎麼初始化/下載廣告/播廣告)。
+目前沒甚麼問題，運作得很好&amp;hellip; 但很快問題就來了。UnityAds 因為某些原因不能用了! (假設後臺被打了什麼的)。於是找了另一個廣告模組(AdMob)，想要如法炮製，但有幾點可能會不好受。
+要改的地方很分散 (廣告被 Project A 多處使用) Project A 需要處理不同的 API格式 (了解細節，單例、Callback、事件&amp;hellip;) 導致原先依賴 UnityAds 的模組需要重新編譯 (造成浪費時間) 原因是直接依賴外部模組導致的，相對於你的系統 UnityAds 是個外人，是不穩定的，去依賴一個不穩定的東西，也會導致自己變得不穩定。
+依賴倒置 仔細想一下，Project A 直接依賴 UnityAds 是必要的嗎? 需求是播 UnityAds 的廣告? 還是播廣告? 為了實現穩定廣告服務的依賴源，我們將其抽象化
+public interface IAdService { void Initialize(); void Load(); void Show(); } 但 UnityAds 與 AdMob 又不能直接實作這個介面怎麼辦，可以用配接器模式(Adapter Pattern)寫個轉接頭，想辦法讓外部細節符合 IAdService 的需求。現在需要廣告服務的部分均透過 IAdService來操作，不需再知道外部廣告模組的細節。</description></item></channel></rss>
