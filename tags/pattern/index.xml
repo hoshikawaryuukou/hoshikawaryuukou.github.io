@@ -26,7 +26,7 @@ Ref Guard Clause Implementation Patterns: Guard Clause GuardClauses Stop using t
 注意事項 類別數量增加，請自行評估使用情形
 Ref Cutting Edge - Pros and Cons of Data Transfer Objects The DTO (Data Transfer Object) Data Transfer Objects Clean Architecture : why not using the entity as request model of the use case (interactor) Difference between Entity and DTO</description></item><item><title>通用設計 - Pattern - Model View Presenter (MVP)</title><link>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-pattern-model-view-presenter-mvp/</link><pubDate>Sat, 10 Dec 2022 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-pattern-model-view-presenter-mvp/</guid><description>前述 關注點分離（Separation of Concerns，SoC）: 在軟體開發中，一個模組或組件應該專注於解決特定的問題，而不是同時處理多個功能。每個組件都有自己的職責範圍，並且與其他組件盡可能解耦合。
 而 MVC / MVP / MVVM 是關注點分離於前端的經典應用，網上已經有很多不錯的文章，再寫一份類似的整理文章意義也不大，對此感到陌生，不妨閱讀以下連結，會幫助你理解 MV系列的發展。
-界面之下：还原真实的MV*模式 正确认识 MVC/MVP/MVVM 站在思想层面看MVX架构 MVP Pattern: Part 2 Supervising Controller Part 2 — Converting Presenters into ViewModels 以下則對筆者實作中比較常用的 MVP 多做一些討論
+界面之下：还原真实的MV*模式 正确认识 MVC/MVP/MVVM 站在思想层面看MVX架构 MVP Pattern: Part 2 Supervising Controller Part 2 — Converting Presenters into ViewModels 【Unity】MV(R)Pパターンのすすめ 以下則對筆者實作中比較常用的 MVP 多做一些討論
 關注點(責任) 在 MVP 的構成下分成三個部分
 Model: 應用程式的核心邏輯。 View: 應用程式的使用者介面，負責呈現數據和接收使用者的輸入。 Presenter: View 和 Model 之間的中介。 Passive View 這是 MVP 的一種實作風格，也是筆者主要使用的風格。
 Presenter 對 View 有完全控制權 View 提供方法與事件給 Presenter 使用 View 對 Presenter 一無所知 以猜拳遊戲的 View 為例
