@@ -25,8 +25,10 @@ Awaiter UniTask 已經實作了相當豐富的 Awaiter 擴充，有需要自訂�
 </span></span><span style=display:flex><span>    <span style=color:#111>{</span>
 </span></span><span style=display:flex><span>        <span style=color:#75715e>// 執行前檢查</span>
 </span></span><span style=display:flex><span>        <span style=color:#111>token</span><span style=color:#111>.</span><span style=color:#111>ThrowIfCancellationRequested</span><span style=color:#111>();</span>
+</span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>        <span style=color:#00a8c8>var</span> <span style=color:#111>str</span> <span style=color:#111>=</span> <span style=color:#111>File</span><span style=color:#111>.</span><span style=color:#111>ReadAllText</span><span style=color:#111>(</span><span style=color:#111>path</span><span style=color:#111>);</span>
-</span></span><span style=display:flex><span>        <span style=color:#75715e>// 執行前後</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#75715e>// 執行後檢查</span>
 </span></span><span style=display:flex><span>        <span style=color:#111>token</span><span style=color:#111>.</span><span style=color:#111>ThrowIfCancellationRequested</span><span style=color:#111>();</span>
 </span></span><span style=display:flex><span>        <span style=color:#00a8c8>return</span> <span style=color:#111>str</span><span style=color:#111>;</span>
 </span></span><span style=display:flex><span>    <span style=color:#111>});</span>
