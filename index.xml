@@ -13,7 +13,17 @@ Play Install Referrer API : 非 Kotlin / Java 用戶使用 Play Install Referrer
 舊版 Play Install Referrer 在使用者下載應用程式後透過廣播傳送包含歸因參數的訊息。然而廣播的不可靠性和安全性問題，目前不再建議使用這個版本。 新版 Play Install Referrer 直接訪問本機 Google Play 應用程式商店中的記錄，索取 referrer 值，因此更加可靠。 快速上手 Unity 專案: 將依賴加在 maintemplate.gradle
 dependencies { implementation(&amp;#34;com.android.installreferrer:installreferrer:2.2&amp;#34;) } 因為官方 API 文件寫的不全，建議到以下網站直接下載 aar 查看 jar 來對接 API
 Google&amp;rsquo;s Maven Repository Maven Repository 使用服務的工作流為如下
-建立連線 等待 callback 連線成功 索取 referrer 關閉連線 Referrer 格式 https://play.</description></item><item><title>通用設計 - Architecture - Player Application</title><link>https://HoshikawaRyuukou.github.io/drafts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-architecture-viper-copy/</link><pubDate>Fri, 19 Jan 2024 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/drafts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-architecture-viper-copy/</guid><description> 以本次的應用來說 從server 接收資料並呈現 基本沒有什麼 業務邏輯 就算有也是 應用邏輯 但用 port 將 變化隔離是可行的 / fake 時也有用 對 api 的要求如果不是對應到單畫面 在 api 取回的資料比較雜的狀況下 則須考慮較全局的狀態管理</description></item><item><title>通用設計 - Architecture - VIPER</title><link>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-architecture-viper/</link><pubDate>Fri, 19 Jan 2024 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-architecture-viper/</guid><description>簡述 VIPER (View-Interactor-Presenter-Entity-Router)
+建立連線 等待 callback 連線成功 索取 referrer 關閉連線 Referrer 格式 https://play.</description></item><item><title>通用設計 - Architecture - Player Application</title><link>https://HoshikawaRyuukou.github.io/drafts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-architecture-player-application/</link><pubDate>Fri, 19 Jan 2024 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/drafts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-architecture-player-application/</guid><description>以本次的應用來說 從server 接收資料並呈現
+基本沒有什麼 業務邏輯 就算有也是 應用邏輯
+但用 port 將 變化隔離是可行的 / fake 時也有用
+對 api 的要求如果不是對應到單畫面
+在 api 取回的資料比較雜的狀況下 則須考慮較全局的狀態管理
+沒有明確的進入點 多個 mono awake 併發
+靜態數據設定可以拉到 ScriptableObject
+動態數據用單例到是無妨 但依賴方向要對
+無法單獨測試動畫 因為 view 不是被動的
+應該要很容易模擬所以 case 而不是真的用 server + 記錄檔來看 case
+slot 大獎通知?</description></item><item><title>通用設計 - Architecture - VIPER</title><link>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-architecture-viper/</link><pubDate>Fri, 19 Jan 2024 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-architecture-viper/</guid><description>簡述 VIPER (View-Interactor-Presenter-Entity-Router)
 iOS VIPER架構實踐(一)：從MVC到MVVM到VIPER VIPER，更清晰的架构，解决复用和测试问题的利器系列1：VIPER架构演进史 有很多種實作流派，下圖是我比較偏好的模式呈現
 VIPER 借鏡了 CA (Clean Architecture) 的思想為 MVC 提供一個新的設計方案
 Entity 對應原本的 Model Controller 責任過重 -&amp;gt; 將業務邏輯移至 Interactor 並提高重用性 Controllers 之間耦合 -&amp;gt; 將導航邏輯移至 Router Presenter 作為 Binder 將 View / Interactor / Router 整合 啟發 VIPER 是筆者學習架構路上很重要的一個過渡，有以下兩點的思想轉變
