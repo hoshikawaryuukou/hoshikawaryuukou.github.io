@@ -8,7 +8,12 @@
 動態數據用單例到是無妨 但依賴方向要對
 無法單獨測試動畫 因為 view 不是被動的
 應該要很容易模擬所以 case 而不是真的用 server + 記錄檔來看 case
-slot 大獎通知?</description></item><item><title>通用設計 - Architecture - VIPER</title><link>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-architecture-viper/</link><pubDate>Fri, 19 Jan 2024 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-architecture-viper/</guid><description>簡述 VIPER (View-Interactor-Presenter-Entity-Router)
+slot 大獎通知?
+依賴 inspector 的結果
+掛一堆 Mono
+難以追蹤腳本使用
+client 的目的是要顯示數據
+以 client / Server 來說 client 沒有業務邏輯 事務腳本倒是有</description></item><item><title>通用設計 - Architecture - VIPER</title><link>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-architecture-viper/</link><pubDate>Fri, 19 Jan 2024 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-architecture-viper/</guid><description>簡述 VIPER (View-Interactor-Presenter-Entity-Router)
 iOS VIPER架構實踐(一)：從MVC到MVVM到VIPER VIPER，更清晰的架构，解决复用和测试问题的利器系列1：VIPER架构演进史 有很多種實作流派，下圖是我比較偏好的模式呈現
 VIPER 借鏡了 CA (Clean Architecture) 的思想為 MVC 提供一個新的設計方案
 Entity 對應原本的 Model Controller 責任過重 -&amp;gt; 將業務邏輯移至 Interactor 並提高重用性 Controllers 之間耦合 -&amp;gt; 將導航邏輯移至 Router Presenter 作為 Binder 將 View / Interactor / Router 整合 啟發 VIPER 是筆者學習架構路上很重要的一個過渡，有以下兩點的思想轉變
