@@ -1,21 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Architecture on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/architecture/</link><description>Recent content in Architecture on 識之箱庭</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Fri, 19 Jan 2024 21:05:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/architecture/index.xml" rel="self" type="application/rss+xml"/><item><title>通用設計 - Architecture - Player Application</title><link>https://HoshikawaRyuukou.github.io/drafts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-architecture-player-application/</link><pubDate>Fri, 19 Jan 2024 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/drafts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-architecture-player-application/</guid><description>以本次的應用來說 從server 接收資料並呈現
-基本沒有什麼 業務邏輯 就算有也是 應用邏輯
-但用 port 將 變化隔離是可行的 / fake 時也有用
-對 api 的要求如果不是對應到單畫面
-在 api 取回的資料比較雜的狀況下 則須考慮較全局的狀態管理
-沒有明確的進入點 多個 mono awake 併發
-靜態數據設定可以拉到 ScriptableObject
-動態數據用單例到是無妨 但依賴方向要對
-無法單獨測試動畫 因為 view 不是被動的
-應該要很容易模擬所以 case 而不是真的用 server + 記錄檔來看 case
-slot 大獎通知?
-依賴 inspector 的結果
-掛一堆 Mono
-難以追蹤腳本使用
-client 的目的是要顯示數據
-以 client / Server 來說 client 沒有業務邏輯 事務腳本倒是有
-典型的企業級應用程式包含許多視圖，一個視圖中發生的事件可能會影響其他視圖。 例如，單擊一個螢幕中的按鈕可能會顯示一個彈出窗口，並且可能會同時更新另一個螢幕的資料。 誰負責控制這樣的螢幕流邏輯？這應該由每個視圖的配對演示者控制嗎？
-简单来说就是数据驱动视图更新，这在单文件组件里面是没有问题的， 但是，当我们的应用遇到多个组件共享状态时，单向数据流的简洁性很容易被破坏</description></item><item><title>通用設計 - Architecture - VIPER</title><link>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-architecture-viper/</link><pubDate>Fri, 19 Jan 2024 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-architecture-viper/</guid><description>簡述 VIPER (View-Interactor-Presenter-Entity-Router)
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Architecture on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/architecture/</link><description>Recent content in Architecture on 識之箱庭</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Fri, 19 Jan 2024 21:05:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/architecture/index.xml" rel="self" type="application/rss+xml"/><item><title>通用設計 - Architecture - VIPER</title><link>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-architecture-viper/</link><pubDate>Fri, 19 Jan 2024 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/%E9%80%9A%E7%94%A8%E8%A8%AD%E8%A8%88-architecture-viper/</guid><description>簡述 VIPER (View-Interactor-Presenter-Entity-Router)
 iOS VIPER架構實踐(一)：從MVC到MVVM到VIPER VIPER，更清晰的架构，解决复用和测试问题的利器系列1：VIPER架构演进史 有很多種實作流派，下圖是我比較偏好的模式呈現
 VIPER 借鏡了 CA (Clean Architecture) 的思想為 MVC 提供一個新的設計方案
 Entity 對應原本的 Model Controller 責任過重 -&amp;gt; 將業務邏輯移至 Interactor 並提高重用性 Controllers 之間耦合 -&amp;gt; 將導航邏輯移至 Router Presenter 作為 Binder 將 View / Interactor / Router 整合 啟發 VIPER 是筆者學習架構路上很重要的一個過渡，有以下兩點的思想轉變
