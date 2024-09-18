@@ -1,5 +1,5 @@
 ---
-title: "Unity - Basic - Sprite"
+title: "Unity - Basic - Sprite and Atlas"
 date: 2023-02-20 21:11:00
 draft: false
 
@@ -19,6 +19,7 @@ tags: ["Unity"]
 - 減小包體大小
 
 ### 注意
-- 以 Sprite Atlas V1 - Always Enabled 啟用圖集時
+- Sprite Atlas V1 - Always Enabled 啟用圖集時
   - Edit Mode : reference the packed Textures
   - Play Mode : reference the original unpacked Textures
+- SpriteAtlas AssetBundle 來打包時，**不要勾選** Include In Build

@@ -42,13 +42,21 @@ tags: ["Unity"]
 - [What are EditorBuildSettings config objects used for or how can I use them?](https://forum.unity.com/threads/what-are-editorbuildsettings-config-objects-used-for-or-how-can-i-use-them.712031/)
 - [EditorBuildSettings Example](https://docs.unity.cn/cn/current/ScriptReference/EditorBuildSettings.TryGetConfigObject.html)
 
+## Material
+- [Unity中，UI反向Mask效果（图片挖洞）](https://www.jianshu.com/p/3df37c726530)
+
 ## Screen
 - [How to capture the screen in Unity (3 methods)](https://gamedevbeginner.com/how-to-capture-the-screen-in-unity-3-methods/)
+
+## Text
+- [【Unity编辑器扩展】艺术字/自定义图片字体生成工具](https://blog.csdn.net/final5788/article/details/134158552)
+- [【Unity】自作フォントを作成してTextで表示する方法](https://kyoro-s.com/unity-5/#google_vignette)
+- [Unity中自制UGUI艺术字体（位图字体）（Bitmap Font Generator）](https://blog.csdn.net/linxinfa/article/details/116561750)
 
 ## TextMeshPro
 - [TextMeshPro Anatomy](https://gametorrahod.com/textmeshpro-anatomy/)
 - [[Unity干货]使用TextMeshPro动态字体节省时间](https://www.bilibili.com/video/BV1oK411x7MG)
-
+- [【Unity】TextMesh Proで数字をスプライト表示する](https://nekojara.city/unity-textmesh-pro-sprite-number)
 
 ## UI
 - [【Unity】3つだけでいい!?覚えるべきUIアンカー](https://shibuya24.info/entry/unity-ui-anchor)

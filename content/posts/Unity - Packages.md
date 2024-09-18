@@ -1,6 +1,6 @@
 ---
 title: "Unity - Packages"
-date: 2023-08-03 21:11:00
+date: 2024-04-13 21:11:00
 draft: false
 
 tags: ["Unity"]
@@ -19,6 +19,7 @@ Scope(s):
 ```
 3. Package manager -> Packages: My Registries -> Install
 
+### Guide
 - [Unity中 .asmdef文件的作用](https://zhuanlan.zhihu.com/p/139090680)
 - [使用OpenUPM发布自己的Unity项目](https://zhuanlan.zhihu.com/p/146565975)
 - [开发Unity PackageManager 插件包](https://www.jianshu.com/p/153841d65846)
@@ -28,45 +29,43 @@ Scope(s):
 
 ---
 
+## Package Collection
+- [killop/anything_about_game](https://github.com/killop/anything_about_game/tree/b5c3b2e573d0970b318fd75b1449dbd9fdaa0ee9)
+- [baba-s/awesome-unity-open-source-on-github](https://github.com/baba-s/awesome-unity-open-source-on-github/tree/master?tab=readme-ov-file)
+
 ## Animation
-- [DOTween](http://dotween.demigiant.com/download.php#download)
 - [PrimeTween](https://github.com/KyryloKuzyk/PrimeTween)
 
 ## Async
 - [UniTask](https://github.com/Cysharp/UniTask)    
-  - [Patterns & Practices for efficiently handling C# async/await cancel processing and timeouts](https://neuecc.medium.com/patterns-practices-for-efficiently-handling-c-async-await-cancel-processing-and-timeouts-b419ce5f69a4)
-  - [精选Unity-Github开源库分享 最完美的异步操作解决方案 UniTask](https://www.bilibili.com/video/BV1NG411s7hN/?spm_id_from=333.788)
-  - [C# Task 指南](http://www.liuocean.com/2022/10/11/c-task-zhi-nan/)
-  - [async/await,disposableを使って素直で読みやすいコードを書く](https://learning.unity3d.jp/7224/)
-  - [UniTaskCompletionSource Should Support CancellationToken](https://github.com/Cysharp/UniTask/issues/81)
 
 ## Debug
 - [UnityIngameDebugConsole](https://github.com/yasirkula/UnityIngameDebugConsole)
 
 ## Dependency Injection
 - [VContainer](https://github.com/hadashiA/VContainer)  
-  - openupm - jp.hadashikick.vcontainer  
-  - [How to avoid Dependency Injection constructor madness?](https://stackoverflow.com/questions/2420193/how-to-avoid-dependency-injection-constructor-madness)
 
 ## Dialogue 
 - [YarnSpinner-Unity](https://github.com/YarnSpinnerTool/YarnSpinner-Unity) 
 
 ## Editor
-- [NaughtyAttributes](https://github.com/dbrizov/NaughtyAttributes)  
+- [NaughtyAttributes](https://github.com/dbrizov/NaughtyAttributes) 
+- [Alchemy](https://github.com/AnnulusGames/Alchemy) 
 
-## HotUpdate
+## HotFix
 - [HybridCLR](https://hybridclr.doc.code-philosophy.com/)
-- [xLua](https://github.com/Tencent/xLua)
 
 ## Localization
 - [Lean Localization](https://assetstore.unity.com/packages/tools/localization/lean-localization-28504)
 
+## Media
+- [UnityNativeCamera](https://github.com/yasirkula/UnityNativeCamera)
+
 ## Messaging 
 - [MessagePipe](https://github.com/Cysharp/MessagePipe)    
 
-## Network
-- [MagicOnion](https://github.com/Cysharp/MagicOnion)
-- [Mirror](https://github.com/MirrorNetworking/Mirror)
+## Particle Effect
+- [ParticleEffectForUGUI](https://github.com/mob-sakai/ParticleEffectForUGUI)
 
 ## Persistence
 - [PlayerPrefs Editor & Utilities](https://github.com/sabresaurus/PlayerPrefsEditor)
@@ -76,16 +75,23 @@ Scope(s):
 
 ## Rx (Reactive Extensions)
 - [UniRx](https://github.com/neuecc/UniRx)    
-  - [【Unity框架】UniRx精讲](https://www.bilibili.com/read/cv15236973)
+- [R3](https://github.com/Cysharp/R3)
 
 ## Serialization
 - [Newtonsoft.Json](https://github.com/jilleJr/Newtonsoft.Json-for-Unity/wiki/Install-official-via-UPM)
   - git - com.unity.nuget.newtonsoft-json
+
+## Sharing
+- [Unity Native Share Plugin](https://github.com/yasirkula/UnityNativeShare)
+
+## Sprite
+- [sprite-dicing](https://github.com/elringus/sprite-dicing)
 
 ## State Machine
 - [UnityHFSM](https://github.com/Inspiaaa/UnityHFSM)
 
 ## UI
 - [LoopScrollRect](https://github.com/qiankanglai/LoopScrollRect)
-  - openupm - me.qiankanglai.loopscrollrect
-  - [効率的なスクロールビューを実装するためのOSS『Loop Scroll Rect』使い方まとめ](https://light11.hatenadiary.com/entry/2022/05/16/201949)
+
+## Web
+- [UnityWebSocket](https://github.com/psygames/UnityWebSocket/tree/master)
