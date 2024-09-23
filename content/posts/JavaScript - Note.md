@@ -35,5 +35,6 @@ tags: ["JavaScript"]
 - [李钟意讲前端](https://docs.ffffee.com/)
 - [「译」内存管理碰撞课程](https://segmentfault.com/a/1190000009878588)
 - [Atomics 对象](https://www.bookstack.cn/read/es6-3rd/spilt.7.docs-arraybuffer.md)
+- [前端神器AbortController：深度解析与实战应用](https://segmentfault.com/a/1190000044787400)
 - -->
 

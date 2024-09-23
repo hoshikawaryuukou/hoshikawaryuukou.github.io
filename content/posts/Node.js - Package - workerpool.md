@@ -7,9 +7,10 @@ tags: ["Node.js"]
 ---
 
 ## Why Use It?
-
-
-
+- 整合 Web Workers 與 worker_threads，因此支援瀏覽器和 Node.js。
+- API 設計直觀(管理工作線程、訊息傳遞和錯誤處理)。
+- 實現 worker pool 管理功能。
+- 支援 Promise 與 async/await。
 
 ## Guide
 - [workerpool](https://github.com/josdejong/workerpool)
@@ -17,6 +18,7 @@ tags: ["Node.js"]
 ## Other
 - [Nest.js - Worker threads 잘 사용해보기](https://www.ryuollojy.com/articles/nest-js-worker-threads)
 - [NestJS Dependency Injection in Worker Threads](https://dev.to/zenstok/nestjs-dependency-injection-in-worker-threads-5deh)
+- [Vite Workerpool Example](https://github.com/josdejong/workerpool/blob/master/examples/vite/README.md)
 
 ## Extra
 - Atomics 

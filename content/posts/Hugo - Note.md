@@ -22,3 +22,15 @@ tags: ["Hugo"]
 - https://dwye.dev/tags/ 
 - 
 - -->
+
+
+## Quick Start
+- 至 Hugo github release 下載執行檔
+- 設置環境變數
+- hugo version
+- hugo new site MyFreshWebsite --format yaml
+- cd MyFreshWebsite
+- git init
+- git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
+- theme: ["PaperMod"]
+- hugo server
