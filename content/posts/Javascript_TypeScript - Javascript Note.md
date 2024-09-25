@@ -1,9 +1,9 @@
 ---
-title: "JavaScript - Note"
+title: "Javascript_TypeScript - Javascript Note"
 date: 2024-04-29 21:11:00
 draft: false
 
-tags: ["JavaScript"]
+tags: ["JavaScript", "TypeScript"]
 ---
 
 ## Style

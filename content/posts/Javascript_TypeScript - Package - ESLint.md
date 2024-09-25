@@ -1,9 +1,9 @@
 ---
-title: "Node.js - Package - ESLint"
+title: "Javascript_TypeScript - Package - ESLint"
 date: 2024-09-06 22:11:00
 draft: false
 
-tags: ["Node.js"]
+tags: ["JavaScript", "TypeScript"]
 ---
 
 ## Quick Chat

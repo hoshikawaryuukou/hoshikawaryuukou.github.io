@@ -1,9 +1,9 @@
 ---
-title: "Node.js - Package - Vitest"
+title: "Javascript_TypeScript - Package - Vitest"
 date: 2024-07-02 08:11:00
 draft: true
 
-tags: ["Node.js"]
+tags: ["JavaScript", "TypeScript"]
 ---
 
 ## Guide

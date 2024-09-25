@@ -1,9 +1,9 @@
 ---
-title: "Node.js - Package - Lint-staged"
+title: "Javascript_TypeScript - Package - Lint-staged"
 date: 2024-07-11 08:11:00
 draft: false
 
-tags: ["Node.js"]
+tags: ["JavaScript", "TypeScript"]
 ---
 
 ## Quick Chat

@@ -1,9 +1,9 @@
 ---
-title: "Node.js - Package - Tinybench"
+title: "Javascript_TypeScript - Package - Tinybench"
 date: 2024-07-02 08:11:00
 draft: true
 
-tags: ["Node.js"]
+tags: ["JavaScript", "TypeScript"]
 ---
 
 ## Guide
