@@ -1,9 +1,9 @@
 ---
-title: "TypeScript - tsconfig.json"
+title: "Javascript_TypeScript - tsconfig.json"
 date: 2024-08-01 21:11:00
 draft: false
 
-tags: ["TypeScript"]
+tags: ["JavaScript", "TypeScript"]
 ---
 
 ## Quick Chat

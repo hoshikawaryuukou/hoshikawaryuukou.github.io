@@ -47,3 +47,4 @@ tags: ["Finance"]
 
 ## 情報
 - [神秘金字塔 - 集保戶股權走勢圖](https://norway.twsthr.info/index.aspx)
+- [MoneyDJ理財網 - 理財、財經綜合資訊網](https://www.moneydj.com/)
