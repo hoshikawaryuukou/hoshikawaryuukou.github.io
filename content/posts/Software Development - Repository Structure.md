@@ -1,5 +1,5 @@
 ---
-title: "Software Development- Repository Structure"
+title: "Software Development - Repository Structure"
 date: 2024-08-12 21:05:00
 draft: false
 

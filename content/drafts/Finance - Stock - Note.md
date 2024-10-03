@@ -1,6 +1,6 @@
 ---
 title: "Finance - Stock - Note"
-date: 2023-09-15 20:11:00
+date: 2024-09-15 20:11:00
 draft: true
 
 tags: ["Finance"]

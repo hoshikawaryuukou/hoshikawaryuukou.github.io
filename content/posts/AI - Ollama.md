@@ -24,6 +24,7 @@ tags: ["AI"]
 ## Commands
 - ollama list : 查看以配置本地模型
 - ollama run {model} : 下載/執行模型
+- ollama ps : 展示目前載入的模型、它們所佔的記憶體大小以及所使用的處理器類型（GPU 或 CPU）
 
 ## Extra
 

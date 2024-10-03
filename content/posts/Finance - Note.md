@@ -1,7 +1,7 @@
 ---
 title: "Finance - Note"
-date: 2023-07-20 20:11:00
-draft: true
+date: 2024-09-26 20:11:00
+draft: false
 
 tags: ["Finance"]
 ---

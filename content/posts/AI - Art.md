@@ -29,3 +29,7 @@ tags: ["AI"]
 ## Extra
 - [ImgPilot](https://github.com/leptonai/imgpilot)
 - [2vXpSwA7/iroiro-lora](https://huggingface.co/2vXpSwA7/iroiro-lora/tree/main)
+
+## Stable-Diffusion - Lora-Block-Weight 
+- XERSON005:1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0
+- PERSON105:1,0,0,1,1,0,0,0,1,1,1,0,0,0,0,0,0

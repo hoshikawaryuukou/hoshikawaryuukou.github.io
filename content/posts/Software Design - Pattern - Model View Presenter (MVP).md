@@ -18,6 +18,7 @@ tags: ["Software Design", "Pattern"]
 - [MVP Pattern: Part 2 Supervising Controller](https://deltatimer.com/260/mvp-pattern-part-2-supervising-controller)
 - [Part 2 — Converting Presenters into ViewModels](https://proandroiddev.com/converting-presenters-into-viewmodels-c9279c7516e7)
 - [【Unity】MV(R)Pパターンのすすめ](https://annulusgames-lab.blogspot.com/2022/12/unity-ui-mvrp.html)
+- [Unravelling MVC, MVP and MVVM](https://www.pragmaticcoding.ca/javafx/Frameworks/)
 
 以下則對筆者實作中比較常用的 MVP 多做一些討論
 

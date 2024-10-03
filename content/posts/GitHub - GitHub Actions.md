@@ -1,7 +1,7 @@
 ---
 title: "GitHub - GitHub Actions"
-date: 2024-06-22 21:11:00
-draft: true
+date: 2024-09-09 21:11:00
+draft: false
 
 tags: ["GitHub"]
 ---
@@ -10,11 +10,5 @@ tags: ["GitHub"]
 - [GitHub Actions 文档](https://docs.github.com/zh/actions)
 - [GitHub Marketplace](https://github.com/marketplace?type=actions)
 
-<!-- 
-## Case
-- remote: Write access to repository not granted.
-- repository -> Settings -> Actions -> General -> Workflow permissions 
-- Read and write permissions 選取 
-- 
-- -->
-
+## FAQ
+- [GitHub Actions: Limit which branches can deploy to an environment](https://github.blog/changelog/2021-02-17-github-actions-limit-which-branches-can-deploy-to-an-environment/)
