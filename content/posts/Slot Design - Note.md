@@ -19,3 +19,6 @@ tags: ["Slot Design"]
 - [slotdesigner](https://slotdesigner.com/publications/)
 - [hankpan-dev/slotkit](https://github.com/hankpan-dev/slotkit)
 - [sta-ger/pokie](https://github.com/sta-ger/pokie)
+
+## Sample
+- [Casino Roulette Game](https://github.com/matiasvallejosdev/casino-roulette-game)

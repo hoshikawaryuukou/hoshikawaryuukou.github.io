@@ -72,10 +72,6 @@ Strategy = How you manage risks/get rewards
 - [《OPUS: 龍脈常歌》遊戲開發精華 — 關卡設計](https://medium.com/@sigono/opus-%E9%BE%8D%E8%84%88%E5%B8%B8%E6%AD%8C-%E9%81%8A%E6%88%B2%E9%96%8B%E7%99%BC-%E9%97%9C%E5%8D%A1%E8%A8%AD%E8%A8%88-8ab0291d209e)
 
 ## OO
-* [Matching games Memory games Pairs: Remembery](https://play.google.com/store/apps/details?id=ua.krou.remembery)
-* [鬥技場的阿利娜](https://store.steampowered.com/app/1668690/_/?l=tchinese)
-* [Webbed](https://store.steampowered.com/app/1390350/Webbed/)
-
 - 發行商:這能有多少受眾？ 
 - Steam頁面蒐集願望清單以及頁面拜訪數據
 - 由於小團隊資金沒有到太過充裕，遊戲在視覺方面選擇用比較簡單的畫面呈現。所有設計決策重點都放在避免玩家與遊戲間的摩擦，以提供流暢的體驗。
@@ -84,11 +80,6 @@ Strategy = How you manage risks/get rewards
 - [探讨服务端回合制战斗系统](https://wudaijun.com/2017/09/ngs-battle/#valine-comments)
 - [一种易扩展游戏技能系统的实现方案](https://www.shymean.com/article/%E4%B8%80%E7%A7%8D%E6%98%93%E6%89%A9%E5%B1%95%E6%B8%B8%E6%88%8F%E6%8A%80%E8%83%BD%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E6%A1%88)
 - [如何设计技能系统](http://www.liuocean.com/2023/01/07/ru-he-she-ji-ji-neng-xi-tong/)
-
-## Framework
-- [MonoGame](https://www.monogame.net/)
-- [games 104](https://games104.boomingtech.com/tc/course-list/)
-
 
 ### 參考
 - [Unity多人联机网络游戏开发都存在哪些误区？](https://www.zhihu.com/question/512125478)

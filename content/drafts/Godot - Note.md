@@ -9,3 +9,4 @@ tags: ["Godot"]
 ## Sites
 - [2dgames.jp](https://2dgames.jp/category/godot/)
 - [Giresharu](https://giresharu.fun/)
+- [GodotPlayer (β)](https://godotplayer.com/)

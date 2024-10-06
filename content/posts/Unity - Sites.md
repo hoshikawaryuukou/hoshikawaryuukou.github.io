@@ -8,12 +8,9 @@ tags: ["Unity"]
 
 ## Blog
 - [Yucchiy's Note](https://blog.yucchiy.com/) 
-
 - [コガネブログ](https://baba-s.hatenablog.com/)
 - [老刘@开发笔记](http://blog.coolcoding.cn/)
 - [(:3[kanのメモ帳]](https://kan-kikuchi.hatenablog.com/)
-
-
 - [Game Dev Beginner - Everyone Can Make Games](https://gamedevbeginner.com/)
 - [LIGHT11](https://light11.hatenadiary.com/)
 - [PG日誌](https://takap-tech.com/)
@@ -60,4 +57,3 @@ tags: ["Unity"]
 
 ## Community
 - [unityroom](https://unityroom.com/)
-
