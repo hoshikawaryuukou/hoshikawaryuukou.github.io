@@ -7,3 +7,7 @@ tags: ["JavaScript", "TypeScript"]
 ---
 
 123
+
+
+
+- [Dual Publishing ESM and CJS Modules with tsup and Are the Types Wrong?](https://johnnyreilly.com/dual-publishing-esm-cjs-modules-with-tsup-and-are-the-types-wrong)

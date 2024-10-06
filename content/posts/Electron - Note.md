@@ -48,3 +48,9 @@ Electron 的進程機制主要由兩個部分組成：**主進程(Main Process)*
 ### ipcRenderer 
 - 渲染進程模組，用來處理進程間通信的模組，
 - 不要直接在網頁中使用 ipcRenderer，而是通過 preload 腳本中的 contextBridge 暴露安全的 API 給渲染進程。
+
+<!-- ### Others
+- [利用 electron.js 建立桌面 APP ( Windows )](https://hackmd.io/@c36ICNyhQE6-iTXKxoIocg/BJXGRjI4I) 
+- [Electron和Vite结合的一些思考](https://blog.csdn.net/2301_79959413/article/details/134029388)
+- [lx-music-desktop](https://github.com/lyswhut/lx-music-desktop)
+- -->

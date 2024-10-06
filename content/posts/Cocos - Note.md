@@ -8,6 +8,7 @@ tags: ["Cocos"]
 
 ## Guide
 - [cocos creator零基础教学](https://www.youtube.com/playlist?list=PLBJYWvMyUqL8JXx7H516oCyF5j6sv-Ru3)
+- [Cocos-siki学院](https://space.bilibili.com/3546653680208125)
 
 ## Framework
 - [oops-framework](https://github.com/dgflash/oops-framework)
