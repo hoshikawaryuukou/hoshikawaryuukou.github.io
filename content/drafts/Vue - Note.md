@@ -45,14 +45,12 @@ pnpm add -D prettier eslint-plugin-prettier
 @vue/eslint-config-prettier
 ```
 
-## Pinia
-
-## UI Framework
-
-
-
-
-
+## Other
+- [Mokurenのアーキテクチャを再考案してみた(クリーンアーキテクチャ参考)](https://qiita.com/imajoriri/items/fb72abef0bab62f6d725)
+- [Implementing Clean Architecture in a Vue.js Application](https://medium.com/@victormisiko.vm/implementing-clean-architecture-in-a-vue-js-application-fd23b33ef488)
+- [vue-clean-architecture](https://github.com/smotastic/vue-clean-architecture)
+- [react-clean-architecture-sample](https://github.com/drumnistnakano/react-clean-architecture-sample?tab=readme-ov-file)
+- [vue-shopping-clean-architecture](https://github.com/thanhchungbtc/vue-shopping-clean-architecture)
 
 
 

@@ -53,4 +53,7 @@ Electron 的進程機制主要由兩個部分組成：**主進程(Main Process)*
 - [利用 electron.js 建立桌面 APP ( Windows )](https://hackmd.io/@c36ICNyhQE6-iTXKxoIocg/BJXGRjI4I) 
 - [Electron和Vite结合的一些思考](https://blog.csdn.net/2301_79959413/article/details/134029388)
 - [lx-music-desktop](https://github.com/lyswhut/lx-music-desktop)
+- [Advanced Electron.js architecture](https://blog.logrocket.com/advanced-electron-js-architecture/)
+- [Electron](https://juejin.cn/column/7163875758572568612)
+- 
 - -->
