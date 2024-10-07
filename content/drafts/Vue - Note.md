@@ -30,13 +30,8 @@ tags: ["Vue"]
 ### lint
 - [eslint-plugin-vue](https://eslint.vuejs.org/)
 
-
-
-
-
 ## Debug
 - [Microsoft Edge 浏览器中 Vue.js devtools 插件安装与使用](https://www.cnblogs.com/lixuelong/p/14415664.html)
-
 
 ```bash
 pnpm create vite
