@@ -7,12 +7,16 @@ tags: ["Electron"]
 ---
 
 ## Guide
+- [Build cross-platform desktop apps with JavaScript, HTML, and CSS | Electron](https://www.electronjs.org/)
 - [electron-builder](https://www.electron.build/)
 - [Electron学习指引](https://muyacode.github.io/FrontEndLearnNotes/Document/%E8%B7%A8%E5%B9%B3%E5%8F%B0%E6%A1%8C%E9%9D%A2%E7%AB%AF%E5%BC%80%E5%8F%91/Electron/Guide)
 - [awesome-electron](https://github.com/sindresorhus/awesome-electron)
 - [awesome-electron-alternatives](https://github.com/sudhakar3697/awesome-electron-alternatives)
 
-## Core - Process
+## Core Spirit
+Electron 是一個使用 JavaScript、HTML 和 CSS + Native Api 做相容多個系統（Windows、Linux、Mac）的桌面應用程式構建框架 —— 不需要本地開發經驗。
+
+## Basic - Process
 
 Electron 的進程機制主要由兩個部分組成：**主進程(Main Process)** 和 **渲染進程(Renderer Process)**。
 
@@ -22,7 +26,7 @@ Electron 的進程機制主要由兩個部分組成：**主進程(Main Process)*
 - 主進程的權限非常高，它可以調用 Node.js 提供的所有 API，也可以與操作系統進行交互(例如：檔案系統操作、創建子進程、打開原生對話框) 。
 - 主進程負責創建和管理應用中的所有窗口(BrowserWindow) ，並能夠與渲染進程進行通信。
 
-###  渲染進程 (Renderer Process) 
+### 渲染進程 (Renderer Process) 
 - 每個應用窗口都是一個獨立的渲染進程，負責渲染網頁內容(HTML、CSS、JavaScript) 。
 - 渲染進程本質上是運行在 Chromium 引擎中的網頁環境，它擁有與一般瀏覽器類似的行為和限制。
 - 渲染進程的權限較低，為了安全起見，它無法直接訪問 Node.js 的全部 API，但可以通過 Electron 的 contextBridge 和 ipcRenderer 與主進程通信。
@@ -33,7 +37,7 @@ Electron 的進程機制主要由兩個部分組成：**主進程(Main Process)*
 - 渲染進程使用 ipcRenderer 發送消息給主進程，而主進程使用 ipcMain 接收和回應這些消息。反之，主進程也可以向渲染進程發送消息。
 - Electron 提供的 contextBridge 和 preload 腳本讓渲染進程能安全地與主進程進行通信，避免直接暴露過多的 Node.js API，從而提高應用的安全性。
 
-## Core - Module
+## Basic - Module
 
 ### app
 - 主進程模組，用來控制整個應用的生命周期。它包含了一系列的事件和方法，用於管理應用的初始化、運行、退出等流程。
@@ -49,11 +53,16 @@ Electron 的進程機制主要由兩個部分組成：**主進程(Main Process)*
 - 渲染進程模組，用來處理進程間通信的模組，
 - 不要直接在網頁中使用 ipcRenderer，而是通過 preload 腳本中的 contextBridge 暴露安全的 API 給渲染進程。
 
+## Extra - Context
+- 使用 Electron 將現有的前端專案包裝成桌面端應用
+- 使用 Electron 基於前端技術開發桌面端應用
+
 <!-- ### Others
 - [利用 electron.js 建立桌面 APP ( Windows )](https://hackmd.io/@c36ICNyhQE6-iTXKxoIocg/BJXGRjI4I) 
 - [Electron和Vite结合的一些思考](https://blog.csdn.net/2301_79959413/article/details/134029388)
 - [lx-music-desktop](https://github.com/lyswhut/lx-music-desktop)
 - [Advanced Electron.js architecture](https://blog.logrocket.com/advanced-electron-js-architecture/)
 - [Electron](https://juejin.cn/column/7163875758572568612)
+- [禹神：一小时快速上手Electron，前端Electron开发教程，笔记。一篇文章入门Electron](https://blog.csdn.net/qq_33650655/article/details/140364298#:~:text=Electron%E6%98%AF%E4%B8%80)
 - 
 - -->
