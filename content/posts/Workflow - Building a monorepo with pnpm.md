@@ -28,14 +28,21 @@ project-root/               # 專案根目錄
 ## 新增 專案內全局配置 ./package.json 
 ```bash
 # 產生一個基本的 package.json
-pnpm init       
+pnpm init    
+```
+
+- monorepo 的全局 package.json 設置 `"private": true` 
+```json
+{
+  "private": true,
+}
 ```
 
 ## 新增 工作區配置文件 ./pnpm-workspace.yaml
 - 該檔案聲明這是一個 Monorepo 專案。
-- 工作區下的 package 會有各自的 package.json。
 - `pnpm install` 自動安裝所有 package 的相依套件。
 - `packages` 字段列出了工作區包含的 package 位置。
+- 工作區下的 package 會有各自的 package.json。
 
 ```yaml
 packages:
