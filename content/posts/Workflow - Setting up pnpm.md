@@ -1,9 +1,9 @@
 ---
-title: "Workflow - Set up pnpm"
+title: "Workflow - Setting up pnpm"
 date: 2024-10-06 20:21:00
 draft: false
 
-tags: ["Node.js"]
+tags: ["Workflow", "Node.js", "pnpm"]
 ---
 
 ## 全域安裝

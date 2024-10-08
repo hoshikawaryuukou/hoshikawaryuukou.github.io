@@ -1,9 +1,9 @@
 ---
-title: "Workflow - Publish a private npm package to Github Packages"
+title: "Workflow - Publishing a private npm package to Github Packages"
 date: 2024-10-06 20:11:00
 draft: false
 
-tags: ["Github", "Node.js"]
+tags: ["Workflow", "Github", "Node.js"]
 ---
 
 ## Requirement

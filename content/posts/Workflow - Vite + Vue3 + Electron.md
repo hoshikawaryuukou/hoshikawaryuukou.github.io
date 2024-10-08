@@ -3,7 +3,7 @@ title: "Workflow - Vite + Vue3 + Electron"
 date: 2024-09-28 20:11:00
 draft: false
 
-tags: ["Vite", "Vue", "Electron"]
+tags: ["Workflow", "Vite", "Vue", "Electron"]
 ---
 
 ## Step 1: 準備一個 Vite + Vue3 專案
