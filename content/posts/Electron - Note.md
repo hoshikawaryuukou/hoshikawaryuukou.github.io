@@ -6,6 +6,9 @@ draft: false
 tags: ["Electron"]
 ---
 
+## Core Spirit
+Electron 是一個使用 JavaScript、HTML 和 CSS + Native Api 做相容多個系統（Windows、Linux、Mac）的桌面應用程式**構建**框架 —— 不需要本地開發經驗。
+
 ## Guide
 - [Build cross-platform desktop apps with JavaScript, HTML, and CSS | Electron](https://www.electronjs.org/)
 - [electron-builder](https://www.electron.build/)
@@ -13,8 +16,14 @@ tags: ["Electron"]
 - [awesome-electron](https://github.com/sindresorhus/awesome-electron)
 - [awesome-electron-alternatives](https://github.com/sudhakar3697/awesome-electron-alternatives)
 
-## Core Spirit
-Electron 是一個使用 JavaScript、HTML 和 CSS + Native Api 做相容多個系統（Windows、Linux、Mac）的桌面應用程式構建框架 —— 不需要本地開發經驗。
+## Suggestion
+
+官方 quick-start
+- [electron/electron-quick-start](https://github.com/electron/electron-quick-start)
+
+🤓 強烈建議第一次接觸 Electron 的開發者實際走一次官方 quick-start，會對 Electron 的本質有更純粹的認識。再逐步的嘗試以下機制 :
+- 用 BrowserWindow 再額外創建一個窗口。
+- 用 ipcMain/ipcRenderer 來達到進程間交互。
 
 ## Basic - Process
 
@@ -53,9 +62,6 @@ Electron 的進程機制主要由兩個部分組成：**主進程(Main Process)*
 - 渲染進程模組，用來處理進程間通信的模組，
 - 不要直接在網頁中使用 ipcRenderer，而是通過 preload 腳本中的 contextBridge 暴露安全的 API 給渲染進程。
 
-## Extra - Context
-- 使用 Electron 將現有的前端專案包裝成桌面端應用
-- 使用 Electron 基於前端技術開發桌面端應用
 
 <!-- ### Others
 - [利用 electron.js 建立桌面 APP ( Windows )](https://hackmd.io/@c36ICNyhQE6-iTXKxoIocg/BJXGRjI4I) 
