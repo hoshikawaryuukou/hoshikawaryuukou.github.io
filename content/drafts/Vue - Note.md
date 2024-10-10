@@ -6,14 +6,10 @@ draft: true
 tags: ["Vue"]
 ---
 
-## Books
+## Guide
 - [从零开始学习Vue3核心技术知识](https://space.bilibili.com/327247876/channel/collectiondetail?sid=636182)
 - [Vue3 入门指南与实战案例](https://vue3.chengpeiquan.com/)
-
-## Guide
-- [Vue.js 手牽手，一起嗑光全家桶](https://www.youtube.com/playlist?list=PLEfh-m_KG4dYor8h4Hi2lqKJ0xqNTFh16)
-
-## Repo
+- [made with vue.js](https://madewithvuejs.com/)
 - [awesome-vue](https://github.com/vuejs/awesome-vue)
 
 ## Projects
