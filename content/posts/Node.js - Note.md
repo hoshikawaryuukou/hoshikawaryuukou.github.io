@@ -6,9 +6,6 @@ draft: false
 tags: ["Node.js"]
 ---
 
-<!-- ## Electron  -->
-<!-- - [详解 Electron 打包](https://juejin.cn/post/7250085815430430781?searchId=20240515124127171BD73281704381DFB2) -->
-
 ## Guide
 - [Node.js究竟是什么？初学者指南](https://zhuanlan.zhihu.com/p/648238863)
 - [coreybutler/nvm-windows](https://github.com/coreybutler/nvm-windows)
@@ -25,8 +22,6 @@ tags: ["Node.js"]
 - [Worker Threads : Multitasking in NodeJS](https://medium.com/@manikmudholkar831995/worker-threads-multitasking-in-nodejs-6028cdf35e9d)
 - [Node.js Worker Threads Vs. Child Processes: Which one should you use?](https://amplication.com/blog/nodejs-worker-threads-vs-child-processes-which-one-should-you-use)
 
-## Vite
-- [Vite 是什麼? 為什麼要用 Vite? 它解決了哪些問題? 又是如何解決?](https://www.explainthis.io/zh-hant/swe/what-is-vite)
 
 <!-- 
 - [Clean and Adaptive Node.js Architecture with TypeScript](https://blog.bitsrc.io/a-clean-and-adaptive-nodejs-architecture-with-typescript-b144c1735447) 
