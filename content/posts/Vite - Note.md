@@ -1,7 +1,7 @@
 ---
 title: "Vite - Note"
-date: 2024-08-23 20:11:00
-draft: true
+date: 2024-10-11 20:11:00
+draft: false
 
 tags: ["Vite"]
 ---
@@ -15,3 +15,4 @@ tags: ["Vite"]
 - [在 Vite 專案中按需引入檔案，並自訂 chunk 分割代碼](https://muki.tw/vite-lazyload-router-manual-chunk-gzip/)
 - [使用 vite 开发和构建 nodejs 应用 - rxliuli blog](https://blog.rxliuli.com/p/49fb661c297b4544a208ea898c77e5a0/)
 - [vite-node](https://github.com/vitest-dev/vitest/tree/main/packages/vite-node)
+- [Vite Library submodules 專案設置 for Typescript](https://medium.com/codememo/vite-library-submodules-%E5%B0%88%E6%A1%88%E8%A8%AD%E7%BD%AE-for-typescript-ce02d5f229d5)

@@ -21,6 +21,11 @@ tags: ["Node.js"]
 - [chalk](https://github.com/chalk/chalk)
 - [cli-table3](https://github.com/cli-table/cli-table3)
 - [tsx: 替代 node 指令、支持运行 TypeScript & ESM 的 CLI 程序](https://www.bilibili.com/read/cv27094154/)
+- [console-table-printer](https://www.npmjs.com/package/console-table-printer)
+
+## Git
+- [degit](https://github.com/Rich-Harris/degit)
+  - [degit简介](https://www.cnblogs.com/Merrys/p/16900767.html)
 
 ## IO
 - [rimraf](https://github.com/isaacs/rimraf)
@@ -38,5 +43,3 @@ tags: ["Node.js"]
 ## Validation 
 - [zod](https://github.com/colinhacks/zod)
 
-<!-- ## Other
-- [console-table-printer](https://www.npmjs.com/package/console-table-printer) -->

@@ -9,6 +9,9 @@ tags: ["AI"]
 ## Guide
 - [一小時略懂 AI｜GPT、Sora、Diffusion model、類器官智慧OI、圖靈測試、人工智慧史](https://www.youtube.com/watch?v=eraWvfD_Ihg)
 
+## News
+- [AIbase基地 - 让更多人看到未来 通往AGI之路](https://www.aibase.com/zh/)
+
 ## Audio
 - Suno AI
 
