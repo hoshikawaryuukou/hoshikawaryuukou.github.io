@@ -1,6 +1,6 @@
 ---
-title: "Javascript_TypeScript - tsconfig.json"
-date: 2024-08-01 21:11:00
+title: "Javascript_TypeScript - TypeScript - tsconfig.json"
+date: 2024-10-12 08:11:00
 draft: false
 
 tags: ["JavaScript", "TypeScript"]
@@ -41,7 +41,26 @@ npm install -D @tsconfig/node20
 }
 ```
 
-## Monorepo 相關參數
+## 型別導出
+```json
+{
+  "compilerOptions": {
+    "declaration": true,
+    "declarationMap": true,
+    "emitDeclarationOnly": true,
+    "outDir": "./dist",
+  },
+  "exclude": ["tests/**/*"],
+  "include": ["src/**/*"]
+}
+```
+- **declaration**：是否生成對應的 **.d.ts** 檔案，用來描述編譯後的 JavaScript 的型別資訊。
+- **declarationMap**：會為 **.d.ts** 檔案生成對應的 **.d.ts.map** 檔案，使得編譯後的型別定義可以追溯到原始 TypeScript 代碼。
+- **emitDeclarationOnly**：TypeScript 只會生成 **.d.ts** 型別檔案，不會生成對應的 JavaScript 檔案。
+- **outDir**：指定了編譯器應該將生成的 JavaScript 和型別定義檔案輸出到的目錄。
+- **exclude/include**：控制哪些檔案會被包含在編譯過程中。這會間接影響型別的導出，因為只有被包含的檔案才會生成 .d.ts 型別定義檔。
+
+## Monorepo 
 ```json
 {
   "compilerOptions": {

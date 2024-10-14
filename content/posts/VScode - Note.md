@@ -19,3 +19,4 @@ tags: ["VScode"]
 
 ## Extensions
 - Code Runner
+- [:emojisense:](https://marketplace.visualstudio.com/items?itemName=bierner.emojisense)
