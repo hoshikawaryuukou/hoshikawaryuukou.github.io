@@ -20,6 +20,7 @@ tsc -p tsconfig.build.json
 ## Guide
 - [tsconfig.json 是什麼](https://www.typescriptlang.org/zh/docs/handbook/tsconfig-json.html)
 - [TSConfig Reference](https://www.typescriptlang.org/tsconfig/)
+- [tsc性能优化 -- Project References](https://juejin.cn/post/7165429078470688781)
 
 ## 基底 tsconfig
 Node 20 推薦的 tsconfig.json

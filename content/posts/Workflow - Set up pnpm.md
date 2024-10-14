@@ -1,5 +1,5 @@
 ---
-title: "Workflow - Setting up pnpm"
+title: "Workflow - Set up pnpm"
 date: 2024-10-06 20:21:00
 draft: false
 

@@ -1,5 +1,5 @@
 ---
-title: "Workflow - Building a monorepo with pnpm"
+title: "Workflow - Create a monorepo with pnpm workspace"
 date: 2024-10-06 20:31:00
 draft: false
 
@@ -12,6 +12,7 @@ tags: ["Workflow", "Node.js", "pnpm", "Monorepo"]
 - [Monorepo？來聊聊另一種專案管理架構吧！](https://israynotarray.com/other/20240413/3177435894/)
 - [从npm版本依赖到Monorepo大仓项目](https://qborfy.com/today/20230107.html)
 - [MonoRepo实战：pnpm+nx搭建MonoRepo项目](https://qborfy.com/today/20230225.html)
+- [Create a monorepo using PNPM workspace](https://dev.to/vinomanick/create-a-monorepo-using-pnpm-workspace-1ebn)
 
 ## 專案基本結構
 

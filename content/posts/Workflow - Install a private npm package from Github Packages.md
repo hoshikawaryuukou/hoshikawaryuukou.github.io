@@ -1,5 +1,5 @@
 ---
-title: "Workflow - Installing a private npm package from Github Packages"
+title: "Workflow - Install a private npm package from Github Packages"
 date: 2024-10-06 20:12:00
 draft: false
 

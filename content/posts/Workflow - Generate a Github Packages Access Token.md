@@ -1,5 +1,5 @@
 ---
-title: "Workflow - Generating a Github Packages Access Token"
+title: "Workflow - Generate a Github Packages Access Token"
 date: 2024-10-06 20:13:00
 draft: false
 
