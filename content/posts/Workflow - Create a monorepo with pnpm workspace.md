@@ -13,6 +13,9 @@ tags: ["Workflow", "Node.js", "pnpm", "Monorepo"]
 - [从npm版本依赖到Monorepo大仓项目](https://qborfy.com/today/20230107.html)
 - [MonoRepo实战：pnpm+nx搭建MonoRepo项目](https://qborfy.com/today/20230225.html)
 - [Create a monorepo using PNPM workspace](https://dev.to/vinomanick/create-a-monorepo-using-pnpm-workspace-1ebn)
+- [从构建到发布：Monorepo 的最佳实践](https://juejin.cn/post/7210310775276716092?searchId=20241003162352CA6A9111EA17F1CC615A)
+- [TSTemplateMonorepo](https://github.com/Bernankez/TSTemplateMonorepo)
+
 
 ## 專案基本結構
 

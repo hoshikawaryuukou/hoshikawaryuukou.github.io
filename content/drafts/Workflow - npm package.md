@@ -6,11 +6,6 @@ draft: true
 tags: ["Vue"]
 ---
 
-## Guide
-- [为什么是 tsup](https://www.modyqyw.top/blogs/2022/12/why-tsup)
-
-
-
 # Others
 - [开发一个 npm 库应该做哪些工程配置？](https://juejin.cn/post/7240461753934889021)
 - [How to Create a Hybrid NPM Module for ESM and CommonJS.](https://www.sensedeep.com/blog/posts/2021/how-to-create-single-source-npm-module.html)
