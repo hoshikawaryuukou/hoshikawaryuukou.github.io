@@ -92,8 +92,8 @@ pnpm add -D simple-git-hooks
 **package.json**
 ```json
 {
-  "scripts": {
-    "postinstall": "simple-git-hooks",
+  "simple-git-hooks": {
+    "pre-commit": "echo 'before commit'"
   }
 }
 ```

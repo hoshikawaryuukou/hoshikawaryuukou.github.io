@@ -22,3 +22,7 @@ tags: ["Git"]
 ## Operation
 - [git revert 是如何让你丢失代码的？](https://www.bilibili.com/video/BV1S4421f7MS)
 - [十分钟学会常用git撤销操作，全面掌握git的时光机](https://www.youtube.com/watch?v=ol7CMoJuAvI)
+
+## git hook
+- git hook 是每次執行 git 操作時都會運行的命令或腳本。
+- 如果 git hook 的執行失敗，則 git 操作將中止。
