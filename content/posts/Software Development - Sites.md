@@ -18,6 +18,7 @@ tags: ["Software Development"]
 ## Developer Blog
 - [CyberAgent Developers Blog | サイバーエージェント デベロッパーズブログ](https://developers.cyberagent.co.jp/blog/)
 - [SELECK [セレック] |デジタル人材のためのメディア](https://seleck.cc/)
+- [every Tech Blog](https://tech.every.tv/)
 - [tangly llc Blog | tangly Components](https://blog.tangly.net/blog/)
 - [CodeOpinion](https://codeopinion.com/)
 - [Khalil Stemmler | Become a confident crafter. Learn to write testable, scalable TypeScript.](https://khalilstemmler.com/)
