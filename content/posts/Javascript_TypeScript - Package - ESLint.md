@@ -1,6 +1,6 @@
 ---
 title: "Javascript_TypeScript - Package - ESLint"
-date: 2024-09-06 22:11:00
+date: 2024-10-17 22:11:00
 draft: false
 
 tags: ["JavaScript", "TypeScript"]
