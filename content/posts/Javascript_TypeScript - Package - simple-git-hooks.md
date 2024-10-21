@@ -22,6 +22,8 @@ pnpm add -D simple-git-hooks
 ## Usage
 
 ### 添加命令至 package.json
+
+- [githooks](https://git-scm.com/docs/githooks)
 ```json
 {
   "simple-git-hooks": {
@@ -43,4 +45,14 @@ pnpx simple-git-hooks
 - 開啟 git bash 
 ```bash
 - git commit -m "你的 commit 訊息" --no-verify
+```
+
+## Sample
+```json
+{
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged && pnpm check",
+    "commit-msg": "node scripts/verify-commit.js"
+  }
+}
 ```

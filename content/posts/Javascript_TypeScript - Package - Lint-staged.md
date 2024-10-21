@@ -1,5 +1,5 @@
 ---
-title: "Javascript_TypeScript - Package - Lint-staged"
+title: "Javascript_TypeScript - Package - lint-staged"
 date: 2024-07-11 08:11:00
 draft: false
 
@@ -7,23 +7,26 @@ tags: ["JavaScript", "TypeScript"]
 ---
 
 ## Quick Chat
-lint-staged 可以只對 git staged 的檔案執行 lint 檢查，進而提升檢查效率。
+lint-staged 可以只對 git staged 的檔案執行 lint 處理，進而提升檢查效率。
 
 ## Guide
 - [lint-staged](https://github.com/lint-staged/lint-staged#installation-and-setup)
 
-> 值得注意的是跟 Prettier 搭配使用，必須確保 ESLint 在 Prettier 前面先執行。
+## Notice
+- ⚠️ 這裡與 simple-git-hooks 搭配使用
+- ⚠️ 跟 Prettier 搭配使用，必須確保 ESLint 在 Prettier 前面先執行
 
 ## Install
 ```bash
-npm install --save-dev lint-staged
+pnpm add -D lint-staged
 ```
-## Configuration - package.json
+
+## Usage
+
+### 添加命令至 package.json
+
 ```json
 {
-  "scripts": {
-    ...
-  },
   "lint-staged": {
     "*.{ts,js}": [
       "eslint"
@@ -32,7 +35,22 @@ npm install --save-dev lint-staged
 }
 ```
 
-## Configuration - .husky/pre-commit
+### 執行
 ```
-npx lint-staged
+pnpm lint-staged 
+```
+
+## Sample
+```json
+{
+  "lint-staged": {
+    "*.{js,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "eslint --fix",
+      "prettier --parser=typescript --write"
+    ]
+  }
+}
 ```
