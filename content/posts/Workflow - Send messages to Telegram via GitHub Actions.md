@@ -1,7 +1,7 @@
 ---
 title: "Workflow - Send messages to Telegram via GitHub Actions"
 date: 2024-10-19 19:11:00
-draft: true
+draft: false
 
 tags: ["Workflow", "git", "Github", "Telegram"]
 ---
