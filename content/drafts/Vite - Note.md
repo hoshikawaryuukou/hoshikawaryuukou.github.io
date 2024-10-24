@@ -1,7 +1,7 @@
 ---
 title: "Vite - Note"
 date: 2024-10-11 09:11:00
-draft: false
+draft: true
 
 tags: ["Vite"]
 ---

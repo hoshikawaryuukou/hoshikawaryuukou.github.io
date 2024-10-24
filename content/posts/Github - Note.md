@@ -13,5 +13,24 @@ tags: ["Github"]
 ## Collaboration
 - [十分钟学会正确的github工作流，和开源作者们使用同一套流程](https://www.youtube.com/watch?v=uj8hjLyEBmU)
 
+## GitHub Actions
+- [GitHub Actions 文档](https://docs.github.com/zh/actions)
+- [GitHub Marketplace](https://github.com/marketplace?type=actions)
+- [GitHub Actions: Limit which branches can deploy to an environment](https://github.blog/changelog/2021-02-17-github-actions-limit-which-branches-can-deploy-to-an-environment/)
 <!-- ## Other
-- [GitHub上 | 塞萊克](https://seleck.cc/tag/github/) -->
+- [JenkinsからGitHub Actionsへの移行で実現したマルチプラットフォームCIの改善](https://tech-blog.cluster.mu/entry/2024/07/05) -->
+
+## GitHub Packages
+- [GitHub Packages 文档](https://docs.github.com/zh/packages)
+<!-- 
+- [如何使用GitHub Packages创建npm私有库](https://www.clcoder.com/2019/12/31/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8GitHub%20Packages%E5%88%9B%E5%BB%BAnpm%E7%A7%81%E6%9C%89%E5%BA%93/)
+- [发布 Node.js 包](https://docs.github.com/zh/actions/publishing-packages/publishing-nodejs-packages)
+- [使用 github actions 实现 npm 包自动化发布](https://segmentfault.com/a/1190000040982624)
+- [github私人仓库如何分享](https://worktile.com/kb/ask/526171.html) 
+- 
+- -->
+
+<!-- ## Other
+- [GitHub上 | 塞萊克](https://seleck.cc/tag/github/) 
+- 
+- -->
