@@ -15,10 +15,9 @@ tags: ["Workflow", "Node.js", "pnpm", "Monorepo"]
 - [Create a monorepo using PNPM workspace](https://dev.to/vinomanick/create-a-monorepo-using-pnpm-workspace-1ebn)
 - [从构建到发布：Monorepo 的最佳实践](https://juejin.cn/post/7210310775276716092?searchId=20241003162352CA6A9111EA17F1CC615A)
 - [TSTemplateMonorepo](https://github.com/Bernankez/TSTemplateMonorepo)
-
+- [pnpm monorepo 搭建工具库](https://juejin.cn/post/7338268608324681747)
 
 ## 專案基本結構
-
 ```bash
 project-root/               # 專案根目錄
 ├── pnpm-workspace.yaml     # pnpm 的工作區配置文件，用來定義哪些資料夾屬於工作區範圍

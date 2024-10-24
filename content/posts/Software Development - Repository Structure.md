@@ -3,7 +3,7 @@ title: "Software Development - Repository Structure"
 date: 2024-08-12 21:05:00
 draft: false
 
-tags: ["Software Development", "Monorepo"]
+tags: ["Software Development", "monorepo"]
 ---
 
 ## Quick Chat
@@ -21,18 +21,25 @@ tags: ["Software Development", "Monorepo"]
 ## Guide
 - [monorepo-vs-polyrepo](https://github.com/joelparkerhenderson/monorepo-vs-polyrepo)
 - [你很常聽到 monorepo，但為什麼要用 monorepo?](https://www.explainthis.io/zh-hant/swe/why-use-monorepo)
+- [PolyrepoからMonorepoへ移行する](https://zenn.dev/kkoudev/articles/3963065a2ffa26)
 
-## Monorepo
+## 策略
+- **monolith**: 當專案需要保持單一應用程式的完整性，所有功能都被打包在一起，且較少外部依賴。
+- **monorepo**: 當多個專案需要高度共享資源或密切合作，如共用許多元件、工具或模組的情況下。
+- **polyrepo**: 功能差異大、專案之間關聯性不強或不需要彼此干擾的情況下。每個專案獨立運行，較少相互依賴。
+
+## monolith 
+
+## polyrepo
+
+## monorepo
 - [Managing a full-stack, multipackage monorepo using pnpm](https://blog.logrocket.com/managing-full-stack-monorepo-pnpm/)
 - [Live types in a TypeScript monorepo](https://colinhacks.com/essays/live-types-typescript-monorepo)
 - [Building a Typescript + NodeJS Monorepo in 2024](https://www.gfor.rest/blog/node-ts-monorepo)
 
-
 ### 特色
 - 👍 package 使用相同版本 **依賴/設定檔/風格**。
 - ⚠️ package 權限控管需仰賴其他工作流。
-
-
 
 
 
