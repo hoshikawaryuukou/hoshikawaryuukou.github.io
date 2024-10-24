@@ -23,9 +23,6 @@ tags: ["Vue"]
 - [Vue3+Ts+Pnpm+eslint9.0+Prettier+Stylelint+vant(移动/h5)项目搭建记录](https://juejin.cn/post/7379818614361325578#heading-6)
 - [ESLint 9 Flat 配置教程](https://dev.to/aolyang/eslint-9-flat-config-tutorial-2bm5)
 
-### lint
-- [eslint-plugin-vue](https://eslint.vuejs.org/)
-
 ## Debug
 - [Microsoft Edge 浏览器中 Vue.js devtools 插件安装与使用](https://www.cnblogs.com/lixuelong/p/14415664.html)
 
@@ -42,6 +39,7 @@ pnpm add -D prettier eslint-plugin-prettier
 - [vue-clean-architecture](https://github.com/smotastic/vue-clean-architecture)
 - [react-clean-architecture-sample](https://github.com/drumnistnakano/react-clean-architecture-sample?tab=readme-ov-file)
 - [vue-shopping-clean-architecture](https://github.com/thanhchungbtc/vue-shopping-clean-architecture)
+- [Vue Fes Japan 2024に現地参加したイベントレポート](https://note.com/smartround/n/nd500585d0755)
 
 
 
