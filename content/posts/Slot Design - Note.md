@@ -16,9 +16,12 @@ tags: ["Slot Design"]
 - [抽卡体验设计：关于盲盒、抽卡、开箱的一切](https://zhuanlan.zhihu.com/p/695913395)
 
 ## Framework
-- [slotdesigner](https://slotdesigner.com/publications/)
+- [Publications | Slot Designer](https://slotdesigner.com/publications/)
 - [hankpan-dev/slotkit](https://github.com/hankpan-dev/slotkit)
 - [sta-ger/pokie](https://github.com/sta-ger/pokie)
 
 ## Sample
 - [Casino Roulette Game](https://github.com/matiasvallejosdev/casino-roulette-game)
+
+## Spotlight
+- [Pixel Farm by Twist Gaming](https://www.youtube.com/watch?v=-pmN4vJxpIs)
