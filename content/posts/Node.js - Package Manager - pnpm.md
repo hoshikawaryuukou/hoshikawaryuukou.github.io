@@ -40,8 +40,7 @@ Set-ExecutionPolicy RemoteSigned
 - pnpm env use --global {version} : 安裝並使用指定版本
 - pnpm env add --global {version} : 僅安裝指定版本
 - pnpm env remove --global {version} : 移除指定版本
-- pnpm env list : 列舉本地所有版本
-- pnpm env list : 列出線上可用的版本
+- pnpm env list --remote : 列出線上可用的版本
 
 ### packages
 - pnpm add `<pkg>` : 添加依賴

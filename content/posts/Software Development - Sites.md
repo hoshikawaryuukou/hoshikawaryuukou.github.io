@@ -8,7 +8,7 @@ tags: ["Software Development"]
 
 ## Developer Community
 - [稀土掘金](https://juejin.cn/)
-- [Zenn](zenn.dev)
+- [Zenn](https://zenn.dev)
 - [Qitta](https://qiita.com/)
 
 ## Developer Guide

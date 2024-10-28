@@ -6,9 +6,12 @@ draft: false
 tags: ["Workflow", "Template"]
 ---
 
+## Structure
+
 ```bash
 project-root/              
 ├── pnpm-workspace.yaml    
+├── scripts/
 ├── apps/ 
 |   ├── cli/ 
 |   ├── web/ 
@@ -16,9 +19,13 @@ project-root/
 └── packages/              
     ├── pkg01/             
     └── pkg02/            
-
 ```
 
-apps 視為終端，因為每個子資料夾代表一個最終的應用場景，無論是命令行、網頁還是桌面應用，這些都作為最終產品或服務的輸出點。
+### scripts
+- 全域工作區命令。
 
-packages 使它們更專注於封裝和共享具體的功能模組，為各個終端應用提供支援。
+### apps
+- 每個子資料夾代表一個最終的應用場景(終端)。
+
+### packages
+- 專注於封裝和共享具體的功能模組，為各個終端應用提供支援。
