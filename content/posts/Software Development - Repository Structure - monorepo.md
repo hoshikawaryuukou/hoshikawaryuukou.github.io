@@ -19,3 +19,4 @@ tags: ["Software Development", "monorepo"]
 - [bakeruk/modern-typescript-monorepo-example](https://github.com/bakeruk/modern-typescript-monorepo-example)
 - [firxworx/fx-pnpm-monorepo-starter](https://github.com/firxworx/fx-pnpm-monorepo-starter)
 - [limuen/monorepo-project](https://github.com/limuen/monorepo-project)
+- [ixahmedxi/orbitkit](https://github.com/ixahmedxi/orbitkit)

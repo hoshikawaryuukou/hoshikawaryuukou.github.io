@@ -14,8 +14,8 @@ project-root/
 ├── scripts/
 ├── apps/ 
 |   ├── cli/ 
-|   ├── web/ 
-|   └── desktop/ 
+|   ├── web/ (vue)
+|   └── desktop/ (electron)
 └── packages/              
     ├── pkg01/             
     └── pkg02/            
