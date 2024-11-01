@@ -14,7 +14,6 @@ tags: ["Tools"]
 
 ## Document
 - [HackMD：協作 Markdown 文件，分享知識的平台](https://hackmd.io/zh)
-  - [用 HackMD 做簡報](https://hackmd.io/how-to-create-slide-deck-tw)
 
 ## File-Sharing
 - [HFS: HTTP File Server (version 3)](https://github.com/rejetto/hfs)
