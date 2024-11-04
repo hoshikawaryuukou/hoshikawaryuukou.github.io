@@ -14,32 +14,18 @@ Prettier 是一個代碼格式化工具，用於保持代碼風格一致。
 - [playground](https://prettier.io/playground/)
 - [如何配置 prettier](https://juejin.cn/post/7406891999376261146#heading-1)
 
+## Notice
+- ⚠️ 跨平台協同的結尾符問題
+  - [[eslint] Delete CR eslint(prettier/prettier) issue](https://bobbyhadz.com/blog/eslint-delete-cr-prettier#set-endofline-to-auto-in-your-prettierrcjs-file)
+  - [令人困擾的git autocrlf – Opass Life](https://blog.opasschang.com/confusing-git-autocrlf/)
+
 ## Install
 ```bash
 pnpm add -D prettier
 ```
 
 ## Extension
-- [vscode 擴充功能](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-
-## Config
-- **.prettierrc** : [Configuration File · Prettier](https://prettier.io/docs/en/configuration.html)
-- **.prettierignore** : [Ignoring Code · Prettier](https://prettier.io/docs/en/ignore.html)
-
-## Plugin
-- **prettier-plugin-organize-imports** : 排序/合併/移除未使用的 import 聲明
-
-## Issue
-- 跨平台協同的結尾符問題
-  - [[eslint] Delete CR eslint(prettier/prettier) issue](https://bobbyhadz.com/blog/eslint-delete-cr-prettier#set-endofline-to-auto-in-your-prettierrcjs-file)
-  - [令人困擾的git autocrlf – Opass Life](https://blog.opasschang.com/confusing-git-autocrlf/)
-
-## Integration - ESlint
-- [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
-  - ESLint 配置，用於關閉與 Prettier 產生衝突。
-  - [eslint-config-prettier - eslint.config.js (flat config)](https://github.com/prettier/eslint-config-prettier?tab=readme-ov-file#installation)
-
-## Sample
+- [vscode extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
 ### .vscode/extension.json
 ```json
@@ -63,6 +49,19 @@ pnpm add -D prettier
   }
 }
 ```
+
+## Plugin
+- **prettier-plugin-organize-imports** : 排序/合併/移除未使用的 import 聲明
+
+## Integration - ESlint
+- [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
+  - ESLint 配置，用於關閉與 Prettier 產生衝突。
+  - [eslint-config-prettier - eslint.config.js (flat config)](https://github.com/prettier/eslint-config-prettier?tab=readme-ov-file#installation)
+
+## Config
+
+- **.prettierrc** : [Configuration File · Prettier](https://prettier.io/docs/en/configuration.html)
+- **.prettierignore** : [Ignoring Code · Prettier](https://prettier.io/docs/en/ignore.html)
 
 ### package.json
 ```json

@@ -12,13 +12,28 @@ tags: ["JavaScript", "TypeScript"]
 設計的初衷是讓開發者能夠以最少的設定完成打包工作，內建許多合理的預設值。
 
 ## Guide
+- [egoist/tsup](https://github.com/egoist/tsup)
 - [tsup](https://tsup.egoist.dev/#what-can-it-bundle)
 - [为什么是 tsup](https://www.modyqyw.top/blogs/2022/12/why-tsup)
 - [Dual Publishing ESM and CJS Modules with tsup and Are the Types Wrong?](https://johnnyreilly.com/dual-publishing-esm-cjs-modules-with-tsup-and-are-the-types-wrong)
 
-## Sample - only esm module
+## Install
+```bash
+pnpm add -D tsup
+```
 
-- tsup.config.ts
+## Config
+
+### package.json
+```json
+{
+  "scripts": {
+    "build": "tsup"
+  },
+}
+```
+
+### tsup.config.ts - only esm module
 ```ts
 import { defineConfig } from 'tsup';
 

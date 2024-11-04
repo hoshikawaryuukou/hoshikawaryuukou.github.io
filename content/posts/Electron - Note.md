@@ -6,7 +6,7 @@ draft: false
 tags: ["Electron"]
 ---
 
-## Core Spirit
+## Quick Chat
 Electron 是一個使用 JavaScript、HTML 和 CSS + Native Api 做相容多個系統（Windows、Linux、Mac）的桌面應用程式**構建**框架 —— 不需要本地開發經驗。
 
 ## Guide
