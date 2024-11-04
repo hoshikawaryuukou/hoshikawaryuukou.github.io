@@ -47,5 +47,4 @@ export default defineConfig({
   // 每次構建時清理輸出目錄
   clean: true, 
 });
-
 ```

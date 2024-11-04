@@ -26,6 +26,7 @@ HackMD 的核心思想是
 
 ## Guide
 - [HackMD：協作 Markdown 文件，分享知識的平台](https://hackmd.io/zh)
-- [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
+- [HackMD 使用教學](https://hackmd.io/c/tutorials-tw/%2Fs%2Ftutorials-tw?utm_source=home&utm_medium=nav-bar)
+- [HackMD 快速入門教學](https://hackmd.io/c/tutorials-tw/%2F%40docs%2Fquick-start-guild-tw?utm_source=home&utm_medium=nav-bar)
 - [用 HackMD 做簡報](https://hackmd.io/how-to-create-slide-deck-tw)
 - [Slide-example](https://hackmd.io/slide-example?both)

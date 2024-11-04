@@ -33,15 +33,15 @@ pnpm add zod
 import { z } from 'zod';
 
 // 定義可重用的 schema
-const numericParameterSchema = z.number().refine(value => Number.isInteger(value * 100), {
-  message: "數值參數不能超過兩位小數",
-});
+const numericParameterSchema = z.number()
+  .refine(value => Number.isInteger(value * 100), {  message: "數值參數不能超過兩位小數",});
 
-const nameSchema = z.string().min(1, { message: "name 不能為空" });
+const nameSchema = z.string()
+  .min(1, { message: "name 不能為空" });
 
-const levelSchema = z.number().min(1, { message: "level 必須大於等於 1" }).max(10, {
-  message: "level 必須小於等於 10",
-});
+const levelSchema = z.number()
+  .min(1, { message: "level 必須大於等於 1" })
+  .max(10, { message: "level 必須小於等於 10" });
 
 // 組合 schema 來構建更複雜的配置
 const gameConfigSchema = z.object({
