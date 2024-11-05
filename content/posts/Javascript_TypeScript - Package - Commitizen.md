@@ -13,13 +13,14 @@ tags: ["JavaScript", "TypeScript"]
 - [commitizen/cz-cli](https://github.com/commitizen/cz-cli)
 
 ## Notice
-- 💡 已經熟悉**約定式提交**也可以不使用(搭配 commitlint 攔截不合規的 commit)。
+- ⚠️ 目前無法在 pnpm 中使用 commitizen init，需手動配置。
 - ⚠️ 目前無法直接與 fork 整合(不支援互動式 cli)，仍需單獨使用 git bash。
+- 💡 已經熟悉**約定式提交**也可以不使用(搭配 commitlint 攔截不合規的 commit)。
 
 ## Install
 ```bash
 pnpm add -g commitizen
-commitizen init cz-conventional-changelog --pnpm --save-dev --save-exact
+pnpm add -wD cz-conventional-changelog
 ```
 
 ## Config

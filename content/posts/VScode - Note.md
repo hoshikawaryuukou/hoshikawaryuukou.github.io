@@ -20,3 +20,6 @@ tags: ["VScode"]
 ## Extensions
 - Code Runner
 - [:emojisense:](https://marketplace.visualstudio.com/items?itemName=bierner.emojisense)
+
+## Hot Keys (Windows)
+- 打開快捷鍵設定 : `Ctrl + K Ctrl + S`
