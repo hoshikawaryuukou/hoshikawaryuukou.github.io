@@ -1,9 +1,9 @@
 ---
-title: "Git - Note"
+title: "Version control - Git - Note"
 date: 2023-02-04 13:11:00
 draft: false
 
-tags: ["Git"]
+tags: ["Version control", "Git"]
 ---
 
 ## GUI Clients

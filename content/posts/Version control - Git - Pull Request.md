@@ -1,9 +1,9 @@
 ---
-title: "Git - Pull Request"
+title: "Version control - Git - Pull Request"
 date: 2023-07-14 13:11:00
 draft: false
 
-tags: ["Git"]
+tags: ["Version control", "Git"]
 ---
 
 > 有的環境也稱 Merge Request 

@@ -1,9 +1,9 @@
 ---
-title: "Git - Rebase"
+title: "Version control - Git - Rebase"
 date: 2023-07-16 20:11:00
 draft: false
 
-tags: ["Git"]
+tags: ["Version control", "Git"]
 ---
 
 > 之前筆者一直以為 rebase 是進行類似 **剪下貼上** 的操作，但實際上是 **複製貼上** 
