@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Version control on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/version-control/</link><description>Recent content in Version control on 識之箱庭</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Mon, 04 Nov 2024 20:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/version-control/index.xml" rel="self" type="application/rss+xml"/><item><title>Version control - Semantic Versioning</title><link>https://HoshikawaRyuukou.github.io/posts/version-control-semantic-versioning/</link><pubDate>Mon, 04 Nov 2024 20:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/version-control-semantic-versioning/</guid><description>Guide 語意化版本 2.0.0 NPM Semver Calculator 定義 語意化版本號由以下三部分構成：
+主版本號 (Major)：當發生不向後相容的變更時增加。 次版本號 (Minor)：當增加向下相容的新功能時增加。 修訂號 (Patch)：當修復向下相容的問題時增加。 例如：1.2.3 中，1 是主版本號，2 是次版本號，3 是修訂號。
+預發布版本 預發布版本用於標示還不夠穩定的版本，通常是開發、測試中的版本，例如 alpha 或 beta 階段。這些標記常用於給開發者或測試者試用，在正式發布之前捕捉可能的問題。
+語法上，預發布版本會附加在主版本號、次版本號、修訂號之後，以連字號 (-) 分隔，常見的標記包括：
+alpha：表示非常早期、初步的版本，可能還不完整。 beta：表示功能已基本完成，正在進行測試和改進的版本。 rc (Release Candidate)：表示接近正式發布的候選版本，可能只需要進行少量修改。 例如：
+1.2.3-alpha：表示這是版本 1.2.3 的一個 alpha 預發布版本。 1.2.3-beta.1：表示這是版本 1.2.3 的第一個 beta 預發布版本。 1.2.3-rc.2：表示這是版本 1.2.3 的第二個候選版本。 例如：1.2.3 中，1 是主版本號，2 是次版本號，3 是修訂號。
+版本範圍 (以 npm 為例) 波浪符號 (~)
+允許更新修訂號，但不更新次版本號。
+例如，~1.2.3 表示可以更新到 &amp;lt;1.3.0，允許的版本包括 1.2.4、1.2.5 等。
+插入符號 (^)
+允許更新次版本號和修訂號，但不更改主版本號（0 版本除外）。
+例如，^1.2.3 表示可以更新到 &amp;lt;2.</description></item><item><title>Version control - Git - Rebase</title><link>https://HoshikawaRyuukou.github.io/posts/version-control-git-rebase/</link><pubDate>Sun, 16 Jul 2023 20:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/version-control-git-rebase/</guid><description> 之前筆者一直以為 rebase 是進行類似 剪下貼上 的操作，但實際上是 複製貼上
+情境 合併時不會像 merge 時會有 commit 的節點 想整理 還沒推出去 的 commit 可以使用 避免修改已經推出去的歷史 如何取消操作 使用 reflog 列印出所有「歷史紀錄」找到 rebase 的前一個 commit id，並進行 reset 即可
+git reflog git reset XXXXXXX --hard 此外當進行比較危險操作時 git 會額外紀錄前一個 head 於 ORIG_HEAD，因此也可以直接執行以下，來達到同樣效果
+git reset ORIG_HEAD --hard Ref 另一種合併方式（使用 rebase） git rebase 用法 git rebase -i (drop) git rebase -i (pick) git rebase -i (reword)</description></item><item><title>Version control - Git - Pull Request</title><link>https://HoshikawaRyuukou.github.io/posts/version-control-git-pull-request/</link><pubDate>Fri, 14 Jul 2023 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/version-control-git-pull-request/</guid><description> 有的環境也稱 Merge Request
+情境 開發產品時一般會挑選固定一個分支做為可以上線的正式版本分支(master)，需注意的是在進行多人協同開發時，讓每個人都可以 Commit 到專案正式上線的分支不是個好的做法。
+可以透過 pull request 方式控管權限，由負責管理這個專案的人收到其他開發者的 pull request 並確認無誤後便可進行合併，來確保產品分支處於隨時都是可上線的狀態。
+參與開源專案時，在創建 pull request 之前，建議先在本地分支上運行 git rebase 命令，確保你的更改基於最新的進度以降低審查者的理解難度。
+Ref 與其它開發者的互動 - 使用 Pull Request（PR）</description></item><item><title>Version control - Git - Note</title><link>https://HoshikawaRyuukou.github.io/posts/version-control-git-note/</link><pubDate>Sat, 04 Feb 2023 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/version-control-git-note/</guid><description>GUI Clients Fork Common 两小时Git教程 Git忽略规则.gitignore不生效 配置 Git 处理行结束符 Workflow 如何做好分支管理，保证高效CI/CD？ 【GeekHour教程】分支管理和工作流模型 Git 進階應用 Submodule 與 Subtree，使用它們來拆分專案 Operation git revert 是如何让你丢失代码的？ 十分钟学会常用git撤销操作，全面掌握git的时光机 git hook git hook 是每次執行 git 操作時都會運行的命令或腳本。 如果 git hook 的執行失敗，則 git 操作將中止。</description></item></channel></rss>
