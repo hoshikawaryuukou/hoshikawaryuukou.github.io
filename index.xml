@@ -3,13 +3,13 @@
 預發布版本 預發布版本用於標示還不夠穩定的版本，通常是開發、測試中的版本，例如 alpha 或 beta 階段。這些標記常用於給開發者或測試者試用，在正式發布之前捕捉可能的問題。
 語法上，預發布版本會附加在主版本號、次版本號、修訂號之後，以連字號 (-) 分隔，常見的標記包括：
 alpha：表示非常早期、初步的版本，可能還不完整。 beta：表示功能已基本完成，正在進行測試和改進的版本。 rc (Release Candidate)：表示接近正式發布的候選版本，可能只需要進行少量修改。 例如：
-1.2.3-alpha：表示這是版本 1.2.3 的一個 alpha 預發布版本。 1.2.3-beta.1：表示這是版本 1.2.3 的第一個 beta 預發布版本。 1.2.3-rc.2：表示這是版本 1.2.3 的第二個候選版本。 例如：1.2.3 中，1 是主版本號，2 是次版本號，3 是修訂號。
-版本範圍 (以 npm 為例) 波浪符號 (~)
+1.2.3-alpha：表示這是版本 1.2.3 的一個 alpha 預發布版本。 1.2.3-beta.1：表示這是版本 1.2.3 的第一個 beta 預發布版本。 1.2.3-rc.2：表示這是版本 1.2.3 的第二個候選版本。 版本範圍 (以 npm 為例) 波浪符號 (~)
 允許更新修訂號，但不更新次版本號。
 例如，~1.2.3 表示可以更新到 &amp;lt;1.3.0，允許的版本包括 1.2.4、1.2.5 等。
 插入符號 (^)
 允許更新次版本號和修訂號，但不更改主版本號（0 版本除外）。
-例如，^1.2.3 表示可以更新到 &amp;lt;2.</description></item><item><title>HackMD - Note</title><link>https://HoshikawaRyuukou.github.io/posts/hackmd-note/</link><pubDate>Tue, 29 Oct 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/hackmd-note/</guid><description>Quick Chat HackMD 的核心思想是
+例如，^1.2.3 表示可以更新到 &amp;lt;2.0.0，允許的版本包括 1.3.0、1.4.5 等。
+比較符號 (&amp;lt;, &amp;lt;=, &amp;gt;, &amp;gt;=)</description></item><item><title>HackMD - Note</title><link>https://HoshikawaRyuukou.github.io/posts/hackmd-note/</link><pubDate>Tue, 29 Oct 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/hackmd-note/</guid><description>Quick Chat HackMD 的核心思想是
 輕鬆使用 Markdown 協作文件的工具
 符合的筆者的使用需求
 免費方案適合輕度用戶 跨平台兼容性（桌面/移動設備） 支援 Markdown 格式 文件管理（標籤/搜索功能） 分享控制（私人/公開） 支援遠端同步 付費方案差異
