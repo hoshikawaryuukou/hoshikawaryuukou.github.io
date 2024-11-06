@@ -1,57 +1,72 @@
 ---
-title: "Workflow - Publish a private npm package to Github Packages"
+title: "Workflow - Publish a private package to Github Packages"
 date: 2024-10-06 20:11:00
 draft: false
 
-tags: ["Workflow", "Github", "Node.js"]
+tags: ["Workflow", "Github", "pnpm"]
 ---
 
-## Requirement
-- ⚠️ 請先確保 package 本身已是合規的配置(exports/typesVersions/files/...)。
-- ⚠️ 本範例使用 npm，之後會轉使用 pnpm。
+## Guide
+- [Publishing a Private Package on GitHub Packages](https://dev.to/carloshendvpm/publishing-a-private-package-on-github-packages-23bf)
+- [发布 Node.js 包](https://docs.github.com/zh/actions/use-cases-and-examples/publishing-packages/publishing-nodejs-packages)
+
+## Notice
+- ⚠️ 請先確保 repository 與 package 以配置為 private。
+- ⚠️ 本範例使用 pnpm。
 
 ## package.json 的必要配置
-- name : 需配置 @scope 
-- version : 版本號
-
 ```json
 {
-  "name": "@xxx/oooo",
-  "version": "0.1.0",
+  "name": "@user-or-organization/package-name",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/user-or-organization/package-name.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
-
 ```
 
-## 新增 ./.npmrc
-```
-@xxx:registry=https://npm.pkg.github.com
-```
-
-## 編寫 ./.github/workflows/publish-package.yml
+## .github/workflows/publish-package.yml
 ```yml
-name: Publish Package
+name: Publish package to GitHub Packages
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
+  release:
+    types: [published]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: read
+      packages: write
+
     steps:
       - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+          run_install: false
+
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          registry-url: 'https://npm.pkg.github.com/'
+          node-version: '20.x'
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@user-or-organization'
 
-      - run: npm ci
-      - run: npm run build
-      - run: npm publish
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build package
+        run: pnpm build
+
+      - name: Publish package
+        run: pnpm publish --access restricted
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
 ```

@@ -52,7 +52,6 @@ pnpm add -D prettier
 
 ## Plugin
 - **prettier-plugin-organize-imports** : 排序/合併/移除未使用的 import 聲明
-- **prettier-plugin-packagejson** : 格式化 package.json
 
 ## Integration - ESlint
 - [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
