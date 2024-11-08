@@ -1,7 +1,7 @@
 ---
-title: "Frontend - Vite - Note"
-date: 2024-10-05 10:11:00
-draft: true
+title: "Vite - Note"
+date: 2024-11-05 10:11:10
+draft: false
 
 tags: ["Frontend", "Vite"]
 ---
