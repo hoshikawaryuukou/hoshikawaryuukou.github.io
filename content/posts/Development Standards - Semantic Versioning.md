@@ -1,9 +1,9 @@
 ---
-title: "Version control - Semantic Versioning"
+title: "Development Standards - Semantic Versioning"
 date: 2024-11-04 20:11:00
 draft: false
 
-tags: ["Version control"]
+tags: ["Development Standards"]
 ---
 
 ## Guide

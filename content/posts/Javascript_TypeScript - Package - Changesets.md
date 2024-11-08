@@ -26,6 +26,9 @@ Changesets 的核心由 **變更日誌** 和 **版本控制** 兩部分組成：
 - [changesets/changesets](https://github.com/changesets/changesets)
 - [Using Changesets – changesets documentation](https://changesets-docs.vercel.app/)
 - [Changesets - 為 monorepo 而生的版本管理工具](https://notes.boshkuo.com/docs/NodeJS/npm-packages/changesets)
+- [Simplify Package Versioning with Changesets for GitLab Private Registries](https://medium.com/@haleywardo/simplify-package-versioning-with-changesets-for-gitlab-private-registries-4306762c9e29)
+- [Automate NPM releases on GitHub using changesets 🦋](https://dev.to/ignace/automate-npm-releases-on-github-using-changesets-25b8)
+- [使用 pnpm、turborepo 构建 monorepo 项目，changesets 管理日志和版本详解，从零至 github actions（CI）云端缓存 发布 npm 流程](https://ksh7.com/posts/workspace-pnpm-turborepo-changesets/index.html#%E5%91%BD%E4%BB%A4%E5%88%9D%E5%A7%8B%E5%8C%96)
 
 ## Notice
 - ⚠️ 由於 changesets 專注於發佈和變更日誌，並非每次變更都需要 changeset。
@@ -40,11 +43,27 @@ Changesets 的核心由 **變更日誌** 和 **版本控制** 兩部分組成：
 pnpm add -wD @changesets/cli 
 ```
 
-## Config
+## Usage
+
+### 初始化
 ```bash
 pnpm changeset init
 ```
 
-## Usage
-- [commands](https://changesets-docs.vercel.app/zh-CN/command-line-options)
-- [團隊開發流程 & 發布流程](https://notes.boshkuo.com/docs/NodeJS/npm-packages/changesets#%E5%9C%98%E9%9A%8A%E9%96%8B%E7%99%BC%E6%B5%81%E7%A8%8B--%E7%99%BC%E5%B8%83%E6%B5%81%E7%A8%8B%E6%89%8B%E5%8B%95)
+### 追加變更
+```bash
+pnpm changeset
+```
+- key - enter : 跳過/確認
+- key - space : 選擇(多選)
+  
+### 生成版本
+```bash
+pnpm changeset version
+```
+
+### 發布版本(手動)
+```bash
+pnpm changeset publish
+```
+- ⚠️ 此動作會消耗所有的 changeset

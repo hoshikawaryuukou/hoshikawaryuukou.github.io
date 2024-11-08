@@ -1,9 +1,9 @@
 ---
-title: "Documentation - README"
+title: "Development Standards - README"
 date: 2024-06-18 21:11:00
 draft: false
 
-tags: ["Documentation"]
+tags: ["Development Standards"]
 ---
 
 ## Quick Chat
