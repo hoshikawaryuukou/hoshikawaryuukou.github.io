@@ -27,6 +27,7 @@ tags: ["Unity"]
 - [LianBai](https://lianbai.github.io/)
 - [Lightjiao的博客](https://github.com/lightjiao/lightjiao.github.io/tree/master?tab=readme-ov-file)
 - [unityでいってみよう！](https://unityletsgo.hatenablog.com/)
+- [偵錯桐人 - unity](https://tedliou.com/unity/)
 
 ## Blog (Enterprise)
 - [CyberAgent Developers Blog | サイバーエージェント デベロッパーズブログ](https://developers.cyberagent.co.jp/blog/)
