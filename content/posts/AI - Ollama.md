@@ -10,6 +10,7 @@ tags: ["AI"]
 - [Ollama](https://ollama.com/)
 - [Ngrok + Ollama | 在世界任何地方与localhost开源大模型聊天](https://www.youtube.com/watch?v=JfI3K3HwQuI)
 - [Free Inference Is All I Need: How to Run Large Language Models for Free Using Google Colab](https://blog.gopenai.com/free-inference-is-all-i-need-how-to-run-large-language-models-for-free-using-google-colab-fe961e86503b)
+- [十分钟部署本地离线免费大模型！](https://www.youtube.com/watch?v=ZOCY61424JI)
 
 ## UI
 - [Page Assist - A Web UI for Local AI Models](https://chromewebstore.google.com/detail/page-assist-a-web-ui-for/jfgfiigpkhlkbnfnbobbkinehhfdhndo)
