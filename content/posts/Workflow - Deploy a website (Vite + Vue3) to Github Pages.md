@@ -1,5 +1,5 @@
 ---
-title: "Workflow - Vite + Vue3 + Github Pages"
+title: "Workflow - Deploy a website (Vite + Vue3) to Github Pages"
 date: 2024-09-20 20:11:00
 draft: false
 
@@ -11,21 +11,72 @@ tags: ["Workflow", "Vite", "Vue", "Github"]
 - [[vite] 將 Vite 專案部署至 Github Pages](https://weiyun0912.github.io/Wei-Docusaurus/docs/Vite/Vite-Github-Pages/)
 - [vue3项目部署到Github](https://www.cnblogs.com/weizwz/p/18411342)
 
-## 前置動作
+## 配置 - 基本
 
-### 設置 vite.config.js 中設定 Base URL
+### vite.config.js 
 ```js
 export default defineConfig({
   base: '/{repo name}}/',
-  plugins: [vue()],
 });
 ```
 
-### 確保靜態網頁內容無誤
+## 配置 - SPA 
+如果是單頁應用（SPA）路由需做以下配置。
+
+### vite.config.ts
+```ts
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+  base: '/你的倉庫名稱/', // 替換為你的 GitHub 倉庫名稱
+});
+```
+
+### index.html
+```html
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <base href="/mgproject-track-logic-game/">
+  </head>
+</html>
+```
+
+### Vue Router 
+```ts
+import { createRouter, createWebHistory } from 'vue-router';
+
+const router = createRouter({
+  history: createWebHistory('/你的倉庫名稱/'),
+});
+```
+
+
+
+
+
+
+
+## 本地測試
 ```bash
 pnpm build
 pnpm preview
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## 部屬
 
@@ -51,7 +102,7 @@ pnpm deploy2ghpages
 
 ### 方式 2 - 使用 `github actions`
 
-### 編寫 .github\workflows\gh-pages.yml
+#### 編寫 .github\workflows\gh-pages.yml
 ```yml
 # 將靜態內容部署到 GitHub Pages 的簡易工作流程
 name: Deploy static content to Pages
@@ -110,14 +161,3 @@ jobs:
         uses: actions/deploy-pages@v4
 ```
 
-## Issue
-### 路由 404 
-- 目前是單頁應用沒使用到路由暫時不會遇到 - 之後會補
-
-<!-- ## Guide
-- [Vue + Vite Github Pages 部屬](https://virgil246.com/posts/vue-vite-githubpages-deploy/)
-- [Vite构建的Vue3项目部署到GitHub Pages](https://juejin.cn/post/7228851979463032890)
-- [vite 构建的vue3 项目部署到github](https://blog.csdn.net/weixin_44717047/article/details/120113869)
-- [vue3-music](https://github.com/LeoJ340/vue3-music) 
-- 
-- -->
