@@ -1,6 +1,6 @@
 ---
 title: "Cocos - Note"
-date: 2024-08-16 21:11:00
+date: 2024-12-10 21:11:00
 draft: false
 
 tags: ["Cocos"]
@@ -23,30 +23,3 @@ tags: ["Cocos"]
 ## Rescource
 - [awesome-CocosCreator](https://github.com/Leo501/awesome-CocosCreator)
 
-## Dev
-
-### vscode
-- [请问VScode有没有cocos creator相关的插件](https://forum.cocos.org/t/topic/133892)
-- 配置 vscode path
-  > C:\Users\User\AppData\Local\Programs\Microsoft VS Code\Code.exe
-- 配置 .vscode/setting.json
-  ```json
-  {
-    "files.exclude": {
-      "library/": true,
-      "local/": true,
-      "temp/": true,
-      "**/*.meta": true
-    },
-    "search.exclude": {
-      "build/": true,
-      "temp/": true,
-      "library/": true,
-      "**/*.anim": true,
-      "**/*.meta": true
-    }
-  }
-  ```
-
-### npm
-- 使用 pnpm
