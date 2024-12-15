@@ -40,6 +40,7 @@ pnpm add -D prettier eslint-plugin-prettier
 - [react-clean-architecture-sample](https://github.com/drumnistnakano/react-clean-architecture-sample?tab=readme-ov-file)
 - [vue-shopping-clean-architecture](https://github.com/thanhchungbtc/vue-shopping-clean-architecture)
 - [Vue Fes Japan 2024に現地参加したイベントレポート](https://note.com/smartround/n/nd500585d0755)
+- [Spine-Viewer-Vue——一个简单的Spine查看器](https://blog.jitsu.top/archives/36/)
 
 
 
