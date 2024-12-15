@@ -8,6 +8,7 @@ tags: ["AI"]
 
 ## Guide
 - [Stable-Diffusion 彙整 - 瑆知識](https://www.chias.com.tw/category/stable-diffusion/)
+- [Comfyui官方客户端 desktop桌面版来了](https://www.bilibili.com/video/BV1HDBZYBEjK)
 
 ## 社群
 - [Civitai](https://civitai.com/)
@@ -20,6 +21,7 @@ tags: ["AI"]
 
 ## Channel
 - [杰克艾米立](https://www.youtube.com/@JackEllie/videos)
+- [星光のAIラボ](https://www.hoshikou-ailabo.net/)
 
 ## Prompt
 - [Prompt Viewer](https://www.ptsearch.info/zh-hant/articles/create_exif/)

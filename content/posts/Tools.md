@@ -36,6 +36,7 @@ tags: ["Tools"]
 - [ScreenToGif](https://www.screentogif.com/)
 - [Twitter 影片下載器](https://videodler.com/zh-Hant/)
 - [mifi/lossless-cut](https://github.com/mifi/lossless-cut)
+- [CapCut](https://www.capcut.com/zh-tw/)
 
 ## Message
 - [Emojipedia](https://emojipedia.org/)
