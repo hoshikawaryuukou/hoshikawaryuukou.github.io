@@ -12,6 +12,9 @@ tags: ["Tools"]
 ## Automation
 - [taojy123/KeymouseGo](https://github.com/taojy123/KeymouseGo?tab=readme-ov-file)
 
+## Batch
+- [Save All Resources](https://chromewebstore.google.com/detail/save-all-resources/abpdnfjocnmdomablahdcfnoggeeiedb)
+
 ## Diagram 
 - [只會用 Office 畫流程圖？許多人試用過這個後直呼回不去了 👍 | Draw.io 教學](https://www.youtube.com/watch?v=CU0ZhMoXz7k)
 - [postspark](https://postspark.app/)
