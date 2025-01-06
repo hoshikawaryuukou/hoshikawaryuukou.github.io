@@ -28,6 +28,7 @@ pnpm create pixi.js
 - [pixijs/open-games](https://github.com/pixijs/open-games)
 - [MateuszSuder/PixiSlot](https://github.com/MateuszSuder/PixiSlot)
 - [CyberDex/pixi-game-ui](https://github.com/CyberDex/pixi-game-ui/tree/main)
+- [Particle experiment using Pixi.js & GSAP](https://codepen.io/selcukcura/pen/gGPVww)
 <!-- 
 - [CyberDex/pwa-game](https://github.com/CyberDex/pwa-game) 
 - 
@@ -38,10 +39,9 @@ pnpm create pixi.js
 - [artdon/angular-pixi-slots](https://github.com/artdon/angular-pixi-slots)
 - [Slamaio/pixi-js-slot-machine](https://github.com/Slamaio/pixi-js-slot-machine)
 - [jogracz/pixi-slot-game](https://github.com/jogracz/pixi-slot-game?tab=readme-ov-file)
+- [Slot-PixiJS](https://codepen.io/pop-kst/pen/YzYQGGG)
 
 ## Others
 - [Pixi | GSAP | Docs & Learning](https://gsap.com/docs/v3/Plugins/PixiPlugin/)
 - [Bug: Visual issue rendering spine on v7](https://github.com/pixijs/pixijs/issues/9141#issuecomment-1573726217)
-
-
 
