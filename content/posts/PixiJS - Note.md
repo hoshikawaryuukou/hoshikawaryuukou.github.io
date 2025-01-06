@@ -1,6 +1,6 @@
 ---
 title: "PixiJS - Note"
-date: 2025-01-01 13:11:00
+date: 2025-01-04 13:11:00
 draft: false
 
 tags: ["PixiJS"]
@@ -27,13 +27,21 @@ pnpm create pixi.js
 ## Sample
 - [pixijs/open-games](https://github.com/pixijs/open-games)
 - [MateuszSuder/PixiSlot](https://github.com/MateuszSuder/PixiSlot)
+- [CyberDex/pixi-game-ui](https://github.com/CyberDex/pixi-game-ui/tree/main)
+<!-- 
+- [CyberDex/pwa-game](https://github.com/CyberDex/pwa-game) 
+- 
+- -->
 
----
+## Sample - slot
+- [ktsalik/sloticon](https://github.com/ktsalik/sloticon)
+- [artdon/angular-pixi-slots](https://github.com/artdon/angular-pixi-slots)
+- [Slamaio/pixi-js-slot-machine](https://github.com/Slamaio/pixi-js-slot-machine)
+- [jogracz/pixi-slot-game](https://github.com/jogracz/pixi-slot-game?tab=readme-ov-file)
 
-## gsap/PixiPlugin
+## Others
 - [Pixi | GSAP | Docs & Learning](https://gsap.com/docs/v3/Plugins/PixiPlugin/)
-
-## @esotericsoftware/spine-pixi-v8
 - [Bug: Visual issue rendering spine on v7](https://github.com/pixijs/pixijs/issues/9141#issuecomment-1573726217)
 
-## lil-gui
+
+
