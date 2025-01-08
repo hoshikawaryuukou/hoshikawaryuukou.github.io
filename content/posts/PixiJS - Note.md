@@ -40,6 +40,8 @@ pnpm create pixi.js
 - [Slamaio/pixi-js-slot-machine](https://github.com/Slamaio/pixi-js-slot-machine)
 - [jogracz/pixi-slot-game](https://github.com/jogracz/pixi-slot-game?tab=readme-ov-file)
 - [Slot-PixiJS](https://codepen.io/pop-kst/pen/YzYQGGG)
+- [Slots | PixiJS](https://pixijs.com/8.x/examples/advanced/slots)
+- [feldhaus/slot-machine](https://github.com/feldhaus/slot-machine?tab=readme-ov-file)
 
 ## Others
 - [Pixi | GSAP | Docs & Learning](https://gsap.com/docs/v3/Plugins/PixiPlugin/)
