@@ -1,9 +1,9 @@
 ---
-title: "Unity - Basic - Memory Profiler"
+title: "Unity - Performance - Memory Profiler"
 date: 2023-07-30 21:11:00
 draft: false
 
-tags: ["Unity"]
+tags: ["Unity", "Performance"]
 ---
 
 ## 注意

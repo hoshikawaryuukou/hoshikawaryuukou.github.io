@@ -27,6 +27,7 @@ tags: ["Tools"]
 
 ## Image Processing
 - [Spritesheet Cutter](https://yeoji.github.io/spritesheet-cutter/)
+- [texture packer](free-tex-packer.com/)
 
 ## Media
 - [如何安裝FFmpeg](https://www.youtube.com/watch?v=ERee4DY2LQ8)

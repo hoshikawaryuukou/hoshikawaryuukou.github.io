@@ -6,11 +6,6 @@ draft: false
 tags: ["Unity"]
 ---
 
-## Set Up
-- [【游戏开发环境】Unity使用Mac电脑开发，开发环境的搭建（Mac mini M1 | VSCode | Git | 好用工具）](https://blog.csdn.net/linxinfa/article/details/124844236)
-
----
-
 ## Analysis 
 - [Unity Optimize Your Game Using Profiler](https://sharpcoderblog.com/blog/unity-3d-how-to-use-profiler-to-optimize-your-code)
 - [Unity 手機遊戲最佳化雜談– 內建Profiling](https://www.chunfuchao.com/posts/unity-profiling-tools/)
@@ -47,6 +42,9 @@ tags: ["Unity"]
 
 ## Screen
 - [How to capture the screen in Unity (3 methods)](https://gamedevbeginner.com/how-to-capture-the-screen-in-unity-3-methods/)
+
+<!-- ## Spine
+- [Spiners MeetUp vol.5 UnityでのSpine実装方法 〜前編〜](https://note.g2-studios.net/n/n153d92f96866)  -->
 
 ## Text
 - [【Unity编辑器扩展】艺术字/自定义图片字体生成工具](https://blog.csdn.net/final5788/article/details/134158552)

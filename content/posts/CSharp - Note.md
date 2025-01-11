@@ -42,6 +42,7 @@ var random_list = list.OrderBy(i => Guid.NewGuid()).ToList();
 ```
 
 ## Other
+- [C# 記憶體管理 Value Type 與 Reference Type](https://www.youtube.com/watch?v=nH_C3poH3-4)
 - [工作十余年，还是一直被问 委托和事件 有什么区别？ 真是够了](https://zhuanlan.zhihu.com/p/178307774)
 
 

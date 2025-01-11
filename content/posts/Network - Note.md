@@ -13,3 +13,4 @@ tags: ["Network"]
 - [VPN概念，技术原理和误区](https://www.bilibili.com/video/BV1KY411t75D)
 - [哈希究竟代表什么？哈希表和哈希函数的核心原理](https://www.bilibili.com/video/BV1SZ4y1z7wT)
 - [交换机的核心工作原理 | 集线器、2层交换机和3层交换机的主要区别](https://www.bilibili.com/video/BV1Yx4y147tg)
+- [你管这破玩意叫网络？ 从设计者的思考角度出发理解网络，合理、靠谱！](https://www.youtube.com/watch?v=tVLIRCJuFW8)
