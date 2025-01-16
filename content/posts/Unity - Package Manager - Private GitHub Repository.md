@@ -3,7 +3,7 @@ title: "Unity - Package Manager - Private GitHub Repository"
 date: 2023-12-24 21:11:00
 draft: false
 
-tags: ["Unity", "UPM"]
+tags: ["Unity", "Package Manager"]
 ---
 
 ## 情境

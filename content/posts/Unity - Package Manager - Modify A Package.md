@@ -3,11 +3,10 @@ title: "Unity - Package Manager - Modify A Package"
 date: 2024-01-12 21:11:00
 draft: false
 
-tags: ["Unity", "UPM"]
+tags: ["Unity", "Package Manager"]
 ---
 
 ## 情境
-
 有需要客製化 Unity 官方 / git 直接導入 的 Package 時
 
 ## 操作
