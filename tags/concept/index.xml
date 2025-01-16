@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Concept on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/concept/</link><description>Recent content in Concept on 識之箱庭</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sat, 04 Jan 2025 21:05:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/concept/index.xml" rel="self" type="application/rss+xml"/><item><title>Software Design - Concept - Object Lifecycle Management</title><link>https://HoshikawaRyuukou.github.io/posts/software-design-concept-object-lifecycle-management/</link><pubDate>Sat, 04 Jan 2025 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design-concept-object-lifecycle-management/</guid><description>Quick Chat 物件生命週期管理（Object Lifecycle Management）是指在程式運行過程中，對物件的創建、使用、及銷毀進行有效的控制和管理。
+適當的物件生命週期管理有助於提高應用程式的性能、可維護性和資源利用效率。
+Stage 創建：
+物件被創建並初始化。 創建時，可能會注入其他依賴物件或設定一些必要的屬性。 使用：
+物件在應用程式中進行各種操作，如方法調用、屬性設定等。 這是物件的活躍期，通常是應用程式邏輯處理的核心部分。 銷毀：
+物件不再被需要時，它的資源會被釋放。 這個過程通常涉及到記憶體回收和釋放外部資源（例如檔案、資料庫連線等）。 Lifetime Transient（瞬時）：
+每次請求或需要該物件時會創建一個新的實例。 適用於短暫的、不需要保持狀態的物件。 Singleton（單例）：
+整個應用程式生命周期內，只有一個實例被創建。 適用於那些需要跨應用程式共享狀態的物件。 Scoped（範圍）：
+物件的生命周期被限制在特定的範圍內，通常是某個特定的操作或請求範圍。 在範圍內，物件實例會被共享。但範圍結束後，物件會被銷毀。 適用於那些需要在某個範圍內共享狀態，但範圍結束後無需保持的物件。</description></item></channel></rss>
