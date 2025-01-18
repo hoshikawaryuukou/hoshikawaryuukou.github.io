@@ -1,37 +1,43 @@
 ---
-title: "AI - Ollama"
+title: "AI - Ollama - Note"
 date: 2024-08-19 21:11:00
 draft: false
 
-tags: ["AI"]
+tags: ["AI", "Ollama"]
 ---
 
 ## Guide
 - [Ollama](https://ollama.com/)
-- [Ngrok + Ollama | 在世界任何地方与localhost开源大模型聊天](https://www.youtube.com/watch?v=JfI3K3HwQuI)
-- [Free Inference Is All I Need: How to Run Large Language Models for Free Using Google Colab](https://blog.gopenai.com/free-inference-is-all-i-need-how-to-run-large-language-models-for-free-using-google-colab-fe961e86503b)
-- [十分钟部署本地离线免费大模型！](https://www.youtube.com/watch?v=ZOCY61424JI)
 
 ## UI
 - [Page Assist - A Web UI for Local AI Models](https://chromewebstore.google.com/detail/page-assist-a-web-ui-for/jfgfiigpkhlkbnfnbobbkinehhfdhndo)
-
-## Model
-- [Hugging Face](https://huggingface.co/)
-- [qwen2](https://ollama.com/library/qwen2)
-- [internlm2](https://ollama.com/library/internlm2)
-- [mradermacher/mini-magnum-12b-v1.1-GGUF](https://hf-mirror.com/mradermacher/mini-magnum-12b-v1.1-GGUF)
-- [Roleplay, Creative Writing, Uncensored, NSFW](https://huggingface.co/collections/DavidAU/roleplay-creative-writing-uncensored-nsfw-66163c580c61496c340afe32)
 
 ## Commands
 - ollama list : 查看以配置本地模型
 - ollama run {model} : 下載/執行模型
 - ollama ps : 展示目前載入的模型、它們所佔的記憶體大小以及所使用的處理器類型（GPU 或 CPU）
 
-## Extra
+
+## Use model from Ollama
+- [Ollama search](https://ollama.com/search)
+
+
+## Use GGUF model from Hugging Face Hub
+
+```bash
+# Run Ollama with specified model
+# ollama run hf.co/{username}/{repository}
+ollama run hf.co/bartowski/Llama-3.2-3B-Instruct-GGUF
+
+# Run Ollama with specified model and desired quantization
+# ollama run hf.co/{username}/{repository}:{quantization}
+ollama run hf.co/bartowski/Llama-3.2-3B-Instruct-GGUF:IQ3_M
+```
+
+## Use GGUF model from local
 
 ### import_gguf_to_ollama.bat
 ```bat
-
 @echo off
 
 REM 設定本地環境，並切換到批次檔所在的目錄
@@ -65,5 +71,4 @@ ollama list
 
 REM 等待用戶確認並關閉
 pause >nul
-
 ```
