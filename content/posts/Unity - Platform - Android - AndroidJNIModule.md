@@ -1,5 +1,5 @@
 ---
-title: "Unity - Basic - AndroidJNIModule"
+title: "Unity - Platform - Android - AndroidJNIModule"
 date: 2024-01-28 21:11:00
 draft: false
 

@@ -1,9 +1,9 @@
 ---
-title: "Unity - Basic - iOS plug-in"
+title: "Unity - Platform - iOS - plug-in"
 date: 2023-07-05 21:11:00
 draft: false
 
-tags: ["Unity"]
+tags: ["Unity", "iOS"]
 ---
 
 ## 前述

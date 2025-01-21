@@ -1,5 +1,5 @@
 ---
-title: "Unity - Basic - Android Build"
+title: "Unity - Platform - Android - Build"
 date: 2024-02-03 21:11:00
 draft: false
 
