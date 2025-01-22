@@ -6,8 +6,10 @@ draft: false
 tags: ["Unity", "Android"]
 ---
 
-## Settings
+## Guide
+- [Unity 不通過Android studio 打包接SDK](https://www.jianshu.com/p/9058daafa130)
 
+## Settings
 - gradleTemplate.properties : 專案的全域 Gradle 配置。
 - AndroidManifest.xml ：用於向 Android 構建工具、Android 作業系統和 Google Play 描述應用的基本資訊。
 - launcherManifest.xml 定義應用的啟動配置資訊
@@ -15,5 +17,5 @@ tags: ["Unity", "Android"]
 - launcherTemolate.gradle ：包含有關如何構建 Android 應用程式的指令
 - baseProjectTemplate.gradle：所含的配置會在其他所有範本/Gradle 專案之間共用
 
-## Ref
-- [Unity 不通過Android studio 打包接SDK](https://www.jianshu.com/p/9058daafa130)
+## Device
+- [Quickly preview your game on Android device | Unity tutorial](https://www.youtube.com/watch?v=iCXwaehzRFQ)

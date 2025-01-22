@@ -29,23 +29,17 @@ tags: ["Unity", "Web"]
 - [terreng/simple-web-server](https://github.com/terreng/simple-web-server)
 - [terreng/sws-unity-plugin](https://github.com/terreng/sws-unity-plugin)
 
-## Host - Issue
+## Issue
+
+### Error : Failed to parse binary data file Build/xxx.data.br...
+> Failed to parse binary data file Build/web.data.br (with "Content-Type: null"), because it is still brotli-compressed. It should have been uncompressed by the browser, but it was unable to do so since the web server provided the compressed content without specifying the HTTP Response Header "Content-Encoding: br" that would have informed the browser that decompression is needed. Please verify your web server hosting configuration to add the missing "Content-Encoding: br" HTTP Response Header.
+
+📝 需要配置 Content-Encoding 參考 [terreng/sws-unity-plugin](https://github.com/terreng/sws-unity-plugin)
+
+### Error : Unable to load file Build/xxx.framework.js.br...
 > Unable to load file Build/xxx.framework.js.br! Check that the file exists on the remote server. (also check browser Console and Devtools Network tab to debug)
 
-這是因為 `Brotli` 壓縮算法僅在 `HTTPS` 連接中被啟用
-
-## Build - Structure
-### 1. index.html
-- 這是遊戲的主要 HTML 頁面，通常包含 HTML 代碼來載入其他資源並初始化遊戲的運行。
-
-### 2. Build
-- **`xxx.data.gz`**: 儲存遊戲資源、場景和其他數據。
-- **`xxx.framework.js.gz`**: JavaScript Runtime。
-- **`xxx.loader.js`**: 負責載入遊戲的 JavaScript 代碼。
-- **`xxx.wasm.gz`**: 包含 WebAssembly 二進位檔，這是 Unity 遊戲引擎及其相關包和腳本的編譯結果。
-
-### 3. TemplateData
-- 這些是 HTML 模板和樣式表中使用的資源，包含圖標和樣式文件。
+📝 這是因為 `Brotli` 壓縮算法僅在 `HTTPS` 連接中被啟用
 
 ## Practices
 - 資源使用 Assetbundle / Addressables 分包
