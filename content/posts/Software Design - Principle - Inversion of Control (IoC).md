@@ -1,10 +1,17 @@
 ---
 title: "Software Design - Principle - Inversion of Control (IoC)"
 date: 2023-05-05 20:05:00
-draft: false
+draft: true
 
 tags: ["Software Design", "Principle"]
 ---
+
+## Quick Chat
+> 如果你的程式中，有一個物件需要另一個物件，應該怎麼做？
+
+
+為何不自己 new ? 也許很難 new
+
 
 ## 反轉了什麼 ?
 > 依賴對象的獲得被反轉了
