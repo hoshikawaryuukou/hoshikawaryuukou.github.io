@@ -7,9 +7,10 @@ tags: ["Unity"]
 ---
 
 ## Quick Chat
+在構建過程中，Unity 通過稱為託管代碼剝離的過程刪除未使用或無法訪問的代碼，這可以顯著減小應用程式的最終大小。
+
 > File -> Build Settings -> Player Settings -> Optimization -> Managed Stripping Level
 
-- 在構建過程中，Unity 通過稱為託管代碼剝離的過程刪除未使用或無法訪問的代碼，這可以顯著減小應用程式的最終大小。
 - ⚠️ Managed Stripping Level 等級越高裁剪掉的代碼越多，包體也就越小，但是對應的風險也就更大。
 - 藉由屬性或特殊 XML 配置檔的形式提供註釋，以指示 Unity 連結器要保留代碼庫的哪些部分。
 
@@ -21,7 +22,7 @@ tags: ["Unity"]
 ## Preserving
 
 ### Preserve attribute
-- ⚠️ [Preserve] 屬性屬於“侵入式”方式的解決方案，不建議
+- ⚠️ [Preserve] 屬性屬於“侵入式”的解決方案，不建議
 ```cs
 class Foo
 {

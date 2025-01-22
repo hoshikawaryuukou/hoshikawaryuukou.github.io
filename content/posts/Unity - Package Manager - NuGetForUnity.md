@@ -9,7 +9,6 @@ tags: ["Unity", "Package Manager", "NuGet"]
 ## Guide
 - [GlitchEnzo/NuGetForUnity](https://github.com/GlitchEnzo/NuGetForUnity)
 
-
 ## Config
 1. 將資源調整放置 Packages 而不是 Assets
     > NuGet > Preferences > Placement > In Packages Folder

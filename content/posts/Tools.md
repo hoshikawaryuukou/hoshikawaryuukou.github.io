@@ -22,8 +22,9 @@ tags: ["Tools"]
 ## Document
 - [HackMD：協作 Markdown 文件，分享知識的平台](https://hackmd.io/zh)
 
-## File Sharing
-- [HFS: HTTP File Server (version 3)](https://github.com/rejetto/hfs)
+## Host
+- [rejetto/hfs](HFS: HTTP File Server (version 3))
+- [terreng/simple-web-server](https://github.com/terreng/simple-web-server)
 
 ## Image Processing
 - [Spritesheet Cutter](https://yeoji.github.io/spritesheet-cutter/)

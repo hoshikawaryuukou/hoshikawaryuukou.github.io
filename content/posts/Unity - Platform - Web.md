@@ -29,7 +29,12 @@ tags: ["Unity", "Web"]
 - [terreng/simple-web-server](https://github.com/terreng/simple-web-server)
 - [terreng/sws-unity-plugin](https://github.com/terreng/sws-unity-plugin)
 
-## Build Structure
+## Host - Issue
+> Unable to load file Build/xxx.framework.js.br! Check that the file exists on the remote server. (also check browser Console and Devtools Network tab to debug)
+
+這是因為 `Brotli` 壓縮算法僅在 `HTTPS` 連接中被啟用
+
+## Build - Structure
 ### 1. index.html
 - 這是遊戲的主要 HTML 頁面，通常包含 HTML 代碼來載入其他資源並初始化遊戲的運行。
 
