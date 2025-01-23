@@ -1,7 +1,7 @@
 ---
 title: "Software Design - Principle - Inversion of Control (IoC)"
 date: 2025-01-16 20:05:00
-draft: true
+draft: false
 
 tags: ["Software Design", "Principle"]
 ---
