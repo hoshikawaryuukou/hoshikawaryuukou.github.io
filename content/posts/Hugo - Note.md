@@ -6,26 +6,22 @@ draft: false
 tags: ["Hugo"]
 ---
 
-## Install
+## Guide
+- [gohugoio/hugo](https://github.com/gohugoio/hugo)
 - [Hugo 從零開始 環境安裝(Windows)](https://devbricker.github.io/post/hugo/deploy/hugo_environment/)
 
 ## Themes
 - [Hugo Themes](https://themes.gohugo.io/)
+- [monkeyWzr/hugo-theme-cactus](https://github.com/monkeyWzr/hugo-theme-cactus)
+- [OmeletWithoutEgg/hugo-theme-cactus](https://github.com/OmeletWithoutEgg/hugo-theme-cactus)
 
 ## Image
 - [Rendering Images in Markdown Preview of Hugo Site](https://mikefrobbins.com/2023/02/08/rendering-images-in-markdown-preview-of-hugo-site/)
   - 以管理員權限開啟 cmd 
   - mklink /D images .\static\images
 
-
-<!-- ## draft
-- https://dwye.dev/tags/ 
-- 
-- -->
-
-
 ## Quick Start
-- 至 Hugo github release 下載執行檔
+- 至 [Hugo github release](https://github.com/gohugoio/hugo/releases) 下載執行檔
 - 設置環境變數
 - hugo version
 - hugo new site MyFreshWebsite --format yaml

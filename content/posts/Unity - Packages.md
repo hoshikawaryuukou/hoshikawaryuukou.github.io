@@ -34,64 +34,63 @@ Scope(s):
 - [baba-s/awesome-unity-open-source-on-github](https://github.com/baba-s/awesome-unity-open-source-on-github/tree/master?tab=readme-ov-file)
 
 ## Animation
-- [PrimeTween](https://github.com/KyryloKuzyk/PrimeTween)
+- [AnnulusGames/LitMotion](https://github.com/AnnulusGames/LitMotion)
 
 ## Async
-- [UniTask](https://github.com/Cysharp/UniTask)    
+- [Cysharp/UniTask](https://github.com/Cysharp/UniTask)    
 
 ## Debug
-- [UnityIngameDebugConsole](https://github.com/yasirkula/UnityIngameDebugConsole)
+- [yasirkula/UnityIngameDebugConsole](https://github.com/yasirkula/UnityIngameDebugConsole)
 
 ## Dependency Injection
-- [VContainer](https://github.com/hadashiA/VContainer)  
+- [hadashiA/VContainer](https://github.com/hadashiA/VContainer)  
 
 ## Dialogue 
-- [YarnSpinner-Unity](https://github.com/YarnSpinnerTool/YarnSpinner-Unity) 
+- [YarnSpinnerTool/YarnSpinner-Unity](https://github.com/YarnSpinnerTool/YarnSpinner-Unity) 
 
 ## Editor
-- [NaughtyAttributes](https://github.com/dbrizov/NaughtyAttributes) 
-- [Alchemy](https://github.com/AnnulusGames/Alchemy) 
+- [AnnulusGames/Alchemy](https://github.com/AnnulusGames/Alchemy) 
 
 ## HotFix
-- [HybridCLR](https://hybridclr.doc.code-philosophy.com/)
+- [focus-creative-games/hybridclr](https://hybridclr.doc.code-philosophy.com/)
+
+## IO
+- [Cysharp/ZString](https://github.com/Cysharp/ZString)
+- [Newtonsoft.Json](https://github.com/jilleJr/Newtonsoft.Json-for-Unity/wiki/Install-official-via-UPM)
+  - git - com.unity.nuget.newtonsoft-json
 
 ## Localization
 - [Lean Localization](https://assetstore.unity.com/packages/tools/localization/lean-localization-28504)
 
 ## Media
-- [UnityNativeCamera](https://github.com/yasirkula/UnityNativeCamera)
+- [yasirkula/UnityNativeCamera](https://github.com/yasirkula/UnityNativeCamera)
 
 ## Messaging 
-- [MessagePipe](https://github.com/Cysharp/MessagePipe)    
+- [Cysharp/MessagePipe](https://github.com/Cysharp/MessagePipe)    
 
 ## Particle Effect
-- [ParticleEffectForUGUI](https://github.com/mob-sakai/ParticleEffectForUGUI)
+- [mob-sakai/ParticleEffectForUGUI](https://github.com/mob-sakai/ParticleEffectForUGUI)
 
 ## Persistence
-- [PlayerPrefs Editor & Utilities](https://github.com/sabresaurus/PlayerPrefsEditor)
+- [sabresaurus/PlayerPrefsEditor](https://github.com/sabresaurus/PlayerPrefsEditor)
 
 ## Resource Management
-- [YooAsset](https://github.com/tuyoogame/YooAsset)
+- [tuyoogame/YooAsset](https://github.com/tuyoogame/YooAsset)
 
 ## Rx (Reactive Extensions)
-- [UniRx](https://github.com/neuecc/UniRx)    
-- [R3](https://github.com/Cysharp/R3)
+- [Cysharp/R3](https://github.com/Cysharp/R3)
 
-## Serialization
-- [Newtonsoft.Json](https://github.com/jilleJr/Newtonsoft.Json-for-Unity/wiki/Install-official-via-UPM)
-  - git - com.unity.nuget.newtonsoft-json
-
-## Sharing
+## Social
 - [Unity Native Share Plugin](https://github.com/yasirkula/UnityNativeShare)
 
 ## Sprite
-- [sprite-dicing](https://github.com/elringus/sprite-dicing)
+- [elringus/sprite-dicing](https://github.com/elringus/sprite-dicing)
 
 ## State Machine
-- [UnityHFSM](https://github.com/Inspiaaa/UnityHFSM)
+- [Inspiaaa/UnityHFSM](https://github.com/Inspiaaa/UnityHFSM)
 
 ## UI
-- [LoopScrollRect](https://github.com/qiankanglai/LoopScrollRect)
+- [qiankanglai/LoopScrollRect](https://github.com/qiankanglai/LoopScrollRect)
 
 ## Web
-- [UnityWebSocket](https://github.com/psygames/UnityWebSocket/tree/master)
+- [psygames/UnityWebSocket](https://github.com/psygames/UnityWebSocket)
