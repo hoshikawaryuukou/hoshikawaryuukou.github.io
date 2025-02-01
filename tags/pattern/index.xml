@@ -1,34 +1,144 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pattern on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/pattern/</link><description>Recent content in Pattern on 識之箱庭</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sat, 23 Nov 2024 21:05:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/pattern/index.xml" rel="self" type="application/rss+xml"/><item><title>Software Design - Pattern - Stateless</title><link>https://HoshikawaRyuukou.github.io/posts/software-design-pattern-stateless/</link><pubDate>Sat, 23 Nov 2024 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design-pattern-stateless/</guid><description>Quick Chat 無狀態設計專注於系統可重現性和邏輯純淨性的設計方法。其核心設計思維旨在將邏輯從外部狀態的依賴中解放出來，使每個狀態完全由輸入決定，而非持續記錄和修改內部狀態。
-Features 純函數式邏輯：輸出僅依賴輸入，無副作用。 輸入驅動：狀態由輸入序列完全決定。 不可變狀態：每次改變都生成新狀態(防止副作用)，支持回溯。 可重現性：同樣的輸入序列可重現遊戲進程。 Limitations 在高度互動和即時性要求高的系統中，狀態的不可變性可能增加性能開銷。</description></item><item><title>Software Design - Pattern - Note</title><link>https://HoshikawaRyuukou.github.io/posts/software-design-pattern-note/</link><pubDate>Thu, 01 Aug 2024 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design-pattern-note/</guid><description>Factory 工厂模式？错！是工厂模式群！ Observer / Pub-Sub (Publisher-Subscriber) Observer vs Pub-Sub pattern Pub sub system pros and cons Observer 觀察者模式中的主題同時身為發布者，觀察者是知道發布者的，但發布者不知道觀察者。
-Pub-Sub (Publisher-Subscriber) 發布者-訂閱者模式中的主題通常由消息代理或事件總線處理，發布者和觀察者不知道彼此的存在。發布者項主題發送訊息，主題再轉發給觀察者。</description></item><item><title>Software Design - Pattern - ViewModel</title><link>https://HoshikawaRyuukou.github.io/posts/software-design-pattern-viewmodel/</link><pubDate>Sun, 27 Aug 2023 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design-pattern-viewmodel/</guid><description>前述 此篇的實作參考到以下文件 (提到不少 Presentation layer 設計原則)
-Android Developers 文件/指南/UI 層
-該文件的更新頻率算高且會與時俱進，筆者印象中其架構設計從 MVVM -&amp;gt; Domain/Application Driven 設計，可以看出主流架構有產生變化。之後的討論雖然使用 ViewModel 但不會詳細介紹 MVVM 的細節，如果對 MVX 系列不熟，可以先讀筆者之前的文章 &amp;laquo;通用設計 - Pattern - MVP&amp;raquo; 裡面的 References。
-探索 回到正題，筆者在最近的業務上遇到
-如何在 服務端未完成 的情況下，讓 Client 獲得完整的體驗流 ?
-以下用交叉反問的方式來分析問題
-Q: 沒有服務端那資料來源哪來 ? A: 使用假資料
-Q: 當表現層依賴的是 IService Interface 使用假資料時需要實作什麼 ? A: 只需要實作一個 FakeService 來產生假資料即可
-Q: 當想要將業務與表現解耦時，很常使用中介者的手法來黏合兩者，如果使用標準的 MVP 實做，Presenter 實際做了哪些事呢 ? A: 監聽 View 事件/ 與 Service 互動/ 管理畫面狀態/ 呼叫 View 刷新</description></item><item><title>Software Design - Pattern - Service Locator</title><link>https://HoshikawaRyuukou.github.io/posts/software-design-pattern-service-locator/</link><pubDate>Wed, 28 Jun 2023 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design-pattern-service-locator/</guid><description>前述 Service Locator 確實也是 IoC 的一種實作方式，不過採用的是 依賴尋找(Dependency Lookup) 的設計。 筆者之前有一陣子蠻常使用這 pattern，那時對 DI 與 IoC 的概念並不熟悉，只覺得這樣使用依賴變得很方便。
-因為我可以在任何地方直接這樣取用資源
-var target = ServiceLocator.Resovle&amp;lt;Target&amp;gt;(); 這樣的寫法有以下問題 :
-透過 ServiceLocator 因為這個取用資源的過程是隱性的，不容易被直接發現。 想用誰就拿誰這件事也有點危險，Ex: View 可以拿到不屬於 Presentation layer 該碰的對象。 所以當 DI 與 IoC 的概念熟悉後，並且使用 DI / IoC Container 後就漸漸不使用這 pattern 了。
-應用 但這次工作上反而覺得 Service Locator 可以勝任從 Singleton 過渡到 DI / IoC Container 的中繼階段。
-因為這次接觸到的專案嚴重依賴 Singleton，且組員也已習慣 Singleton 的寫法了，要直切換到 DI / IoC Container 會有不小的陣痛期(當然實務上能不能切又是另一個故事了)。
-於是筆者想起了 Service Locator，有以下理由
-因為在使用上就很像是 Singleton 筆者希望組員能快速感受到 IoC 所帶來的紅利 集中管理依賴 實作 此模式使用稱為「服務定位器」的中央註冊表，它根據請求返回執行特定任務所需的對象。</description></item><item><title>Software Design - Pattern - Guard Clauses</title><link>https://HoshikawaRyuukou.github.io/posts/software-design-pattern-guard-clauses/</link><pubDate>Tue, 10 Jan 2023 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design-pattern-guard-clauses/</guid><description>目的 符合 Fail Fast 的原則，驗證條件並在不滿足條件時立即停止執行。 增加可讀性(更扁平)，減少了巢狀判斷。 例子請參考 Guard Clause Extra - Guard Class 將通用的保護子句封裝在一個專門的類是一種很好的做法，可重用邏輯並編寫更具可讀性的保護子句。
-可參考這個庫 GuardClauses Extra - Value Object Stop using trivial Guard Clauses! Try this instead
-文章作者避免瑣碎 Guard 的方式，是使用 Value Object，來避免域接受到無效參數。這個作法在筆者看來才是真正意義上的 Fail Fast。(YT評論區也建議閱讀，有許多不錯的討論)
-但不可否認的 Guard Clause 作法在大多情況下是有益的。
-Ref Guard Clause Implementation Patterns: Guard Clause GuardClauses Stop using trivial Guard Clauses! Try this instead</description></item><item><title>Software Design - Pattern - Data Transfer Object (DTO)</title><link>https://HoshikawaRyuukou.github.io/posts/software-design-pattern-data-transfer-object-dto/</link><pubDate>Sun, 11 Dec 2022 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design-pattern-data-transfer-object-dto/</guid><description>什麼是 DTO？ Data Transfer Object (數據傳輸對象) 是定義如何在應用程序之間發送數據的對象。它僅用於發送和接收數據，本身不包含任何業務邏輯。
-為什麼使用 DTO？ 輕鬆收發 在沒有任何邏輯的基礎上，可以僅使用序列化與反序列化就保證對象的完整性和可傳遞性。
-避免過度暴露訊息 對分層或模組來說，彼此間應盡量降低耦合。下圖以公園廁所報修為案例。
-這個資料流由鄉公所傳到基層人員手上，中間經過兩個邊界
-鄉公所 | 工程公司 =&amp;gt; DTO (公文) 工程公司 | 基層人員 =&amp;gt; DTO (簡訊) 每個單位的關注點不同，在意的資料也會不同，DTO 做為邊界兩方做最小程度的媒介，隱藏的不該被關注(敏感)的事
-印章對工程公司並不是必要資訊 詳細的時間格式是對基層人員並不是必要資訊 在實作上常被用於轉換 DomainModol -&amp;gt; DomainDto
-注意事項 類別數量增加，請自行評估使用情形
-Ref Cutting Edge - Pros and Cons of Data Transfer Objects The DTO (Data Transfer Object) Data Transfer Objects Clean Architecture : why not using the entity as request model of the use case (interactor) Difference between Entity and DTO</description></item><item><title>Software Design - Pattern - Model View Presenter (MVP)</title><link>https://HoshikawaRyuukou.github.io/posts/software-design-pattern-model-view-presenter-mvp/</link><pubDate>Sat, 10 Dec 2022 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design-pattern-model-view-presenter-mvp/</guid><description>前述 關注點分離（Separation of Concerns，SoC）: 在軟體開發中，一個模組或組件應該專注於解決特定的問題，而不是同時處理多個功能。每個組件都有自己的職責範圍，並且與其他組件盡可能解耦合。
-而 MVC / MVP / MVVM 是關注點分離於前端的經典應用，網上已經有很多不錯的文章，再寫一份類似的整理文章意義也不大，對此感到陌生，不妨閱讀以下連結，會幫助你理解 MV系列的發展。
-界面之下：还原真实的MV*模式 正确认识 MVC/MVP/MVVM 站在思想层面看MVX架构 MVP Pattern: Part 2 Supervising Controller Part 2 — Converting Presenters into ViewModels 【Unity】MV(R)Pパターンのすすめ Unravelling MVC, MVP and MVVM 以下則對筆者實作中比較常用的 MVP 多做一些討論
-關注點(責任) 在 MVP 的構成下分成三個部分
-Model: 應用程式的核心邏輯。 View: 應用程式的使用者介面，負責呈現數據和接收使用者的輸入。 Presenter: View 和 Model 之間的中介。 Passive View 這是 MVP 的一種實作風格，也是筆者主要使用的風格。
-Presenter 對 View 有完全控制權 View 提供方法與事件給 Presenter 使用 View 對 Presenter 一無所知 以猜拳遊戲的 View 為例</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pattern on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/pattern/</link><description>Recent content in Pattern on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sat, 23 Nov 2024 21:05:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/pattern/index.xml" rel="self" type="application/rss+xml"/><item><title>Software Design - Pattern - Stateless</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---stateless/</link><pubDate>Sat, 23 Nov 2024 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---stateless/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>無狀態設計專注於系統可重現性和邏輯純淨性的設計方法。其核心設計思維旨在將邏輯從外部狀態的依賴中解放出來，使每個狀態完全由輸入決定，而非持續記錄和修改內部狀態。&lt;/p>
+&lt;h2 id="features">Features&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>純函數式邏輯&lt;/strong>：輸出僅依賴輸入，無副作用。&lt;/li>
+&lt;li>&lt;strong>輸入驅動&lt;/strong>：狀態由輸入序列完全決定。&lt;/li>
+&lt;li>&lt;strong>不可變狀態&lt;/strong>：每次改變都生成新狀態(防止副作用)，支持回溯。&lt;/li>
+&lt;li>&lt;strong>可重現性&lt;/strong>：同樣的輸入序列可重現遊戲進程。&lt;/li>
+&lt;/ul>
+&lt;h2 id="limitations">Limitations&lt;/h2>
+&lt;ul>
+&lt;li>在高度互動和即時性要求高的系統中，狀態的不可變性可能增加性能開銷。&lt;/li>
+&lt;/ul></description></item><item><title>Software Design - Pattern - Note</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---note/</link><pubDate>Thu, 01 Aug 2024 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---note/</guid><description>&lt;h2 id="factory">Factory&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.bilibili.com/video/BV1ZS421X74d">工厂模式？错！是工厂模式群！&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="observer--pub-sub-publisher-subscriber">Observer / Pub-Sub (Publisher-Subscriber)&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://hackernoon.com/observer-vs-pub-sub-pattern-50d3b27f838c">Observer vs Pub-Sub pattern&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.semicolonandsons.com/code_diary/architecture/pub-sub-system-pros-and-cons">Pub sub system pros and cons&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="observer">Observer&lt;/h3>
+&lt;p>觀察者模式中的主題同時身為發布者，觀察者是知道發布者的，但發布者不知道觀察者。&lt;/p>
+&lt;h3 id="pub-sub-publisher-subscriber">Pub-Sub (Publisher-Subscriber)&lt;/h3>
+&lt;p>發布者-訂閱者模式中的主題通常由消息代理或事件總線處理，發布者和觀察者不知道彼此的存在。發布者項主題發送訊息，主題再轉發給觀察者。&lt;/p></description></item><item><title>Software Design - Pattern - ViewModel</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---viewmodel/</link><pubDate>Sun, 27 Aug 2023 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---viewmodel/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
+&lt;p>此篇的實作參考到以下文件 (提到不少 Presentation layer 設計原則)&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a href="https://developer.android.com/topic/architecture/ui-layer?hl=zh-tw">Android Developers 文件/指南/UI 層&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>該文件的更新頻率算高且會與時俱進，筆者印象中其架構設計從 MVVM -&amp;gt; Domain/Application Driven 設計，可以看出主流架構有產生變化。之後的討論雖然使用 ViewModel 但不會詳細介紹 MVVM 的細節，如果對 MVX 系列不熟，可以先讀筆者之前的文章 &lt;strong>&amp;laquo;通用設計 - Pattern - MVP&amp;raquo;&lt;/strong> 裡面的 References。&lt;/p>
+&lt;h2 id="探索">探索&lt;/h2>
+&lt;p>回到正題，筆者在最近的業務上遇到&lt;/p>
+&lt;blockquote>
+&lt;p>如何在 &lt;strong>服務端未完成&lt;/strong> 的情況下，讓 Client 獲得完整的體驗流 ?&lt;/p>
+&lt;/blockquote>
+&lt;p>以下用交叉反問的方式來分析問題&lt;/p>
+&lt;p>Q: 沒有服務端那資料來源哪來 ? &lt;br>
+A: 使用假資料&lt;/p>
+&lt;p>Q: 當表現層依賴的是 IService Interface 使用假資料時需要實作什麼 ? &lt;br>
+A: 只需要實作一個 FakeService 來產生假資料即可&lt;/p>
+&lt;p>Q: 當想要將業務與表現解耦時，很常使用中介者的手法來黏合兩者，如果使用標準的 MVP 實做，Presenter 實際做了哪些事呢 ? &lt;br>
+A: 監聽 View 事件/ 與 Service 互動/ 管理畫面狀態/ 呼叫 View 刷新&lt;/p>
+&lt;p>Q: Presenter 似乎有點多事情 ! &lt;br>
+A: 其實需要視情況而定，情況簡單時直接向 View 倒資料也是完全可以接受的。但當情況複雜時可以選擇導入 ViewModel 來管理狀態。事實上表現層所要呈現的 UI 狀態未必是只跟 Service 的回傳有關，可能需要這樣的控制 條件A(Service) + 條件B(Local) + 條件C(User Runtime) -&amp;gt; 狀態D&lt;/p></description></item><item><title>Software Design - Pattern - Service Locator</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---service-locator/</link><pubDate>Wed, 28 Jun 2023 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---service-locator/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
+&lt;p>Service Locator 確實也是 IoC 的一種實作方式，不過採用的是 依賴尋找(Dependency Lookup) 的設計。
+筆者之前有一陣子蠻常使用這 pattern，那時對 DI 與 IoC 的概念並不熟悉，只覺得這樣使用依賴變得很方便。&lt;/p>
+&lt;p>因為我可以在任何地方直接這樣取用資源&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-csharp" data-lang="csharp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">var&lt;/span> &lt;span style="color:#111">target&lt;/span> &lt;span style="color:#111">=&lt;/span> &lt;span style="color:#111">ServiceLocator&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">Resovle&lt;/span>&lt;span style="color:#111">&amp;lt;&lt;/span>&lt;span style="color:#111">Target&lt;/span>&lt;span style="color:#111">&amp;gt;();&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>這樣的寫法有以下問題 :&lt;/p>
+&lt;ol>
+&lt;li>透過 ServiceLocator 因為這個取用資源的過程是隱性的，不容易被直接發現。&lt;/li>
+&lt;li>想用誰就拿誰這件事也有點危險，Ex: View 可以拿到不屬於 Presentation layer 該碰的對象。&lt;/li>
+&lt;/ol>
+&lt;p>所以當 DI 與 IoC 的概念熟悉後，並且使用 DI / IoC Container 後就漸漸不使用這 pattern 了。&lt;/p>
+&lt;h2 id="應用">應用&lt;/h2>
+&lt;p>但這次工作上反而覺得 Service Locator 可以勝任從 Singleton 過渡到 DI / IoC Container 的中繼階段。&lt;/p>
+&lt;p>因為這次接觸到的專案嚴重依賴 Singleton，且組員也已習慣 Singleton 的寫法了，要直切換到 DI / IoC Container 會有不小的陣痛期(當然實務上能不能切又是另一個故事了)。&lt;/p>
+&lt;p>於是筆者想起了 Service Locator，有以下理由&lt;/p>
+&lt;ol>
+&lt;li>因為在使用上就很像是 Singleton&lt;/li>
+&lt;li>筆者希望組員能快速感受到 IoC 所帶來的紅利&lt;/li>
+&lt;li>集中管理依賴&lt;/li>
+&lt;/ol>
+&lt;h2 id="實作">實作&lt;/h2>
+&lt;p>此模式使用稱為「服務定位器」的中央註冊表，它根據請求返回執行特定任務所需的對象。&lt;/p></description></item><item><title>Software Design - Pattern - Guard Clauses</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---guard-clauses/</link><pubDate>Tue, 10 Jan 2023 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---guard-clauses/</guid><description>&lt;h2 id="目的">目的&lt;/h2>
+&lt;ul>
+&lt;li>符合 Fail Fast 的原則，驗證條件並在不滿足條件時立即停止執行。&lt;/li>
+&lt;li>增加可讀性(更扁平)，減少了巢狀判斷。&lt;/li>
+&lt;li>例子請參考 &lt;a href="https://deviq.com/design-patterns/guard-clause">Guard Clause&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="extra---guard-class">Extra - Guard Class&lt;/h2>
+&lt;p>將通用的保護子句封裝在一個專門的類是一種很好的做法，可重用邏輯並編寫更具可讀性的保護子句。&lt;/p>
+&lt;ul>
+&lt;li>可參考這個庫 &lt;a href="https://github.com/ardalis/GuardClauses">GuardClauses&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="extra---value-object">Extra - Value Object&lt;/h2>
+&lt;p>&lt;a href="https://codeopinion.com/stop-using-trivial-guard-clauses-try-this-instead/">Stop using trivial Guard Clauses! Try this instead&lt;/a>&lt;/p>
+&lt;p>文章作者避免瑣碎 Guard 的方式，是使用 Value Object，來避免域接受到無效參數。這個作法在筆者看來才是真正意義上的 Fail Fast。(YT評論區也建議閱讀，有許多不錯的討論)&lt;/p>
+&lt;p>但不可否認的 Guard Clause 作法在大多情況下是有益的。&lt;/p>
+&lt;h2 id="ref">Ref&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://deviq.com/design-patterns/guard-clause">Guard Clause&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://teddy-chen-tw.blogspot.com/2012/05/implementation-patterns-guard-clause.html">Implementation Patterns: Guard Clause&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/ardalis/GuardClauses">GuardClauses&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://codeopinion.com/stop-using-trivial-guard-clauses-try-this-instead/">Stop using trivial Guard Clauses! Try this instead&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Software Design - Pattern - Data Transfer Object (DTO)</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---data-transfer-object-dto/</link><pubDate>Sun, 11 Dec 2022 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---data-transfer-object-dto/</guid><description>&lt;h2 id="什麼是-dto">什麼是 DTO？&lt;/h2>
+&lt;p>Data Transfer Object (數據傳輸對象) 是定義如何在應用程序之間發送數據的對象。它僅用於發送和接收數據，本身不包含任何業務邏輯。&lt;/p>
+&lt;h2 id="為什麼使用-dto">為什麼使用 DTO？&lt;/h2>
+&lt;h3 id="輕鬆收發">輕鬆收發&lt;/h3>
+&lt;p>在沒有任何邏輯的基礎上，可以僅使用序列化與反序列化就保證對象的完整性和可傳遞性。&lt;/p>
+&lt;h3 id="避免過度暴露訊息">避免過度暴露訊息&lt;/h3>
+&lt;p>對分層或模組來說，彼此間應盡量降低耦合。下圖以公園廁所報修為案例。&lt;/p>
+&lt;p>
+ &lt;img src="https://HoshikawaRyuukou.github.io/images/DTO.png" alt="DTO Example">
+
+&lt;/p>
+&lt;p>這個資料流由&lt;strong>鄉公所&lt;/strong>傳到&lt;strong>基層人員&lt;/strong>手上，中間經過兩個邊界&lt;/p>
+&lt;ul>
+&lt;li>鄉公所 | 工程公司 =&amp;gt; DTO (公文)&lt;/li>
+&lt;li>工程公司 | 基層人員 =&amp;gt; DTO (簡訊)&lt;/li>
+&lt;/ul>
+&lt;p>每個單位的關注點不同，在意的資料也會不同，DTO 做為邊界兩方做最小程度的媒介，隱藏的不該被關注(敏感)的事&lt;/p>
+&lt;ul>
+&lt;li>印章對工程公司並不是必要資訊&lt;/li>
+&lt;li>詳細的時間格式是對基層人員並不是必要資訊&lt;/li>
+&lt;/ul>
+&lt;p>在實作上常被用於轉換 DomainModol -&amp;gt; DomainDto&lt;/p>
+&lt;h2 id="注意事項">注意事項&lt;/h2>
+&lt;p>類別數量增加，請自行評估使用情形&lt;/p>
+&lt;h2 id="ref">Ref&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://learn.microsoft.com/en-us/archive/msdn-magazine/2009/august/pros-and-cons-of-data-transfer-objects">Cutting Edge - Pros and Cons of Data Transfer Objects&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://examples.javacodegeeks.com/the-dto-data-transfer-object/">The DTO (Data Transfer Object)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://aspnetboilerplate.com/Pages/Documents/Data-Transfer-Objects">Data Transfer Objects&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://stackoverflow.com/questions/52812337/clean-architecture-why-not-using-the-entity-as-request-model-of-the-use-case">Clean Architecture : why not using the entity as request model of the use case (interactor)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://stackoverflow.com/questions/39397147/difference-between-entity-and-dto">Difference between Entity and DTO&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Software Design - Pattern - Model View Presenter (MVP)</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---model-view-presenter-mvp/</link><pubDate>Sat, 10 Dec 2022 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---model-view-presenter-mvp/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
+&lt;p>關注點分離（Separation of Concerns，SoC）: 在軟體開發中，一個模組或組件應該專注於解決特定的問題，而不是同時處理多個功能。每個組件都有自己的職責範圍，並且與其他組件盡可能解耦合。&lt;/p>
+&lt;p>而 MVC / MVP / MVVM 是關注點分離於前端的經典應用，網上已經有很多不錯的文章，再寫一份類似的整理文章意義也不大，對此感到陌生，不妨閱讀以下連結，會幫助你理解 MV系列的發展。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/livoras/blog/issues/11">界面之下：还原真实的MV*模式&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://juejin.cn/post/6901200799242649607">正确认识 MVC/MVP/MVVM&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://juejin.cn/post/6998093259893407757#comment">站在思想层面看MVX架构&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://deltatimer.com/260/mvp-pattern-part-2-supervising-controller">MVP Pattern: Part 2 Supervising Controller&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://proandroiddev.com/converting-presenters-into-viewmodels-c9279c7516e7">Part 2 — Converting Presenters into ViewModels&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://annulusgames-lab.blogspot.com/2022/12/unity-ui-mvrp.html">【Unity】MV(R)Pパターンのすすめ&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.pragmaticcoding.ca/javafx/Frameworks/">Unravelling MVC, MVP and MVVM&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>以下則對筆者實作中比較常用的 MVP 多做一些討論&lt;/p>
+&lt;h2 id="關注點責任">關注點(責任)&lt;/h2>
+&lt;p>在 MVP 的構成下分成三個部分&lt;/p>
+&lt;ul>
+&lt;li>Model: 應用程式的核心邏輯。&lt;/li>
+&lt;li>View: 應用程式的使用者介面，負責呈現數據和接收使用者的輸入。&lt;/li>
+&lt;li>Presenter: View 和 Model 之間的中介。&lt;/li>
+&lt;/ul>
+&lt;h3 id="passive-view">Passive View&lt;/h3>
+&lt;p>這是 MVP 的一種實作風格，也是筆者主要使用的風格。&lt;/p>
+&lt;ul>
+&lt;li>Presenter 對 View 有完全控制權&lt;/li>
+&lt;li>View 提供方法與事件給 Presenter 使用&lt;/li>
+&lt;li>View 對 Presenter 一無所知&lt;/li>
+&lt;/ul>
+&lt;p>以猜拳遊戲的 View 為例&lt;/p></description></item></channel></rss>

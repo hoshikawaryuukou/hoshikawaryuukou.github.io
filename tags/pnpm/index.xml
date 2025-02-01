@@ -1,1 +1,200 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pnpm on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/pnpm/</link><description>Recent content in pnpm on 識之箱庭</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Mon, 04 Nov 2024 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/pnpm/index.xml" rel="self" type="application/rss+xml"/><item><title>Workflow - Publish private packages to Github Packages using Changesets</title><link>https://HoshikawaRyuukou.github.io/posts/workflow-publish-private-packages-to-github-packages-using-changesets/</link><pubDate>Mon, 04 Nov 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow-publish-private-packages-to-github-packages-using-changesets/</guid><description>Guide changesets/action .github/workflows/publish-package.yml name: Publish package to GitHub Packages on: workflow_dispatch: release: types: [published] concurrency: ${{ github.workflow }}-${{ github.ref }} jobs: release: runs-on: ubuntu-latest steps: - name: Checkout Repo uses: actions/checkout@v4 - uses: pnpm/action-setup@v4 with: version: 9 run_install: false - uses: actions/setup-node@v4 with: node-version: &amp;#39;20.x&amp;#39; registry-url: &amp;#39;https://npm.pkg.github.com&amp;#39; scope: &amp;#39;@user-or-organization&amp;#39; - name: Install dependencies run: pnpm install - name: Build package run: pnpm build - name: Create Release Pull Request or Publish to npm id: changesets uses: changesets/action@v1 with: # This expects you to have a script called release which does a build for your packages and calls changeset publish publish: pnpm release env: GITHUB_TOKEN: ${{ secrets.</description></item><item><title>Node.js - Package Manager - pnpm</title><link>https://HoshikawaRyuukou.github.io/posts/node.js-package-manager-pnpm/</link><pubDate>Sat, 12 Oct 2024 21:16:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/node.js-package-manager-pnpm/</guid><description>Guide pnpm 为什么现在我更推荐 pnpm 而不是 npm/yarn? pnpm、npm、yarn 包管理工具『优劣对比』及『环境迁移』 从pnpm工具了解整个npm包核心管理原理 為什麼 pnpm 比 npm 更快且更省空間？ pnpm实战教程 Install 全域安裝 npm install -g pnpm 環境配置 - Windows ⚠️ 使用 PowerShell 系統管理員 Get-ExecutionPolicy # 如果為 Restricted 則繼續進行 Set-ExecutionPolicy RemoteSigned Commands pnpm 本體 pnpm self-update : 將 pnpm 更新到最新版本。(建議重啟 ide) Node.js 的執行環境 pnpm env use &amp;ndash;global lts : 安裝並使用 LTS 版本 pnpm env use &amp;ndash;global {version} : 安裝並使用指定版本 pnpm env add &amp;ndash;global {version} : 僅安裝指定版本 pnpm env remove &amp;ndash;global {version} : 移除指定版本 pnpm env list &amp;ndash;remote : 列出線上可用的版本 packages pnpm add &amp;lt;pkg&amp;gt; : 添加依賴 pnpm remove &amp;lt;pkg&amp;gt; : 移除依賴 pnpm install : 安裝所有依賴 pnpm update : 在 package.</description></item><item><title>Workflow - Create a monorepo with pnpm workspace</title><link>https://HoshikawaRyuukou.github.io/posts/workflow-create-a-monorepo-with-pnpm-workspace/</link><pubDate>Sun, 06 Oct 2024 20:31:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow-create-a-monorepo-with-pnpm-workspace/</guid><description>Guide Monorepo与pnpm：前端项目管理的完美搭档 为什么 pnpm+monorepo 是组件库项目的最佳实践 Monorepo？來聊聊另一種專案管理架構吧！ 从npm版本依赖到Monorepo大仓项目 MonoRepo实战：pnpm+nx搭建MonoRepo项目 Create a monorepo using PNPM workspace 从构建到发布：Monorepo 的最佳实践 TSTemplateMonorepo pnpm monorepo 搭建工具库 專案基本結構 project-root/ # 專案根目錄 ├── pnpm-workspace.yaml # pnpm 的工作區配置文件，用來定義哪些資料夾屬於工作區範圍 ├── package.json # 專案的全局配置文件，通常包括依賴、腳本和項目元數據 └── packages/ # 所有子包的資料夾，存放具體的子項目 ├── pkg01/ # 子包01，包含它自己的 package.json 文件和代碼 └── pkg02/ # 子包02，與 pkg01 結構相似，也擁有自己的 package.json 和代碼 新增 專案內全局配置 ./package.json # 產生一個基本的 package.json pnpm init monorepo 的全局 package.json 設置 &amp;quot;private&amp;quot;: true { &amp;#34;private&amp;#34;: true, } 新增 工作區配置文件 .</description></item><item><title>Workflow - Optimize a monorepo with pnpm and Turborepo</title><link>https://HoshikawaRyuukou.github.io/posts/workflow-optimize-a-monorepo-with-pnpm-and-turborepo/</link><pubDate>Sun, 06 Oct 2024 20:31:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow-optimize-a-monorepo-with-pnpm-and-turborepo/</guid><description>Guide</description></item><item><title>Workflow - Publish a private package to Github Packages</title><link>https://HoshikawaRyuukou.github.io/posts/workflow-publish-a-private-package-to-github-packages/</link><pubDate>Sun, 06 Oct 2024 20:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow-publish-a-private-package-to-github-packages/</guid><description>Guide Publishing a Private Package on GitHub Packages 发布 Node.js 包 Notice ⚠️ 請先確保 repository 與 package 以配置為 private。 ⚠️ 本範例使用 pnpm。 package.json 的必要配置 { &amp;#34;name&amp;#34;: &amp;#34;@user-or-organization/package-name&amp;#34;, &amp;#34;version&amp;#34;: &amp;#34;1.0.0&amp;#34;, &amp;#34;repository&amp;#34;: { &amp;#34;url&amp;#34;: &amp;#34;https://github.com/user-or-organization/package-name.git&amp;#34; }, &amp;#34;publishConfig&amp;#34;: { &amp;#34;registry&amp;#34;: &amp;#34;https://npm.pkg.github.com/&amp;#34; } } .github/workflows/publish-package.yml name: Publish package to GitHub Packages on: workflow_dispatch: release: types: [published] jobs: build: runs-on: ubuntu-latest permissions: contents: read packages: write steps: - uses: actions/checkout@v4 - uses: pnpm/action-setup@v4 with: version: 9 run_install: false - uses: actions/setup-node@v4 with: node-version: &amp;#39;20.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pnpm on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/pnpm/</link><description>Recent content in Pnpm on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Mon, 04 Nov 2024 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/pnpm/index.xml" rel="self" type="application/rss+xml"/><item><title>Workflow - Publish private packages to Github Packages using Changesets</title><link>https://HoshikawaRyuukou.github.io/posts/workflow---publish-private-packages-to-github-packages-using-changesets/</link><pubDate>Mon, 04 Nov 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow---publish-private-packages-to-github-packages-using-changesets/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/changesets/action/">changesets/action&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="githubworkflowspublish-packageyml">.github/workflows/publish-package.yml&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yml" data-lang="yml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Publish package to GitHub Packages&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">on&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">workflow_dispatch&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">release&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">types&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">[&lt;/span>&lt;span style="color:#ae81ff">published]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">concurrency&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">${{ github.workflow }}-${{ github.ref }}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">jobs&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">release&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">runs-on&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">ubuntu-latest&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">steps&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Checkout Repo&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">uses&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">actions/checkout@v4&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">uses&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">pnpm/action-setup@v4&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">with&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">version&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">9&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">run_install&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#00a8c8">false&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">uses&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">actions/setup-node@v4&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">with&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">node-version&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#39;20.x&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">registry-url&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#39;https://npm.pkg.github.com&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">scope&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#39;@user-or-organization&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Install dependencies&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">run&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">pnpm install&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Build package&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">run&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">pnpm build&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Create Release Pull Request or Publish to npm&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">id&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">changesets&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">uses&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">changesets/action@v1&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">with&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e"># This expects you to have a script called release which does a build for your packages and calls changeset publish&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">publish&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">pnpm release&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">env&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">GITHUB_TOKEN&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">${{ secrets.GITHUB_TOKEN }}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Done&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">if&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">steps.changesets.outputs.published == &amp;#39;true&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e"># You can do something when a publish happens.&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">run&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">echo &amp;#34;Done&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Node.js - Package Manager - pnpm</title><link>https://HoshikawaRyuukou.github.io/posts/node.js---package-manager---pnpm/</link><pubDate>Sat, 12 Oct 2024 21:16:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/node.js---package-manager---pnpm/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://pnpm.nodejs.cn/">pnpm&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.cnblogs.com/cangqinglang/p/14448329.html">为什么现在我更推荐 pnpm 而不是 npm/yarn? &lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://juejin.cn/post/7286362110211489855?searchId=20240731105621AD124E03A93B1AB5027A">pnpm、npm、yarn 包管理工具『优劣对比』及『环境迁移』&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://qborfy.com/today/20230219.html">从pnpm工具了解整个npm包核心管理原理&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.explainthis.io/zh-hant/swe/why-is-pnpm-faster">為什麼 pnpm 比 npm 更快且更省空間？&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.csdn.net/bobo789456123/article/details/132882778">pnpm实战教程&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="install">Install&lt;/h2>
+&lt;h3 id="全域安裝">全域安裝&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>npm install -g pnpm
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="環境配置---windows">環境配置 - Windows&lt;/h3>
+&lt;ul>
+&lt;li>⚠️ 使用 PowerShell 系統管理員&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>Get-ExecutionPolicy
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 如果為 Restricted 則繼續進行 &lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Set-ExecutionPolicy RemoteSigned
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="commands">Commands&lt;/h2>
+&lt;h3 id="pnpm-本體">pnpm 本體&lt;/h3>
+&lt;ul>
+&lt;li>pnpm self-update : 將 pnpm 更新到最新版本。(建議重啟 ide)&lt;/li>
+&lt;/ul>
+&lt;h3 id="nodejs-的執行環境">Node.js 的執行環境&lt;/h3>
+&lt;ul>
+&lt;li>pnpm env use &amp;ndash;global lts : 安裝並使用 LTS 版本&lt;/li>
+&lt;li>pnpm env use &amp;ndash;global {version} : 安裝並使用指定版本&lt;/li>
+&lt;li>pnpm env add &amp;ndash;global {version} : 僅安裝指定版本&lt;/li>
+&lt;li>pnpm env remove &amp;ndash;global {version} : 移除指定版本&lt;/li>
+&lt;li>pnpm env list &amp;ndash;remote : 列出線上可用的版本&lt;/li>
+&lt;/ul>
+&lt;h3 id="packages">packages&lt;/h3>
+&lt;ul>
+&lt;li>pnpm add &lt;code>&amp;lt;pkg&amp;gt;&lt;/code> : 添加依賴&lt;/li>
+&lt;li>pnpm remove &lt;code>&amp;lt;pkg&amp;gt;&lt;/code> : 移除依賴&lt;/li>
+&lt;li>pnpm install : 安裝所有依賴&lt;/li>
+&lt;li>pnpm update : 在 package.json 限制的版本範圍內更新所有依賴&lt;/li>
+&lt;li>pnpm update &amp;ndash;latest : 強更新所有依賴至最新&lt;/li>
+&lt;li>pnpm outdated : 檢查套件是否有更新&lt;/li>
+&lt;li>pnpm store prune : 會清理掉不再被專案引用的包&lt;/li>
+&lt;li>pnpm run &lt;code>&amp;lt;commnad&amp;gt;&lt;/code> : 執行命令 (run 基本)&lt;/li>
+&lt;/ul>
+&lt;h3 id="workspace">workspace&lt;/h3>
+&lt;ul>
+&lt;li>-w : 為工作區參數&lt;/li>
+&lt;li>-wD : 組合使用 - 工作區依賴&lt;/li>
+&lt;li>&amp;ndash;filter &lt;code>&amp;lt;package_selector&amp;gt;&lt;/code>: 對指定 package 操作&lt;/li>
+&lt;/ul></description></item><item><title>Workflow - Create a monorepo with pnpm workspace</title><link>https://HoshikawaRyuukou.github.io/posts/workflow---create-a-monorepo-with-pnpm-workspace/</link><pubDate>Sun, 06 Oct 2024 20:31:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow---create-a-monorepo-with-pnpm-workspace/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://juejin.cn/post/7357546247848198182">Monorepo与pnpm：前端项目管理的完美搭档&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://juejin.cn/post/7316409548994625574?searchId=20240731105621AD124E03A93B1AB5027A">为什么 pnpm+monorepo 是组件库项目的最佳实践&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://israynotarray.com/other/20240413/3177435894/">Monorepo？來聊聊另一種專案管理架構吧！&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://qborfy.com/today/20230107.html">从npm版本依赖到Monorepo大仓项目&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://qborfy.com/today/20230225.html">MonoRepo实战：pnpm+nx搭建MonoRepo项目&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://dev.to/vinomanick/create-a-monorepo-using-pnpm-workspace-1ebn">Create a monorepo using PNPM workspace&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://juejin.cn/post/7210310775276716092?searchId=20241003162352CA6A9111EA17F1CC615A">从构建到发布：Monorepo 的最佳实践&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/Bernankez/TSTemplateMonorepo">TSTemplateMonorepo&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://juejin.cn/post/7338268608324681747">pnpm monorepo 搭建工具库&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="專案基本結構">專案基本結構&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>project-root/ &lt;span style="color:#75715e"># 專案根目錄&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── pnpm-workspace.yaml &lt;span style="color:#75715e"># pnpm 的工作區配置文件，用來定義哪些資料夾屬於工作區範圍&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── package.json &lt;span style="color:#75715e"># 專案的全局配置文件，通常包括依賴、腳本和項目元數據&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>└── packages/ &lt;span style="color:#75715e"># 所有子包的資料夾，存放具體的子項目&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ├── pkg01/ &lt;span style="color:#75715e"># 子包01，包含它自己的 package.json 文件和代碼&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> └── pkg02/ &lt;span style="color:#75715e"># 子包02，與 pkg01 結構相似，也擁有自己的 package.json 和代碼&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="新增-專案內全局配置-packagejson">新增 專案內全局配置 ./package.json&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 產生一個基本的 package.json&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pnpm init 
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>monorepo 的全局 package.json 設置 &lt;code>&amp;quot;private&amp;quot;: true&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;private&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#00a8c8">true&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="新增-工作區配置文件-pnpm-workspaceyaml">新增 工作區配置文件 ./pnpm-workspace.yaml&lt;/h2>
+&lt;ul>
+&lt;li>該檔案聲明這是一個 Monorepo 專案。&lt;/li>
+&lt;li>&lt;code>pnpm install&lt;/code> 自動安裝所有 package 的相依套件。&lt;/li>
+&lt;li>&lt;code>packages&lt;/code> 字段列出了工作區包含的 package 位置。&lt;/li>
+&lt;li>工作區下的 package 會有各自的 package.json。&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">packages&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#d88200">&amp;#39;packages/*&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="extra---在專案中限用-pnpm">Extra - 在專案中限用 pnpm&lt;/h2>
+&lt;p>⚠️ 但目前 npm hook - preinstall 未如預期運作。&lt;/p></description></item><item><title>Workflow - Optimize a monorepo with pnpm and Turborepo</title><link>https://HoshikawaRyuukou.github.io/posts/workflow---optimize-a-monorepo-with-pnpm-and-turborepo/</link><pubDate>Sun, 06 Oct 2024 20:31:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow---optimize-a-monorepo-with-pnpm-and-turborepo/</guid><description>&lt;h2 id="guide">Guide&lt;/h2></description></item><item><title>Workflow - Publish a private package to Github Packages</title><link>https://HoshikawaRyuukou.github.io/posts/workflow---publish-a-private-package-to-github-packages/</link><pubDate>Sun, 06 Oct 2024 20:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow---publish-a-private-package-to-github-packages/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://dev.to/carloshendvpm/publishing-a-private-package-on-github-packages-23bf">Publishing a Private Package on GitHub Packages&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.github.com/zh/actions/use-cases-and-examples/publishing-packages/publishing-nodejs-packages">发布 Node.js 包&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="notice">Notice&lt;/h2>
+&lt;ul>
+&lt;li>⚠️ 請先確保 repository 與 package 以配置為 private。&lt;/li>
+&lt;li>⚠️ 本範例使用 pnpm。&lt;/li>
+&lt;/ul>
+&lt;h2 id="packagejson-的必要配置">package.json 的必要配置&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;name&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;@user-or-organization/package-name&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;version&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;1.0.0&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;repository&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;url&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;https://github.com/user-or-organization/package-name.git&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;publishConfig&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;registry&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;https://npm.pkg.github.com/&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="githubworkflowspublish-packageyml">.github/workflows/publish-package.yml&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yml" data-lang="yml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Publish package to GitHub Packages&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">on&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">workflow_dispatch&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">release&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">types&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">[&lt;/span>&lt;span style="color:#ae81ff">published]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">jobs&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">build&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">runs-on&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">ubuntu-latest&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">permissions&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">contents&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">read&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">packages&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">write&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">steps&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">uses&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">actions/checkout@v4&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">uses&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">pnpm/action-setup@v4&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">with&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">version&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">9&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">run_install&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#00a8c8">false&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">uses&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">actions/setup-node@v4&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">with&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">node-version&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#39;20.x&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">registry-url&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#39;https://npm.pkg.github.com&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">scope&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#39;@user-or-organization&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Install dependencies&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">run&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">pnpm install&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Build package&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">run&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">pnpm build&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Publish package&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">run&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">pnpm publish --access restricted&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">env&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">NODE_AUTH_TOKEN&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">${{ secrets.GITHUB_TOKEN }}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>

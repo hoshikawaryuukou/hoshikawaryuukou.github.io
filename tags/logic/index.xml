@@ -1,5 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Logic on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/logic/</link><description>Recent content in Logic on 識之箱庭</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Tue, 01 Oct 2024 21:22:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/logic/index.xml" rel="self" type="application/rss+xml"/><item><title>Logic - Pseudo-Problem</title><link>https://HoshikawaRyuukou.github.io/posts/logic-pseudo-problem/</link><pubDate>Tue, 01 Oct 2024 21:22:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/logic-pseudo-problem/</guid><description>假議題（pseudo-problem） 領域 非形式邏輯 謬誤學 簡述 &amp;ldquo;假議題&amp;rdquo; 是一種表面上看起來像是重要或值得討論的問題，但實際上並 不具有實質意義或無法帶來真正的解決 方案。這類議題通常會引導人們將精力和資源集中在並不重要或無法解決的事情上，從而忽視了真正需要關注的問題。
-特點：
-錯誤的前提：假議題常常基於錯誤或不正確的前提來構建，問題本身可能從一開始就沒有存在的必要性。 分散注意力：討論假議題可能會轉移人們對真正問題的注意，這樣的討論往往無法帶來實際的改變或有效的解決方案。 無解的爭論：假議題可能導致無休止的爭論，因為其核心問題本質上是無法解決的，或者答案根本不重要。 情境 技術討論中，有時某些看似關鍵的技術細節被過度強調，但實際上並不影響整體系統的效能或成效，這樣的爭論也可以被視為一種假議題。 討論「天使的性別是什麼？」這樣的問題，在哲學或神學中可能被認為是一個「假議題」，因為它無法被證實或否認，也沒有實際意義。</description></item><item><title>Logic - Straw man</title><link>https://HoshikawaRyuukou.github.io/posts/logic-straw-man/</link><pubDate>Tue, 01 Oct 2024 21:20:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/logic-straw-man/</guid><description>攻擊稻草人（Straw man） 領域 非形式邏輯 謬誤學 簡述 「攻擊稻草人」（Strawman Fallacy）是一種邏輯謬誤，指的是 &amp;ldquo;故意曲解或誇大&amp;rdquo; 對方的論點，然後對這個被扭曲的論點進行反駁。這樣的辯論手法無法真正解決問題，因為它回避了對方的實際觀點，而是製造一個更容易攻擊的「稻草人」來取代對方的真實立場。
-這種謬誤在辯論中常見，特別是在政治或社會爭論中。避免這種謬誤的關鍵是要正確理解並直接回應對方的真實論點，而不是創造一個虛假的版本。
-情境 A: 「我們應該更多地投資於環保技術。」 B: 「他們想要讓我們放棄所有的經濟發展，回到石器時代！」 B 曲解了 A 的立場，然後攻擊這個扭曲的立場，而不是 A 的實際觀點。</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Logic on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/logic/</link><description>Recent content in Logic on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Tue, 01 Oct 2024 21:22:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/logic/index.xml" rel="self" type="application/rss+xml"/><item><title>Logic - Pseudo-Problem</title><link>https://HoshikawaRyuukou.github.io/posts/logic---pseudo-problem/</link><pubDate>Tue, 01 Oct 2024 21:22:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/logic---pseudo-problem/</guid><description>&lt;h2 id="假議題pseudo-problem">假議題（pseudo-problem）&lt;/h2>
+&lt;h3 id="領域">領域&lt;/h3>
+&lt;ul>
+&lt;li>非形式邏輯&lt;/li>
+&lt;li>謬誤學&lt;/li>
+&lt;/ul>
+&lt;h3 id="簡述">簡述&lt;/h3>
+&lt;p>&amp;ldquo;假議題&amp;rdquo; 是一種表面上看起來像是重要或值得討論的問題，但實際上並 &lt;strong>不具有實質意義或無法帶來真正的解決&lt;/strong> 方案。這類議題通常會引導人們將精力和資源集中在並不重要或無法解決的事情上，從而忽視了真正需要關注的問題。&lt;/p>
+&lt;p>特點：&lt;/p>
+&lt;ul>
+&lt;li>錯誤的前提：假議題常常基於錯誤或不正確的前提來構建，問題本身可能從一開始就沒有存在的必要性。&lt;/li>
+&lt;li>分散注意力：討論假議題可能會轉移人們對真正問題的注意，這樣的討論往往無法帶來實際的改變或有效的解決方案。&lt;/li>
+&lt;li>無解的爭論：假議題可能導致無休止的爭論，因為其核心問題本質上是無法解決的，或者答案根本不重要。&lt;/li>
+&lt;/ul>
+&lt;h3 id="情境">情境&lt;/h3>
+&lt;ul>
+&lt;li>技術討論中，有時某些看似關鍵的技術細節被過度強調，但實際上並不影響整體系統的效能或成效，這樣的爭論也可以被視為一種假議題。&lt;/li>
+&lt;li>討論「天使的性別是什麼？」這樣的問題，在哲學或神學中可能被認為是一個「假議題」，因為它無法被證實或否認，也沒有實際意義。&lt;/li>
+&lt;/ul></description></item><item><title>Logic - Straw man</title><link>https://HoshikawaRyuukou.github.io/posts/logic---straw-man/</link><pubDate>Tue, 01 Oct 2024 21:20:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/logic---straw-man/</guid><description>&lt;h2 id="攻擊稻草人straw-man">攻擊稻草人（Straw man）&lt;/h2>
+&lt;h3 id="領域">領域&lt;/h3>
+&lt;ul>
+&lt;li>非形式邏輯&lt;/li>
+&lt;li>謬誤學&lt;/li>
+&lt;/ul>
+&lt;h3 id="簡述">簡述&lt;/h3>
+&lt;p>「攻擊稻草人」（Strawman Fallacy）是一種邏輯謬誤，指的是 &lt;strong>&amp;ldquo;故意曲解或誇大&amp;rdquo;&lt;/strong> 對方的論點，然後對這個被扭曲的論點進行反駁。這樣的辯論手法無法真正解決問題，因為它回避了對方的實際觀點，而是製造一個更容易攻擊的「稻草人」來取代對方的真實立場。&lt;/p>
+&lt;p>這種謬誤在辯論中常見，特別是在政治或社會爭論中。避免這種謬誤的關鍵是要正確理解並直接回應對方的真實論點，而不是創造一個虛假的版本。&lt;/p>
+&lt;h3 id="情境">情境&lt;/h3>
+&lt;ul>
+&lt;li>A: 「我們應該更多地投資於環保技術。」&lt;/li>
+&lt;li>B: 「他們想要讓我們放棄所有的經濟發展，回到石器時代！」&lt;/li>
+&lt;li>B 曲解了 A 的立場，然後攻擊這個扭曲的立場，而不是 A 的實際觀點。&lt;/li>
+&lt;/ul></description></item></channel></rss>

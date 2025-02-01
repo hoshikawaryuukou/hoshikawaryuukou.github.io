@@ -1,4 +1,57 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>iOS on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/ios/</link><description>Recent content in iOS on 識之箱庭</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Wed, 05 Jul 2023 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/ios/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Platform - iOS - plug-in</title><link>https://HoshikawaRyuukou.github.io/posts/unity-platform-ios-plug-in/</link><pubDate>Wed, 05 Jul 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-platform-ios-plug-in/</guid><description>前述 這次的業務需求是
-取得 ios 實機的 &amp;ldquo;地區&amp;rdquo;，並讓 C# 能拿到 Swift 所返回的字串
-因為在 ios 的環境下 unity / C# 拿到的值並不正確。此外筆者對 Swift / Objective-C 幾乎零基礎，目前只針對一些教學文件做些修改，之後有機會更熟再回頭深究。
-實作 SwiftDeviceInfoPlugin.swift 須放置於 Plugins\iOS 之下 import Foundation public class SwiftDeviceInfoPlugin { public static func getRegion() -&amp;gt; String { return Locale.current.regionCode ?? &amp;#34;Unknown&amp;#34; } } @_cdecl(&amp;#34;getRegion&amp;#34;) public func getRegion() -&amp;gt; UnsafePointer&amp;lt;CChar&amp;gt;? { let region = strdup(SwiftDeviceInfoPlugin.getRegion()) return UnsafePointer(region) } @_cdecl(&amp;ldquo;getRegion&amp;rdquo;)：這是一個 Swift 標記，表示下面的函數將使用cdecl樣式的名稱綁定。您只需知道此屬性向 C 公開了一個 Swift 函數 UnsafePointer&amp;lt;CChar&amp;gt;?，它是一個可為空的指向 C 風格字串（CChar）的指標。這使得 Swift 能夠以與 C 相容的方式提供訪問區域資訊的介面。 strdup() 用於創建預返回的字串的副本，並在堆上分配其記憶體。 public sealed class IOSDeviceInfoProvider : IDeviceInfoProvider { public string GetRegion() { return new System.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IOS on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/ios/</link><description>Recent content in IOS on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Wed, 05 Jul 2023 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/ios/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Platform - iOS - plug-in</title><link>https://HoshikawaRyuukou.github.io/posts/unity---platform---ios---plug-in/</link><pubDate>Wed, 05 Jul 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---platform---ios---plug-in/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
+&lt;p>這次的業務需求是&lt;/p>
+&lt;blockquote>
+&lt;p>取得 ios 實機的 &amp;ldquo;地區&amp;rdquo;，並讓 C# 能拿到 Swift 所返回的字串&lt;/p>
+&lt;/blockquote>
+&lt;p>因為在 ios 的環境下 unity / C# 拿到的值並不正確。此外筆者對 Swift / Objective-C 幾乎零基礎，目前只針對一些教學文件做些修改，之後有機會更熟再回頭深究。&lt;/p>
+&lt;h2 id="實作">實作&lt;/h2>
+&lt;ul>
+&lt;li>SwiftDeviceInfoPlugin.swift 須放置於 Plugins\iOS 之下&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-swift" data-lang="swift">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">import&lt;/span> &lt;span style="color:#75af00">Foundation&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">public&lt;/span> &lt;span style="color:#00a8c8">class&lt;/span> &lt;span style="color:#75af00">SwiftDeviceInfoPlugin&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">public&lt;/span> &lt;span style="color:#00a8c8">static&lt;/span> &lt;span style="color:#00a8c8">func&lt;/span> &lt;span style="color:#75af00">getRegion&lt;/span>&lt;span style="color:#111">()&lt;/span> &lt;span style="color:#111">-&amp;gt;&lt;/span> &lt;span style="color:#111">String&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">return&lt;/span> &lt;span style="color:#111">Locale&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">current&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">regionCode&lt;/span> &lt;span style="color:#111">??&lt;/span> &lt;span style="color:#d88200">&amp;#34;Unknown&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">@&lt;/span>&lt;span style="color:#111">_cdecl&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#d88200">&amp;#34;getRegion&amp;#34;&lt;/span>&lt;span style="color:#111">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">public&lt;/span> &lt;span style="color:#00a8c8">func&lt;/span> &lt;span style="color:#75af00">getRegion&lt;/span>&lt;span style="color:#111">()&lt;/span> &lt;span style="color:#111">-&amp;gt;&lt;/span> &lt;span style="color:#111">UnsafePointer&lt;/span>&lt;span style="color:#111">&amp;lt;&lt;/span>&lt;span style="color:#111">CChar&lt;/span>&lt;span style="color:#111">&amp;gt;?&lt;/span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">let&lt;/span> &lt;span style="color:#111">region&lt;/span> &lt;span style="color:#111">=&lt;/span> &lt;span style="color:#111">strdup&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#111">SwiftDeviceInfoPlugin&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">getRegion&lt;/span>&lt;span style="color:#111">())&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">return&lt;/span> &lt;span style="color:#111">UnsafePointer&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#111">region&lt;/span>&lt;span style="color:#111">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>@_cdecl(&amp;ldquo;getRegion&amp;rdquo;)：這是一個 Swift 標記，表示下面的函數將使用cdecl樣式的名稱綁定。您只需知道此屬性向 C 公開了一個 Swift 函數&lt;/li>
+&lt;li>UnsafePointer&amp;lt;CChar&amp;gt;?，它是一個可為空的指向 C 風格字串（CChar）的指標。這使得 Swift 能夠以與 C 相容的方式提供訪問區域資訊的介面。&lt;/li>
+&lt;li>strdup() 用於創建預返回的字串的副本，並在堆上分配其記憶體。&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-csharp" data-lang="csharp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">public&lt;/span> &lt;span style="color:#00a8c8">sealed&lt;/span> &lt;span style="color:#00a8c8">class&lt;/span> &lt;span style="color:#75af00">IOSDeviceInfoProvider&lt;/span> &lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">IDeviceInfoProvider&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">public&lt;/span> &lt;span style="color:#00a8c8">string&lt;/span> &lt;span style="color:#111">GetRegion&lt;/span>&lt;span style="color:#111">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">return&lt;/span> &lt;span style="color:#00a8c8">new&lt;/span> &lt;span style="color:#111">System&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">Globalization&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">RegionInfo&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#111">GetRegionFromDevice&lt;/span>&lt;span style="color:#111">()).&lt;/span>&lt;span style="color:#111">ThreeLetterISORegionName&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">ToUpper&lt;/span>&lt;span style="color:#111">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75af00">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75af00"> [DllImport(&amp;#34;__Internal&amp;#34;, EntryPoint = &amp;#34;getRegion&amp;#34;)]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">static&lt;/span> &lt;span style="color:#00a8c8">extern&lt;/span> &lt;span style="color:#00a8c8">string&lt;/span> &lt;span style="color:#111">GetRegionFromDevice&lt;/span>&lt;span style="color:#111">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>[DllImport] : 是一個 System.Runtime.InteropServices 命名空間中的屬性，它告訴 C# 編譯器這個函數是在外部插件中定義的，並且需要從外部導入。&lt;/li>
+&lt;li>EntryPoint = &amp;ldquo;getRegion&amp;rdquo; 表示在外部插件中將使用名為 callSwift 的函數作為入口點。&lt;/li>
+&lt;li>extern 關鍵字表示該函數的實現不是在 C# 代碼中，而是在外部的原生插件中實現的。&lt;/li>
+&lt;/ul>
+&lt;h2 id="待補">待補&lt;/h2>
+&lt;ul>
+&lt;li>記憶體管理的知識點&lt;/li>
+&lt;li>這次沒用到委派，須找時間理解&lt;/li>
+&lt;/ul>
+&lt;h2 id="ref">Ref&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.unity3d.com/Manual/PluginsForIOS.html">Building plug-ins for iOS&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.create-forever.games/unity2021-csharp-swift-call/">C# から直接 Swift コードを呼び出す&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://betterprogramming.pub/setting-up-ios-framework-for-unity-9ef4e577db89">Setting Up iOS Framework for Unity From Swift to C#&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

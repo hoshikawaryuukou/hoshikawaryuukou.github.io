@@ -1,7 +1,294 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Github on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/github/</link><description>Recent content in Github on 識之箱庭</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Mon, 04 Nov 2024 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/github/index.xml" rel="self" type="application/rss+xml"/><item><title>Workflow - Publish private packages to Github Packages using Changesets</title><link>https://HoshikawaRyuukou.github.io/posts/workflow-publish-private-packages-to-github-packages-using-changesets/</link><pubDate>Mon, 04 Nov 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow-publish-private-packages-to-github-packages-using-changesets/</guid><description>Guide changesets/action .github/workflows/publish-package.yml name: Publish package to GitHub Packages on: workflow_dispatch: release: types: [published] concurrency: ${{ github.workflow }}-${{ github.ref }} jobs: release: runs-on: ubuntu-latest steps: - name: Checkout Repo uses: actions/checkout@v4 - uses: pnpm/action-setup@v4 with: version: 9 run_install: false - uses: actions/setup-node@v4 with: node-version: &amp;#39;20.x&amp;#39; registry-url: &amp;#39;https://npm.pkg.github.com&amp;#39; scope: &amp;#39;@user-or-organization&amp;#39; - name: Install dependencies run: pnpm install - name: Build package run: pnpm build - name: Create Release Pull Request or Publish to npm id: changesets uses: changesets/action@v1 with: # This expects you to have a script called release which does a build for your packages and calls changeset publish publish: pnpm release env: GITHUB_TOKEN: ${{ secrets.</description></item><item><title>Workflow - Send messages to Telegram via GitHub Actions</title><link>https://HoshikawaRyuukou.github.io/posts/workflow-send-messages-to-telegram-via-github-actions/</link><pubDate>Sat, 19 Oct 2024 19:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow-send-messages-to-telegram-via-github-actions/</guid><description>Quick Chat 以下範例為 :
-在 git push 後透過 Github Actions 將 tag + commit 訊息發送到指定的 Telegram 群組
-設置 Telegram Bot 在 Telegram 中搜尋 @BotFather 並建立一個新的 bot，記下 API token。 將 bot 加入群組並發送訊息給 bot 使用 https://api.telegram.org/bot&amp;lt;YourBotToken&amp;gt;/getUpdates 來獲取群組 ID。 設置 GitHub Secrets GitHub 專案中
-Settings -&amp;gt; Security -&amp;gt; Secrets and variables -&amp;gt; Actions -&amp;gt; Repository secrets
-新增以下 secrets :
-TELEGRAM_BOT_TOKEN : Telegram Bot Token TELEGRAM_CHAT_ID : Telegram 群組 ID 設置 GitHub Variables GitHub 專案中</description></item><item><title>Workflow - Generate a Github Packages Access Token</title><link>https://HoshikawaRyuukou.github.io/posts/workflow-generate-a-github-packages-access-token/</link><pubDate>Sun, 06 Oct 2024 20:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow-generate-a-github-packages-access-token/</guid><description>Steps 切換到 github 用戶號 (不是組織號) Settings/Developer Settings Personal access tokens (classic) 僅啟用 read:packagesDownload packages from GitHub Package Registry To-do 改用更推薦的 Fine-grained personal access tokens</description></item><item><title>Workflow - Install a private npm package from Github Packages</title><link>https://HoshikawaRyuukou.github.io/posts/workflow-install-a-private-npm-package-from-github-packages/</link><pubDate>Sun, 06 Oct 2024 20:12:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow-install-a-private-npm-package-from-github-packages/</guid><description>Requirement ⚠️ 向 github 組織索取訪問用的 token ⚠️ 本範例使用 npm，之後會轉使用 pnpm Window 環境變數設置 token setx GITHUB_TOKEN ghp_xxxxxxxxxxxxxxxxxxxxxxxx ⚠️ 設置後必要時重啟終端機以確保環境變數被應用 初始化 project cd project-directory npm init -y 新增 ./.npmrc ⚠️ 這裡的第二行註解是正規寫法，有特殊用途 @xxx:registry=https://npm.pkg.github.com //npm.pkg.github.com/:_authToken=&amp;#34;${GITHUB_TOKEN}&amp;#34; 安裝 package npm install @ooxx/xxx</description></item><item><title>Workflow - Publish a private package to Github Packages</title><link>https://HoshikawaRyuukou.github.io/posts/workflow-publish-a-private-package-to-github-packages/</link><pubDate>Sun, 06 Oct 2024 20:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow-publish-a-private-package-to-github-packages/</guid><description>Guide Publishing a Private Package on GitHub Packages 发布 Node.js 包 Notice ⚠️ 請先確保 repository 與 package 以配置為 private。 ⚠️ 本範例使用 pnpm。 package.json 的必要配置 { &amp;#34;name&amp;#34;: &amp;#34;@user-or-organization/package-name&amp;#34;, &amp;#34;version&amp;#34;: &amp;#34;1.0.0&amp;#34;, &amp;#34;repository&amp;#34;: { &amp;#34;url&amp;#34;: &amp;#34;https://github.com/user-or-organization/package-name.git&amp;#34; }, &amp;#34;publishConfig&amp;#34;: { &amp;#34;registry&amp;#34;: &amp;#34;https://npm.pkg.github.com/&amp;#34; } } .github/workflows/publish-package.yml name: Publish package to GitHub Packages on: workflow_dispatch: release: types: [published] jobs: build: runs-on: ubuntu-latest permissions: contents: read packages: write steps: - uses: actions/checkout@v4 - uses: pnpm/action-setup@v4 with: version: 9 run_install: false - uses: actions/setup-node@v4 with: node-version: &amp;#39;20.</description></item><item><title>Workflow - Deploy a website (Vite + Vue3) to Github Pages</title><link>https://HoshikawaRyuukou.github.io/posts/workflow-deploy-a-website-vite-+-vue3-to-github-pages/</link><pubDate>Fri, 20 Sep 2024 20:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow-deploy-a-website-vite-+-vue3-to-github-pages/</guid><description>Guide vite - 部署静态站点 [vite] 將 Vite 專案部署至 Github Pages vue3项目部署到Github 配置 - 基本 vite.config.js export default defineConfig({ base: &amp;#39;/{repo name}}/&amp;#39;, }); 配置 - SPA 如果是單頁應用（SPA）路由需做以下配置。
-vite.config.ts import { defineConfig } from &amp;#39;vite&amp;#39;; export default defineConfig({ base: &amp;#39;/你的倉庫名稱/&amp;#39;, // 替換為你的 GitHub 倉庫名稱 }); index.html &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;base href=&amp;#34;/mgproject-track-logic-game/&amp;#34;&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;/html&amp;gt; Vue Router import { createRouter, createWebHistory } from &amp;#39;vue-router&amp;#39;; const router = createRouter({ history: createWebHistory(&amp;#39;/你的倉庫名稱/&amp;#39;), }); 本地測試 pnpm build pnpm preview 部屬 方式 1 - 使用 gh-pages 套件 安裝套件 pnpm add -D gh-pages 於 package.</description></item><item><title>Github - Note</title><link>https://HoshikawaRyuukou.github.io/posts/github-note/</link><pubDate>Sat, 04 Feb 2023 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/github-note/</guid><description>Profile 如何建立獨一無二的 GitHub Profile！與三個很酷的設計及應用 tandpfun/skill-icons Collaboration 十分钟学会正确的github工作流，和开源作者们使用同一套流程 GitHub Copilot VS Code 中的 GitHub Copilot GitHub Actions GitHub Actions 文档 GitHub Marketplace GitHub Actions: Limit which branches can deploy to an environment GitHub Packages GitHub Packages 文档</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Github on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/github/</link><description>Recent content in Github on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Mon, 04 Nov 2024 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/github/index.xml" rel="self" type="application/rss+xml"/><item><title>Workflow - Publish private packages to Github Packages using Changesets</title><link>https://HoshikawaRyuukou.github.io/posts/workflow---publish-private-packages-to-github-packages-using-changesets/</link><pubDate>Mon, 04 Nov 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow---publish-private-packages-to-github-packages-using-changesets/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/changesets/action/">changesets/action&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="githubworkflowspublish-packageyml">.github/workflows/publish-package.yml&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yml" data-lang="yml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Publish package to GitHub Packages&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">on&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">workflow_dispatch&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">release&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">types&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">[&lt;/span>&lt;span style="color:#ae81ff">published]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">concurrency&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">${{ github.workflow }}-${{ github.ref }}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">jobs&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">release&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">runs-on&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">ubuntu-latest&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">steps&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Checkout Repo&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">uses&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">actions/checkout@v4&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">uses&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">pnpm/action-setup@v4&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">with&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">version&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">9&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">run_install&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#00a8c8">false&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">uses&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">actions/setup-node@v4&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">with&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">node-version&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#39;20.x&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">registry-url&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#39;https://npm.pkg.github.com&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">scope&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#39;@user-or-organization&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Install dependencies&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">run&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">pnpm install&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Build package&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">run&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">pnpm build&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Create Release Pull Request or Publish to npm&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">id&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">changesets&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">uses&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">changesets/action@v1&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">with&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e"># This expects you to have a script called release which does a build for your packages and calls changeset publish&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">publish&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">pnpm release&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">env&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">GITHUB_TOKEN&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">${{ secrets.GITHUB_TOKEN }}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Done&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">if&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">steps.changesets.outputs.published == &amp;#39;true&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e"># You can do something when a publish happens.&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">run&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">echo &amp;#34;Done&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Workflow - Send messages to Telegram via GitHub Actions</title><link>https://HoshikawaRyuukou.github.io/posts/workflow---send-messages-to-telegram-via-github-actions/</link><pubDate>Sat, 19 Oct 2024 19:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow---send-messages-to-telegram-via-github-actions/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>以下範例為 :&lt;/p>
+&lt;blockquote>
+&lt;p>在 git push 後透過 Github Actions 將 tag + commit 訊息發送到指定的 Telegram 群組&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="設置-telegram-bot">設置 Telegram Bot&lt;/h2>
+&lt;ul>
+&lt;li>在 Telegram 中搜尋 @BotFather 並建立一個新的 bot，記下 API token。&lt;/li>
+&lt;li>將 bot 加入群組並發送訊息給 bot&lt;/li>
+&lt;li>使用 &lt;code>https://api.telegram.org/bot&amp;lt;YourBotToken&amp;gt;/getUpdates&lt;/code> 來獲取群組 ID。&lt;/li>
+&lt;/ul>
+&lt;h2 id="設置-github-secrets">設置 GitHub Secrets&lt;/h2>
+&lt;p>GitHub 專案中&lt;/p>
+&lt;blockquote>
+&lt;p>Settings -&amp;gt; Security -&amp;gt; Secrets and variables -&amp;gt; Actions -&amp;gt; Repository secrets&lt;/p>
+&lt;/blockquote>
+&lt;p>新增以下 secrets :&lt;/p>
+&lt;ul>
+&lt;li>TELEGRAM_BOT_TOKEN : Telegram Bot Token&lt;/li>
+&lt;li>TELEGRAM_CHAT_ID : Telegram 群組 ID&lt;/li>
+&lt;/ul>
+&lt;h2 id="設置-github-variables">設置 GitHub Variables&lt;/h2>
+&lt;p>GitHub 專案中&lt;/p>
+&lt;blockquote>
+&lt;p>Settings -&amp;gt; Security -&amp;gt; Secrets and variables -&amp;gt; Actions -&amp;gt; Repository variables&lt;/p></description></item><item><title>Workflow - Generate a Github Packages Access Token</title><link>https://HoshikawaRyuukou.github.io/posts/workflow---generate-a-github-packages-access-token/</link><pubDate>Sun, 06 Oct 2024 20:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow---generate-a-github-packages-access-token/</guid><description>&lt;h2 id="steps">Steps&lt;/h2>
+&lt;ol>
+&lt;li>切換到 github 用戶號 (不是組織號)&lt;/li>
+&lt;li>Settings/Developer Settings&lt;/li>
+&lt;li>Personal access tokens (classic)&lt;/li>
+&lt;li>僅啟用 read:packagesDownload packages from GitHub Package Registry&lt;/li>
+&lt;/ol>
+&lt;h2 id="to-do">To-do&lt;/h2>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> 改用更推薦的 Fine-grained personal access tokens&lt;/li>
+&lt;/ul></description></item><item><title>Workflow - Install a private npm package from Github Packages</title><link>https://HoshikawaRyuukou.github.io/posts/workflow---install-a-private-npm-package-from-github-packages/</link><pubDate>Sun, 06 Oct 2024 20:12:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow---install-a-private-npm-package-from-github-packages/</guid><description>&lt;h2 id="requirement">Requirement&lt;/h2>
+&lt;ul>
+&lt;li>⚠️ 向 github 組織索取訪問用的 token&lt;/li>
+&lt;li>⚠️ 本範例使用 npm，之後會轉使用 pnpm&lt;/li>
+&lt;/ul>
+&lt;h2 id="window-環境變數設置-token">Window 環境變數設置 token&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>setx GITHUB_TOKEN ghp_xxxxxxxxxxxxxxxxxxxxxxxx
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>⚠️ 設置後必要時重啟終端機以確保環境變數被應用&lt;/li>
+&lt;/ul>
+&lt;h2 id="初始化-project">初始化 project&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">cd&lt;/span> project-directory
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>npm init -y
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="新增-npmrc">新增 ./.npmrc&lt;/h2>
+&lt;ul>
+&lt;li>⚠️ 這裡的第二行註解是正規寫法，有特殊用途&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>@xxx:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=&amp;#34;${GITHUB_TOKEN}&amp;#34;
+&lt;/code>&lt;/pre>&lt;h2 id="安裝-package">安裝 package&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>npm install @ooxx/xxx
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Workflow - Publish a private package to Github Packages</title><link>https://HoshikawaRyuukou.github.io/posts/workflow---publish-a-private-package-to-github-packages/</link><pubDate>Sun, 06 Oct 2024 20:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow---publish-a-private-package-to-github-packages/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://dev.to/carloshendvpm/publishing-a-private-package-on-github-packages-23bf">Publishing a Private Package on GitHub Packages&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.github.com/zh/actions/use-cases-and-examples/publishing-packages/publishing-nodejs-packages">发布 Node.js 包&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="notice">Notice&lt;/h2>
+&lt;ul>
+&lt;li>⚠️ 請先確保 repository 與 package 以配置為 private。&lt;/li>
+&lt;li>⚠️ 本範例使用 pnpm。&lt;/li>
+&lt;/ul>
+&lt;h2 id="packagejson-的必要配置">package.json 的必要配置&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;name&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;@user-or-organization/package-name&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;version&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;1.0.0&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;repository&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;url&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;https://github.com/user-or-organization/package-name.git&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;publishConfig&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;registry&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;https://npm.pkg.github.com/&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="githubworkflowspublish-packageyml">.github/workflows/publish-package.yml&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yml" data-lang="yml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Publish package to GitHub Packages&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">on&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">workflow_dispatch&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">release&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">types&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">[&lt;/span>&lt;span style="color:#ae81ff">published]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">jobs&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">build&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">runs-on&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">ubuntu-latest&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">permissions&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">contents&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">read&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">packages&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">write&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">steps&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">uses&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">actions/checkout@v4&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">uses&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">pnpm/action-setup@v4&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">with&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">version&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">9&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">run_install&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#00a8c8">false&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">uses&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">actions/setup-node@v4&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">with&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">node-version&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#39;20.x&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">registry-url&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#39;https://npm.pkg.github.com&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">scope&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#39;@user-or-organization&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Install dependencies&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">run&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">pnpm install&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Build package&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">run&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">pnpm build&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Publish package&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">run&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">pnpm publish --access restricted&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">env&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">NODE_AUTH_TOKEN&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">${{ secrets.GITHUB_TOKEN }}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Workflow - Deploy a website (Vite + Vue3) to Github Pages</title><link>https://HoshikawaRyuukou.github.io/posts/workflow---deploy-a-website-vite-+-vue3-to-github-pages/</link><pubDate>Fri, 20 Sep 2024 20:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow---deploy-a-website-vite-+-vue3-to-github-pages/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://cn.vitejs.dev/guide/static-deploy">vite - 部署静态站点&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://weiyun0912.github.io/Wei-Docusaurus/docs/Vite/Vite-Github-Pages/">[vite] 將 Vite 專案部署至 Github Pages&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.cnblogs.com/weizwz/p/18411342">vue3项目部署到Github&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="配置---基本">配置 - 基本&lt;/h2>
+&lt;h3 id="viteconfigjs">vite.config.js&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-js" data-lang="js">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">export&lt;/span> &lt;span style="color:#00a8c8">default&lt;/span> &lt;span style="color:#75af00">defineConfig&lt;/span>&lt;span style="color:#111">({&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">base&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#d88200">&amp;#39;/{repo name}}/&amp;#39;&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">});&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="配置---spa">配置 - SPA&lt;/h2>
+&lt;p>如果是單頁應用（SPA）路由需做以下配置。&lt;/p>
+&lt;h3 id="viteconfigts">vite.config.ts&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-ts" data-lang="ts">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">import&lt;/span> &lt;span style="color:#111">{&lt;/span> &lt;span style="color:#75af00">defineConfig&lt;/span> &lt;span style="color:#111">}&lt;/span> &lt;span style="color:#00a8c8">from&lt;/span> &lt;span style="color:#d88200">&amp;#39;vite&amp;#39;&lt;/span>&lt;span style="color:#111">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">export&lt;/span> &lt;span style="color:#00a8c8">default&lt;/span> &lt;span style="color:#75af00">defineConfig&lt;/span>&lt;span style="color:#111">({&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">base&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#d88200">&amp;#39;/你的倉庫名稱/&amp;#39;&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#75715e">// 替換為你的 GitHub 倉庫名稱
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#111">});&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="indexhtml">index.html&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&amp;lt;!DOCTYPE html&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">&amp;lt;&lt;/span>&lt;span style="color:#f92672">html&lt;/span> &lt;span style="color:#75af00">lang&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#d88200">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#111">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">&amp;lt;&lt;/span>&lt;span style="color:#f92672">head&lt;/span>&lt;span style="color:#111">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">&amp;lt;&lt;/span>&lt;span style="color:#f92672">base&lt;/span> &lt;span style="color:#75af00">href&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#d88200">&amp;#34;/mgproject-track-logic-game/&amp;#34;&lt;/span>&lt;span style="color:#111">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">&amp;lt;/&lt;/span>&lt;span style="color:#f92672">head&lt;/span>&lt;span style="color:#111">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">&amp;lt;/&lt;/span>&lt;span style="color:#f92672">html&lt;/span>&lt;span style="color:#111">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="vue-router">Vue Router&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-ts" data-lang="ts">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">import&lt;/span> &lt;span style="color:#111">{&lt;/span> &lt;span style="color:#75af00">createRouter&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#75af00">createWebHistory&lt;/span> &lt;span style="color:#111">}&lt;/span> &lt;span style="color:#00a8c8">from&lt;/span> &lt;span style="color:#d88200">&amp;#39;vue-router&amp;#39;&lt;/span>&lt;span style="color:#111">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">const&lt;/span> &lt;span style="color:#75af00">router&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#75af00">createRouter&lt;/span>&lt;span style="color:#111">({&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">history&lt;/span>: &lt;span style="color:#00a8c8">createWebHistory&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#d88200">&amp;#39;/你的倉庫名稱/&amp;#39;&lt;/span>&lt;span style="color:#111">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">});&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="本地測試">本地測試&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>pnpm build
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pnpm preview
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="部屬">部屬&lt;/h2>
+&lt;h3 id="方式-1---使用-gh-pages-套件">方式 1 - 使用 &lt;code>gh-pages&lt;/code> 套件&lt;/h3>
+&lt;h4 id="安裝套件">安裝套件&lt;/h4>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>pnpm add -D gh-pages 
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="於-packagejson-編寫命令">於 package.json 編寫命令&lt;/h4>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;scripts&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;deploy2ghpages&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;gh-pages -d dist&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="執行命令">執行命令&lt;/h4>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>pnpm deploy2ghpages
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="方式-2---使用-github-actions">方式 2 - 使用 &lt;code>github actions&lt;/code>&lt;/h3>
+&lt;h4 id="編寫-githubworkflowsgh-pagesyml">編寫 .github\workflows\gh-pages.yml&lt;/h4>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yml" data-lang="yml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 將靜態內容部署到 GitHub Pages 的簡易工作流程&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Deploy static content to Pages&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">on&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e"># 僅在推送到默認分支時運行。&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">push&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">branches&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">[&lt;/span>&lt;span style="color:#d88200">&amp;#39;main&amp;#39;&lt;/span>&lt;span style="color:#111">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e"># 這個選項可以使你手動在 Action tab 頁面觸發工作流&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">workflow_dispatch&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 設置 GITHUB_TOKEN 的權限，以允許部署到 GitHub Pages。&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">permissions&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">contents&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">read&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">pages&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">write&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">id-token&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">write&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 允許一個併發的部署&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">concurrency&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">group&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#39;pages&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">cancel-in-progress&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#00a8c8">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">jobs&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e"># 單次部署的工作描述&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">deploy&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">environment&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">github-pages&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">url&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">${{ steps.deployment.outputs.page_url }}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">runs-on&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">ubuntu-latest&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">steps&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Checkout&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">uses&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">actions/checkout@v4&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Set up pnpm&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">uses&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">pnpm/action-setup@v4&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">with&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">version&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">9&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Set up Node&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">uses&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">actions/setup-node@v4&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">with&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">node-version&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">20&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">cache&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#39;pnpm&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Install dependencies&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">run&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">pnpm install&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Build&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">run&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">pnpm run build&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Setup Pages&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">uses&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">actions/configure-pages@v4&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Upload artifact&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">uses&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">actions/upload-pages-artifact@v3&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">with&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e"># Upload dist folder&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">path&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#39;./dist&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Deploy to GitHub Pages&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">id&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">deployment&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">uses&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">actions/deploy-pages@v4&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Github - Note</title><link>https://HoshikawaRyuukou.github.io/posts/github---note/</link><pubDate>Sat, 04 Feb 2023 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/github---note/</guid><description>&lt;h2 id="profile">Profile&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://medium.com/starbugs/%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E7%8D%A8%E4%B8%80%E7%84%A1%E4%BA%8C%E7%9A%84-github-profile-%E8%88%87%E4%B8%89%E5%80%8B%E5%BE%88%E9%85%B7%E7%9A%84%E8%A8%AD%E8%A8%88%E5%8F%8A%E6%87%89%E7%94%A8-ef1cbb4b42c1">如何建立獨一無二的 GitHub Profile！與三個很酷的設計及應用&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/tandpfun/skill-icons#readme">tandpfun/skill-icons&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="collaboration">Collaboration&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=uj8hjLyEBmU">十分钟学会正确的github工作流，和开源作者们使用同一套流程&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="github-copilot">GitHub Copilot&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://vscode.dev.org.tw/docs/copilot/overview">VS Code 中的 GitHub Copilot&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="github-actions">GitHub Actions&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.github.com/zh/actions">GitHub Actions 文档&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/marketplace?type=actions">GitHub Marketplace&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.blog/changelog/2021-02-17-github-actions-limit-which-branches-can-deploy-to-an-environment/">GitHub Actions: Limit which branches can deploy to an environment&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="github-packages">GitHub Packages&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.github.com/zh/packages">GitHub Packages 文档&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

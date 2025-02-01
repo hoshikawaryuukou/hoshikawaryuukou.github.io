@@ -1,2 +1,42 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>VScode on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/vscode/</link><description>Recent content in VScode on 識之箱庭</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sat, 30 Mar 2024 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/vscode/index.xml" rel="self" type="application/rss+xml"/><item><title>VScode - Note</title><link>https://HoshikawaRyuukou.github.io/posts/vscode-note/</link><pubDate>Sat, 30 Mar 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/vscode-note/</guid><description>Diagrams Draw.io Integration Software Diagrams - Plant UML vs Mermaid Mermaid Doc Encoding VS Code採用Code Runner遇到的 Output中文亂碼問題 (Python) Display Visual Studio Code ( VS Code) 切換成中文版 Extensions Code Runner :emojisense: Hot Keys (Windows) 打開快捷鍵設定 : Ctrl + K Ctrl + S</description></item><item><title>Unity - Environment</title><link>https://HoshikawaRyuukou.github.io/posts/unity-environment/</link><pubDate>Tue, 16 Jan 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-environment/</guid><description> ⚠️ 以下使用 unity 6
-OS - Mac 【游戏开发环境】Unity使用Mac电脑开发，开发环境的搭建（Mac mini M1 | VSCode | Git | 好用工具） VSCode 安裝 .NET Core 重新開機使環境變數被應用 移除 Visual Studio Code Editor 已經停止維護 安裝 Visual Studio Editor Edit &amp;gt; Preferences &amp;gt; External Tools &amp;gt; External Script Editor Extension - C# Dev Kit Preferences Edit &amp;gt; Preferences &amp;gt; General &amp;gt; Script Changes While Playing (Stop Playing and Recompile)</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>VScode on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/vscode/</link><description>Recent content in VScode on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sat, 30 Mar 2024 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/vscode/index.xml" rel="self" type="application/rss+xml"/><item><title>VScode - Note</title><link>https://HoshikawaRyuukou.github.io/posts/vscode---note/</link><pubDate>Sat, 30 Mar 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/vscode---note/</guid><description>&lt;h2 id="diagrams">Diagrams&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio">Draw.io Integration&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.dandoescode.com/blog/plantuml-vs-mermaid">Software Diagrams - Plant UML vs Mermaid&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mermaid.js.org/intro/">Mermaid Doc&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="encoding">Encoding&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://umin27.medium.com/vs-code%E6%8E%A1%E7%94%A8code-runner%E9%81%87%E5%88%B0%E7%9A%84-output%E4%B8%AD%E6%96%87%E4%BA%82%E7%A2%BC%E5%95%8F%E9%A1%8C-python-55e73edf9d0b">VS Code採用Code Runner遇到的 Output中文亂碼問題 (Python)&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="display">Display&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://kiwi-half.medium.com/visual-studio-code-vs-code-%E5%88%87%E6%8F%9B%E6%88%90%E4%B8%AD%E6%96%87%E7%89%88-%E5%8D%8A%E7%86%9F%E5%A5%87%E7%95%B0%E6%9E%9C-kiwi-tech-e469f4450429">Visual Studio Code ( VS Code) 切換成中文版&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="extensions">Extensions&lt;/h2>
+&lt;ul>
+&lt;li>Code Runner&lt;/li>
+&lt;li>&lt;a href="https://marketplace.visualstudio.com/items?itemName=bierner.emojisense">:emojisense:&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="hot-keys-windows">Hot Keys (Windows)&lt;/h2>
+&lt;ul>
+&lt;li>打開快捷鍵設定 : &lt;code>Ctrl + K Ctrl + S&lt;/code>&lt;/li>
+&lt;/ul></description></item><item><title>Unity - Environment</title><link>https://HoshikawaRyuukou.github.io/posts/unity---environment/</link><pubDate>Tue, 16 Jan 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---environment/</guid><description>&lt;blockquote>
+&lt;p>⚠️ 以下使用 unity 6&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="os---mac">OS - Mac&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://blog.csdn.net/linxinfa/article/details/124844236">【游戏开发环境】Unity使用Mac电脑开发，开发环境的搭建（Mac mini M1 | VSCode | Git | 好用工具）&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="vscode">VSCode&lt;/h2>
+&lt;ul>
+&lt;li>安裝 &lt;a href="https://dotnet.microsoft.com/en-us/download">.NET Core&lt;/a>&lt;/li>
+&lt;li>重新開機使環境變數被應用&lt;/li>
+&lt;li>移除 Visual Studio Code Editor 已經停止維護&lt;/li>
+&lt;li>安裝 Visual Studio Editor&lt;/li>
+&lt;li>Edit &amp;gt; Preferences &amp;gt; External Tools &amp;gt; External Script Editor&lt;/li>
+&lt;li>Extension - C# Dev Kit&lt;/li>
+&lt;/ul>
+&lt;h2 id="preferences">Preferences&lt;/h2>
+&lt;ul>
+&lt;li>Edit &amp;gt; Preferences &amp;gt; General &amp;gt; Script Changes While Playing (Stop Playing and Recompile)&lt;/li>
+&lt;/ul></description></item></channel></rss>

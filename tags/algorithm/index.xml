@@ -1,7 +1,74 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Algorithm on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/algorithm/</link><description>Recent content in Algorithm on 識之箱庭</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 28 Nov 2024 13:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/algorithm/index.xml" rel="self" type="application/rss+xml"/><item><title>Algorithm - Complexity</title><link>https://HoshikawaRyuukou.github.io/posts/algorithm-complexity/</link><pubDate>Thu, 28 Nov 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/algorithm-complexity/</guid><description>Quick Chat 在尋求最優解法設計 既快又省 的資料結構與演算時，有以下兩個面向
-時間效率：演算法執行時間的長短。 空間效率：演算法佔用記憶體空間的大小。 Guide 第 2 章 - 复杂度分析 時間複雜度 (Time Complexity) 2.3 時間複雜度 ⚠️ 時間複雜度分析統計的不是演算法執行時間，而是演算法執行時間隨著資料量變大時的增長趨勢。
-有效評估演算法效率。 推算方法更簡便。 存在一定的侷限性(當輸入資料大小較小時)。 空間複雜度 (Space Complexity) 2.4 空間複雜度 ⚠️ 我們通常只關注最差空間複雜度。
-輸入空間：演算法的輸入資料。 暫存空間：執行過程中的變數、物件、函式上下文等資料。 輸出空間：儲存演算法的輸出資料。</description></item><item><title>Algorithm - Sampling - Alias Method</title><link>https://HoshikawaRyuukou.github.io/posts/algorithm-sampling-alias-method/</link><pubDate>Sun, 04 Aug 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/algorithm-sampling-alias-method/</guid><description>別名方法是一種眾所周知的演算法，用於從任意離散機率分佈中進行恆定時間採樣，該演算法依賴於簡單的預先計算的查找表。
-Guide Alias Method: 非均匀随机抽样算法 Darts, Dice, and Coins: Sampling from a Discrete Distribution Weighted Random: algorithms for sampling from discrete probability distributions mackysoft/Choice jgrapht-core/src/main/java/org/jgrapht/alg/util/AliasMethodSampler.java 務必先觀看
-第一篇文章的漸進思考與核心精神 第二篇文章最後的 Vose&amp;rsquo;s Alias Method 圖解 Example 給定的權重 [0.1, 0.2, 0.3, 0.4]。
-按均值縮放權重： 均值為 : 0.25 縮放後的權重：[0.4, 0.8, 1.2, 1.6] 分類權重到 large 和 small 隊列： 初始狀態：small = [], large = [] 權重 0.4 小於 1，放入 small：small = [0] 權重 0.8 小於 1，放入 small：small = [0, 1] 權重 1.</description></item><item><title>Algorithm - Note</title><link>https://HoshikawaRyuukou.github.io/posts/algorithm-note/</link><pubDate>Thu, 30 May 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/algorithm-note/</guid><description>Books fucking-algorithm hello-algo Repo The Algorithms</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Algorithm on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/algorithm/</link><description>Recent content in Algorithm on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 28 Nov 2024 13:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/algorithm/index.xml" rel="self" type="application/rss+xml"/><item><title>Algorithm - Complexity</title><link>https://HoshikawaRyuukou.github.io/posts/algorithm---complexity/</link><pubDate>Thu, 28 Nov 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/algorithm---complexity/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>在尋求最優解法設計 &lt;strong>既快又省&lt;/strong> 的資料結構與演算時，有以下兩個面向&lt;/p>
+&lt;ul>
+&lt;li>時間效率：演算法執行時間的長短。&lt;/li>
+&lt;li>空間效率：演算法佔用記憶體空間的大小。&lt;/li>
+&lt;/ul>
+&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.hello-algo.com/chapter_computational_complexity/">第 2 章 - 复杂度分析&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="時間複雜度-time-complexity">時間複雜度 (Time Complexity)&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.hello-algo.com/zh-hant/chapter_computational_complexity/time_complexity/">2.3 時間複雜度&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>⚠️ 時間複雜度分析統計的不是演算法執行時間，而是演算法執行時間隨著資料量變大時的增長趨勢。&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>有效評估演算法效率。&lt;/li>
+&lt;li>推算方法更簡便。&lt;/li>
+&lt;li>存在一定的侷限性(當輸入資料大小較小時)。&lt;/li>
+&lt;/ul>
+&lt;h2 id="空間複雜度-space-complexity">空間複雜度 (Space Complexity)&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.hello-algo.com/zh-hant/chapter_computational_complexity/space_complexity/">2.4 空間複雜度&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>⚠️ 我們通常只關注最差空間複雜度。&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>輸入空間：演算法的輸入資料。&lt;/li>
+&lt;li>暫存空間：執行過程中的變數、物件、函式上下文等資料。&lt;/li>
+&lt;li>輸出空間：儲存演算法的輸出資料。&lt;/li>
+&lt;/ul></description></item><item><title>Algorithm - Sampling - Alias Method</title><link>https://HoshikawaRyuukou.github.io/posts/algorithm---sampling---alias-method/</link><pubDate>Sun, 04 Aug 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/algorithm---sampling---alias-method/</guid><description>&lt;p>別名方法是一種眾所周知的演算法，用於從任意離散機率分佈中進行恆定時間採樣，該演算法依賴於簡單的預先計算的查找表。&lt;/p>
+&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://blog.csdn.net/rover2002/article/details/106760664">Alias Method: 非均匀随机抽样算法&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.keithschwarz.com/darts-dice-coins/">Darts, Dice, and Coins: Sampling from a Discrete Distribution&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zliu.org/post/weighted-random/">Weighted Random: algorithms for sampling from discrete probability distributions&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/mackysoft/Choice?tab=readme-ov-file#speed-measurement">mackysoft/Choice&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/jgrapht/jgrapht/blob/master/jgrapht-core/src/main/java/org/jgrapht/alg/util/AliasMethodSampler.java">jgrapht-core/src/main/java/org/jgrapht/alg/util/AliasMethodSampler.java&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>務必先觀看&lt;/p>
+&lt;ul>
+&lt;li>第一篇文章的漸進思考與核心精神&lt;/li>
+&lt;li>第二篇文章最後的 Vose&amp;rsquo;s Alias Method 圖解&lt;/li>
+&lt;/ul>
+&lt;h2 id="example">Example&lt;/h2>
+&lt;p>給定的權重 &lt;code>[0.1, 0.2, 0.3, 0.4]&lt;/code>。&lt;/p>
+&lt;h3 id="按均值縮放權重">&lt;strong>按均值縮放權重&lt;/strong>：&lt;/h3>
+&lt;ul>
+&lt;li>均值為 : 0.25&lt;/li>
+&lt;li>縮放後的權重：&lt;code>[0.4, 0.8, 1.2, 1.6]&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h3 id="分類權重到-large-和-small-隊列">&lt;strong>分類權重到 large 和 small 隊列&lt;/strong>：&lt;/h3>
+&lt;ul>
+&lt;li>初始狀態：&lt;code>small = [], large = []&lt;/code>&lt;/li>
+&lt;li>權重 &lt;code>0.4&lt;/code> 小於 1，放入 &lt;code>small&lt;/code>：&lt;code>small = [0]&lt;/code>&lt;/li>
+&lt;li>權重 &lt;code>0.8&lt;/code> 小於 1，放入 &lt;code>small&lt;/code>：&lt;code>small = [0, 1]&lt;/code>&lt;/li>
+&lt;li>權重 &lt;code>1.2&lt;/code> 大於 1，放入 &lt;code>large&lt;/code>：&lt;code>large = [2]&lt;/code>&lt;/li>
+&lt;li>權重 &lt;code>1.6&lt;/code> 大於 1，放入 &lt;code>large&lt;/code>：&lt;code>large = [2, 3]&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h3 id="構建別名表">&lt;strong>構建別名表&lt;/strong>：&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>初始狀態：&lt;/p></description></item><item><title>Algorithm - Note</title><link>https://HoshikawaRyuukou.github.io/posts/algorithm---note/</link><pubDate>Thu, 30 May 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/algorithm---note/</guid><description>&lt;h2 id="books">Books&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/labuladong/fucking-algorithm?tab=readme-ov-file">fucking-algorithm&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/krahets/hello-algo">hello-algo&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="repo">Repo&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/TheAlgorithms">The Algorithms&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

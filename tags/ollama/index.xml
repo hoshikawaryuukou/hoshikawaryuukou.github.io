@@ -1,2 +1,140 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ollama on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/ollama/</link><description>Recent content in Ollama on 識之箱庭</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 16 Jan 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/ollama/index.xml" rel="self" type="application/rss+xml"/><item><title>AI - Ollama - Google Colab + ngrok</title><link>https://HoshikawaRyuukou.github.io/posts/ai-ollama-google-colab-+-ngrok/</link><pubDate>Thu, 16 Jan 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai-ollama-google-colab-+-ngrok/</guid><description>Quick Chat 參考以下教學
-十分钟部署本地离线免费大模型！ Ngrok + Ollama | 在世界任何地方与localhost开源大模型聊天 Free Inference Is All I Need: How to Run Large Language Models for Free Using Google Colab Requirements 註冊 ngrok 帳號，取得 token ( ngrok &amp;gt; Your Authtoken ) 將 token 填至 colab &amp;gt; Secret name : NGROK_AUTH value : token 本機端使用 Page Assist - A Web UI for Local AI Models 與 Ollama 互動 Steps 安裝必要工具 !sudo apt-get install -y pciutils !</description></item><item><title>AI - Ollama - Note</title><link>https://HoshikawaRyuukou.github.io/posts/ai-ollama-note/</link><pubDate>Mon, 19 Aug 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai-ollama-note/</guid><description>Guide Ollama UI Page Assist - A Web UI for Local AI Models Commands ollama list : 查看以配置本地模型 ollama run {model} : 下載/執行模型 ollama ps : 展示目前載入的模型、它們所佔的記憶體大小以及所使用的處理器類型（GPU 或 CPU） Use model from Ollama Ollama search Use GGUF model from Hugging Face Hub # Run Ollama with specified model # ollama run hf.co/{username}/{repository} ollama run hf.co/bartowski/Llama-3.2-3B-Instruct-GGUF # Run Ollama with specified model and desired quantization # ollama run hf.co/{username}/{repository}:{quantization} ollama run hf.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ollama on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/ollama/</link><description>Recent content in Ollama on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 16 Jan 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/ollama/index.xml" rel="self" type="application/rss+xml"/><item><title>AI - Ollama - Google Colab + ngrok</title><link>https://HoshikawaRyuukou.github.io/posts/ai---ollama---google-colab-+-ngrok/</link><pubDate>Thu, 16 Jan 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---ollama---google-colab-+-ngrok/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>參考以下教學&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=ZOCY61424JI">十分钟部署本地离线免费大模型！&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=JfI3K3HwQuI">Ngrok + Ollama | 在世界任何地方与localhost开源大模型聊天&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.gopenai.com/free-inference-is-all-i-need-how-to-run-large-language-models-for-free-using-google-colab-fe961e86503b">Free Inference Is All I Need: How to Run Large Language Models for Free Using Google Colab&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="requirements">Requirements&lt;/h2>
+&lt;ul>
+&lt;li>註冊 &lt;a href="https://ngrok.com/">ngrok&lt;/a> 帳號，取得 token ( ngrok &amp;gt; Your Authtoken )&lt;/li>
+&lt;li>將 token 填至 colab &amp;gt; Secret
+&lt;ul>
+&lt;li>name : NGROK_AUTH&lt;/li>
+&lt;li>value : token&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>本機端使用 &lt;a href="https://chromewebstore.google.com/detail/page-assist-a-web-ui-for/jfgfiigpkhlkbnfnbobbkinehhfdhndo">Page Assist - A Web UI for Local AI Models&lt;/a> 與 Ollama 互動&lt;/li>
+&lt;/ul>
+&lt;h2 id="steps">Steps&lt;/h2>
+&lt;h3 id="安裝必要工具">安裝必要工具&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>!sudo apt-get install -y pciutils
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>!curl https://ollama.ai/install.sh &lt;span style="color:#111">|&lt;/span> sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>!pip install pyngrok
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>&lt;strong>安裝 pciutils&lt;/strong>: 提供硬件檢測和配置工具，用於檢查和診斷 GPU 設置。&lt;/li>
+&lt;li>&lt;strong>安裝 Ollama&lt;/strong>: 下載並執行 Ollama 的安裝腳本。&lt;/li>
+&lt;li>&lt;strong>安裝 pyngrok&lt;/strong>: 用於創建到本地服務的反向代理，從而將本地服務器公開到互聯網。&lt;/li>
+&lt;/ul>
+&lt;h3 id="啟動-ollama-服務器">啟動 Ollama 服務器&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-py" data-lang="py">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">import&lt;/span> &lt;span style="color:#111">os&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">import&lt;/span> &lt;span style="color:#111">threading&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">import&lt;/span> &lt;span style="color:#111">subprocess&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">import&lt;/span> &lt;span style="color:#111">requests&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">from&lt;/span> &lt;span style="color:#111">pyngrok&lt;/span> &lt;span style="color:#f92672">import&lt;/span> &lt;span style="color:#111">ngrok&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#111">conf&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">from&lt;/span> &lt;span style="color:#111">google.colab&lt;/span> &lt;span style="color:#f92672">import&lt;/span> &lt;span style="color:#111">userdata&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">def&lt;/span> &lt;span style="color:#75af00">ollama&lt;/span>&lt;span style="color:#111">():&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">os&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#111">environ&lt;/span>&lt;span style="color:#111">[&lt;/span>&lt;span style="color:#d88200">&amp;#39;OLLAMA_HOST&amp;#39;&lt;/span>&lt;span style="color:#111">]&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#d88200">&amp;#39;0.0.0.0:11434&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">os&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#111">environ&lt;/span>&lt;span style="color:#111">[&lt;/span>&lt;span style="color:#d88200">&amp;#39;OLLAMA_ORIGINS&amp;#39;&lt;/span>&lt;span style="color:#111">]&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#d88200">&amp;#39;*&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">os&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#111">environ&lt;/span>&lt;span style="color:#111">[&lt;/span>&lt;span style="color:#d88200">&amp;#39;OLLAMA_KEEP_ALIVE&amp;#39;&lt;/span>&lt;span style="color:#111">]&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#d88200">&amp;#39;-1&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">subprocess&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#111">Popen&lt;/span>&lt;span style="color:#111">([&lt;/span>&lt;span style="color:#d88200">&amp;#34;ollama&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#d88200">&amp;#34;serve&amp;#34;&lt;/span>&lt;span style="color:#111">])&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">ollama_thread&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#111">threading&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#111">Thread&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#111">target&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#111">ollama&lt;/span>&lt;span style="color:#111">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">ollama_thread&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#111">start&lt;/span>&lt;span style="color:#111">()&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>&lt;strong>配置環境變量&lt;/strong>：
+&lt;ul>
+&lt;li>OLLAMA_HOST: 指定服務器的主機和端口，這裡為 0.0.0.0:11434，表示本地所有網絡接口。&lt;/li>
+&lt;li>OLLAMA_ORIGINS: 設置跨域資源共享 (CORS) 的允許範圍。&lt;/li>
+&lt;li>OLLAMA_KEEP_ALIVE: 保持服務器活躍的時長（-1 表示無限）。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>啟動 Ollama 服務器&lt;/strong>：使用 subprocess 啟動 Ollama 的服務模式。&lt;/li>
+&lt;li>&lt;strong>使用執行緒運行服務器&lt;/strong>：確保主程序不被阻塞，允許服務器在後台運行。&lt;/li>
+&lt;/ul>
+&lt;h3 id="下載模型">下載模型&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://ollama.com/search">Ollama search&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>!ollama pull &lt;span style="color:#f92672">{&lt;/span>model_name&lt;span style="color:#f92672">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="公開服務">公開服務&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-py" data-lang="py">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">conf&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#111">get_default&lt;/span>&lt;span style="color:#111">()&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#111">auth_token&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#111">userdata&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#111">get&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#d88200">&amp;#39;NGROK_AUTH&amp;#39;&lt;/span>&lt;span style="color:#111">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">ollama_tunnel&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#111">ngrok&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#111">connect&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#d88200">&amp;#34;11434&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#d88200">&amp;#34;http&amp;#34;&lt;/span>&lt;span style="color:#111">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">public_url&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#111">ollama_tunnel&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#111">public_url&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">print&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#d88200">f&lt;/span>&lt;span style="color:#d88200">&amp;#34;Public URL: &lt;/span>&lt;span style="color:#d88200">{&lt;/span>&lt;span style="color:#111">public_url&lt;/span>&lt;span style="color:#d88200">}&lt;/span>&lt;span style="color:#d88200">&amp;#34;&lt;/span>&lt;span style="color:#111">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>&lt;strong>配置 ngrok 驗證令牌&lt;/strong>：使用用戶提供的 NGROK_AUTH 確保 Tunnel 服務的授權。&lt;/li>
+&lt;li>&lt;strong>創建 ngrok Tunnel&lt;/strong>： 將本地服務器（11434 端口）通過 HTTP 隧道公開到互聯網。&lt;/li>
+&lt;li>&lt;strong>獲取公開 URL&lt;/strong>： 輸出 Tunnel 的公開 URL，便於遠程訪問 Ollama 服務。&lt;/li>
+&lt;/ul>
+&lt;h3 id="列出可用模型">列出可用模型&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>!ollama list
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="執行模型">執行模型&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>!ollama run &lt;span style="color:#f92672">{&lt;/span>model_name&lt;span style="color:#f92672">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="透過-page-assist-訪問">透過 Page Assist 訪問&lt;/h3>
+&lt;ul>
+&lt;li>於 Page Assist 設置 public_url&lt;/li>
+&lt;li>訪問 public_url 並點擊 visit site，否則 Page Assist 偵測不到遠端 ollama&lt;/li>
+&lt;/ul></description></item><item><title>AI - Ollama - Note</title><link>https://HoshikawaRyuukou.github.io/posts/ai---ollama---note/</link><pubDate>Mon, 19 Aug 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---ollama---note/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://ollama.com/">Ollama&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="ui">UI&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://chromewebstore.google.com/detail/page-assist-a-web-ui-for/jfgfiigpkhlkbnfnbobbkinehhfdhndo">Page Assist - A Web UI for Local AI Models&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="commands">Commands&lt;/h2>
+&lt;ul>
+&lt;li>ollama list : 查看以配置本地模型&lt;/li>
+&lt;li>ollama run {model} : 下載/執行模型&lt;/li>
+&lt;li>ollama ps : 展示目前載入的模型、它們所佔的記憶體大小以及所使用的處理器類型（GPU 或 CPU）&lt;/li>
+&lt;/ul>
+&lt;h2 id="use-model-from-ollama">Use model from Ollama&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://ollama.com/search">Ollama search&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="use-gguf-model-from-hugging-face-hub">Use GGUF model from Hugging Face Hub&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Run Ollama with specified model&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># ollama run hf.co/{username}/{repository}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ollama run hf.co/bartowski/Llama-3.2-3B-Instruct-GGUF
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Run Ollama with specified model and desired quantization&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># ollama run hf.co/{username}/{repository}:{quantization}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ollama run hf.co/bartowski/Llama-3.2-3B-Instruct-GGUF:IQ3_M
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="use-gguf-model-from-local">Use GGUF model from local&lt;/h2>
+&lt;h3 id="import_gguf_to_ollamabat">import_gguf_to_ollama.bat&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bat" data-lang="bat">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">@&lt;/span>&lt;span style="color:#00a8c8">echo&lt;/span> off
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">REM 設定本地環境，並切換到批次檔所在的目錄&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">setlocal&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">cd&lt;/span> /d &lt;span style="color:#111">%~dp0&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">REM 搜尋當前目錄中的 .gguf 檔案&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">for&lt;/span> &lt;span style="color:#8045ff">%%&lt;/span>f &lt;span style="color:#00a8c8">in&lt;/span> &lt;span style="color:#111">(&lt;/span>*.gguf&lt;span style="color:#111">)&lt;/span> &lt;span style="color:#00a8c8">do&lt;/span> &lt;span style="color:#111">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">REM 創建 Modelfile.txt 並寫入模型檔案名稱&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">echo&lt;/span> FROM &lt;span style="color:#8045ff">%%&lt;/span>~nf.gguf &lt;span style="color:#111">&amp;gt;&lt;/span> Modelfile.txt
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">REM 打印 Modelfile.txt 的內容以供確認&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">type&lt;/span> Modelfile.txt
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">REM 執行 ollama create 命令來包裝模型檔&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ollama create &lt;span style="color:#8045ff">%%&lt;/span>~nf -f Modelfile.txt
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">REM 刪除 Modelfile.txt&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">del&lt;/span> Modelfile.txt
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">REM 如果有多個 gguf 檔案，只處理第一個找到的檔案&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">goto&lt;/span> &lt;span style="color:#111">end&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">:&lt;/span>&lt;span style="color:#111">end&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">REM 顯示完成訊息&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">echo&lt;/span> done...
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">REM 列出已經存在的模型&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ollama list 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">REM 等待用戶確認並關閉&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">pause&lt;/span> &lt;span style="color:#111">&amp;gt;&lt;/span>nul
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>

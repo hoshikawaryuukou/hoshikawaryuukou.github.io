@@ -1,54 +1,860 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Unity on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/unity/</link><description>Recent content in Unity on 識之箱庭</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Wed, 22 Jan 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/unity/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Package - YooAsset</title><link>https://HoshikawaRyuukou.github.io/posts/unity-package-yooasset/</link><pubDate>Wed, 22 Jan 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-package-yooasset/</guid><description>Quick Chat Addressables 是在 AssetBundle 的基礎上對操作進行更友善的封裝，AssetBundle 有很多要小心的地方
-AssetBundle 卸載 Addressable System 主要改善幾點
-透過 name/label，而是不與資源直接連結，減少因移動或重命名資產而出錯的機會。 本地或是異地都可以追踪。 簡化打包和依賴管理(name/label/group/catalog)。 較好的記憶體管理機制(引用計數)與性能分析系統。 Guide tuyoogame/YooAsset AssetBundle Assets, Resources and AssetBundles Case Studies of Unity AssetBundle Efficient Encryption Addressable Frameworks 不同 Framework 在常規操作上大同小異，可以從資源最多的 Addressables 做觀念入門
-Unity Addressables资源管理方式用起来太爽了，资源打包、加载、热更变得如此轻松（Addressable Asset System | 简称AA） Unity - Addressables项目总结（一）：基础工作流 Unity - Addressables项目总结（二）：业务需求 静态包、动态包有什么区别？何时使用增量更新？Addressables 更新流程大梳理 Issue Shaders are pink when loaded from an AssetBundle 大部分時候是 Editor 的問題，關注真機運作如何即可(因為 AssetBundle 是根據指定平台生成的)。 ⚠️ Unity 6 之後似乎無法透過取消 Auto Graphics API 來調整 Graphics API Extra 为什么抛弃了 Addressable</description></item><item><title>Unity - Platform - Web</title><link>https://HoshikawaRyuukou.github.io/posts/unity-platform-web/</link><pubDate>Sun, 19 Jan 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-platform-web/</guid><description>Quick Chat ⚠️ 使用 Unity 6 開發 Guide Unity - Manual: Web Getting started with Unity Web 【Unity】WebGL開発時の注意事項 Unity发布webgl获取浏览器的URL Unity WebGLビルドメモ - フレームシンセシス Unity 製 WebGL ゲームを AWS でお手軽公開 Template (Unity) Better Minimal WebGL Template Performance Using the Unity Profiler Using the web platform Diagnostics Overlay tool Unity WebGL Loading Test Host terreng/simple-web-server terreng/sws-unity-plugin Issue Error : Failed to parse binary data file Build/xxx.data.br&amp;hellip; Failed to parse binary data file Build/web.</description></item><item><title>Unity - Package Manager - NuGetForUnity</title><link>https://HoshikawaRyuukou.github.io/posts/unity-package-manager-nugetforunity/</link><pubDate>Sun, 12 Jan 2025 21:12:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-package-manager-nugetforunity/</guid><description>Guide GlitchEnzo/NuGetForUnity Config 將資源調整放置 Packages 而不是 Assets
-NuGet &amp;gt; Preferences &amp;gt; Placement &amp;gt; In Packages Folder
-調整 .gitignore
-/Packages/nuget-packages/InstalledPackages*</description></item><item><title>Unity - Package - MessagePipe</title><link>https://HoshikawaRyuukou.github.io/posts/unity-package-messagepipe/</link><pubDate>Thu, 09 Jan 2025 22:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-package-messagepipe/</guid><description>Guide Cysharp/MessagePipe Extras 搭配 VContainer v1.14.0 之後可以簡化配置
-using MessagePipe; using UnityEngine; using VContainer; using VContainer.Unity; public sealed class GameLifetimeScope : LifetimeScope { protected override void Configure(IContainerBuilder builder) { // 只需這行即可 builder.RegisterMessagePipe(); } }</description></item><item><title>Unity - Package - R3</title><link>https://HoshikawaRyuukou.github.io/posts/unity-package-r3/</link><pubDate>Thu, 09 Jan 2025 22:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-package-r3/</guid><description>Guide Cysharp/R3 【Unity】 R3とUniRxの比較まとめ [Unity] UniRxをR3に移行する</description></item><item><title>Unity - Performance</title><link>https://HoshikawaRyuukou.github.io/posts/unity-performance/</link><pubDate>Wed, 08 Jan 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-performance/</guid><description>GC GC Garbage Collection 垃圾回收 UI</description></item><item><title>Unity - Samples</title><link>https://HoshikawaRyuukou.github.io/posts/unity-samples/</link><pubDate>Thu, 02 Jan 2025 22:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-samples/</guid><description>Solitaire gubicsz/Solitaire</description></item><item><title>Unity - Packages</title><link>https://HoshikawaRyuukou.github.io/posts/unity-packages/</link><pubDate>Sat, 13 Apr 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-packages/</guid><description>Package Manager Installing Packages using UPM Package manager -&amp;gt; Advanced project settings Add Scoped Registries Name: package.openupm.com URL: https://package.openupm.com Scope(s): com.cysharp.unitask Package manager -&amp;gt; Packages: My Registries -&amp;gt; Install Guide Unity中 .asmdef文件的作用 使用OpenUPM发布自己的Unity项目 开发Unity PackageManager 插件包 Creating Custom Packages for Unity 2018.3 How to remodel your project for asmdef and UPM 【Unity】Package Manager活用術 Package Collection killop/anything_about_game baba-s/awesome-unity-open-source-on-github Animation AnnulusGames/LitMotion Async Cysharp/UniTask Debug yasirkula/UnityIngameDebugConsole Dependency Injection hadashiA/VContainer Dialogue YarnSpinnerTool/YarnSpinner-Unity Editor AnnulusGames/Alchemy HotFix focus-creative-games/hybridclr IO Cysharp/ZString Newtonsoft.</description></item><item><title>Unity - Package - UniTask</title><link>https://HoshikawaRyuukou.github.io/posts/unity-package-unitask/</link><pubDate>Sat, 10 Feb 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-package-unitask/</guid><description>前述 UniTask - Unity 中實現效能最好的 async/await 的函式庫
-Cysharp/UniTask Unity 中預設的非同步實現是 - Coroutine 協程，但協程有以下缺點
-無法使用回傳值，需使用 callback 來解決。 異常處理很困難，因為不能在 try-catch 區塊內使用 yield。 需透過 MonoBehaviour.StartCoroutine 才能啟動。 UniTask 相較於 C# 原生的 Task 做了以下改進
-刪除了 Task 在 Unity 不需要的功能。 非 MonoBehaviour 裡也能實現非同步。 記憶體/ GC / Unity PlayerLoop 等方面做最佳化。 UniTaskTracker 提供編輯器上可視化追蹤 await 狀態，這對於檢查是否有洩漏很有用。 UniTask 官方文件的基本功能寫得相當清楚，並附上一些入門介紹
-UniTaskを使おう！ UniTask機能紹介 以下紀錄幾個重點主題
-Awaiter UniTask 已經實作了相當豐富的 Awaiter 擴充，有需要自訂的可以參考以下規範
-.NET 中什么样的类是可使用 await 异步等待的？ Thread UniTask.SwitchToThreadPool 允許後續處理在執行緒池中進行。 UniTask.SwitchToMainThread 切換到主執行緒，不會等待下一幀。 也可以使用 UniTask.Yield 切換到主執行緒，但它總是等待一幀。 但目前尚未有使用到的情境，之後有遇到再嘗試。</description></item><item><title>Unity - Platform - Android - Build</title><link>https://HoshikawaRyuukou.github.io/posts/unity-platform-android-build/</link><pubDate>Sat, 03 Feb 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-platform-android-build/</guid><description>Guide Unity 不通過Android studio 打包接SDK Settings gradleTemplate.properties : 專案的全域 Gradle 配置。 AndroidManifest.xml ：用於向 Android 構建工具、Android 作業系統和 Google Play 描述應用的基本資訊。 launcherManifest.xml 定義應用的啟動配置資訊 mainTemplate.gradle：自定義 Android 專案的 Gradle 構建過程，包括添加依賴項、修改編譯設定、配置簽名資訊等。 launcherTemolate.gradle ：包含有關如何構建 Android 應用程式的指令 baseProjectTemplate.gradle：所含的配置會在其他所有範本/Gradle 專案之間共用 Device Quickly preview your game on Android device | Unity tutorial</description></item><item><title>Unity - Platform - Android - AndroidJNIModule</title><link>https://HoshikawaRyuukou.github.io/posts/unity-platform-android-androidjnimodule/</link><pubDate>Sun, 28 Jan 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-platform-android-androidjnimodule/</guid><description>前述 這次的業務需求是
-將 Google Play Install Referrer 接入 Unity
-目前有使用到 AndroidJNIModule 中的
-AndroidJavaClass AndroidJavaObject AndroidJavaProxy 但中途採了不少坑，特此紀錄一下。
-基本知識 UnityEngine.AndroidJNIModule How to Create Android Java Callbacks to C# in Unity UnityからAndroidのクラスや関数を呼び出す AndroidJavaClass 可以實例化 Java 類、調用 Java 類的靜態方法，以及訪問 Java 類的靜態屬性。 AndroidJavaObject 創建 Java 對象的實例。 AndroidJavaProxy 允許在 Unity C# 腳本中實現 Java 接口。 允許我們在 Java 中調用方法，這些方法將調用 C# 類上的 匹配 方法。 注意 函數名匹配 (建議直接看 source code 裡面的值，本此次就遇到 官方文件與 jar 為匹配) android.os.Build.VERSION 將意味著要到一個公開類 android.os.Build$VERSION 將意味著進入一個內部類</description></item><item><title>Unity - Service - Google Play Install Referrer</title><link>https://HoshikawaRyuukou.github.io/posts/unity-service-google-play-install-referrer/</link><pubDate>Thu, 25 Jan 2024 22:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-service-google-play-install-referrer/</guid><description>簡述 Play Install Referrer
-Play Install Referrer API : 非 Kotlin / Java 用戶使用 Play Install Referrer Library : 將上者封裝更方便 Kotlin / Java 使用 透過該服務能對 App 的下載與使用者進行歸因分析，用於評估推廣服務得成效，進而提升推廣效果與報酬率。
-舊版 Play Install Referrer 在使用者下載應用程式後透過廣播傳送包含歸因參數的訊息。然而廣播的不可靠性和安全性問題，目前不再建議使用這個版本。 新版 Play Install Referrer 直接訪問本機 Google Play 應用程式商店中的記錄，索取 referrer 值，因此更加可靠。 快速上手 Unity 專案: 將依賴加在 maintemplate.gradle
-dependencies { implementation(&amp;#34;com.android.installreferrer:installreferrer:2.2&amp;#34;) } 因為官方 API 文件寫的不全，建議到以下網站直接下載 aar 查看 jar 來對接 API
-Google&amp;rsquo;s Maven Repository Maven Repository 使用服務的工作流為如下
-建立連線 等待 callback 連線成功 索取 referrer 關閉連線 Referrer 格式 https://play.</description></item><item><title>Unity - Advanced - Code stripping</title><link>https://HoshikawaRyuukou.github.io/posts/unity-advanced-managed-code-stripping/</link><pubDate>Wed, 17 Jan 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-advanced-managed-code-stripping/</guid><description>Quick Chat 在構建過程中，Unity 通過稱為託管代碼剝離的過程刪除未使用或無法訪問的代碼，這可以顯著減小應用程式的最終大小。
-File -&amp;gt; Build Settings -&amp;gt; Player Settings -&amp;gt; Optimization -&amp;gt; Managed Stripping Level
-⚠️ Managed Stripping Level 等級越高裁剪掉的代碼越多，包體也就越小，但是對應的風險也就更大。 藉由屬性或特殊 XML 配置檔的形式提供註釋，以指示 Unity 連結器要保留代碼庫的哪些部分。 Guide Unity - Manual: Managed code stripping KuraiAndras/LinkerGenerator IUnityLinkerProcessorでCodeStrippingからコードを守る Preserving Preserve attribute ⚠️ [Preserve] 屬性屬於“侵入式”的解決方案，不建議 class Foo { [Preserve] public void PreservedMethod(){} } link.xml 在專案的 Assets 目錄下創建個 link.xml &amp;lt;linker&amp;gt; &amp;lt;assembly fullname=&amp;#34;DOTween&amp;#34; preserve=&amp;#34;all&amp;#34; /&amp;gt; &amp;lt;assembly fullname=&amp;#34;Newtonsoft.Json&amp;#34; preserve=&amp;#34;all&amp;#34; /&amp;gt; &amp;lt;assembly fullname=&amp;#34;Assembly-CSharp&amp;#34; preserve=&amp;#34;all&amp;#34; /&amp;gt; &amp;lt;assembly fullname=&amp;#34;UnityEngine&amp;#34;&amp;gt; &amp;lt;type fullname=&amp;#34;UnityEngine.</description></item><item><title>Unity - Service - Cloud Diagnostics</title><link>https://HoshikawaRyuukou.github.io/posts/unity-service-cloud-diagnostics/</link><pubDate>Tue, 16 Jan 2024 22:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-service-cloud-diagnostics/</guid><description>簡述 Official Home Page Official Doc 監控崩潰和異常報告 測試人員和應用使用者能直接提供用戶報告 啟用成本極低且非侵入式 有免費套餐，Personal 常規操作應該是沒問題，一旦超出了免費額度，系統將要求添加付款方式以繼續使用服務 快速上手 Cloud Diagnostics エラーやクラッシュを記録し、バグ特定の手助けになるUnity公式の無料サービス Unity Cloud Diagnostics UnityエディタやUnityで作ったゲームを強制的にクラッシュさせる方法 注意 Apple&amp;rsquo;s privacy survey Google Play data safety disclosures for Cloud Diagnostics</description></item><item><title>Unity - Environment</title><link>https://HoshikawaRyuukou.github.io/posts/unity-environment/</link><pubDate>Tue, 16 Jan 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-environment/</guid><description> ⚠️ 以下使用 unity 6
-OS - Mac 【游戏开发环境】Unity使用Mac电脑开发，开发环境的搭建（Mac mini M1 | VSCode | Git | 好用工具） VSCode 安裝 .NET Core 重新開機使環境變數被應用 移除 Visual Studio Code Editor 已經停止維護 安裝 Visual Studio Editor Edit &amp;gt; Preferences &amp;gt; External Tools &amp;gt; External Script Editor Extension - C# Dev Kit Preferences Edit &amp;gt; Preferences &amp;gt; General &amp;gt; Script Changes While Playing (Stop Playing and Recompile)</description></item><item><title>Unity - Package Manager - Modify A Package</title><link>https://HoshikawaRyuukou.github.io/posts/unity-package-manager-modify-a-package/</link><pubDate>Fri, 12 Jan 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-package-manager-modify-a-package/</guid><description>情境 有需要客製化 Unity 官方 / git 直接導入 的 Package 時
-操作 至 ProjrctRoot\Library\PackageCache 找到目標的 Package 剪下貼上至 ProjrctRoot\Packages 即可 Ref How can I modify built-in packages? Unity - 如何修改一个 Package 或是如何将 Package Local化</description></item><item><title>Unity - Package Manager - Private GitHub Repository</title><link>https://HoshikawaRyuukou.github.io/posts/unity-package-manager-private-github-repository/</link><pubDate>Sun, 24 Dec 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-package-manager-private-github-repository/</guid><description>情境 想分享私有庫但又不想去更改團隊或人員權限，Github 提供 Fine-Grained Token 能做到客製化的權限控制
-操作 至 GitHub &amp;laquo;帳戶設定&amp;raquo;（非儲存庫設定） Developer Settings -&amp;gt; Personal Access Tokens -&amp;gt; Fine-Grained Tokens 生成 Token (Read-Only Permission for the repo Content). &amp;#34;com.yourusername.yourpackage&amp;#34;: &amp;#34;git+https://x-oauth-basic:&amp;lt;token&amp;gt;@&amp;lt;repo&amp;gt;?path=&amp;lt;folder&amp;gt;&amp;#34; Ref Install Unity Package from a private GitHub repository</description></item><item><title>Unity - Package - External Dependency Manager for Unity (EDM4U)</title><link>https://HoshikawaRyuukou.github.io/posts/unity-package-external-dependency-manager-for-unity-edm4u/</link><pubDate>Wed, 08 Nov 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-package-external-dependency-manager-for-unity-edm4u/</guid><description>前言 Google 停止維護 Game Package Registry (GPR) 導致不能直接使用 Package Manager 導入包。必須到封存檔網站下載「.tgz」手動導入。
-Google Unity 套件 Install a package from a local tarball file 其他的相關的 Google Service 依賴(AR/Firebase/Google Play等)也可以用此方法導入。
-設定 Assets &amp;gt; External Dependency Manager &amp;gt; Android Resolver &amp;gt; Settings 啟用這三個 Patch 並至 Player Settings &amp;gt; Publishing Settings 啟用以下選項 Auto resolution Assets &amp;gt; External Dependency Manager &amp;gt; Android Resolver &amp;gt; Force Resolve 後會去收集專案所有 Editor 資料夾下的 *Dependencies.xml 加到 mainTemplate 中</description></item><item><title>Unity - Performance - Memory Profiler</title><link>https://HoshikawaRyuukou.github.io/posts/unity-performance-memory-profiler/</link><pubDate>Sun, 30 Jul 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-performance-memory-profiler/</guid><description>注意 由於Unity 無法將性能分析器本身佔用的記憶體與運行模式的記憶體完全分開。要獲得應用程序的更精確數字和記憶體使用情況，應在要運行應用程序的目標設備和操作系統上分析應用程序。 如果需要在記憶體受限的平台上運行應用程序，設備上的總駐留量對於檢查低記憶體警告和由於記憶體耗盡而強制關閉非常有用。作為一般規則，它不應超過設備上可用總物理內存的 70%。 偵測 Leaked Managed Shell 的功能在 Memory Profiler 1.1.0-pre.1 Ref Memory Profiler Memory Profiler | 1.1.0-pre.1 - Unity - Manual Unity でメモリリーク？ Memory Profiler で Leaked Managed Shell をチェックしてみよう！ Inspecting memory with the new Memory Profiler package Memory Profiler로 애플리케이션의 물리적 메모리 사용량 분석 Unity内存分析与优化实践(1.1版本前)</description></item><item><title>Unity - Basic - Preprocessor Directives</title><link>https://HoshikawaRyuukou.github.io/posts/unity-basic-preprocessor-directives/</link><pubDate>Fri, 07 Jul 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-basic-preprocessor-directives/</guid><description>前述 中文稱作 : 前置處理器指示詞
-筆者最近接觸到的遺舊專案中發現裡面大量地使用 條件式編譯
-#if DEBUG Console.WriteLine(&amp;#34;Debug version&amp;#34;); #endif 筆者之前有使用也基本只使用 定義區域 (排版效果)
-#region MyClass definition public class MyClass { static void Main(){...} } #endregion Unity 在處理平台裝置時也蠻常會出現的
-public class PlatformDefines : MonoBehaviour { void Start () { #if UNITY_EDITOR Debug.Log(&amp;#34;Unity Editor&amp;#34;); #endif #if UNITY_IOS Debug.Log(&amp;#34;iOS&amp;#34;); #endif #if UNITY_STANDALONE_OSX Debug.Log(&amp;#34;Standalone OSX&amp;#34;); #endif #if UNITY_STANDALONE_WIN Debug.Log(&amp;#34;Standalone Windows&amp;#34;); #endif } } 問題 那前置處理器指示詞有什麼問題呢? (參考日文那個 Ref 有比較明確的 Case)
-編譯版本至少會是 2^(指示詞的分類數)種，持續的調試和測試變得非常困難。 Unit Test 中難以使用。 編譯檢查不起作用。 當巢狀結構出現時可讀性將大為降低。 上述這些狀況都會導致 延後發現問題的時間 !</description></item><item><title>Unity - Platform - iOS - plug-in</title><link>https://HoshikawaRyuukou.github.io/posts/unity-platform-ios-plug-in/</link><pubDate>Wed, 05 Jul 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-platform-ios-plug-in/</guid><description>前述 這次的業務需求是
-取得 ios 實機的 &amp;ldquo;地區&amp;rdquo;，並讓 C# 能拿到 Swift 所返回的字串
-因為在 ios 的環境下 unity / C# 拿到的值並不正確。此外筆者對 Swift / Objective-C 幾乎零基礎，目前只針對一些教學文件做些修改，之後有機會更熟再回頭深究。
-實作 SwiftDeviceInfoPlugin.swift 須放置於 Plugins\iOS 之下 import Foundation public class SwiftDeviceInfoPlugin { public static func getRegion() -&amp;gt; String { return Locale.current.regionCode ?? &amp;#34;Unknown&amp;#34; } } @_cdecl(&amp;#34;getRegion&amp;#34;) public func getRegion() -&amp;gt; UnsafePointer&amp;lt;CChar&amp;gt;? { let region = strdup(SwiftDeviceInfoPlugin.getRegion()) return UnsafePointer(region) } @_cdecl(&amp;ldquo;getRegion&amp;rdquo;)：這是一個 Swift 標記，表示下面的函數將使用cdecl樣式的名稱綁定。您只需知道此屬性向 C 公開了一個 Swift 函數 UnsafePointer&amp;lt;CChar&amp;gt;?，它是一個可為空的指向 C 風格字串（CChar）的指標。這使得 Swift 能夠以與 C 相容的方式提供訪問區域資訊的介面。 strdup() 用於創建預返回的字串的副本，並在堆上分配其記憶體。 public sealed class IOSDeviceInfoProvider : IDeviceInfoProvider { public string GetRegion() { return new System.</description></item><item><title>Unity - Editor - ScriptedImporter</title><link>https://HoshikawaRyuukou.github.io/posts/unity-editor-scriptedimporter/</link><pubDate>Sat, 27 May 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-editor-scriptedimporter/</guid><description>用途 使用 C# 為 Unity 本身不支持的文件格式編寫自定義資源導入器，從而添加支持。 注意 Scripted Importer 無法處理已由 Unity 本身處理的文件擴展名。 Example 這裡將 .lua 以 TextAsset
-using UnityEngine; using System.IO; using UnityEditor.AssetImporters; [ScriptedImporter( 1, &amp;#34;lua&amp;#34; )] public class LuaImporter : ScriptedImporter { public override void OnImportAsset( AssetImportContext ctx ) { TextAsset subAsset = new TextAsset( File.ReadAllText( ctx.assetPath ) ); ctx.AddObjectToAsset( &amp;#34;text&amp;#34;, subAsset ); ctx.SetMainObject( subAsset ); } } Ref Scripted Importers [Unity] 资源工作流程 - ScriptedImporter</description></item><item><title>Unity - Package Manager - Sample Workflow</title><link>https://HoshikawaRyuukou.github.io/posts/unity-package-manager-sample-workflow/</link><pubDate>Sat, 22 Apr 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-package-manager-sample-workflow/</guid><description>Package Samples 對應有些模組的操作比較複雜繁瑣，有時需要有一些 Sample 做參考。官方 Package Manager 有個 &amp;ldquo;半套&amp;rdquo; Sample 工作流，讓人不是很舒服。
-官方文件
-Sample 資料夾後面加了波浪號 (~) 告訴 Unity 忽略 Samples~ 文件夾中的內容，此類文件夾不使用.meta文件進行跟踪。忽略 Samples~ 對 Package 使用者是好的，畢竟不是每個人都需要。
-但對 Package 開發者，畢竟 Samples 也是要進版控的，而這樣改名的作法會徒增一些重命名的提交也有點煩躁(除非在修改 Sample 的過程中完全不提交)。原先想說寫個 Samples ↔ Samples~ 切換的腳本就好，會一直有 meta 檔的警告(刪掉/改名都還是在)。
-官方作法 論壇中的某篇討論才記載他們的做法(倒是加到文件中阿&amp;hellip;)
-在內部確實使用了名為 Samples 的文件夾 (沒有 Samples~ ) 在推送新包版本之前通過腳本對其進行重命名(透過 CI ) OpenUPM 的作者也是使用類似的工作流，總之筆者也調整為上述的方式。
-透過 GitHub Actions Workflow 調整目錄名 筆者不熟 GitHub Actions/ YAML/ 文件操作，但這種初階的操作就交由 chatgpt 代勞，幫我省去不少實驗成本。這裡的操作只是堪用，應該有更好的方式。
-以下是筆者要求的條件
-想透過 GitHub Actions 中的 workflow 完成 如果 forPackage 分支已存在則將其刪除 從 main 建立新的 forPackage 分支 Assets/Modules 的所有子目錄(同時有 &amp;ldquo;package.</description></item><item><title>Unity - Package - HybridCLR</title><link>https://HoshikawaRyuukou.github.io/posts/unity-package-hybridclr/</link><pubDate>Tue, 11 Apr 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-package-hybridclr/</guid><description>先備知識 Assembly Definition (Asmdef) Unity 2017.3 以上版本的提供功能，主要解決龐大的程序集編譯時效率問題。
-具體內容建議閱讀 Doc - Assembly definitions
-Assembly-CSharp.dll Unity 預設整合的 dll，專案內未被自定義 Asmdef 劃分的腳本都會被整合到 Assembly-CSharp.dll
-簡述 HybridCLR focus-creative-games/hybridclr focus-creative-games/hybridclr_trial HybridCLR 筆者已經應用於工作環境好一陣子了(從 2.X 版本開始)，其最讓人驚豔的地方在於，過往的開發流幾乎不用更動(當然要好 Asmdef 的規劃)，僅在打包時調整一下工作流即可。
-其極大簡化過往麻煩且效率不彰的熱更流程。xLua 和 ILRuntime 在筆者看來最難受的事是「侵入性」極強，搞得綁手綁腳。大家也都抱怨很久了，但也沒有其他可靠方案，直到 HybridCLR 出現。
-快速上手 3.0 版本後流程優化得更順暢了，照著 文件 可以很快地感受到其威力。
-注意 请问，Generate All、补充元数据的DLL更新的执行时机的最佳实践？ 怎么卸载热更dll CLI 規範中只能以 AppDomain 形式卸載所有 dll，不支持卸載單獨的 dll。而 il2cpp 是單例 AppDomain，因此這個要求是不符合規範的。要採用 HybridCLR DHE 的商業方案。不過筆者倒是不太擔心，畢竟 Unity client 通常不是需要常駐的應用，使用者也不太會把應用的每一個功能都點一遍，初估是還可以接受的。</description></item><item><title>Unity - Basic - DontDestroyOnLoad</title><link>https://HoshikawaRyuukou.github.io/posts/unity-basic-dontdestroyonload/</link><pubDate>Mon, 20 Mar 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-basic-dontdestroyonload/</guid><description>用例 被標記為 DontDestroyOnLoad 的物件場景更改時不會被破壞。
-全域管理器：因為整個遊戲期間一直存在。例如，音效管理器、遊戲設定管理器或玩家數據管理器等物件可以在場景切換時保留，以確保它們的功能和數據在各個場景中持續存在。 持久性數據：如果你有需要在多個場景中共享的持久性數據，可以將存儲這些數據的物件標記為 DontDestroyOnLoad。例如，玩家的遊戲進度或全域的配置設置等數據可以在場景切換時保留，以便在不同場景中訪問和更新。 UI 元素：某些UI元素，如遊戲狀態面板、計時器或得分顯示，可能需要在多個場景中保留。通過將這些UI元素物件標記為 DontDestroyOnLoad，可以確保它們在場景切換時不會被銷毀，以便在不同場景中持續顯示和更新。 問題 記憶體管理問題：使用 DontDestroyOnLoad 將遊戲物件保留在多個場景中可能會導致記憶體洩漏。如果你的遊戲物件不再需要，但沒有被正確銷毀，它們將繼續存在於記憶體中，佔用系統資源，可能導致性能下降。 場景管理問題：DontDestroyOnLoad 會打破場景之間的清晰界限。場景是 Unity 中組織和管理遊戲邏輯的基本單位，每個場景都應該是相對獨立的。通過在多個場景之間保持物件，會增加場景之間的耦合性，導致代碼難以維護和測試。 Ref Object.DontDestroyOnLoad</description></item><item><title>Unity - WorkFlow - Build &amp; Publish</title><link>https://HoshikawaRyuukou.github.io/posts/unity-workflow-build-publish/</link><pubDate>Mon, 27 Feb 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-workflow-build-publish/</guid><description>Build repositories.cfg could not be loaded. Unable to find player assembly: XXXX\Temp\StagingArea\Data\Managed\UnityEngine.TestRunner.dll Cocoapodsの更新にハマった【Unity】 Publish Privacy policy for your game? No problem! (generate and publish) Publish your UNITY game on Google Play Store - 2023 guide Misc Library not loaded: @rpath/FBAEMKit.framework/FBAEMKit</description></item><item><title>Unity - Basic - Sprite and Atlas</title><link>https://HoshikawaRyuukou.github.io/posts/unity-basic-sprite/</link><pubDate>Mon, 20 Feb 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-basic-sprite/</guid><description>Sprite 【2Dゲームで必須】UnityのSprite（スプライト）の単位をわかりやすく解説 【間違えやすい】Unityの正しい画像サイズとは Atlas 【Unity】SpriteをパックするSpriteAtlasの使い方 目的 減少DrawCall 圖集將圖片打包為2的冪次方的素材大小，可以提升性能 減小包體大小 注意 Sprite Atlas V1 - Always Enabled 啟用圖集時 Edit Mode : reference the packed Textures Play Mode : reference the original unpacked Textures SpriteAtlas AssetBundle 來打包時，不要勾選 Include In Build</description></item><item><title>Unity - Basics</title><link>https://HoshikawaRyuukou.github.io/posts/unity-basics/</link><pubDate>Mon, 20 Feb 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-basics/</guid><description>Analysis Unity Optimize Your Game Using Profiler Unity 手機遊戲最佳化雜談– 內建Profiling Animation Introduction to 3D Animation Systems Audio Unity Audio Clip Import Settings For The Best Performance Audio tutorial for Unity: the Audio Mixer The right way to make a volume slider in Unity Build repositories.cfg could not be loaded. unity Camera Understanding Orthographic Size 探寻 Unity Camera 属性之 Clear Flags Unityの画面のアスペクト比と解像度を自動変換　全スマホ・複数解像度に対応させる Canvas Designing UI for Multiple Resolutions Unity Canvas Scaler 组件的使用 Unity分辨率适配方案设置 Editor 在unity编辑器不同位置添加菜单 SerializeReferenceをつけている型をリネーム・削除する時の注意点 What are EditorBuildSettings config objects used for or how can I use them?</description></item><item><title>Unity - Sites</title><link>https://HoshikawaRyuukou.github.io/posts/unity-sites/</link><pubDate>Mon, 20 Feb 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-sites/</guid><description>Blog Yucchiy&amp;rsquo;s Note コガネブログ 老刘@开发笔记 (:3[kanのメモ帳] Game Dev Beginner - Everyone Can Make Games LIGHT11 PG日誌 きゅぶろぐ やらなイカ？ はなちるのマイノート くものす ピクセルブログ ねこじゃらシティ YAMADA TAISHI’s diary 原カバンは鞄のお店ではありません。 L&amp;rsquo;s Blog Raspberlyのブログ 渋谷ほととぎす通信 LianBai Real-Man Lightjiao的博客 unityでいってみよう！ 偵錯桐人 - unity Blog (Enterprise) CyberAgent Developers Blog | サイバーエージェント デベロッパーズブログ REALITY｜note Mirrativ Tech Blog QualiArtsエンジニアブログ Channel Code Monkey M Studio Coco Code Collection XINCGer/Unity3DTraining Forum Qiita|Unity Zenn|Unity Unity Learning Materials Unity3d - 幻想社区 「unity」の人気の記事一覧｜note Unityゲーム開発者ギルド Events Unity Meetup Unity Advent Calendar Unityユースクリエイターカップ Community unityroom</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Unity on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/unity/</link><description>Recent content in Unity on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Wed, 22 Jan 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/unity/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Package - YooAsset</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package---yooasset/</link><pubDate>Wed, 22 Jan 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package---yooasset/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>Addressables 是在 AssetBundle 的基礎上對操作進行更友善的封裝，AssetBundle 有很多要小心的地方&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://juejin.cn/post/7066814466167422989">AssetBundle 卸載&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Addressable System 主要改善幾點&lt;/p>
+&lt;ul>
+&lt;li>透過 name/label，而是不與資源直接連結，減少因移動或重命名資產而出錯的機會。&lt;/li>
+&lt;li>本地或是異地都可以追踪。&lt;/li>
+&lt;li>簡化打包和依賴管理(name/label/group/catalog)。&lt;/li>
+&lt;li>較好的記憶體管理機制(引用計數)與性能分析系統。&lt;/li>
+&lt;/ul>
+&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/tuyoogame/YooAsset">tuyoogame/YooAsset&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="assetbundle">AssetBundle&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://learn.unity.com/tutorial/assets-resources-and-assetbundles#">Assets, Resources and AssetBundles&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.en.uwa4d.com/2022/02/26/case-studies-of-unity-assetbundle-efficient-encryption/">Case Studies of Unity AssetBundle Efficient Encryption&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="addressable-frameworks">Addressable Frameworks&lt;/h3>
+&lt;p>不同 Framework 在常規操作上大同小異，可以從資源最多的 Addressables 做觀念入門&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://blog.csdn.net/linxinfa/article/details/122390621">Unity Addressables资源管理方式用起来太爽了，资源打包、加载、热更变得如此轻松（Addressable Asset System | 简称AA）&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/588120058">Unity - Addressables项目总结（一）：基础工作流&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/592124758">Unity - Addressables项目总结（二）：业务需求&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.bilibili.com/read/cv11642315/">静态包、动态包有什么区别？何时使用增量更新？Addressables 更新流程大梳理&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="issue">Issue&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://support.unity.com/hc/en-us/articles/208380753-Shaders-are-pink-when-loaded-from-an-AssetBundle">Shaders are pink when loaded from an AssetBundle&lt;/a>
+&lt;ul>
+&lt;li>大部分時候是 Editor 的問題，關注真機運作如何即可(因為 AssetBundle 是根據指定平台生成的)。&lt;/li>
+&lt;li>⚠️ Unity 6 之後似乎無法透過取消 Auto Graphics API 來調整 Graphics API&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="extra">Extra&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.liuocean.com/archives/wei-shi-me-pao-qi-liao-addressable">为什么抛弃了 Addressable&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Unity - Platform - Web</title><link>https://HoshikawaRyuukou.github.io/posts/unity---platform---web/</link><pubDate>Sun, 19 Jan 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---platform---web/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;ul>
+&lt;li>⚠️ 使用 &lt;strong>Unity 6&lt;/strong> 開發&lt;/li>
+&lt;/ul>
+&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.unity3d.com/6000.0/Documentation/Manual/webgl.html">Unity - Manual: Web&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://learn.unity.com/tutorial/getting-started-with-unity-web">Getting started with Unity Web&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://qiita.com/kazuki_kuriyama/items/3155606bb6cb5861ce68">【Unity】WebGL開発時の注意事項&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.csdn.net/GoodCooking/article/details/136307133">Unity发布webgl获取浏览器的URL&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://tech.framesynthesis.co.jp/unity/webgl/">Unity WebGLビルドメモ - フレームシンセシス&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zenn.dev/happy_elements/articles/hekk_ac_20231215">Unity 製 WebGL ゲームを AWS でお手軽公開&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="template">Template&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://seansleblanc.itch.io/better-minimal-webgl-template">(Unity) Better Minimal WebGL Template&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="performance">Performance&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://learn.unity.com/tutorial/getting-started-with-unity-web#670ea950edbc2a2240868db0">Using the Unity Profiler&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://learn.unity.com/tutorial/getting-started-with-unity-web#670ea9d0edbc2a2240868dc1">Using the web platform Diagnostics Overlay tool&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/JohannesDeml/UnityWebGL-LoadingTest?tab=readme-ov-file">Unity WebGL Loading Test&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="host">Host&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/terreng/simple-web-server">terreng/simple-web-server&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/terreng/sws-unity-plugin">terreng/sws-unity-plugin&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="issue">Issue&lt;/h2>
+&lt;h3 id="error--failed-to-parse-binary-data-file-buildxxxdatabr">Error : Failed to parse binary data file Build/xxx.data.br&amp;hellip;&lt;/h3>
+&lt;blockquote>
+&lt;p>Failed to parse binary data file Build/web.data.br (with &amp;ldquo;Content-Type: null&amp;rdquo;), because it is still brotli-compressed. It should have been uncompressed by the browser, but it was unable to do so since the web server provided the compressed content without specifying the HTTP Response Header &amp;ldquo;Content-Encoding: br&amp;rdquo; that would have informed the browser that decompression is needed. Please verify your web server hosting configuration to add the missing &amp;ldquo;Content-Encoding: br&amp;rdquo; HTTP Response Header.&lt;/p></description></item><item><title>Unity - Package Manager - NuGetForUnity</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---nugetforunity/</link><pubDate>Sun, 12 Jan 2025 21:12:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---nugetforunity/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/GlitchEnzo/NuGetForUnity">GlitchEnzo/NuGetForUnity&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="config">Config&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>將資源調整放置 Packages 而不是 Assets&lt;/p>
+&lt;blockquote>
+&lt;p>NuGet &amp;gt; Preferences &amp;gt; Placement &amp;gt; In Packages Folder&lt;/p>
+&lt;/blockquote>
+&lt;/li>
+&lt;li>
+&lt;p>調整 .gitignore&lt;/p>
+&lt;pre tabindex="0">&lt;code>/Packages/nuget-packages/InstalledPackages*
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;/ol></description></item><item><title>Unity - Package - MessagePipe</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package---messagepipe/</link><pubDate>Thu, 09 Jan 2025 22:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package---messagepipe/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/Cysharp/MessagePipe">Cysharp/MessagePipe&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="extras">Extras&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>搭配 VContainer v1.14.0 之後可以簡化配置&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-c#" data-lang="c#">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">using&lt;/span> &lt;span style="color:#111">MessagePipe&lt;/span>&lt;span style="color:#111">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">using&lt;/span> &lt;span style="color:#111">UnityEngine&lt;/span>&lt;span style="color:#111">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">using&lt;/span> &lt;span style="color:#111">VContainer&lt;/span>&lt;span style="color:#111">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">using&lt;/span> &lt;span style="color:#111">VContainer.Unity&lt;/span>&lt;span style="color:#111">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">public&lt;/span> &lt;span style="color:#00a8c8">sealed&lt;/span> &lt;span style="color:#00a8c8">class&lt;/span> &lt;span style="color:#75af00">GameLifetimeScope&lt;/span> &lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">LifetimeScope&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">protected&lt;/span> &lt;span style="color:#00a8c8">override&lt;/span> &lt;span style="color:#00a8c8">void&lt;/span> &lt;span style="color:#111">Configure&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#111">IContainerBuilder&lt;/span> &lt;span style="color:#111">builder&lt;/span>&lt;span style="color:#111">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// 只需這行即可&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">builder&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">RegisterMessagePipe&lt;/span>&lt;span style="color:#111">();&lt;/span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;/ul></description></item><item><title>Unity - Package - R3</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package---r3/</link><pubDate>Thu, 09 Jan 2025 22:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package---r3/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/Cysharp/R3">Cysharp/R3&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://qiita.com/toRisouP/items/4344fbcba7b7e8d8ce16">【Unity】 R3とUniRxの比較まとめ&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zenn.dev/tkada/articles/a96258e080056a#reactivecollection-%2F-reactivedictionary">[Unity] UniRxをR3に移行する&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Unity - Performance</title><link>https://HoshikawaRyuukou.github.io/posts/unity---performance/</link><pubDate>Wed, 08 Jan 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---performance/</guid><description>&lt;h2 id="gc">GC&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=1Hqg-gUUOE0">GC Garbage Collection 垃圾回收&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="ui">UI&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="">&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Unity - Samples</title><link>https://HoshikawaRyuukou.github.io/posts/unity---samples/</link><pubDate>Thu, 02 Jan 2025 22:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---samples/</guid><description>&lt;h2 id="solitaire">Solitaire&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/gubicsz/Solitaire">gubicsz/Solitaire&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Unity - Packages</title><link>https://HoshikawaRyuukou.github.io/posts/unity---packages/</link><pubDate>Sat, 13 Apr 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---packages/</guid><description>&lt;h2 id="package-manager">Package Manager&lt;/h2>
+&lt;h3 id="installing-packages-using-upm">Installing Packages using UPM&lt;/h3>
+&lt;ol>
+&lt;li>Package manager -&amp;gt; Advanced project settings&lt;/li>
+&lt;li>Add Scoped Registries&lt;/li>
+&lt;/ol>
+&lt;pre tabindex="0">&lt;code>Name: package.openupm.com
+URL: https://package.openupm.com
+Scope(s): 
+ com.cysharp.unitask
+&lt;/code>&lt;/pre>&lt;ol start="3">
+&lt;li>Package manager -&amp;gt; Packages: My Registries -&amp;gt; Install&lt;/li>
+&lt;/ol>
+&lt;h3 id="guide">Guide&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/139090680">Unity中 .asmdef文件的作用&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/146565975">使用OpenUPM发布自己的Unity项目&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.jianshu.com/p/153841d65846">开发Unity PackageManager 插件包&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://neogeek.dev/creating-custom-packages-for-unity-2018.3/">Creating Custom Packages for Unity 2018.3&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://gametorrahod.com/how-to-asmdef-upm/?fbclid=IwAR31P12StjzcTi9IO1vDvwWJIwaKHxIEmUQLic6K1LGElmwv6OFRqe8sVig">How to remodel your project for asmdef and UPM&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://annulusgames-lab.blogspot.com/2023/01/unity-package-manager.html">【Unity】Package Manager活用術&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="package-collection">Package Collection&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/killop/anything_about_game/tree/b5c3b2e573d0970b318fd75b1449dbd9fdaa0ee9">killop/anything_about_game&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/baba-s/awesome-unity-open-source-on-github/tree/master?tab=readme-ov-file">baba-s/awesome-unity-open-source-on-github&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="animation">Animation&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/AnnulusGames/LitMotion">AnnulusGames/LitMotion&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="async">Async&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/Cysharp/UniTask">Cysharp/UniTask&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="debug">Debug&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/yasirkula/UnityIngameDebugConsole">yasirkula/UnityIngameDebugConsole&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="dependency-injection">Dependency Injection&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/hadashiA/VContainer">hadashiA/VContainer&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="dialogue">Dialogue&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/YarnSpinnerTool/YarnSpinner-Unity">YarnSpinnerTool/YarnSpinner-Unity&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="editor">Editor&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/AnnulusGames/Alchemy">AnnulusGames/Alchemy&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="hotfix">HotFix&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://hybridclr.doc.code-philosophy.com/">focus-creative-games/hybridclr&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="io">IO&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/Cysharp/ZString">Cysharp/ZString&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/jilleJr/Newtonsoft.Json-for-Unity/wiki/Install-official-via-UPM">Newtonsoft.Json&lt;/a>
+&lt;ul>
+&lt;li>git - com.unity.nuget.newtonsoft-json&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="localization">Localization&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://assetstore.unity.com/packages/tools/localization/lean-localization-28504">Lean Localization&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="media">Media&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/yasirkula/UnityNativeCamera">yasirkula/UnityNativeCamera&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="messaging">Messaging&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/Cysharp/MessagePipe">Cysharp/MessagePipe&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="particle-effect">Particle Effect&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/mob-sakai/ParticleEffectForUGUI">mob-sakai/ParticleEffectForUGUI&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="persistence">Persistence&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/sabresaurus/PlayerPrefsEditor">sabresaurus/PlayerPrefsEditor&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="resource-management">Resource Management&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/tuyoogame/YooAsset">tuyoogame/YooAsset&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="rx-reactive-extensions">Rx (Reactive Extensions)&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/Cysharp/R3">Cysharp/R3&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="social">Social&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/yasirkula/UnityNativeShare">Unity Native Share Plugin&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="sprite">Sprite&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/elringus/sprite-dicing">elringus/sprite-dicing&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="state-machine">State Machine&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/Inspiaaa/UnityHFSM">Inspiaaa/UnityHFSM&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="ui">UI&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/qiankanglai/LoopScrollRect">qiankanglai/LoopScrollRect&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="web">Web&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/psygames/UnityWebSocket">psygames/UnityWebSocket&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Unity - Package - UniTask</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package---unitask/</link><pubDate>Sat, 10 Feb 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package---unitask/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
+&lt;p>UniTask - Unity 中實現效能最好的 async/await 的函式庫&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/Cysharp/UniTask">Cysharp/UniTask&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Unity 中預設的非同步實現是 - &lt;a href="https://docs.unity3d.com/2022.3/Documentation/Manual/Coroutines.html">Coroutine 協程&lt;/a>，但協程有以下缺點&lt;/p>
+&lt;ul>
+&lt;li>無法使用回傳值，需使用 callback 來解決。&lt;/li>
+&lt;li>異常處理很困難，因為不能在 try-catch 區塊內使用 yield。&lt;/li>
+&lt;li>需透過 MonoBehaviour.StartCoroutine 才能啟動。&lt;/li>
+&lt;/ul>
+&lt;p>UniTask 相較於 C# 原生的 Task 做了以下改進&lt;/p>
+&lt;ul>
+&lt;li>刪除了 Task 在 Unity 不需要的功能。&lt;/li>
+&lt;li>非 MonoBehaviour 裡也能實現非同步。&lt;/li>
+&lt;li>記憶體/ GC / Unity PlayerLoop 等方面做最佳化。&lt;/li>
+&lt;li>UniTaskTracker 提供編輯器上可視化追蹤 await 狀態，這對於檢查是否有洩漏很有用。&lt;/li>
+&lt;/ul>
+&lt;p>UniTask 官方文件的基本功能寫得相當清楚，並附上一些入門介紹&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://hackmd.io/@-xLrSnFfROOeIeRnENCWcQ/Bke4eFcrd">UniTaskを使おう！&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://qiita.com/toRisouP/items/4445b6b9bf00e49eb147">UniTask機能紹介&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>以下紀錄幾個重點主題&lt;/p>
+&lt;h2 id="awaiter">Awaiter&lt;/h2>
+&lt;p>UniTask 已經實作了相當豐富的 Awaiter 擴充，有需要自訂的可以參考以下規範&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://blog.walterlv.com/post/what-is-an-awaiter.html">.NET 中什么样的类是可使用 await 异步等待的？&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="thread">Thread&lt;/h2>
+&lt;ul>
+&lt;li>UniTask.SwitchToThreadPool 允許後續處理在執行緒池中進行。&lt;/li>
+&lt;li>UniTask.SwitchToMainThread 切換到主執行緒，不會等待下一幀。&lt;/li>
+&lt;li>也可以使用 UniTask.Yield 切換到主執行緒，但它總是等待一幀。&lt;/li>
+&lt;/ul>
+&lt;p>但目前尚未有使用到的情境，之後有遇到再嘗試。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://qiita.com/matchyy/items/44986c3fee410e29e2e5">UniTaskを使えば並列処理で外部機器からデータを簡単に取得できますの紹介&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>此外使用執行緒池，將無法與 WebGL 等平台相容。未來應該也會避開使用。&lt;/p></description></item><item><title>Unity - Platform - Android - Build</title><link>https://HoshikawaRyuukou.github.io/posts/unity---platform---android---build/</link><pubDate>Sat, 03 Feb 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---platform---android---build/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.jianshu.com/p/9058daafa130">Unity 不通過Android studio 打包接SDK&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="settings">Settings&lt;/h2>
+&lt;ul>
+&lt;li>gradleTemplate.properties : 專案的全域 Gradle 配置。&lt;/li>
+&lt;li>AndroidManifest.xml ：用於向 Android 構建工具、Android 作業系統和 Google Play 描述應用的基本資訊。&lt;/li>
+&lt;li>launcherManifest.xml 定義應用的啟動配置資訊&lt;/li>
+&lt;li>mainTemplate.gradle：自定義 Android 專案的 Gradle 構建過程，包括添加依賴項、修改編譯設定、配置簽名資訊等。&lt;/li>
+&lt;li>launcherTemolate.gradle ：包含有關如何構建 Android 應用程式的指令&lt;/li>
+&lt;li>baseProjectTemplate.gradle：所含的配置會在其他所有範本/Gradle 專案之間共用&lt;/li>
+&lt;/ul>
+&lt;h2 id="device">Device&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=iCXwaehzRFQ">Quickly preview your game on Android device | Unity tutorial&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Unity - Platform - Android - AndroidJNIModule</title><link>https://HoshikawaRyuukou.github.io/posts/unity---platform---android---androidjnimodule/</link><pubDate>Sun, 28 Jan 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---platform---android---androidjnimodule/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
+&lt;p>這次的業務需求是&lt;/p>
+&lt;blockquote>
+&lt;p>將 Google Play Install Referrer 接入 Unity&lt;/p>
+&lt;/blockquote>
+&lt;p>目前有使用到 AndroidJNIModule 中的&lt;/p>
+&lt;ul>
+&lt;li>AndroidJavaClass&lt;/li>
+&lt;li>AndroidJavaObject&lt;/li>
+&lt;li>AndroidJavaProxy&lt;/li>
+&lt;/ul>
+&lt;p>但中途採了不少坑，特此紀錄一下。&lt;/p>
+&lt;h2 id="基本知識">基本知識&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.unity3d.com/ScriptReference/UnityEngine.AndroidJNIModule.html">UnityEngine.AndroidJNIModule&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://vuopaja.com/tutorials/android-java-proxy">How to Create Android Java Callbacks to C# in Unity&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zenn.dev/sunmax/articles/e079dd3ba7c487">UnityからAndroidのクラスや関数を呼び出す&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="androidjavaclasshttpsdocsunity3dcomscriptreferenceandroidjavaclasshtml">&lt;a href="https://docs.unity3d.com/ScriptReference/AndroidJavaClass.html">AndroidJavaClass&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>可以實例化 Java 類、調用 Java 類的靜態方法，以及訪問 Java 類的靜態屬性。&lt;/li>
+&lt;/ul>
+&lt;h3 id="androidjavaobjecthttpsdocsunitycn20223documentationscriptreferenceandroidjavaobjecthtml">&lt;a href="https://docs.unity.cn/2022.3/Documentation/ScriptReference/AndroidJavaObject.html">AndroidJavaObject&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>創建 Java 對象的實例。&lt;/li>
+&lt;/ul>
+&lt;h3 id="androidjavaproxyhttpsdocsunity3dcomscriptreferenceandroidjavaproxyhtml">&lt;a href="https://docs.unity3d.com/ScriptReference/AndroidJavaProxy.html">AndroidJavaProxy&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>允許在 Unity C# 腳本中實現 Java 接口。&lt;/li>
+&lt;li>允許我們在 Java 中調用方法，這些方法將調用 C# 類上的 &lt;strong>匹配&lt;/strong> 方法。&lt;/li>
+&lt;/ul>
+&lt;h2 id="注意">注意&lt;/h2>
+&lt;ul>
+&lt;li>函數名匹配 (建議直接看 source code 裡面的值，本此次就遇到 官方文件與 jar 為匹配)&lt;/li>
+&lt;li>android.os.Build.VERSION 將意味著要到一個公開類&lt;/li>
+&lt;li>android.os.Build$VERSION 將意味著進入一個內部類&lt;/li>
+&lt;/ul></description></item><item><title>Unity - Service - Google Play Install Referrer</title><link>https://HoshikawaRyuukou.github.io/posts/unity---service---google-play-install-referrer/</link><pubDate>Thu, 25 Jan 2024 22:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---service---google-play-install-referrer/</guid><description>&lt;h2 id="簡述">簡述&lt;/h2>
+&lt;p>&lt;a href="https://developer.android.com/google/play/installreferrer?hl=zh-tw">Play Install Referrer&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>Play Install Referrer API : 非 Kotlin / Java 用戶使用&lt;/li>
+&lt;li>Play Install Referrer Library : 將上者封裝更方便 Kotlin / Java 使用&lt;/li>
+&lt;/ul>
+&lt;p>透過該服務能對 App 的下載與使用者進行歸因分析，用於評估推廣服務得成效，進而提升推廣效果與報酬率。&lt;/p>
+&lt;ul>
+&lt;li>舊版 Play Install Referrer 在使用者下載應用程式後透過廣播傳送包含歸因參數的訊息。然而廣播的不可靠性和安全性問題，目前不再建議使用這個版本。&lt;/li>
+&lt;li>新版 Play Install Referrer 直接訪問本機 Google Play 應用程式商店中的記錄，索取 referrer 值，因此更加可靠。&lt;/li>
+&lt;/ul>
+&lt;h2 id="快速上手">快速上手&lt;/h2>
+&lt;p>Unity 專案: 將依賴加在 maintemplate.gradle&lt;/p>
+&lt;pre tabindex="0">&lt;code>dependencies {
+ implementation(&amp;#34;com.android.installreferrer:installreferrer:2.2&amp;#34;)
+}
+&lt;/code>&lt;/pre>&lt;p>因為官方 API 文件寫的不全，建議到以下網站直接下載 aar 查看 jar 來對接 API&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://maven.google.com/web/index.html?q=install#com.android.installreferrer:installreferrer:2.2">Google&amp;rsquo;s Maven Repository&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mvnrepository.com/artifact/com.android.installreferrer/installreferrer/2.2">Maven Repository&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>使用服務的工作流為如下&lt;/p>
+&lt;ol>
+&lt;li>建立連線&lt;/li>
+&lt;li>等待 callback 連線成功&lt;/li>
+&lt;li>索取 referrer&lt;/li>
+&lt;li>關閉連線&lt;/li>
+&lt;/ol>
+&lt;h2 id="referrer-格式">Referrer 格式&lt;/h2>
+&lt;pre tabindex="0">&lt;code>https://play.google.com/store/apps/details?id=${package name}&amp;amp;referrer=${parameter}
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>&lt;a href="https://ga-dev-tools.google/campaign-url-builder/play/">Play Campaign URL Builder&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://developers.google.com/analytics/devguides/collection/android/v4/campaigns?hl=zh-tw#campaign-params">廣告活動參數&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="referrer-狀態">Referrer 狀態&lt;/h2>
+&lt;p>將手機連著 android studio 開啟 Logcat，透過連結前往商店發現有 4 種情境&lt;/p></description></item><item><title>Unity - Advanced - Code stripping</title><link>https://HoshikawaRyuukou.github.io/posts/unity---advanced---managed-code-stripping/</link><pubDate>Wed, 17 Jan 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---advanced---managed-code-stripping/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>在構建過程中，Unity 通過稱為託管代碼剝離的過程刪除未使用或無法訪問的代碼，這可以顯著減小應用程式的最終大小。&lt;/p>
+&lt;blockquote>
+&lt;p>File -&amp;gt; Build Settings -&amp;gt; Player Settings -&amp;gt; Optimization -&amp;gt; Managed Stripping Level&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>⚠️ Managed Stripping Level 等級越高裁剪掉的代碼越多，包體也就越小，但是對應的風險也就更大。&lt;/li>
+&lt;li>藉由屬性或特殊 XML 配置檔的形式提供註釋，以指示 Unity 連結器要保留代碼庫的哪些部分。&lt;/li>
+&lt;/ul>
+&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.unity3d.com/6000.0/Documentation/Manual/managed-code-stripping.html">Unity - Manual: Managed code stripping&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/KuraiAndras/LinkerGenerator">KuraiAndras/LinkerGenerator&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zenn.dev/hatopopo_0113/articles/279d3b89c791d1">IUnityLinkerProcessorでCodeStrippingからコードを守る&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="preserving">Preserving&lt;/h2>
+&lt;h3 id="preserve-attribute">Preserve attribute&lt;/h3>
+&lt;ul>
+&lt;li>⚠️ [Preserve] 屬性屬於“侵入式”的解決方案，不建議&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cs" data-lang="cs">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">class&lt;/span> &lt;span style="color:#75af00">Foo&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75af00"> [Preserve]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">public&lt;/span> &lt;span style="color:#00a8c8">void&lt;/span> &lt;span style="color:#111">PreservedMethod&lt;/span>&lt;span style="color:#111">(){}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="linkxml">link.xml&lt;/h3>
+&lt;ul>
+&lt;li>在專案的 Assets 目錄下創建個 link.xml&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-xml" data-lang="xml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;linker&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;assembly&lt;/span> &lt;span style="color:#75af00">fullname=&lt;/span>&lt;span style="color:#d88200">&amp;#34;DOTween&amp;#34;&lt;/span> &lt;span style="color:#75af00">preserve=&lt;/span>&lt;span style="color:#d88200">&amp;#34;all&amp;#34;&lt;/span> &lt;span style="color:#f92672">/&amp;gt;&lt;/span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;assembly&lt;/span> &lt;span style="color:#75af00">fullname=&lt;/span>&lt;span style="color:#d88200">&amp;#34;Newtonsoft.Json&amp;#34;&lt;/span> &lt;span style="color:#75af00">preserve=&lt;/span>&lt;span style="color:#d88200">&amp;#34;all&amp;#34;&lt;/span> &lt;span style="color:#f92672">/&amp;gt;&lt;/span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;assembly&lt;/span> &lt;span style="color:#75af00">fullname=&lt;/span>&lt;span style="color:#d88200">&amp;#34;Assembly-CSharp&amp;#34;&lt;/span> &lt;span style="color:#75af00">preserve=&lt;/span>&lt;span style="color:#d88200">&amp;#34;all&amp;#34;&lt;/span> &lt;span style="color:#f92672">/&amp;gt;&lt;/span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;assembly&lt;/span> &lt;span style="color:#75af00">fullname=&lt;/span>&lt;span style="color:#d88200">&amp;#34;UnityEngine&amp;#34;&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;type&lt;/span> &lt;span style="color:#75af00">fullname=&lt;/span>&lt;span style="color:#d88200">&amp;#34;UnityEngine.SpriteRenderer&amp;#34;&lt;/span> &lt;span style="color:#75af00">preserve=&lt;/span>&lt;span style="color:#d88200">&amp;#34;all&amp;#34;&lt;/span>&lt;span style="color:#f92672">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;type&lt;/span> &lt;span style="color:#75af00">fullname=&lt;/span>&lt;span style="color:#d88200">&amp;#34;UnityEngine.Rigidbody2D&amp;#34;&lt;/span> &lt;span style="color:#75af00">preserve=&lt;/span>&lt;span style="color:#d88200">&amp;#34;all&amp;#34;&lt;/span>&lt;span style="color:#f92672">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;/assembly&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;/linker&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Unity - Service - Cloud Diagnostics</title><link>https://HoshikawaRyuukou.github.io/posts/unity---service---cloud-diagnostics/</link><pubDate>Tue, 16 Jan 2024 22:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---service---cloud-diagnostics/</guid><description>&lt;h2 id="簡述">簡述&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://unity3ds-software.com/en/cn/products/cloud-diagnostics.html">Official Home Page&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.unity.com/ugs/manual/cloud-diagnostics/manual/CloudDiagnostics/WelcometoCloudDiagnostics">Official Doc&lt;/a>&lt;/li>
+&lt;li>監控崩潰和異常報告&lt;/li>
+&lt;li>測試人員和應用使用者能直接提供用戶報告&lt;/li>
+&lt;li>啟用成本極低且非侵入式&lt;/li>
+&lt;li>有免費套餐，Personal 常規操作應該是沒問題，一旦超出了免費額度，系統將要求添加付款方式以繼續使用服務&lt;/li>
+&lt;/ul>
+&lt;h2 id="快速上手">快速上手&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://learn.unity.com/tutorial/cloud-diagnostics?tab=overview#">Cloud Diagnostics&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://kan-kikuchi.hatenablog.com/entry/Unity_Cloud_Diagnostics">エラーやクラッシュを記録し、バグ特定の手助けになるUnity公式の無料サービス Unity Cloud Diagnostics&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://kan-kikuchi.hatenablog.com/entry/Unity_ForceCrash">UnityエディタやUnityで作ったゲームを強制的にクラッシュさせる方法&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="注意">注意&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.unity.com/ugs/en-us/manual/cloud-diagnostics/manual/Privacy/apple-privacy">Apple&amp;rsquo;s privacy survey&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.unity.com/ugs/en-us/manual/cloud-diagnostics/manual/Privacy/GoogleDataSafety">Google Play data safety disclosures for Cloud Diagnostics&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Unity - Environment</title><link>https://HoshikawaRyuukou.github.io/posts/unity---environment/</link><pubDate>Tue, 16 Jan 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---environment/</guid><description>&lt;blockquote>
+&lt;p>⚠️ 以下使用 unity 6&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="os---mac">OS - Mac&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://blog.csdn.net/linxinfa/article/details/124844236">【游戏开发环境】Unity使用Mac电脑开发，开发环境的搭建（Mac mini M1 | VSCode | Git | 好用工具）&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="vscode">VSCode&lt;/h2>
+&lt;ul>
+&lt;li>安裝 &lt;a href="https://dotnet.microsoft.com/en-us/download">.NET Core&lt;/a>&lt;/li>
+&lt;li>重新開機使環境變數被應用&lt;/li>
+&lt;li>移除 Visual Studio Code Editor 已經停止維護&lt;/li>
+&lt;li>安裝 Visual Studio Editor&lt;/li>
+&lt;li>Edit &amp;gt; Preferences &amp;gt; External Tools &amp;gt; External Script Editor&lt;/li>
+&lt;li>Extension - C# Dev Kit&lt;/li>
+&lt;/ul>
+&lt;h2 id="preferences">Preferences&lt;/h2>
+&lt;ul>
+&lt;li>Edit &amp;gt; Preferences &amp;gt; General &amp;gt; Script Changes While Playing (Stop Playing and Recompile)&lt;/li>
+&lt;/ul></description></item><item><title>Unity - Package Manager - Modify A Package</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---modify-a-package/</link><pubDate>Fri, 12 Jan 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---modify-a-package/</guid><description>&lt;h2 id="情境">情境&lt;/h2>
+&lt;p>有需要客製化 Unity 官方 / git 直接導入 的 Package 時&lt;/p>
+&lt;h2 id="操作">操作&lt;/h2>
+&lt;ol>
+&lt;li>至 ProjrctRoot\Library\PackageCache 找到目標的 Package&lt;/li>
+&lt;li>&lt;strong>剪下貼上&lt;/strong>至 ProjrctRoot\Packages 即可&lt;/li>
+&lt;/ol>
+&lt;h2 id="ref">Ref&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://support.unity.com/hc/en-us/articles/9113460764052-How-can-I-modify-built-in-packages-">How can I modify built-in packages?&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.csdn.net/linjf520/article/details/125738218">Unity - 如何修改一个 Package 或是如何将 Package Local化&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Unity - Package Manager - Private GitHub Repository</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---private-github-repository/</link><pubDate>Sun, 24 Dec 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---private-github-repository/</guid><description>&lt;h2 id="情境">情境&lt;/h2>
+&lt;p>想分享私有庫但又不想去更改團隊或人員權限，Github 提供 Fine-Grained Token 能做到客製化的權限控制&lt;/p>
+&lt;h2 id="操作">操作&lt;/h2>
+&lt;ol>
+&lt;li>至 GitHub &amp;laquo;&lt;strong>帳戶設定&lt;/strong>&amp;raquo;（非儲存庫設定）&lt;/li>
+&lt;li>Developer Settings -&amp;gt; Personal Access Tokens -&amp;gt; Fine-Grained Tokens&lt;/li>
+&lt;li>生成 Token (&lt;strong>Read-Only Permission&lt;/strong> for the repo &lt;strong>Content&lt;/strong>).&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#d88200">&amp;#34;com.yourusername.yourpackage&amp;#34;&lt;/span>: &lt;span style="color:#d88200">&amp;#34;git+https://x-oauth-basic:&amp;lt;token&amp;gt;@&amp;lt;repo&amp;gt;?path=&amp;lt;folder&amp;gt;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="ref">Ref&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://medium.com/@dasannikov/install-unity-package-from-a-private-github-repository-9a40066b335f">Install Unity Package from a private GitHub repository&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Unity - Package - External Dependency Manager for Unity (EDM4U)</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package---external-dependency-manager-for-unity-edm4u/</link><pubDate>Wed, 08 Nov 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package---external-dependency-manager-for-unity-edm4u/</guid><description>&lt;h2 id="前言">前言&lt;/h2>
+&lt;p>Google 停止維護 Game Package Registry (GPR) 導致不能直接使用 Package Manager 導入包。必須到封存檔網站下載「.tgz」手動導入。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://developers.google.com/unity/archive?hl=zh-tw#external_dependency_manager_for_unity">Google Unity 套件&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.unity3d.com/Manual/upm-ui-tarball.html">Install a package from a local tarball file&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>其他的相關的 Google Service 依賴(AR/Firebase/Google Play等)也可以用此方法導入。&lt;/p>
+&lt;h2 id="設定">設定&lt;/h2>
+&lt;p>&lt;code>Assets &amp;gt; External Dependency Manager &amp;gt; Android Resolver &amp;gt; Settings&lt;/code>
+啟用這三個 Patch
+
+ &lt;img src="https://HoshikawaRyuukou.github.io/images/EDM4U_01.png" alt="EDM4U_01">
+
+&lt;/p>
+&lt;p>並至 &lt;code>Player Settings &amp;gt; Publishing Settings&lt;/code>
+啟用以下選項
+
+ &lt;img src="https://HoshikawaRyuukou.github.io/images/EDM4U_02.png" alt="EDM4U_02">
+
+&lt;/p>
+&lt;h2 id="auto-resolution">Auto resolution&lt;/h2>
+&lt;p>&lt;code>Assets &amp;gt; External Dependency Manager &amp;gt; Android Resolver &amp;gt; Force Resolve&lt;/code>
+後會去收集專案&lt;strong>所有 Editor 資料夾&lt;/strong>下的 *&lt;strong>Dependencies.xml&lt;/strong> 加到 mainTemplate 中&lt;/p></description></item><item><title>Unity - Performance - Memory Profiler</title><link>https://HoshikawaRyuukou.github.io/posts/unity---performance---memory-profiler/</link><pubDate>Sun, 30 Jul 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---performance---memory-profiler/</guid><description>&lt;h2 id="注意">注意&lt;/h2>
+&lt;ul>
+&lt;li>由於Unity 無法將性能分析器本身佔用的記憶體與運行模式的記憶體完全分開。要獲得應用程序的更精確數字和記憶體使用情況，應在要運行應用程序的目標設備和操作系統上分析應用程序。&lt;/li>
+&lt;li>如果需要在記憶體受限的平台上運行應用程序，設備上的總駐留量對於檢查低記憶體警告和由於記憶體耗盡而強制關閉非常有用。作為一般規則，它不應超過設備上可用總物理內存的 70%。&lt;/li>
+&lt;li>偵測 Leaked Managed Shell 的功能在 Memory Profiler 1.1.0-pre.1&lt;/li>
+&lt;/ul>
+&lt;h2 id="ref">Ref&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.unity3d.com/Packages/com.unity.memoryprofiler@1.0/manual/index.html">Memory Profiler&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.unity3d.com/Packages/com.unity.memoryprofiler@1.1/manual/managed-shell-objects.html">Memory Profiler | 1.1.0-pre.1 - Unity - Manual&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=UIwQmpQTtA4">Unity でメモリリーク？ Memory Profiler で Leaked Managed Shell をチェックしてみよう！&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.unity.com/engine-platform/inspecting-memory-with-the-new-memory-profiler-package">Inspecting memory with the new Memory Profiler package&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://unitysquare.co.kr/growwith/unityblog/webinarView?id=387&amp;amp;utm_source=facebook-page&amp;amp;utm_medium=social&amp;amp;utm_campaign=korea_memoryprofilerapp387">Memory Profiler로 애플리케이션의 물리적 메모리 사용량 분석&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.csdn.net/Nbin_Newby/article/details/131537227">Unity内存分析与优化实践(1.1版本前)&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Unity - Basic - Preprocessor Directives</title><link>https://HoshikawaRyuukou.github.io/posts/unity---basic---preprocessor-directives/</link><pubDate>Fri, 07 Jul 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---basic---preprocessor-directives/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
+&lt;p>中文稱作 : 前置處理器指示詞&lt;/p>
+&lt;p>筆者最近接觸到的遺舊專案中發現裡面大量地使用 條件式編譯&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-csharp" data-lang="csharp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#if&lt;/span> &lt;span style="color:#111">DEBUG&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">Console&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">WriteLine&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#d88200">&amp;#34;Debug version&amp;#34;&lt;/span>&lt;span style="color:#111">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#endif&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>筆者之前有使用也基本只使用 定義區域 (排版效果)&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-csharp" data-lang="csharp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#region&lt;/span> &lt;span style="color:#111">MyClass&lt;/span> &lt;span style="color:#111">definition&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">public&lt;/span> &lt;span style="color:#00a8c8">class&lt;/span> &lt;span style="color:#75af00">MyClass&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">static&lt;/span> &lt;span style="color:#00a8c8">void&lt;/span> &lt;span style="color:#111">Main&lt;/span>&lt;span style="color:#111">(){...}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#endregion&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Unity 在處理平台裝置時也蠻常會出現的&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-csharp" data-lang="csharp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">public&lt;/span> &lt;span style="color:#00a8c8">class&lt;/span> &lt;span style="color:#75af00">PlatformDefines&lt;/span> &lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">MonoBehaviour&lt;/span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">void&lt;/span> &lt;span style="color:#111">Start&lt;/span> &lt;span style="color:#111">()&lt;/span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">#if&lt;/span> &lt;span style="color:#111">UNITY_EDITOR&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">Debug&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">Log&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#d88200">&amp;#34;Unity Editor&amp;#34;&lt;/span>&lt;span style="color:#111">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">#endif&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">#if&lt;/span> &lt;span style="color:#111">UNITY_IOS&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">Debug&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">Log&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#d88200">&amp;#34;iOS&amp;#34;&lt;/span>&lt;span style="color:#111">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">#endif&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">#if&lt;/span> &lt;span style="color:#111">UNITY_STANDALONE_OSX&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">Debug&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">Log&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#d88200">&amp;#34;Standalone OSX&amp;#34;&lt;/span>&lt;span style="color:#111">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">#endif&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">#if&lt;/span> &lt;span style="color:#111">UNITY_STANDALONE_WIN&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">Debug&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">Log&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#d88200">&amp;#34;Standalone Windows&amp;#34;&lt;/span>&lt;span style="color:#111">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">#endif&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="問題">問題&lt;/h2>
+&lt;p>那前置處理器指示詞有什麼問題呢? (參考日文那個 Ref 有比較明確的 Case)&lt;/p>
+&lt;ul>
+&lt;li>編譯版本至少會是 2^(指示詞的分類數)種，持續的調試和測試變得非常困難。&lt;/li>
+&lt;li>Unit Test 中難以使用。&lt;/li>
+&lt;li>編譯檢查不起作用。&lt;/li>
+&lt;li>當巢狀結構出現時可讀性將大為降低。&lt;/li>
+&lt;/ul>
+&lt;p>上述這些狀況都會導致 &lt;strong>延後發現問題的時間 !&lt;/strong>&lt;/p>
+&lt;h2 id="方案">方案&lt;/h2>
+&lt;p>這個前置處理器指示詞一直是個蠻有爭議的作法，有一派人士是不使用的(通過使用條件分支、策略模式或依賴注入等其他方式，更可以清晰地表達了代碼的邏輯，提高了程式的可維護性)。&lt;/p>
+&lt;p>筆者也傾向不使用(業務邏輯不用，其餘的看狀況)。&lt;/p>
+&lt;h3 id="case-editor">Case. Editor&lt;/h3>
+&lt;p>有時後會有需要客製編輯器時，會這樣跟 MonoBehaviour 寫在一起並用 UNITY_EDITOR 處理。但事實上獨立一個檔案放在 &lt;strong>Editor 資料夾&lt;/strong> 應該會更好。&lt;/p></description></item><item><title>Unity - Platform - iOS - plug-in</title><link>https://HoshikawaRyuukou.github.io/posts/unity---platform---ios---plug-in/</link><pubDate>Wed, 05 Jul 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---platform---ios---plug-in/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
+&lt;p>這次的業務需求是&lt;/p>
+&lt;blockquote>
+&lt;p>取得 ios 實機的 &amp;ldquo;地區&amp;rdquo;，並讓 C# 能拿到 Swift 所返回的字串&lt;/p>
+&lt;/blockquote>
+&lt;p>因為在 ios 的環境下 unity / C# 拿到的值並不正確。此外筆者對 Swift / Objective-C 幾乎零基礎，目前只針對一些教學文件做些修改，之後有機會更熟再回頭深究。&lt;/p>
+&lt;h2 id="實作">實作&lt;/h2>
+&lt;ul>
+&lt;li>SwiftDeviceInfoPlugin.swift 須放置於 Plugins\iOS 之下&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-swift" data-lang="swift">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">import&lt;/span> &lt;span style="color:#75af00">Foundation&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">public&lt;/span> &lt;span style="color:#00a8c8">class&lt;/span> &lt;span style="color:#75af00">SwiftDeviceInfoPlugin&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">public&lt;/span> &lt;span style="color:#00a8c8">static&lt;/span> &lt;span style="color:#00a8c8">func&lt;/span> &lt;span style="color:#75af00">getRegion&lt;/span>&lt;span style="color:#111">()&lt;/span> &lt;span style="color:#111">-&amp;gt;&lt;/span> &lt;span style="color:#111">String&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">return&lt;/span> &lt;span style="color:#111">Locale&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">current&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">regionCode&lt;/span> &lt;span style="color:#111">??&lt;/span> &lt;span style="color:#d88200">&amp;#34;Unknown&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">@&lt;/span>&lt;span style="color:#111">_cdecl&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#d88200">&amp;#34;getRegion&amp;#34;&lt;/span>&lt;span style="color:#111">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">public&lt;/span> &lt;span style="color:#00a8c8">func&lt;/span> &lt;span style="color:#75af00">getRegion&lt;/span>&lt;span style="color:#111">()&lt;/span> &lt;span style="color:#111">-&amp;gt;&lt;/span> &lt;span style="color:#111">UnsafePointer&lt;/span>&lt;span style="color:#111">&amp;lt;&lt;/span>&lt;span style="color:#111">CChar&lt;/span>&lt;span style="color:#111">&amp;gt;?&lt;/span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">let&lt;/span> &lt;span style="color:#111">region&lt;/span> &lt;span style="color:#111">=&lt;/span> &lt;span style="color:#111">strdup&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#111">SwiftDeviceInfoPlugin&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">getRegion&lt;/span>&lt;span style="color:#111">())&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">return&lt;/span> &lt;span style="color:#111">UnsafePointer&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#111">region&lt;/span>&lt;span style="color:#111">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>@_cdecl(&amp;ldquo;getRegion&amp;rdquo;)：這是一個 Swift 標記，表示下面的函數將使用cdecl樣式的名稱綁定。您只需知道此屬性向 C 公開了一個 Swift 函數&lt;/li>
+&lt;li>UnsafePointer&amp;lt;CChar&amp;gt;?，它是一個可為空的指向 C 風格字串（CChar）的指標。這使得 Swift 能夠以與 C 相容的方式提供訪問區域資訊的介面。&lt;/li>
+&lt;li>strdup() 用於創建預返回的字串的副本，並在堆上分配其記憶體。&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-csharp" data-lang="csharp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">public&lt;/span> &lt;span style="color:#00a8c8">sealed&lt;/span> &lt;span style="color:#00a8c8">class&lt;/span> &lt;span style="color:#75af00">IOSDeviceInfoProvider&lt;/span> &lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">IDeviceInfoProvider&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">public&lt;/span> &lt;span style="color:#00a8c8">string&lt;/span> &lt;span style="color:#111">GetRegion&lt;/span>&lt;span style="color:#111">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">return&lt;/span> &lt;span style="color:#00a8c8">new&lt;/span> &lt;span style="color:#111">System&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">Globalization&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">RegionInfo&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#111">GetRegionFromDevice&lt;/span>&lt;span style="color:#111">()).&lt;/span>&lt;span style="color:#111">ThreeLetterISORegionName&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">ToUpper&lt;/span>&lt;span style="color:#111">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75af00">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75af00"> [DllImport(&amp;#34;__Internal&amp;#34;, EntryPoint = &amp;#34;getRegion&amp;#34;)]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">static&lt;/span> &lt;span style="color:#00a8c8">extern&lt;/span> &lt;span style="color:#00a8c8">string&lt;/span> &lt;span style="color:#111">GetRegionFromDevice&lt;/span>&lt;span style="color:#111">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>[DllImport] : 是一個 System.Runtime.InteropServices 命名空間中的屬性，它告訴 C# 編譯器這個函數是在外部插件中定義的，並且需要從外部導入。&lt;/li>
+&lt;li>EntryPoint = &amp;ldquo;getRegion&amp;rdquo; 表示在外部插件中將使用名為 callSwift 的函數作為入口點。&lt;/li>
+&lt;li>extern 關鍵字表示該函數的實現不是在 C# 代碼中，而是在外部的原生插件中實現的。&lt;/li>
+&lt;/ul>
+&lt;h2 id="待補">待補&lt;/h2>
+&lt;ul>
+&lt;li>記憶體管理的知識點&lt;/li>
+&lt;li>這次沒用到委派，須找時間理解&lt;/li>
+&lt;/ul>
+&lt;h2 id="ref">Ref&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.unity3d.com/Manual/PluginsForIOS.html">Building plug-ins for iOS&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.create-forever.games/unity2021-csharp-swift-call/">C# から直接 Swift コードを呼び出す&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://betterprogramming.pub/setting-up-ios-framework-for-unity-9ef4e577db89">Setting Up iOS Framework for Unity From Swift to C#&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Unity - Editor - ScriptedImporter</title><link>https://HoshikawaRyuukou.github.io/posts/unity---editor---scriptedimporter/</link><pubDate>Sat, 27 May 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---editor---scriptedimporter/</guid><description>&lt;h2 id="用途">用途&lt;/h2>
+&lt;ul>
+&lt;li>使用 C# 為 Unity 本身不支持的文件格式編寫自定義資源導入器，從而添加支持。&lt;/li>
+&lt;/ul>
+&lt;h2 id="注意">注意&lt;/h2>
+&lt;ul>
+&lt;li>Scripted Importer 無法處理已由 Unity 本身處理的文件擴展名。&lt;/li>
+&lt;/ul>
+&lt;h2 id="example">Example&lt;/h2>
+&lt;p>這裡將 .lua 以 TextAsset&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-csharp" data-lang="csharp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">using&lt;/span> &lt;span style="color:#111">UnityEngine&lt;/span>&lt;span style="color:#111">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">using&lt;/span> &lt;span style="color:#111">System.IO&lt;/span>&lt;span style="color:#111">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">using&lt;/span> &lt;span style="color:#111">UnityEditor.AssetImporters&lt;/span>&lt;span style="color:#111">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75af00">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75af00">[ScriptedImporter( 1, &amp;#34;lua&amp;#34; )]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">public&lt;/span> &lt;span style="color:#00a8c8">class&lt;/span> &lt;span style="color:#75af00">LuaImporter&lt;/span> &lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">ScriptedImporter&lt;/span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">public&lt;/span> &lt;span style="color:#00a8c8">override&lt;/span> &lt;span style="color:#00a8c8">void&lt;/span> &lt;span style="color:#111">OnImportAsset&lt;/span>&lt;span style="color:#111">(&lt;/span> &lt;span style="color:#111">AssetImportContext&lt;/span> &lt;span style="color:#111">ctx&lt;/span> &lt;span style="color:#111">)&lt;/span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">TextAsset&lt;/span> &lt;span style="color:#111">subAsset&lt;/span> &lt;span style="color:#111">=&lt;/span> &lt;span style="color:#00a8c8">new&lt;/span> &lt;span style="color:#111">TextAsset&lt;/span>&lt;span style="color:#111">(&lt;/span> &lt;span style="color:#111">File&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">ReadAllText&lt;/span>&lt;span style="color:#111">(&lt;/span> &lt;span style="color:#111">ctx&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">assetPath&lt;/span> &lt;span style="color:#111">)&lt;/span> &lt;span style="color:#111">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">ctx&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">AddObjectToAsset&lt;/span>&lt;span style="color:#111">(&lt;/span> &lt;span style="color:#d88200">&amp;#34;text&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#111">subAsset&lt;/span> &lt;span style="color:#111">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">ctx&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">SetMainObject&lt;/span>&lt;span style="color:#111">(&lt;/span> &lt;span style="color:#111">subAsset&lt;/span> &lt;span style="color:#111">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="ref">Ref&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.unity3d.com/Manual/ScriptedImporters.html">Scripted Importers&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.cnblogs.com/wildmelon/p/16087056.html">[Unity] 资源工作流程 - ScriptedImporter&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Unity - Package Manager - Sample Workflow</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---sample-workflow/</link><pubDate>Sat, 22 Apr 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---sample-workflow/</guid><description>&lt;h2 id="package-samples">Package Samples&lt;/h2>
+&lt;p>對應有些模組的操作比較複雜繁瑣，有時需要有一些 Sample 做參考。官方 Package Manager 有個 &amp;ldquo;半套&amp;rdquo; Sample 工作流，讓人不是很舒服。&lt;/p>
+&lt;p>&lt;a href="https://docs.unity3d.com/2021.3/Documentation/Manual/cus-samples.html">官方文件&lt;/a>&lt;/p>
+&lt;p>Sample 資料夾後面加了波浪號 (&lt;del>) 告訴 Unity 忽略 Samples&lt;/del> 文件夾中的內容，此類文件夾不使用.meta文件進行跟踪。忽略 Samples~ 對 Package 使用者是好的，畢竟不是每個人都需要。&lt;/p>
+&lt;p>
+ &lt;img src="https://HoshikawaRyuukou.github.io/images/Unity_Package_BasicStructure.png" alt="Unity_Package_BasicStructure">
+
+&lt;/p>
+&lt;p>但對 Package 開發者，畢竟 Samples 也是要進版控的，而這樣改名的作法會徒增一些重命名的提交也有點煩躁(除非在修改 Sample 的過程中完全不提交)。原先想說寫個 Samples ↔ Samples~ 切換的腳本就好，會一直有 meta 檔的警告(刪掉/改名都還是在)。&lt;/p>
+&lt;p>
+ &lt;img src="https://HoshikawaRyuukou.github.io/images/Unity_PackageManager_MetaWarning.png" alt="Unity_PackageManager_MetaWarning">
+
+&lt;/p>
+&lt;p>&lt;a href="https://forum.unity.com/threads/samples-in-packages-manual-setup.623080/#post-4991561">官方作法&lt;/a> 論壇中的某篇討論才記載他們的做法(倒是加到文件中阿&amp;hellip;)&lt;/p>
+&lt;ul>
+&lt;li>在內部確實使用了名為 Samples 的文件夾 (沒有 Samples~ )&lt;/li>
+&lt;li>在推送新包版本之前通過腳本對其進行重命名(透過 CI )&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a href="https://medium.com/openupm/how-to-maintain-upm-package-part-1-7b4daf88d4c4">OpenUPM&lt;/a> 的作者也是使用類似的工作流，總之筆者也調整為上述的方式。&lt;/p>
+&lt;h2 id="透過-github-actions-workflow-調整目錄名">透過 GitHub Actions Workflow 調整目錄名&lt;/h2>
+&lt;p>筆者不熟 GitHub Actions/ YAML/ 文件操作，但這種初階的操作就交由 chatgpt 代勞，幫我省去不少實驗成本。這裡的操作只是堪用，應該有更好的方式。&lt;/p>
+&lt;p>以下是筆者要求的條件&lt;/p>
+&lt;ul>
+&lt;li>想透過 GitHub Actions 中的 workflow 完成&lt;/li>
+&lt;li>如果 forPackage 分支已存在則將其刪除&lt;/li>
+&lt;li>從 main 建立新的 forPackage 分支&lt;/li>
+&lt;li>Assets/Modules 的所有子目錄(同時有 &amp;ldquo;package.json&amp;rdquo; 與 &amp;ldquo;Samples&amp;quot;資料夾)，將該子目錄的 &amp;ldquo;Samples資料夾&amp;rdquo; 重新命名 為 &amp;ldquo;Samples~資料夾&amp;rdquo;&lt;/li>
+&lt;li>並提交更新&lt;/li>
+&lt;/ul>
+&lt;p>將產出的 yml 做一點微調即可。主要文件操作的出錯率很高，find 指令似乎是有些眉角，等有空再回頭研究。&lt;/p></description></item><item><title>Unity - Package - HybridCLR</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package---hybridclr/</link><pubDate>Tue, 11 Apr 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package---hybridclr/</guid><description>&lt;h2 id="先備知識">先備知識&lt;/h2>
+&lt;h3 id="assembly-definition-asmdef">Assembly Definition (Asmdef)&lt;/h3>
+&lt;p>Unity 2017.3 以上版本的提供功能，主要解決龐大的程序集編譯時效率問題。&lt;/p>
+&lt;p>具體內容建議閱讀 &lt;a href="https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html">Doc - Assembly definitions&lt;/a>&lt;/p>
+&lt;h3 id="assembly-csharpdll">Assembly-CSharp.dll&lt;/h3>
+&lt;p>Unity 預設整合的 dll，專案內未被自定義 Asmdef 劃分的腳本都會被整合到 Assembly-CSharp.dll&lt;/p>
+&lt;hr>
+&lt;h2 id="簡述">簡述&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://hybridclr.doc.code-philosophy.com/">HybridCLR&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/focus-creative-games/hybridclr">focus-creative-games/hybridclr&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/focus-creative-games/hybridclr_trial">focus-creative-games/hybridclr_trial&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>HybridCLR 筆者已經應用於工作環境好一陣子了(從 2.X 版本開始)，其最讓人驚豔的地方在於，過往的開發流幾乎不用更動(當然要好 Asmdef 的規劃)，僅在打包時調整一下工作流即可。&lt;/p>
+&lt;p>其極大簡化過往麻煩且效率不彰的熱更流程。xLua 和 ILRuntime 在筆者看來最難受的事是「侵入性」極強，搞得綁手綁腳。大家也都抱怨很久了，但也沒有其他可靠方案，直到 HybridCLR 出現。&lt;/p>
+&lt;h2 id="快速上手">快速上手&lt;/h2>
+&lt;p>3.0 版本後流程優化得更順暢了，照著 &lt;a href="https://hybridclr.doc.code-philosophy.com/#/beginner/quickstart">文件&lt;/a> 可以很快地感受到其威力。&lt;/p>
+&lt;h2 id="注意">注意&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/focus-creative-games/hybridclr/issues/57">请问，Generate All、补充元数据的DLL更新的执行时机的最佳实践？&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/focus-creative-games/hybridclr/issues/19">怎么卸载热更dll&lt;/a>&lt;/li>
+&lt;li>CLI 規範中只能以 AppDomain 形式卸載所有 dll，不支持卸載單獨的 dll。而 il2cpp 是單例 AppDomain，因此這個要求是不符合規範的。要採用 HybridCLR DHE 的商業方案。不過筆者倒是不太擔心，畢竟 Unity client 通常不是需要常駐的應用，使用者也不太會把應用的每一個功能都點一遍，初估是還可以接受的。&lt;/li>
+&lt;/ul></description></item><item><title>Unity - Basic - DontDestroyOnLoad</title><link>https://HoshikawaRyuukou.github.io/posts/unity---basic---dontdestroyonload/</link><pubDate>Mon, 20 Mar 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---basic---dontdestroyonload/</guid><description>&lt;h2 id="用例">用例&lt;/h2>
+&lt;p>被標記為 DontDestroyOnLoad 的物件場景更改時不會被破壞。&lt;/p>
+&lt;ol>
+&lt;li>全域管理器：因為整個遊戲期間一直存在。例如，音效管理器、遊戲設定管理器或玩家數據管理器等物件可以在場景切換時保留，以確保它們的功能和數據在各個場景中持續存在。&lt;/li>
+&lt;li>持久性數據：如果你有需要在多個場景中共享的持久性數據，可以將存儲這些數據的物件標記為 DontDestroyOnLoad。例如，玩家的遊戲進度或全域的配置設置等數據可以在場景切換時保留，以便在不同場景中訪問和更新。&lt;/li>
+&lt;li>UI 元素：某些UI元素，如遊戲狀態面板、計時器或得分顯示，可能需要在多個場景中保留。通過將這些UI元素物件標記為 DontDestroyOnLoad，可以確保它們在場景切換時不會被銷毀，以便在不同場景中持續顯示和更新。&lt;/li>
+&lt;/ol>
+&lt;h2 id="問題">問題&lt;/h2>
+&lt;ol>
+&lt;li>記憶體管理問題：使用 DontDestroyOnLoad 將遊戲物件保留在多個場景中可能會導致記憶體洩漏。如果你的遊戲物件不再需要，但沒有被正確銷毀，它們將繼續存在於記憶體中，佔用系統資源，可能導致性能下降。&lt;/li>
+&lt;li>場景管理問題：DontDestroyOnLoad 會打破場景之間的清晰界限。場景是 Unity 中組織和管理遊戲邏輯的基本單位，每個場景都應該是相對獨立的。通過在多個場景之間保持物件，會增加場景之間的耦合性，導致代碼難以維護和測試。&lt;/li>
+&lt;/ol>
+&lt;h2 id="ref">Ref&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.unity3d.com/ScriptReference/Object.DontDestroyOnLoad.html">Object.DontDestroyOnLoad&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Unity - WorkFlow - Build &amp; Publish</title><link>https://HoshikawaRyuukou.github.io/posts/unity---workflow---build--publish/</link><pubDate>Mon, 27 Feb 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---workflow---build--publish/</guid><description>&lt;h2 id="build">Build&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://forum.unity.com/threads/repositories-cfg-could-not-be-loaded-unity.1028959/#post-8161763">repositories.cfg could not be loaded.&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://baba-s.hatenablog.com/entry/2022/01/24/150000">Unable to find player assembly: XXXX\Temp\StagingArea\Data\Managed\UnityEngine.TestRunner.dll&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://kingmo.jp/kumonos/cocoapods-update-error-unity/">Cocoapodsの更新にハマった【Unity】&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="publish">Publish&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=BfIWE172jj0">Privacy policy for your game? No problem! (generate and publish)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=UXl_C3ZnRLc">Publish your UNITY game on Google Play Store - 2023 guide&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="misc">Misc&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/facebook/facebook-ios-sdk/issues/2128#issuecomment-1332276033">Library not loaded: @rpath/FBAEMKit.framework/FBAEMKit&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Unity - Basic - Sprite and Atlas</title><link>https://HoshikawaRyuukou.github.io/posts/unity---basic---sprite/</link><pubDate>Mon, 20 Feb 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---basic---sprite/</guid><description>&lt;h2 id="sprite">Sprite&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://shibuya24.info/entry/unity-unit">【2Dゲームで必須】UnityのSprite（スプライト）の単位をわかりやすく解説&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://shibuya24.info/entry/unity-ui-texture-size">【間違えやすい】Unityの正しい画像サイズとは&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="atlas">Atlas&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://shibuya24.info/entry/unity-spriteatlas">【Unity】SpriteをパックするSpriteAtlasの使い方&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="目的">目的&lt;/h3>
+&lt;ul>
+&lt;li>減少DrawCall&lt;/li>
+&lt;li>圖集將圖片打包為2的冪次方的素材大小，可以提升性能&lt;/li>
+&lt;li>減小包體大小&lt;/li>
+&lt;/ul>
+&lt;h3 id="注意">注意&lt;/h3>
+&lt;ul>
+&lt;li>Sprite Atlas V1 - Always Enabled 啟用圖集時
+&lt;ul>
+&lt;li>Edit Mode : reference the packed Textures&lt;/li>
+&lt;li>Play Mode : reference the original unpacked Textures&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>SpriteAtlas AssetBundle 來打包時，&lt;strong>不要勾選&lt;/strong> Include In Build&lt;/li>
+&lt;/ul></description></item><item><title>Unity - Basics</title><link>https://HoshikawaRyuukou.github.io/posts/unity---basics/</link><pubDate>Mon, 20 Feb 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---basics/</guid><description>&lt;h2 id="analysis">Analysis&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://sharpcoderblog.com/blog/unity-3d-how-to-use-profiler-to-optimize-your-code">Unity Optimize Your Game Using Profiler&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.chunfuchao.com/posts/unity-profiling-tools/">Unity 手機遊戲最佳化雜談– 內建Profiling&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="animation">Animation&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://learn.unity.com/course/introduction-to-3d-animation-systems?uv=2019.4">Introduction to 3D Animation Systems&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="audio">Audio&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://sharpcoderblog.com/blog/unity-3d-audio-clip-import-settings-for-the-best-performance">Unity Audio Clip Import Settings For The Best Performance&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.raywenderlich.com/532-audio-tutorial-for-unity-the-audio-mixer">Audio tutorial for Unity: the Audio Mixer&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://johnleonardfrench.com/the-right-way-to-make-a-volume-slider-in-unity-using-logarithmic-conversion/">The right way to make a volume slider in Unity&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="build">Build&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://forum.unity.com/threads/repositories-cfg-could-not-be-loaded-unity.1028959/#post-7174270">repositories.cfg could not be loaded. unity&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="camera">Camera&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://pressstart.vip/tutorials/2018/06/6/37/understanding-orthographic-size.html">Understanding Orthographic Size&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.lujun.co/2019/06/02/unity_camera_clear_flags/#">探寻 Unity Camera 属性之 Clear Flags&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://3dunity.org/game-create-lesson/clicker-game/mobile-adjustment/">Unityの画面のアスペクト比と解像度を自動変換　全スマホ・複数解像度に対応させる&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="canvas">Canvas&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/HOWTO-UIMultiResolution.html">Designing UI for Multiple Resolutions&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.csdn.net/hello_1995/article/details/122130097">Unity Canvas Scaler 组件的使用&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.csdn.net/qq_42672770/article/details/121886944">Unity分辨率适配方案设置&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="editor">Editor&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://linkliu.github.io/game-tech-post/posts/%E5%9C%A8Unity%E7%BC%96%E8%BE%91%E5%99%A8%E4%B8%8D%E5%90%8C%E4%BD%8D%E7%BD%AE%E6%B7%BB%E5%8A%A0%E8%8F%9C%E5%8D%95/">在unity编辑器不同位置添加菜单&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://light11.hatenadiary.com/entry/2021/12/13/194147">SerializeReferenceをつけている型をリネーム・削除する時の注意点&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://forum.unity.com/threads/what-are-editorbuildsettings-config-objects-used-for-or-how-can-i-use-them.712031/">What are EditorBuildSettings config objects used for or how can I use them?&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.unity.cn/cn/current/ScriptReference/EditorBuildSettings.TryGetConfigObject.html">EditorBuildSettings Example&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="material">Material&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.jianshu.com/p/3df37c726530">Unity中，UI反向Mask效果（图片挖洞）&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="screen">Screen&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://gamedevbeginner.com/how-to-capture-the-screen-in-unity-3-methods/">How to capture the screen in Unity (3 methods)&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="text">Text&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://blog.csdn.net/final5788/article/details/134158552">【Unity编辑器扩展】艺术字/自定义图片字体生成工具&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://kyoro-s.com/unity-5/#google_vignette">【Unity】自作フォントを作成してTextで表示する方法&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.csdn.net/linxinfa/article/details/116561750">Unity中自制UGUI艺术字体（位图字体）（Bitmap Font Generator）&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="textmeshpro">TextMeshPro&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://gametorrahod.com/textmeshpro-anatomy/">TextMeshPro Anatomy&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.bilibili.com/video/BV1oK411x7MG">[Unity干货]使用TextMeshPro动态字体节省时间&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://nekojara.city/unity-textmesh-pro-sprite-number">【Unity】TextMesh Proで数字をスプライト表示する&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="ui">UI&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://shibuya24.info/entry/unity-ui-anchor">【Unity】3つだけでいい!?覚えるべきUIアンカー&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://shibuya24.info/entry/unity-ui-layout">【Unity基礎】スマホ向けゲームUIの作り方！基本的なUI配置から複数解像度対応まで解説&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=cW-E4WEogzE">Master your Unity UI Buttons! - Unity UI tutorial&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=QnT-2KxVvyk">How to scale Unity UI objects for every screen - Unity UI tutorial&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Unity - Sites</title><link>https://HoshikawaRyuukou.github.io/posts/unity---sites/</link><pubDate>Mon, 20 Feb 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---sites/</guid><description>&lt;h2 id="blog">Blog&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://blog.yucchiy.com/">Yucchiy&amp;rsquo;s Note&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://baba-s.hatenablog.com/">コガネブログ&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://blog.coolcoding.cn/">老刘@开发笔记&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://kan-kikuchi.hatenablog.com/">(:3[kanのメモ帳]&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://gamedevbeginner.com/">Game Dev Beginner - Everyone Can Make Games&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://light11.hatenadiary.com/">LIGHT11&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://takap-tech.com/">PG日誌&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.kyubuns.dev/">きゅぶろぐ&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.nowsprinting.com/">やらなイカ？&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.hanachiru-blog.com/">はなちるのマイノート&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://kingmo.jp/kumonos/">くものす&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://kyoro-s.com/">ピクセルブログ&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://nekojara.city/">ねこじゃらシティ&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://orotiyamatano.hatenablog.com/">YAMADA TAISHI’s diary&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.karvan1230.com/">原カバンは鞄のお店ではありません。&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.liuocean.com/">L&amp;rsquo;s Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://raspberly.hateblo.jp/archive">Raspberlyのブログ&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://shibuya24.info/">渋谷ほととぎす通信&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://lianbai.github.io/">LianBai&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://onclick9927.github.io/">Real-Man&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/lightjiao/lightjiao.github.io/tree/master?tab=readme-ov-file">Lightjiao的博客&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://unityletsgo.hatenablog.com/">unityでいってみよう！&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://tedliou.com/unity/">偵錯桐人 - unity&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="blog-enterprise">Blog (Enterprise)&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://developers.cyberagent.co.jp/blog/">CyberAgent Developers Blog | サイバーエージェント デベロッパーズブログ&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://note.com/reality_eng/">REALITY｜note&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://tech.mirrativ.stream/">Mirrativ Tech Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://technote.qualiarts.jp/">QualiArtsエンジニアブログ&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="channel">Channel&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/channel/UCFK6NCbuCIVzA6Yj1G_ZqCg">Code Monkey&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/@MSTUDIOHUB/videos">M Studio&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/channel/UCfIiEKtakOPRPnE4iQTLvlA/videos">Coco Code&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="collection">Collection&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/XINCGer/Unity3DTraining/tree/0501d6b93520f9d3481f76cd092b71c945e3e3f7?tab=readme-ov-file">XINCGer/Unity3DTraining&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="forum">Forum&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://qiita.com/tags/unity">Qiita|Unity&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zenn.dev/topics/unity?order=daily">Zenn|Unity&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://learning.unity3d.jp/">Unity Learning Materials&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.fantsida.com/t/unity3d">Unity3d - 幻想社区&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://note.com/search?q=unity&amp;amp;context=note&amp;amp;mode=search">「unity」の人気の記事一覧｜note&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://qiita.com/organizations/unity-game-dev-guild/items">Unityゲーム開発者ギルド&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="events">Events&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://meetup.unity3d.jp/jp/">Unity Meetup&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://qiita.com/advent-calendar/2023/unity">Unity Advent Calendar&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://uycc.unity3d.jp/">Unityユースクリエイターカップ&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="community">Community&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://unityroom.com/">unityroom&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

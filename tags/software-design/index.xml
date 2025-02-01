@@ -1,86 +1,515 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Software Design on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/software-design/</link><description>Recent content in Software Design on 識之箱庭</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 16 Jan 2025 20:05:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/software-design/index.xml" rel="self" type="application/rss+xml"/><item><title>Software Design - Principle - Inversion of Control (IoC)</title><link>https://HoshikawaRyuukou.github.io/posts/software-design-principle-inversion-of-control-ioc/</link><pubDate>Thu, 16 Jan 2025 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design-principle-inversion-of-control-ioc/</guid><description>Quick Chat 1. 如果你的程式中，有一個物件需要另一個物件，應該怎麼做？ 直接由需求方 new 一個實例嗎？ 2. 如果那個物件的建構方式很複雜呢？ 例如，它可能需要多個參數，還需要一些初始化邏輯。 如果每次都在需求方進行這些操作，會不會重複又繁瑣？ 3. 如果有多個需求方重複依賴這個物件呢？ 這些需求方能共享同一個物件嗎？ 如果共享，如何管理這個共用的實例？誰來負責它的生命週期？ 4. 依賴管理是誰的責任？ 需求方是否應該負責處理自己所有的依賴？ 還是應該有一個「專門負責管理依賴」的角色？ 如果有一個「外部機制」來幫你管理這些依賴，需求方只需要專注於自己的邏輯，不需要擔心如何建構物件，這樣會不會更簡單？ 控制反轉 - 什麼反轉了？ 控制反轉（Inversion of Control, IoC）就是為了解決這些問題而生的。它帶來了一個核心理念：
-需求方不再自己去「控制」依賴的構建和配置，而是把這部分的「控制權」交給「外部機制」（通常是 IoC 容器）。
-需求方只需專注於「接收」或「查詢」依賴，並專心「使用」它們。簡化需求方的職責，使其僅專注於處理業務邏輯，從而提升模組化與可維護性。
-好處 依賴管理 通過外部機制統一管理依賴，開發者不需要在各處手動管理物件實例的生命週期與建構邏輯。 容器能管理共享的物件實例，有效避免重複建構，提高資源利用率。 將依賴配置集中於容器，能輕鬆應對需求變更。例如，替換某個服務的具體實現時，只需要調整配置，而非修改多處程式碼。 提升模組化與可維護性 需求方與具體實現之間的耦合度降低，使得每個模組能更容易地獨立開發、測試與替換。 提升測試便利性 透過依賴注入，需求方可以接收模擬物件（mock）或測試替身（stub），從而更輕鬆地撰寫單元測試。 sample - c# var mockStorageService = new Mock&amp;lt;IStorageService&amp;gt;(); mockStorageService.Setup(service =&amp;gt; service.SaveOrder(It.IsAny&amp;lt;Order&amp;gt;())).Verifiable(); var orderService = new OrderService(mockStorageService.Object); sample - js const mockStorageService = { saveOrder: (order) =&amp;gt; { console.log(`Mock saving order ${order.</description></item><item><title>Software Design - Concept - Object Lifecycle Management</title><link>https://HoshikawaRyuukou.github.io/posts/software-design-concept-object-lifecycle-management/</link><pubDate>Sat, 04 Jan 2025 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design-concept-object-lifecycle-management/</guid><description>Quick Chat 物件生命週期管理（Object Lifecycle Management）是指在程式運行過程中，對物件的創建、使用、及銷毀進行有效的控制和管理。
-適當的物件生命週期管理有助於提高應用程式的性能、可維護性和資源利用效率。
-Stage 創建：
-物件被創建並初始化。 創建時，可能會注入其他依賴物件或設定一些必要的屬性。 使用：
-物件在應用程式中進行各種操作，如方法調用、屬性設定等。 這是物件的活躍期，通常是應用程式邏輯處理的核心部分。 銷毀：
-物件不再被需要時，它的資源會被釋放。 這個過程通常涉及到記憶體回收和釋放外部資源（例如檔案、資料庫連線等）。 Lifetime Transient（瞬時）：
-每次請求或需要該物件時會創建一個新的實例。 適用於短暫的、不需要保持狀態的物件。 Singleton（單例）：
-整個應用程式生命周期內，只有一個實例被創建。 適用於那些需要跨應用程式共享狀態的物件。 Scoped（範圍）：
-物件的生命周期被限制在特定的範圍內，通常是某個特定的操作或請求範圍。 在範圍內，物件實例會被共享。但範圍結束後，物件會被銷毀。 適用於那些需要在某個範圍內共享狀態，但範圍結束後無需保持的物件。</description></item><item><title>Software Design - Architecture Design</title><link>https://HoshikawaRyuukou.github.io/posts/software-design-architecture-design/</link><pubDate>Wed, 25 Dec 2024 20:03:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design-architecture-design/</guid><description>Thinking Cognitive load is what matters</description></item><item><title>Software Design - Pattern - Stateless</title><link>https://HoshikawaRyuukou.github.io/posts/software-design-pattern-stateless/</link><pubDate>Sat, 23 Nov 2024 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design-pattern-stateless/</guid><description>Quick Chat 無狀態設計專注於系統可重現性和邏輯純淨性的設計方法。其核心設計思維旨在將邏輯從外部狀態的依賴中解放出來，使每個狀態完全由輸入決定，而非持續記錄和修改內部狀態。
-Features 純函數式邏輯：輸出僅依賴輸入，無副作用。 輸入驅動：狀態由輸入序列完全決定。 不可變狀態：每次改變都生成新狀態(防止副作用)，支持回溯。 可重現性：同樣的輸入序列可重現遊戲進程。 Limitations 在高度互動和即時性要求高的系統中，狀態的不可變性可能增加性能開銷。</description></item><item><title>Software Design - Architecture - Web &amp; Desktop app</title><link>https://HoshikawaRyuukou.github.io/posts/software-design-architecture-web-desktop-app/</link><pubDate>Sat, 05 Oct 2024 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design-architecture-web-desktop-app/</guid><description>Quick Chat (⚠️ 實驗中) 當一個要開發一個同時支援 網頁端 與 桌面端 的應用時，該如何設計。以下範例說明使用
-UIFramework : Vue3 Desktop Framework : Electron Architecture project-root/ │ ├── core/ # 核心業務邏輯 │ ├── services/ # 服務層，包含業務邏輯 (e.g., FileManager) │ ├── models/ # 共享的資料模型和接口 │ └── interfaces/ # 定義服務的接口 (e.g., IFileService) │ ├── presentation/ # UI 表現層 (Vue3 應用) │ ├── components/ # Vue 組件 │ ├── views/ # Vue 頁面 │ ├── stores/ # Pinia 狀態管理 │ └── App.</description></item><item><title>Electron - Design Context</title><link>https://HoshikawaRyuukou.github.io/posts/electron-design-context/</link><pubDate>Fri, 27 Sep 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/electron-design-context/</guid><description>Context - 將現有的前端專案包裝成桌面端應用 情境： 已有一個完整的前端專案，但由於一些特定需求（例如離線操作的能力），決定將其包裝成桌面端應用。本質上，這個應用仍是一個網頁應用，因此基本上不會有額外的桌面端互動需求，也不需要特別增強和操作系統的整合。
-目的： 主要為了滿足離線存取與更佳的用戶體驗，但不需要深度的桌面端特性。
-技術重點： 專注於如何將現有的 Web 應用以 Electron 進行包裝，保持與原生前端相同的開發流程，並且避免過多改動。
-限制： 盡量維持輕量化，減少與桌面平台的耦合，僅利用 Electron 提供的框架和包裝功能。
-Context - 基於前端技術開發桌面端應用 情境： 目標是開發桌面端應用，只是基於前端技術來實現。這意味著應用程式將包含一些桌面應用所特有的特性，例如系統通知、檔案系統操作、離線儲存等。
-目的： 充分利用 Electron 提供的 API 來增強桌面應用的功能，使其可以提供超越單純網頁應用的體驗。
-技術重點： 基於前端技術棧（如 Vue、React 等），但需要使用 Electron 來實現與桌面系統的交互，包括檔案存取、系統托盤等。
-設計考量： 需要兼顧應用的桌面特性與前端開發的靈活性，保證兩者間的有效融合。
-Context - Electron 與 前端技術 僅是實作細節 情境： 設計理念以業務需求為核心，Electron 以及前端技術只是達成目標的手段和細節。
-業務為中心的設計： 設計時不局限於技術選型，而是先分析業務需求，再根據需求選擇最佳的技術方案。最終選擇的技術（Electron、前端技術）只是為了實現業務需求的手段。
-基於 Clean Architecture： 使用乾淨架構來分離業務邏輯與實作細節，確保應用程式具有良好的可擴展性與可維護性。Electron 與前端技術被隔離在具體的實作層，任何一方都可以被替換而不影響業務邏輯。
-技術重點： 強調框架的選擇與使用不應該影響到核心業務邏輯，業務邏輯應獨立於 UI、技術框架的變更，專注於系統的彈性與維護性。</description></item><item><title>Software Design - Pattern - Note</title><link>https://HoshikawaRyuukou.github.io/posts/software-design-pattern-note/</link><pubDate>Thu, 01 Aug 2024 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design-pattern-note/</guid><description>Factory 工厂模式？错！是工厂模式群！ Observer / Pub-Sub (Publisher-Subscriber) Observer vs Pub-Sub pattern Pub sub system pros and cons Observer 觀察者模式中的主題同時身為發布者，觀察者是知道發布者的，但發布者不知道觀察者。
-Pub-Sub (Publisher-Subscriber) 發布者-訂閱者模式中的主題通常由消息代理或事件總線處理，發布者和觀察者不知道彼此的存在。發布者項主題發送訊息，主題再轉發給觀察者。</description></item><item><title>Software Design - Architecture - VIPER</title><link>https://HoshikawaRyuukou.github.io/posts/software-design-architecture-viper/</link><pubDate>Fri, 19 Jan 2024 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design-architecture-viper/</guid><description>簡述 VIPER (View-Interactor-Presenter-Entity-Router)
-iOS VIPER架構實踐(一)：從MVC到MVVM到VIPER VIPER，更清晰的架构，解决复用和测试问题的利器系列1：VIPER架构演进史 有很多種實作流派，下圖是我比較偏好的模式呈現
-VIPER 借鏡了 CA (Clean Architecture) 的思想為 MVC 提供一個新的設計方案
-Entity 對應原本的 Model Controller 責任過重 -&amp;gt; 將業務邏輯移至 Interactor 並提高重用性 Controllers 之間耦合 -&amp;gt; 將導航邏輯移至 Router Presenter 作為 Binder 將 View / Interactor / Router 整合 啟發 VIPER 是筆者學習架構路上很重要的一個過渡，有以下兩點的思想轉變
-顆粒度更細的單一職責 Interactor 封裝業務的概念在純 MVX 中是無法直接體會到，因此對之後學習 CA 時起了很大的緩衝，不然對於 Usecase 的設計應該會很不適應。
-重視 Navigation 在學習 CA 中始終沒題到 feature/componet module 之間是如何互動的，也是在回頭複習 VIPER 時才重新意識到 Router 的重要性。當沒有特別規劃 Navigation 時很容易會造成 module 之間的耦合。</description></item><item><title>Software Design - Pattern - ViewModel</title><link>https://HoshikawaRyuukou.github.io/posts/software-design-pattern-viewmodel/</link><pubDate>Sun, 27 Aug 2023 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design-pattern-viewmodel/</guid><description>前述 此篇的實作參考到以下文件 (提到不少 Presentation layer 設計原則)
-Android Developers 文件/指南/UI 層
-該文件的更新頻率算高且會與時俱進，筆者印象中其架構設計從 MVVM -&amp;gt; Domain/Application Driven 設計，可以看出主流架構有產生變化。之後的討論雖然使用 ViewModel 但不會詳細介紹 MVVM 的細節，如果對 MVX 系列不熟，可以先讀筆者之前的文章 &amp;laquo;通用設計 - Pattern - MVP&amp;raquo; 裡面的 References。
-探索 回到正題，筆者在最近的業務上遇到
-如何在 服務端未完成 的情況下，讓 Client 獲得完整的體驗流 ?
-以下用交叉反問的方式來分析問題
-Q: 沒有服務端那資料來源哪來 ? A: 使用假資料
-Q: 當表現層依賴的是 IService Interface 使用假資料時需要實作什麼 ? A: 只需要實作一個 FakeService 來產生假資料即可
-Q: 當想要將業務與表現解耦時，很常使用中介者的手法來黏合兩者，如果使用標準的 MVP 實做，Presenter 實際做了哪些事呢 ? A: 監聽 View 事件/ 與 Service 互動/ 管理畫面狀態/ 呼叫 View 刷新</description></item><item><title>Software Design - Pattern - Service Locator</title><link>https://HoshikawaRyuukou.github.io/posts/software-design-pattern-service-locator/</link><pubDate>Wed, 28 Jun 2023 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design-pattern-service-locator/</guid><description>前述 Service Locator 確實也是 IoC 的一種實作方式，不過採用的是 依賴尋找(Dependency Lookup) 的設計。 筆者之前有一陣子蠻常使用這 pattern，那時對 DI 與 IoC 的概念並不熟悉，只覺得這樣使用依賴變得很方便。
-因為我可以在任何地方直接這樣取用資源
-var target = ServiceLocator.Resovle&amp;lt;Target&amp;gt;(); 這樣的寫法有以下問題 :
-透過 ServiceLocator 因為這個取用資源的過程是隱性的，不容易被直接發現。 想用誰就拿誰這件事也有點危險，Ex: View 可以拿到不屬於 Presentation layer 該碰的對象。 所以當 DI 與 IoC 的概念熟悉後，並且使用 DI / IoC Container 後就漸漸不使用這 pattern 了。
-應用 但這次工作上反而覺得 Service Locator 可以勝任從 Singleton 過渡到 DI / IoC Container 的中繼階段。
-因為這次接觸到的專案嚴重依賴 Singleton，且組員也已習慣 Singleton 的寫法了，要直切換到 DI / IoC Container 會有不小的陣痛期(當然實務上能不能切又是另一個故事了)。
-於是筆者想起了 Service Locator，有以下理由
-因為在使用上就很像是 Singleton 筆者希望組員能快速感受到 IoC 所帶來的紅利 集中管理依賴 實作 此模式使用稱為「服務定位器」的中央註冊表，它根據請求返回執行特定任務所需的對象。</description></item><item><title>Software Design - Modularization</title><link>https://HoshikawaRyuukou.github.io/posts/software-design-modularization/</link><pubDate>Wed, 22 Feb 2023 21:21:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design-modularization/</guid><description>前述 首先幾篇文章是基於 Clean Architecture 的基礎，建議先閱讀以下連結已具備基礎知識
-The missing chapter CA 原著 Chapter 34 - The missing chapter - Actual implementation details of an architecture 連結 34章摘要心得，請先觀看裡面的圖表(重要) CA Modularization Multiple ways of defining Clean Architecture layers Package by Component with Clean Modules in Java Package by feature or component Vertical Slice Slices vs. Layers Restructuring to a Vertical Slice Architecture Vertical Slice Architecture, not Layers! Modular Monolith Majestic Modular Monoliths (強烈建議) Modular Monolith architecture (強烈建議讀完這個系列) 各 Package 策略的圖請參考上方連結 34 章摘要心得</description></item><item><title>Software Design - Architecture - Clean Architecture</title><link>https://HoshikawaRyuukou.github.io/posts/software-design-architecture-clean-architecture/</link><pubDate>Sat, 04 Feb 2023 20:03:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design-architecture-clean-architecture/</guid><description>以下 Clean Architecture 簡稱 CA
-這裡還是先引用 Uncle Bob 的分層圖 The Clean Code Blog - The Clean Architecture 筆者認爲可擴展性是系統架構的重要考量。畢竟應用程式會演化，必須不斷更新與修改系統以滿足新的需求，而 CA 是其中一種實現方針。筆者在這裡不會寫出詳細的介紹，想了解的可以參考 Ref 整理的連結或是 CA 相關書籍。
-本文著重於促使筆者思考方式改變的幾個重要觀念。
-依賴關係 相依性: 向內圈依賴，且盡量避免跨層依賴 (有些例外之後說明)。 Dependency Inversion Principle (DIP): 內圈定義介面，外圈實作。 基於這兩個規則所帶來的是
-單向依賴流 : 紊亂的依賴流可能造成牽一髮動全身的窘境。尤其是當 Domain 去依賴到細節時。 延後實作 : UseCase/Adapter 都是依賴於應用層所開出的介面。因此業務/畫面能獨立開發，不用互相等待(理想狀態)。 而筆者在實作時的基本型架構通常如下圖(比較接近 CA 書中的另外一張圖，我這裡做了簡化)，Adapter 只分成 Input/Output Port。 Domain: 領域邏輯 UseCase: 應用邏輯 Domain + UseCase: 業務邏輯 InputPort: 用例功能使用方介面 OutputPort: 用例功能支援方介面 Adapter: 將外部與用例功能接合的膠水代碼 不過架構會針對不同情況做調整，細節參考另一篇文章
-架構設計 - Clean Architecture and Modularization</description></item><item><title>Software Design - Pattern - Guard Clauses</title><link>https://HoshikawaRyuukou.github.io/posts/software-design-pattern-guard-clauses/</link><pubDate>Tue, 10 Jan 2023 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design-pattern-guard-clauses/</guid><description>目的 符合 Fail Fast 的原則，驗證條件並在不滿足條件時立即停止執行。 增加可讀性(更扁平)，減少了巢狀判斷。 例子請參考 Guard Clause Extra - Guard Class 將通用的保護子句封裝在一個專門的類是一種很好的做法，可重用邏輯並編寫更具可讀性的保護子句。
-可參考這個庫 GuardClauses Extra - Value Object Stop using trivial Guard Clauses! Try this instead
-文章作者避免瑣碎 Guard 的方式，是使用 Value Object，來避免域接受到無效參數。這個作法在筆者看來才是真正意義上的 Fail Fast。(YT評論區也建議閱讀，有許多不錯的討論)
-但不可否認的 Guard Clause 作法在大多情況下是有益的。
-Ref Guard Clause Implementation Patterns: Guard Clause GuardClauses Stop using trivial Guard Clauses! Try this instead</description></item><item><title>Software Design - Domain-Driven Design 初探</title><link>https://HoshikawaRyuukou.github.io/posts/software-design-domain-driven-design/</link><pubDate>Thu, 15 Dec 2022 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design-domain-driven-design/</guid><description>必須先聲明筆者仍在學習中，以下屬個人觀點
-動機 筆者發現在使用 Clean Architecture (CA) 時越來越力不從心，因此開始研究 Domain-Driven Design (DDD)，事出有因，列出幾點問題與對應方式。
-重複的程式碼 主因是 貧血域模型 (Anemic Domain Model)，表示模型中幾乎只有 Get/Set，這導致了 Domain層 (業務邏輯) 滲透到 Application層 (應用邏輯)，某些對 Domain 的操作重複出現在多個的 Usecase (應用邏輯)。 重新分析系統，區分出不同上下文，設計充血域模型，將業務邏輯設計進去。 域模型的一致性問題 Domain 面對四面八方的操作，顯得很亂且充滿不確定(會不會模型之間的關係因為更改而被破壞) 引入聚合(Aggregate)來維持保護邊界內的不變條件。 Primitive Obsession 這會造成對模型的不信任，進而寫出一些防禦性程式設計。 引入值物件(Value Object)來確保不變性與自我驗證(即不正確就不應該存在)。 以上這幾點是筆者比較有感的。
-概述與想法 Domain-Driven Design (DDD)，出自 Eric Evans 2003 年出版的一本書，以領域模型為中心來進行系統的分析設計。不是架構也不是技術，是一種方法論，可以搭配不同類型的架構來實現
-Layered Architecture Hexagonal Architecture Clean Architecture (以下稱 CA ) Command Query Responsibility Segregation (CQRS) 原著中是使用 Layered Architecture 的架構作為示範，但該章的重點是在隔離 Domain，在 Google 的時候有所謂 &amp;ldquo;DDD 架構圖&amp;rdquo;，但筆者覺得不太精確，因為 DDD 主要的發力點是在 Domain，應該稱作 &amp;ldquo;OO架構以DDD實作Domain&amp;rdquo; 會比較合適。</description></item><item><title>Software Design - Pattern - Data Transfer Object (DTO)</title><link>https://HoshikawaRyuukou.github.io/posts/software-design-pattern-data-transfer-object-dto/</link><pubDate>Sun, 11 Dec 2022 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design-pattern-data-transfer-object-dto/</guid><description>什麼是 DTO？ Data Transfer Object (數據傳輸對象) 是定義如何在應用程序之間發送數據的對象。它僅用於發送和接收數據，本身不包含任何業務邏輯。
-為什麼使用 DTO？ 輕鬆收發 在沒有任何邏輯的基礎上，可以僅使用序列化與反序列化就保證對象的完整性和可傳遞性。
-避免過度暴露訊息 對分層或模組來說，彼此間應盡量降低耦合。下圖以公園廁所報修為案例。
-這個資料流由鄉公所傳到基層人員手上，中間經過兩個邊界
-鄉公所 | 工程公司 =&amp;gt; DTO (公文) 工程公司 | 基層人員 =&amp;gt; DTO (簡訊) 每個單位的關注點不同，在意的資料也會不同，DTO 做為邊界兩方做最小程度的媒介，隱藏的不該被關注(敏感)的事
-印章對工程公司並不是必要資訊 詳細的時間格式是對基層人員並不是必要資訊 在實作上常被用於轉換 DomainModol -&amp;gt; DomainDto
-注意事項 類別數量增加，請自行評估使用情形
-Ref Cutting Edge - Pros and Cons of Data Transfer Objects The DTO (Data Transfer Object) Data Transfer Objects Clean Architecture : why not using the entity as request model of the use case (interactor) Difference between Entity and DTO</description></item><item><title>Software Design - Pattern - Model View Presenter (MVP)</title><link>https://HoshikawaRyuukou.github.io/posts/software-design-pattern-model-view-presenter-mvp/</link><pubDate>Sat, 10 Dec 2022 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design-pattern-model-view-presenter-mvp/</guid><description>前述 關注點分離（Separation of Concerns，SoC）: 在軟體開發中，一個模組或組件應該專注於解決特定的問題，而不是同時處理多個功能。每個組件都有自己的職責範圍，並且與其他組件盡可能解耦合。
-而 MVC / MVP / MVVM 是關注點分離於前端的經典應用，網上已經有很多不錯的文章，再寫一份類似的整理文章意義也不大，對此感到陌生，不妨閱讀以下連結，會幫助你理解 MV系列的發展。
-界面之下：还原真实的MV*模式 正确认识 MVC/MVP/MVVM 站在思想层面看MVX架构 MVP Pattern: Part 2 Supervising Controller Part 2 — Converting Presenters into ViewModels 【Unity】MV(R)Pパターンのすすめ Unravelling MVC, MVP and MVVM 以下則對筆者實作中比較常用的 MVP 多做一些討論
-關注點(責任) 在 MVP 的構成下分成三個部分
-Model: 應用程式的核心邏輯。 View: 應用程式的使用者介面，負責呈現數據和接收使用者的輸入。 Presenter: View 和 Model 之間的中介。 Passive View 這是 MVP 的一種實作風格，也是筆者主要使用的風格。
-Presenter 對 View 有完全控制權 View 提供方法與事件給 Presenter 使用 View 對 Presenter 一無所知 以猜拳遊戲的 View 為例</description></item><item><title>Software Design - Navigation</title><link>https://HoshikawaRyuukou.github.io/posts/software-design-navigation/</link><pubDate>Wed, 16 Nov 2022 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design-navigation/</guid><description>以下 Feature 指的是一個功能獨立的模組，Feature A 將簡稱 A。
-問題 應用程式中有一個由 A 到 B 的導航，那這個導航是誰的責任?
-以下先討論 2 種狀況。
-A 直接依賴 B 簡單粗暴的強耦合破壞了 A 的獨立性。當流程發生變化時，可能需要到各個 Feature 去修改。
-Feature A -&amp;gt; Feature B A 引入導航器間接依賴 B 這作法將導航操作收斂到某個類中，但 A 仍然隱含的知道 B，這同樣破壞了 A 的獨立性。
-Feature A -&amp;gt; INavigator.Route(View.FeatureB) // Enum or Feature A -&amp;gt; INavigator.Route(&amp;#34;FeatureB&amp;#34;) // 魔術字串 or Feature A -&amp;gt; INavigator.RouteFeatureB() 重新思考導航這件事
-Feature 應該知道自己是能夠 被導航 或是 能導航到哪 嗎? 到底 A 能導航到 B 這件事是誰決定的? 應該隱約地感覺到了吧，導航並不屬於 A 也不屬於 B，導航是一個獨立操作，需要一個額外的單位來負責。此外這個單位多是屬於 App 級別的(因為該層級有對其他模組的正當訪問性，畢竟是負責做統合的)。</description></item><item><title>Software Design - Principle - Dependency Inversion Principle (DIP)</title><link>https://HoshikawaRyuukou.github.io/posts/software-design-principle-dependency-inversion-principle-dip/</link><pubDate>Tue, 15 Nov 2022 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design-principle-dependency-inversion-principle-dip/</guid><description>依賴倒置原則 Dependency Inversion Principle，以下皆簡稱 DIP。
-為什麼需要 先來看定義
-高層次的模塊不應該依賴於低層次的模塊，兩者都應該依賴於抽象接口 抽象接口不應該依賴於具體實現。而具體實現則應該依賴於抽象接口 文謅謅的，但重點似乎是抽象。不如直接看個狀況劇:
-有一個 Project A 需要使用播廣告的功能。分別採 2 個做法
-直接依賴 直覺的做法。Project A 直接依賴於廣告模組(UnityAds)，這裡模組 Project A 被迫去了解 UnityAds 的實作細節(怎麼初始化/下載廣告/播廣告)。
-目前沒甚麼問題，運作得很好&amp;hellip; 但很快問題就來了。UnityAds 因為某些原因不能用了! (假設後臺被打了什麼的)。於是找了另一個廣告模組(AdMob)，想要如法炮製，但有幾點可能會不好受。
-要改的地方很分散 (廣告被 Project A 多處使用) Project A 需要處理不同的 API格式 (了解細節，單例、Callback、事件&amp;hellip;) 導致原先依賴 UnityAds 的模組需要重新編譯 (造成浪費時間) 原因是直接依賴外部模組導致的，相對於你的系統 UnityAds 是個外人，是不穩定的，去依賴一個不穩定的東西，也會導致自己變得不穩定。
-依賴倒置 仔細想一下，Project A 直接依賴 UnityAds 是必要的嗎? 需求是播 UnityAds 的廣告? 還是播廣告? 為了實現穩定廣告服務的依賴源，我們將其抽象化
-public interface IAdService { void Initialize(); void Load(); void Show(); } 但 UnityAds 與 AdMob 又不能直接實作這個介面怎麼辦，可以用配接器模式(Adapter Pattern)寫個轉接頭，想辦法讓外部細節符合 IAdService 的需求。現在需要廣告服務的部分均透過 IAdService來操作，不需再知道外部廣告模組的細節。</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Software Design on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/software-design/</link><description>Recent content in Software Design on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 16 Jan 2025 20:05:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/software-design/index.xml" rel="self" type="application/rss+xml"/><item><title>Software Design - Principle - Inversion of Control (IoC)</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---principle---inversion-of-control-ioc/</link><pubDate>Thu, 16 Jan 2025 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---principle---inversion-of-control-ioc/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;h3 id="1-如果你的程式中有一個物件需要另一個物件應該怎麼做">1. 如果你的程式中，有一個物件需要另一個物件，應該怎麼做？&lt;/h3>
+&lt;ul>
+&lt;li>直接由需求方 new 一個實例嗎？&lt;/li>
+&lt;/ul>
+&lt;h3 id="2-如果那個物件的建構方式很複雜呢">2. 如果那個物件的建構方式很複雜呢？&lt;/h3>
+&lt;ul>
+&lt;li>例如，它可能需要多個參數，還需要一些初始化邏輯。&lt;/li>
+&lt;li>如果每次都在需求方進行這些操作，會不會重複又繁瑣？&lt;/li>
+&lt;/ul>
+&lt;h3 id="3-如果有多個需求方重複依賴這個物件呢">3. 如果有多個需求方重複依賴這個物件呢？&lt;/h3>
+&lt;ul>
+&lt;li>這些需求方能共享同一個物件嗎？&lt;/li>
+&lt;li>如果共享，如何管理這個共用的實例？誰來負責它的生命週期？&lt;/li>
+&lt;/ul>
+&lt;h3 id="4-依賴管理是誰的責任">4. 依賴管理是誰的責任？&lt;/h3>
+&lt;ul>
+&lt;li>需求方是否應該負責處理自己所有的依賴？&lt;/li>
+&lt;li>還是應該有一個「專門負責管理依賴」的角色？&lt;/li>
+&lt;li>如果有一個「外部機制」來幫你管理這些依賴，需求方只需要專注於自己的邏輯，不需要擔心如何建構物件，這樣會不會更簡單？&lt;/li>
+&lt;/ul>
+&lt;h2 id="控制反轉---什麼反轉了">控制反轉 - 什麼反轉了？&lt;/h2>
+&lt;p>控制反轉（Inversion of Control, IoC）就是為了解決這些問題而生的。它帶來了一個核心理念：&lt;/p>
+&lt;blockquote>
+&lt;p>需求方不再自己去「控制」依賴的構建和配置，而是把這部分的「控制權」交給「外部機制」（通常是 IoC 容器）。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>需求方只需專注於「接收」或「查詢」依賴，並專心「使用」它們。簡化需求方的職責，使其僅專注於處理業務邏輯，從而提升模組化與可維護性。&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="好處">好處&lt;/h2>
+&lt;h3 id="依賴管理">&lt;strong>依賴管理&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>通過外部機制統一管理依賴，開發者不需要在各處手動管理物件實例的生命週期與建構邏輯。&lt;/li>
+&lt;li>容器能管理共享的物件實例，有效避免重複建構，提高資源利用率。&lt;/li>
+&lt;li>將依賴配置集中於容器，能輕鬆應對需求變更。例如，替換某個服務的具體實現時，只需要調整配置，而非修改多處程式碼。&lt;/li>
+&lt;/ul>
+&lt;h3 id="提升模組化與可維護性">&lt;strong>提升模組化與可維護性&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>需求方與具體實現之間的耦合度降低，使得每個模組能更容易地獨立開發、測試與替換。&lt;/li>
+&lt;/ul>
+&lt;h3 id="提升測試便利性">&lt;strong>提升測試便利性&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>透過依賴注入，需求方可以接收模擬物件（mock）或測試替身（stub），從而更輕鬆地撰寫單元測試。&lt;/li>
+&lt;li>sample - c#
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cs" data-lang="cs">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">var&lt;/span> &lt;span style="color:#111">mockStorageService&lt;/span> &lt;span style="color:#111">=&lt;/span> &lt;span style="color:#00a8c8">new&lt;/span> &lt;span style="color:#111">Mock&lt;/span>&lt;span style="color:#111">&amp;lt;&lt;/span>&lt;span style="color:#111">IStorageService&lt;/span>&lt;span style="color:#111">&amp;gt;();&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">mockStorageService&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">Setup&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#111">service&lt;/span> &lt;span style="color:#111">=&amp;gt;&lt;/span> &lt;span style="color:#111">service&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">SaveOrder&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#111">It&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">IsAny&lt;/span>&lt;span style="color:#111">&amp;lt;&lt;/span>&lt;span style="color:#111">Order&lt;/span>&lt;span style="color:#111">&amp;gt;())).&lt;/span>&lt;span style="color:#111">Verifiable&lt;/span>&lt;span style="color:#111">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">var&lt;/span> &lt;span style="color:#111">orderService&lt;/span> &lt;span style="color:#111">=&lt;/span> &lt;span style="color:#00a8c8">new&lt;/span> &lt;span style="color:#111">OrderService&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#111">mockStorageService&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">Object&lt;/span>&lt;span style="color:#111">);&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;li>sample - js
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-js" data-lang="js">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">const&lt;/span> &lt;span style="color:#75af00">mockStorageService&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">saveOrder&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#111">(&lt;/span>&lt;span style="color:#75af00">order&lt;/span>&lt;span style="color:#111">)&lt;/span> &lt;span style="color:#111">=&amp;gt;&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">console&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">log&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#d88200">`Mock saving order &lt;/span>&lt;span style="color:#d88200">${&lt;/span>&lt;span style="color:#75af00">order&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">id&lt;/span>&lt;span style="color:#d88200">}&lt;/span>&lt;span style="color:#d88200">`&lt;/span>&lt;span style="color:#111">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">};&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">const&lt;/span> &lt;span style="color:#75af00">orderService&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#00a8c8">new&lt;/span> &lt;span style="color:#75af00">OrderService&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#75af00">mockStorageService&lt;/span>&lt;span style="color:#111">);&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;/ul>
+&lt;h2 id="技術實現">技術實現&lt;/h2>
+&lt;h3 id="組合根composition-root">&lt;strong>組合根（Composition Root）&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>集中管理所有依賴的構建與組合，通常位於應用程式的進入點。&lt;/li>
+&lt;/ul>
+&lt;h3 id="依賴尋找dependency-lookup">&lt;strong>依賴尋找（Dependency Lookup）&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>需求方主動向容器請求所需的依賴。&lt;/li>
+&lt;/ul>
+&lt;h3 id="依賴注入dependency-injection-di">&lt;strong>依賴注入（Dependency Injection, DI）&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>容器將依賴主動注入至需求方的機制，例如透過建構子注入、屬性注入或方法注入。&lt;/li>
+&lt;/ul></description></item><item><title>Software Design - Concept - Object Lifecycle Management</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---concept---object-lifecycle-management/</link><pubDate>Sat, 04 Jan 2025 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---concept---object-lifecycle-management/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>物件生命週期管理（Object Lifecycle Management）是指在程式運行過程中，對物件的創建、使用、及銷毀進行有效的控制和管理。&lt;/p>
+&lt;p>適當的物件生命週期管理有助於提高應用程式的性能、可維護性和資源利用效率。&lt;/p>
+&lt;h2 id="stage">Stage&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>創建&lt;/strong>：&lt;/p>
+&lt;ul>
+&lt;li>物件被創建並初始化。&lt;/li>
+&lt;li>創建時，可能會注入其他依賴物件或設定一些必要的屬性。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>使用&lt;/strong>：&lt;/p>
+&lt;ul>
+&lt;li>物件在應用程式中進行各種操作，如方法調用、屬性設定等。&lt;/li>
+&lt;li>這是物件的活躍期，通常是應用程式邏輯處理的核心部分。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>銷毀&lt;/strong>：&lt;/p>
+&lt;ul>
+&lt;li>物件不再被需要時，它的資源會被釋放。&lt;/li>
+&lt;li>這個過程通常涉及到記憶體回收和釋放外部資源（例如檔案、資料庫連線等）。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="lifetime">Lifetime&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Transient（瞬時）&lt;/strong>：&lt;/p>
+&lt;ul>
+&lt;li>每次請求或需要該物件時會創建一個新的實例。&lt;/li>
+&lt;li>適用於短暫的、不需要保持狀態的物件。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Singleton（單例）&lt;/strong>：&lt;/p>
+&lt;ul>
+&lt;li>整個應用程式生命周期內，只有一個實例被創建。&lt;/li>
+&lt;li>適用於那些需要跨應用程式共享狀態的物件。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Scoped（範圍）&lt;/strong>：&lt;/p>
+&lt;ul>
+&lt;li>物件的生命周期被限制在特定的範圍內，通常是某個特定的操作或請求範圍。&lt;/li>
+&lt;li>在範圍內，物件實例會被共享。但範圍結束後，物件會被銷毀。&lt;/li>
+&lt;li>適用於那些需要在某個範圍內共享狀態，但範圍結束後無需保持的物件。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol></description></item><item><title>Software Design - Architecture Design</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---architecture-design/</link><pubDate>Wed, 25 Dec 2024 20:03:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---architecture-design/</guid><description>&lt;h2 id="thinking">Thinking&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://minds.md/zakirullin/cognitive#long">Cognitive load is what matters&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Software Design - Pattern - Stateless</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---stateless/</link><pubDate>Sat, 23 Nov 2024 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---stateless/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>無狀態設計專注於系統可重現性和邏輯純淨性的設計方法。其核心設計思維旨在將邏輯從外部狀態的依賴中解放出來，使每個狀態完全由輸入決定，而非持續記錄和修改內部狀態。&lt;/p>
+&lt;h2 id="features">Features&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>純函數式邏輯&lt;/strong>：輸出僅依賴輸入，無副作用。&lt;/li>
+&lt;li>&lt;strong>輸入驅動&lt;/strong>：狀態由輸入序列完全決定。&lt;/li>
+&lt;li>&lt;strong>不可變狀態&lt;/strong>：每次改變都生成新狀態(防止副作用)，支持回溯。&lt;/li>
+&lt;li>&lt;strong>可重現性&lt;/strong>：同樣的輸入序列可重現遊戲進程。&lt;/li>
+&lt;/ul>
+&lt;h2 id="limitations">Limitations&lt;/h2>
+&lt;ul>
+&lt;li>在高度互動和即時性要求高的系統中，狀態的不可變性可能增加性能開銷。&lt;/li>
+&lt;/ul></description></item><item><title>Software Design - Architecture - Web &amp; Desktop app</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---architecture---web--desktop-app/</link><pubDate>Sat, 05 Oct 2024 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---architecture---web--desktop-app/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>(⚠️ 實驗中) 當一個要開發一個同時支援 &lt;strong>網頁端&lt;/strong> 與 &lt;strong>桌面端&lt;/strong> 的應用時，該如何設計。以下範例說明使用&lt;/p>
+&lt;ul>
+&lt;li>UIFramework : Vue3&lt;/li>
+&lt;li>Desktop Framework : Electron&lt;/li>
+&lt;/ul>
+&lt;h2 id="architecture">Architecture&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>project-root/
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── core/ &lt;span style="color:#75715e"># 核心業務邏輯&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── services/ &lt;span style="color:#75715e"># 服務層，包含業務邏輯 (e.g., FileManager)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── models/ &lt;span style="color:#75715e"># 共享的資料模型和接口&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── interfaces/ &lt;span style="color:#75715e"># 定義服務的接口 (e.g., IFileService)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── presentation/ &lt;span style="color:#75715e"># UI 表現層 (Vue3 應用)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── components/ &lt;span style="color:#75715e"># Vue 組件&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── views/ &lt;span style="color:#75715e"># Vue 頁面&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── stores/ &lt;span style="color:#75715e"># Pinia 狀態管理&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── App.vue &lt;span style="color:#75715e"># Vue 入口文件&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── web/ &lt;span style="color:#75715e"># 瀏覽器端特定實現&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── services/ &lt;span style="color:#75715e"># 瀏覽器環境下的文件操作等服務實現 (e.g., BrowserFileService)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── index.html &lt;span style="color:#75715e"># 網頁版的入口&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── main.js &lt;span style="color:#75715e"># 網頁版的啟動點，將核心業務注入 Vue&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── desktop/ &lt;span style="color:#75715e"># Electron 桌面端特定實現&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── main/ &lt;span style="color:#75715e"># 主進程相關文件&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ │ ├── main.js &lt;span style="color:#75715e"># Electron 主進程入口&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ │ └── preload.js &lt;span style="color:#75715e"># 預加載腳本，用於將 Node API 注入到渲染進程&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── renderer.js &lt;span style="color:#75715e"># 渲染進程啟動點，將核心業務注入 Vue&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>└── package.json &lt;span style="color:#75715e"># 項目配置文件&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="thought">Thought&lt;/h2>
+&lt;p>主體思想是基於 Clean Architecture，Clean Architecture 主張將業務邏輯與框架、UI 和其他技術細節分離，使得核心業務邏輯不依賴於特定的運行環境或框架。&lt;/p></description></item><item><title>Electron - Design Context</title><link>https://HoshikawaRyuukou.github.io/posts/electron---design-context/</link><pubDate>Fri, 27 Sep 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/electron---design-context/</guid><description>&lt;h2 id="context---將現有的前端專案包裝成桌面端應用">Context - 將現有的前端專案包裝成桌面端應用&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>情境：&lt;/strong> 已有一個完整的前端專案，但由於一些特定需求（例如離線操作的能力），決定將其包裝成桌面端應用。本質上，這個應用仍是一個網頁應用，因此基本上不會有額外的桌面端互動需求，也不需要特別增強和操作系統的整合。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>目的：&lt;/strong> 主要為了滿足離線存取與更佳的用戶體驗，但不需要深度的桌面端特性。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>技術重點：&lt;/strong> 專注於如何將現有的 Web 應用以 Electron 進行包裝，保持與原生前端相同的開發流程，並且避免過多改動。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>限制：&lt;/strong> 盡量維持輕量化，減少與桌面平台的耦合，僅利用 Electron 提供的框架和包裝功能。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="context---基於前端技術開發桌面端應用">Context - 基於前端技術開發桌面端應用&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>情境：&lt;/strong> 目標是開發桌面端應用，只是基於前端技術來實現。這意味著應用程式將包含一些桌面應用所特有的特性，例如系統通知、檔案系統操作、離線儲存等。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>目的：&lt;/strong> 充分利用 Electron 提供的 API 來增強桌面應用的功能，使其可以提供超越單純網頁應用的體驗。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>技術重點：&lt;/strong> 基於前端技術棧（如 Vue、React 等），但需要使用 Electron 來實現與桌面系統的交互，包括檔案存取、系統托盤等。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>設計考量：&lt;/strong> 需要兼顧應用的桌面特性與前端開發的靈活性，保證兩者間的有效融合。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="context---electron-與-前端技術-僅是實作細節">Context - Electron 與 前端技術 僅是實作細節&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>情境：&lt;/strong> 設計理念以業務需求為核心，Electron 以及前端技術只是達成目標的手段和細節。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>業務為中心的設計：&lt;/strong> 設計時不局限於技術選型，而是先分析業務需求，再根據需求選擇最佳的技術方案。最終選擇的技術（Electron、前端技術）只是為了實現業務需求的手段。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>基於 Clean Architecture：&lt;/strong> 使用乾淨架構來分離業務邏輯與實作細節，確保應用程式具有良好的可擴展性與可維護性。Electron 與前端技術被隔離在具體的實作層，任何一方都可以被替換而不影響業務邏輯。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>技術重點：&lt;/strong> 強調框架的選擇與使用不應該影響到核心業務邏輯，業務邏輯應獨立於 UI、技術框架的變更，專注於系統的彈性與維護性。&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>Software Design - Pattern - Note</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---note/</link><pubDate>Thu, 01 Aug 2024 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---note/</guid><description>&lt;h2 id="factory">Factory&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.bilibili.com/video/BV1ZS421X74d">工厂模式？错！是工厂模式群！&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="observer--pub-sub-publisher-subscriber">Observer / Pub-Sub (Publisher-Subscriber)&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://hackernoon.com/observer-vs-pub-sub-pattern-50d3b27f838c">Observer vs Pub-Sub pattern&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.semicolonandsons.com/code_diary/architecture/pub-sub-system-pros-and-cons">Pub sub system pros and cons&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="observer">Observer&lt;/h3>
+&lt;p>觀察者模式中的主題同時身為發布者，觀察者是知道發布者的，但發布者不知道觀察者。&lt;/p>
+&lt;h3 id="pub-sub-publisher-subscriber">Pub-Sub (Publisher-Subscriber)&lt;/h3>
+&lt;p>發布者-訂閱者模式中的主題通常由消息代理或事件總線處理，發布者和觀察者不知道彼此的存在。發布者項主題發送訊息，主題再轉發給觀察者。&lt;/p></description></item><item><title>Software Design - Architecture - VIPER</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---architecture---viper/</link><pubDate>Fri, 19 Jan 2024 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---architecture---viper/</guid><description>&lt;h2 id="簡述">簡述&lt;/h2>
+&lt;p>VIPER (View-Interactor-Presenter-Entity-Router)&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://juejin.cn/post/6844903491941433351">iOS VIPER架構實踐(一)：從MVC到MVVM到VIPER&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.csdn.net/tyndale1993/article/details/80777324">VIPER，更清晰的架构，解决复用和测试问题的利器系列1：VIPER架构演进史&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>有很多種實作流派，下圖是我比較偏好的模式呈現&lt;/p>
+&lt;p>
+ &lt;img src="https://HoshikawaRyuukou.github.io/images/VIPER.png" alt="VIPER">
+
+&lt;/p>
+&lt;p>VIPER 借鏡了 CA (Clean Architecture) 的思想為 MVC 提供一個新的設計方案&lt;/p>
+&lt;ul>
+&lt;li>Entity 對應原本的 Model&lt;/li>
+&lt;li>Controller 責任過重 -&amp;gt; 將業務邏輯移至 Interactor 並提高重用性&lt;/li>
+&lt;li>Controllers 之間耦合 -&amp;gt; 將導航邏輯移至 Router&lt;/li>
+&lt;li>Presenter 作為 Binder 將 View / Interactor / Router 整合&lt;/li>
+&lt;/ul>
+&lt;h2 id="啟發">啟發&lt;/h2>
+&lt;p>VIPER 是筆者學習架構路上很重要的一個過渡，有以下兩點的思想轉變&lt;/p>
+&lt;h3 id="顆粒度更細的單一職責">顆粒度更細的單一職責&lt;/h3>
+&lt;p>Interactor 封裝業務的概念在純 MVX 中是無法直接體會到，因此對之後學習 CA 時起了很大的緩衝，不然對於 Usecase 的設計應該會很不適應。&lt;/p>
+&lt;h3 id="重視-navigation">重視 Navigation&lt;/h3>
+&lt;p>在學習 CA 中始終沒題到 feature/componet module 之間是如何互動的，也是在回頭複習 VIPER 時才重新意識到 Router 的重要性。當沒有特別規劃 Navigation 時很容易會造成 module 之間的耦合。&lt;/p></description></item><item><title>Software Design - Pattern - ViewModel</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---viewmodel/</link><pubDate>Sun, 27 Aug 2023 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---viewmodel/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
+&lt;p>此篇的實作參考到以下文件 (提到不少 Presentation layer 設計原則)&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a href="https://developer.android.com/topic/architecture/ui-layer?hl=zh-tw">Android Developers 文件/指南/UI 層&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>該文件的更新頻率算高且會與時俱進，筆者印象中其架構設計從 MVVM -&amp;gt; Domain/Application Driven 設計，可以看出主流架構有產生變化。之後的討論雖然使用 ViewModel 但不會詳細介紹 MVVM 的細節，如果對 MVX 系列不熟，可以先讀筆者之前的文章 &lt;strong>&amp;laquo;通用設計 - Pattern - MVP&amp;raquo;&lt;/strong> 裡面的 References。&lt;/p>
+&lt;h2 id="探索">探索&lt;/h2>
+&lt;p>回到正題，筆者在最近的業務上遇到&lt;/p>
+&lt;blockquote>
+&lt;p>如何在 &lt;strong>服務端未完成&lt;/strong> 的情況下，讓 Client 獲得完整的體驗流 ?&lt;/p>
+&lt;/blockquote>
+&lt;p>以下用交叉反問的方式來分析問題&lt;/p>
+&lt;p>Q: 沒有服務端那資料來源哪來 ? &lt;br>
+A: 使用假資料&lt;/p>
+&lt;p>Q: 當表現層依賴的是 IService Interface 使用假資料時需要實作什麼 ? &lt;br>
+A: 只需要實作一個 FakeService 來產生假資料即可&lt;/p>
+&lt;p>Q: 當想要將業務與表現解耦時，很常使用中介者的手法來黏合兩者，如果使用標準的 MVP 實做，Presenter 實際做了哪些事呢 ? &lt;br>
+A: 監聽 View 事件/ 與 Service 互動/ 管理畫面狀態/ 呼叫 View 刷新&lt;/p>
+&lt;p>Q: Presenter 似乎有點多事情 ! &lt;br>
+A: 其實需要視情況而定，情況簡單時直接向 View 倒資料也是完全可以接受的。但當情況複雜時可以選擇導入 ViewModel 來管理狀態。事實上表現層所要呈現的 UI 狀態未必是只跟 Service 的回傳有關，可能需要這樣的控制 條件A(Service) + 條件B(Local) + 條件C(User Runtime) -&amp;gt; 狀態D&lt;/p></description></item><item><title>Software Design - Pattern - Service Locator</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---service-locator/</link><pubDate>Wed, 28 Jun 2023 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---service-locator/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
+&lt;p>Service Locator 確實也是 IoC 的一種實作方式，不過採用的是 依賴尋找(Dependency Lookup) 的設計。
+筆者之前有一陣子蠻常使用這 pattern，那時對 DI 與 IoC 的概念並不熟悉，只覺得這樣使用依賴變得很方便。&lt;/p>
+&lt;p>因為我可以在任何地方直接這樣取用資源&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-csharp" data-lang="csharp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">var&lt;/span> &lt;span style="color:#111">target&lt;/span> &lt;span style="color:#111">=&lt;/span> &lt;span style="color:#111">ServiceLocator&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">Resovle&lt;/span>&lt;span style="color:#111">&amp;lt;&lt;/span>&lt;span style="color:#111">Target&lt;/span>&lt;span style="color:#111">&amp;gt;();&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>這樣的寫法有以下問題 :&lt;/p>
+&lt;ol>
+&lt;li>透過 ServiceLocator 因為這個取用資源的過程是隱性的，不容易被直接發現。&lt;/li>
+&lt;li>想用誰就拿誰這件事也有點危險，Ex: View 可以拿到不屬於 Presentation layer 該碰的對象。&lt;/li>
+&lt;/ol>
+&lt;p>所以當 DI 與 IoC 的概念熟悉後，並且使用 DI / IoC Container 後就漸漸不使用這 pattern 了。&lt;/p>
+&lt;h2 id="應用">應用&lt;/h2>
+&lt;p>但這次工作上反而覺得 Service Locator 可以勝任從 Singleton 過渡到 DI / IoC Container 的中繼階段。&lt;/p>
+&lt;p>因為這次接觸到的專案嚴重依賴 Singleton，且組員也已習慣 Singleton 的寫法了，要直切換到 DI / IoC Container 會有不小的陣痛期(當然實務上能不能切又是另一個故事了)。&lt;/p>
+&lt;p>於是筆者想起了 Service Locator，有以下理由&lt;/p>
+&lt;ol>
+&lt;li>因為在使用上就很像是 Singleton&lt;/li>
+&lt;li>筆者希望組員能快速感受到 IoC 所帶來的紅利&lt;/li>
+&lt;li>集中管理依賴&lt;/li>
+&lt;/ol>
+&lt;h2 id="實作">實作&lt;/h2>
+&lt;p>此模式使用稱為「服務定位器」的中央註冊表，它根據請求返回執行特定任務所需的對象。&lt;/p></description></item><item><title>Software Design - Modularization</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---modularization/</link><pubDate>Wed, 22 Feb 2023 21:21:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---modularization/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
+&lt;p>首先幾篇文章是基於 Clean Architecture 的基礎，建議先閱讀以下連結已具備基礎知識&lt;/p>
+&lt;h3 id="the-missing-chapter">The missing chapter&lt;/h3>
+&lt;ul>
+&lt;li>CA 原著 Chapter 34 - The missing chapter - Actual implementation details of an architecture&lt;/li>
+&lt;li>&lt;a href="https://github.com/serodriguez68/clean-architecture/blob/master/part-6-details.md#chapter-34---the-missing-chapter---actual-implementation-details-of-an-architecture">連結 34章摘要心得&lt;/a>，請先觀看裡面的圖表(重要)&lt;/li>
+&lt;/ul>
+&lt;h3 id="ca-modularization">CA Modularization&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://proandroiddev.com/multiple-ways-of-defining-clean-architecture-layers-bbb70afa5d4a">Multiple ways of defining Clean Architecture layers&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.ttulka.com/package-by-component-with-clean-modules-in-java/">Package by Component with Clean Modules in Java&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://learning-notes.mistermicheels.com/architecture-design/reference-architectures/package-by-feature-or-component/">Package by feature or component&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="vertical-slice">Vertical Slice&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://www.betterask.erni/news-room/slices-vs-layers/">Slices vs. Layers&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://codeopinion.com/restructuring-to-a-vertical-slice-architecture/?fbclid=IwAR0Ek5KW6_MWQ9K5Rxv6P5BpqatHs5tsjfHZ_B9GZmrkd3YaBoH-HHuNZE4">Restructuring to a Vertical Slice Architecture&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=L2Wnq0ChAIA">Vertical Slice Architecture, not Layers!&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="modular-monolith">Modular Monolith&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://lukashajdu.com/post/majestic-modular-monolith/">Majestic Modular Monoliths&lt;/a> (強烈建議)&lt;/li>
+&lt;li>&lt;a href="https://www.kamilgrzybek.com/design/modular-monolith-primer/">Modular Monolith architecture&lt;/a> (強烈建議讀完這個系列)&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>&lt;strong>各 Package 策略的圖請參考上方連結 34 章摘要心得&lt;/strong>&lt;/p></description></item><item><title>Software Design - Architecture - Clean Architecture</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---architecture---clean-architecture/</link><pubDate>Sat, 04 Feb 2023 20:03:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---architecture---clean-architecture/</guid><description>&lt;p>以下 Clean Architecture 簡稱 CA&lt;/p>
+&lt;p>這裡還是先引用 Uncle Bob 的分層圖
+&lt;a href="https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html">The Clean Code Blog - The Clean Architecture&lt;/a>
+
+ &lt;img src="https://blog.cleancoder.com/uncle-bob/images/2012-08-13-the-clean-architecture/CleanArchitecture.jpg" alt="CA Layers">
+
+&lt;/p>
+&lt;p>筆者認爲可擴展性是系統架構的重要考量。畢竟應用程式會演化，必須不斷更新與修改系統以滿足新的需求，而 CA 是其中一種實現方針。筆者在這裡不會寫出詳細的介紹，想了解的可以參考 Ref 整理的連結或是 CA 相關書籍。&lt;/p>
+&lt;p>本文著重於促使筆者思考方式改變的幾個重要觀念。&lt;/p>
+&lt;h2 id="依賴關係">依賴關係&lt;/h2>
+&lt;ul>
+&lt;li>相依性: 向內圈依賴，且盡量避免跨層依賴 (有些例外之後說明)。&lt;/li>
+&lt;li>Dependency Inversion Principle (DIP): 內圈定義介面，外圈實作。&lt;/li>
+&lt;/ul>
+&lt;p>基於這兩個規則所帶來的是&lt;/p>
+&lt;ul>
+&lt;li>單向依賴流 : 紊亂的依賴流可能造成牽一髮動全身的窘境。尤其是當 Domain 去依賴到細節時。&lt;/li>
+&lt;li>延後實作 : UseCase/Adapter 都是依賴於應用層所開出的介面。因此業務/畫面能獨立開發，不用互相等待(理想狀態)。&lt;/li>
+&lt;/ul>
+&lt;p>而筆者在實作時的基本型架構通常如下圖(比較接近 CA 書中的另外一張圖，我這裡做了簡化)，Adapter 只分成 Input/Output Port。
+
+ &lt;img src="https://HoshikawaRyuukou.github.io/images/CleanArchitectureBasic.png" alt="Clean Architecture Basic">
+
+&lt;/p>
+&lt;ul>
+&lt;li>Domain: 領域邏輯&lt;/li>
+&lt;li>UseCase: 應用邏輯&lt;/li>
+&lt;li>Domain + UseCase: 業務邏輯&lt;/li>
+&lt;li>InputPort: 用例功能使用方介面&lt;/li>
+&lt;li>OutputPort: 用例功能支援方介面&lt;/li>
+&lt;li>Adapter: 將外部與用例功能接合的膠水代碼&lt;/li>
+&lt;/ul>
+&lt;p>不過架構會針對不同情況做調整，細節參考另一篇文章&lt;/p>
+&lt;p>架構設計 - Clean Architecture and Modularization&lt;/p></description></item><item><title>Software Design - Pattern - Guard Clauses</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---guard-clauses/</link><pubDate>Tue, 10 Jan 2023 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---guard-clauses/</guid><description>&lt;h2 id="目的">目的&lt;/h2>
+&lt;ul>
+&lt;li>符合 Fail Fast 的原則，驗證條件並在不滿足條件時立即停止執行。&lt;/li>
+&lt;li>增加可讀性(更扁平)，減少了巢狀判斷。&lt;/li>
+&lt;li>例子請參考 &lt;a href="https://deviq.com/design-patterns/guard-clause">Guard Clause&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="extra---guard-class">Extra - Guard Class&lt;/h2>
+&lt;p>將通用的保護子句封裝在一個專門的類是一種很好的做法，可重用邏輯並編寫更具可讀性的保護子句。&lt;/p>
+&lt;ul>
+&lt;li>可參考這個庫 &lt;a href="https://github.com/ardalis/GuardClauses">GuardClauses&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="extra---value-object">Extra - Value Object&lt;/h2>
+&lt;p>&lt;a href="https://codeopinion.com/stop-using-trivial-guard-clauses-try-this-instead/">Stop using trivial Guard Clauses! Try this instead&lt;/a>&lt;/p>
+&lt;p>文章作者避免瑣碎 Guard 的方式，是使用 Value Object，來避免域接受到無效參數。這個作法在筆者看來才是真正意義上的 Fail Fast。(YT評論區也建議閱讀，有許多不錯的討論)&lt;/p>
+&lt;p>但不可否認的 Guard Clause 作法在大多情況下是有益的。&lt;/p>
+&lt;h2 id="ref">Ref&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://deviq.com/design-patterns/guard-clause">Guard Clause&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://teddy-chen-tw.blogspot.com/2012/05/implementation-patterns-guard-clause.html">Implementation Patterns: Guard Clause&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/ardalis/GuardClauses">GuardClauses&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://codeopinion.com/stop-using-trivial-guard-clauses-try-this-instead/">Stop using trivial Guard Clauses! Try this instead&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Software Design - Domain-Driven Design 初探</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---domain-driven-design/</link><pubDate>Thu, 15 Dec 2022 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---domain-driven-design/</guid><description>&lt;p>必須先聲明筆者仍在學習中，以下屬個人觀點&lt;/p>
+&lt;h2 id="動機">動機&lt;/h2>
+&lt;p>筆者發現在使用 Clean Architecture (CA) 時越來越力不從心，因此開始研究 Domain-Driven Design (DDD)，事出有因，列出幾點問題與對應方式。&lt;/p>
+&lt;h4 id="重複的程式碼">重複的程式碼&lt;/h4>
+&lt;ul>
+&lt;li>主因是 貧血域模型 (Anemic Domain Model)，表示模型中幾乎只有 Get/Set，這導致了 Domain層 (業務邏輯) 滲透到 Application層 (應用邏輯)，某些對 Domain 的操作重複出現在多個的 Usecase (應用邏輯)。&lt;/li>
+&lt;li>重新分析系統，區分出不同上下文，設計充血域模型，將業務邏輯設計進去。&lt;/li>
+&lt;/ul>
+&lt;h4 id="域模型的一致性問題">域模型的一致性問題&lt;/h4>
+&lt;ul>
+&lt;li>Domain 面對四面八方的操作，顯得很亂且充滿不確定(會不會模型之間的關係因為更改而被破壞)&lt;/li>
+&lt;li>引入聚合(Aggregate)來維持保護邊界內的不變條件。&lt;/li>
+&lt;/ul>
+&lt;h4 id="primitive-obsession">Primitive Obsession&lt;/h4>
+&lt;ul>
+&lt;li>這會造成對模型的不信任，進而寫出一些防禦性程式設計。&lt;/li>
+&lt;li>引入值物件(Value Object)來確保不變性與自我驗證(即不正確就不應該存在)。&lt;/li>
+&lt;/ul>
+&lt;p>以上這幾點是筆者比較有感的。&lt;/p>
+&lt;h2 id="概述與想法">概述與想法&lt;/h2>
+&lt;p>Domain-Driven Design (DDD)，出自 Eric Evans 2003 年出版的一本書，以領域模型為中心來進行系統的分析設計。不是架構也不是技術，是一種方法論，可以搭配不同類型的架構來實現&lt;/p>
+&lt;ul>
+&lt;li>Layered Architecture&lt;/li>
+&lt;li>Hexagonal Architecture&lt;/li>
+&lt;li>Clean Architecture (以下稱 CA )&lt;/li>
+&lt;li>Command Query Responsibility Segregation (CQRS)&lt;/li>
+&lt;/ul>
+&lt;p>原著中是使用 Layered Architecture 的架構作為示範，但該章的重點是在隔離 Domain，在 Google 的時候有所謂 &amp;ldquo;DDD 架構圖&amp;rdquo;，但筆者覺得不太精確，因為 DDD 主要的發力點是在 Domain，應該稱作 &amp;ldquo;OO架構以DDD實作Domain&amp;rdquo; 會比較合適。&lt;/p></description></item><item><title>Software Design - Pattern - Data Transfer Object (DTO)</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---data-transfer-object-dto/</link><pubDate>Sun, 11 Dec 2022 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---data-transfer-object-dto/</guid><description>&lt;h2 id="什麼是-dto">什麼是 DTO？&lt;/h2>
+&lt;p>Data Transfer Object (數據傳輸對象) 是定義如何在應用程序之間發送數據的對象。它僅用於發送和接收數據，本身不包含任何業務邏輯。&lt;/p>
+&lt;h2 id="為什麼使用-dto">為什麼使用 DTO？&lt;/h2>
+&lt;h3 id="輕鬆收發">輕鬆收發&lt;/h3>
+&lt;p>在沒有任何邏輯的基礎上，可以僅使用序列化與反序列化就保證對象的完整性和可傳遞性。&lt;/p>
+&lt;h3 id="避免過度暴露訊息">避免過度暴露訊息&lt;/h3>
+&lt;p>對分層或模組來說，彼此間應盡量降低耦合。下圖以公園廁所報修為案例。&lt;/p>
+&lt;p>
+ &lt;img src="https://HoshikawaRyuukou.github.io/images/DTO.png" alt="DTO Example">
+
+&lt;/p>
+&lt;p>這個資料流由&lt;strong>鄉公所&lt;/strong>傳到&lt;strong>基層人員&lt;/strong>手上，中間經過兩個邊界&lt;/p>
+&lt;ul>
+&lt;li>鄉公所 | 工程公司 =&amp;gt; DTO (公文)&lt;/li>
+&lt;li>工程公司 | 基層人員 =&amp;gt; DTO (簡訊)&lt;/li>
+&lt;/ul>
+&lt;p>每個單位的關注點不同，在意的資料也會不同，DTO 做為邊界兩方做最小程度的媒介，隱藏的不該被關注(敏感)的事&lt;/p>
+&lt;ul>
+&lt;li>印章對工程公司並不是必要資訊&lt;/li>
+&lt;li>詳細的時間格式是對基層人員並不是必要資訊&lt;/li>
+&lt;/ul>
+&lt;p>在實作上常被用於轉換 DomainModol -&amp;gt; DomainDto&lt;/p>
+&lt;h2 id="注意事項">注意事項&lt;/h2>
+&lt;p>類別數量增加，請自行評估使用情形&lt;/p>
+&lt;h2 id="ref">Ref&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://learn.microsoft.com/en-us/archive/msdn-magazine/2009/august/pros-and-cons-of-data-transfer-objects">Cutting Edge - Pros and Cons of Data Transfer Objects&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://examples.javacodegeeks.com/the-dto-data-transfer-object/">The DTO (Data Transfer Object)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://aspnetboilerplate.com/Pages/Documents/Data-Transfer-Objects">Data Transfer Objects&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://stackoverflow.com/questions/52812337/clean-architecture-why-not-using-the-entity-as-request-model-of-the-use-case">Clean Architecture : why not using the entity as request model of the use case (interactor)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://stackoverflow.com/questions/39397147/difference-between-entity-and-dto">Difference between Entity and DTO&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Software Design - Pattern - Model View Presenter (MVP)</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---model-view-presenter-mvp/</link><pubDate>Sat, 10 Dec 2022 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---model-view-presenter-mvp/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
+&lt;p>關注點分離（Separation of Concerns，SoC）: 在軟體開發中，一個模組或組件應該專注於解決特定的問題，而不是同時處理多個功能。每個組件都有自己的職責範圍，並且與其他組件盡可能解耦合。&lt;/p>
+&lt;p>而 MVC / MVP / MVVM 是關注點分離於前端的經典應用，網上已經有很多不錯的文章，再寫一份類似的整理文章意義也不大，對此感到陌生，不妨閱讀以下連結，會幫助你理解 MV系列的發展。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/livoras/blog/issues/11">界面之下：还原真实的MV*模式&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://juejin.cn/post/6901200799242649607">正确认识 MVC/MVP/MVVM&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://juejin.cn/post/6998093259893407757#comment">站在思想层面看MVX架构&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://deltatimer.com/260/mvp-pattern-part-2-supervising-controller">MVP Pattern: Part 2 Supervising Controller&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://proandroiddev.com/converting-presenters-into-viewmodels-c9279c7516e7">Part 2 — Converting Presenters into ViewModels&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://annulusgames-lab.blogspot.com/2022/12/unity-ui-mvrp.html">【Unity】MV(R)Pパターンのすすめ&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.pragmaticcoding.ca/javafx/Frameworks/">Unravelling MVC, MVP and MVVM&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>以下則對筆者實作中比較常用的 MVP 多做一些討論&lt;/p>
+&lt;h2 id="關注點責任">關注點(責任)&lt;/h2>
+&lt;p>在 MVP 的構成下分成三個部分&lt;/p>
+&lt;ul>
+&lt;li>Model: 應用程式的核心邏輯。&lt;/li>
+&lt;li>View: 應用程式的使用者介面，負責呈現數據和接收使用者的輸入。&lt;/li>
+&lt;li>Presenter: View 和 Model 之間的中介。&lt;/li>
+&lt;/ul>
+&lt;h3 id="passive-view">Passive View&lt;/h3>
+&lt;p>這是 MVP 的一種實作風格，也是筆者主要使用的風格。&lt;/p>
+&lt;ul>
+&lt;li>Presenter 對 View 有完全控制權&lt;/li>
+&lt;li>View 提供方法與事件給 Presenter 使用&lt;/li>
+&lt;li>View 對 Presenter 一無所知&lt;/li>
+&lt;/ul>
+&lt;p>以猜拳遊戲的 View 為例&lt;/p></description></item><item><title>Software Design - Navigation</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---navigation/</link><pubDate>Wed, 16 Nov 2022 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---navigation/</guid><description>&lt;p>以下 Feature 指的是一個功能獨立的模組，Feature A 將簡稱 A。&lt;/p>
+&lt;h2 id="問題">問題&lt;/h2>
+&lt;blockquote>
+&lt;p>應用程式中有一個由 A 到 B 的&lt;strong>導航&lt;/strong>，那這個&lt;strong>導航&lt;/strong>是誰的責任?&lt;/p>
+&lt;/blockquote>
+&lt;p>以下先討論 2 種狀況。&lt;/p>
+&lt;h3 id="a-直接依賴-b">A 直接依賴 B&lt;/h3>
+&lt;p>簡單粗暴的強耦合破壞了 A 的獨立性。當流程發生變化時，可能需要到各個 Feature 去修改。&lt;/p>
+&lt;pre tabindex="0">&lt;code>Feature A -&amp;gt; Feature B
+&lt;/code>&lt;/pre>&lt;h3 id="a-引入導航器間接依賴-b">A 引入導航器間接依賴 B&lt;/h3>
+&lt;p>這作法將導航操作收斂到某個類中，但 A 仍然隱含的知道 B，這同樣破壞了 A 的獨立性。&lt;/p>
+&lt;pre tabindex="0">&lt;code>Feature A -&amp;gt; INavigator.Route(View.FeatureB) // Enum
+or
+Feature A -&amp;gt; INavigator.Route(&amp;#34;FeatureB&amp;#34;) // 魔術字串
+or
+Feature A -&amp;gt; INavigator.RouteFeatureB()
+&lt;/code>&lt;/pre>&lt;p>重新思考導航這件事&lt;/p>
+&lt;ul>
+&lt;li>Feature 應該知道自己是能夠 &lt;strong>被導航&lt;/strong> 或是 &lt;strong>能導航到哪&lt;/strong> 嗎?&lt;/li>
+&lt;li>到底 A 能導航到 B 這件事是誰決定的?&lt;/li>
+&lt;/ul>
+&lt;p>應該隱約地感覺到了吧，導航並不屬於 A 也不屬於 B，&lt;strong>導航是一個獨立操作&lt;/strong>，需要一個額外的單位來負責。此外這個單位多是屬於 App 級別的(因為該層級有對其他模組的正當訪問性，畢竟是負責做統合的)。&lt;/p></description></item><item><title>Software Design - Principle - Dependency Inversion Principle (DIP)</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---principle---dependency-inversion-principle-dip/</link><pubDate>Tue, 15 Nov 2022 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---principle---dependency-inversion-principle-dip/</guid><description>&lt;p>依賴倒置原則 Dependency Inversion Principle，以下皆簡稱 DIP。&lt;/p>
+&lt;h2 id="為什麼需要">為什麼需要&lt;/h2>
+&lt;p>先來看定義&lt;/p>
+&lt;ul>
+&lt;li>高層次的模塊不應該依賴於低層次的模塊，兩者都應該依賴於抽象接口&lt;/li>
+&lt;li>抽象接口不應該依賴於具體實現。而具體實現則應該依賴於抽象接口&lt;/li>
+&lt;/ul>
+&lt;p>文謅謅的，但重點似乎是抽象。不如直接看個狀況劇:&lt;/p>
+&lt;blockquote>
+&lt;p>有一個 Project A 需要使用播廣告的功能。分別採 2 個做法&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="直接依賴">直接依賴&lt;/h3>
+&lt;p>
+ &lt;img src="https://HoshikawaRyuukou.github.io/images/DIPNO.png" alt="DIPNO">
+
+&lt;/p>
+&lt;p>直覺的做法。Project A 直接依賴於廣告模組(UnityAds)，這裡模組 Project A 被迫去了解 UnityAds 的實作細節(怎麼初始化/下載廣告/播廣告)。&lt;/p>
+&lt;p>目前沒甚麼問題，運作得很好&amp;hellip; 但很快問題就來了。UnityAds 因為某些原因不能用了! (假設後臺被打了什麼的)。於是找了另一個廣告模組(AdMob)，想要如法炮製，但有幾點可能會不好受。&lt;/p>
+&lt;ul>
+&lt;li>要改的地方很分散 (廣告被 Project A 多處使用)&lt;/li>
+&lt;li>Project A 需要處理不同的 API格式 (了解細節，單例、Callback、事件&amp;hellip;)&lt;/li>
+&lt;li>導致原先依賴 UnityAds 的模組需要重新編譯 (造成浪費時間)&lt;/li>
+&lt;/ul>
+&lt;p>原因是&lt;strong>直接依賴&lt;/strong>外部模組導致的，相對於你的系統 UnityAds 是個外人，是不穩定的，去依賴一個不穩定的東西，也會導致自己變得不穩定。&lt;/p>
+&lt;h3 id="依賴倒置">依賴倒置&lt;/h3>
+&lt;p>
+ &lt;img src="https://HoshikawaRyuukou.github.io/images/DIPValid.png" alt="DIPValid">
+
+&lt;/p>
+&lt;ul>
+&lt;li>仔細想一下，Project A 直接依賴 UnityAds 是必要的嗎?&lt;/li>
+&lt;li>需求是播 UnityAds 的廣告? 還是播廣告?&lt;/li>
+&lt;/ul>
+&lt;p>為了實現穩定廣告服務的依賴源，我們將其抽象化&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-csharp" data-lang="csharp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">public&lt;/span> &lt;span style="color:#00a8c8">interface&lt;/span> &lt;span style="color:#75af00">IAdService&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">void&lt;/span> &lt;span style="color:#111">Initialize&lt;/span>&lt;span style="color:#111">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">void&lt;/span> &lt;span style="color:#111">Load&lt;/span>&lt;span style="color:#111">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">void&lt;/span> &lt;span style="color:#111">Show&lt;/span>&lt;span style="color:#111">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>但 UnityAds 與 AdMob 又不能直接實作這個介面怎麼辦，可以用配接器模式(Adapter Pattern)寫個轉接頭，想辦法讓外部細節符合 IAdService 的需求。現在需要廣告服務的部分均透過 IAdService來操作，不需再知道外部廣告模組的細節。&lt;/p></description></item></channel></rss>

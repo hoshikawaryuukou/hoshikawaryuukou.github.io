@@ -1,7 +1,91 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CSharp on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/csharp/</link><description>Recent content in CSharp on 識之箱庭</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Fri, 07 Jul 2023 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/csharp/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Basic - Preprocessor Directives</title><link>https://HoshikawaRyuukou.github.io/posts/unity-basic-preprocessor-directives/</link><pubDate>Fri, 07 Jul 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-basic-preprocessor-directives/</guid><description>前述 中文稱作 : 前置處理器指示詞
-筆者最近接觸到的遺舊專案中發現裡面大量地使用 條件式編譯
-#if DEBUG Console.WriteLine(&amp;#34;Debug version&amp;#34;); #endif 筆者之前有使用也基本只使用 定義區域 (排版效果)
-#region MyClass definition public class MyClass { static void Main(){...} } #endregion Unity 在處理平台裝置時也蠻常會出現的
-public class PlatformDefines : MonoBehaviour { void Start () { #if UNITY_EDITOR Debug.Log(&amp;#34;Unity Editor&amp;#34;); #endif #if UNITY_IOS Debug.Log(&amp;#34;iOS&amp;#34;); #endif #if UNITY_STANDALONE_OSX Debug.Log(&amp;#34;Standalone OSX&amp;#34;); #endif #if UNITY_STANDALONE_WIN Debug.Log(&amp;#34;Standalone Windows&amp;#34;); #endif } } 問題 那前置處理器指示詞有什麼問題呢? (參考日文那個 Ref 有比較明確的 Case)
-編譯版本至少會是 2^(指示詞的分類數)種，持續的調試和測試變得非常困難。 Unit Test 中難以使用。 編譯檢查不起作用。 當巢狀結構出現時可讀性將大為降低。 上述這些狀況都會導致 延後發現問題的時間 !</description></item><item><title>CSharp - Note</title><link>https://HoshikawaRyuukou.github.io/posts/csharp-note/</link><pubDate>Thu, 05 Jan 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/csharp-note/</guid><description>語法 C# 的一些冷知识（其一） C# 的一些冷知识（其二） 捨棄 - C# 基本概念 C#中 ??、 ?、 ?: 、?.、? 问号 Type C# 4.0：Covariance 與 Contravariance 觀念入門 Data Different ways to return data in C# ValueTuple ValueTuple 是 value type，所以它使用的記憶體空間使用在 program stack，因此使用不會有 garbage collection
-Format 內插字串 Collection C# 回傳內部資料集合的幾種方式，考慮封裝與設計需求 Iterate over two collections of equal length foreach (var (cell, id) in cells.Zip(randomizedIDs, (key, value) =&amp;gt; (Cell: key, ID: value))) { idDict[cell] = id; cell.selectCallback = Select; } Utils Random var random_list = list.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CSharp on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/csharp/</link><description>Recent content in CSharp on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Fri, 07 Jul 2023 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/csharp/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Basic - Preprocessor Directives</title><link>https://HoshikawaRyuukou.github.io/posts/unity---basic---preprocessor-directives/</link><pubDate>Fri, 07 Jul 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---basic---preprocessor-directives/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
+&lt;p>中文稱作 : 前置處理器指示詞&lt;/p>
+&lt;p>筆者最近接觸到的遺舊專案中發現裡面大量地使用 條件式編譯&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-csharp" data-lang="csharp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#if&lt;/span> &lt;span style="color:#111">DEBUG&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">Console&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">WriteLine&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#d88200">&amp;#34;Debug version&amp;#34;&lt;/span>&lt;span style="color:#111">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#endif&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>筆者之前有使用也基本只使用 定義區域 (排版效果)&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-csharp" data-lang="csharp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#region&lt;/span> &lt;span style="color:#111">MyClass&lt;/span> &lt;span style="color:#111">definition&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">public&lt;/span> &lt;span style="color:#00a8c8">class&lt;/span> &lt;span style="color:#75af00">MyClass&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">static&lt;/span> &lt;span style="color:#00a8c8">void&lt;/span> &lt;span style="color:#111">Main&lt;/span>&lt;span style="color:#111">(){...}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#endregion&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Unity 在處理平台裝置時也蠻常會出現的&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-csharp" data-lang="csharp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">public&lt;/span> &lt;span style="color:#00a8c8">class&lt;/span> &lt;span style="color:#75af00">PlatformDefines&lt;/span> &lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">MonoBehaviour&lt;/span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">void&lt;/span> &lt;span style="color:#111">Start&lt;/span> &lt;span style="color:#111">()&lt;/span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">#if&lt;/span> &lt;span style="color:#111">UNITY_EDITOR&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">Debug&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">Log&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#d88200">&amp;#34;Unity Editor&amp;#34;&lt;/span>&lt;span style="color:#111">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">#endif&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">#if&lt;/span> &lt;span style="color:#111">UNITY_IOS&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">Debug&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">Log&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#d88200">&amp;#34;iOS&amp;#34;&lt;/span>&lt;span style="color:#111">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">#endif&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">#if&lt;/span> &lt;span style="color:#111">UNITY_STANDALONE_OSX&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">Debug&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">Log&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#d88200">&amp;#34;Standalone OSX&amp;#34;&lt;/span>&lt;span style="color:#111">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">#endif&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">#if&lt;/span> &lt;span style="color:#111">UNITY_STANDALONE_WIN&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">Debug&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">Log&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#d88200">&amp;#34;Standalone Windows&amp;#34;&lt;/span>&lt;span style="color:#111">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">#endif&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="問題">問題&lt;/h2>
+&lt;p>那前置處理器指示詞有什麼問題呢? (參考日文那個 Ref 有比較明確的 Case)&lt;/p>
+&lt;ul>
+&lt;li>編譯版本至少會是 2^(指示詞的分類數)種，持續的調試和測試變得非常困難。&lt;/li>
+&lt;li>Unit Test 中難以使用。&lt;/li>
+&lt;li>編譯檢查不起作用。&lt;/li>
+&lt;li>當巢狀結構出現時可讀性將大為降低。&lt;/li>
+&lt;/ul>
+&lt;p>上述這些狀況都會導致 &lt;strong>延後發現問題的時間 !&lt;/strong>&lt;/p>
+&lt;h2 id="方案">方案&lt;/h2>
+&lt;p>這個前置處理器指示詞一直是個蠻有爭議的作法，有一派人士是不使用的(通過使用條件分支、策略模式或依賴注入等其他方式，更可以清晰地表達了代碼的邏輯，提高了程式的可維護性)。&lt;/p>
+&lt;p>筆者也傾向不使用(業務邏輯不用，其餘的看狀況)。&lt;/p>
+&lt;h3 id="case-editor">Case. Editor&lt;/h3>
+&lt;p>有時後會有需要客製編輯器時，會這樣跟 MonoBehaviour 寫在一起並用 UNITY_EDITOR 處理。但事實上獨立一個檔案放在 &lt;strong>Editor 資料夾&lt;/strong> 應該會更好。&lt;/p></description></item><item><title>CSharp - Note</title><link>https://HoshikawaRyuukou.github.io/posts/csharp---note/</link><pubDate>Thu, 05 Jan 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/csharp---note/</guid><description>&lt;h2 id="語法">語法&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.bilibili.com/video/BV1RR4y1r7vj">C# 的一些冷知识（其一）&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.bilibili.com/video/BV1EP4y1B7Er">C# 的一些冷知识（其二）&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://learn.microsoft.com/zh-tw/dotnet/csharp/fundamentals/functional/discards">捨棄 - C# 基本概念&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.bilibili.com/read/cv14801567">C#中 ??、 ?、 ?: 、?.、?[ ] 问号&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="type">Type&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.huanlintalk.com/2009/10/c-40covariance-and-contravariance.html">C# 4.0：Covariance 與 Contravariance 觀念入門&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="data">Data&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.linkedin.com/pulse/different-ways-return-data-c-ziv-ben-or">Different ways to return data in C#&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://dotblogs.com.tw/ASPNETShare/2017/02/24/20170223-ValueTuple">ValueTuple&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>ValueTuple 是 value type，所以它使用的記憶體空間使用在 program stack，因此使用不會有 garbage collection&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="format">Format&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://dotblogs.com.tw/lazycodestyle/2016/06/24/005827">內插字串&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="collection">Collection&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://dev.twsiyuan.com/2018/02/encapsulating-list-collection-in-c-sharp.html">C# 回傳內部資料集合的幾種方式，考慮封裝與設計需求&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://codereview.stackexchange.com/questions/48661/iterate-over-two-collections-of-equal-length">Iterate over two collections of equal length&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>foreach &lt;span style="color:#f92672">(&lt;/span>var &lt;span style="color:#f92672">(&lt;/span>cell, id&lt;span style="color:#f92672">)&lt;/span> in cells.Zip&lt;span style="color:#f92672">(&lt;/span>randomizedIDs, &lt;span style="color:#f92672">(&lt;/span>key, value&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">=&lt;/span>&amp;gt; &lt;span style="color:#f92672">(&lt;/span>Cell: key, ID: value&lt;span style="color:#f92672">)))&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> idDict&lt;span style="color:#f92672">[&lt;/span>cell&lt;span style="color:#f92672">]&lt;/span> &lt;span style="color:#f92672">=&lt;/span> id&lt;span style="color:#111">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cell.selectCallback &lt;span style="color:#f92672">=&lt;/span> Select&lt;span style="color:#111">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="utils">Utils&lt;/h2>
+&lt;ul>
+&lt;li>Random&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>var &lt;span style="color:#111">random_list&lt;/span> &lt;span style="color:#f92672">=&lt;/span> list.OrderBy&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#111">i&lt;/span> &lt;span style="color:#f92672">=&lt;/span>&amp;gt; Guid.NewGuid&lt;span style="color:#f92672">())&lt;/span>.ToList&lt;span style="color:#f92672">()&lt;/span>&lt;span style="color:#111">;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="other">Other&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=nH_C3poH3-4">C# 記憶體管理 Value Type 與 Reference Type&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/178307774">工作十余年，还是一直被问 委托和事件 有什么区别？ 真是够了&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

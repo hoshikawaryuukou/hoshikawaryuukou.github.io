@@ -1,13 +1,82 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Git on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/git/</link><description>Recent content in Git on 識之箱庭</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sat, 19 Oct 2024 19:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/git/index.xml" rel="self" type="application/rss+xml"/><item><title>Workflow - Send messages to Telegram via GitHub Actions</title><link>https://HoshikawaRyuukou.github.io/posts/workflow-send-messages-to-telegram-via-github-actions/</link><pubDate>Sat, 19 Oct 2024 19:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow-send-messages-to-telegram-via-github-actions/</guid><description>Quick Chat 以下範例為 :
-在 git push 後透過 Github Actions 將 tag + commit 訊息發送到指定的 Telegram 群組
-設置 Telegram Bot 在 Telegram 中搜尋 @BotFather 並建立一個新的 bot，記下 API token。 將 bot 加入群組並發送訊息給 bot 使用 https://api.telegram.org/bot&amp;lt;YourBotToken&amp;gt;/getUpdates 來獲取群組 ID。 設置 GitHub Secrets GitHub 專案中
-Settings -&amp;gt; Security -&amp;gt; Secrets and variables -&amp;gt; Actions -&amp;gt; Repository secrets
-新增以下 secrets :
-TELEGRAM_BOT_TOKEN : Telegram Bot Token TELEGRAM_CHAT_ID : Telegram 群組 ID 設置 GitHub Variables GitHub 專案中</description></item><item><title>Version control - Git - Rebase</title><link>https://HoshikawaRyuukou.github.io/posts/version-control-git-rebase/</link><pubDate>Sun, 16 Jul 2023 20:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/version-control-git-rebase/</guid><description> 之前筆者一直以為 rebase 是進行類似 剪下貼上 的操作，但實際上是 複製貼上
-情境 合併時不會像 merge 時會有 commit 的節點 想整理 還沒推出去 的 commit 可以使用 避免修改已經推出去的歷史 如何取消操作 使用 reflog 列印出所有「歷史紀錄」找到 rebase 的前一個 commit id，並進行 reset 即可
-git reflog git reset XXXXXXX --hard 此外當進行比較危險操作時 git 會額外紀錄前一個 head 於 ORIG_HEAD，因此也可以直接執行以下，來達到同樣效果
-git reset ORIG_HEAD --hard Ref 另一種合併方式（使用 rebase） git rebase 用法 git rebase -i (drop) git rebase -i (pick) git rebase -i (reword)</description></item><item><title>Version control - Git - Pull Request</title><link>https://HoshikawaRyuukou.github.io/posts/version-control-git-pull-request/</link><pubDate>Fri, 14 Jul 2023 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/version-control-git-pull-request/</guid><description> 有的環境也稱 Merge Request
-情境 開發產品時一般會挑選固定一個分支做為可以上線的正式版本分支(master)，需注意的是在進行多人協同開發時，讓每個人都可以 Commit 到專案正式上線的分支不是個好的做法。
-可以透過 pull request 方式控管權限，由負責管理這個專案的人收到其他開發者的 pull request 並確認無誤後便可進行合併，來確保產品分支處於隨時都是可上線的狀態。
-參與開源專案時，在創建 pull request 之前，建議先在本地分支上運行 git rebase 命令，確保你的更改基於最新的進度以降低審查者的理解難度。
-Ref 與其它開發者的互動 - 使用 Pull Request（PR）</description></item><item><title>Version control - Git - Note</title><link>https://HoshikawaRyuukou.github.io/posts/version-control-git-note/</link><pubDate>Sat, 04 Feb 2023 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/version-control-git-note/</guid><description>GUI Clients Fork Common 两小时Git教程 Git忽略规则.gitignore不生效 配置 Git 处理行结束符 Workflow 如何做好分支管理，保证高效CI/CD？ 【GeekHour教程】分支管理和工作流模型 Git 進階應用 Submodule 與 Subtree，使用它們來拆分專案 Operation git revert 是如何让你丢失代码的？ 十分钟学会常用git撤销操作，全面掌握git的时光机 git hook git hook 是每次執行 git 操作時都會運行的命令或腳本。 如果 git hook 的執行失敗，則 git 操作將中止。</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Git on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/git/</link><description>Recent content in Git on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sat, 19 Oct 2024 19:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/git/index.xml" rel="self" type="application/rss+xml"/><item><title>Workflow - Send messages to Telegram via GitHub Actions</title><link>https://HoshikawaRyuukou.github.io/posts/workflow---send-messages-to-telegram-via-github-actions/</link><pubDate>Sat, 19 Oct 2024 19:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow---send-messages-to-telegram-via-github-actions/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>以下範例為 :&lt;/p>
+&lt;blockquote>
+&lt;p>在 git push 後透過 Github Actions 將 tag + commit 訊息發送到指定的 Telegram 群組&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="設置-telegram-bot">設置 Telegram Bot&lt;/h2>
+&lt;ul>
+&lt;li>在 Telegram 中搜尋 @BotFather 並建立一個新的 bot，記下 API token。&lt;/li>
+&lt;li>將 bot 加入群組並發送訊息給 bot&lt;/li>
+&lt;li>使用 &lt;code>https://api.telegram.org/bot&amp;lt;YourBotToken&amp;gt;/getUpdates&lt;/code> 來獲取群組 ID。&lt;/li>
+&lt;/ul>
+&lt;h2 id="設置-github-secrets">設置 GitHub Secrets&lt;/h2>
+&lt;p>GitHub 專案中&lt;/p>
+&lt;blockquote>
+&lt;p>Settings -&amp;gt; Security -&amp;gt; Secrets and variables -&amp;gt; Actions -&amp;gt; Repository secrets&lt;/p>
+&lt;/blockquote>
+&lt;p>新增以下 secrets :&lt;/p>
+&lt;ul>
+&lt;li>TELEGRAM_BOT_TOKEN : Telegram Bot Token&lt;/li>
+&lt;li>TELEGRAM_CHAT_ID : Telegram 群組 ID&lt;/li>
+&lt;/ul>
+&lt;h2 id="設置-github-variables">設置 GitHub Variables&lt;/h2>
+&lt;p>GitHub 專案中&lt;/p>
+&lt;blockquote>
+&lt;p>Settings -&amp;gt; Security -&amp;gt; Secrets and variables -&amp;gt; Actions -&amp;gt; Repository variables&lt;/p></description></item><item><title>Version control - Git - Rebase</title><link>https://HoshikawaRyuukou.github.io/posts/version-control---git---rebase/</link><pubDate>Sun, 16 Jul 2023 20:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/version-control---git---rebase/</guid><description>&lt;blockquote>
+&lt;p>之前筆者一直以為 rebase 是進行類似 &lt;strong>剪下貼上&lt;/strong> 的操作，但實際上是 &lt;strong>複製貼上&lt;/strong>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="情境">情境&lt;/h2>
+&lt;ul>
+&lt;li>合併時不會像 merge 時會有 commit 的節點&lt;/li>
+&lt;li>想整理 &lt;strong>還沒推出去&lt;/strong> 的 commit 可以使用&lt;/li>
+&lt;li>&lt;strong>避免修改已經推出去的歷史&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h3 id="如何取消操作">如何取消操作&lt;/h3>
+&lt;p>使用 reflog 列印出所有「歷史紀錄」找到 rebase 的前一個 commit id，並進行 reset 即可&lt;/p>
+&lt;pre tabindex="0">&lt;code>git reflog
+git reset XXXXXXX --hard
+&lt;/code>&lt;/pre>&lt;p>此外當進行比較危險操作時 git 會額外紀錄前一個 head 於 ORIG_HEAD，因此也可以直接執行以下，來達到同樣效果&lt;/p>
+&lt;pre tabindex="0">&lt;code>git reset ORIG_HEAD --hard
+&lt;/code>&lt;/pre>&lt;h2 id="ref">Ref&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=HeF7dwVyzow">另一種合併方式（使用 rebase）&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jessie75919.medium.com/git-rebase-%E7%94%A8%E6%B3%95-3e1ef046e357">git rebase 用法&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jessie75919.medium.com/%E4%BA%BA%E7%94%9F%E5%A6%82%E6%9E%9C%E6%9C%89-git-1-git-rebase-i-drop-94cc1c018465">git rebase -i (drop)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jessie75919.medium.com/%E4%BA%BA%E7%94%9F%E5%A6%82%E6%9E%9C%E6%9C%89-git-2-git-rebase-i-pick-c623301ff2db">git rebase -i (pick)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jessie75919.medium.com/%E4%BA%BA%E7%94%9F%E5%A6%82%E6%9E%9C%E6%9C%89-git-3-git-rebase-i-reword-370edc23f336">git rebase -i (reword)&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Version control - Git - Pull Request</title><link>https://HoshikawaRyuukou.github.io/posts/version-control---git---pull-request/</link><pubDate>Fri, 14 Jul 2023 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/version-control---git---pull-request/</guid><description>&lt;blockquote>
+&lt;p>有的環境也稱 Merge Request&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="情境">情境&lt;/h2>
+&lt;p>開發產品時一般會挑選固定一個分支做為可以上線的正式版本分支(master)，需注意的是在進行多人協同開發時，讓每個人都可以 Commit 到專案正式上線的分支不是個好的做法。&lt;/p>
+&lt;p>可以透過 pull request 方式控管權限，由負責管理這個專案的人收到其他開發者的 pull request 並確認無誤後便可進行合併，來確保產品分支處於隨時都是可上線的狀態。&lt;/p>
+&lt;p>參與開源專案時，在創建 pull request 之前，建議先在本地分支上運行 git rebase 命令，確保你的更改基於最新的進度以降低審查者的理解難度。&lt;/p>
+&lt;h2 id="ref">Ref&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://gitbook.tw/chapters/github/pull-request">與其它開發者的互動 - 使用 Pull Request（PR）&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Version control - Git - Note</title><link>https://HoshikawaRyuukou.github.io/posts/version-control---git---note/</link><pubDate>Sat, 04 Feb 2023 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/version-control---git---note/</guid><description>&lt;h2 id="gui-clients">GUI Clients&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://git-fork.com/">Fork&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="common">Common&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/playlist?list=PLDBEQHWAyt9FbN7TANIXlUvtRhdoBCEQ5">两小时Git教程&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://developer.aliyun.com/article/634481">Git忽略规则.gitignore不生效&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.github.com/zh/get-started/getting-started-with-git/configuring-git-to-handle-line-endings#global-settings-for-line-endings">配置 Git 处理行结束符&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="workflow">Workflow&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/556418580">如何做好分支管理，保证高效CI/CD？&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=vDs3K6Szstg">【GeekHour教程】分支管理和工作流模型&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.puckwang.com/posts/2020/git-submodule-vs-subtree/">Git 進階應用 Submodule 與 Subtree，使用它們來拆分專案&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="operation">Operation&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.bilibili.com/video/BV1S4421f7MS">git revert 是如何让你丢失代码的？&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=ol7CMoJuAvI">十分钟学会常用git撤销操作，全面掌握git的时光机&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="git-hook">git hook&lt;/h2>
+&lt;ul>
+&lt;li>git hook 是每次執行 git 操作時都會運行的命令或腳本。&lt;/li>
+&lt;li>如果 git hook 的執行失敗，則 git 操作將中止。&lt;/li>
+&lt;/ul></description></item></channel></rss>

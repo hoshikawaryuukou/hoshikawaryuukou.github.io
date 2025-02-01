@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>NuGet on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/nuget/</link><description>Recent content in NuGet on 識之箱庭</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sun, 12 Jan 2025 21:12:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/nuget/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Package Manager - NuGetForUnity</title><link>https://HoshikawaRyuukou.github.io/posts/unity-package-manager-nugetforunity/</link><pubDate>Sun, 12 Jan 2025 21:12:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-package-manager-nugetforunity/</guid><description>Guide GlitchEnzo/NuGetForUnity Config 將資源調整放置 Packages 而不是 Assets
-NuGet &amp;gt; Preferences &amp;gt; Placement &amp;gt; In Packages Folder
-調整 .gitignore
-/Packages/nuget-packages/InstalledPackages*</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>NuGet on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/nuget/</link><description>Recent content in NuGet on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sun, 12 Jan 2025 21:12:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/nuget/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Package Manager - NuGetForUnity</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---nugetforunity/</link><pubDate>Sun, 12 Jan 2025 21:12:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---nugetforunity/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/GlitchEnzo/NuGetForUnity">GlitchEnzo/NuGetForUnity&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="config">Config&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>將資源調整放置 Packages 而不是 Assets&lt;/p>
+&lt;blockquote>
+&lt;p>NuGet &amp;gt; Preferences &amp;gt; Placement &amp;gt; In Packages Folder&lt;/p>
+&lt;/blockquote>
+&lt;/li>
+&lt;li>
+&lt;p>調整 .gitignore&lt;/p>
+&lt;pre tabindex="0">&lt;code>/Packages/nuget-packages/InstalledPackages*
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;/ol></description></item></channel></rss>

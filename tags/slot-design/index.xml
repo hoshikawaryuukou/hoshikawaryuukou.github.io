@@ -1,2 +1,90 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Slot Design on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/slot-design/</link><description>Recent content in Slot Design on 識之箱庭</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Mon, 09 Sep 2024 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/slot-design/index.xml" rel="self" type="application/rss+xml"/><item><title>Slot Design - Math Model</title><link>https://HoshikawaRyuukou.github.io/posts/slot-design-math-model/</link><pubDate>Mon, 09 Sep 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/slot-design-math-model/</guid><description>使用馬可夫鏈來控制波動性 定義狀態 每個狀態代表玩家一次 spin 後的結果。根據遊戲中的贏獎情況將這些狀態定義為:
-No Win (無贏) Small Win (小獎) Medium Win (中獎) Big Win (大獎) Free Game (免費遊戲) 設計轉換矩陣 Current State \ Next State No Win Small Win Medium Win Big Win Free Game No Win 0.70 0.20 0.05 0.03 0.02 Small Win 0.50 0.30 0.10 0.05 0.05 Medium Win 0.60 0.20 0.10 0.05 0.05 Big Win 0.80 0.10 0.05 0.03 0.02 Free Game 0.50 0.25 0.10 0.10 0.</description></item><item><title>Slot Design - Note</title><link>https://HoshikawaRyuukou.github.io/posts/slot-design-note/</link><pubDate>Wed, 22 May 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/slot-design-note/</guid><description>Guide SLOT設計王文章導讀 - SLOT設計王 Slots设计攻略导读 Know Your Slots 游戏中的伪随机 随机游走的赌徒是如何赔光的 How Slot Machines Work: Virtual Reel Mapping 抽卡体验设计：关于盲盒、抽卡、开箱的一切 Framework Publications | Slot Designer hankpan-dev/slotkit sta-ger/pokie Sample Casino Roulette Game Spotlight Pixel Farm by Twist Gaming</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Slot Design on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/slot-design/</link><description>Recent content in Slot Design on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Mon, 09 Sep 2024 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/slot-design/index.xml" rel="self" type="application/rss+xml"/><item><title>Slot Design - Math Model</title><link>https://HoshikawaRyuukou.github.io/posts/slot-design---math-model/</link><pubDate>Mon, 09 Sep 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/slot-design---math-model/</guid><description>&lt;h2 id="使用馬可夫鏈來控制波動性">使用馬可夫鏈來控制波動性&lt;/h2>
+&lt;h3 id="定義狀態">定義狀態&lt;/h3>
+&lt;p>每個狀態代表玩家一次 spin 後的結果。根據遊戲中的贏獎情況將這些狀態定義為:&lt;/p>
+&lt;ul>
+&lt;li>No Win (無贏)&lt;/li>
+&lt;li>Small Win (小獎)&lt;/li>
+&lt;li>Medium Win (中獎)&lt;/li>
+&lt;li>Big Win (大獎)&lt;/li>
+&lt;li>Free Game (免費遊戲)&lt;/li>
+&lt;/ul>
+&lt;h3 id="設計轉換矩陣">設計轉換矩陣&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Current State \ Next State&lt;/th>
+ &lt;th>No Win&lt;/th>
+ &lt;th>Small Win&lt;/th>
+ &lt;th>Medium Win&lt;/th>
+ &lt;th>Big Win&lt;/th>
+ &lt;th>Free Game&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>No Win&lt;/strong>&lt;/td>
+ &lt;td>0.70&lt;/td>
+ &lt;td>0.20&lt;/td>
+ &lt;td>0.05&lt;/td>
+ &lt;td>0.03&lt;/td>
+ &lt;td>0.02&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Small Win&lt;/strong>&lt;/td>
+ &lt;td>0.50&lt;/td>
+ &lt;td>0.30&lt;/td>
+ &lt;td>0.10&lt;/td>
+ &lt;td>0.05&lt;/td>
+ &lt;td>0.05&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Medium Win&lt;/strong>&lt;/td>
+ &lt;td>0.60&lt;/td>
+ &lt;td>0.20&lt;/td>
+ &lt;td>0.10&lt;/td>
+ &lt;td>0.05&lt;/td>
+ &lt;td>0.05&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Big Win&lt;/strong>&lt;/td>
+ &lt;td>0.80&lt;/td>
+ &lt;td>0.10&lt;/td>
+ &lt;td>0.05&lt;/td>
+ &lt;td>0.03&lt;/td>
+ &lt;td>0.02&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Free Game&lt;/strong>&lt;/td>
+ &lt;td>0.50&lt;/td>
+ &lt;td>0.25&lt;/td>
+ &lt;td>0.10&lt;/td>
+ &lt;td>0.10&lt;/td>
+ &lt;td>0.05&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="調整波動性">調整波動性&lt;/h3>
+&lt;p>要調整遊戲的波動性，可以對轉換矩陣進行修改：&lt;/p></description></item><item><title>Slot Design - Note</title><link>https://HoshikawaRyuukou.github.io/posts/slot-design---note/</link><pubDate>Wed, 22 May 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/slot-design---note/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://ezslotdesign.com/introducing/">SLOT設計王文章導讀 - SLOT設計王&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/632180046">Slots设计攻略导读&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.knowyourslots.com/">Know Your Slots&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.bilibili.com/video/BV15i42127Q4">游戏中的伪随机&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/139400935">随机游走的赌徒是如何赔光的&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=Ur53m9zQ5sY">How Slot Machines Work: Virtual Reel Mapping&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/695913395">抽卡体验设计：关于盲盒、抽卡、开箱的一切&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="framework">Framework&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://slotdesigner.com/publications/">Publications | Slot Designer&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/hankpan-dev/slotkit">hankpan-dev/slotkit&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/sta-ger/pokie">sta-ger/pokie&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="sample">Sample&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/matiasvallejosdev/casino-roulette-game">Casino Roulette Game&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="spotlight">Spotlight&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=-pmN4vJxpIs">Pixel Farm by Twist Gaming&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

@@ -1,17 +1,300 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Electron on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/electron/</link><description>Recent content in Electron on 識之箱庭</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Fri, 11 Oct 2024 09:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/electron/index.xml" rel="self" type="application/rss+xml"/><item><title>Electron - Note</title><link>https://HoshikawaRyuukou.github.io/posts/electron-note/</link><pubDate>Fri, 11 Oct 2024 09:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/electron-note/</guid><description>Quick Chat Electron 是一個使用 JavaScript、HTML 和 CSS + Native Api 做相容多個系統（Windows、Linux、Mac）的桌面應用程式構建框架 —— 不需要本地開發經驗。
-Guide Build cross-platform desktop apps with JavaScript, HTML, and CSS | Electron electron-builder Electron学习指引 awesome-electron awesome-electron-alternatives Suggestion 🤓 強烈建議第一次接觸 Electron 的開發者實際走一次官方 quick-start，會對 Electron 的本質有更純粹的認識。
-electron/electron-quick-start 再逐步的嘗試以下機制 :
-用 BrowserWindow 再額外創建一個窗口。 用 ipcMain/ipcRenderer 來達到進程間交互。 Notice ⚠️ Electron 中的 ES 模塊 (ESM) 並未 100% 支援</description></item><item><title>Workflow - Vite + Vue3 + Electron</title><link>https://HoshikawaRyuukou.github.io/posts/workflow-vite-+-vue3-+-electron/</link><pubDate>Sat, 28 Sep 2024 20:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow-vite-+-vue3-+-electron/</guid><description>Step 1: 準備一個 Vite + Vue3 專案 使用 vite 指令創建空專案
-pnpm create vite vve cd vve pnpm install pnpm dev Step 2: 配置 Electron 添加依賴 pnpm add -D electron pnpm add -D electron-builder pnpm add -D vite-plugin-electron pnpm add -D vite-plugin-electron-renderer 新增 ./electron/electron-env.d.ts declare namespace NodeJS { interface ProcessEnv { /** * The built directory structure * * ```tree * ├─┬─┬ dist * │ │ └── index.html * │ │ * │ ├─┬ dist-electron * │ │ ├── main.</description></item><item><title>Electron - Design Context</title><link>https://HoshikawaRyuukou.github.io/posts/electron-design-context/</link><pubDate>Fri, 27 Sep 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/electron-design-context/</guid><description>Context - 將現有的前端專案包裝成桌面端應用 情境： 已有一個完整的前端專案，但由於一些特定需求（例如離線操作的能力），決定將其包裝成桌面端應用。本質上，這個應用仍是一個網頁應用，因此基本上不會有額外的桌面端互動需求，也不需要特別增強和操作系統的整合。
-目的： 主要為了滿足離線存取與更佳的用戶體驗，但不需要深度的桌面端特性。
-技術重點： 專注於如何將現有的 Web 應用以 Electron 進行包裝，保持與原生前端相同的開發流程，並且避免過多改動。
-限制： 盡量維持輕量化，減少與桌面平台的耦合，僅利用 Electron 提供的框架和包裝功能。
-Context - 基於前端技術開發桌面端應用 情境： 目標是開發桌面端應用，只是基於前端技術來實現。這意味著應用程式將包含一些桌面應用所特有的特性，例如系統通知、檔案系統操作、離線儲存等。
-目的： 充分利用 Electron 提供的 API 來增強桌面應用的功能，使其可以提供超越單純網頁應用的體驗。
-技術重點： 基於前端技術棧（如 Vue、React 等），但需要使用 Electron 來實現與桌面系統的交互，包括檔案存取、系統托盤等。
-設計考量： 需要兼顧應用的桌面特性與前端開發的靈活性，保證兩者間的有效融合。
-Context - Electron 與 前端技術 僅是實作細節 情境： 設計理念以業務需求為核心，Electron 以及前端技術只是達成目標的手段和細節。
-業務為中心的設計： 設計時不局限於技術選型，而是先分析業務需求，再根據需求選擇最佳的技術方案。最終選擇的技術（Electron、前端技術）只是為了實現業務需求的手段。
-基於 Clean Architecture： 使用乾淨架構來分離業務邏輯與實作細節，確保應用程式具有良好的可擴展性與可維護性。Electron 與前端技術被隔離在具體的實作層，任何一方都可以被替換而不影響業務邏輯。
-技術重點： 強調框架的選擇與使用不應該影響到核心業務邏輯，業務邏輯應獨立於 UI、技術框架的變更，專注於系統的彈性與維護性。</description></item><item><title>Electron - Basics</title><link>https://HoshikawaRyuukou.github.io/posts/electron-basics/</link><pubDate>Mon, 23 Sep 2024 21:19:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/electron-basics/</guid><description>Process Electron 的進程機制主要由兩個部分組成：主進程(Main Process) 和 渲染進程(Renderer Process)。
-主進程 (Main Process) 每個 Electron 應用僅有一個主進程。 主進程負責創建應用的主窗口，並管理應用的生命周期。 主進程的權限非常高，它可以調用 Node.js 提供的所有 API，也可以與操作系統進行交互(例如：檔案系統操作、創建子進程、打開原生對話框) 。 主進程負責創建和管理應用中的所有窗口(BrowserWindow) ，並能夠與渲染進程進行通信。 渲染進程 (Renderer Process) 每個應用窗口都是一個獨立的渲染進程，負責渲染網頁內容(HTML、CSS、JavaScript) 。 渲染進程本質上是運行在 Chromium 引擎中的網頁環境，它擁有與一般瀏覽器類似的行為和限制。 渲染進程的權限較低，為了安全起見，它無法直接訪問 Node.js 的全部 API，但可以通過 Electron 的 contextBridge 和 ipcRenderer 與主進程通信。 渲染進程可以使用 Electron 提供的 preload 腳本，將一些 Node.js 模組或功能暴露給網頁。 進程間通信 (Inter-Process Communication, IPC) 主進程和渲染進程之間使用 IPC 進行數據傳遞。 渲染進程使用 ipcRenderer 發送消息給主進程，而主進程使用 ipcMain 接收和回應這些消息。反之，主進程也可以向渲染進程發送消息。 Electron 提供的 contextBridge 和 preload 腳本讓渲染進程能安全地與主進程進行通信，避免直接暴露過多的 Node.js API，從而提高應用的安全性。 Module app 主進程模組，用來控制整個應用的生命周期。它包含了一系列的事件和方法，用於管理應用的初始化、運行、退出等流程。 BrowserWindow 主進程模組，用來創建和管理應用窗口的模組。 每個 BrowserWindow 實例代表一個獨立的瀏覽器窗口，並且運行在自己的渲染進程中。 ipcMain 主進程模組，用來處理進程間通信的模組。 ipcRenderer 渲染進程模組，用來處理進程間通信的模組， 不要直接在網頁中使用 ipcRenderer，而是通過 preload 腳本中的 contextBridge 暴露安全的 API 給渲染進程。</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Electron on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/electron/</link><description>Recent content in Electron on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Fri, 11 Oct 2024 09:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/electron/index.xml" rel="self" type="application/rss+xml"/><item><title>Electron - Note</title><link>https://HoshikawaRyuukou.github.io/posts/electron---note/</link><pubDate>Fri, 11 Oct 2024 09:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/electron---note/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>Electron 是一個使用 JavaScript、HTML 和 CSS + Native Api 做相容多個系統（Windows、Linux、Mac）的桌面應用程式&lt;strong>構建&lt;/strong>框架 —— 不需要本地開發經驗。&lt;/p>
+&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.electronjs.org/">Build cross-platform desktop apps with JavaScript, HTML, and CSS | Electron&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.electron.build/">electron-builder&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://muyacode.github.io/FrontEndLearnNotes/Document/%E8%B7%A8%E5%B9%B3%E5%8F%B0%E6%A1%8C%E9%9D%A2%E7%AB%AF%E5%BC%80%E5%8F%91/Electron/Guide">Electron学习指引&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/sindresorhus/awesome-electron">awesome-electron&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/sudhakar3697/awesome-electron-alternatives">awesome-electron-alternatives&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="suggestion">Suggestion&lt;/h2>
+&lt;p>🤓 強烈建議第一次接觸 Electron 的開發者實際走一次官方 quick-start，會對 Electron 的本質有更純粹的認識。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/electron/electron-quick-start">electron/electron-quick-start&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>再逐步的嘗試以下機制 :&lt;/p>
+&lt;ul>
+&lt;li>用 BrowserWindow 再額外創建一個窗口。&lt;/li>
+&lt;li>用 ipcMain/ipcRenderer 來達到進程間交互。&lt;/li>
+&lt;/ul>
+&lt;h2 id="notice">Notice&lt;/h2>
+&lt;ul>
+&lt;li>⚠️ &lt;a href="https://www.electronjs.org/zh/docs/latest/tutorial/esm">Electron 中的 ES 模塊 (ESM) 並未 100% 支援&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Workflow - Vite + Vue3 + Electron</title><link>https://HoshikawaRyuukou.github.io/posts/workflow---vite-+-vue3-+-electron/</link><pubDate>Sat, 28 Sep 2024 20:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow---vite-+-vue3-+-electron/</guid><description>&lt;h2 id="step-1-準備一個-vite--vue3-專案">Step 1: 準備一個 Vite + Vue3 專案&lt;/h2>
+&lt;p>使用 vite 指令創建空專案&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>pnpm create vite vve
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">cd&lt;/span> vve
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pnpm install
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pnpm dev
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="step-2-配置-electron">Step 2: 配置 Electron&lt;/h2>
+&lt;h3 id="添加依賴">添加依賴&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>pnpm add -D electron 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pnpm add -D electron-builder 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pnpm add -D vite-plugin-electron 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pnpm add -D vite-plugin-electron-renderer
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="新增-electronelectron-envdts">新增 ./electron/electron-env.d.ts&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-ts" data-lang="ts">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">declare&lt;/span> &lt;span style="color:#00a8c8">namespace&lt;/span> &lt;span style="color:#75af00">NodeJS&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">interface&lt;/span> &lt;span style="color:#75af00">ProcessEnv&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"> * The built directory structure
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"> *
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"> * ```tree
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"> * ├─┬─┬ dist
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"> * │ │ └── index.html
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"> * │ │
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"> * │ ├─┬ dist-electron
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"> * │ │ ├── main.js
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"> * │ │ └── preload.js
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"> * │
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"> * ```
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"> */&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">APP_ROOT&lt;/span>: &lt;span style="color:#00a8c8">string&lt;/span>&lt;span style="color:#111">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">VITE_PUBLIC&lt;/span>: &lt;span style="color:#00a8c8">string&lt;/span>&lt;span style="color:#111">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// Used in Renderer process, expose in `preload.ts`
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#00a8c8">interface&lt;/span> &lt;span style="color:#75af00">Window&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">ipcRenderer&lt;/span>: &lt;span style="color:#00a8c8">import&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#d88200">&amp;#39;electron&amp;#39;&lt;/span>&lt;span style="color:#111">).&lt;/span>&lt;span style="color:#75af00">IpcRenderer&lt;/span>&lt;span style="color:#111">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="新增-electronmaints">新增 ./electron/main.ts&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-ts" data-lang="ts">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">import&lt;/span> &lt;span style="color:#111">{&lt;/span> &lt;span style="color:#75af00">app&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#75af00">BrowserWindow&lt;/span> &lt;span style="color:#111">}&lt;/span> &lt;span style="color:#00a8c8">from&lt;/span> &lt;span style="color:#d88200">&amp;#34;electron&amp;#34;&lt;/span>&lt;span style="color:#111">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">import&lt;/span> &lt;span style="color:#111">{&lt;/span> &lt;span style="color:#75af00">fileURLToPath&lt;/span> &lt;span style="color:#111">}&lt;/span> &lt;span style="color:#00a8c8">from&lt;/span> &lt;span style="color:#d88200">&amp;#34;node:url&amp;#34;&lt;/span>&lt;span style="color:#111">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">import&lt;/span> &lt;span style="color:#75af00">path&lt;/span> &lt;span style="color:#00a8c8">from&lt;/span> &lt;span style="color:#d88200">&amp;#34;node:path&amp;#34;&lt;/span>&lt;span style="color:#111">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">const&lt;/span> &lt;span style="color:#75af00">__dirname&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#75af00">path&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">dirname&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#75af00">fileURLToPath&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#00a8c8">import&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">meta&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">url&lt;/span>&lt;span style="color:#111">));&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// The built directory structure
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">//
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// ├─┬─┬ dist
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// │ │ └── index.html
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// │ │
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// │ ├─┬ dist-electron
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// │ │ ├── main.js
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// │ │ └── preload.mjs
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// │
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#75af00">process&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">env&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">APP_ROOT&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#75af00">path&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">join&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#75af00">__dirname&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#d88200">&amp;#34;..&amp;#34;&lt;/span>&lt;span style="color:#111">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 🚧 Use [&amp;#39;ENV_NAME&amp;#39;] avoid vite:define plugin - Vite@2.x
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#00a8c8">export&lt;/span> &lt;span style="color:#00a8c8">const&lt;/span> &lt;span style="color:#75af00">VITE_DEV_SERVER_URL&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#75af00">process&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">env&lt;/span>&lt;span style="color:#111">[&lt;/span>&lt;span style="color:#d88200">&amp;#34;VITE_DEV_SERVER_URL&amp;#34;&lt;/span>&lt;span style="color:#111">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">export&lt;/span> &lt;span style="color:#00a8c8">const&lt;/span> &lt;span style="color:#75af00">MAIN_DIST&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#75af00">path&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">join&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#75af00">process&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">env&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">APP_ROOT&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#d88200">&amp;#34;dist-electron&amp;#34;&lt;/span>&lt;span style="color:#111">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">export&lt;/span> &lt;span style="color:#00a8c8">const&lt;/span> &lt;span style="color:#75af00">RENDERER_DIST&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#75af00">path&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">join&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#75af00">process&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">env&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">APP_ROOT&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#d88200">&amp;#34;dist&amp;#34;&lt;/span>&lt;span style="color:#111">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75af00">process&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">env&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">VITE_PUBLIC&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#75af00">VITE_DEV_SERVER_URL&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">?&lt;/span> &lt;span style="color:#75af00">path&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">join&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#75af00">process&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">env&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">APP_ROOT&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#d88200">&amp;#34;public&amp;#34;&lt;/span>&lt;span style="color:#111">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#75af00">RENDERER_DIST&lt;/span>&lt;span style="color:#111">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">let&lt;/span> &lt;span style="color:#75af00">win&lt;/span>: &lt;span style="color:#00a8c8">BrowserWindow&lt;/span> &lt;span style="color:#f92672">|&lt;/span> &lt;span style="color:#00a8c8">null&lt;/span>&lt;span style="color:#111">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">function&lt;/span> &lt;span style="color:#75af00">createWindow() {&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">win&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#00a8c8">new&lt;/span> &lt;span style="color:#75af00">BrowserWindow&lt;/span>&lt;span style="color:#111">({&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">icon&lt;/span>: &lt;span style="color:#00a8c8">path.join&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#75af00">process&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">env&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">VITE_PUBLIC&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#d88200">&amp;#34;electron-vite.svg&amp;#34;&lt;/span>&lt;span style="color:#111">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">webPreferences&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">preload&lt;/span>: &lt;span style="color:#00a8c8">path.join&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#75af00">__dirname&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#d88200">&amp;#34;preload.mjs&amp;#34;&lt;/span>&lt;span style="color:#111">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// Test active push message to Renderer-process.
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#75af00">win&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">webContents&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">on&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#d88200">&amp;#34;did-finish-load&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#111">()&lt;/span> &lt;span style="color:#f92672">=&amp;gt;&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">win&lt;/span>&lt;span style="color:#f92672">?&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">webContents&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">send&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#d88200">&amp;#34;main-process-message&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#00a8c8">new&lt;/span> &lt;span style="color:#111">Date&lt;/span>&lt;span style="color:#111">().&lt;/span>&lt;span style="color:#75af00">toLocaleString&lt;/span>&lt;span style="color:#111">());&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">if&lt;/span> &lt;span style="color:#111">(&lt;/span>&lt;span style="color:#75af00">VITE_DEV_SERVER_URL&lt;/span>&lt;span style="color:#111">)&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">win&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">loadURL&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#75af00">VITE_DEV_SERVER_URL&lt;/span>&lt;span style="color:#111">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span> &lt;span style="color:#00a8c8">else&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// win.loadFile(&amp;#39;dist/index.html&amp;#39;)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#75af00">win&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">loadFile&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#75af00">path&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">join&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#75af00">RENDERER_DIST&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#d88200">&amp;#34;index.html&amp;#34;&lt;/span>&lt;span style="color:#111">));&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// Quit when all windows are closed, except on macOS. There, it&amp;#39;s common
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// for applications and their menu bar to stay active until the user quits
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// explicitly with Cmd + Q.
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#75af00">app&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">on&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#d88200">&amp;#34;window-all-closed&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#111">()&lt;/span> &lt;span style="color:#f92672">=&amp;gt;&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">if&lt;/span> &lt;span style="color:#111">(&lt;/span>&lt;span style="color:#75af00">process&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">platform&lt;/span> &lt;span style="color:#f92672">!==&lt;/span> &lt;span style="color:#d88200">&amp;#34;darwin&amp;#34;&lt;/span>&lt;span style="color:#111">)&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">app&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">quit&lt;/span>&lt;span style="color:#111">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">win&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#00a8c8">null&lt;/span>&lt;span style="color:#111">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75af00">app&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">on&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#d88200">&amp;#34;activate&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#111">()&lt;/span> &lt;span style="color:#f92672">=&amp;gt;&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// On OS X it&amp;#39;s common to re-create a window in the app when the
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#75715e">// dock icon is clicked and there are no other windows open.
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#00a8c8">if&lt;/span> &lt;span style="color:#111">(&lt;/span>&lt;span style="color:#75af00">BrowserWindow&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">getAllWindows&lt;/span>&lt;span style="color:#111">().&lt;/span>&lt;span style="color:#75af00">length&lt;/span> &lt;span style="color:#f92672">===&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>&lt;span style="color:#111">)&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">createWindow&lt;/span>&lt;span style="color:#111">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75af00">app&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">whenReady&lt;/span>&lt;span style="color:#111">().&lt;/span>&lt;span style="color:#75af00">then&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#75af00">createWindow&lt;/span>&lt;span style="color:#111">);&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="新增-electronpreloadts">新增 ./electron/preload.ts&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-ts" data-lang="ts">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">import&lt;/span> &lt;span style="color:#111">{&lt;/span> &lt;span style="color:#75af00">ipcRenderer&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#75af00">contextBridge&lt;/span> &lt;span style="color:#111">}&lt;/span> &lt;span style="color:#00a8c8">from&lt;/span> &lt;span style="color:#d88200">&amp;#39;electron&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// --------- Expose some API to the Renderer process ---------
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#75af00">contextBridge&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">exposeInMainWorld&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#d88200">&amp;#39;ipcRenderer&amp;#39;&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">on&lt;/span>&lt;span style="color:#111">(...&lt;/span>&lt;span style="color:#75af00">args&lt;/span>: &lt;span style="color:#00a8c8">Parameters&lt;/span>&lt;span style="color:#111">&amp;lt;&lt;/span>&lt;span style="color:#f92672">typeof&lt;/span> &lt;span style="color:#75af00">ipcRenderer.on&lt;/span>&lt;span style="color:#111">&amp;gt;)&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">const&lt;/span> &lt;span style="color:#111">[&lt;/span>&lt;span style="color:#75af00">channel&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#75af00">listener&lt;/span>&lt;span style="color:#111">]&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#75af00">args&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">return&lt;/span> &lt;span style="color:#75af00">ipcRenderer&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">on&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#75af00">channel&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#111">(&lt;/span>&lt;span style="color:#75af00">event&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#111">...&lt;/span>&lt;span style="color:#75af00">args&lt;/span>&lt;span style="color:#111">)&lt;/span> &lt;span style="color:#f92672">=&amp;gt;&lt;/span> &lt;span style="color:#75af00">listener&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#75af00">event&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#111">...&lt;/span>&lt;span style="color:#75af00">args&lt;/span>&lt;span style="color:#111">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">off&lt;/span>&lt;span style="color:#111">(...&lt;/span>&lt;span style="color:#75af00">args&lt;/span>: &lt;span style="color:#00a8c8">Parameters&lt;/span>&lt;span style="color:#111">&amp;lt;&lt;/span>&lt;span style="color:#f92672">typeof&lt;/span> &lt;span style="color:#75af00">ipcRenderer.off&lt;/span>&lt;span style="color:#111">&amp;gt;)&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">const&lt;/span> &lt;span style="color:#111">[&lt;/span>&lt;span style="color:#75af00">channel&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#111">...&lt;/span>&lt;span style="color:#75af00">omit&lt;/span>&lt;span style="color:#111">]&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#75af00">args&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">return&lt;/span> &lt;span style="color:#75af00">ipcRenderer&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">off&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#75af00">channel&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#111">...&lt;/span>&lt;span style="color:#75af00">omit&lt;/span>&lt;span style="color:#111">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">send&lt;/span>&lt;span style="color:#111">(...&lt;/span>&lt;span style="color:#75af00">args&lt;/span>: &lt;span style="color:#00a8c8">Parameters&lt;/span>&lt;span style="color:#111">&amp;lt;&lt;/span>&lt;span style="color:#f92672">typeof&lt;/span> &lt;span style="color:#75af00">ipcRenderer.send&lt;/span>&lt;span style="color:#111">&amp;gt;)&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">const&lt;/span> &lt;span style="color:#111">[&lt;/span>&lt;span style="color:#75af00">channel&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#111">...&lt;/span>&lt;span style="color:#75af00">omit&lt;/span>&lt;span style="color:#111">]&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#75af00">args&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">return&lt;/span> &lt;span style="color:#75af00">ipcRenderer&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">send&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#75af00">channel&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#111">...&lt;/span>&lt;span style="color:#75af00">omit&lt;/span>&lt;span style="color:#111">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">invoke&lt;/span>&lt;span style="color:#111">(...&lt;/span>&lt;span style="color:#75af00">args&lt;/span>: &lt;span style="color:#00a8c8">Parameters&lt;/span>&lt;span style="color:#111">&amp;lt;&lt;/span>&lt;span style="color:#f92672">typeof&lt;/span> &lt;span style="color:#75af00">ipcRenderer.invoke&lt;/span>&lt;span style="color:#111">&amp;gt;)&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">const&lt;/span> &lt;span style="color:#111">[&lt;/span>&lt;span style="color:#75af00">channel&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#111">...&lt;/span>&lt;span style="color:#75af00">omit&lt;/span>&lt;span style="color:#111">]&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#75af00">args&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">return&lt;/span> &lt;span style="color:#75af00">ipcRenderer&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">invoke&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#75af00">channel&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#111">...&lt;/span>&lt;span style="color:#75af00">omit&lt;/span>&lt;span style="color:#111">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// You can expose other APTs you need here.
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#75715e">// ...
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#111">})&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="修改-tsconfigappjson">修改 tsconfig.app.json&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;include&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">[&lt;/span>&lt;span style="color:#d88200">&amp;#34;src/**/*.ts&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#d88200">&amp;#34;src/**/*.tsx&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#d88200">&amp;#34;src/**/*.vue&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#d88200">&amp;#34;electron/**/*.ts&amp;#34;&lt;/span>&lt;span style="color:#111">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="修改-packagejson">修改 package.json&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;main&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;dist-electron/main.js&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;scripts&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;dev&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;vite&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;build&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;vue-tsc &amp;amp;&amp;amp; vite build &amp;amp;&amp;amp; electron-builder&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;preview&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;vite preview&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="新增">新增&lt;/h3>
+&lt;h3 id="electron-builderjson5">./electron-builder.json5&lt;/h3>
+&lt;pre tabindex="0">&lt;code class="language-json5" data-lang="json5">{
+ $schema: &amp;#39;https://raw.githubusercontent.com/electron-userland/electron-builder/master/packages/app-builder-lib/scheme.json&amp;#39;,
+ appId: &amp;#39;YourAppID&amp;#39;,
+ asar: true,
+ productName: &amp;#39;YourAppName&amp;#39;,
+ publish: null,
+ directories: {
+ output: &amp;#39;release/${version}&amp;#39;,
+ },
+ files: [&amp;#39;dist&amp;#39;, &amp;#39;dist-electron&amp;#39;],
+ mac: {
+ target: [&amp;#39;dmg&amp;#39;],
+ artifactName: &amp;#39;${productName}-Mac-${version}-Installer.${ext}&amp;#39;,
+ },
+ win: {
+ artifactName: &amp;#39;${productName}-Windows-${version}-Setup.${ext}&amp;#39;,
+ target: [
+ {
+ target: &amp;#39;dir&amp;#39;,
+ arch: [&amp;#39;x64&amp;#39;],
+ },
+ // {
+ // target: &amp;#39;nsis&amp;#39;,
+ // arch: [&amp;#39;x64&amp;#39;],
+ // },
+ // {
+ // target: &amp;#39;portable&amp;#39;,
+ // arch: [&amp;#39;x64&amp;#39;],
+ // },
+ // {
+ // target: &amp;#39;zip&amp;#39;,
+ // arch: [&amp;#39;x64&amp;#39;],
+ // },
+ ],
+ },
+ // nsis: {
+ // oneClick: false,
+ // perMachine: false,
+ // allowToChangeInstallationDirectory: true,
+ // deleteAppDataOnUninstall: true,
+ // },
+ linux: {
+ target: [&amp;#39;AppImage&amp;#39;],
+ artifactName: &amp;#39;${productName}-Linux-${version}.${ext}&amp;#39;,
+ },
+}
+&lt;/code>&lt;/pre></description></item><item><title>Electron - Design Context</title><link>https://HoshikawaRyuukou.github.io/posts/electron---design-context/</link><pubDate>Fri, 27 Sep 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/electron---design-context/</guid><description>&lt;h2 id="context---將現有的前端專案包裝成桌面端應用">Context - 將現有的前端專案包裝成桌面端應用&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>情境：&lt;/strong> 已有一個完整的前端專案，但由於一些特定需求（例如離線操作的能力），決定將其包裝成桌面端應用。本質上，這個應用仍是一個網頁應用，因此基本上不會有額外的桌面端互動需求，也不需要特別增強和操作系統的整合。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>目的：&lt;/strong> 主要為了滿足離線存取與更佳的用戶體驗，但不需要深度的桌面端特性。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>技術重點：&lt;/strong> 專注於如何將現有的 Web 應用以 Electron 進行包裝，保持與原生前端相同的開發流程，並且避免過多改動。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>限制：&lt;/strong> 盡量維持輕量化，減少與桌面平台的耦合，僅利用 Electron 提供的框架和包裝功能。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="context---基於前端技術開發桌面端應用">Context - 基於前端技術開發桌面端應用&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>情境：&lt;/strong> 目標是開發桌面端應用，只是基於前端技術來實現。這意味著應用程式將包含一些桌面應用所特有的特性，例如系統通知、檔案系統操作、離線儲存等。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>目的：&lt;/strong> 充分利用 Electron 提供的 API 來增強桌面應用的功能，使其可以提供超越單純網頁應用的體驗。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>技術重點：&lt;/strong> 基於前端技術棧（如 Vue、React 等），但需要使用 Electron 來實現與桌面系統的交互，包括檔案存取、系統托盤等。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>設計考量：&lt;/strong> 需要兼顧應用的桌面特性與前端開發的靈活性，保證兩者間的有效融合。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="context---electron-與-前端技術-僅是實作細節">Context - Electron 與 前端技術 僅是實作細節&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>情境：&lt;/strong> 設計理念以業務需求為核心，Electron 以及前端技術只是達成目標的手段和細節。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>業務為中心的設計：&lt;/strong> 設計時不局限於技術選型，而是先分析業務需求，再根據需求選擇最佳的技術方案。最終選擇的技術（Electron、前端技術）只是為了實現業務需求的手段。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>基於 Clean Architecture：&lt;/strong> 使用乾淨架構來分離業務邏輯與實作細節，確保應用程式具有良好的可擴展性與可維護性。Electron 與前端技術被隔離在具體的實作層，任何一方都可以被替換而不影響業務邏輯。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>技術重點：&lt;/strong> 強調框架的選擇與使用不應該影響到核心業務邏輯，業務邏輯應獨立於 UI、技術框架的變更，專注於系統的彈性與維護性。&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>Electron - Basics</title><link>https://HoshikawaRyuukou.github.io/posts/electron---basics/</link><pubDate>Mon, 23 Sep 2024 21:19:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/electron---basics/</guid><description>&lt;h2 id="process">Process&lt;/h2>
+&lt;p>Electron 的進程機制主要由兩個部分組成：&lt;strong>主進程(Main Process)&lt;/strong> 和 &lt;strong>渲染進程(Renderer Process)&lt;/strong>。&lt;/p>
+&lt;h3 id="主進程-main-process">主進程 (Main Process)&lt;/h3>
+&lt;ul>
+&lt;li>每個 Electron 應用僅有一個主進程。&lt;/li>
+&lt;li>主進程負責創建應用的主窗口，並管理應用的生命周期。&lt;/li>
+&lt;li>主進程的權限非常高，它可以調用 Node.js 提供的所有 API，也可以與操作系統進行交互(例如：檔案系統操作、創建子進程、打開原生對話框) 。&lt;/li>
+&lt;li>主進程負責創建和管理應用中的所有窗口(BrowserWindow) ，並能夠與渲染進程進行通信。&lt;/li>
+&lt;/ul>
+&lt;h3 id="渲染進程-renderer-process">渲染進程 (Renderer Process)&lt;/h3>
+&lt;ul>
+&lt;li>每個應用窗口都是一個獨立的渲染進程，負責渲染網頁內容(HTML、CSS、JavaScript) 。&lt;/li>
+&lt;li>渲染進程本質上是運行在 Chromium 引擎中的網頁環境，它擁有與一般瀏覽器類似的行為和限制。&lt;/li>
+&lt;li>渲染進程的權限較低，為了安全起見，它無法直接訪問 Node.js 的全部 API，但可以通過 Electron 的 contextBridge 和 ipcRenderer 與主進程通信。&lt;/li>
+&lt;li>渲染進程可以使用 Electron 提供的 preload 腳本，將一些 Node.js 模組或功能暴露給網頁。&lt;/li>
+&lt;/ul>
+&lt;h3 id="進程間通信-inter-process-communication-ipc">進程間通信 (Inter-Process Communication, IPC)&lt;/h3>
+&lt;ul>
+&lt;li>主進程和渲染進程之間使用 IPC 進行數據傳遞。&lt;/li>
+&lt;li>渲染進程使用 ipcRenderer 發送消息給主進程，而主進程使用 ipcMain 接收和回應這些消息。反之，主進程也可以向渲染進程發送消息。&lt;/li>
+&lt;li>Electron 提供的 contextBridge 和 preload 腳本讓渲染進程能安全地與主進程進行通信，避免直接暴露過多的 Node.js API，從而提高應用的安全性。&lt;/li>
+&lt;/ul>
+&lt;h2 id="module">Module&lt;/h2>
+&lt;h3 id="app">app&lt;/h3>
+&lt;ul>
+&lt;li>主進程模組，用來控制整個應用的生命周期。它包含了一系列的事件和方法，用於管理應用的初始化、運行、退出等流程。&lt;/li>
+&lt;/ul>
+&lt;h3 id="browserwindow">BrowserWindow&lt;/h3>
+&lt;ul>
+&lt;li>主進程模組，用來創建和管理應用窗口的模組。&lt;/li>
+&lt;li>每個 BrowserWindow 實例代表一個獨立的瀏覽器窗口，並且運行在自己的渲染進程中。&lt;/li>
+&lt;/ul>
+&lt;h3 id="ipcmain">ipcMain&lt;/h3>
+&lt;ul>
+&lt;li>主進程模組，用來處理進程間通信的模組。&lt;/li>
+&lt;/ul>
+&lt;h3 id="ipcrenderer">ipcRenderer&lt;/h3>
+&lt;ul>
+&lt;li>渲染進程模組，用來處理進程間通信的模組，&lt;/li>
+&lt;li>不要直接在網頁中使用 ipcRenderer，而是通過 preload 腳本中的 contextBridge 暴露安全的 API 給渲染進程。&lt;/li>
+&lt;/ul></description></item></channel></rss>

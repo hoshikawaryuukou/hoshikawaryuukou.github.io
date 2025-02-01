@@ -1,1 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Windows on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/windows/</link><description>Recent content in Windows on 識之箱庭</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Fri, 29 Mar 2024 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/windows/index.xml" rel="self" type="application/rss+xml"/><item><title>Windows - Note</title><link>https://HoshikawaRyuukou.github.io/posts/windows-note/</link><pubDate>Fri, 29 Mar 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/windows-note/</guid><description>Disk 如何在Windows 10中刪除Hiberfil.sys（休眠）檔案 Shortcut Windows 11 顯示與清除歷史記錄 Windows + Shift + S：這個組合鍵會啟動截圖工具，允許用戶選擇截取的區域 Other windows为什么有两个命令行工具？命令提示符与PowerShell有什么区别？</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Windows on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/windows/</link><description>Recent content in Windows on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Fri, 29 Mar 2024 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/windows/index.xml" rel="self" type="application/rss+xml"/><item><title>Windows - Note</title><link>https://HoshikawaRyuukou.github.io/posts/windows---note/</link><pubDate>Fri, 29 Mar 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/windows---note/</guid><description>&lt;h2 id="disk">Disk&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://tw.bitwar.net/course/tips/3147.html">如何在Windows 10中刪除Hiberfil.sys（休眠）檔案&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="shortcut">Shortcut&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.kocpc.com.tw/archives/500846">Windows 11 顯示與清除歷史記錄&lt;/a>&lt;/li>
+&lt;li>&lt;code>Windows + Shift + S&lt;/code>：這個組合鍵會啟動截圖工具，允許用戶選擇截取的區域&lt;/li>
+&lt;/ul>
+&lt;h2 id="other">Other&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=u0yKHP0onwU">windows为什么有两个命令行工具？命令提示符与PowerShell有什么区别？&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

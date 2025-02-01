@@ -1,2 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mac on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/mac/</link><description>Recent content in Mac on 識之箱庭</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Tue, 16 Jan 2024 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/mac/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Environment</title><link>https://HoshikawaRyuukou.github.io/posts/unity-environment/</link><pubDate>Tue, 16 Jan 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-environment/</guid><description> ⚠️ 以下使用 unity 6
-OS - Mac 【游戏开发环境】Unity使用Mac电脑开发，开发环境的搭建（Mac mini M1 | VSCode | Git | 好用工具） VSCode 安裝 .NET Core 重新開機使環境變數被應用 移除 Visual Studio Code Editor 已經停止維護 安裝 Visual Studio Editor Edit &amp;gt; Preferences &amp;gt; External Tools &amp;gt; External Script Editor Extension - C# Dev Kit Preferences Edit &amp;gt; Preferences &amp;gt; General &amp;gt; Script Changes While Playing (Stop Playing and Recompile)</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mac on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/mac/</link><description>Recent content in Mac on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Tue, 16 Jan 2024 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/mac/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Environment</title><link>https://HoshikawaRyuukou.github.io/posts/unity---environment/</link><pubDate>Tue, 16 Jan 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---environment/</guid><description>&lt;blockquote>
+&lt;p>⚠️ 以下使用 unity 6&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="os---mac">OS - Mac&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://blog.csdn.net/linxinfa/article/details/124844236">【游戏开发环境】Unity使用Mac电脑开发，开发环境的搭建（Mac mini M1 | VSCode | Git | 好用工具）&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="vscode">VSCode&lt;/h2>
+&lt;ul>
+&lt;li>安裝 &lt;a href="https://dotnet.microsoft.com/en-us/download">.NET Core&lt;/a>&lt;/li>
+&lt;li>重新開機使環境變數被應用&lt;/li>
+&lt;li>移除 Visual Studio Code Editor 已經停止維護&lt;/li>
+&lt;li>安裝 Visual Studio Editor&lt;/li>
+&lt;li>Edit &amp;gt; Preferences &amp;gt; External Tools &amp;gt; External Script Editor&lt;/li>
+&lt;li>Extension - C# Dev Kit&lt;/li>
+&lt;/ul>
+&lt;h2 id="preferences">Preferences&lt;/h2>
+&lt;ul>
+&lt;li>Edit &amp;gt; Preferences &amp;gt; General &amp;gt; Script Changes While Playing (Stop Playing and Recompile)&lt;/li>
+&lt;/ul></description></item></channel></rss>

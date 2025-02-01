@@ -1,5 +1,34 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>npm on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/npm/</link><description>Recent content in npm on 識之箱庭</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sun, 13 Oct 2024 09:11:01 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/npm/index.xml" rel="self" type="application/rss+xml"/><item><title>Node.js - package.json - Export</title><link>https://HoshikawaRyuukou.github.io/posts/node.js-package.json-export/</link><pubDate>Sun, 13 Oct 2024 09:11:01 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/node.js-package.json-export/</guid><description>Guide Package entry points Version selection with typesVersions Multiple exports with types in a Typescript Package 巧用 exports 和 typeVersions 提升 npm 包用户使用体验 Suggestion 以較新 Node.js 版本為目標的新包，建議使用 exports 欄位。 sample - vue/core Notice 當定義了 exports 欄位時
-⚠️ Node.js 會優先使用 exports 來決定如何載入模組，只有在 exports 中沒有相應定義時，才會使用 main、module 和 types 欄位。 ⚠️ 所有子路徑都會被封裝起來，除非明確導出，否則這些子路徑將無法供使用者訪問(會拋出一個 ERR_PACKAGE_PATH_NOT_EXPORTED 的錯誤)。 Fields main 當套件被作為 CommonJS 模組引入時，預設的入口點。
-module 當套件被作為 ES 模組引入時，預設的入口點。
-types TypeScript 的類型定義檔案位置，提供 TypeScript 支援。
-exports 用來細化和取代傳統的 main 和 module 欄位。 提高包的安全性：限制用戶可以訪問的內部文件，防止直接訪問內部未經授權的代碼。 更清晰的 API：只公開需要使用的部分代碼，簡化使用者的導入過程。 支持不同的模組格式：通過同時支持 require 和 import，可以在不同的環境中更靈活使用。 exports - Conditional Exports 目前指導出 esm 模組，未來需要雙入口再回補。</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Npm on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/npm/</link><description>Recent content in Npm on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sun, 13 Oct 2024 09:11:01 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/npm/index.xml" rel="self" type="application/rss+xml"/><item><title>Node.js - package.json - Export</title><link>https://HoshikawaRyuukou.github.io/posts/node.js---package.json---export/</link><pubDate>Sun, 13 Oct 2024 09:11:01 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/node.js---package.json---export/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://nodejs.org/api/packages.html#package-entry-points">Package entry points&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.typescriptlang.org/docs/handbook/declaration-files/publishing.html#version-selection-with-typesversions">Version selection with typesVersions&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.nullfox.com/multiple-exports-typescript-package-types">Multiple exports with types in a Typescript Package&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/627434408">巧用 exports 和 typeVersions 提升 npm 包用户使用体验&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="suggestion">Suggestion&lt;/h2>
+&lt;ul>
+&lt;li>以較新 Node.js 版本為目標的新包，建議使用 &lt;code>exports&lt;/code> 欄位。&lt;/li>
+&lt;li>sample - &lt;a href="https://github.com/vuejs/core/blob/main/packages/vue/package.json">vue/core&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="notice">Notice&lt;/h2>
+&lt;p>當定義了 exports 欄位時&lt;/p>
+&lt;ul>
+&lt;li>⚠️ Node.js 會優先使用 exports 來決定如何載入模組，只有在 exports 中沒有相應定義時，才會使用 main、module 和 types 欄位。&lt;/li>
+&lt;li>⚠️ 所有子路徑都會被封裝起來，除非明確導出，否則這些子路徑將無法供使用者訪問(會拋出一個 &lt;code>ERR_PACKAGE_PATH_NOT_EXPORTED&lt;/code> 的錯誤)。&lt;/li>
+&lt;/ul>
+&lt;h2 id="fields">Fields&lt;/h2>
+&lt;h3 id="main">main&lt;/h3>
+&lt;p>當套件被作為 CommonJS 模組引入時，預設的入口點。&lt;/p>
+&lt;h3 id="module">module&lt;/h3>
+&lt;p>當套件被作為 ES 模組引入時，預設的入口點。&lt;/p>
+&lt;h3 id="types">types&lt;/h3>
+&lt;p>TypeScript 的類型定義檔案位置，提供 TypeScript 支援。&lt;/p>
+&lt;h3 id="exports">exports&lt;/h3>
+&lt;ul>
+&lt;li>用來細化和取代傳統的 main 和 module 欄位。&lt;/li>
+&lt;li>提高包的安全性：限制用戶可以訪問的內部文件，防止直接訪問內部未經授權的代碼。&lt;/li>
+&lt;li>更清晰的 API：只公開需要使用的部分代碼，簡化使用者的導入過程。&lt;/li>
+&lt;li>支持不同的模組格式：通過同時支持 require 和 import，可以在不同的環境中更靈活使用。&lt;/li>
+&lt;/ul>
+&lt;h2 id="exports---conditional-exports">exports - Conditional Exports&lt;/h2>
+&lt;p>目前指導出 esm 模組，未來需要雙入口再回補。&lt;/p></description></item></channel></rss>

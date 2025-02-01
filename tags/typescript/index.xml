@@ -1,19 +1,488 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>TypeScript on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/typescript/</link><description>Recent content in TypeScript on 識之箱庭</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Tue, 22 Oct 2024 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/typescript/index.xml" rel="self" type="application/rss+xml"/><item><title>Javascript_TypeScript - Package - rimraf</title><link>https://HoshikawaRyuukou.github.io/posts/javascript_typescript-package-rimraf/</link><pubDate>Tue, 22 Oct 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/javascript_typescript-package-rimraf/</guid><description>Quick Chat rimraf 是一個用於遞迴刪除文件或目錄的 Node.js 庫，類似於 Unix 上的 rm -rf 命令。它的主要功能是跨平台刪除文件和文件夾，特別適合在 Windows 和 Unix 系統上使用。
-Guide isaacs/rimraf Rimraf详细介绍 Install pnpm add -D rimraf Usage 單個文件 pnpm rimraf file.txt 單個目錄 pnpm rimraf folder 複數目標 pnpm rimraf folder1 folder2 file.txt 匹配目標 pnpm rimraf --glob &amp;#34;./**/index.js&amp;#34; 透過 scripts command 執行 { &amp;#34;scripts&amp;#34;: { &amp;#34;clean&amp;#34;: &amp;#34;rimraf dist&amp;#34; } }</description></item><item><title>Javascript_TypeScript - Package - workerpool</title><link>https://HoshikawaRyuukou.github.io/posts/javascript_typescript-package-workerpool/</link><pubDate>Tue, 22 Oct 2024 08:12:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/javascript_typescript-package-workerpool/</guid><description>Quick Chat 整合 Web Workers 與 worker_threads，因此支援瀏覽器和 Node.js。 API 設計直觀(管理工作線程、訊息傳遞和錯誤處理)。 實現 worker pool 管理功能。 支援 Promise 與 async/await。 Guide workerpool Vite Workerpool Example Other Nest.js - Worker threads 잘 사용해보기 NestJS Dependency Injection in Worker Threads https://github.com/vitest-dev/vitest/issues/5757#issuecomment-2146013141 https://github.com/nodejs/node/issues/47747</description></item><item><title>Javascript_TypeScript - Package - lint-staged</title><link>https://HoshikawaRyuukou.github.io/posts/javascript_typescript-package-lint-staged/</link><pubDate>Fri, 18 Oct 2024 08:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/javascript_typescript-package-lint-staged/</guid><description>Quick Chat lint-staged 可以只對 git staged 的檔案執行 lint 處理，進而提升檢查效率。
-Guide lint-staged/lint-staged Notice ⚠️ 這裡與 simple-git-hooks 搭配使用 ⚠️ 跟 Prettier 搭配使用，必須確保 ESLint 在 Prettier 前面先執行 Install pnpm add -D lint-staged Config package.json { &amp;#34;lint-staged&amp;#34;: { &amp;#34;*.{js,json}&amp;#34;: [ &amp;#34;prettier --write&amp;#34; ], &amp;#34;*.ts?(x)&amp;#34;: [ &amp;#34;eslint --fix&amp;#34;, &amp;#34;prettier --parser=typescript --write&amp;#34; ] } } Usage pnpm lint-staged</description></item><item><title>Javascript_TypeScript - Package - ESLint</title><link>https://HoshikawaRyuukou.github.io/posts/javascript_typescript-package-eslint/</link><pubDate>Thu, 17 Oct 2024 22:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/javascript_typescript-package-eslint/</guid><description>Quick Chat ESLint 是一個用來檢查和修復 JavaScript/TypeScript 程式碼風格和潛在錯誤的工具，幫助維持一致性和提高程式碼品質。它可以根據自訂規則或預設的最佳實踐規則來進行靜態分析。
-Guide eslint/eslint ESLint - Pluggable JavaScript Linter Using the New ESLint Flat Config 仕組みと嬉しさから理解するeslint FlatConfig対応 Notice ⚠️ ESLint 正逐步廢除格式化規則 - Deprecation of formatting rules。 ⚠️ 官方建議使用 Prettier 作為格式化方案。 Install pnpm create @eslint/config@latest Extension vscode extension .vscode/extension.json { &amp;#34;recommendations&amp;#34;: [&amp;#34;dbaeumer.vscode-eslint&amp;#34;] } Config eslint.config.js - 使用純 JavaScript 編寫配置，以便支持更好的導入導出。 使用一個純陣列來定義所有的規則和配置，避免了多層嵌套的問題。 後面出現的配置會覆蓋前面的配置。 eslint.config.js import pluginJs from &amp;#39;@eslint/js&amp;#39;; import tseslint from &amp;#39;typescript-eslint&amp;#39;; export default [ { name: &amp;#39;all&amp;#39;, files: [&amp;#39;**/*.</description></item><item><title>Javascript_TypeScript - Package - simple-git-hooks</title><link>https://HoshikawaRyuukou.github.io/posts/javascript_typescript-package-simple-git-hooks/</link><pubDate>Tue, 15 Oct 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/javascript_typescript-package-simple-git-hooks/</guid><description>Guide toplenboren/simple-git-hooks githooks Notice ⚠️ 更改命令後記得更新 git hook ⚠️ 不要添加 &amp;quot;postinstall&amp;quot;: &amp;quot;pnpx simple-git-hooks&amp;quot; 於 package.json，會影響 publish 行為 ⚠️ 個人不建議簡化 跳過 hook 行為，必須保持操作不適度 Install pnpm add -D simple-git-hooks Config package.json { &amp;#34;scripts&amp;#34;: { &amp;#34;postinstall&amp;#34;: &amp;#34;simple-git-hooks&amp;#34; }, &amp;#34;simple-git-hooks&amp;#34;: { &amp;#34;pre-commit&amp;#34;: &amp;#34;pnpm lint-staged &amp;amp;&amp;amp; pnpm check&amp;#34;, &amp;#34;commit-msg&amp;#34;: &amp;#34;node scripts/verify-commit.js&amp;#34; } } Usage 更新 git hook pnpx simple-git-hooks 跳過 git hook - CI 這部分代補，目前沒有操作情境 doc 跳過 git hook - 三方 git client 開啟 git bash - git commit -m &amp;#34;你的 commit 訊息&amp;#34; --no-verify</description></item><item><title>Javascript_TypeScript - Package - tsup</title><link>https://HoshikawaRyuukou.github.io/posts/javascript_typescript-package-tsup/</link><pubDate>Sun, 13 Oct 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/javascript_typescript-package-tsup/</guid><description>Quick Chat The simplest and fastest way to bundle your TypeScript libraries.
-設計的初衷是讓開發者能夠以最少的設定完成打包工作，內建許多合理的預設值。
-Guide egoist/tsup tsup 为什么是 tsup Dual Publishing ESM and CJS Modules with tsup and Are the Types Wrong? Install pnpm add -D tsup Config package.json { &amp;#34;scripts&amp;#34;: { &amp;#34;build&amp;#34;: &amp;#34;tsup&amp;#34; }, } tsup.config.ts - only esm module import { defineConfig } from &amp;#39;tsup&amp;#39;; export default defineConfig({ // 指定入口文件 entry: [&amp;#39;src/index.ts&amp;#39;, &amp;#39;src/subpath/index.ts&amp;#39;, &amp;#39;src/internal/index.ts&amp;#39;], // ESM 格式 format: [&amp;#39;esm&amp;#39;], // 生成類型定義 dts: true, // 每次構建時清理輸出目錄 clean: true, });</description></item><item><title>Javascript_TypeScript - TypeScript - tsconfig.json</title><link>https://HoshikawaRyuukou.github.io/posts/javascript_typescript-typescript-tsconfig.json/</link><pubDate>Sat, 12 Oct 2024 08:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/javascript_typescript-typescript-tsconfig.json/</guid><description>Quick Chat 當目錄中出現了 tsconfig.json 文件，則表示該目錄是 TypeScript 專案的根目錄。tsconfig.json 檔案指定了編譯專案所需的根目錄下的檔案以及編譯選項。實務上在不同的開發情境中，準備不同的 tsconfig.json 是非常有必要的。
-開發環境中，可能希望啟用更多的錯誤檢查和調試資訊，以便更快地發現問題。 生產環境中，則可能希望關閉這些額外的檢查，以提升編譯速度並減少輸出檔案大小。 呼叫 tsc 時使用 --project 或 -p 選項來指定相應的配置檔案。
-tsc -p tsconfig.build.json Guide tsconfig.json 是什麼 TSConfig Reference tsc性能优化 &amp;ndash; Project References 基底 tsconfig Node 20 推薦的 tsconfig.json
-@tsconfig/node20 npm install -D @tsconfig/node20 可以繼承基底 tsconfig 並覆寫參數
-{ &amp;#34;extends&amp;#34;: &amp;#34;@tsconfig/node20/tsconfig.json&amp;#34;, &amp;#34;compilerOptions&amp;#34;: { &amp;#34;preserveConstEnums&amp;#34;: true }, &amp;#34;include&amp;#34;: [&amp;#34;src/**/*&amp;#34;], &amp;#34;exclude&amp;#34;: [&amp;#34;node_modules&amp;#34;, &amp;#34;**/*.spec.ts&amp;#34;] } 型別導出 { &amp;#34;compilerOptions&amp;#34;: { &amp;#34;declaration&amp;#34;: true, &amp;#34;declarationMap&amp;#34;: true, &amp;#34;emitDeclarationOnly&amp;#34;: true, &amp;#34;outDir&amp;#34;: &amp;#34;.</description></item><item><title>Javascript_TypeScript - Package - Prettier</title><link>https://HoshikawaRyuukou.github.io/posts/javascript_typescript-package-prettier/</link><pubDate>Thu, 05 Sep 2024 08:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/javascript_typescript-package-prettier/</guid><description>Quick Chat Prettier 是一個代碼格式化工具，用於保持代碼風格一致。
-Guide Prettier · Opinionated Code Formatter playground 如何配置 prettier Notice ⚠️ 跨平台協同的結尾符問題 [eslint] Delete CR eslint(prettier/prettier) issue 令人困擾的git autocrlf – Opass Life Install pnpm add -D prettier Extension vscode extension .vscode/extension.json { &amp;#34;recommendations&amp;#34;: [&amp;#34;esbenp.prettier-vscode&amp;#34;] } .vscode/setting.json { &amp;#34;editor.formatOnSave&amp;#34;: true, &amp;#34;[typescript]&amp;#34;: { &amp;#34;editor.defaultFormatter&amp;#34;: &amp;#34;esbenp.prettier-vscode&amp;#34; }, &amp;#34;[javascript]&amp;#34;: { &amp;#34;editor.defaultFormatter&amp;#34;: &amp;#34;esbenp.prettier-vscode&amp;#34; }, &amp;#34;[json]&amp;#34;: { &amp;#34;editor.defaultFormatter&amp;#34;: &amp;#34;esbenp.prettier-vscode&amp;#34; } } Plugin prettier-plugin-organize-imports : 排序/合併/移除未使用的 import 聲明 Integration - ESlint eslint-config-prettier ESLint 配置，用於關閉與 Prettier 產生衝突。 eslint-config-prettier - eslint.</description></item><item><title>Javascript_TypeScript - Package - commitlint</title><link>https://HoshikawaRyuukou.github.io/posts/javascript_typescript-package-commitlint/</link><pubDate>Fri, 12 Jul 2024 08:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/javascript_typescript-package-commitlint/</guid><description>Quick Chat commitlint 是一個用來檢查 git commit 信息格式的工具，它可以配合多種規範使用。
-Guide conventional-changelog/commitlint commitlint doc Commit-lint学习：新手入门指南 Commitlint vs Commitizen: Comparison for Better Git Commit Practices Notice ⚠️ 此處搭配 simple-git-hooks 使用。 Install pnpm add -D @commitlint/{cli,config-conventional} Config package.json { &amp;#34;simple-git-hooks&amp;#34;: { &amp;#34;pre-commit&amp;#34;: &amp;#34;pnpm lint-staged &amp;amp;&amp;amp; pnpm check&amp;#34;, &amp;#34;commit-msg&amp;#34;: &amp;#34;pnpx commitlint --edit $1&amp;#34; }, } commitlint.config.js export default { extends: [&amp;#39;@commitlint/config-conventional&amp;#39;], };</description></item><item><title>Javascript_TypeScript - Package - Vitest</title><link>https://HoshikawaRyuukou.github.io/posts/javascript_typescript-package-vitest/</link><pubDate>Tue, 02 Jul 2024 08:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/javascript_typescript-package-vitest/</guid><description>Guide Vitest Coverage 這些數值表示了測試覆蓋率的不同方面，具體如下：
-% Stmts (Statements Coverage)：
-說明：表示程式碼中所有執行語句的覆蓋率。這個百分比告訴你測試運行時執行了多少語句。 例如：如果程式碼中有 100 行執行語句，而測試覆蓋了其中的 80 行，則此覆蓋率為 80%。 % Branch (Branches Coverage)：
-說明：表示條件分支的覆蓋率（如 if/else、switch/case）。這個百分比告訴你程式碼中所有可能的邏輯分支是否被測試覆蓋。 例如：如果有 10 個 if/else 條件，但只有 7 個條件分支在測試中執行過，則此覆蓋率為 70%。 % Funcs (Functions Coverage)：
-說明：表示函數的覆蓋率。這個百分比告訴你測試運行時，程式碼中定義的函數中有多少被調用和覆蓋。 例如：如果程式碼中有 20 個函數，而測試覆蓋了其中的 15 個，則此覆蓋率為 75%。 % Lines (Lines Coverage)：
-說明：表示實際被執行的行數覆蓋率。這與 % Stmts 類似，但更精確地計算了具體的行數。 例如：如果程式碼中有 200 行代碼，而測試覆蓋了其中的 180 行，則此覆蓋率為 90%。 Uncovered Line #s：
-說明：列出未被測試覆蓋的具體行號。這些是測試未執行到的程式碼行，你可以根據這些行號來調整和增加測試用例，從而提高測試覆蓋率。 這些指標有助於你了解測試覆蓋率的具體情況，並確保你的程式碼在不同方面都得到充分的測試。
-Extra 必要時使用括 弧表示法 訪問屬性private expect(inst[&amp;#34;_somePrivateProp&amp;#34;]).toBe(&amp;#34;foo&amp;#34;); // OK</description></item><item><title>Javascript_TypeScript - Javascript Note</title><link>https://HoshikawaRyuukou.github.io/posts/javascript_typescript-javascript-note/</link><pubDate>Mon, 29 Apr 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/javascript_typescript-javascript-note/</guid><description>Style Google JavaScript Style Guide Basic 作用域(scope)解說：let, const, var有什麼差？ Value與Reference的差異解說 async/await JavaScript 中的 async/await 是什麼？和 promise 有什麼差別？ Event Loop JavaScript Event Loop解說：單執行緒還能異步運算？ 請說明瀏覽器中的事件循環 (Event Loop) Object 為什麼推薦用 structureClone 在 JavaScript 做深拷貝? Promise Promise 是什麼？有什麼用途？ Others 前端 JavaScript 代码保护？！</description></item><item><title>Javascript_TypeScript - TypeScript Note</title><link>https://HoshikawaRyuukou.github.io/posts/javascript_typescript-typescript-note/</link><pubDate>Mon, 29 Apr 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/javascript_typescript-typescript-note/</guid><description>Style Google TypeScript Style Guide Tool JSON to TypeScript Basic TypeScript 物件中的 public, private, protected, static, readonly TypeScript – Using Disposable Coding guidelines 使用 undefined。不要使用 null。 tsc &amp;ndash;project tsconfig.json : 使用當前目錄下的 tsconfig.json &amp;ndash;showConfig : 檢視該目錄的 tsconfig.json (包含繼承的數值)</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>TypeScript on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/typescript/</link><description>Recent content in TypeScript on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Tue, 22 Oct 2024 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/typescript/index.xml" rel="self" type="application/rss+xml"/><item><title>Javascript_TypeScript - Package - rimraf</title><link>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---package---rimraf/</link><pubDate>Tue, 22 Oct 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---package---rimraf/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>rimraf 是一個用於遞迴刪除文件或目錄的 Node.js 庫，類似於 Unix 上的 rm -rf 命令。它的主要功能是跨平台刪除文件和文件夾，特別適合在 Windows 和 Unix 系統上使用。&lt;/p>
+&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/isaacs/rimraf">isaacs/rimraf&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.csdn.net/imdeity/article/details/137772287">Rimraf详细介绍&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="install">Install&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>pnpm add -D rimraf
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="usage">Usage&lt;/h2>
+&lt;h3 id="單個文件">單個文件&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>pnpm rimraf file.txt
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="單個目錄">單個目錄&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>pnpm rimraf folder
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="複數目標">複數目標&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>pnpm rimraf folder1 folder2 file.txt
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="匹配目標">匹配目標&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>pnpm rimraf --glob &lt;span style="color:#d88200">&amp;#34;./**/index.js&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="透過-scripts-command-執行">透過 scripts command 執行&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;scripts&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;clean&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;rimraf dist&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Javascript_TypeScript - Package - workerpool</title><link>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---package---workerpool/</link><pubDate>Tue, 22 Oct 2024 08:12:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---package---workerpool/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;ul>
+&lt;li>整合 Web Workers 與 worker_threads，因此支援瀏覽器和 Node.js。&lt;/li>
+&lt;li>API 設計直觀(管理工作線程、訊息傳遞和錯誤處理)。&lt;/li>
+&lt;li>實現 worker pool 管理功能。&lt;/li>
+&lt;li>支援 Promise 與 async/await。&lt;/li>
+&lt;/ul>
+&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/josdejong/workerpool">workerpool&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/josdejong/workerpool/blob/master/examples/vite/README.md">Vite Workerpool Example&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="other">Other&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.ryuollojy.com/articles/nest-js-worker-threads">Nest.js - Worker threads 잘 사용해보기&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://dev.to/zenstok/nestjs-dependency-injection-in-worker-threads-5deh">NestJS Dependency Injection in Worker Threads&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/vitest-dev/vitest/issues/5757#issuecomment-2146013141">https://github.com/vitest-dev/vitest/issues/5757#issuecomment-2146013141&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/nodejs/node/issues/47747">https://github.com/nodejs/node/issues/47747&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Javascript_TypeScript - Package - lint-staged</title><link>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---package---lint-staged/</link><pubDate>Fri, 18 Oct 2024 08:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---package---lint-staged/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>lint-staged 可以只對 git staged 的檔案執行 lint 處理，進而提升檢查效率。&lt;/p>
+&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/lint-staged/lint-staged">lint-staged/lint-staged&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="notice">Notice&lt;/h2>
+&lt;ul>
+&lt;li>⚠️ 這裡與 simple-git-hooks 搭配使用&lt;/li>
+&lt;li>⚠️ 跟 Prettier 搭配使用，必須確保 ESLint 在 Prettier 前面先執行&lt;/li>
+&lt;/ul>
+&lt;h2 id="install">Install&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>pnpm add -D lint-staged
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="config">Config&lt;/h2>
+&lt;h3 id="packagejson">package.json&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;lint-staged&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;*.{js,json}&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#d88200">&amp;#34;prettier --write&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;*.ts?(x)&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#d88200">&amp;#34;eslint --fix&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#d88200">&amp;#34;prettier --parser=typescript --write&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="usage">Usage&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>pnpm lint-staged 
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Javascript_TypeScript - Package - ESLint</title><link>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---package---eslint/</link><pubDate>Thu, 17 Oct 2024 22:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---package---eslint/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>ESLint 是一個用來檢查和修復 JavaScript/TypeScript 程式碼風格和潛在錯誤的工具，幫助維持一致性和提高程式碼品質。它可以根據自訂規則或預設的最佳實踐規則來進行靜態分析。&lt;/p>
+&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/eslint/eslint">eslint/eslint&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://eslint.org/">ESLint - Pluggable JavaScript Linter&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jmugliston.dev/blog/using-the-new-eslint-flat-config">Using the New ESLint Flat Config&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zenn.dev/cybozu_frontend/articles/about-eslint-flat-config">仕組みと嬉しさから理解するeslint FlatConfig対応&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="notice">Notice&lt;/h2>
+&lt;ul>
+&lt;li>⚠️ ESLint 正逐步廢除&lt;strong>格式化規則&lt;/strong> - &lt;a href="https://eslint.org/blog/2023/10/deprecating-formatting-rules/">Deprecation of formatting rules&lt;/a>。&lt;/li>
+&lt;li>⚠️ 官方建議使用 Prettier 作為格式化方案。&lt;/li>
+&lt;/ul>
+&lt;h2 id="install">Install&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>pnpm create @eslint/config@latest
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="extension">Extension&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint">vscode extension&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="vscodeextensionjson">.vscode/extension.json&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;recommendations&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">[&lt;/span>&lt;span style="color:#d88200">&amp;#34;dbaeumer.vscode-eslint&amp;#34;&lt;/span>&lt;span style="color:#111">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="config">Config&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>eslint.config.js&lt;/strong> - 使用純 JavaScript 編寫配置，以便支持更好的導入導出。&lt;/li>
+&lt;li>使用一個純陣列來定義所有的規則和配置，避免了多層嵌套的問題。&lt;/li>
+&lt;li>後面出現的配置會覆蓋前面的配置。&lt;/li>
+&lt;/ul>
+&lt;h3 id="eslintconfigjs">eslint.config.js&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-js" data-lang="js">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">import&lt;/span> &lt;span style="color:#75af00">pluginJs&lt;/span> &lt;span style="color:#75af00">from&lt;/span> &lt;span style="color:#d88200">&amp;#39;@eslint/js&amp;#39;&lt;/span>&lt;span style="color:#111">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">import&lt;/span> &lt;span style="color:#75af00">tseslint&lt;/span> &lt;span style="color:#75af00">from&lt;/span> &lt;span style="color:#d88200">&amp;#39;typescript-eslint&amp;#39;&lt;/span>&lt;span style="color:#111">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">export&lt;/span> &lt;span style="color:#00a8c8">default&lt;/span> &lt;span style="color:#111">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">name&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#d88200">&amp;#39;all&amp;#39;&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">files&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#111">[&lt;/span>&lt;span style="color:#d88200">&amp;#39;**/*.{js,ts,vue}&amp;#39;&lt;/span>&lt;span style="color:#111">],&lt;/span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">ignores&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#111">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#d88200">&amp;#39;**/node_modules/**&amp;#39;&lt;/span>&lt;span style="color:#111">,&lt;/span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#d88200">&amp;#39;**/dist/**&amp;#39;&lt;/span>&lt;span style="color:#111">,&lt;/span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#d88200">&amp;#39;**/coverage/**&amp;#39;&lt;/span>&lt;span style="color:#111">,&lt;/span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#d88200">&amp;#39;**/*.min.js&amp;#39;&lt;/span>&lt;span style="color:#111">,&lt;/span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">rules&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#d88200">&amp;#39;no-console&amp;#39;&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#d88200">&amp;#39;warn&amp;#39;&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#d88200">&amp;#39;no-unused-vars&amp;#39;&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#d88200">&amp;#39;error&amp;#39;&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">name&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#d88200">&amp;#39;frontend&amp;#39;&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">files&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#111">[&lt;/span>&lt;span style="color:#d88200">&amp;#39;packages/app-frontend/**/*.{js,ts,vue}&amp;#39;&lt;/span>&lt;span style="color:#111">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">rules&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#d88200">&amp;#39;no-debugger&amp;#39;&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#d88200">&amp;#39;error&amp;#39;&lt;/span>&lt;span style="color:#111">,&lt;/span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">name&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#d88200">&amp;#39;backend&amp;#39;&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">files&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#111">[&lt;/span>&lt;span style="color:#d88200">&amp;#39;packages/app-backend/**/*.{js,ts}&amp;#39;&lt;/span>&lt;span style="color:#111">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">rules&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#d88200">&amp;#39;no-console&amp;#39;&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#d88200">&amp;#39;off&amp;#39;&lt;/span>&lt;span style="color:#111">,&lt;/span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">name&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#d88200">&amp;#39;shared-library&amp;#39;&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">files&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#111">[&lt;/span>&lt;span style="color:#d88200">&amp;#39;packages/shared-library/**/*.{js,ts}&amp;#39;&lt;/span>&lt;span style="color:#111">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">ignores&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#111">[&lt;/span>&lt;span style="color:#d88200">&amp;#39;**/*.test.ts&amp;#39;&lt;/span>&lt;span style="color:#111">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">pluginJs&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">configs&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">recommended&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">...&lt;/span>&lt;span style="color:#75af00">tseslint&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">configs&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">recommended&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">];&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="extra---eslint-config-inspector">Extra - ESLint Config Inspector&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>pnpx @eslint/config-inspector
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Javascript_TypeScript - Package - simple-git-hooks</title><link>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---package---simple-git-hooks/</link><pubDate>Tue, 15 Oct 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---package---simple-git-hooks/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/toplenboren/simple-git-hooks">toplenboren/simple-git-hooks&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://git-scm.com/docs/githooks">githooks&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="notice">Notice&lt;/h2>
+&lt;ul>
+&lt;li>⚠️ 更改命令後記得更新 git hook&lt;/li>
+&lt;li>⚠️ 不要添加 &lt;code>&amp;quot;postinstall&amp;quot;: &amp;quot;pnpx simple-git-hooks&amp;quot;&lt;/code> 於 package.json，會影響 publish 行為&lt;/li>
+&lt;li>⚠️ 個人不建議簡化 &lt;code>跳過 hook&lt;/code> 行為，必須保持操作不適度&lt;/li>
+&lt;/ul>
+&lt;h2 id="install">Install&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>pnpm add -D simple-git-hooks
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="config">Config&lt;/h2>
+&lt;h3 id="packagejson">package.json&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;scripts&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;postinstall&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;simple-git-hooks&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;simple-git-hooks&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;pre-commit&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;pnpm lint-staged &amp;amp;&amp;amp; pnpm check&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;commit-msg&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;node scripts/verify-commit.js&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="usage">Usage&lt;/h2>
+&lt;h3 id="更新-git-hook">更新 git hook&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>pnpx simple-git-hooks
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="跳過-git-hook---ci">跳過 git hook - CI&lt;/h3>
+&lt;ul>
+&lt;li>這部分代補，目前沒有操作情境&lt;/li>
+&lt;li>&lt;a href="https://github.com/toplenboren/simple-git-hooks?tab=readme-ov-file#i-want-to-skip-git-hooks">doc&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="跳過-git-hook---三方-git-client">跳過 git hook - 三方 git client&lt;/h3>
+&lt;ul>
+&lt;li>開啟 git bash&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>- git commit -m &lt;span style="color:#d88200">&amp;#34;你的 commit 訊息&amp;#34;&lt;/span> --no-verify
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Javascript_TypeScript - Package - tsup</title><link>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---package---tsup/</link><pubDate>Sun, 13 Oct 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---package---tsup/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;blockquote>
+&lt;p>The simplest and fastest way to bundle your TypeScript libraries.&lt;/p>
+&lt;/blockquote>
+&lt;p>設計的初衷是讓開發者能夠以最少的設定完成打包工作，內建許多合理的預設值。&lt;/p>
+&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/egoist/tsup">egoist/tsup&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://tsup.egoist.dev/#what-can-it-bundle">tsup&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.modyqyw.top/blogs/2022/12/why-tsup">为什么是 tsup&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://johnnyreilly.com/dual-publishing-esm-cjs-modules-with-tsup-and-are-the-types-wrong">Dual Publishing ESM and CJS Modules with tsup and Are the Types Wrong?&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="install">Install&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>pnpm add -D tsup
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="config">Config&lt;/h2>
+&lt;h3 id="packagejson">package.json&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;scripts&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;build&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;tsup&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="tsupconfigts---only-esm-module">tsup.config.ts - only esm module&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-ts" data-lang="ts">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">import&lt;/span> &lt;span style="color:#111">{&lt;/span> &lt;span style="color:#75af00">defineConfig&lt;/span> &lt;span style="color:#111">}&lt;/span> &lt;span style="color:#00a8c8">from&lt;/span> &lt;span style="color:#d88200">&amp;#39;tsup&amp;#39;&lt;/span>&lt;span style="color:#111">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">export&lt;/span> &lt;span style="color:#00a8c8">default&lt;/span> &lt;span style="color:#75af00">defineConfig&lt;/span>&lt;span style="color:#111">({&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// 指定入口文件
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#75af00">entry&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#111">[&lt;/span>&lt;span style="color:#d88200">&amp;#39;src/index.ts&amp;#39;&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#d88200">&amp;#39;src/subpath/index.ts&amp;#39;&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#d88200">&amp;#39;src/internal/index.ts&amp;#39;&lt;/span>&lt;span style="color:#111">],&lt;/span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// ESM 格式
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#75af00">format&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#111">[&lt;/span>&lt;span style="color:#d88200">&amp;#39;esm&amp;#39;&lt;/span>&lt;span style="color:#111">],&lt;/span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// 生成類型定義
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#75af00">dts&lt;/span>: &lt;span style="color:#00a8c8">true&lt;/span>&lt;span style="color:#111">,&lt;/span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// 每次構建時清理輸出目錄
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#75af00">clean&lt;/span>: &lt;span style="color:#00a8c8">true&lt;/span>&lt;span style="color:#111">,&lt;/span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">});&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Javascript_TypeScript - TypeScript - tsconfig.json</title><link>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---typescript---tsconfig.json/</link><pubDate>Sat, 12 Oct 2024 08:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---typescript---tsconfig.json/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>當目錄中出現了 tsconfig.json 文件，則表示該目錄是 TypeScript 專案的根目錄。tsconfig.json 檔案指定了編譯專案所需的根目錄下的檔案以及編譯選項。實務上在不同的開發情境中，準備不同的 tsconfig.json 是非常有必要的。&lt;/p>
+&lt;ul>
+&lt;li>開發環境中，可能希望啟用更多的錯誤檢查和調試資訊，以便更快地發現問題。&lt;/li>
+&lt;li>生產環境中，則可能希望關閉這些額外的檢查，以提升編譯速度並減少輸出檔案大小。&lt;/li>
+&lt;/ul>
+&lt;p>呼叫 tsc 時使用 &lt;code>--project&lt;/code> 或 &lt;code>-p&lt;/code> 選項來指定相應的配置檔案。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>tsc -p tsconfig.build.json
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.typescriptlang.org/zh/docs/handbook/tsconfig-json.html">tsconfig.json 是什麼&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.typescriptlang.org/tsconfig/">TSConfig Reference&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://juejin.cn/post/7165429078470688781">tsc性能优化 &amp;ndash; Project References&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="基底-tsconfig">基底 tsconfig&lt;/h2>
+&lt;p>Node 20 推薦的 tsconfig.json&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.npmjs.com/package/@tsconfig/node20">@tsconfig/node20&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>npm install -D @tsconfig/node20
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>可以繼承基底 tsconfig 並覆寫參數&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;extends&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;@tsconfig/node20/tsconfig.json&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;compilerOptions&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;preserveConstEnums&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#00a8c8">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;include&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">[&lt;/span>&lt;span style="color:#d88200">&amp;#34;src/**/*&amp;#34;&lt;/span>&lt;span style="color:#111">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;exclude&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">[&lt;/span>&lt;span style="color:#d88200">&amp;#34;node_modules&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#d88200">&amp;#34;**/*.spec.ts&amp;#34;&lt;/span>&lt;span style="color:#111">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="型別導出">型別導出&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;compilerOptions&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;declaration&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#00a8c8">true&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;declarationMap&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#00a8c8">true&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;emitDeclarationOnly&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#00a8c8">true&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;outDir&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;./dist&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;exclude&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">[&lt;/span>&lt;span style="color:#d88200">&amp;#34;tests/**/*&amp;#34;&lt;/span>&lt;span style="color:#111">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;include&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">[&lt;/span>&lt;span style="color:#d88200">&amp;#34;src/**/*&amp;#34;&lt;/span>&lt;span style="color:#111">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>&lt;strong>declaration&lt;/strong>：是否生成對應的 &lt;strong>.d.ts&lt;/strong> 檔案，用來描述編譯後的 JavaScript 的型別資訊。&lt;/li>
+&lt;li>&lt;strong>declarationMap&lt;/strong>：會為 &lt;strong>.d.ts&lt;/strong> 檔案生成對應的 &lt;strong>.d.ts.map&lt;/strong> 檔案，使得編譯後的型別定義可以追溯到原始 TypeScript 代碼。&lt;/li>
+&lt;li>&lt;strong>emitDeclarationOnly&lt;/strong>：TypeScript 只會生成 &lt;strong>.d.ts&lt;/strong> 型別檔案，不會生成對應的 JavaScript 檔案。&lt;/li>
+&lt;li>&lt;strong>outDir&lt;/strong>：指定了編譯器應該將生成的 JavaScript 和型別定義檔案輸出到的目錄。&lt;/li>
+&lt;li>&lt;strong>exclude/include&lt;/strong>：控制哪些檔案會被包含在編譯過程中。這會間接影響型別的導出，因為只有被包含的檔案才會生成 .d.ts 型別定義檔。&lt;/li>
+&lt;/ul>
+&lt;h2 id="monorepo">Monorepo&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;compilerOptions&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;incremental&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#00a8c8">true&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;composite&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#00a8c8">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="incremental">incremental&lt;/h3>
+&lt;p>用於加速 TypeScript 的編譯過程，特別是當代碼庫很大或涉及多個子項目時。&lt;/p></description></item><item><title>Javascript_TypeScript - Package - Prettier</title><link>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---package---prettier/</link><pubDate>Thu, 05 Sep 2024 08:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---package---prettier/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>Prettier 是一個代碼格式化工具，用於保持代碼風格一致。&lt;/p>
+&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://prettier.io/">Prettier · Opinionated Code Formatter&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://prettier.io/playground/">playground&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://juejin.cn/post/7406891999376261146#heading-1">如何配置 prettier&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="notice">Notice&lt;/h2>
+&lt;ul>
+&lt;li>⚠️ 跨平台協同的結尾符問題
+&lt;ul>
+&lt;li>&lt;a href="https://bobbyhadz.com/blog/eslint-delete-cr-prettier#set-endofline-to-auto-in-your-prettierrcjs-file">[eslint] Delete CR eslint(prettier/prettier) issue&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.opasschang.com/confusing-git-autocrlf/">令人困擾的git autocrlf – Opass Life&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="install">Install&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>pnpm add -D prettier
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="extension">Extension&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode">vscode extension&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="vscodeextensionjson">.vscode/extension.json&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;recommendations&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">[&lt;/span>&lt;span style="color:#d88200">&amp;#34;esbenp.prettier-vscode&amp;#34;&lt;/span>&lt;span style="color:#111">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="vscodesettingjson">.vscode/setting.json&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;editor.formatOnSave&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#00a8c8">true&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;[typescript]&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;editor.defaultFormatter&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;esbenp.prettier-vscode&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;[javascript]&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;editor.defaultFormatter&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;esbenp.prettier-vscode&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;[json]&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;editor.defaultFormatter&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;esbenp.prettier-vscode&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="plugin">Plugin&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>prettier-plugin-organize-imports&lt;/strong> : 排序/合併/移除未使用的 import 聲明&lt;/li>
+&lt;/ul>
+&lt;h2 id="integration---eslint">Integration - ESlint&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/prettier/eslint-config-prettier">eslint-config-prettier&lt;/a>
+&lt;ul>
+&lt;li>ESLint 配置，用於關閉與 Prettier 產生衝突。&lt;/li>
+&lt;li>&lt;a href="https://github.com/prettier/eslint-config-prettier?tab=readme-ov-file#installation">eslint-config-prettier - eslint.config.js (flat config)&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="config">Config&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>.prettierrc&lt;/strong> : &lt;a href="https://prettier.io/docs/en/configuration.html">Configuration File · Prettier&lt;/a>&lt;/li>
+&lt;li>&lt;strong>.prettierignore&lt;/strong> : &lt;a href="https://prettier.io/docs/en/ignore.html">Ignoring Code · Prettier&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="packagejson">package.json&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;scripts&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;format&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;prettier --write --cache .&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;format-check&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;prettier --check --cache .&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="prettierrc">.prettierrc&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;semi&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#00a8c8">true&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;trailingComma&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;all&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;singleQuote&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#00a8c8">true&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;printWidth&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">150&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;endOfLine&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;auto&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;singleAttributePerLine&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#00a8c8">true&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;vueIndentScriptAndStyle&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#00a8c8">true&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;htmlWhitespaceSensitivity&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;ignore&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;plugins&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">[&lt;/span>&lt;span style="color:#d88200">&amp;#34;prettier-plugin-organize-imports&amp;#34;&lt;/span>&lt;span style="color:#111">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;overrides&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;files&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;.prettierrc&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;options&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;parser&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;json&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="prettierignore">.prettierignore&lt;/h3>
+&lt;pre tabindex="0">&lt;code>dist
+pnpm-lock.yaml
+CHANGELOG*.md
+&lt;/code>&lt;/pre>&lt;h3 id="eslintconfigjs">eslint.config.js&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-js" data-lang="js">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">import&lt;/span> &lt;span style="color:#75af00">eslintConfigPrettier&lt;/span> &lt;span style="color:#75af00">from&lt;/span> &lt;span style="color:#d88200">&amp;#39;eslint-config-prettier&amp;#39;&lt;/span>&lt;span style="color:#111">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">export&lt;/span> &lt;span style="color:#00a8c8">default&lt;/span> &lt;span style="color:#111">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">eslintConfigPrettier&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">];&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Javascript_TypeScript - Package - commitlint</title><link>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---package---commitlint/</link><pubDate>Fri, 12 Jul 2024 08:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---package---commitlint/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>commitlint 是一個用來檢查 git commit 信息格式的工具，它可以配合多種規範使用。&lt;/p>
+&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/conventional-changelog/commitlint">conventional-changelog/commitlint&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://commitlint.js.org/">commitlint doc&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.imooc.com/article/359532">Commit-lint学习：新手入门指南&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://2sistersgarlic.com/commitlint-vs-commitizen-comparison-for-better-git-commit-practices/">Commitlint vs Commitizen: Comparison for Better Git Commit Practices&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="notice">Notice&lt;/h2>
+&lt;ul>
+&lt;li>⚠️ 此處搭配 simple-git-hooks 使用。&lt;/li>
+&lt;/ul>
+&lt;h2 id="install">Install&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>pnpm add -D @commitlint/&lt;span style="color:#f92672">{&lt;/span>cli,config-conventional&lt;span style="color:#f92672">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="config">Config&lt;/h2>
+&lt;h3 id="packagejson">package.json&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;simple-git-hooks&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;pre-commit&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;pnpm lint-staged &amp;amp;&amp;amp; pnpm check&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;commit-msg&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;pnpx commitlint --edit $1&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="commitlintconfigjs">commitlint.config.js&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-js" data-lang="js">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">export&lt;/span> &lt;span style="color:#00a8c8">default&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">extends&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#111">[&lt;/span>&lt;span style="color:#d88200">&amp;#39;@commitlint/config-conventional&amp;#39;&lt;/span>&lt;span style="color:#111">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">};&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Javascript_TypeScript - Package - Vitest</title><link>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---package---vitest/</link><pubDate>Tue, 02 Jul 2024 08:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---package---vitest/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://vitest.dev/">Vitest&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="coverage">Coverage&lt;/h2>
+&lt;p>這些數值表示了測試覆蓋率的不同方面，具體如下：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>% Stmts (Statements Coverage)&lt;/strong>：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>說明&lt;/strong>：表示程式碼中所有執行語句的覆蓋率。這個百分比告訴你測試運行時執行了多少語句。&lt;/li>
+&lt;li>&lt;strong>例如&lt;/strong>：如果程式碼中有 100 行執行語句，而測試覆蓋了其中的 80 行，則此覆蓋率為 80%。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>% Branch (Branches Coverage)&lt;/strong>：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>說明&lt;/strong>：表示條件分支的覆蓋率（如 if/else、switch/case）。這個百分比告訴你程式碼中所有可能的邏輯分支是否被測試覆蓋。&lt;/li>
+&lt;li>&lt;strong>例如&lt;/strong>：如果有 10 個 if/else 條件，但只有 7 個條件分支在測試中執行過，則此覆蓋率為 70%。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>% Funcs (Functions Coverage)&lt;/strong>：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>說明&lt;/strong>：表示函數的覆蓋率。這個百分比告訴你測試運行時，程式碼中定義的函數中有多少被調用和覆蓋。&lt;/li>
+&lt;li>&lt;strong>例如&lt;/strong>：如果程式碼中有 20 個函數，而測試覆蓋了其中的 15 個，則此覆蓋率為 75%。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>% Lines (Lines Coverage)&lt;/strong>：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>說明&lt;/strong>：表示實際被執行的行數覆蓋率。這與 % Stmts 類似，但更精確地計算了具體的行數。&lt;/li>
+&lt;li>&lt;strong>例如&lt;/strong>：如果程式碼中有 200 行代碼，而測試覆蓋了其中的 180 行，則此覆蓋率為 90%。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Uncovered Line #s&lt;/strong>：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>說明&lt;/strong>：列出未被測試覆蓋的具體行號。這些是測試未執行到的程式碼行，你可以根據這些行號來調整和增加測試用例，從而提高測試覆蓋率。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;p>這些指標有助於你了解測試覆蓋率的具體情況，並確保你的程式碼在不同方面都得到充分的測試。&lt;/p>
+&lt;h2 id="extra">Extra&lt;/h2>
+&lt;h3 id="必要時使用括-弧表示法httpswwwtypescriptlangorgdocshandbook2classeshtmlcaveats-訪問屬性private">必要時使用括 &lt;a href="https://www.typescriptlang.org/docs/handbook/2/classes.html#caveats">弧表示法&lt;/a> 訪問屬性private&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-typescript" data-lang="typescript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75af00">expect&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#75af00">inst&lt;/span>&lt;span style="color:#111">[&lt;/span>&lt;span style="color:#d88200">&amp;#34;_somePrivateProp&amp;#34;&lt;/span>&lt;span style="color:#111">]).&lt;/span>&lt;span style="color:#75af00">toBe&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#d88200">&amp;#34;foo&amp;#34;&lt;/span>&lt;span style="color:#111">);&lt;/span> &lt;span style="color:#75715e">// OK
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Javascript_TypeScript - Javascript Note</title><link>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---javascript-note/</link><pubDate>Mon, 29 Apr 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---javascript-note/</guid><description>&lt;h2 id="style">Style&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://google.github.io/styleguide/jsguide.html">Google JavaScript Style Guide&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="basic">Basic&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=Pychc22EG4Q">作用域(scope)解說：let, const, var有什麼差？&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=1VZNfSjUfdU">Value與Reference的差異解說&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="asyncawait">async/await&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.explainthis.io/zh-hant/swe/async-await">JavaScript 中的 async/await 是什麼？和 promise 有什麼差別？&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="event-loop">Event Loop&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="youtube.com/watch?v=z4S6ZxRD2rA">JavaScript Event Loop解說：單執行緒還能異步運算？&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.explainthis.io/zh-hant/swe/what-is-event-loop">請說明瀏覽器中的事件循環 (Event Loop)&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="object">Object&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.explainthis.io/zh-hant/swe/structureClone">為什麼推薦用 structureClone 在 JavaScript 做深拷貝?&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="promise">Promise&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.explainthis.io/zh-hant/swe/what-is-promise">Promise 是什麼？有什麼用途？&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="others">Others&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.bilibili.com/read/cv37465501">前端 JavaScript 代码保护？！&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Javascript_TypeScript - TypeScript Note</title><link>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---typescript-note/</link><pubDate>Mon, 29 Apr 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---typescript-note/</guid><description>&lt;h2 id="style">Style&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://google.github.io/styleguide/tsguide.html">Google TypeScript Style Guide&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="tool">Tool&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://transform.tools/json-to-typescript">JSON to TypeScript&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="basic">Basic&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://jimmyswebnote.com/typescript-object-public-private/">TypeScript 物件中的 public, private, protected, static, readonly&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.cnblogs.com/keatkeat/p/17662020.html">TypeScript – Using Disposable&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="coding-guidelines">Coding guidelines&lt;/h2>
+&lt;ul>
+&lt;li>使用 undefined。不要使用 null。&lt;/li>
+&lt;/ul>
+&lt;h2 id="tsc">tsc&lt;/h2>
+&lt;ul>
+&lt;li>&amp;ndash;project tsconfig.json : 使用當前目錄下的 tsconfig.json&lt;/li>
+&lt;li>&amp;ndash;showConfig : 檢視該目錄的 tsconfig.json (包含繼承的數值)&lt;/li>
+&lt;/ul></description></item></channel></rss>

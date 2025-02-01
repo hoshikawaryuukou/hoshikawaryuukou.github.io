@@ -1,1 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Web on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/web/</link><description>Recent content in Web on 識之箱庭</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sun, 19 Jan 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/web/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Platform - Web</title><link>https://HoshikawaRyuukou.github.io/posts/unity-platform-web/</link><pubDate>Sun, 19 Jan 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-platform-web/</guid><description>Quick Chat ⚠️ 使用 Unity 6 開發 Guide Unity - Manual: Web Getting started with Unity Web 【Unity】WebGL開発時の注意事項 Unity发布webgl获取浏览器的URL Unity WebGLビルドメモ - フレームシンセシス Unity 製 WebGL ゲームを AWS でお手軽公開 Template (Unity) Better Minimal WebGL Template Performance Using the Unity Profiler Using the web platform Diagnostics Overlay tool Unity WebGL Loading Test Host terreng/simple-web-server terreng/sws-unity-plugin Issue Error : Failed to parse binary data file Build/xxx.data.br&amp;hellip; Failed to parse binary data file Build/web.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Web on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/web/</link><description>Recent content in Web on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sun, 19 Jan 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/web/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Platform - Web</title><link>https://HoshikawaRyuukou.github.io/posts/unity---platform---web/</link><pubDate>Sun, 19 Jan 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---platform---web/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;ul>
+&lt;li>⚠️ 使用 &lt;strong>Unity 6&lt;/strong> 開發&lt;/li>
+&lt;/ul>
+&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.unity3d.com/6000.0/Documentation/Manual/webgl.html">Unity - Manual: Web&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://learn.unity.com/tutorial/getting-started-with-unity-web">Getting started with Unity Web&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://qiita.com/kazuki_kuriyama/items/3155606bb6cb5861ce68">【Unity】WebGL開発時の注意事項&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.csdn.net/GoodCooking/article/details/136307133">Unity发布webgl获取浏览器的URL&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://tech.framesynthesis.co.jp/unity/webgl/">Unity WebGLビルドメモ - フレームシンセシス&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zenn.dev/happy_elements/articles/hekk_ac_20231215">Unity 製 WebGL ゲームを AWS でお手軽公開&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="template">Template&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://seansleblanc.itch.io/better-minimal-webgl-template">(Unity) Better Minimal WebGL Template&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="performance">Performance&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://learn.unity.com/tutorial/getting-started-with-unity-web#670ea950edbc2a2240868db0">Using the Unity Profiler&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://learn.unity.com/tutorial/getting-started-with-unity-web#670ea9d0edbc2a2240868dc1">Using the web platform Diagnostics Overlay tool&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/JohannesDeml/UnityWebGL-LoadingTest?tab=readme-ov-file">Unity WebGL Loading Test&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="host">Host&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/terreng/simple-web-server">terreng/simple-web-server&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/terreng/sws-unity-plugin">terreng/sws-unity-plugin&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="issue">Issue&lt;/h2>
+&lt;h3 id="error--failed-to-parse-binary-data-file-buildxxxdatabr">Error : Failed to parse binary data file Build/xxx.data.br&amp;hellip;&lt;/h3>
+&lt;blockquote>
+&lt;p>Failed to parse binary data file Build/web.data.br (with &amp;ldquo;Content-Type: null&amp;rdquo;), because it is still brotli-compressed. It should have been uncompressed by the browser, but it was unable to do so since the web server provided the compressed content without specifying the HTTP Response Header &amp;ldquo;Content-Encoding: br&amp;rdquo; that would have informed the browser that decompression is needed. Please verify your web server hosting configuration to add the missing &amp;ldquo;Content-Encoding: br&amp;rdquo; HTTP Response Header.&lt;/p></description></item></channel></rss>

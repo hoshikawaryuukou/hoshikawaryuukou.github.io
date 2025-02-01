@@ -1,12 +1,112 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Principle on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/principle/</link><description>Recent content in Principle on 識之箱庭</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 16 Jan 2025 20:05:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/principle/index.xml" rel="self" type="application/rss+xml"/><item><title>Software Design - Principle - Inversion of Control (IoC)</title><link>https://HoshikawaRyuukou.github.io/posts/software-design-principle-inversion-of-control-ioc/</link><pubDate>Thu, 16 Jan 2025 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design-principle-inversion-of-control-ioc/</guid><description>Quick Chat 1. 如果你的程式中，有一個物件需要另一個物件，應該怎麼做？ 直接由需求方 new 一個實例嗎？ 2. 如果那個物件的建構方式很複雜呢？ 例如，它可能需要多個參數，還需要一些初始化邏輯。 如果每次都在需求方進行這些操作，會不會重複又繁瑣？ 3. 如果有多個需求方重複依賴這個物件呢？ 這些需求方能共享同一個物件嗎？ 如果共享，如何管理這個共用的實例？誰來負責它的生命週期？ 4. 依賴管理是誰的責任？ 需求方是否應該負責處理自己所有的依賴？ 還是應該有一個「專門負責管理依賴」的角色？ 如果有一個「外部機制」來幫你管理這些依賴，需求方只需要專注於自己的邏輯，不需要擔心如何建構物件，這樣會不會更簡單？ 控制反轉 - 什麼反轉了？ 控制反轉（Inversion of Control, IoC）就是為了解決這些問題而生的。它帶來了一個核心理念：
-需求方不再自己去「控制」依賴的構建和配置，而是把這部分的「控制權」交給「外部機制」（通常是 IoC 容器）。
-需求方只需專注於「接收」或「查詢」依賴，並專心「使用」它們。簡化需求方的職責，使其僅專注於處理業務邏輯，從而提升模組化與可維護性。
-好處 依賴管理 通過外部機制統一管理依賴，開發者不需要在各處手動管理物件實例的生命週期與建構邏輯。 容器能管理共享的物件實例，有效避免重複建構，提高資源利用率。 將依賴配置集中於容器，能輕鬆應對需求變更。例如，替換某個服務的具體實現時，只需要調整配置，而非修改多處程式碼。 提升模組化與可維護性 需求方與具體實現之間的耦合度降低，使得每個模組能更容易地獨立開發、測試與替換。 提升測試便利性 透過依賴注入，需求方可以接收模擬物件（mock）或測試替身（stub），從而更輕鬆地撰寫單元測試。 sample - c# var mockStorageService = new Mock&amp;lt;IStorageService&amp;gt;(); mockStorageService.Setup(service =&amp;gt; service.SaveOrder(It.IsAny&amp;lt;Order&amp;gt;())).Verifiable(); var orderService = new OrderService(mockStorageService.Object); sample - js const mockStorageService = { saveOrder: (order) =&amp;gt; { console.log(`Mock saving order ${order.</description></item><item><title>Software Design - Principle - Dependency Inversion Principle (DIP)</title><link>https://HoshikawaRyuukou.github.io/posts/software-design-principle-dependency-inversion-principle-dip/</link><pubDate>Tue, 15 Nov 2022 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design-principle-dependency-inversion-principle-dip/</guid><description>依賴倒置原則 Dependency Inversion Principle，以下皆簡稱 DIP。
-為什麼需要 先來看定義
-高層次的模塊不應該依賴於低層次的模塊，兩者都應該依賴於抽象接口 抽象接口不應該依賴於具體實現。而具體實現則應該依賴於抽象接口 文謅謅的，但重點似乎是抽象。不如直接看個狀況劇:
-有一個 Project A 需要使用播廣告的功能。分別採 2 個做法
-直接依賴 直覺的做法。Project A 直接依賴於廣告模組(UnityAds)，這裡模組 Project A 被迫去了解 UnityAds 的實作細節(怎麼初始化/下載廣告/播廣告)。
-目前沒甚麼問題，運作得很好&amp;hellip; 但很快問題就來了。UnityAds 因為某些原因不能用了! (假設後臺被打了什麼的)。於是找了另一個廣告模組(AdMob)，想要如法炮製，但有幾點可能會不好受。
-要改的地方很分散 (廣告被 Project A 多處使用) Project A 需要處理不同的 API格式 (了解細節，單例、Callback、事件&amp;hellip;) 導致原先依賴 UnityAds 的模組需要重新編譯 (造成浪費時間) 原因是直接依賴外部模組導致的，相對於你的系統 UnityAds 是個外人，是不穩定的，去依賴一個不穩定的東西，也會導致自己變得不穩定。
-依賴倒置 仔細想一下，Project A 直接依賴 UnityAds 是必要的嗎? 需求是播 UnityAds 的廣告? 還是播廣告? 為了實現穩定廣告服務的依賴源，我們將其抽象化
-public interface IAdService { void Initialize(); void Load(); void Show(); } 但 UnityAds 與 AdMob 又不能直接實作這個介面怎麼辦，可以用配接器模式(Adapter Pattern)寫個轉接頭，想辦法讓外部細節符合 IAdService 的需求。現在需要廣告服務的部分均透過 IAdService來操作，不需再知道外部廣告模組的細節。</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Principle on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/principle/</link><description>Recent content in Principle on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 16 Jan 2025 20:05:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/principle/index.xml" rel="self" type="application/rss+xml"/><item><title>Software Design - Principle - Inversion of Control (IoC)</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---principle---inversion-of-control-ioc/</link><pubDate>Thu, 16 Jan 2025 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---principle---inversion-of-control-ioc/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;h3 id="1-如果你的程式中有一個物件需要另一個物件應該怎麼做">1. 如果你的程式中，有一個物件需要另一個物件，應該怎麼做？&lt;/h3>
+&lt;ul>
+&lt;li>直接由需求方 new 一個實例嗎？&lt;/li>
+&lt;/ul>
+&lt;h3 id="2-如果那個物件的建構方式很複雜呢">2. 如果那個物件的建構方式很複雜呢？&lt;/h3>
+&lt;ul>
+&lt;li>例如，它可能需要多個參數，還需要一些初始化邏輯。&lt;/li>
+&lt;li>如果每次都在需求方進行這些操作，會不會重複又繁瑣？&lt;/li>
+&lt;/ul>
+&lt;h3 id="3-如果有多個需求方重複依賴這個物件呢">3. 如果有多個需求方重複依賴這個物件呢？&lt;/h3>
+&lt;ul>
+&lt;li>這些需求方能共享同一個物件嗎？&lt;/li>
+&lt;li>如果共享，如何管理這個共用的實例？誰來負責它的生命週期？&lt;/li>
+&lt;/ul>
+&lt;h3 id="4-依賴管理是誰的責任">4. 依賴管理是誰的責任？&lt;/h3>
+&lt;ul>
+&lt;li>需求方是否應該負責處理自己所有的依賴？&lt;/li>
+&lt;li>還是應該有一個「專門負責管理依賴」的角色？&lt;/li>
+&lt;li>如果有一個「外部機制」來幫你管理這些依賴，需求方只需要專注於自己的邏輯，不需要擔心如何建構物件，這樣會不會更簡單？&lt;/li>
+&lt;/ul>
+&lt;h2 id="控制反轉---什麼反轉了">控制反轉 - 什麼反轉了？&lt;/h2>
+&lt;p>控制反轉（Inversion of Control, IoC）就是為了解決這些問題而生的。它帶來了一個核心理念：&lt;/p>
+&lt;blockquote>
+&lt;p>需求方不再自己去「控制」依賴的構建和配置，而是把這部分的「控制權」交給「外部機制」（通常是 IoC 容器）。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>需求方只需專注於「接收」或「查詢」依賴，並專心「使用」它們。簡化需求方的職責，使其僅專注於處理業務邏輯，從而提升模組化與可維護性。&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="好處">好處&lt;/h2>
+&lt;h3 id="依賴管理">&lt;strong>依賴管理&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>通過外部機制統一管理依賴，開發者不需要在各處手動管理物件實例的生命週期與建構邏輯。&lt;/li>
+&lt;li>容器能管理共享的物件實例，有效避免重複建構，提高資源利用率。&lt;/li>
+&lt;li>將依賴配置集中於容器，能輕鬆應對需求變更。例如，替換某個服務的具體實現時，只需要調整配置，而非修改多處程式碼。&lt;/li>
+&lt;/ul>
+&lt;h3 id="提升模組化與可維護性">&lt;strong>提升模組化與可維護性&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>需求方與具體實現之間的耦合度降低，使得每個模組能更容易地獨立開發、測試與替換。&lt;/li>
+&lt;/ul>
+&lt;h3 id="提升測試便利性">&lt;strong>提升測試便利性&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>透過依賴注入，需求方可以接收模擬物件（mock）或測試替身（stub），從而更輕鬆地撰寫單元測試。&lt;/li>
+&lt;li>sample - c#
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cs" data-lang="cs">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">var&lt;/span> &lt;span style="color:#111">mockStorageService&lt;/span> &lt;span style="color:#111">=&lt;/span> &lt;span style="color:#00a8c8">new&lt;/span> &lt;span style="color:#111">Mock&lt;/span>&lt;span style="color:#111">&amp;lt;&lt;/span>&lt;span style="color:#111">IStorageService&lt;/span>&lt;span style="color:#111">&amp;gt;();&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">mockStorageService&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">Setup&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#111">service&lt;/span> &lt;span style="color:#111">=&amp;gt;&lt;/span> &lt;span style="color:#111">service&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">SaveOrder&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#111">It&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">IsAny&lt;/span>&lt;span style="color:#111">&amp;lt;&lt;/span>&lt;span style="color:#111">Order&lt;/span>&lt;span style="color:#111">&amp;gt;())).&lt;/span>&lt;span style="color:#111">Verifiable&lt;/span>&lt;span style="color:#111">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">var&lt;/span> &lt;span style="color:#111">orderService&lt;/span> &lt;span style="color:#111">=&lt;/span> &lt;span style="color:#00a8c8">new&lt;/span> &lt;span style="color:#111">OrderService&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#111">mockStorageService&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">Object&lt;/span>&lt;span style="color:#111">);&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;li>sample - js
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-js" data-lang="js">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">const&lt;/span> &lt;span style="color:#75af00">mockStorageService&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">saveOrder&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#111">(&lt;/span>&lt;span style="color:#75af00">order&lt;/span>&lt;span style="color:#111">)&lt;/span> &lt;span style="color:#111">=&amp;gt;&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">console&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">log&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#d88200">`Mock saving order &lt;/span>&lt;span style="color:#d88200">${&lt;/span>&lt;span style="color:#75af00">order&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">id&lt;/span>&lt;span style="color:#d88200">}&lt;/span>&lt;span style="color:#d88200">`&lt;/span>&lt;span style="color:#111">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">};&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">const&lt;/span> &lt;span style="color:#75af00">orderService&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#00a8c8">new&lt;/span> &lt;span style="color:#75af00">OrderService&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#75af00">mockStorageService&lt;/span>&lt;span style="color:#111">);&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;/ul>
+&lt;h2 id="技術實現">技術實現&lt;/h2>
+&lt;h3 id="組合根composition-root">&lt;strong>組合根（Composition Root）&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>集中管理所有依賴的構建與組合，通常位於應用程式的進入點。&lt;/li>
+&lt;/ul>
+&lt;h3 id="依賴尋找dependency-lookup">&lt;strong>依賴尋找（Dependency Lookup）&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>需求方主動向容器請求所需的依賴。&lt;/li>
+&lt;/ul>
+&lt;h3 id="依賴注入dependency-injection-di">&lt;strong>依賴注入（Dependency Injection, DI）&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>容器將依賴主動注入至需求方的機制，例如透過建構子注入、屬性注入或方法注入。&lt;/li>
+&lt;/ul></description></item><item><title>Software Design - Principle - Dependency Inversion Principle (DIP)</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---principle---dependency-inversion-principle-dip/</link><pubDate>Tue, 15 Nov 2022 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---principle---dependency-inversion-principle-dip/</guid><description>&lt;p>依賴倒置原則 Dependency Inversion Principle，以下皆簡稱 DIP。&lt;/p>
+&lt;h2 id="為什麼需要">為什麼需要&lt;/h2>
+&lt;p>先來看定義&lt;/p>
+&lt;ul>
+&lt;li>高層次的模塊不應該依賴於低層次的模塊，兩者都應該依賴於抽象接口&lt;/li>
+&lt;li>抽象接口不應該依賴於具體實現。而具體實現則應該依賴於抽象接口&lt;/li>
+&lt;/ul>
+&lt;p>文謅謅的，但重點似乎是抽象。不如直接看個狀況劇:&lt;/p>
+&lt;blockquote>
+&lt;p>有一個 Project A 需要使用播廣告的功能。分別採 2 個做法&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="直接依賴">直接依賴&lt;/h3>
+&lt;p>
+ &lt;img src="https://HoshikawaRyuukou.github.io/images/DIPNO.png" alt="DIPNO">
+
+&lt;/p>
+&lt;p>直覺的做法。Project A 直接依賴於廣告模組(UnityAds)，這裡模組 Project A 被迫去了解 UnityAds 的實作細節(怎麼初始化/下載廣告/播廣告)。&lt;/p>
+&lt;p>目前沒甚麼問題，運作得很好&amp;hellip; 但很快問題就來了。UnityAds 因為某些原因不能用了! (假設後臺被打了什麼的)。於是找了另一個廣告模組(AdMob)，想要如法炮製，但有幾點可能會不好受。&lt;/p>
+&lt;ul>
+&lt;li>要改的地方很分散 (廣告被 Project A 多處使用)&lt;/li>
+&lt;li>Project A 需要處理不同的 API格式 (了解細節，單例、Callback、事件&amp;hellip;)&lt;/li>
+&lt;li>導致原先依賴 UnityAds 的模組需要重新編譯 (造成浪費時間)&lt;/li>
+&lt;/ul>
+&lt;p>原因是&lt;strong>直接依賴&lt;/strong>外部模組導致的，相對於你的系統 UnityAds 是個外人，是不穩定的，去依賴一個不穩定的東西，也會導致自己變得不穩定。&lt;/p>
+&lt;h3 id="依賴倒置">依賴倒置&lt;/h3>
+&lt;p>
+ &lt;img src="https://HoshikawaRyuukou.github.io/images/DIPValid.png" alt="DIPValid">
+
+&lt;/p>
+&lt;ul>
+&lt;li>仔細想一下，Project A 直接依賴 UnityAds 是必要的嗎?&lt;/li>
+&lt;li>需求是播 UnityAds 的廣告? 還是播廣告?&lt;/li>
+&lt;/ul>
+&lt;p>為了實現穩定廣告服務的依賴源，我們將其抽象化&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-csharp" data-lang="csharp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">public&lt;/span> &lt;span style="color:#00a8c8">interface&lt;/span> &lt;span style="color:#75af00">IAdService&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">void&lt;/span> &lt;span style="color:#111">Initialize&lt;/span>&lt;span style="color:#111">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">void&lt;/span> &lt;span style="color:#111">Load&lt;/span>&lt;span style="color:#111">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">void&lt;/span> &lt;span style="color:#111">Show&lt;/span>&lt;span style="color:#111">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>但 UnityAds 與 AdMob 又不能直接實作這個介面怎麼辦，可以用配接器模式(Adapter Pattern)寫個轉接頭，想辦法讓外部細節符合 IAdService 的需求。現在需要廣告服務的部分均透過 IAdService來操作，不需再知道外部廣告模組的細節。&lt;/p></description></item></channel></rss>

@@ -1,5 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HackMD on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/hackmd/</link><description>Recent content in HackMD on 識之箱庭</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Tue, 29 Oct 2024 13:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/hackmd/index.xml" rel="self" type="application/rss+xml"/><item><title>HackMD - Note</title><link>https://HoshikawaRyuukou.github.io/posts/hackmd-note/</link><pubDate>Tue, 29 Oct 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/hackmd-note/</guid><description>Quick Chat HackMD 的核心思想是
-輕鬆使用 Markdown 協作文件的工具
-符合的筆者的使用需求
-免費方案適合輕度用戶 跨平台兼容性（桌面/移動設備） 支援 Markdown 格式 文件管理（標籤/搜索功能） 分享控制（私人/公開） 支援遠端同步 付費方案差異
-多人協作人數 文件大小限制 版本控制 API 接入 Guide HackMD：協作 Markdown 文件，分享知識的平台 HackMD 使用教學 HackMD 快速入門教學 用 HackMD 做簡報 Slide-example</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HackMD on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/hackmd/</link><description>Recent content in HackMD on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Tue, 29 Oct 2024 13:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/hackmd/index.xml" rel="self" type="application/rss+xml"/><item><title>HackMD - Note</title><link>https://HoshikawaRyuukou.github.io/posts/hackmd---note/</link><pubDate>Tue, 29 Oct 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/hackmd---note/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>HackMD 的核心思想是&lt;/p>
+&lt;blockquote>
+&lt;p>輕鬆使用 Markdown 協作文件的工具&lt;/p>
+&lt;/blockquote>
+&lt;p>符合的筆者的使用需求&lt;/p>
+&lt;ul>
+&lt;li>免費方案適合輕度用戶&lt;/li>
+&lt;li>跨平台兼容性（桌面/移動設備）&lt;/li>
+&lt;li>支援 Markdown 格式&lt;/li>
+&lt;li>文件管理（標籤/搜索功能）&lt;/li>
+&lt;li>分享控制（私人/公開）&lt;/li>
+&lt;li>支援遠端同步&lt;/li>
+&lt;/ul>
+&lt;p>付費方案差異&lt;/p>
+&lt;ul>
+&lt;li>多人協作人數&lt;/li>
+&lt;li>文件大小限制&lt;/li>
+&lt;li>版本控制&lt;/li>
+&lt;li>API 接入&lt;/li>
+&lt;/ul>
+&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://hackmd.io/zh">HackMD：協作 Markdown 文件，分享知識的平台&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://hackmd.io/c/tutorials-tw/%2Fs%2Ftutorials-tw?utm_source=home&amp;amp;utm_medium=nav-bar">HackMD 使用教學&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://hackmd.io/c/tutorials-tw/%2F%40docs%2Fquick-start-guild-tw?utm_source=home&amp;amp;utm_medium=nav-bar">HackMD 快速入門教學&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://hackmd.io/how-to-create-slide-deck-tw">用 HackMD 做簡報&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://hackmd.io/slide-example?both">Slide-example&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

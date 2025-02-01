@@ -1,4 +1,89 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Software Development on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/software-development/</link><description>Recent content in Software Development on 識之箱庭</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Wed, 23 Oct 2024 21:05:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/software-development/index.xml" rel="self" type="application/rss+xml"/><item><title>Software Development - Repository Structure - monorepo</title><link>https://HoshikawaRyuukou.github.io/posts/software-development-repository-structure-monorepo/</link><pubDate>Wed, 23 Oct 2024 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-development-repository-structure-monorepo/</guid><description>Guide Monorepo：让你的项目脱胎换骨，既能代码复用，又能独立部署！ Config Boost your productivity with TypeScript project references An actual complete guide to typescript monorepos TypeScript project references Template jkomyno/pnpm-monorepo-template bakeruk/modern-typescript-monorepo-example firxworx/fx-pnpm-monorepo-starter limuen/monorepo-project ixahmedxi/orbitkit</description></item><item><title>Software Development - Sites</title><link>https://HoshikawaRyuukou.github.io/posts/software-development-sites/</link><pubDate>Wed, 28 Aug 2024 20:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-development-sites/</guid><description>Developer Community 稀土掘金 Zenn Qitta Developer Guide Refactoring and Design Patterns DevIQ Developer Blog CyberAgent Developers Blog | サイバーエージェント デベロッパーズブログ SELECK [セレック] |デジタル人材のためのメディア every Tech Blog tangly llc Blog | tangly Components CodeOpinion Khalil Stemmler | Become a confident crafter. Learn to write testable, scalable TypeScript. Developer Note 牧涯前端学习笔记 | 记录一些前端学习的知识 Company - Game Happy Elements Inactive jyt0532&amp;rsquo;s Blog Tomas Tulka&amp;rsquo;s Blog Entropy Wins - A blog on Software Architecture, Design and Craftsmanship</description></item><item><title>Software Development - Repository Structure</title><link>https://HoshikawaRyuukou.github.io/posts/software-development-repository-structure-note/</link><pubDate>Mon, 12 Aug 2024 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-development-repository-structure-note/</guid><description>Quick Chat 最近筆者在開發公司的共用套件時，踩了不少坑，尤其是在儲存庫結構方面。
-最初選擇了 polyrepo 的結構，但隨著開發的進展，碰到了一些問題：
-要確保這些獨立的 repo 配置能夠同步。 每次發佈都需要逐一更新每個套件，尤其是那些有兩三層依賴的，讓發佈變得非常繁瑣。 進行 code review 時，還要不停地在不同 repo 之間切換。 為了改善這些問題，開始研究 monorepo 的結構：
-使用 pnpm workspace 來構建。 雖然 monorepo 有一些權限控管的隱憂，但因為共用套件的開發人數不多，所以目前還不用太擔心協作上的衝突。 Guide monorepo-vs-polyrepo 你很常聽到 monorepo，但為什麼要用 monorepo? PolyrepoからMonorepoへ移行する 策略 monolith: 當專案需要保持單一應用程式的完整性，所有功能都被打包在一起，且較少外部依賴。 monorepo: 當多個專案需要高度共享資源或密切合作，如共用許多元件、工具或模組的情況下。 polyrepo: 功能差異大、專案之間關聯性不強或不需要彼此干擾的情況下。每個專案獨立運行，較少相互依賴。 monolith polyrepo monorepo Managing a full-stack, multipackage monorepo using pnpm Live types in a TypeScript monorepo Building a Typescript + NodeJS Monorepo in 2024 特色 👍 package 使用相同版本 依賴/設定檔/風格。 ⚠️ package 權限控管需仰賴其他工作流。</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Software Development on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/software-development/</link><description>Recent content in Software Development on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Wed, 23 Oct 2024 21:05:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/software-development/index.xml" rel="self" type="application/rss+xml"/><item><title>Software Development - Repository Structure - monorepo</title><link>https://HoshikawaRyuukou.github.io/posts/software-development---repository-structure---monorepo/</link><pubDate>Wed, 23 Oct 2024 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-development---repository-structure---monorepo/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://segmentfault.com/a/1190000045216948">Monorepo：让你的项目脱胎换骨，既能代码复用，又能独立部署！&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="config">Config&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://blog.logrocket.com/boost-your-productivity-with-typescript-project-references/">Boost your productivity with TypeScript project references&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://dev.to/cryogenicplanet/an-actual-complete-guide-to-typescript-monorepos-240l">An actual complete guide to typescript monorepos&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://moonrepo.dev/docs/guides/javascript/typescript-project-refs">TypeScript project references&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="template">Template&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/jkomyno/pnpm-monorepo-template/tree/main">jkomyno/pnpm-monorepo-template&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/bakeruk/modern-typescript-monorepo-example">bakeruk/modern-typescript-monorepo-example&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/firxworx/fx-pnpm-monorepo-starter">firxworx/fx-pnpm-monorepo-starter&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/limuen/monorepo-project">limuen/monorepo-project&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/ixahmedxi/orbitkit">ixahmedxi/orbitkit&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Software Development - Sites</title><link>https://HoshikawaRyuukou.github.io/posts/software-development---sites/</link><pubDate>Wed, 28 Aug 2024 20:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-development---sites/</guid><description>&lt;h2 id="developer-community">Developer Community&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://juejin.cn/">稀土掘金&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zenn.dev">Zenn&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://qiita.com/">Qitta&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="developer-guide">Developer Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://refactoring.guru/">Refactoring and Design Patterns&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://deviq.com/">DevIQ&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="developer-blog">Developer Blog&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://developers.cyberagent.co.jp/blog/">CyberAgent Developers Blog | サイバーエージェント デベロッパーズブログ&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://seleck.cc/">SELECK [セレック] |デジタル人材のためのメディア&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://tech.every.tv/">every Tech Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.tangly.net/blog/">tangly llc Blog | tangly Components&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://codeopinion.com/">CodeOpinion&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://khalilstemmler.com/">Khalil Stemmler | Become a confident crafter. Learn to write testable, scalable TypeScript.&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="developer-note">Developer Note&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://muyacode.github.io/FrontEndLearnNotes/">牧涯前端学习笔记 | 记录一些前端学习的知识&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="company---game">Company - Game&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.happyelements.co.jp/">Happy Elements&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="inactive">Inactive&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.jyt0532.com/toc/">jyt0532&amp;rsquo;s Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.ttulka.com/">Tomas Tulka&amp;rsquo;s Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.entropywins.wtf/blog/">Entropy Wins - A blog on Software Architecture, Design and Craftsmanship&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Software Development - Repository Structure</title><link>https://HoshikawaRyuukou.github.io/posts/software-development---repository-structure---note/</link><pubDate>Mon, 12 Aug 2024 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-development---repository-structure---note/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>最近筆者在開發公司的共用套件時，踩了不少坑，尤其是在儲存庫結構方面。&lt;/p>
+&lt;p>最初選擇了 polyrepo 的結構，但隨著開發的進展，碰到了一些問題：&lt;/p>
+&lt;ul>
+&lt;li>要確保這些獨立的 repo 配置能夠同步。&lt;/li>
+&lt;li>每次發佈都需要逐一更新每個套件，尤其是那些有兩三層依賴的，讓發佈變得非常繁瑣。&lt;/li>
+&lt;li>進行 code review 時，還要不停地在不同 repo 之間切換。&lt;/li>
+&lt;/ul>
+&lt;p>為了改善這些問題，開始研究 monorepo 的結構：&lt;/p>
+&lt;ul>
+&lt;li>使用 pnpm workspace 來構建。&lt;/li>
+&lt;li>雖然 monorepo 有一些權限控管的隱憂，但因為共用套件的開發人數不多，所以目前還不用太擔心協作上的衝突。&lt;/li>
+&lt;/ul>
+&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/joelparkerhenderson/monorepo-vs-polyrepo">monorepo-vs-polyrepo&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.explainthis.io/zh-hant/swe/why-use-monorepo">你很常聽到 monorepo，但為什麼要用 monorepo?&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zenn.dev/kkoudev/articles/3963065a2ffa26">PolyrepoからMonorepoへ移行する&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="策略">策略&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>monolith&lt;/strong>: 當專案需要保持單一應用程式的完整性，所有功能都被打包在一起，且較少外部依賴。&lt;/li>
+&lt;li>&lt;strong>monorepo&lt;/strong>: 當多個專案需要高度共享資源或密切合作，如共用許多元件、工具或模組的情況下。&lt;/li>
+&lt;li>&lt;strong>polyrepo&lt;/strong>: 功能差異大、專案之間關聯性不強或不需要彼此干擾的情況下。每個專案獨立運行，較少相互依賴。&lt;/li>
+&lt;/ul>
+&lt;h2 id="monolith">monolith&lt;/h2>
+&lt;h2 id="polyrepo">polyrepo&lt;/h2>
+&lt;h2 id="monorepo">monorepo&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://blog.logrocket.com/managing-full-stack-monorepo-pnpm/">Managing a full-stack, multipackage monorepo using pnpm&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://colinhacks.com/essays/live-types-typescript-monorepo">Live types in a TypeScript monorepo&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.gfor.rest/blog/node-ts-monorepo">Building a Typescript + NodeJS Monorepo in 2024&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="特色">特色&lt;/h3>
+&lt;ul>
+&lt;li>👍 package 使用相同版本 &lt;strong>依賴/設定檔/風格&lt;/strong>。&lt;/li>
+&lt;li>⚠️ package 權限控管需仰賴其他工作流。&lt;/li>
+&lt;/ul></description></item></channel></rss>
