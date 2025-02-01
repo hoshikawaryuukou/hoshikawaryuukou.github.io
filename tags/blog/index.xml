@@ -1,22 +1,58 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/blog/</link><description>Recent content in Blog on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sat, 05 Nov 2022 20:05:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo - Hello Blog</title><link>https://HoshikawaRyuukou.github.io/posts/hugo---hello-blog/</link><pubDate>Sat, 05 Nov 2022 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/hugo---hello-blog/</guid><description>&lt;h2 id="blog">Blog&lt;/h2>
-&lt;p>起初筆者覺得使用 Github Repository + Markdown 當作筆記就足矣。但隨著筆記越多越雜，只使用文件夾結構 + 目錄超連結，在查找上越覺得不便，還是需要有一套系統來代勞。Blog/筆記 平台玲瑯滿目，但寄身於平台的風險難以忽視(倒站/政策改變)，網站搬家也讓人很頭疼。之前就知道靜態網站能架在 Github 上，只是一直沒研究，剛好趁這個機會練習一下 Web 前端的技能。最後的方案是 Github Pages + Hugo。&lt;/p>
-&lt;h2 id="hugo">Hugo&lt;/h2>
-&lt;p>網上的教學也很多，筆者先是快速瀏覽一下幾篇文章再動工，這裡就不手把手介紹，這主要記錄一些筆者遇到的坑。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/blog/</link><description>Recent content in Blog on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 30 Jan 2025 14:05:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo - Image Reference</title><link>https://HoshikawaRyuukou.github.io/posts/hugo---image-reference/</link><pubDate>Thu, 30 Jan 2025 14:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/hugo---image-reference/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>使用 Hugo 建立網站時，Markdown 編輯器預覽圖片時可能遇到的問題。&lt;/p>
+&lt;p>原因是相對路徑&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://ithelp.ithome.com.tw/articles/10235097">Hugo 貼身打造個人部落格系列&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.zoeydc.com/zh/posts/2021-05-23-hugo-website_github-pages_custom-domain/">網站開張！在 GitHub Pages 架設 Hugo 靜態網站&lt;/a>&lt;/li>
+&lt;li>文章位於 &lt;code>/content/posts&lt;/code> 目錄&lt;/li>
+&lt;li>圖片位於 &lt;code>/static/images&lt;/code> 目錄&lt;/li>
 &lt;/ul>
-&lt;h3 id="開始">開始&lt;/h3>
-&lt;p>官方的文件 &lt;a href="https://gohugo.io/getting-started/">Official Doc&lt;/a> 已經足夠清楚了，照著 Quick Start 跑完就有一個完整的畫面(以靜態網站來說)，但這裡有幾個注意的點。&lt;/p>
+&lt;p>Hugo 能夠正確渲染圖片，因為它知道 /images 是相對於 static 目錄的路徑。然而，許多 Markdown 編輯器在預覽時，無法識別這種相對路徑，導致圖片無法顯示。&lt;/p>
+&lt;h2 id="solutions">Solutions&lt;/h2>
 &lt;ul>
-&lt;li>使用 Binary (Cross-platform) 配置 Hugo 時，有 hugo / hugo_extended 版本，且要手動配置環境變數。extended 支援 Sass/SCSS，這裡沒注意到花了不少時間，想說改個主題佈局怎麼編譯不過，&lt;a href="https://discourse.gohugo.io/t/tocss-ressource-not-found-in-file-cache/24858">Hugo Discourse Support&lt;/a>。&lt;/li>
-&lt;li>設置 &lt;a href="https://github.com/github/gitignore/blob/main/community/Golang/Hugo.gitignore">.gitignore&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h3 id="主題">主題&lt;/h3>
-&lt;p>主題有很多選擇 &lt;a href="https://themes.gohugo.io/">Official Link&lt;/a> / &lt;a href="https://github.com/topics/hugo-theme">Github Tag - hugo-theme&lt;/a>，有的已經打磨得很完善。筆者對這個 Blog 希望以簡潔明快為主，紀錄是第一要務。最終採用這個 &lt;a href="https://github.com/monkeyWzr/hugo-theme-cactus">Theme - Cactus&lt;/a> (變心可換問題不大)，之後肯定會進行一些魔改的，不然自架的意義就小很多了。&lt;/p>
-&lt;p>選擇上幾點注意&lt;/p>
+&lt;li>&lt;a href="https://mikefrobbins.com/2023/02/08/rendering-images-in-markdown-preview-of-hugo-site/">Rendering Images in Markdown Preview of Hugo Site&lt;/a>
 &lt;ul>
-&lt;li>避開一些太舊的主題 (跟 Hugo 衝突 / js腳本過舊&amp;hellip;)&lt;/li>
-&lt;li>第三方 API 遇到大改動時要排除一下才能建置 ( FB / IG 讓好多主題要改&amp;hellip;)&lt;/li>
+&lt;li>在 Hugo 項目的根目錄創建一個指向 static/images 目錄的符號連結（symlink）。&lt;/li>
+&lt;li>以管理員權限開啟 cmd&lt;/li>
+&lt;li>mklink /D images .\static\images&lt;/li>
 &lt;/ul>
-&lt;p>修改上幾點注意&lt;/p></description></item></channel></rss>
+&lt;/li>
+&lt;/ul></description></item><item><title>Hugo - Note</title><link>https://HoshikawaRyuukou.github.io/posts/hugo---note/</link><pubDate>Thu, 30 Jan 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/hugo---note/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>Blog/筆記軟體 平台玲瑯滿目，但依賴於平台的風險難以忽視(倒站/政策改變)，網站搬家也讓人很頭疼。此 Blog 採方案是 &lt;code>Github Pages + Hugo&lt;/code>。&lt;/p>
+&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://gohugo.io/">The world’s fastest framework for building websites | Hugo&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/gohugoio/hugo">gohugoio/hugo&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://devbricker.github.io/post/hugo/deploy/hugo_environment/">Hugo 從零開始 環境安裝(Windows)&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="environment">Environment&lt;/h2>
+&lt;ul>
+&lt;li>至 &lt;a href="https://github.com/gohugoio/hugo/releases">Hugo github release&lt;/a> 下載執行檔 (hugo_extended)&lt;/li>
+&lt;li>設置環境變數&lt;/li>
+&lt;li>&lt;code>hugo version&lt;/code> : 檢視 hugo 版本&lt;/li>
+&lt;/ul>
+&lt;h2 id="quick-chat-1">Quick Chat&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/adityatelange/hugo-PaperMod">adityatelange/hugo-PaperMod&lt;/a>
+&lt;ul>
+&lt;li>建議新手使用該主題練習&lt;/li>
+&lt;li>社群較活躍&lt;/li>
+&lt;li>教學較完善&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="themes">Themes&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://themes.gohugo.io/">Hugo Themes&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/hoshikawaryuukou/hugo-theme-cactus">hoshikawaryuukou/hugo-theme-cactus&lt;/a>
+&lt;ul>
+&lt;li>本 Blog Theme 基於以下 repository 修改&lt;/li>
+&lt;li>&lt;a href="https://github.com/monkeyWzr/hugo-theme-cactus">monkeyWzr/hugo-theme-cactus&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/OmeletWithoutEgg/hugo-theme-cactus">OmeletWithoutEgg/hugo-theme-cactus&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="custom">Custom&lt;/h3>
+&lt;ul>
+&lt;li>使用 git submodule 導入主題&lt;/li>
+&lt;li>不要直接修改主題範本文件&lt;/li>
+&lt;li>要修改的文件從主題範本 &lt;strong>複製(文件夾結構要相同)&lt;/strong> 出來到根目錄，Hugo 會照優先度來處理 &lt;a href="https://gohugo.io/templates/lookup-order/">Official Link&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>
