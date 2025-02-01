@@ -1,9 +1,9 @@
 ---
-title: "Version control - Git - Note"
+title: "Git - Note"
 date: 2023-02-04 13:11:00
 draft: false
 
-tags: ["Version control", "Git"]
+tags: ["Git"]
 ---
 
 ## GUI Clients
@@ -22,6 +22,8 @@ tags: ["Version control", "Git"]
 ## Operation
 - [git revert 是如何让你丢失代码的？](https://www.bilibili.com/video/BV1S4421f7MS)
 - [十分钟学会常用git撤销操作，全面掌握git的时光机](https://www.youtube.com/watch?v=ol7CMoJuAvI)
+- [How effectively delete a git submodule.](https://gist.github.com/myusuf3/7f645819ded92bda6677)
+- [Git cherry pick a commit to another repo](https://faun.pub/git-cherry-pick-a-commit-to-another-repo-30dc64d61acb)
 
 ## git hook
 - git hook 是每次執行 git 操作時都會運行的命令或腳本。
