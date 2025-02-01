@@ -1,4 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/posts/</link><description>Recent content in Posts on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 30 Jan 2025 14:05:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo - Image Reference</title><link>https://HoshikawaRyuukou.github.io/posts/hugo---image-reference/</link><pubDate>Thu, 30 Jan 2025 14:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/hugo---image-reference/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/posts/</link><description>Recent content in Posts on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 30 Jan 2025 14:12:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo - Github Actions + Github Pages</title><link>https://HoshikawaRyuukou.github.io/posts/hugo---github-actions-+-github-pages/</link><pubDate>Thu, 30 Jan 2025 14:12:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/hugo---github-actions-+-github-pages/</guid><description>&lt;h2 id="github-actions">GitHub Actions&lt;/h2>
+&lt;h3 id="gh-pagesyml">gh-pages.yml&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yml" data-lang="yml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">github pages&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">on&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">push&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">branches&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#ae81ff">main&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">pull_request&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">jobs&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">deploy&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">runs-on&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">ubuntu-22.04&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">steps&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">uses&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">actions/checkout@v3&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">with&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">submodules&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#00a8c8">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">fetch-depth&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span> &lt;span style="color:#75715e"># Fetch all history for .GitInfo and .Lastmod&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Setup Hugo&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">uses&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">peaceiris/actions-hugo@v3&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">with&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">hugo-version&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;latest&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">extended&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#00a8c8">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Build&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">run&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">hugo --minify&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Deploy&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">uses&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">peaceiris/actions-gh-pages@v4&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">if&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">github.ref == &amp;#39;refs/heads/main&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">with&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">github_token&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">${{ secrets.GITHUB_TOKEN }}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">publish_dir&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">./public&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Hugo - Image Reference</title><link>https://HoshikawaRyuukou.github.io/posts/hugo---image-reference/</link><pubDate>Thu, 30 Jan 2025 14:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/hugo---image-reference/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>使用 Hugo 建立網站時，Markdown 編輯器預覽圖片時可能遇到的問題。&lt;/p>
 &lt;p>原因是相對路徑&lt;/p>
 &lt;ul>
@@ -50,11 +84,35 @@
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;h3 id="custom">Custom&lt;/h3>
+&lt;h2 id="custom">Custom&lt;/h2>
 &lt;ul>
-&lt;li>使用 git submodule 導入主題&lt;/li>
-&lt;li>不要直接修改主題範本文件&lt;/li>
-&lt;li>要修改的文件從主題範本 &lt;strong>複製(文件夾結構要相同)&lt;/strong> 出來到根目錄，Hugo 會照優先度來處理 &lt;a href="https://gohugo.io/templates/lookup-order/">Official Link&lt;/a>&lt;/li>
+&lt;li>使用 git submodule 導入主題。&lt;/li>
+&lt;li>不要直接修改主題範本文件。&lt;/li>
+&lt;li>要修改的文件從主題範本 &lt;strong>複製(文件夾結構要相同)&lt;/strong> 出來到根目錄，&lt;a href="https://gohugo.io/templates/lookup-order/">Hugo 會照優先度來處理&lt;/a>。&lt;/li>
+&lt;li>多數主題都有配置 Google Analytics，只需填入 id 到 config 即可。&lt;/li>
+&lt;/ul></description></item><item><title>Github - GitHub CLI</title><link>https://HoshikawaRyuukou.github.io/posts/github---github-cli/</link><pubDate>Wed, 29 Jan 2025 13:16:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/github---github-cli/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>發現 GitHub 網頁面板上好像沒辦法直接刪除 deployment，得用 GitHub CLI 來操作。&lt;/p>
+&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://cli.github.com/">GitHub CLI | Take GitHub to the command line&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="memo">Memo&lt;/h2>
+&lt;h3 id="登入">登入&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>gh auth login
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="僅保留最近-200-個部屬其餘的刪除">僅保留最近 200 個部屬，其餘的刪除&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-ps1" data-lang="ps1">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">gh&lt;/span> &lt;span style="color:#111">api&lt;/span> &lt;span style="color:#111">repos&lt;/span>&lt;span style="color:#111">/{&lt;/span>&lt;span style="color:#111">owner&lt;/span>&lt;span style="color:#111">}/{&lt;/span>&lt;span style="color:#111">repo&lt;/span>&lt;span style="color:#111">}/&lt;/span>&lt;span style="color:#111">deployments&lt;/span> &lt;span style="color:#111">-&lt;/span>&lt;span style="color:#111">-paginate&lt;/span> &lt;span style="color:#111">-&lt;/span>&lt;span style="color:#111">-jq&lt;/span> &lt;span style="color:#d88200">&amp;#39;.[].id&amp;#39;&lt;/span> &lt;span style="color:#111">|&lt;/span> &lt;span style="color:#111">Select-Object&lt;/span> &lt;span style="color:#111">-Skip&lt;/span> &lt;span style="color:#ae81ff">200&lt;/span>&lt;span style="color:#111">|&lt;/span> &lt;span style="color:#111">ForEach-Object&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">Write-Host&lt;/span> &lt;span style="color:#d88200">&amp;#34;Deleting deployment &lt;/span>&lt;span style="color:#111">$_&lt;/span>&lt;span style="color:#d88200">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">gh&lt;/span> &lt;span style="color:#111">api&lt;/span> &lt;span style="color:#111">-&lt;/span>&lt;span style="color:#111">-method&lt;/span> &lt;span style="color:#111">DELETE&lt;/span> &lt;span style="color:#111">repos&lt;/span>&lt;span style="color:#111">/{&lt;/span>&lt;span style="color:#111">owner&lt;/span>&lt;span style="color:#111">}/{&lt;/span>&lt;span style="color:#111">repo&lt;/span>&lt;span style="color:#111">}/&lt;/span>&lt;span style="color:#111">deployments&lt;/span>&lt;span style="color:#111">/&lt;/span>&lt;span style="color:#111">$_&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>&lt;code>gh api&lt;/code>：用 GitHub CLI 發送 API 請求。&lt;/li>
+&lt;li>&lt;code>repos/{owner}/{repo}/deployments&lt;/code>：指定查詢的 GitHub Repository 和其部署。&lt;/li>
+&lt;li>&lt;code>--paginate&lt;/code>：表示如果結果有很多頁，會自動翻頁取得所有部署資訊。&lt;/li>
+&lt;li>&lt;code>--jq '.[].id'&lt;/code>：這部分是使用 &lt;code>jq&lt;/code> 來過濾和格式化結果，提取所有部署的 ID。&lt;/li>
+&lt;li>&lt;code>Select-Object -Skip 200&lt;/code>：這行會將返回的部署 ID 進行處理，並跳過前 200 個部署。&lt;/li>
+&lt;li>&lt;code>ForEach-Object { ... }&lt;/code>：對每一個 ID 執行大括號 &lt;code>{}&lt;/code> 中的命令。&lt;/li>
+&lt;li>&lt;code>--method DELETE&lt;/code>：指定 HTTP 請求方法為 DELETE，用來刪除資源。&lt;/li>
+&lt;li>&lt;code>repos/{owner}/{repo}/deployments/$_&lt;/code>：指定要刪除的部署，&lt;code>$_&lt;/code> 是當前處理的 deployment ID。&lt;/li>
 &lt;/ul></description></item><item><title>Unity - Package - YooAsset</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package---yooasset/</link><pubDate>Wed, 22 Jan 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package---yooasset/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>Addressables 是在 AssetBundle 的基礎上對操作進行更友善的封裝，AssetBundle 有很多要小心的地方&lt;/p>
 &lt;ul>
@@ -3339,7 +3397,7 @@ A: 其實需要視情況而定，情況簡單時直接向 View 倒資料也是�
 &lt;li>&lt;a href="https://blog.unity.com/engine-platform/inspecting-memory-with-the-new-memory-profiler-package">Inspecting memory with the new Memory Profiler package&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://unitysquare.co.kr/growwith/unityblog/webinarView?id=387&amp;amp;utm_source=facebook-page&amp;amp;utm_medium=social&amp;amp;utm_campaign=korea_memoryprofilerapp387">Memory Profiler로 애플리케이션의 물리적 메모리 사용량 분석&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://blog.csdn.net/Nbin_Newby/article/details/131537227">Unity内存分析与优化实践(1.1版本前)&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Version control - Git - Rebase</title><link>https://HoshikawaRyuukou.github.io/posts/version-control---git---rebase/</link><pubDate>Sun, 16 Jul 2023 20:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/version-control---git---rebase/</guid><description>&lt;blockquote>
+&lt;/ul></description></item><item><title>Git - Rebase</title><link>https://HoshikawaRyuukou.github.io/posts/git---rebase/</link><pubDate>Sun, 16 Jul 2023 20:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/git---rebase/</guid><description>&lt;blockquote>
 &lt;p>之前筆者一直以為 rebase 是進行類似 &lt;strong>剪下貼上&lt;/strong> 的操作，但實際上是 &lt;strong>複製貼上&lt;/strong>&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="情境">情境&lt;/h2>
@@ -3361,14 +3419,14 @@ git reset XXXXXXX --hard
 &lt;li>&lt;a href="https://jessie75919.medium.com/%E4%BA%BA%E7%94%9F%E5%A6%82%E6%9E%9C%E6%9C%89-git-1-git-rebase-i-drop-94cc1c018465">git rebase -i (drop)&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://jessie75919.medium.com/%E4%BA%BA%E7%94%9F%E5%A6%82%E6%9E%9C%E6%9C%89-git-2-git-rebase-i-pick-c623301ff2db">git rebase -i (pick)&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://jessie75919.medium.com/%E4%BA%BA%E7%94%9F%E5%A6%82%E6%9E%9C%E6%9C%89-git-3-git-rebase-i-reword-370edc23f336">git rebase -i (reword)&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Version control - Git - Pull Request</title><link>https://HoshikawaRyuukou.github.io/posts/version-control---git---pull-request/</link><pubDate>Fri, 14 Jul 2023 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/version-control---git---pull-request/</guid><description>&lt;blockquote>
+&lt;/ul></description></item><item><title>Git - Pull Request</title><link>https://HoshikawaRyuukou.github.io/posts/git---pull-request/</link><pubDate>Fri, 14 Jul 2023 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/git---pull-request/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;blockquote>
 &lt;p>有的環境也稱 Merge Request&lt;/p>
 &lt;/blockquote>
-&lt;h2 id="情境">情境&lt;/h2>
 &lt;p>開發產品時一般會挑選固定一個分支做為可以上線的正式版本分支(master)，需注意的是在進行多人協同開發時，讓每個人都可以 Commit 到專案正式上線的分支不是個好的做法。&lt;/p>
 &lt;p>可以透過 pull request 方式控管權限，由負責管理這個專案的人收到其他開發者的 pull request 並確認無誤後便可進行合併，來確保產品分支處於隨時都是可上線的狀態。&lt;/p>
 &lt;p>參與開源專案時，在創建 pull request 之前，建議先在本地分支上運行 git rebase 命令，確保你的更改基於最新的進度以降低審查者的理解難度。&lt;/p>
-&lt;h2 id="ref">Ref&lt;/h2>
+&lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://gitbook.tw/chapters/github/pull-request">與其它開發者的互動 - 使用 Pull Request（PR）&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Unity - Basic - Preprocessor Directives</title><link>https://HoshikawaRyuukou.github.io/posts/unity---basic---preprocessor-directives/</link><pubDate>Fri, 07 Jul 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---basic---preprocessor-directives/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
@@ -3956,7 +4014,34 @@ git reset XXXXXXX --hard
 &lt;li>Adapter: 將外部與用例功能接合的膠水代碼&lt;/li>
 &lt;/ul>
 &lt;p>不過架構會針對不同情況做調整，細節參考另一篇文章&lt;/p>
-&lt;p>架構設計 - Clean Architecture and Modularization&lt;/p></description></item><item><title>Github - Note</title><link>https://HoshikawaRyuukou.github.io/posts/github---note/</link><pubDate>Sat, 04 Feb 2023 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/github---note/</guid><description>&lt;h2 id="profile">Profile&lt;/h2>
+&lt;p>架構設計 - Clean Architecture and Modularization&lt;/p></description></item><item><title>Git - Note</title><link>https://HoshikawaRyuukou.github.io/posts/git---note/</link><pubDate>Sat, 04 Feb 2023 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/git---note/</guid><description>&lt;h2 id="gui-clients">GUI Clients&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://git-fork.com/">Fork&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="common">Common&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/playlist?list=PLDBEQHWAyt9FbN7TANIXlUvtRhdoBCEQ5">两小时Git教程&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://developer.aliyun.com/article/634481">Git忽略规则.gitignore不生效&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.github.com/zh/get-started/getting-started-with-git/configuring-git-to-handle-line-endings#global-settings-for-line-endings">配置 Git 处理行结束符&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="workflow">Workflow&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/556418580">如何做好分支管理，保证高效CI/CD？&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=vDs3K6Szstg">【GeekHour教程】分支管理和工作流模型&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.puckwang.com/posts/2020/git-submodule-vs-subtree/">Git 進階應用 Submodule 與 Subtree，使用它們來拆分專案&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="operation">Operation&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.bilibili.com/video/BV1S4421f7MS">git revert 是如何让你丢失代码的？&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=ol7CMoJuAvI">十分钟学会常用git撤销操作，全面掌握git的时光机&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://gist.github.com/myusuf3/7f645819ded92bda6677">How effectively delete a git submodule.&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://faun.pub/git-cherry-pick-a-commit-to-another-repo-30dc64d61acb">Git cherry pick a commit to another repo&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="git-hook">git hook&lt;/h2>
+&lt;ul>
+&lt;li>git hook 是每次執行 git 操作時都會運行的命令或腳本。&lt;/li>
+&lt;li>如果 git hook 的執行失敗，則 git 操作將中止。&lt;/li>
+&lt;/ul></description></item><item><title>Github - Note</title><link>https://HoshikawaRyuukou.github.io/posts/github---note/</link><pubDate>Sat, 04 Feb 2023 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/github---note/</guid><description>&lt;h2 id="profile">Profile&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://medium.com/starbugs/%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E7%8D%A8%E4%B8%80%E7%84%A1%E4%BA%8C%E7%9A%84-github-profile-%E8%88%87%E4%B8%89%E5%80%8B%E5%BE%88%E9%85%B7%E7%9A%84%E8%A8%AD%E8%A8%88%E5%8F%8A%E6%87%89%E7%94%A8-ef1cbb4b42c1">如何建立獨一無二的 GitHub Profile！與三個很酷的設計及應用&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/tandpfun/skill-icons#readme">tandpfun/skill-icons&lt;/a>&lt;/li>
@@ -3978,31 +4063,6 @@ git reset XXXXXXX --hard
 &lt;h2 id="github-packages">GitHub Packages&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://docs.github.com/zh/packages">GitHub Packages 文档&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Version control - Git - Note</title><link>https://HoshikawaRyuukou.github.io/posts/version-control---git---note/</link><pubDate>Sat, 04 Feb 2023 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/version-control---git---note/</guid><description>&lt;h2 id="gui-clients">GUI Clients&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://git-fork.com/">Fork&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="common">Common&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://www.youtube.com/playlist?list=PLDBEQHWAyt9FbN7TANIXlUvtRhdoBCEQ5">两小时Git教程&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://developer.aliyun.com/article/634481">Git忽略规则.gitignore不生效&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.github.com/zh/get-started/getting-started-with-git/configuring-git-to-handle-line-endings#global-settings-for-line-endings">配置 Git 处理行结束符&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="workflow">Workflow&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/556418580">如何做好分支管理，保证高效CI/CD？&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=vDs3K6Szstg">【GeekHour教程】分支管理和工作流模型&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://blog.puckwang.com/posts/2020/git-submodule-vs-subtree/">Git 進階應用 Submodule 與 Subtree，使用它們來拆分專案&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="operation">Operation&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://www.bilibili.com/video/BV1S4421f7MS">git revert 是如何让你丢失代码的？&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=ol7CMoJuAvI">十分钟学会常用git撤销操作，全面掌握git的时光机&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="git-hook">git hook&lt;/h2>
-&lt;ul>
-&lt;li>git hook 是每次執行 git 操作時都會運行的命令或腳本。&lt;/li>
-&lt;li>如果 git hook 的執行失敗，則 git 操作將中止。&lt;/li>
 &lt;/ul></description></item><item><title>Software Design - Pattern - Guard Clauses</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---guard-clauses/</link><pubDate>Tue, 10 Jan 2023 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---guard-clauses/</guid><description>&lt;h2 id="目的">目的&lt;/h2>
 &lt;ul>
 &lt;li>符合 Fail Fast 的原則，驗證條件並在不滿足條件時立即停止執行。&lt;/li>

@@ -15,44 +15,4 @@
 &lt;li>mklink /D images .\static\images&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul></description></item><item><title>Hugo - Note</title><link>https://HoshikawaRyuukou.github.io/posts/hugo---note/</link><pubDate>Thu, 30 Jan 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/hugo---note/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
-&lt;p>Blog/筆記軟體 平台玲瑯滿目，但依賴於平台的風險難以忽視(倒站/政策改變)，網站搬家也讓人很頭疼。此 Blog 採方案是 &lt;code>Github Pages + Hugo&lt;/code>。&lt;/p>
-&lt;h2 id="guide">Guide&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://gohugo.io/">The world’s fastest framework for building websites | Hugo&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/gohugoio/hugo">gohugoio/hugo&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://devbricker.github.io/post/hugo/deploy/hugo_environment/">Hugo 從零開始 環境安裝(Windows)&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="environment">Environment&lt;/h2>
-&lt;ul>
-&lt;li>至 &lt;a href="https://github.com/gohugoio/hugo/releases">Hugo github release&lt;/a> 下載執行檔 (hugo_extended)&lt;/li>
-&lt;li>設置環境變數&lt;/li>
-&lt;li>&lt;code>hugo version&lt;/code> : 檢視 hugo 版本&lt;/li>
-&lt;/ul>
-&lt;h2 id="quick-chat-1">Quick Chat&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/adityatelange/hugo-PaperMod">adityatelange/hugo-PaperMod&lt;/a>
-&lt;ul>
-&lt;li>建議新手使用該主題練習&lt;/li>
-&lt;li>社群較活躍&lt;/li>
-&lt;li>教學較完善&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="themes">Themes&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://themes.gohugo.io/">Hugo Themes&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/hoshikawaryuukou/hugo-theme-cactus">hoshikawaryuukou/hugo-theme-cactus&lt;/a>
-&lt;ul>
-&lt;li>本 Blog Theme 基於以下 repository 修改&lt;/li>
-&lt;li>&lt;a href="https://github.com/monkeyWzr/hugo-theme-cactus">monkeyWzr/hugo-theme-cactus&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/OmeletWithoutEgg/hugo-theme-cactus">OmeletWithoutEgg/hugo-theme-cactus&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h3 id="custom">Custom&lt;/h3>
-&lt;ul>
-&lt;li>使用 git submodule 導入主題&lt;/li>
-&lt;li>不要直接修改主題範本文件&lt;/li>
-&lt;li>要修改的文件從主題範本 &lt;strong>複製(文件夾結構要相同)&lt;/strong> 出來到根目錄，Hugo 會照優先度來處理 &lt;a href="https://gohugo.io/templates/lookup-order/">Official Link&lt;/a>&lt;/li>
 &lt;/ul></description></item></channel></rss>

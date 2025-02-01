@@ -1,4 +1,61 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Github on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/github/</link><description>Recent content in Github on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Mon, 04 Nov 2024 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/github/index.xml" rel="self" type="application/rss+xml"/><item><title>Workflow - Publish private packages to Github Packages using Changesets</title><link>https://HoshikawaRyuukou.github.io/posts/workflow---publish-private-packages-to-github-packages-using-changesets/</link><pubDate>Mon, 04 Nov 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow---publish-private-packages-to-github-packages-using-changesets/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Github on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/github/</link><description>Recent content in Github on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 30 Jan 2025 14:12:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/github/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo - Github Actions + Github Pages</title><link>https://HoshikawaRyuukou.github.io/posts/hugo---github-actions-+-github-pages/</link><pubDate>Thu, 30 Jan 2025 14:12:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/hugo---github-actions-+-github-pages/</guid><description>&lt;h2 id="github-actions">GitHub Actions&lt;/h2>
+&lt;h3 id="gh-pagesyml">gh-pages.yml&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yml" data-lang="yml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">github pages&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">on&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">push&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">branches&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#ae81ff">main&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">pull_request&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">jobs&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">deploy&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">runs-on&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">ubuntu-22.04&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">steps&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">uses&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">actions/checkout@v3&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">with&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">submodules&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#00a8c8">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">fetch-depth&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span> &lt;span style="color:#75715e"># Fetch all history for .GitInfo and .Lastmod&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Setup Hugo&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">uses&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">peaceiris/actions-hugo@v3&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">with&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">hugo-version&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;latest&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">extended&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#00a8c8">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Build&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">run&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">hugo --minify&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Deploy&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">uses&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">peaceiris/actions-gh-pages@v4&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">if&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">github.ref == &amp;#39;refs/heads/main&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">with&lt;/span>&lt;span style="color:#111">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">github_token&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">${{ secrets.GITHUB_TOKEN }}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">publish_dir&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">./public&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Github - GitHub CLI</title><link>https://HoshikawaRyuukou.github.io/posts/github---github-cli/</link><pubDate>Wed, 29 Jan 2025 13:16:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/github---github-cli/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>發現 GitHub 網頁面板上好像沒辦法直接刪除 deployment，得用 GitHub CLI 來操作。&lt;/p>
+&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://cli.github.com/">GitHub CLI | Take GitHub to the command line&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="memo">Memo&lt;/h2>
+&lt;h3 id="登入">登入&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>gh auth login
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="僅保留最近-200-個部屬其餘的刪除">僅保留最近 200 個部屬，其餘的刪除&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-ps1" data-lang="ps1">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">gh&lt;/span> &lt;span style="color:#111">api&lt;/span> &lt;span style="color:#111">repos&lt;/span>&lt;span style="color:#111">/{&lt;/span>&lt;span style="color:#111">owner&lt;/span>&lt;span style="color:#111">}/{&lt;/span>&lt;span style="color:#111">repo&lt;/span>&lt;span style="color:#111">}/&lt;/span>&lt;span style="color:#111">deployments&lt;/span> &lt;span style="color:#111">-&lt;/span>&lt;span style="color:#111">-paginate&lt;/span> &lt;span style="color:#111">-&lt;/span>&lt;span style="color:#111">-jq&lt;/span> &lt;span style="color:#d88200">&amp;#39;.[].id&amp;#39;&lt;/span> &lt;span style="color:#111">|&lt;/span> &lt;span style="color:#111">Select-Object&lt;/span> &lt;span style="color:#111">-Skip&lt;/span> &lt;span style="color:#ae81ff">200&lt;/span>&lt;span style="color:#111">|&lt;/span> &lt;span style="color:#111">ForEach-Object&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">Write-Host&lt;/span> &lt;span style="color:#d88200">&amp;#34;Deleting deployment &lt;/span>&lt;span style="color:#111">$_&lt;/span>&lt;span style="color:#d88200">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">gh&lt;/span> &lt;span style="color:#111">api&lt;/span> &lt;span style="color:#111">-&lt;/span>&lt;span style="color:#111">-method&lt;/span> &lt;span style="color:#111">DELETE&lt;/span> &lt;span style="color:#111">repos&lt;/span>&lt;span style="color:#111">/{&lt;/span>&lt;span style="color:#111">owner&lt;/span>&lt;span style="color:#111">}/{&lt;/span>&lt;span style="color:#111">repo&lt;/span>&lt;span style="color:#111">}/&lt;/span>&lt;span style="color:#111">deployments&lt;/span>&lt;span style="color:#111">/&lt;/span>&lt;span style="color:#111">$_&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>&lt;code>gh api&lt;/code>：用 GitHub CLI 發送 API 請求。&lt;/li>
+&lt;li>&lt;code>repos/{owner}/{repo}/deployments&lt;/code>：指定查詢的 GitHub Repository 和其部署。&lt;/li>
+&lt;li>&lt;code>--paginate&lt;/code>：表示如果結果有很多頁，會自動翻頁取得所有部署資訊。&lt;/li>
+&lt;li>&lt;code>--jq '.[].id'&lt;/code>：這部分是使用 &lt;code>jq&lt;/code> 來過濾和格式化結果，提取所有部署的 ID。&lt;/li>
+&lt;li>&lt;code>Select-Object -Skip 200&lt;/code>：這行會將返回的部署 ID 進行處理，並跳過前 200 個部署。&lt;/li>
+&lt;li>&lt;code>ForEach-Object { ... }&lt;/code>：對每一個 ID 執行大括號 &lt;code>{}&lt;/code> 中的命令。&lt;/li>
+&lt;li>&lt;code>--method DELETE&lt;/code>：指定 HTTP 請求方法為 DELETE，用來刪除資源。&lt;/li>
+&lt;li>&lt;code>repos/{owner}/{repo}/deployments/$_&lt;/code>：指定要刪除的部署，&lt;code>$_&lt;/code> 是當前處理的 deployment ID。&lt;/li>
+&lt;/ul></description></item><item><title>Workflow - Publish private packages to Github Packages using Changesets</title><link>https://HoshikawaRyuukou.github.io/posts/workflow---publish-private-packages-to-github-packages-using-changesets/</link><pubDate>Mon, 04 Nov 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow---publish-private-packages-to-github-packages-using-changesets/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/changesets/action/">changesets/action&lt;/a>&lt;/li>
 &lt;/ul>
