@@ -27,7 +27,6 @@ Feature A -> INavigator.Route("FeatureB") // 魔術字串
 or
 Feature A -> INavigator.RouteFeatureB()
 ```
-<br>
 
 重新思考導航這件事
 - Feature 應該知道自己是能夠 **被導航** 或是 **能導航到哪** 嗎?
