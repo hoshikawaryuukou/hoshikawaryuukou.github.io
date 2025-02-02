@@ -1,9 +1,9 @@
 ---
-title: "Telegarm - Note"
+title: "Telegram - Note"
 date: 2024-06-22 21:11:00
 draft: false
 
-tags: ["Telegarm"]
+tags: ["Telegram"]
 ---
 
 ## Bot - API Token

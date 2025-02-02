@@ -1,9 +1,9 @@
 ---
-title: "Development Standards - README"
+title: "Software Development - README"
 date: 2024-06-18 21:11:00
 draft: false
 
-tags: ["Development Standards"]
+tags: ["Software Development"]
 ---
 
 ## Quick Chat

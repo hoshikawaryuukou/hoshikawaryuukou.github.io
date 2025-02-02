@@ -1,9 +1,9 @@
 ---
-title: "Web Game - Overview"
+title: "Game Development - Web Game - Overview"
 date: 2024-12-29 13:11:00
 draft: false
 
-tags: ["Game"]
+tags: ["Game Development"]
 ---
 
 ## [PixiJS](https://pixijs.com/)

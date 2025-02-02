@@ -1,9 +1,9 @@
 ---
-title: "Vite - Note"
+title: "Front-End - Vite - Note"
 date: 2024-11-05 10:11:10
 draft: false
 
-tags: ["Frontend", "Vite"]
+tags: ["Front-End", "Vite"]
 ---
 
 ## Guide

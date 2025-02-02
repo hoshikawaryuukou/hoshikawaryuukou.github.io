@@ -3,7 +3,7 @@ title: "Nvidia - Note"
 date: 2024-11-08 10:11:10
 draft: false
 
-tags: ["Nvidia"]
+tags: ["Nvidia", "Cuda"]
 ---
 
 ## CUDA

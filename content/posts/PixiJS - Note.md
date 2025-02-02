@@ -46,4 +46,3 @@ pnpm create pixi.js
 ## Others
 - [Pixi | GSAP | Docs & Learning](https://gsap.com/docs/v3/Plugins/PixiPlugin/)
 - [Bug: Visual issue rendering spine on v7](https://github.com/pixijs/pixijs/issues/9141#issuecomment-1573726217)
-

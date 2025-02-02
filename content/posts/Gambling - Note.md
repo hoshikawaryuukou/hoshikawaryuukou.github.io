@@ -1,7 +1,7 @@
 ---
 title: "Gambling - Note"
 date: 2024-08-06 13:11:00
-draft: false
+draft: true
 
 tags: ["Gambling"]
 ---

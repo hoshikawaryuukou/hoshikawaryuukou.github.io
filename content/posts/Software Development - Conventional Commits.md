@@ -1,9 +1,9 @@
 ---
-title: "Development Standards - Conventional Commits"
+title: "Software Development - Conventional Commits"
 date: 2024-11-05 20:11:00
 draft: false
 
-tags: ["Development Standards"]
+tags: ["Software Development"]
 ---
 
 ## Quick Chat

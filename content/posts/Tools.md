@@ -6,6 +6,9 @@ draft: false
 tags: ["Tools"]
 ---
 
+## Analyzer
+- [WizTree - The Fastest Disk Space Analyzer](https://diskanalyzer.com/)
+
 ## Antivirus
 - [DefenderUI](https://www.defenderui.com/)
 
@@ -14,6 +17,9 @@ tags: ["Tools"]
 
 ## Batch
 - [Save All Resources](https://chromewebstore.google.com/detail/save-all-resources/abpdnfjocnmdomablahdcfnoggeeiedb)
+
+## Context
+- [BluePointLilac/ContextMenuManager](https://github.com/BluePointLilac/ContextMenuManager)
 
 ## Diagram 
 - [只會用 Office 畫流程圖？許多人試用過這個後直呼回不去了 👍 | Draw.io 教學](https://www.youtube.com/watch?v=CU0ZhMoXz7k)
@@ -46,6 +52,9 @@ tags: ["Tools"]
 
 ## Message
 - [Emojipedia](https://emojipedia.org/)
+
+## Package Manager
+- [marticliment/UniGetUI](https://github.com/marticliment/UniGetUI)
 
 ## Translation
 - [Saladict 沙拉查词](https://chromewebstore.google.com/detail/cdonnmffkdaoajfknoeeecmchibpmkmg?hl=zh-TW)

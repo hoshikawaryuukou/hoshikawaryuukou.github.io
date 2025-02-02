@@ -1,9 +1,9 @@
 ---
-title: "Development Standards - Semantic Versioning"
+title: "Software Development - Semantic Versioning"
 date: 2024-11-04 20:11:00
 draft: false
 
-tags: ["Development Standards"]
+tags: ["Software Development"]
 ---
 
 ## Guide

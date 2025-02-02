@@ -8,3 +8,6 @@ tags: ["Unity"]
 
 ## Solitaire
 - [gubicsz/Solitaire](https://github.com/gubicsz/Solitaire)
+
+## Reversi
+- [Unity設計練習 - リバーシ](https://zenn.dev/qemel/articles/f1829f9b847bcb)

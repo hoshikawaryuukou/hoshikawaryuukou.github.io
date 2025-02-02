@@ -1,7 +1,7 @@
 ---
 title: "Gambling - Basic - Odds"
 date: 2024-07-06 13:11:00
-draft: false
+draft: true
 
 tags: ["Gambling"]
 ---
