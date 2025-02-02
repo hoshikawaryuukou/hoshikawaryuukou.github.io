@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Front-End on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/front-end/</link><description>Recent content in Front-End on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Tue, 31 Dec 2024 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/front-end/index.xml" rel="self" type="application/rss+xml"/><item><title>Front-End - State Management</title><link>https://HoshikawaRyuukou.github.io/posts/front-end---state-management/</link><pubDate>Tue, 31 Dec 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/front-end---state-management/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;blockquote>
-&lt;p>UI = f( state )&lt;/p>
-&lt;/blockquote>
+&lt;p>UI = f( state )&lt;/p>&lt;/blockquote>
 &lt;p>state&lt;/p>
 &lt;ul>
 &lt;li>widget state : 只存在於當前 widget 範圍內的狀態&lt;/li>
@@ -11,7 +10,12 @@
 &lt;ul>
 &lt;li>&lt;a href="https://iceprosurface.com/%E7%9F%A5%E8%AF%86%E5%BA%93/%E7%BC%96%E7%A8%8B/%E5%89%8D%E7%AB%AF/%E8%8C%83%E5%BC%8F%E8%A7%92%E5%BA%A6%E6%80%9D%E8%80%83%E7%9A%84%E5%89%8D%E7%AB%AF%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86">范式角度思考的前端状态管理&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://maliut.space/p/global-state-management/">2022年，我们还需要全局状态管理吗？&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Html - Note</title><link>https://HoshikawaRyuukou.github.io/posts/html--note/</link><pubDate>Tue, 29 Oct 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/html--note/</guid><description>&lt;h2 id="dom-document-object-model">DOM (Document Object Model)&lt;/h2>
+&lt;/ul></description></item><item><title>Front-End - Vite - Note</title><link>https://HoshikawaRyuukou.github.io/posts/front-end---vite---note/</link><pubDate>Tue, 05 Nov 2024 10:11:10 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/front-end---vite---note/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://cn.vitejs.dev/">Vite | 下一代的前端工具链&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.explainthis.io/zh-hant/swe/what-is-vite">Vite 是什麼? 為什麼要用 Vite? 它解決了哪些問題? 又是如何解決?&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://notes.boshkuo.com/blog/vite-vs-webpack">新舊時代 JS Bundler 的世代交替 - Vite vs. Webpack 的詳細比較 | Bosh 的技術探索筆記&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Front-End - Html - Note</title><link>https://HoshikawaRyuukou.github.io/posts/front-end---html---note/</link><pubDate>Tue, 29 Oct 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/front-end---html---note/</guid><description>&lt;h2 id="dom-document-object-model">DOM (Document Object Model)&lt;/h2>
 &lt;p>是一種瀏覽器用來表示和操作 HTML 或 XML 文件的結構化方式。當一個網頁加載時，瀏覽器會將 HTML 文檔解析成 DOM 樹，然後讓開發者使用 JavaScript 等語言動態修改網頁的內容、結構和樣式。&lt;/p>
 &lt;h3 id="view-size">view size&lt;/h3>
 &lt;ul>

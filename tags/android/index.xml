@@ -47,8 +47,7 @@
 &lt;/ul></description></item><item><title>Unity - Platform - Android - AndroidJNIModule</title><link>https://HoshikawaRyuukou.github.io/posts/unity---platform---android---androidjnimodule/</link><pubDate>Sun, 28 Jan 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---platform---android---androidjnimodule/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
 &lt;p>這次的業務需求是&lt;/p>
 &lt;blockquote>
-&lt;p>將 Google Play Install Referrer 接入 Unity&lt;/p>
-&lt;/blockquote>
+&lt;p>將 Google Play Install Referrer 接入 Unity&lt;/p>&lt;/blockquote>
 &lt;p>目前有使用到 AndroidJNIModule 中的&lt;/p>
 &lt;ul>
 &lt;li>AndroidJavaClass&lt;/li>

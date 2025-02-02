@@ -25,23 +25,19 @@
 &lt;p>發布者-訂閱者模式中的主題通常由消息代理或事件總線處理，發布者和觀察者不知道彼此的存在。發布者項主題發送訊息，主題再轉發給觀察者。&lt;/p></description></item><item><title>Software Design - Pattern - ViewModel</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---viewmodel/</link><pubDate>Sun, 27 Aug 2023 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---viewmodel/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
 &lt;p>此篇的實作參考到以下文件 (提到不少 Presentation layer 設計原則)&lt;/p>
 &lt;blockquote>
-&lt;p>&lt;a href="https://developer.android.com/topic/architecture/ui-layer?hl=zh-tw">Android Developers 文件/指南/UI 層&lt;/a>&lt;/p>
-&lt;/blockquote>
+&lt;p>&lt;a href="https://developer.android.com/topic/architecture/ui-layer?hl=zh-tw">Android Developers 文件/指南/UI 層&lt;/a>&lt;/p>&lt;/blockquote>
 &lt;p>該文件的更新頻率算高且會與時俱進，筆者印象中其架構設計從 MVVM -&amp;gt; Domain/Application Driven 設計，可以看出主流架構有產生變化。之後的討論雖然使用 ViewModel 但不會詳細介紹 MVVM 的細節，如果對 MVX 系列不熟，可以先讀筆者之前的文章 &lt;strong>&amp;laquo;通用設計 - Pattern - MVP&amp;raquo;&lt;/strong> 裡面的 References。&lt;/p>
 &lt;h2 id="探索">探索&lt;/h2>
 &lt;p>回到正題，筆者在最近的業務上遇到&lt;/p>
 &lt;blockquote>
-&lt;p>如何在 &lt;strong>服務端未完成&lt;/strong> 的情況下，讓 Client 獲得完整的體驗流 ?&lt;/p>
-&lt;/blockquote>
+&lt;p>如何在 &lt;strong>服務端未完成&lt;/strong> 的情況下，讓 Client 獲得完整的體驗流 ?&lt;/p>&lt;/blockquote>
 &lt;p>以下用交叉反問的方式來分析問題&lt;/p>
 &lt;p>Q: 沒有服務端那資料來源哪來 ? &lt;br>
 A: 使用假資料&lt;/p>
 &lt;p>Q: 當表現層依賴的是 IService Interface 使用假資料時需要實作什麼 ? &lt;br>
 A: 只需要實作一個 FakeService 來產生假資料即可&lt;/p>
 &lt;p>Q: 當想要將業務與表現解耦時，很常使用中介者的手法來黏合兩者，如果使用標準的 MVP 實做，Presenter 實際做了哪些事呢 ? &lt;br>
-A: 監聽 View 事件/ 與 Service 互動/ 管理畫面狀態/ 呼叫 View 刷新&lt;/p>
-&lt;p>Q: Presenter 似乎有點多事情 ! &lt;br>
-A: 其實需要視情況而定，情況簡單時直接向 View 倒資料也是完全可以接受的。但當情況複雜時可以選擇導入 ViewModel 來管理狀態。事實上表現層所要呈現的 UI 狀態未必是只跟 Service 的回傳有關，可能需要這樣的控制 條件A(Service) + 條件B(Local) + 條件C(User Runtime) -&amp;gt; 狀態D&lt;/p></description></item><item><title>Software Design - Pattern - Service Locator</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---service-locator/</link><pubDate>Wed, 28 Jun 2023 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---service-locator/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
+A: 監聽 View 事件/ 與 Service 互動/ 管理畫面狀態/ 呼叫 View 刷新&lt;/p></description></item><item><title>Software Design - Pattern - Service Locator</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---service-locator/</link><pubDate>Wed, 28 Jun 2023 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---service-locator/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
 &lt;p>Service Locator 確實也是 IoC 的一種實作方式，不過採用的是 依賴尋找(Dependency Lookup) 的設計。
 筆者之前有一陣子蠻常使用這 pattern，那時對 DI 與 IoC 的概念並不熟悉，只覺得這樣使用依賴變得很方便。&lt;/p>
 &lt;p>因為我可以在任何地方直接這樣取用資源&lt;/p>

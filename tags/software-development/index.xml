@@ -1,4 +1,69 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Software Development on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/software-development/</link><description>Recent content in Software Development on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Wed, 23 Oct 2024 21:05:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/software-development/index.xml" rel="self" type="application/rss+xml"/><item><title>Software Development - Repository Structure - monorepo</title><link>https://HoshikawaRyuukou.github.io/posts/software-development---repository-structure---monorepo/</link><pubDate>Wed, 23 Oct 2024 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-development---repository-structure---monorepo/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Software Development on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/software-development/</link><description>Recent content in Software Development on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Tue, 05 Nov 2024 20:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/software-development/index.xml" rel="self" type="application/rss+xml"/><item><title>Software Development - Conventional Commits</title><link>https://HoshikawaRyuukou.github.io/posts/software-development---conventional-commits/</link><pubDate>Tue, 05 Nov 2024 20:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-development---conventional-commits/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>以下是 Conventional Commit 的一些主要好處 :&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>一致性&lt;/strong>：統一提交訊息格式，便於理解和閱讀。&lt;/li>
+&lt;li>&lt;strong>自動化支持&lt;/strong>：助力自動生成變更日誌，並與 CI/CD 等工具無縫整合。&lt;/li>
+&lt;li>&lt;strong>版本控制友好&lt;/strong>：與 Semantic Versioning 搭配良好，根據提交類型自動升級版本。&lt;/li>
+&lt;li>&lt;strong>提高溝通效率&lt;/strong>：簡明的訊息格式促進團隊內溝通與代碼審查。&lt;/li>
+&lt;li>&lt;strong>歷史追蹤&lt;/strong>：規範化提交便於回溯和維護，增強項目可讀性和可維護性。&lt;/li>
+&lt;/ul>
+&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.conventionalcommits.org/en/v1.0.0/">Conventional Commits&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/conventional-changelog/commitlint">conventional-changelog/commitlint&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/commitizen/cz-cli">commitizen/cz-cli&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="usage">Usage&lt;/h2>
+&lt;h3 id="samples">samples&lt;/h3>
+&lt;ul>
+&lt;li>chore(deps): add dependencies&lt;/li>
+&lt;li>chore(deps): update pnpm to v9.12.3&lt;/li>
+&lt;li>chore(release): 9.12.3&lt;/li>
+&lt;li>ci: rename audit job&lt;/li>
+&lt;li>feat!: the link command should add overrides&lt;/li>
+&lt;/ul></description></item><item><title>Software Development - Semantic Versioning</title><link>https://HoshikawaRyuukou.github.io/posts/software-development---semantic-versioning/</link><pubDate>Mon, 04 Nov 2024 20:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-development---semantic-versioning/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://semver.org/lang/zh-TW/">語意化版本 2.0.0&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://semver.otterlord.dev/">NPM Semver Calculator&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="定義">定義&lt;/h2>
+&lt;p>語意化版本號由以下三部分構成：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>主版本號 (Major)&lt;/strong>：當發生不向後相容的變更時增加。&lt;/li>
+&lt;li>&lt;strong>次版本號 (Minor)&lt;/strong>：當增加向下相容的新功能時增加。&lt;/li>
+&lt;li>&lt;strong>修訂號 (Patch)&lt;/strong>：當修復向下相容的問題時增加。&lt;/li>
+&lt;/ul>
+&lt;p>例如：&lt;code>1.2.3&lt;/code> 中，&lt;code>1&lt;/code> 是主版本號，&lt;code>2&lt;/code> 是次版本號，&lt;code>3&lt;/code> 是修訂號。&lt;/p>
+&lt;h2 id="預發布版本">預發布版本&lt;/h2>
+&lt;p>預發布版本用於標示還不夠穩定的版本，通常是開發、測試中的版本，例如 &lt;code>alpha&lt;/code> 或 &lt;code>beta&lt;/code> 階段。這些標記常用於給開發者或測試者試用，在正式發布之前捕捉可能的問題。&lt;/p>
+&lt;p>語法上，預發布版本會附加在主版本號、次版本號、修訂號之後，以連字號 (&lt;code>-&lt;/code>) 分隔，常見的標記包括：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>alpha&lt;/strong>：表示非常早期、初步的版本，可能還不完整。&lt;/li>
+&lt;li>&lt;strong>beta&lt;/strong>：表示功能已基本完成，正在進行測試和改進的版本。&lt;/li>
+&lt;li>&lt;strong>rc (Release Candidate)&lt;/strong>：表示接近正式發布的候選版本，可能只需要進行少量修改。&lt;/li>
+&lt;/ul>
+&lt;p>例如：&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>1.2.3-alpha&lt;/code>：表示這是版本 &lt;code>1.2.3&lt;/code> 的一個 alpha 預發布版本。&lt;/li>
+&lt;li>&lt;code>1.2.3-beta.1&lt;/code>：表示這是版本 &lt;code>1.2.3&lt;/code> 的第一個 beta 預發布版本。&lt;/li>
+&lt;li>&lt;code>1.2.3-rc.2&lt;/code>：表示這是版本 &lt;code>1.2.3&lt;/code> 的第二個候選版本。&lt;/li>
+&lt;/ul>
+&lt;h2 id="版本範圍-以-npm-為例">版本範圍 (以 npm 為例)&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>波浪符號 (&lt;code>~&lt;/code>)&lt;/strong>&lt;br>
+允許更新修訂號，但不更新次版本號。&lt;br>
+例如，&lt;code>~1.2.3&lt;/code> 表示可以更新到 &lt;code>&amp;lt;1.3.0&lt;/code>，允許的版本包括 &lt;code>1.2.4&lt;/code>、&lt;code>1.2.5&lt;/code> 等。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>插入符號 (&lt;code>^&lt;/code>)&lt;/strong>&lt;br>
+允許更新次版本號和修訂號，但不更改主版本號（&lt;code>0&lt;/code> 版本除外）。&lt;br>
+例如，&lt;code>^1.2.3&lt;/code> 表示可以更新到 &lt;code>&amp;lt;2.0.0&lt;/code>，允許的版本包括 &lt;code>1.3.0&lt;/code>、&lt;code>1.4.5&lt;/code> 等。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>比較符號 (&lt;code>&amp;lt;&lt;/code>, &lt;code>&amp;lt;=&lt;/code>, &lt;code>&amp;gt;&lt;/code>, &lt;code>&amp;gt;=&lt;/code>)&lt;/strong>&lt;br>
+用於指定版本的上限或下限。&lt;br>
+例如，&lt;code>&amp;lt;2.0.0&lt;/code> 表示可以使用比 &lt;code>2.0.0&lt;/code> 更早的所有版本。&lt;/p></description></item><item><title>Software Development - Repository Structure - monorepo</title><link>https://HoshikawaRyuukou.github.io/posts/software-development---repository-structure---monorepo/</link><pubDate>Wed, 23 Oct 2024 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-development---repository-structure---monorepo/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://segmentfault.com/a/1190000045216948">Monorepo：让你的项目脱胎换骨，既能代码复用，又能独立部署！&lt;/a>&lt;/li>
 &lt;/ul>
@@ -86,4 +151,59 @@
 &lt;ul>
 &lt;li>👍 package 使用相同版本 &lt;strong>依賴/設定檔/風格&lt;/strong>。&lt;/li>
 &lt;li>⚠️ package 權限控管需仰賴其他工作流。&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;/ul></description></item><item><title>Software Development - README</title><link>https://HoshikawaRyuukou.github.io/posts/software-development---readme/</link><pubDate>Tue, 18 Jun 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-development---readme/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>最近筆者從 Unity 轉向了 Node.js，因此花了大量時間在 npm 上尋找合適的套件。大部分的 README 都寫得很清晰，但也有少數寫得難以理解。&lt;/p>
+&lt;p>README 是 Repository 的門面，這是毋庸置疑的。創建一個好的自述文件，可以向用戶（包括使用者和開發者）顯示基本信息，但不應該用他們可能不需要的內容來淹沒他們。&lt;/p>
+&lt;p>筆者認為應該從一開始就認真對待 README，而不是在最後(專案收尾之際)才一股腦地將資訊灌入，這樣會降低其品質。&lt;/p>
+&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://medium.com/dean-lin/%E4%BD%A0%E7%9F%A5%E9%81%93%E5%B0%8D%E5%B0%88%E6%A1%88%E4%BE%86%E8%AA%AA-readme-md-%E6%9C%89%E5%A4%9A%E9%BA%BC%E9%87%8D%E8%A6%81%E5%97%8E-%E5%B7%A5%E7%A8%8B%E5%B8%AB%E8%A1%80%E6%B7%9A%E5%8F%B2-c0fb0908343e">你知道對專案來說，README.md 有多麼重要嗎？ ── 工程師血淚史&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/hackergrrl/art-of-readme/blob/master/README-zh-TW.md">README 的藝術&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="markdown--vscode">Markdown + Vscode&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one">Markdown All in One&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles">Markdown Preview Github Styling&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="template">Template&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://gist.github.com/PurpleBooth/109311bb0361f32d87a2">README-Template.md&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.readme-templates.com/">GitHub README Templates&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="strategy">Strategy&lt;/h2>
+&lt;h3 id="為誰而寫">為誰而寫&lt;/h3>
+&lt;p>必須意識讀文件的人分成使用者和開發者，README 在佈局上要有明確的邊界。&lt;/p>
+&lt;ul>
+&lt;li>以使用者角度
+&lt;ul>
+&lt;li>Tutorial&lt;/li>
+&lt;li>Reference&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>以開發者角度
+&lt;ul>
+&lt;li>環境設定/測試/部署/發布方法&lt;/li>
+&lt;li>開發流程/編碼規範等&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="避免-readme-過長">避免 README 過長&lt;/h3>
+&lt;p>這個視專案而定，當 README 內容越來越多時可以考慮將其拆分至其他文檔，而 README.md 則改做為文檔的索引頁。&lt;/p>
+&lt;ul>
+&lt;li>README.md&lt;/li>
+&lt;li>RELEASELOG.md&lt;/li>
+&lt;li>CHANGELOG.md&lt;/li>
+&lt;li>CONTRIBUTING.md&lt;/li>
+&lt;li>./docs/Tutorials/xx.md&lt;/li>
+&lt;li>./docs/Examples/xx.md&lt;/li>
+&lt;/ul>
+&lt;h3 id="避免-header-過度使用">避免 Header 過度使用&lt;/h3>
+&lt;p>原本寫作時會下意識的使用不少的三級標題 &lt;code>### Header&lt;/code>&lt;/p>
+&lt;pre tabindex="0">&lt;code>## Header2
+
+### Header3
+分段...
+
+### Header3
+分段...
+&lt;/code>&lt;/pre>&lt;p>但這次觀察 READMEs 的過程，看到不少以下這種不多做一些分段的寫法&lt;/p></description></item></channel></rss>

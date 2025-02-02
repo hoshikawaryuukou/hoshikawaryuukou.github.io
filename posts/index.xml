@@ -287,11 +287,9 @@
 &lt;h2 id="控制反轉---什麼反轉了">控制反轉 - 什麼反轉了？&lt;/h2>
 &lt;p>控制反轉（Inversion of Control, IoC）就是為了解決這些問題而生的。它帶來了一個核心理念：&lt;/p>
 &lt;blockquote>
-&lt;p>需求方不再自己去「控制」依賴的構建和配置，而是把這部分的「控制權」交給「外部機制」（通常是 IoC 容器）。&lt;/p>
-&lt;/blockquote>
+&lt;p>需求方不再自己去「控制」依賴的構建和配置，而是把這部分的「控制權」交給「外部機制」（通常是 IoC 容器）。&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>需求方只需專注於「接收」或「查詢」依賴，並專心「使用」它們。簡化需求方的職責，使其僅專注於處理業務邏輯，從而提升模組化與可維護性。&lt;/p>
-&lt;/blockquote>
+&lt;p>需求方只需專注於「接收」或「查詢」依賴，並專心「使用」它們。簡化需求方的職責，使其僅專注於處理業務邏輯，從而提升模組化與可維護性。&lt;/p>&lt;/blockquote>
 &lt;h2 id="好處">好處&lt;/h2>
 &lt;h3 id="依賴管理">&lt;strong>依賴管理&lt;/strong>&lt;/h3>
 &lt;ul>
@@ -343,8 +341,7 @@
 &lt;li>
 &lt;p>將資源調整放置 Packages 而不是 Assets&lt;/p>
 &lt;blockquote>
-&lt;p>NuGet &amp;gt; Preferences &amp;gt; Placement &amp;gt; In Packages Folder&lt;/p>
-&lt;/blockquote>
+&lt;p>NuGet &amp;gt; Preferences &amp;gt; Placement &amp;gt; In Packages Folder&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;li>
 &lt;p>調整 .gitignore&lt;/p>
@@ -372,18 +369,6 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
-&lt;/ul></description></item><item><title>Unity - Package - R3</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package---r3/</link><pubDate>Thu, 09 Jan 2025 22:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package---r3/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/Cysharp/R3">Cysharp/R3&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://qiita.com/toRisouP/items/4344fbcba7b7e8d8ce16">【Unity】 R3とUniRxの比較まとめ&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://zenn.dev/tkada/articles/a96258e080056a#reactivecollection-%2F-reactivedictionary">[Unity] UniRxをR3に移行する&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Unity - Performance</title><link>https://HoshikawaRyuukou.github.io/posts/unity---performance/</link><pubDate>Wed, 08 Jan 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---performance/</guid><description>&lt;h2 id="gc">GC&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=1Hqg-gUUOE0">GC Garbage Collection 垃圾回收&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="ui">UI&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="">&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Software Engineer - Note</title><link>https://HoshikawaRyuukou.github.io/posts/software-engineer---note/</link><pubDate>Tue, 07 Jan 2025 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-engineer---note/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;ul>
 &lt;li>後端: 深入且穩定&lt;/li>
@@ -451,8 +436,7 @@
 &lt;h2 id="擴充元件">擴充元件&lt;/h2>
 &lt;p>會自行安裝，只須匯入類別即可使用。&lt;/p>
 &lt;blockquote>
-&lt;p>import &amp;lsquo;@pixi/accessibility&amp;rsquo;;&lt;/p>
-&lt;/blockquote></description></item><item><title>PixiJS - Note</title><link>https://HoshikawaRyuukou.github.io/posts/pixijs---note/</link><pubDate>Sat, 04 Jan 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/pixijs---note/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;p>import &amp;lsquo;@pixi/accessibility&amp;rsquo;;&lt;/p>&lt;/blockquote></description></item><item><title>PixiJS - Note</title><link>https://HoshikawaRyuukou.github.io/posts/pixijs---note/</link><pubDate>Sat, 04 Jan 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/pixijs---note/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://pixijs.com/">PixiJS | The HTML5 Creation Engine | PixiJS&lt;/a>&lt;/li>
 &lt;/ul>
@@ -495,10 +479,13 @@
 &lt;/ul></description></item><item><title>Unity - Samples</title><link>https://HoshikawaRyuukou.github.io/posts/unity---samples/</link><pubDate>Thu, 02 Jan 2025 22:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---samples/</guid><description>&lt;h2 id="solitaire">Solitaire&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/gubicsz/Solitaire">gubicsz/Solitaire&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="reversi">Reversi&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://zenn.dev/qemel/articles/f1829f9b847bcb">Unity設計練習 - リバーシ&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Front-End - State Management</title><link>https://HoshikawaRyuukou.github.io/posts/front-end---state-management/</link><pubDate>Tue, 31 Dec 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/front-end---state-management/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;blockquote>
-&lt;p>UI = f( state )&lt;/p>
-&lt;/blockquote>
+&lt;p>UI = f( state )&lt;/p>&lt;/blockquote>
 &lt;p>state&lt;/p>
 &lt;ul>
 &lt;li>widget state : 只存在於當前 widget 範圍內的狀態&lt;/li>
@@ -508,7 +495,7 @@
 &lt;ul>
 &lt;li>&lt;a href="https://iceprosurface.com/%E7%9F%A5%E8%AF%86%E5%BA%93/%E7%BC%96%E7%A8%8B/%E5%89%8D%E7%AB%AF/%E8%8C%83%E5%BC%8F%E8%A7%92%E5%BA%A6%E6%80%9D%E8%80%83%E7%9A%84%E5%89%8D%E7%AB%AF%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86">范式角度思考的前端状态管理&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://maliut.space/p/global-state-management/">2022年，我们还需要全局状态管理吗？&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Web Game - Overview</title><link>https://HoshikawaRyuukou.github.io/posts/web-game---overview/</link><pubDate>Sun, 29 Dec 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/web-game---overview/</guid><description>&lt;h2 id="pixijshttpspixijscom">&lt;a href="https://pixijs.com/">PixiJS&lt;/a>&lt;/h2>
+&lt;/ul></description></item><item><title>Game Development - Web Game - Overview</title><link>https://HoshikawaRyuukou.github.io/posts/game-development---web-game---overview/</link><pubDate>Sun, 29 Dec 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/game-development---web-game---overview/</guid><description>&lt;h2 id="pixijshttpspixijscom">&lt;a href="https://pixijs.com/">PixiJS&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>2D 渲染引擎&lt;/li>
 &lt;li>專注於高性能渲染，適合需要流暢繪圖的應用場景&lt;/li>
@@ -564,8 +551,7 @@
 &lt;ul>
 &lt;li>配置 vscode path
 &lt;blockquote>
-&lt;p>C:\Users\User\AppData\Local\Programs\Microsoft VS Code\Code.exe&lt;/p>
-&lt;/blockquote>
+&lt;p>C:\Users\User\AppData\Local\Programs\Microsoft VS Code\Code.exe&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;li>⚠️ 較新版的 cocos creator 已經不需要， &lt;code>开发者 -&amp;gt; VS Code 工作流 -&amp;gt; 安装 VS Code 扩展插件&lt;/code>&lt;/li>
 &lt;/ul>
@@ -682,8 +668,7 @@ CHANGELOG*.md
 &lt;li>&lt;a href="https://www.hello-algo.com/zh-hant/chapter_computational_complexity/time_complexity/">2.3 時間複雜度&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;blockquote>
-&lt;p>⚠️ 時間複雜度分析統計的不是演算法執行時間，而是演算法執行時間隨著資料量變大時的增長趨勢。&lt;/p>
-&lt;/blockquote>
+&lt;p>⚠️ 時間複雜度分析統計的不是演算法執行時間，而是演算法執行時間隨著資料量變大時的增長趨勢。&lt;/p>&lt;/blockquote>
 &lt;ul>
 &lt;li>有效評估演算法效率。&lt;/li>
 &lt;li>推算方法更簡便。&lt;/li>
@@ -694,8 +679,7 @@ CHANGELOG*.md
 &lt;li>&lt;a href="https://www.hello-algo.com/zh-hant/chapter_computational_complexity/space_complexity/">2.4 空間複雜度&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;blockquote>
-&lt;p>⚠️ 我們通常只關注最差空間複雜度。&lt;/p>
-&lt;/blockquote>
+&lt;p>⚠️ 我們通常只關注最差空間複雜度。&lt;/p>&lt;/blockquote>
 &lt;ul>
 &lt;li>輸入空間：演算法的輸入資料。&lt;/li>
 &lt;li>暫存空間：執行過程中的變數、物件、函式上下文等資料。&lt;/li>
@@ -718,8 +702,7 @@ CHANGELOG*.md
 &lt;h3 id="第一章-岩田先生成為社長以前">第一章 岩田先生成為社長以前。&lt;/h3>
 &lt;p>展示了岩田聰如何從一名年輕的程式設計師，逐步成為一位備受尊敬的遊戲業領袖。&lt;/p>
 &lt;blockquote>
-&lt;p>引導組織發揮優勢，揚長避短，這就是經營。&lt;/p>
-&lt;/blockquote>
+&lt;p>引導組織發揮優勢，揚長避短，這就是經營。&lt;/p>&lt;/blockquote>
 &lt;h4 id="高中時代萌芽的天賦與熱忱">高中時代：萌芽的天賦與熱忱&lt;/h4>
 &lt;ul>
 &lt;li>靠好奇心和創造力自行探索早期計算機，嘗試開發遊戲，奠定基礎技能。&lt;/li>
@@ -802,7 +785,7 @@ CHANGELOG*.md
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 如果安裝了CUDA，將顯示CUDA編譯工具的版本信息&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>nvcc --version
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Development Standards - Conventional Commits</title><link>https://HoshikawaRyuukou.github.io/posts/development-standards---conventional-commits/</link><pubDate>Tue, 05 Nov 2024 20:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/development-standards---conventional-commits/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Software Development - Conventional Commits</title><link>https://HoshikawaRyuukou.github.io/posts/software-development---conventional-commits/</link><pubDate>Tue, 05 Nov 2024 20:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-development---conventional-commits/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>以下是 Conventional Commit 的一些主要好處 :&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>一致性&lt;/strong>：統一提交訊息格式，便於理解和閱讀。&lt;/li>
@@ -825,7 +808,7 @@ CHANGELOG*.md
 &lt;li>chore(release): 9.12.3&lt;/li>
 &lt;li>ci: rename audit job&lt;/li>
 &lt;li>feat!: the link command should add overrides&lt;/li>
-&lt;/ul></description></item><item><title>Vite - Note</title><link>https://HoshikawaRyuukou.github.io/posts/vite---note/</link><pubDate>Tue, 05 Nov 2024 10:11:10 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/vite---note/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;/ul></description></item><item><title>Front-End - Vite - Note</title><link>https://HoshikawaRyuukou.github.io/posts/front-end---vite---note/</link><pubDate>Tue, 05 Nov 2024 10:11:10 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/front-end---vite---note/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://cn.vitejs.dev/">Vite | 下一代的前端工具链&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.explainthis.io/zh-hant/swe/what-is-vite">Vite 是什麼? 為什麼要用 Vite? 它解決了哪些問題? 又是如何解決?&lt;/a>&lt;/li>
@@ -881,7 +864,7 @@ CHANGELOG*.md
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">if&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">steps.changesets.outputs.published == &amp;#39;true&amp;#39;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e"># You can do something when a publish happens.&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">run&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">echo &amp;#34;Done&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Development Standards - Semantic Versioning</title><link>https://HoshikawaRyuukou.github.io/posts/development-standards---semantic-versioning/</link><pubDate>Mon, 04 Nov 2024 20:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/development-standards---semantic-versioning/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Software Development - Semantic Versioning</title><link>https://HoshikawaRyuukou.github.io/posts/software-development---semantic-versioning/</link><pubDate>Mon, 04 Nov 2024 20:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-development---semantic-versioning/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://semver.org/lang/zh-TW/">語意化版本 2.0.0&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://semver.otterlord.dev/">NPM Semver Calculator&lt;/a>&lt;/li>
@@ -923,11 +906,23 @@ CHANGELOG*.md
 &lt;li>
 &lt;p>&lt;strong>比較符號 (&lt;code>&amp;lt;&lt;/code>, &lt;code>&amp;lt;=&lt;/code>, &lt;code>&amp;gt;&lt;/code>, &lt;code>&amp;gt;=&lt;/code>)&lt;/strong>&lt;br>
 用於指定版本的上限或下限。&lt;br>
-例如，&lt;code>&amp;lt;2.0.0&lt;/code> 表示可以使用比 &lt;code>2.0.0&lt;/code> 更早的所有版本。&lt;/p></description></item><item><title>HackMD - Note</title><link>https://HoshikawaRyuukou.github.io/posts/hackmd---note/</link><pubDate>Tue, 29 Oct 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/hackmd---note/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+例如，&lt;code>&amp;lt;2.0.0&lt;/code> 表示可以使用比 &lt;code>2.0.0&lt;/code> 更早的所有版本。&lt;/p></description></item><item><title>Front-End - Html - Note</title><link>https://HoshikawaRyuukou.github.io/posts/front-end---html---note/</link><pubDate>Tue, 29 Oct 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/front-end---html---note/</guid><description>&lt;h2 id="dom-document-object-model">DOM (Document Object Model)&lt;/h2>
+&lt;p>是一種瀏覽器用來表示和操作 HTML 或 XML 文件的結構化方式。當一個網頁加載時，瀏覽器會將 HTML 文檔解析成 DOM 樹，然後讓開發者使用 JavaScript 等語言動態修改網頁的內容、結構和樣式。&lt;/p>
+&lt;h3 id="view-size">view size&lt;/h3>
+&lt;ul>
+&lt;li>&lt;code>window.devicePixelRatio&lt;/code>: 代設備的屏幕通常具有比標準顯示器更高的像素密度（1 個 CSS 像素 = 2 個物理像素）。&lt;/li>
+&lt;li>&lt;code>window.outerWidth&lt;/code>: 瀏覽器窗口的整體寬度（包括邊框、工具欄等）。&lt;/li>
+&lt;li>&lt;code>window.innerWidth&lt;/code>: 可見區域的寬度（包含滾動條）。&lt;/li>
+&lt;li>&lt;code>document.documentElement.clientWidth&lt;/code>: 可見區域的寬度（不包含滾動條）。&lt;/li>
+&lt;li>&lt;code>screen.width&lt;/code>: 屏幕(硬體)解析度的寬度（整個設備屏幕的寬度，與瀏覽器窗口大小無關）。&lt;/li>
+&lt;/ul>
+&lt;h3 id="url">url&lt;/h3>
+&lt;ul>
+&lt;li>&lt;code>window.location.search&lt;/code>: 用於獲取 URL 中的查詢字串（query string）。查詢字串是指 ? 後面的部分，通常用來傳遞參數，例如：&lt;code>https://example.com/page?name=John&amp;amp;age=30&lt;/code> 中的 &lt;code>?name=John&amp;amp;age=30&lt;/code>&lt;/li>
+&lt;/ul></description></item><item><title>HackMD - Note</title><link>https://HoshikawaRyuukou.github.io/posts/hackmd---note/</link><pubDate>Tue, 29 Oct 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/hackmd---note/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>HackMD 的核心思想是&lt;/p>
 &lt;blockquote>
-&lt;p>輕鬆使用 Markdown 協作文件的工具&lt;/p>
-&lt;/blockquote>
+&lt;p>輕鬆使用 Markdown 協作文件的工具&lt;/p>&lt;/blockquote>
 &lt;p>符合的筆者的使用需求&lt;/p>
 &lt;ul>
 &lt;li>免費方案適合輕度用戶&lt;/li>
@@ -951,23 +946,17 @@ CHANGELOG*.md
 &lt;li>&lt;a href="https://hackmd.io/c/tutorials-tw/%2F%40docs%2Fquick-start-guild-tw?utm_source=home&amp;amp;utm_medium=nav-bar">HackMD 快速入門教學&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://hackmd.io/how-to-create-slide-deck-tw">用 HackMD 做簡報&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://hackmd.io/slide-example?both">Slide-example&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Html - Note</title><link>https://HoshikawaRyuukou.github.io/posts/html--note/</link><pubDate>Tue, 29 Oct 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/html--note/</guid><description>&lt;h2 id="dom-document-object-model">DOM (Document Object Model)&lt;/h2>
-&lt;p>是一種瀏覽器用來表示和操作 HTML 或 XML 文件的結構化方式。當一個網頁加載時，瀏覽器會將 HTML 文檔解析成 DOM 樹，然後讓開發者使用 JavaScript 等語言動態修改網頁的內容、結構和樣式。&lt;/p>
-&lt;h3 id="view-size">view size&lt;/h3>
-&lt;ul>
-&lt;li>&lt;code>window.devicePixelRatio&lt;/code>: 代設備的屏幕通常具有比標準顯示器更高的像素密度（1 個 CSS 像素 = 2 個物理像素）。&lt;/li>
-&lt;li>&lt;code>window.outerWidth&lt;/code>: 瀏覽器窗口的整體寬度（包括邊框、工具欄等）。&lt;/li>
-&lt;li>&lt;code>window.innerWidth&lt;/code>: 可見區域的寬度（包含滾動條）。&lt;/li>
-&lt;li>&lt;code>document.documentElement.clientWidth&lt;/code>: 可見區域的寬度（不包含滾動條）。&lt;/li>
-&lt;li>&lt;code>screen.width&lt;/code>: 屏幕(硬體)解析度的寬度（整個設備屏幕的寬度，與瀏覽器窗口大小無關）。&lt;/li>
-&lt;/ul>
-&lt;h3 id="url">url&lt;/h3>
-&lt;ul>
-&lt;li>&lt;code>window.location.search&lt;/code>: 用於獲取 URL 中的查詢字串（query string）。查詢字串是指 ? 後面的部分，通常用來傳遞參數，例如：&lt;code>https://example.com/page?name=John&amp;amp;age=30&lt;/code> 中的 &lt;code>?name=John&amp;amp;age=30&lt;/code>&lt;/li>
-&lt;/ul></description></item><item><title>exiftool - Note</title><link>https://HoshikawaRyuukou.github.io/posts/exiftool---note/</link><pubDate>Sun, 27 Oct 2024 21:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/exiftool---note/</guid><description>&lt;h2 id="case---source-覆蓋-target">Case - source 覆蓋 target&lt;/h2>
+&lt;/ul></description></item><item><title>Tools - ExifTool - Note</title><link>https://HoshikawaRyuukou.github.io/posts/tools---exiftool---note/</link><pubDate>Sun, 27 Oct 2024 21:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/tools---exiftool---note/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>ExifTool 用來讀取、寫入、編輯各種檔案的 元數據（Metadata），特別是 照片、影片、音訊、PDF 等格式。&lt;/p>
+&lt;h2 id="memo">Memo&lt;/h2>
+&lt;h3 id="source-覆蓋-target">source 覆蓋 target&lt;/h3>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>exiftool -overwrite_original -all&lt;span style="color:#f92672">=&lt;/span> target.png
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>exiftool -tagsFromFile source.png -all:all target.png
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Tools</title><link>https://HoshikawaRyuukou.github.io/posts/tools/</link><pubDate>Sun, 27 Oct 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/tools/</guid><description>&lt;h2 id="antivirus">Antivirus&lt;/h2>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Tools</title><link>https://HoshikawaRyuukou.github.io/posts/tools/</link><pubDate>Sun, 27 Oct 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/tools/</guid><description>&lt;h2 id="analyzer">Analyzer&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://diskanalyzer.com/">WizTree - The Fastest Disk Space Analyzer&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="antivirus">Antivirus&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://www.defenderui.com/">DefenderUI&lt;/a>&lt;/li>
 &lt;/ul>
@@ -978,6 +967,10 @@ CHANGELOG*.md
 &lt;h2 id="batch">Batch&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://chromewebstore.google.com/detail/save-all-resources/abpdnfjocnmdomablahdcfnoggeeiedb">Save All Resources&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="context">Context&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/BluePointLilac/ContextMenuManager">BluePointLilac/ContextMenuManager&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="diagram">Diagram&lt;/h2>
 &lt;ul>
@@ -1018,6 +1011,10 @@ CHANGELOG*.md
 &lt;h2 id="message">Message&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://emojipedia.org/">Emojipedia&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="package-manager">Package Manager&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/marticliment/UniGetUI">marticliment/UniGetUI&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="translation">Translation&lt;/h2>
 &lt;ul>
@@ -1109,8 +1106,7 @@ CHANGELOG*.md
 &lt;/ul></description></item><item><title>Workflow - Send messages to Telegram via GitHub Actions</title><link>https://HoshikawaRyuukou.github.io/posts/workflow---send-messages-to-telegram-via-github-actions/</link><pubDate>Sat, 19 Oct 2024 19:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow---send-messages-to-telegram-via-github-actions/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>以下範例為 :&lt;/p>
 &lt;blockquote>
-&lt;p>在 git push 後透過 Github Actions 將 tag + commit 訊息發送到指定的 Telegram 群組&lt;/p>
-&lt;/blockquote>
+&lt;p>在 git push 後透過 Github Actions 將 tag + commit 訊息發送到指定的 Telegram 群組&lt;/p>&lt;/blockquote>
 &lt;h2 id="設置-telegram-bot">設置 Telegram Bot&lt;/h2>
 &lt;ul>
 &lt;li>在 Telegram 中搜尋 @BotFather 並建立一個新的 bot，記下 API token。&lt;/li>
@@ -1120,17 +1116,14 @@ CHANGELOG*.md
 &lt;h2 id="設置-github-secrets">設置 GitHub Secrets&lt;/h2>
 &lt;p>GitHub 專案中&lt;/p>
 &lt;blockquote>
-&lt;p>Settings -&amp;gt; Security -&amp;gt; Secrets and variables -&amp;gt; Actions -&amp;gt; Repository secrets&lt;/p>
-&lt;/blockquote>
+&lt;p>Settings -&amp;gt; Security -&amp;gt; Secrets and variables -&amp;gt; Actions -&amp;gt; Repository secrets&lt;/p>&lt;/blockquote>
 &lt;p>新增以下 secrets :&lt;/p>
 &lt;ul>
 &lt;li>TELEGRAM_BOT_TOKEN : Telegram Bot Token&lt;/li>
 &lt;li>TELEGRAM_CHAT_ID : Telegram 群組 ID&lt;/li>
 &lt;/ul>
 &lt;h2 id="設置-github-variables">設置 GitHub Variables&lt;/h2>
-&lt;p>GitHub 專案中&lt;/p>
-&lt;blockquote>
-&lt;p>Settings -&amp;gt; Security -&amp;gt; Secrets and variables -&amp;gt; Actions -&amp;gt; Repository variables&lt;/p></description></item><item><title>Javascript_TypeScript - Package - lint-staged</title><link>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---package---lint-staged/</link><pubDate>Fri, 18 Oct 2024 08:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---package---lint-staged/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>GitHub 專案中&lt;/p></description></item><item><title>Javascript_TypeScript - Package - lint-staged</title><link>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---package---lint-staged/</link><pubDate>Fri, 18 Oct 2024 08:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---package---lint-staged/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>lint-staged 可以只對 git staged 的檔案執行 lint 處理，進而提升檢查效率。&lt;/p>
 &lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
@@ -1270,8 +1263,7 @@ CHANGELOG*.md
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>- git commit -m &lt;span style="color:#d88200">&amp;#34;你的 commit 訊息&amp;#34;&lt;/span> --no-verify
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Javascript_TypeScript - Package - tsup</title><link>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---package---tsup/</link><pubDate>Sun, 13 Oct 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---package---tsup/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;blockquote>
-&lt;p>The simplest and fastest way to bundle your TypeScript libraries.&lt;/p>
-&lt;/blockquote>
+&lt;p>The simplest and fastest way to bundle your TypeScript libraries.&lt;/p>&lt;/blockquote>
 &lt;p>設計的初衷是讓開發者能夠以最少的設定完成打包工作，內建許多合理的預設值。&lt;/p>
 &lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
@@ -1651,8 +1643,7 @@ CHANGELOG*.md
 &lt;p>這是筆者的工作室名。&lt;/p>
 &lt;h3 id="核心思想">核心思想&lt;/h3>
 &lt;blockquote>
-&lt;p>每個應用程式都是一個精心構築的 &lt;strong>箱庭/微型世界&lt;/strong>，在有限的環境中創造豐富且深度的體驗，讓使用者能夠沉浸其中。&lt;/p>
-&lt;/blockquote>
+&lt;p>每個應用程式都是一個精心構築的 &lt;strong>箱庭/微型世界&lt;/strong>，在有限的環境中創造豐富且深度的體驗，讓使用者能夠沉浸其中。&lt;/p>&lt;/blockquote>
 &lt;h2 id="現實中的箱庭">現實中的箱庭&lt;/h2>
 &lt;p>箱庭（はこにわ，Hakoniwa），它是一種縮小版的庭園或景觀模型。這個概念源於日本，最早用來指代傳統日式庭園的迷你模型，但後來這個詞的應用範圍擴展到了各種縮小版的自然景觀創作。&lt;/p>
 &lt;h2 id="遊戲中的箱庭">遊戲中的箱庭&lt;/h2>
@@ -2258,8 +2249,7 @@ CHANGELOG*.md
 &lt;blockquote>
 &lt;p>跟沒錢的人打交道，直接告訴他能賺多少&lt;br>
 跟底層的人打交道，要給他臉，給他尊重&lt;br>
-跟厲害的人打交道，不要浪費他時間，直奔主題&lt;/p>
-&lt;/blockquote></description></item><item><title>Game Design - Introduction</title><link>https://HoshikawaRyuukou.github.io/posts/game-design---introduction/</link><pubDate>Sun, 01 Sep 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/game-design---introduction/</guid><description>&lt;ul>
+跟厲害的人打交道，不要浪費他時間，直奔主題&lt;/p>&lt;/blockquote></description></item><item><title>Game Design - Introduction</title><link>https://HoshikawaRyuukou.github.io/posts/game-design---introduction/</link><pubDate>Sun, 01 Sep 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/game-design---introduction/</guid><description>&lt;ul>
 &lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/688748483">从Balatro小丑牌的成功说起：浅谈rogue的核心体验与设计&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.bilibili.com/video/BV1GPH4erETC">什么驱使着人们玩游戏？【游戏设计知识分享-动机1】&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.bilibili.com/video/BV1WJxMepE2i">人们一直玩是因为游戏好？【游戏设计知识分享-动机2】&lt;/a>&lt;/li>
@@ -2444,14 +2434,6 @@ CHANGELOG*.md
 &lt;ul>
 &lt;li>👍 package 使用相同版本 &lt;strong>依賴/設定檔/風格&lt;/strong>。&lt;/li>
 &lt;li>⚠️ package 權限控管需仰賴其他工作流。&lt;/li>
-&lt;/ul></description></item><item><title>Gambling - Note</title><link>https://HoshikawaRyuukou.github.io/posts/gambling---note/</link><pubDate>Tue, 06 Aug 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/gambling---note/</guid><description>&lt;h2 id="volatility">Volatility&lt;/h2>
-&lt;ul>
-&lt;li>高波動性具有高風險，中獎率低，可是萬一運氣來了獲得的獎金會非常巨大。&lt;/li>
-&lt;li>低波動性的老虎機就是來玩開心的，只是想打發時間毫無疑問這是最佳選擇。&lt;/li>
-&lt;/ul>
-&lt;h2 id="keywords">keywords&lt;/h2>
-&lt;ul>
-&lt;li>隨機過程&lt;/li>
 &lt;/ul></description></item><item><title>Algorithm - Sampling - Alias Method</title><link>https://HoshikawaRyuukou.github.io/posts/algorithm---sampling---alias-method/</link><pubDate>Sun, 04 Aug 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/algorithm---sampling---alias-method/</guid><description>&lt;p>別名方法是一種眾所周知的演算法，用於從任意離散機率分佈中進行恆定時間採樣，該演算法依賴於簡單的預先計算的查找表。&lt;/p>
 &lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
@@ -2582,22 +2564,7 @@ CHANGELOG*.md
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-js" data-lang="js">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">export&lt;/span> &lt;span style="color:#00a8c8">default&lt;/span> &lt;span style="color:#111">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">extends&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#111">[&lt;/span>&lt;span style="color:#d88200">&amp;#39;@commitlint/config-conventional&amp;#39;&lt;/span>&lt;span style="color:#111">],&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">};&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Gambling - Basic - Odds</title><link>https://HoshikawaRyuukou.github.io/posts/gambling---basic---odds/</link><pubDate>Sat, 06 Jul 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/gambling---basic---odds/</guid><description>&lt;h2 id="decimal-odds小數歐式國際賠率">Decimal Odds（小數/歐式/國際賠率）&lt;/h2>
-&lt;p>&lt;strong>賠率含本金&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>2.00: 表示如果您下注 1 單位，將總共得到 2 單位(包含本金)。&lt;/li>
-&lt;/ul>
-&lt;h2 id="fractional-odds分數英式傳統賠率">Fractional Odds（分數/英式/傳統賠率）&lt;/h2>
-&lt;p>&lt;strong>賠率不含本金&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>3/2: 表示如果下注 2 單位，並且贏了，將贏得 3 單位，外加本金，即總共得到 5 單位。&lt;/li>
-&lt;/ul>
-&lt;h2 id="american-odds-美式賠率">American odds (美式賠率)&lt;/h2>
-&lt;p>&lt;strong>賠率不含本金&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>正賠率: 表示的是如果下注 100 單位 您能獲得多少利潤。&lt;/li>
-&lt;li>負賠率: 表示的是需要下注多少才能贏得 100 單位。&lt;/li>
-&lt;/ul></description></item><item><title>Javascript_TypeScript - Package - Vitest</title><link>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---package---vitest/</link><pubDate>Tue, 02 Jul 2024 08:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---package---vitest/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Javascript_TypeScript - Package - Vitest</title><link>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---package---vitest/</link><pubDate>Tue, 02 Jul 2024 08:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---package---vitest/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://vitest.dev/">Vitest&lt;/a>&lt;/li>
 &lt;/ul>
@@ -2701,7 +2668,7 @@ CHANGELOG*.md
 &lt;h2 id="validation">Validation&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/colinhacks/zod">zod&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Telegarm - Note</title><link>https://HoshikawaRyuukou.github.io/posts/telegarm---note/</link><pubDate>Sat, 22 Jun 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/telegarm---note/</guid><description>&lt;h2 id="bot---api-token">Bot - API Token&lt;/h2>
+&lt;/ul></description></item><item><title>Telegram - Note</title><link>https://HoshikawaRyuukou.github.io/posts/telegarm---note/</link><pubDate>Sat, 22 Jun 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/telegarm---note/</guid><description>&lt;h2 id="bot---api-token">Bot - API Token&lt;/h2>
 &lt;ul>
 &lt;li>搜索 &lt;code>BotFather&lt;/code> 並開始對話。&lt;/li>
 &lt;li>使用 &lt;code>/newbot&lt;/code> 命令創建一個新的機器人，按提示操作。&lt;/li>
@@ -2739,7 +2706,7 @@ CHANGELOG*.md
 &lt;h2 id="sticker">Sticker&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://www.youtube.com/watch?v=1E25Q6wQ5L8">Telegram 貼圖 DIY教學&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Development Standards - README</title><link>https://HoshikawaRyuukou.github.io/posts/development-standards---readme/</link><pubDate>Tue, 18 Jun 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/development-standards---readme/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;/ul></description></item><item><title>Software Development - README</title><link>https://HoshikawaRyuukou.github.io/posts/software-development---readme/</link><pubDate>Tue, 18 Jun 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-development---readme/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>最近筆者從 Unity 轉向了 Node.js，因此花了大量時間在 npm 上尋找合適的套件。大部分的 README 都寫得很清晰，但也有少數寫得難以理解。&lt;/p>
 &lt;p>README 是 Repository 的門面，這是毋庸置疑的。創建一個好的自述文件，可以向用戶（包括使用者和開發者）顯示基本信息，但不應該用他們可能不需要的內容來淹沒他們。&lt;/p>
 &lt;p>筆者認為應該從一開始就認真對待 README，而不是在最後(專案收尾之際)才一股腦地將資訊灌入，這樣會降低其品質。&lt;/p>
@@ -3152,8 +3119,7 @@ Scope(s):
 &lt;/ul></description></item><item><title>Unity - Platform - Android - AndroidJNIModule</title><link>https://HoshikawaRyuukou.github.io/posts/unity---platform---android---androidjnimodule/</link><pubDate>Sun, 28 Jan 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---platform---android---androidjnimodule/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
 &lt;p>這次的業務需求是&lt;/p>
 &lt;blockquote>
-&lt;p>將 Google Play Install Referrer 接入 Unity&lt;/p>
-&lt;/blockquote>
+&lt;p>將 Google Play Install Referrer 接入 Unity&lt;/p>&lt;/blockquote>
 &lt;p>目前有使用到 AndroidJNIModule 中的&lt;/p>
 &lt;ul>
 &lt;li>AndroidJavaClass&lt;/li>
@@ -3246,8 +3212,7 @@ Scope(s):
 &lt;p>在學習 CA 中始終沒題到 feature/componet module 之間是如何互動的，也是在回頭複習 VIPER 時才重新意識到 Router 的重要性。當沒有特別規劃 Navigation 時很容易會造成 module 之間的耦合。&lt;/p></description></item><item><title>Unity - Advanced - Code stripping</title><link>https://HoshikawaRyuukou.github.io/posts/unity---advanced---managed-code-stripping/</link><pubDate>Wed, 17 Jan 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---advanced---managed-code-stripping/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>在構建過程中，Unity 通過稱為託管代碼剝離的過程刪除未使用或無法訪問的代碼，這可以顯著減小應用程式的最終大小。&lt;/p>
 &lt;blockquote>
-&lt;p>File -&amp;gt; Build Settings -&amp;gt; Player Settings -&amp;gt; Optimization -&amp;gt; Managed Stripping Level&lt;/p>
-&lt;/blockquote>
+&lt;p>File -&amp;gt; Build Settings -&amp;gt; Player Settings -&amp;gt; Optimization -&amp;gt; Managed Stripping Level&lt;/p>&lt;/blockquote>
 &lt;ul>
 &lt;li>⚠️ Managed Stripping Level 等級越高裁剪掉的代碼越多，包體也就越小，但是對應的風險也就更大。&lt;/li>
 &lt;li>藉由屬性或特殊 XML 配置檔的形式提供註釋，以指示 Unity 連結器要保留代碼庫的哪些部分。&lt;/li>
@@ -3301,8 +3266,7 @@ Scope(s):
 &lt;li>&lt;a href="https://docs.unity.com/ugs/en-us/manual/cloud-diagnostics/manual/Privacy/apple-privacy">Apple&amp;rsquo;s privacy survey&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.unity.com/ugs/en-us/manual/cloud-diagnostics/manual/Privacy/GoogleDataSafety">Google Play data safety disclosures for Cloud Diagnostics&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Unity - Environment</title><link>https://HoshikawaRyuukou.github.io/posts/unity---environment/</link><pubDate>Tue, 16 Jan 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---environment/</guid><description>&lt;blockquote>
-&lt;p>⚠️ 以下使用 unity 6&lt;/p>
-&lt;/blockquote>
+&lt;p>⚠️ 以下使用 unity 6&lt;/p>&lt;/blockquote>
 &lt;h2 id="os---mac">OS - Mac&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://blog.csdn.net/linxinfa/article/details/124844236">【游戏开发环境】Unity使用Mac电脑开发，开发环境的搭建（Mac mini M1 | VSCode | Git | 好用工具）&lt;/a>&lt;/li>
@@ -3367,23 +3331,19 @@ Scope(s):
 後會去收集專案&lt;strong>所有 Editor 資料夾&lt;/strong>下的 *&lt;strong>Dependencies.xml&lt;/strong> 加到 mainTemplate 中&lt;/p></description></item><item><title>Software Design - Pattern - ViewModel</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---viewmodel/</link><pubDate>Sun, 27 Aug 2023 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---viewmodel/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
 &lt;p>此篇的實作參考到以下文件 (提到不少 Presentation layer 設計原則)&lt;/p>
 &lt;blockquote>
-&lt;p>&lt;a href="https://developer.android.com/topic/architecture/ui-layer?hl=zh-tw">Android Developers 文件/指南/UI 層&lt;/a>&lt;/p>
-&lt;/blockquote>
+&lt;p>&lt;a href="https://developer.android.com/topic/architecture/ui-layer?hl=zh-tw">Android Developers 文件/指南/UI 層&lt;/a>&lt;/p>&lt;/blockquote>
 &lt;p>該文件的更新頻率算高且會與時俱進，筆者印象中其架構設計從 MVVM -&amp;gt; Domain/Application Driven 設計，可以看出主流架構有產生變化。之後的討論雖然使用 ViewModel 但不會詳細介紹 MVVM 的細節，如果對 MVX 系列不熟，可以先讀筆者之前的文章 &lt;strong>&amp;laquo;通用設計 - Pattern - MVP&amp;raquo;&lt;/strong> 裡面的 References。&lt;/p>
 &lt;h2 id="探索">探索&lt;/h2>
 &lt;p>回到正題，筆者在最近的業務上遇到&lt;/p>
 &lt;blockquote>
-&lt;p>如何在 &lt;strong>服務端未完成&lt;/strong> 的情況下，讓 Client 獲得完整的體驗流 ?&lt;/p>
-&lt;/blockquote>
+&lt;p>如何在 &lt;strong>服務端未完成&lt;/strong> 的情況下，讓 Client 獲得完整的體驗流 ?&lt;/p>&lt;/blockquote>
 &lt;p>以下用交叉反問的方式來分析問題&lt;/p>
 &lt;p>Q: 沒有服務端那資料來源哪來 ? &lt;br>
 A: 使用假資料&lt;/p>
 &lt;p>Q: 當表現層依賴的是 IService Interface 使用假資料時需要實作什麼 ? &lt;br>
 A: 只需要實作一個 FakeService 來產生假資料即可&lt;/p>
 &lt;p>Q: 當想要將業務與表現解耦時，很常使用中介者的手法來黏合兩者，如果使用標準的 MVP 實做，Presenter 實際做了哪些事呢 ? &lt;br>
-A: 監聽 View 事件/ 與 Service 互動/ 管理畫面狀態/ 呼叫 View 刷新&lt;/p>
-&lt;p>Q: Presenter 似乎有點多事情 ! &lt;br>
-A: 其實需要視情況而定，情況簡單時直接向 View 倒資料也是完全可以接受的。但當情況複雜時可以選擇導入 ViewModel 來管理狀態。事實上表現層所要呈現的 UI 狀態未必是只跟 Service 的回傳有關，可能需要這樣的控制 條件A(Service) + 條件B(Local) + 條件C(User Runtime) -&amp;gt; 狀態D&lt;/p></description></item><item><title>Unity - Performance - Memory Profiler</title><link>https://HoshikawaRyuukou.github.io/posts/unity---performance---memory-profiler/</link><pubDate>Sun, 30 Jul 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---performance---memory-profiler/</guid><description>&lt;h2 id="注意">注意&lt;/h2>
+A: 監聽 View 事件/ 與 Service 互動/ 管理畫面狀態/ 呼叫 View 刷新&lt;/p></description></item><item><title>Unity - Performance - Memory Profiler</title><link>https://HoshikawaRyuukou.github.io/posts/unity---performance---memory-profiler/</link><pubDate>Sun, 30 Jul 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---performance---memory-profiler/</guid><description>&lt;h2 id="注意">注意&lt;/h2>
 &lt;ul>
 &lt;li>由於Unity 無法將性能分析器本身佔用的記憶體與運行模式的記憶體完全分開。要獲得應用程序的更精確數字和記憶體使用情況，應在要運行應用程序的目標設備和操作系統上分析應用程序。&lt;/li>
 &lt;li>如果需要在記憶體受限的平台上運行應用程序，設備上的總駐留量對於檢查低記憶體警告和由於記憶體耗盡而強制關閉非常有用。作為一般規則，它不應超過設備上可用總物理內存的 70%。&lt;/li>
@@ -3398,8 +3358,7 @@ A: 其實需要視情況而定，情況簡單時直接向 View 倒資料也是�
 &lt;li>&lt;a href="https://unitysquare.co.kr/growwith/unityblog/webinarView?id=387&amp;amp;utm_source=facebook-page&amp;amp;utm_medium=social&amp;amp;utm_campaign=korea_memoryprofilerapp387">Memory Profiler로 애플리케이션의 물리적 메모리 사용량 분석&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://blog.csdn.net/Nbin_Newby/article/details/131537227">Unity内存分析与优化实践(1.1版本前)&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Git - Rebase</title><link>https://HoshikawaRyuukou.github.io/posts/git---rebase/</link><pubDate>Sun, 16 Jul 2023 20:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/git---rebase/</guid><description>&lt;blockquote>
-&lt;p>之前筆者一直以為 rebase 是進行類似 &lt;strong>剪下貼上&lt;/strong> 的操作，但實際上是 &lt;strong>複製貼上&lt;/strong>&lt;/p>
-&lt;/blockquote>
+&lt;p>之前筆者一直以為 rebase 是進行類似 &lt;strong>剪下貼上&lt;/strong> 的操作，但實際上是 &lt;strong>複製貼上&lt;/strong>&lt;/p>&lt;/blockquote>
 &lt;h2 id="情境">情境&lt;/h2>
 &lt;ul>
 &lt;li>合併時不會像 merge 時會有 commit 的節點&lt;/li>
@@ -3421,8 +3380,7 @@ git reset XXXXXXX --hard
 &lt;li>&lt;a href="https://jessie75919.medium.com/%E4%BA%BA%E7%94%9F%E5%A6%82%E6%9E%9C%E6%9C%89-git-3-git-rebase-i-reword-370edc23f336">git rebase -i (reword)&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Git - Pull Request</title><link>https://HoshikawaRyuukou.github.io/posts/git---pull-request/</link><pubDate>Fri, 14 Jul 2023 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/git---pull-request/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;blockquote>
-&lt;p>有的環境也稱 Merge Request&lt;/p>
-&lt;/blockquote>
+&lt;p>有的環境也稱 Merge Request&lt;/p>&lt;/blockquote>
 &lt;p>開發產品時一般會挑選固定一個分支做為可以上線的正式版本分支(master)，需注意的是在進行多人協同開發時，讓每個人都可以 Commit 到專案正式上線的分支不是個好的做法。&lt;/p>
 &lt;p>可以透過 pull request 方式控管權限，由負責管理這個專案的人收到其他開發者的 pull request 並確認無誤後便可進行合併，來確保產品分支處於隨時都是可上線的狀態。&lt;/p>
 &lt;p>參與開源專案時，在創建 pull request 之前，建議先在本地分支上運行 git rebase 命令，確保你的更改基於最新的進度以降低審查者的理解難度。&lt;/p>
@@ -3480,8 +3438,7 @@ git reset XXXXXXX --hard
 &lt;p>有時後會有需要客製編輯器時，會這樣跟 MonoBehaviour 寫在一起並用 UNITY_EDITOR 處理。但事實上獨立一個檔案放在 &lt;strong>Editor 資料夾&lt;/strong> 應該會更好。&lt;/p></description></item><item><title>Unity - Platform - iOS - plug-in</title><link>https://HoshikawaRyuukou.github.io/posts/unity---platform---ios---plug-in/</link><pubDate>Wed, 05 Jul 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---platform---ios---plug-in/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
 &lt;p>這次的業務需求是&lt;/p>
 &lt;blockquote>
-&lt;p>取得 ios 實機的 &amp;ldquo;地區&amp;rdquo;，並讓 C# 能拿到 Swift 所返回的字串&lt;/p>
-&lt;/blockquote>
+&lt;p>取得 ios 實機的 &amp;ldquo;地區&amp;rdquo;，並讓 C# 能拿到 Swift 所返回的字串&lt;/p>&lt;/blockquote>
 &lt;p>因為在 ios 的環境下 unity / C# 拿到的值並不正確。此外筆者對 Swift / Objective-C 幾乎零基礎，目前只針對一些教學文件做些修改，之後有機會更熟再回頭深究。&lt;/p>
 &lt;h2 id="實作">實作&lt;/h2>
 &lt;ul>
@@ -4101,8 +4058,7 @@ git reset XXXXXXX --hard
 &lt;li>&lt;a href="https://dotblogs.com.tw/ASPNETShare/2017/02/24/20170223-ValueTuple">ValueTuple&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;blockquote>
-&lt;p>ValueTuple 是 value type，所以它使用的記憶體空間使用在 program stack，因此使用不會有 garbage collection&lt;/p>
-&lt;/blockquote>
+&lt;p>ValueTuple 是 value type，所以它使用的記憶體空間使用在 program stack，因此使用不會有 garbage collection&lt;/p>&lt;/blockquote>
 &lt;h2 id="format">Format&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://dotblogs.com.tw/lazycodestyle/2016/06/24/005827">內插字串&lt;/a>&lt;/li>
@@ -4279,8 +4235,7 @@ git reset XXXXXXX --hard
 &lt;/ul></description></item><item><title>Software Design - Navigation</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---navigation/</link><pubDate>Wed, 16 Nov 2022 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---navigation/</guid><description>&lt;p>以下 Feature 指的是一個功能獨立的模組，Feature A 將簡稱 A。&lt;/p>
 &lt;h2 id="問題">問題&lt;/h2>
 &lt;blockquote>
-&lt;p>應用程式中有一個由 A 到 B 的&lt;strong>導航&lt;/strong>，那這個&lt;strong>導航&lt;/strong>是誰的責任?&lt;/p>
-&lt;/blockquote>
+&lt;p>應用程式中有一個由 A 到 B 的&lt;strong>導航&lt;/strong>，那這個&lt;strong>導航&lt;/strong>是誰的責任?&lt;/p>&lt;/blockquote>
 &lt;p>以下先討論 2 種狀況。&lt;/p>
 &lt;h3 id="a-直接依賴-b">A 直接依賴 B&lt;/h3>
 &lt;p>簡單粗暴的強耦合破壞了 A 的獨立性。當流程發生變化時，可能需要到各個 Feature 去修改。&lt;/p>
@@ -4306,8 +4261,7 @@ Feature A -&amp;gt; INavigator.RouteFeatureB()
 &lt;/ul>
 &lt;p>文謅謅的，但重點似乎是抽象。不如直接看個狀況劇:&lt;/p>
 &lt;blockquote>
-&lt;p>有一個 Project A 需要使用播廣告的功能。分別採 2 個做法&lt;/p>
-&lt;/blockquote>
+&lt;p>有一個 Project A 需要使用播廣告的功能。分別採 2 個做法&lt;/p>&lt;/blockquote>
 &lt;h3 id="直接依賴">直接依賴&lt;/h3>
 &lt;p>
  &lt;img src="https://HoshikawaRyuukou.github.io/images/DIPNO.png" alt="DIPNO">
@@ -4360,7 +4314,6 @@ Feature A -&amp;gt; INavigator.RouteFeatureB()
 &lt;/ul></description></item><item><title>Philosophy - Ship of Theseus</title><link>https://HoshikawaRyuukou.github.io/posts/philosophy---ship-of-theseus/</link><pubDate>Sun, 06 Nov 2022 21:20:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/philosophy---ship-of-theseus/</guid><description>&lt;h2 id="問題---忒修斯之船">問題 - 忒修斯之船&lt;/h2>
 &lt;p>1世紀時的希臘作家普魯塔克問到&lt;/p>
 &lt;blockquote>
-&lt;p>如果忒修斯的船上的木頭逐漸被替換，直到所有的木頭都不是原來的木頭，那這艘船還是原來的那艘船嗎？&lt;/p>
-&lt;/blockquote>
+&lt;p>如果忒修斯的船上的木頭逐漸被替換，直到所有的木頭都不是原來的木頭，那這艘船還是原來的那艘船嗎？&lt;/p>&lt;/blockquote>
 &lt;h2 id="思考">思考&lt;/h2>
 &lt;p>這艘船在被賦予存在意義之前，就不過是一堆木頭與金屬，如果沒有使用他的人，那麼船將沒有他的意義。因此只要賦予它存在意義的人還在，或者說這份存在意義能夠被繼承下去，無論它變成什麼樣子，它還是那艘船。&lt;/p></description></item></channel></rss>

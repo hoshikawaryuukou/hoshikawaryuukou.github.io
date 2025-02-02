@@ -6,8 +6,7 @@
 &lt;h2 id="擴充元件">擴充元件&lt;/h2>
 &lt;p>會自行安裝，只須匯入類別即可使用。&lt;/p>
 &lt;blockquote>
-&lt;p>import &amp;lsquo;@pixi/accessibility&amp;rsquo;;&lt;/p>
-&lt;/blockquote></description></item><item><title>PixiJS - Note</title><link>https://HoshikawaRyuukou.github.io/posts/pixijs---note/</link><pubDate>Sat, 04 Jan 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/pixijs---note/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;p>import &amp;lsquo;@pixi/accessibility&amp;rsquo;;&lt;/p>&lt;/blockquote></description></item><item><title>PixiJS - Note</title><link>https://HoshikawaRyuukou.github.io/posts/pixijs---note/</link><pubDate>Sat, 04 Jan 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/pixijs---note/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://pixijs.com/">PixiJS | The HTML5 Creation Engine | PixiJS&lt;/a>&lt;/li>
 &lt;/ul>

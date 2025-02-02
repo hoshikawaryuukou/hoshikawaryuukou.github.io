@@ -22,11 +22,9 @@
 &lt;h2 id="控制反轉---什麼反轉了">控制反轉 - 什麼反轉了？&lt;/h2>
 &lt;p>控制反轉（Inversion of Control, IoC）就是為了解決這些問題而生的。它帶來了一個核心理念：&lt;/p>
 &lt;blockquote>
-&lt;p>需求方不再自己去「控制」依賴的構建和配置，而是把這部分的「控制權」交給「外部機制」（通常是 IoC 容器）。&lt;/p>
-&lt;/blockquote>
+&lt;p>需求方不再自己去「控制」依賴的構建和配置，而是把這部分的「控制權」交給「外部機制」（通常是 IoC 容器）。&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>需求方只需專注於「接收」或「查詢」依賴，並專心「使用」它們。簡化需求方的職責，使其僅專注於處理業務邏輯，從而提升模組化與可維護性。&lt;/p>
-&lt;/blockquote>
+&lt;p>需求方只需專注於「接收」或「查詢」依賴，並專心「使用」它們。簡化需求方的職責，使其僅專注於處理業務邏輯，從而提升模組化與可維護性。&lt;/p>&lt;/blockquote>
 &lt;h2 id="好處">好處&lt;/h2>
 &lt;h3 id="依賴管理">&lt;strong>依賴管理&lt;/strong>&lt;/h3>
 &lt;ul>
@@ -78,8 +76,7 @@
 &lt;/ul>
 &lt;p>文謅謅的，但重點似乎是抽象。不如直接看個狀況劇:&lt;/p>
 &lt;blockquote>
-&lt;p>有一個 Project A 需要使用播廣告的功能。分別採 2 個做法&lt;/p>
-&lt;/blockquote>
+&lt;p>有一個 Project A 需要使用播廣告的功能。分別採 2 個做法&lt;/p>&lt;/blockquote>
 &lt;h3 id="直接依賴">直接依賴&lt;/h3>
 &lt;p>
  &lt;img src="https://HoshikawaRyuukou.github.io/images/DIPNO.png" alt="DIPNO">

@@ -180,8 +180,7 @@
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>- git commit -m &lt;span style="color:#d88200">&amp;#34;你的 commit 訊息&amp;#34;&lt;/span> --no-verify
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Javascript_TypeScript - Package - tsup</title><link>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---package---tsup/</link><pubDate>Sun, 13 Oct 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---package---tsup/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;blockquote>
-&lt;p>The simplest and fastest way to bundle your TypeScript libraries.&lt;/p>
-&lt;/blockquote>
+&lt;p>The simplest and fastest way to bundle your TypeScript libraries.&lt;/p>&lt;/blockquote>
 &lt;p>設計的初衷是讓開發者能夠以最少的設定完成打包工作，內建許多合理的預設值。&lt;/p>
 &lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>

@@ -79,8 +79,7 @@
 &lt;li>
 &lt;p>將資源調整放置 Packages 而不是 Assets&lt;/p>
 &lt;blockquote>
-&lt;p>NuGet &amp;gt; Preferences &amp;gt; Placement &amp;gt; In Packages Folder&lt;/p>
-&lt;/blockquote>
+&lt;p>NuGet &amp;gt; Preferences &amp;gt; Placement &amp;gt; In Packages Folder&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;li>
 &lt;p>調整 .gitignore&lt;/p>
@@ -108,21 +107,13 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
-&lt;/ul></description></item><item><title>Unity - Package - R3</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package---r3/</link><pubDate>Thu, 09 Jan 2025 22:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package---r3/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/Cysharp/R3">Cysharp/R3&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://qiita.com/toRisouP/items/4344fbcba7b7e8d8ce16">【Unity】 R3とUniRxの比較まとめ&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://zenn.dev/tkada/articles/a96258e080056a#reactivecollection-%2F-reactivedictionary">[Unity] UniRxをR3に移行する&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Unity - Performance</title><link>https://HoshikawaRyuukou.github.io/posts/unity---performance/</link><pubDate>Wed, 08 Jan 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---performance/</guid><description>&lt;h2 id="gc">GC&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=1Hqg-gUUOE0">GC Garbage Collection 垃圾回收&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="ui">UI&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="">&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Unity - Samples</title><link>https://HoshikawaRyuukou.github.io/posts/unity---samples/</link><pubDate>Thu, 02 Jan 2025 22:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---samples/</guid><description>&lt;h2 id="solitaire">Solitaire&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/gubicsz/Solitaire">gubicsz/Solitaire&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="reversi">Reversi&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://zenn.dev/qemel/articles/f1829f9b847bcb">Unity設計練習 - リバーシ&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Unity - Packages</title><link>https://HoshikawaRyuukou.github.io/posts/unity---packages/</link><pubDate>Sat, 13 Apr 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---packages/</guid><description>&lt;h2 id="package-manager">Package Manager&lt;/h2>
 &lt;h3 id="installing-packages-using-upm">Installing Packages using UPM&lt;/h3>
 &lt;ol>
@@ -293,8 +284,7 @@ Scope(s):
 &lt;/ul></description></item><item><title>Unity - Platform - Android - AndroidJNIModule</title><link>https://HoshikawaRyuukou.github.io/posts/unity---platform---android---androidjnimodule/</link><pubDate>Sun, 28 Jan 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---platform---android---androidjnimodule/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
 &lt;p>這次的業務需求是&lt;/p>
 &lt;blockquote>
-&lt;p>將 Google Play Install Referrer 接入 Unity&lt;/p>
-&lt;/blockquote>
+&lt;p>將 Google Play Install Referrer 接入 Unity&lt;/p>&lt;/blockquote>
 &lt;p>目前有使用到 AndroidJNIModule 中的&lt;/p>
 &lt;ul>
 &lt;li>AndroidJavaClass&lt;/li>
@@ -364,8 +354,7 @@ Scope(s):
 &lt;p>將手機連著 android studio 開啟 Logcat，透過連結前往商店發現有 4 種情境&lt;/p></description></item><item><title>Unity - Advanced - Code stripping</title><link>https://HoshikawaRyuukou.github.io/posts/unity---advanced---managed-code-stripping/</link><pubDate>Wed, 17 Jan 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---advanced---managed-code-stripping/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>在構建過程中，Unity 通過稱為託管代碼剝離的過程刪除未使用或無法訪問的代碼，這可以顯著減小應用程式的最終大小。&lt;/p>
 &lt;blockquote>
-&lt;p>File -&amp;gt; Build Settings -&amp;gt; Player Settings -&amp;gt; Optimization -&amp;gt; Managed Stripping Level&lt;/p>
-&lt;/blockquote>
+&lt;p>File -&amp;gt; Build Settings -&amp;gt; Player Settings -&amp;gt; Optimization -&amp;gt; Managed Stripping Level&lt;/p>&lt;/blockquote>
 &lt;ul>
 &lt;li>⚠️ Managed Stripping Level 等級越高裁剪掉的代碼越多，包體也就越小，但是對應的風險也就更大。&lt;/li>
 &lt;li>藉由屬性或特殊 XML 配置檔的形式提供註釋，以指示 Unity 連結器要保留代碼庫的哪些部分。&lt;/li>
@@ -419,8 +408,7 @@ Scope(s):
 &lt;li>&lt;a href="https://docs.unity.com/ugs/en-us/manual/cloud-diagnostics/manual/Privacy/apple-privacy">Apple&amp;rsquo;s privacy survey&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.unity.com/ugs/en-us/manual/cloud-diagnostics/manual/Privacy/GoogleDataSafety">Google Play data safety disclosures for Cloud Diagnostics&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Unity - Environment</title><link>https://HoshikawaRyuukou.github.io/posts/unity---environment/</link><pubDate>Tue, 16 Jan 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---environment/</guid><description>&lt;blockquote>
-&lt;p>⚠️ 以下使用 unity 6&lt;/p>
-&lt;/blockquote>
+&lt;p>⚠️ 以下使用 unity 6&lt;/p>&lt;/blockquote>
 &lt;h2 id="os---mac">OS - Mac&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://blog.csdn.net/linxinfa/article/details/124844236">【游戏开发环境】Unity使用Mac电脑开发，开发环境的搭建（Mac mini M1 | VSCode | Git | 好用工具）&lt;/a>&lt;/li>
@@ -547,8 +535,7 @@ Scope(s):
 &lt;p>有時後會有需要客製編輯器時，會這樣跟 MonoBehaviour 寫在一起並用 UNITY_EDITOR 處理。但事實上獨立一個檔案放在 &lt;strong>Editor 資料夾&lt;/strong> 應該會更好。&lt;/p></description></item><item><title>Unity - Platform - iOS - plug-in</title><link>https://HoshikawaRyuukou.github.io/posts/unity---platform---ios---plug-in/</link><pubDate>Wed, 05 Jul 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---platform---ios---plug-in/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
 &lt;p>這次的業務需求是&lt;/p>
 &lt;blockquote>
-&lt;p>取得 ios 實機的 &amp;ldquo;地區&amp;rdquo;，並讓 C# 能拿到 Swift 所返回的字串&lt;/p>
-&lt;/blockquote>
+&lt;p>取得 ios 實機的 &amp;ldquo;地區&amp;rdquo;，並讓 C# 能拿到 Swift 所返回的字串&lt;/p>&lt;/blockquote>
 &lt;p>因為在 ios 的環境下 unity / C# 拿到的值並不正確。此外筆者對 Swift / Objective-C 幾乎零基礎，目前只針對一些教學文件做些修改，之後有機會更熟再回頭深究。&lt;/p>
 &lt;h2 id="實作">實作&lt;/h2>
 &lt;ul>

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Git on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/git/</link><description>Recent content in Git on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sat, 19 Oct 2024 19:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/git/index.xml" rel="self" type="application/rss+xml"/><item><title>Workflow - Send messages to Telegram via GitHub Actions</title><link>https://HoshikawaRyuukou.github.io/posts/workflow---send-messages-to-telegram-via-github-actions/</link><pubDate>Sat, 19 Oct 2024 19:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow---send-messages-to-telegram-via-github-actions/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>以下範例為 :&lt;/p>
 &lt;blockquote>
-&lt;p>在 git push 後透過 Github Actions 將 tag + commit 訊息發送到指定的 Telegram 群組&lt;/p>
-&lt;/blockquote>
+&lt;p>在 git push 後透過 Github Actions 將 tag + commit 訊息發送到指定的 Telegram 群組&lt;/p>&lt;/blockquote>
 &lt;h2 id="設置-telegram-bot">設置 Telegram Bot&lt;/h2>
 &lt;ul>
 &lt;li>在 Telegram 中搜尋 @BotFather 並建立一個新的 bot，記下 API token。&lt;/li>
@@ -12,19 +11,15 @@
 &lt;h2 id="設置-github-secrets">設置 GitHub Secrets&lt;/h2>
 &lt;p>GitHub 專案中&lt;/p>
 &lt;blockquote>
-&lt;p>Settings -&amp;gt; Security -&amp;gt; Secrets and variables -&amp;gt; Actions -&amp;gt; Repository secrets&lt;/p>
-&lt;/blockquote>
+&lt;p>Settings -&amp;gt; Security -&amp;gt; Secrets and variables -&amp;gt; Actions -&amp;gt; Repository secrets&lt;/p>&lt;/blockquote>
 &lt;p>新增以下 secrets :&lt;/p>
 &lt;ul>
 &lt;li>TELEGRAM_BOT_TOKEN : Telegram Bot Token&lt;/li>
 &lt;li>TELEGRAM_CHAT_ID : Telegram 群組 ID&lt;/li>
 &lt;/ul>
 &lt;h2 id="設置-github-variables">設置 GitHub Variables&lt;/h2>
-&lt;p>GitHub 專案中&lt;/p>
-&lt;blockquote>
-&lt;p>Settings -&amp;gt; Security -&amp;gt; Secrets and variables -&amp;gt; Actions -&amp;gt; Repository variables&lt;/p></description></item><item><title>Git - Rebase</title><link>https://HoshikawaRyuukou.github.io/posts/git---rebase/</link><pubDate>Sun, 16 Jul 2023 20:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/git---rebase/</guid><description>&lt;blockquote>
-&lt;p>之前筆者一直以為 rebase 是進行類似 &lt;strong>剪下貼上&lt;/strong> 的操作，但實際上是 &lt;strong>複製貼上&lt;/strong>&lt;/p>
-&lt;/blockquote>
+&lt;p>GitHub 專案中&lt;/p></description></item><item><title>Git - Rebase</title><link>https://HoshikawaRyuukou.github.io/posts/git---rebase/</link><pubDate>Sun, 16 Jul 2023 20:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/git---rebase/</guid><description>&lt;blockquote>
+&lt;p>之前筆者一直以為 rebase 是進行類似 &lt;strong>剪下貼上&lt;/strong> 的操作，但實際上是 &lt;strong>複製貼上&lt;/strong>&lt;/p>&lt;/blockquote>
 &lt;h2 id="情境">情境&lt;/h2>
 &lt;ul>
 &lt;li>合併時不會像 merge 時會有 commit 的節點&lt;/li>
@@ -46,8 +41,7 @@ git reset XXXXXXX --hard
 &lt;li>&lt;a href="https://jessie75919.medium.com/%E4%BA%BA%E7%94%9F%E5%A6%82%E6%9E%9C%E6%9C%89-git-3-git-rebase-i-reword-370edc23f336">git rebase -i (reword)&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Git - Pull Request</title><link>https://HoshikawaRyuukou.github.io/posts/git---pull-request/</link><pubDate>Fri, 14 Jul 2023 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/git---pull-request/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;blockquote>
-&lt;p>有的環境也稱 Merge Request&lt;/p>
-&lt;/blockquote>
+&lt;p>有的環境也稱 Merge Request&lt;/p>&lt;/blockquote>
 &lt;p>開發產品時一般會挑選固定一個分支做為可以上線的正式版本分支(master)，需注意的是在進行多人協同開發時，讓每個人都可以 Commit 到專案正式上線的分支不是個好的做法。&lt;/p>
 &lt;p>可以透過 pull request 方式控管權限，由負責管理這個專案的人收到其他開發者的 pull request 並確認無誤後便可進行合併，來確保產品分支處於隨時都是可上線的狀態。&lt;/p>
 &lt;p>參與開源專案時，在創建 pull request 之前，建議先在本地分支上運行 git rebase 命令，確保你的更改基於最新的進度以降低審查者的理解難度。&lt;/p>

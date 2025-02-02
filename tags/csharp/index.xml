@@ -63,8 +63,7 @@
 &lt;li>&lt;a href="https://dotblogs.com.tw/ASPNETShare/2017/02/24/20170223-ValueTuple">ValueTuple&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;blockquote>
-&lt;p>ValueTuple 是 value type，所以它使用的記憶體空間使用在 program stack，因此使用不會有 garbage collection&lt;/p>
-&lt;/blockquote>
+&lt;p>ValueTuple 是 value type，所以它使用的記憶體空間使用在 program stack，因此使用不會有 garbage collection&lt;/p>&lt;/blockquote>
 &lt;h2 id="format">Format&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://dotblogs.com.tw/lazycodestyle/2016/06/24/005827">內插字串&lt;/a>&lt;/li>

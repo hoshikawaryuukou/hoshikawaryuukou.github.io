@@ -52,8 +52,7 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Workflow - Send messages to Telegram via GitHub Actions</title><link>https://HoshikawaRyuukou.github.io/posts/workflow---send-messages-to-telegram-via-github-actions/</link><pubDate>Sat, 19 Oct 2024 19:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow---send-messages-to-telegram-via-github-actions/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>以下範例為 :&lt;/p>
 &lt;blockquote>
-&lt;p>在 git push 後透過 Github Actions 將 tag + commit 訊息發送到指定的 Telegram 群組&lt;/p>
-&lt;/blockquote>
+&lt;p>在 git push 後透過 Github Actions 將 tag + commit 訊息發送到指定的 Telegram 群組&lt;/p>&lt;/blockquote>
 &lt;h2 id="設置-telegram-bot">設置 Telegram Bot&lt;/h2>
 &lt;ul>
 &lt;li>在 Telegram 中搜尋 @BotFather 並建立一個新的 bot，記下 API token。&lt;/li>
@@ -63,17 +62,14 @@
 &lt;h2 id="設置-github-secrets">設置 GitHub Secrets&lt;/h2>
 &lt;p>GitHub 專案中&lt;/p>
 &lt;blockquote>
-&lt;p>Settings -&amp;gt; Security -&amp;gt; Secrets and variables -&amp;gt; Actions -&amp;gt; Repository secrets&lt;/p>
-&lt;/blockquote>
+&lt;p>Settings -&amp;gt; Security -&amp;gt; Secrets and variables -&amp;gt; Actions -&amp;gt; Repository secrets&lt;/p>&lt;/blockquote>
 &lt;p>新增以下 secrets :&lt;/p>
 &lt;ul>
 &lt;li>TELEGRAM_BOT_TOKEN : Telegram Bot Token&lt;/li>
 &lt;li>TELEGRAM_CHAT_ID : Telegram 群組 ID&lt;/li>
 &lt;/ul>
 &lt;h2 id="設置-github-variables">設置 GitHub Variables&lt;/h2>
-&lt;p>GitHub 專案中&lt;/p>
-&lt;blockquote>
-&lt;p>Settings -&amp;gt; Security -&amp;gt; Secrets and variables -&amp;gt; Actions -&amp;gt; Repository variables&lt;/p></description></item><item><title>Workflow - Create a template for full-stack monorepo</title><link>https://HoshikawaRyuukou.github.io/posts/workflow---create-a-template-for-full-stack-monorepo/</link><pubDate>Fri, 11 Oct 2024 09:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow---create-a-template-for-full-stack-monorepo/</guid><description>&lt;h2 id="structure">Structure&lt;/h2>
+&lt;p>GitHub 專案中&lt;/p></description></item><item><title>Workflow - Create a template for full-stack monorepo</title><link>https://HoshikawaRyuukou.github.io/posts/workflow---create-a-template-for-full-stack-monorepo/</link><pubDate>Fri, 11 Oct 2024 09:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow---create-a-template-for-full-stack-monorepo/</guid><description>&lt;h2 id="structure">Structure&lt;/h2>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>project-root/ 
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── pnpm-workspace.yaml 
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── scripts/

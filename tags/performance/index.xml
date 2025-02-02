@@ -1,11 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Performance on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/performance/</link><description>Recent content in Performance on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Wed, 08 Jan 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/performance/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Performance</title><link>https://HoshikawaRyuukou.github.io/posts/unity---performance/</link><pubDate>Wed, 08 Jan 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---performance/</guid><description>&lt;h2 id="gc">GC&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=1Hqg-gUUOE0">GC Garbage Collection 垃圾回收&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="ui">UI&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="">&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Unity - Performance - Memory Profiler</title><link>https://HoshikawaRyuukou.github.io/posts/unity---performance---memory-profiler/</link><pubDate>Sun, 30 Jul 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---performance---memory-profiler/</guid><description>&lt;h2 id="注意">注意&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Performance on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/performance/</link><description>Recent content in Performance on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sun, 30 Jul 2023 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/performance/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Performance - Memory Profiler</title><link>https://HoshikawaRyuukou.github.io/posts/unity---performance---memory-profiler/</link><pubDate>Sun, 30 Jul 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---performance---memory-profiler/</guid><description>&lt;h2 id="注意">注意&lt;/h2>
 &lt;ul>
 &lt;li>由於Unity 無法將性能分析器本身佔用的記憶體與運行模式的記憶體完全分開。要獲得應用程序的更精確數字和記憶體使用情況，應在要運行應用程序的目標設備和操作系統上分析應用程序。&lt;/li>
 &lt;li>如果需要在記憶體受限的平台上運行應用程序，設備上的總駐留量對於檢查低記憶體警告和由於記憶體耗盡而強制關閉非常有用。作為一般規則，它不應超過設備上可用總物理內存的 70%。&lt;/li>

@@ -7,8 +7,7 @@
 &lt;li>
 &lt;p>將資源調整放置 Packages 而不是 Assets&lt;/p>
 &lt;blockquote>
-&lt;p>NuGet &amp;gt; Preferences &amp;gt; Placement &amp;gt; In Packages Folder&lt;/p>
-&lt;/blockquote>
+&lt;p>NuGet &amp;gt; Preferences &amp;gt; Placement &amp;gt; In Packages Folder&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;li>
 &lt;p>調整 .gitignore&lt;/p>
