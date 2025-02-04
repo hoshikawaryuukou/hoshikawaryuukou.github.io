@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Github on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/github/</link><description>Recent content in Github on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 30 Jan 2025 14:12:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/github/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo - Github Actions + Github Pages</title><link>https://HoshikawaRyuukou.github.io/posts/hugo---github-actions-+-github-pages/</link><pubDate>Thu, 30 Jan 2025 14:12:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/hugo---github-actions-+-github-pages/</guid><description>&lt;h2 id="github-actions">GitHub Actions&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Github on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/github/</link><description>Recent content in Github on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sun, 02 Feb 2025 13:17:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/github/index.xml" rel="self" type="application/rss+xml"/><item><title>Github - GitHub SSH Key</title><link>https://HoshikawaRyuukou.github.io/posts/github---github-ssh-key/</link><pubDate>Sun, 02 Feb 2025 13:17:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/github---github-ssh-key/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>在 GitHub 上，SSH Key 有兩種加法：&lt;/p>
+&lt;h3 id="1-加到個人帳戶">1. 加到個人帳戶&lt;/h3>
+&lt;ul>
+&lt;li>適用於：你要用 SSH 可以 &lt;strong>&lt;code>存取你有權限的所有 Repo&lt;/code>&lt;/strong>&lt;/li>
+&lt;li>位置：GitHub &amp;gt; Settings &amp;gt; SSH and GPG keys&lt;/li>
+&lt;/ul>
+&lt;h3 id="2-加到-github-組織的-deploy-key組織的特定倉庫">2. 加到 GitHub 組織的 Deploy Key（組織的特定倉庫）&lt;/h3>
+&lt;ul>
+&lt;li>適用於：你的 SSH Key 只 &lt;strong>&lt;code>存取某個特定的組織 Repo&lt;/code>&lt;/strong>，而不是整個帳號&lt;/li>
+&lt;li>位置：GitHub 組織 &amp;gt; 目標 Repository &amp;gt; Settings &amp;gt; Deploy keys&lt;/li>
+&lt;/ul>
+&lt;p>📝 如果你是組織的開發者，通常是第一種（加到個人帳戶），因為組織管理員不一定會讓你直接加 Deploy Key。&lt;/p></description></item><item><title>Unity - Package Manager - Import a private package from GitHub repository</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---import-a-private-package-from-github-repository/</link><pubDate>Sat, 01 Feb 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---import-a-private-package-from-github-repository/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>Unity Package Manager (UPM) 支援從 Git repository 直接安裝與管理 package，這對於團隊開發和共享自定義 package 非常有用。&lt;/p>
+&lt;ul>
+&lt;li>⚠️ 如果是 organization 協同，需開啟相關的成員權限。&lt;/li>
+&lt;li>⚠️ &lt;a href="https://docs.unity3d.com/Manual/upm-config-https-git.html">Using private repositories with HTTPS Git URLs&lt;/a>，提到的 Git Credential Manager 似乎不起作用。&lt;/li>
+&lt;/ul>
+&lt;h2 id="solution-1---ssh-建議">Solution 1 - SSH (建議)&lt;/h2>
+&lt;ul>
+&lt;li>⚠️ 需確保 SSH Key 已添加到 GitHub。&lt;/li>
+&lt;/ul>
+&lt;h2 id="solution-2---personal-access-token">Solution 2 - Personal Access Token&lt;/h2>
+&lt;ul>
+&lt;li>⚠️ 建議使用較客製化的 Fine-Grained Token&lt;/li>
+&lt;li>⚠️ Resource owner 要注意(如果有多個身分)&lt;/li>
+&lt;/ul>
+&lt;h3 id="guide">Guide&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://medium.com/@dasannikov/install-unity-package-from-a-private-github-repository-9a40066b335f">Install Unity Package from a private GitHub repository&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="steps">Steps&lt;/h3>
+&lt;ol>
+&lt;li>至 GitHub &amp;laquo;&lt;strong>帳戶設定&lt;/strong>&amp;raquo;（非儲存庫設定）&lt;/li>
+&lt;li>Developer Settings -&amp;gt; Personal Access Tokens -&amp;gt; Fine-Grained Tokens&lt;/li>
+&lt;li>生成 Token (&lt;strong>Read-Only Permission&lt;/strong> for the repo &lt;strong>Content&lt;/strong>).&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#d88200">&amp;#34;com.yourusername.yourpackage&amp;#34;&lt;/span>: &lt;span style="color:#d88200">&amp;#34;git+https://x-oauth-basic:&amp;lt;token&amp;gt;@&amp;lt;repo&amp;gt;?path=&amp;lt;folder&amp;gt;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Hugo - Github Actions + Github Pages</title><link>https://HoshikawaRyuukou.github.io/posts/hugo---github-actions-+-github-pages/</link><pubDate>Thu, 30 Jan 2025 14:12:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/hugo---github-actions-+-github-pages/</guid><description>&lt;h2 id="github-actions">GitHub Actions&lt;/h2>
 &lt;h3 id="gh-pagesyml">gh-pages.yml&lt;/h3>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yml" data-lang="yml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">github pages&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>

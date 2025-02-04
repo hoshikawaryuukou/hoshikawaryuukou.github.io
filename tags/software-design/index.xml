@@ -222,7 +222,7 @@
 &lt;h3 id="observer">Observer&lt;/h3>
 &lt;p>觀察者模式中的主題同時身為發布者，觀察者是知道發布者的，但發布者不知道觀察者。&lt;/p>
 &lt;h3 id="pub-sub-publisher-subscriber">Pub-Sub (Publisher-Subscriber)&lt;/h3>
-&lt;p>發布者-訂閱者模式中的主題通常由消息代理或事件總線處理，發布者和觀察者不知道彼此的存在。發布者項主題發送訊息，主題再轉發給觀察者。&lt;/p></description></item><item><title>Software Design - Architecture - VIPER</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---architecture---viper/</link><pubDate>Fri, 19 Jan 2024 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---architecture---viper/</guid><description>&lt;h2 id="簡述">簡述&lt;/h2>
+&lt;p>發布者-訂閱者模式中的主題通常由消息代理或事件總線處理，發布者和觀察者不知道彼此的存在。發布者向主題發送訊息，主題再轉發給觀察者。&lt;/p></description></item><item><title>Software Design - Architecture - VIPER</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---architecture---viper/</link><pubDate>Fri, 19 Jan 2024 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---architecture---viper/</guid><description>&lt;h2 id="簡述">簡述&lt;/h2>
 &lt;p>VIPER (View-Interactor-Presenter-Entity-Router)&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://juejin.cn/post/6844903491941433351">iOS VIPER架構實踐(一)：從MVC到MVVM到VIPER&lt;/a>&lt;/li>

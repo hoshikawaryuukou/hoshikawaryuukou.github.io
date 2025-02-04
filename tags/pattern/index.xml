@@ -22,7 +22,7 @@
 &lt;h3 id="observer">Observer&lt;/h3>
 &lt;p>觀察者模式中的主題同時身為發布者，觀察者是知道發布者的，但發布者不知道觀察者。&lt;/p>
 &lt;h3 id="pub-sub-publisher-subscriber">Pub-Sub (Publisher-Subscriber)&lt;/h3>
-&lt;p>發布者-訂閱者模式中的主題通常由消息代理或事件總線處理，發布者和觀察者不知道彼此的存在。發布者項主題發送訊息，主題再轉發給觀察者。&lt;/p></description></item><item><title>Software Design - Pattern - ViewModel</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---viewmodel/</link><pubDate>Sun, 27 Aug 2023 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---viewmodel/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
+&lt;p>發布者-訂閱者模式中的主題通常由消息代理或事件總線處理，發布者和觀察者不知道彼此的存在。發布者向主題發送訊息，主題再轉發給觀察者。&lt;/p></description></item><item><title>Software Design - Pattern - ViewModel</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---viewmodel/</link><pubDate>Sun, 27 Aug 2023 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---viewmodel/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
 &lt;p>此篇的實作參考到以下文件 (提到不少 Presentation layer 設計原則)&lt;/p>
 &lt;blockquote>
 &lt;p>&lt;a href="https://developer.android.com/topic/architecture/ui-layer?hl=zh-tw">Android Developers 文件/指南/UI 層&lt;/a>&lt;/p>&lt;/blockquote>

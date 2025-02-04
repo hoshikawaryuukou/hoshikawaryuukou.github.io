@@ -1,4 +1,64 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/posts/</link><description>Recent content in Posts on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 30 Jan 2025 14:12:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo - Github Actions + Github Pages</title><link>https://HoshikawaRyuukou.github.io/posts/hugo---github-actions-+-github-pages/</link><pubDate>Thu, 30 Jan 2025 14:12:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/hugo---github-actions-+-github-pages/</guid><description>&lt;h2 id="github-actions">GitHub Actions&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/posts/</link><description>Recent content in Posts on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sun, 02 Feb 2025 20:20:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Network - Protocol - SSH</title><link>https://HoshikawaRyuukou.github.io/posts/network---protocol---ssh/</link><pubDate>Sun, 02 Feb 2025 20:20:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/network---protocol---ssh/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>SSH（Secure Shell）是一種加密的網路協議，允許你安全地連接到遠端伺服器。對 Git 來說，使用 SSH 主要有這些優勢：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>免密碼認證&lt;/strong>：使用 SSH 金鑰（SSH Keys）後，不需要每次都輸入帳號密碼。&lt;/li>
+&lt;li>&lt;strong>更安全&lt;/strong>：SSH 使用非對稱加密，比 HTTPS（帳號 + 密碼）更安全。&lt;/li>
+&lt;li>&lt;strong>更適合自動化&lt;/strong>：如果你要寫腳本來自動處理 Git 操作，SSH 會比 HTTPS 更方便。&lt;/li>
+&lt;/ul>
+&lt;h2 id="env---windows">Env - Windows&lt;/h2>
+&lt;p>⚠️ 以下皆使用 PowerShell 操作&lt;/p>
+&lt;h3 id="step-1-檢查-windows-是否已安裝-openssh">Step 1: 檢查 Windows 是否已安裝 OpenSSH&lt;/h3>
+&lt;p>Windows 10 以上的系統已經內建 OpenSSH&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>ssh -V
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>如果有顯示類似這樣的版本資訊，代表 OpenSSH 已經安裝：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>OpenSSH_for_Windows_8.1p1, LibreSSL 3.0.2
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="step-2-產生-ssh-金鑰">Step 2: 產生 SSH 金鑰&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>ssh-keygen -t rsa -b &lt;span style="color:#ae81ff">4096&lt;/span> -C &lt;span style="color:#d88200">&amp;#34;your-email@example.com&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>&lt;code>t rsa&lt;/code>：使用 RSA 演算法（GitHub 推薦）&lt;/li>
+&lt;li>&lt;code>b 4096&lt;/code>：密鑰長度 4096 bits（更安全）&lt;/li>
+&lt;li>&lt;code>C &amp;quot;your-email@example.com&amp;quot;&lt;/code>：加上你的 Email 作為標註&lt;/li>
+&lt;/ul>
+&lt;h3 id="step-3-儲存金鑰">Step 3: 儲存金鑰&lt;/h3>
+&lt;p>執行指令後，系統會詢問你要存在哪裡：&lt;/p></description></item><item><title>Github - GitHub SSH Key</title><link>https://HoshikawaRyuukou.github.io/posts/github---github-ssh-key/</link><pubDate>Sun, 02 Feb 2025 13:17:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/github---github-ssh-key/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>在 GitHub 上，SSH Key 有兩種加法：&lt;/p>
+&lt;h3 id="1-加到個人帳戶">1. 加到個人帳戶&lt;/h3>
+&lt;ul>
+&lt;li>適用於：你要用 SSH 可以 &lt;strong>&lt;code>存取你有權限的所有 Repo&lt;/code>&lt;/strong>&lt;/li>
+&lt;li>位置：GitHub &amp;gt; Settings &amp;gt; SSH and GPG keys&lt;/li>
+&lt;/ul>
+&lt;h3 id="2-加到-github-組織的-deploy-key組織的特定倉庫">2. 加到 GitHub 組織的 Deploy Key（組織的特定倉庫）&lt;/h3>
+&lt;ul>
+&lt;li>適用於：你的 SSH Key 只 &lt;strong>&lt;code>存取某個特定的組織 Repo&lt;/code>&lt;/strong>，而不是整個帳號&lt;/li>
+&lt;li>位置：GitHub 組織 &amp;gt; 目標 Repository &amp;gt; Settings &amp;gt; Deploy keys&lt;/li>
+&lt;/ul>
+&lt;p>📝 如果你是組織的開發者，通常是第一種（加到個人帳戶），因為組織管理員不一定會讓你直接加 Deploy Key。&lt;/p></description></item><item><title>Unity - Package Manager - Import a private package from GitHub repository</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---import-a-private-package-from-github-repository/</link><pubDate>Sat, 01 Feb 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---import-a-private-package-from-github-repository/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>Unity Package Manager (UPM) 支援從 Git repository 直接安裝與管理 package，這對於團隊開發和共享自定義 package 非常有用。&lt;/p>
+&lt;ul>
+&lt;li>⚠️ 如果是 organization 協同，需開啟相關的成員權限。&lt;/li>
+&lt;li>⚠️ &lt;a href="https://docs.unity3d.com/Manual/upm-config-https-git.html">Using private repositories with HTTPS Git URLs&lt;/a>，提到的 Git Credential Manager 似乎不起作用。&lt;/li>
+&lt;/ul>
+&lt;h2 id="solution-1---ssh-建議">Solution 1 - SSH (建議)&lt;/h2>
+&lt;ul>
+&lt;li>⚠️ 需確保 SSH Key 已添加到 GitHub。&lt;/li>
+&lt;/ul>
+&lt;h2 id="solution-2---personal-access-token">Solution 2 - Personal Access Token&lt;/h2>
+&lt;ul>
+&lt;li>⚠️ 建議使用較客製化的 Fine-Grained Token&lt;/li>
+&lt;li>⚠️ Resource owner 要注意(如果有多個身分)&lt;/li>
+&lt;/ul>
+&lt;h3 id="guide">Guide&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://medium.com/@dasannikov/install-unity-package-from-a-private-github-repository-9a40066b335f">Install Unity Package from a private GitHub repository&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="steps">Steps&lt;/h3>
+&lt;ol>
+&lt;li>至 GitHub &amp;laquo;&lt;strong>帳戶設定&lt;/strong>&amp;raquo;（非儲存庫設定）&lt;/li>
+&lt;li>Developer Settings -&amp;gt; Personal Access Tokens -&amp;gt; Fine-Grained Tokens&lt;/li>
+&lt;li>生成 Token (&lt;strong>Read-Only Permission&lt;/strong> for the repo &lt;strong>Content&lt;/strong>).&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#d88200">&amp;#34;com.yourusername.yourpackage&amp;#34;&lt;/span>: &lt;span style="color:#d88200">&amp;#34;git+https://x-oauth-basic:&amp;lt;token&amp;gt;@&amp;lt;repo&amp;gt;?path=&amp;lt;folder&amp;gt;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Hugo - Github Actions + Github Pages</title><link>https://HoshikawaRyuukou.github.io/posts/hugo---github-actions-+-github-pages/</link><pubDate>Thu, 30 Jan 2025 14:12:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/hugo---github-actions-+-github-pages/</guid><description>&lt;h2 id="github-actions">GitHub Actions&lt;/h2>
 &lt;h3 id="gh-pagesyml">gh-pages.yml&lt;/h3>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yml" data-lang="yml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">github pages&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
@@ -345,8 +405,9 @@
 &lt;/li>
 &lt;li>
 &lt;p>調整 .gitignore&lt;/p>
-&lt;pre tabindex="0">&lt;code>/Packages/nuget-packages/InstalledPackages*
-&lt;/code>&lt;/pre>&lt;/li>
+&lt;blockquote>
+&lt;p>/Packages/nuget-packages/InstalledPackages*&lt;/p>&lt;/blockquote>
+&lt;/li>
 &lt;/ol></description></item><item><title>Unity - Package - MessagePipe</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package---messagepipe/</link><pubDate>Thu, 09 Jan 2025 22:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package---messagepipe/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/Cysharp/MessagePipe">Cysharp/MessagePipe&lt;/a>&lt;/li>
@@ -2478,7 +2539,7 @@ CHANGELOG*.md
 &lt;h3 id="observer">Observer&lt;/h3>
 &lt;p>觀察者模式中的主題同時身為發布者，觀察者是知道發布者的，但發布者不知道觀察者。&lt;/p>
 &lt;h3 id="pub-sub-publisher-subscriber">Pub-Sub (Publisher-Subscriber)&lt;/h3>
-&lt;p>發布者-訂閱者模式中的主題通常由消息代理或事件總線處理，發布者和觀察者不知道彼此的存在。發布者項主題發送訊息，主題再轉發給觀察者。&lt;/p></description></item><item><title>Node.js - package.json</title><link>https://HoshikawaRyuukou.github.io/posts/node.js---package.json/</link><pubDate>Fri, 26 Jul 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/node.js---package.json/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>發布者-訂閱者模式中的主題通常由消息代理或事件總線處理，發布者和觀察者不知道彼此的存在。發布者向主題發送訊息，主題再轉發給觀察者。&lt;/p></description></item><item><title>Node.js - package.json</title><link>https://HoshikawaRyuukou.github.io/posts/node.js---package.json/</link><pubDate>Fri, 26 Jul 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/node.js---package.json/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>可以將 package.json 檔案新增到套件中，以便其他人可以輕鬆管理和安裝。發佈到註冊表的包必須包含一個 package.json 檔案。&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://docs.npmjs.com/creating-a-package-json-file">Creating a package.json file&lt;/a>&lt;/li>
@@ -3283,30 +3344,18 @@ Scope(s):
 &lt;h2 id="preferences">Preferences&lt;/h2>
 &lt;ul>
 &lt;li>Edit &amp;gt; Preferences &amp;gt; General &amp;gt; Script Changes While Playing (Stop Playing and Recompile)&lt;/li>
-&lt;/ul></description></item><item><title>Unity - Package Manager - Modify A Package</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---modify-a-package/</link><pubDate>Fri, 12 Jan 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---modify-a-package/</guid><description>&lt;h2 id="情境">情境&lt;/h2>
+&lt;/ul></description></item><item><title>Unity - Package Manager - Modify a package</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---modify-a-package/</link><pubDate>Fri, 12 Jan 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---modify-a-package/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>有需要客製化 Unity 官方 / git 直接導入 的 Package 時&lt;/p>
-&lt;h2 id="操作">操作&lt;/h2>
-&lt;ol>
-&lt;li>至 ProjrctRoot\Library\PackageCache 找到目標的 Package&lt;/li>
-&lt;li>&lt;strong>剪下貼上&lt;/strong>至 ProjrctRoot\Packages 即可&lt;/li>
-&lt;/ol>
-&lt;h2 id="ref">Ref&lt;/h2>
+&lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://support.unity.com/hc/en-us/articles/9113460764052-How-can-I-modify-built-in-packages-">How can I modify built-in packages?&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://blog.csdn.net/linjf520/article/details/125738218">Unity - 如何修改一个 Package 或是如何将 Package Local化&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Unity - Package Manager - Private GitHub Repository</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---private-github-repository/</link><pubDate>Sun, 24 Dec 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---private-github-repository/</guid><description>&lt;h2 id="情境">情境&lt;/h2>
-&lt;p>想分享私有庫但又不想去更改團隊或人員權限，Github 提供 Fine-Grained Token 能做到客製化的權限控制&lt;/p>
-&lt;h2 id="操作">操作&lt;/h2>
+&lt;/ul>
+&lt;h2 id="steps">Steps&lt;/h2>
 &lt;ol>
-&lt;li>至 GitHub &amp;laquo;&lt;strong>帳戶設定&lt;/strong>&amp;raquo;（非儲存庫設定）&lt;/li>
-&lt;li>Developer Settings -&amp;gt; Personal Access Tokens -&amp;gt; Fine-Grained Tokens&lt;/li>
-&lt;li>生成 Token (&lt;strong>Read-Only Permission&lt;/strong> for the repo &lt;strong>Content&lt;/strong>).&lt;/li>
-&lt;/ol>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#d88200">&amp;#34;com.yourusername.yourpackage&amp;#34;&lt;/span>: &lt;span style="color:#d88200">&amp;#34;git+https://x-oauth-basic:&amp;lt;token&amp;gt;@&amp;lt;repo&amp;gt;?path=&amp;lt;folder&amp;gt;&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="ref">Ref&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://medium.com/@dasannikov/install-unity-package-from-a-private-github-repository-9a40066b335f">Install Unity Package from a private GitHub repository&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Unity - Package - External Dependency Manager for Unity (EDM4U)</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package---external-dependency-manager-for-unity-edm4u/</link><pubDate>Wed, 08 Nov 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package---external-dependency-manager-for-unity-edm4u/</guid><description>&lt;h2 id="前言">前言&lt;/h2>
+&lt;li>至 ProjrctRoot\Library\PackageCache 找到目標的 Package&lt;/li>
+&lt;li>&lt;strong>剪下貼上&lt;/strong>至 ProjrctRoot\Packages 即可&lt;/li>
+&lt;/ol></description></item><item><title>Unity - Package - External Dependency Manager for Unity (EDM4U)</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package---external-dependency-manager-for-unity-edm4u/</link><pubDate>Wed, 08 Nov 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package---external-dependency-manager-for-unity-edm4u/</guid><description>&lt;h2 id="前言">前言&lt;/h2>
 &lt;p>Google 停止維護 Game Package Registry (GPR) 導致不能直接使用 Package Manager 導入包。必須到封存檔網站下載「.tgz」手動導入。&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://developers.google.com/unity/archive?hl=zh-tw#external_dependency_manager_for_unity">Google Unity 套件&lt;/a>&lt;/li>
@@ -3612,7 +3661,7 @@ git reset XXXXXXX --hard
 &lt;ul>
 &lt;li>&lt;a href="https://docs.unity3d.com/Manual/ScriptedImporters.html">Scripted Importers&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.cnblogs.com/wildmelon/p/16087056.html">[Unity] 资源工作流程 - ScriptedImporter&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Unity - Package Manager - Sample Workflow</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---sample-workflow/</link><pubDate>Sat, 22 Apr 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---sample-workflow/</guid><description>&lt;h2 id="package-samples">Package Samples&lt;/h2>
+&lt;/ul></description></item><item><title>Unity - Package Manager - Sample Workflow</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---create-a-sample/</link><pubDate>Sat, 22 Apr 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---create-a-sample/</guid><description>&lt;h2 id="package-samples">Package Samples&lt;/h2>
 &lt;p>對應有些模組的操作比較複雜繁瑣，有時需要有一些 Sample 做參考。官方 Package Manager 有個 &amp;ldquo;半套&amp;rdquo; Sample 工作流，讓人不是很舒服。&lt;/p>
 &lt;p>&lt;a href="https://docs.unity3d.com/2021.3/Documentation/Manual/cus-samples.html">官方文件&lt;/a>&lt;/p>
 &lt;p>Sample 資料夾後面加了波浪號 (&lt;del>) 告訴 Unity 忽略 Samples&lt;/del> 文件夾中的內容，此類文件夾不使用.meta文件進行跟踪。忽略 Samples~ 對 Package 使用者是好的，畢竟不是每個人都需要。&lt;/p>

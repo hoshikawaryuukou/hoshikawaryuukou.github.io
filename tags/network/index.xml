@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Network on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/network/</link><description>Recent content in Network on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 22 Jun 2023 20:20:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/network/index.xml" rel="self" type="application/rss+xml"/><item><title>Network - WebP</title><link>https://HoshikawaRyuukou.github.io/posts/network---webp/</link><pubDate>Thu, 22 Jun 2023 20:20:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/network---webp/</guid><description>&lt;h2 id="設計目標">設計目標&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Network on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/network/</link><description>Recent content in Network on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sun, 02 Feb 2025 20:20:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/network/index.xml" rel="self" type="application/rss+xml"/><item><title>Network - Protocol - SSH</title><link>https://HoshikawaRyuukou.github.io/posts/network---protocol---ssh/</link><pubDate>Sun, 02 Feb 2025 20:20:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/network---protocol---ssh/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>SSH（Secure Shell）是一種加密的網路協議，允許你安全地連接到遠端伺服器。對 Git 來說，使用 SSH 主要有這些優勢：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>免密碼認證&lt;/strong>：使用 SSH 金鑰（SSH Keys）後，不需要每次都輸入帳號密碼。&lt;/li>
+&lt;li>&lt;strong>更安全&lt;/strong>：SSH 使用非對稱加密，比 HTTPS（帳號 + 密碼）更安全。&lt;/li>
+&lt;li>&lt;strong>更適合自動化&lt;/strong>：如果你要寫腳本來自動處理 Git 操作，SSH 會比 HTTPS 更方便。&lt;/li>
+&lt;/ul>
+&lt;h2 id="env---windows">Env - Windows&lt;/h2>
+&lt;p>⚠️ 以下皆使用 PowerShell 操作&lt;/p>
+&lt;h3 id="step-1-檢查-windows-是否已安裝-openssh">Step 1: 檢查 Windows 是否已安裝 OpenSSH&lt;/h3>
+&lt;p>Windows 10 以上的系統已經內建 OpenSSH&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>ssh -V
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>如果有顯示類似這樣的版本資訊，代表 OpenSSH 已經安裝：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>OpenSSH_for_Windows_8.1p1, LibreSSL 3.0.2
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="step-2-產生-ssh-金鑰">Step 2: 產生 SSH 金鑰&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>ssh-keygen -t rsa -b &lt;span style="color:#ae81ff">4096&lt;/span> -C &lt;span style="color:#d88200">&amp;#34;your-email@example.com&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>&lt;code>t rsa&lt;/code>：使用 RSA 演算法（GitHub 推薦）&lt;/li>
+&lt;li>&lt;code>b 4096&lt;/code>：密鑰長度 4096 bits（更安全）&lt;/li>
+&lt;li>&lt;code>C &amp;quot;your-email@example.com&amp;quot;&lt;/code>：加上你的 Email 作為標註&lt;/li>
+&lt;/ul>
+&lt;h3 id="step-3-儲存金鑰">Step 3: 儲存金鑰&lt;/h3>
+&lt;p>執行指令後，系統會詢問你要存在哪裡：&lt;/p></description></item><item><title>Network - WebP</title><link>https://HoshikawaRyuukou.github.io/posts/network---webp/</link><pubDate>Thu, 22 Jun 2023 20:20:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/network---webp/</guid><description>&lt;h2 id="設計目標">設計目標&lt;/h2>
 &lt;p>Google 以縮減線上影像的檔案大小為目標，同時維持不輸 JPEG、PNG、GIF 格式的圖片品質。&lt;/p>
 &lt;p>網站的瀏覽與速度不僅影響使用者的耐心，也會影響 SEO 的排名與檢索，透過顯著縮減相片和圖形大小，網頁就能加快載入速度，提供更優質的使用者體驗。&lt;/p>
 &lt;p>並持續在優化
