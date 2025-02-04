@@ -23,12 +23,12 @@ ssh -V
 ```
 
 如果有顯示類似這樣的版本資訊，代表 OpenSSH 已經安裝：
-```bash
+```
 OpenSSH_for_Windows_8.1p1, LibreSSL 3.0.2
 ```
 
 ### Step 2: 產生 SSH 金鑰
-```bash
+```ps1
 ssh-keygen -t rsa -b 4096 -C "your-email@example.com"
 ```
 - `t rsa`：使用 RSA 演算法（GitHub 推薦）
@@ -37,10 +37,8 @@ ssh-keygen -t rsa -b 4096 -C "your-email@example.com"
 
 ### Step 3: 儲存金鑰
 執行指令後，系統會詢問你要存在哪裡：
-```bash
-Enter file in which to save the key (/c/Users/YourName/.ssh/id_rsa): 
-# 直接按 Enter
-C:\Users\YourName\.ssh\id_rsa
+```
+Enter file in which to save the key (/c/Users/YourName/.ssh/id_rsa): # 直接按 Enter
 ```
 
 然後，系統會問你是否要設定密碼（passphrase），如果你希望 SSH Key 更安全，可以輸入密碼，否則直接按 Enter。
@@ -51,7 +49,7 @@ SSH 金鑰有兩個檔案：
 - 公鑰（id_rsa.pub）：可以分享，這是給遠端伺服器認證的金鑰。
 
 檢視公鑰
-```bash
+```ps1
 Get-Content $env:USERPROFILE\.ssh\id_rsa.pub
 ```
 
@@ -64,6 +62,6 @@ ssh -T git@github.com
 ```
 
 如果成功，你會看到
-```bash
+```
 Hi your-username! You've successfully authenticated, but GitHub does not provide shell access.
 ```

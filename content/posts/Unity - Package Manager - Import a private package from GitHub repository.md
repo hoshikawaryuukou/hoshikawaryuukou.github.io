@@ -27,6 +27,6 @@ Unity Package Manager (UPM) 支援從 Git repository 直接安裝與管理 packa
 2. Developer Settings  ->  Personal Access Tokens -> Fine-Grained Tokens
 3. 生成 Token (**Read-Only Permission** for the repo **Content**).
 
-```bash 
+```
 "com.yourusername.yourpackage": "git+https://x-oauth-basic:<token>@<repo>?path=<folder>"
 ```

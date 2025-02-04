@@ -14,4 +14,6 @@ tags: ["Unity", "Package Manager", "NuGet"]
     > NuGet > Preferences > Placement > In Packages Folder
 
 2. 調整 .gitignore
-    > /Packages/nuget-packages/InstalledPackages*
+    ```
+    /Packages/nuget-packages/InstalledPackages*
+    ```

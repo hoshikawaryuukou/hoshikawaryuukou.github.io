@@ -1,5 +1,5 @@
 ---
-title: "Github - GitHub SSH Key"
+title: "Github - SSH Key"
 date: 2025-02-02 13:17:00
 draft: false
 
