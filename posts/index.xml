@@ -11,16 +11,16 @@
 &lt;p>Windows 10 以上的系統已經內建 OpenSSH&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>ssh -V
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>如果有顯示類似這樣的版本資訊，代表 OpenSSH 已經安裝：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>OpenSSH_for_Windows_8.1p1, LibreSSL 3.0.2
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="step-2-產生-ssh-金鑰">Step 2: 產生 SSH 金鑰&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>ssh-keygen -t rsa -b &lt;span style="color:#ae81ff">4096&lt;/span> -C &lt;span style="color:#d88200">&amp;#34;your-email@example.com&amp;#34;&lt;/span>
+&lt;pre tabindex="0">&lt;code>OpenSSH_for_Windows_8.1p1, LibreSSL 3.0.2
+&lt;/code>&lt;/pre>&lt;h3 id="step-2-產生-ssh-金鑰">Step 2: 產生 SSH 金鑰&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-ps1" data-lang="ps1">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">ssh-keygen&lt;/span> &lt;span style="color:#111">-t&lt;/span> &lt;span style="color:#111">rsa&lt;/span> &lt;span style="color:#111">-b&lt;/span> &lt;span style="color:#ae81ff">4096&lt;/span> &lt;span style="color:#111">-C&lt;/span> &lt;span style="color:#d88200">&amp;#34;your-email@example.com&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
 &lt;li>&lt;code>t rsa&lt;/code>：使用 RSA 演算法（GitHub 推薦）&lt;/li>
 &lt;li>&lt;code>b 4096&lt;/code>：密鑰長度 4096 bits（更安全）&lt;/li>
 &lt;li>&lt;code>C &amp;quot;your-email@example.com&amp;quot;&lt;/code>：加上你的 Email 作為標註&lt;/li>
 &lt;/ul>
 &lt;h3 id="step-3-儲存金鑰">Step 3: 儲存金鑰&lt;/h3>
-&lt;p>執行指令後，系統會詢問你要存在哪裡：&lt;/p></description></item><item><title>Github - GitHub SSH Key</title><link>https://HoshikawaRyuukou.github.io/posts/github---github-ssh-key/</link><pubDate>Sun, 02 Feb 2025 13:17:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/github---github-ssh-key/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>執行指令後，系統會詢問你要存在哪裡：&lt;/p></description></item><item><title>Github - SSH Key</title><link>https://HoshikawaRyuukou.github.io/posts/github---ssh-key/</link><pubDate>Sun, 02 Feb 2025 13:17:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/github---ssh-key/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>在 GitHub 上，SSH Key 有兩種加法：&lt;/p>
 &lt;h3 id="1-加到個人帳戶">1. 加到個人帳戶&lt;/h3>
 &lt;ul>
@@ -57,8 +57,8 @@
 &lt;li>Developer Settings -&amp;gt; Personal Access Tokens -&amp;gt; Fine-Grained Tokens&lt;/li>
 &lt;li>生成 Token (&lt;strong>Read-Only Permission&lt;/strong> for the repo &lt;strong>Content&lt;/strong>).&lt;/li>
 &lt;/ol>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#d88200">&amp;#34;com.yourusername.yourpackage&amp;#34;&lt;/span>: &lt;span style="color:#d88200">&amp;#34;git+https://x-oauth-basic:&amp;lt;token&amp;gt;@&amp;lt;repo&amp;gt;?path=&amp;lt;folder&amp;gt;&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Hugo - Github Actions + Github Pages</title><link>https://HoshikawaRyuukou.github.io/posts/hugo---github-actions-+-github-pages/</link><pubDate>Thu, 30 Jan 2025 14:12:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/hugo---github-actions-+-github-pages/</guid><description>&lt;h2 id="github-actions">GitHub Actions&lt;/h2>
+&lt;pre tabindex="0">&lt;code>&amp;#34;com.yourusername.yourpackage&amp;#34;: &amp;#34;git+https://x-oauth-basic:&amp;lt;token&amp;gt;@&amp;lt;repo&amp;gt;?path=&amp;lt;folder&amp;gt;&amp;#34;
+&lt;/code>&lt;/pre></description></item><item><title>Hugo - Github Actions + Github Pages</title><link>https://HoshikawaRyuukou.github.io/posts/hugo---github-actions-+-github-pages/</link><pubDate>Thu, 30 Jan 2025 14:12:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/hugo---github-actions-+-github-pages/</guid><description>&lt;h2 id="github-actions">GitHub Actions&lt;/h2>
 &lt;h3 id="gh-pagesyml">gh-pages.yml&lt;/h3>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yml" data-lang="yml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">github pages&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
@@ -405,9 +405,8 @@
 &lt;/li>
 &lt;li>
 &lt;p>調整 .gitignore&lt;/p>
-&lt;blockquote>
-&lt;p>/Packages/nuget-packages/InstalledPackages*&lt;/p>&lt;/blockquote>
-&lt;/li>
+&lt;pre tabindex="0">&lt;code>/Packages/nuget-packages/InstalledPackages*
+&lt;/code>&lt;/pre>&lt;/li>
 &lt;/ol></description></item><item><title>Unity - Package - MessagePipe</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package---messagepipe/</link><pubDate>Thu, 09 Jan 2025 22:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package---messagepipe/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/Cysharp/MessagePipe">Cysharp/MessagePipe&lt;/a>&lt;/li>

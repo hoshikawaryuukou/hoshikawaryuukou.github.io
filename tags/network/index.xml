@@ -11,9 +11,9 @@
 &lt;p>Windows 10 以上的系統已經內建 OpenSSH&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>ssh -V
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>如果有顯示類似這樣的版本資訊，代表 OpenSSH 已經安裝：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>OpenSSH_for_Windows_8.1p1, LibreSSL 3.0.2
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="step-2-產生-ssh-金鑰">Step 2: 產生 SSH 金鑰&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>ssh-keygen -t rsa -b &lt;span style="color:#ae81ff">4096&lt;/span> -C &lt;span style="color:#d88200">&amp;#34;your-email@example.com&amp;#34;&lt;/span>
+&lt;pre tabindex="0">&lt;code>OpenSSH_for_Windows_8.1p1, LibreSSL 3.0.2
+&lt;/code>&lt;/pre>&lt;h3 id="step-2-產生-ssh-金鑰">Step 2: 產生 SSH 金鑰&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-ps1" data-lang="ps1">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">ssh-keygen&lt;/span> &lt;span style="color:#111">-t&lt;/span> &lt;span style="color:#111">rsa&lt;/span> &lt;span style="color:#111">-b&lt;/span> &lt;span style="color:#ae81ff">4096&lt;/span> &lt;span style="color:#111">-C&lt;/span> &lt;span style="color:#d88200">&amp;#34;your-email@example.com&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
 &lt;li>&lt;code>t rsa&lt;/code>：使用 RSA 演算法（GitHub 推薦）&lt;/li>
 &lt;li>&lt;code>b 4096&lt;/code>：密鑰長度 4096 bits（更安全）&lt;/li>

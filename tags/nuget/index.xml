@@ -11,7 +11,6 @@
 &lt;/li>
 &lt;li>
 &lt;p>調整 .gitignore&lt;/p>
-&lt;blockquote>
-&lt;p>/Packages/nuget-packages/InstalledPackages*&lt;/p>&lt;/blockquote>
-&lt;/li>
+&lt;pre tabindex="0">&lt;code>/Packages/nuget-packages/InstalledPackages*
+&lt;/code>&lt;/pre>&lt;/li>
 &lt;/ol></description></item></channel></rss>

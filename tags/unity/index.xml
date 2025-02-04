@@ -23,8 +23,8 @@
 &lt;li>Developer Settings -&amp;gt; Personal Access Tokens -&amp;gt; Fine-Grained Tokens&lt;/li>
 &lt;li>生成 Token (&lt;strong>Read-Only Permission&lt;/strong> for the repo &lt;strong>Content&lt;/strong>).&lt;/li>
 &lt;/ol>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#d88200">&amp;#34;com.yourusername.yourpackage&amp;#34;&lt;/span>: &lt;span style="color:#d88200">&amp;#34;git+https://x-oauth-basic:&amp;lt;token&amp;gt;@&amp;lt;repo&amp;gt;?path=&amp;lt;folder&amp;gt;&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Unity - Package - YooAsset</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package---yooasset/</link><pubDate>Wed, 22 Jan 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package---yooasset/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;pre tabindex="0">&lt;code>&amp;#34;com.yourusername.yourpackage&amp;#34;: &amp;#34;git+https://x-oauth-basic:&amp;lt;token&amp;gt;@&amp;lt;repo&amp;gt;?path=&amp;lt;folder&amp;gt;&amp;#34;
+&lt;/code>&lt;/pre></description></item><item><title>Unity - Package - YooAsset</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package---yooasset/</link><pubDate>Wed, 22 Jan 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package---yooasset/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>Addressables 是在 AssetBundle 的基礎上對操作進行更友善的封裝，AssetBundle 有很多要小心的地方&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://juejin.cn/post/7066814466167422989">AssetBundle 卸載&lt;/a>&lt;/li>
@@ -109,9 +109,8 @@
 &lt;/li>
 &lt;li>
 &lt;p>調整 .gitignore&lt;/p>
-&lt;blockquote>
-&lt;p>/Packages/nuget-packages/InstalledPackages*&lt;/p>&lt;/blockquote>
-&lt;/li>
+&lt;pre tabindex="0">&lt;code>/Packages/nuget-packages/InstalledPackages*
+&lt;/code>&lt;/pre>&lt;/li>
 &lt;/ol></description></item><item><title>Unity - Package - MessagePipe</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package---messagepipe/</link><pubDate>Thu, 09 Jan 2025 22:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package---messagepipe/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/Cysharp/MessagePipe">Cysharp/MessagePipe&lt;/a>&lt;/li>

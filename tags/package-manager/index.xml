@@ -23,8 +23,8 @@
 &lt;li>Developer Settings -&amp;gt; Personal Access Tokens -&amp;gt; Fine-Grained Tokens&lt;/li>
 &lt;li>生成 Token (&lt;strong>Read-Only Permission&lt;/strong> for the repo &lt;strong>Content&lt;/strong>).&lt;/li>
 &lt;/ol>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#d88200">&amp;#34;com.yourusername.yourpackage&amp;#34;&lt;/span>: &lt;span style="color:#d88200">&amp;#34;git+https://x-oauth-basic:&amp;lt;token&amp;gt;@&amp;lt;repo&amp;gt;?path=&amp;lt;folder&amp;gt;&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Unity - Package Manager - NuGetForUnity</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---nugetforunity/</link><pubDate>Sun, 12 Jan 2025 21:12:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---nugetforunity/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;pre tabindex="0">&lt;code>&amp;#34;com.yourusername.yourpackage&amp;#34;: &amp;#34;git+https://x-oauth-basic:&amp;lt;token&amp;gt;@&amp;lt;repo&amp;gt;?path=&amp;lt;folder&amp;gt;&amp;#34;
+&lt;/code>&lt;/pre></description></item><item><title>Unity - Package Manager - NuGetForUnity</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---nugetforunity/</link><pubDate>Sun, 12 Jan 2025 21:12:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---nugetforunity/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/GlitchEnzo/NuGetForUnity">GlitchEnzo/NuGetForUnity&lt;/a>&lt;/li>
 &lt;/ul>
@@ -37,9 +37,8 @@
 &lt;/li>
 &lt;li>
 &lt;p>調整 .gitignore&lt;/p>
-&lt;blockquote>
-&lt;p>/Packages/nuget-packages/InstalledPackages*&lt;/p>&lt;/blockquote>
-&lt;/li>
+&lt;pre tabindex="0">&lt;code>/Packages/nuget-packages/InstalledPackages*
+&lt;/code>&lt;/pre>&lt;/li>
 &lt;/ol></description></item><item><title>Unity - Package Manager - Modify a package</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---modify-a-package/</link><pubDate>Fri, 12 Jan 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---modify-a-package/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>有需要客製化 Unity 官方 / git 直接導入 的 Package 時&lt;/p>
 &lt;h2 id="guide">Guide&lt;/h2>
