@@ -1,4 +1,92 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/ai/</link><description>Recent content in AI on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 16 Jan 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>AI - Ollama - Google Colab + ngrok</title><link>https://HoshikawaRyuukou.github.io/posts/ai---ollama---google-colab-+-ngrok/</link><pubDate>Thu, 16 Jan 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---ollama---google-colab-+-ngrok/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/ai/</link><description>Recent content in AI on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 06 Feb 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>AI - Stable diffusion - Note</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---note/</link><pubDate>Thu, 06 Feb 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---note/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.chias.com.tw/category/stable-diffusion/">Stable-Diffusion 彙整 - 瑆知識&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.bilibili.com/video/BV1HDBZYBEjK">Comfyui官方客户端 desktop桌面版来了&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="community">Community&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://civitai.com/">Civitai&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.qpipi.com/">Qpipi_AI绘画社区和SD模型&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="channel">Channel&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/@JackEllie/videos">杰克艾米立&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.hoshikou-ailabo.net/">星光のAIラボ&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="gallery">Gallery&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.ptsearch.info/home/">Prompt Search&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://pixai.art/">PixAI.Art&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://aibooru.online/">AIBooru&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://civitai.com/user/Lizardon1025/images">Lizardon1025&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>AI - Stable diffusion - Prompts</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---prompts/</link><pubDate>Wed, 05 Feb 2025 20:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---prompts/</guid><description>&lt;h2 id="prompt">Prompt&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.ptsearch.info/zh-hant/articles/create_exif/">Prompt Viewer&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://danbooru.donmai.us/wiki_pages/tag_group%3Aposture">Danbooru tag group:posture&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.256pages.com/sdxl-prompts-advanced-guide-1/">SDXL Prompts 進階指南 (1) - 鏡頭視角距離&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://danbooru.donmai.us/artists">Artists | Danbooru&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="stable-diffusion---lora-block-weight">Stable-Diffusion - Lora-Block-Weight&lt;/h2>
+&lt;ul>
+&lt;li>XERSON005:1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0&lt;/li>
+&lt;li>PERSON105:1,0,0,1,1,0,0,0,1,1,1,0,0,0,0,0,0&lt;/li>
+&lt;/ul></description></item><item><title>AI - Stable diffusion - CheckPoints</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---checkpoints/</link><pubDate>Tue, 04 Feb 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---checkpoints/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;ul>
+&lt;li>⚠️ 以下主題專注於二次元/動漫風格圖像生成&lt;/li>
+&lt;/ul>
+&lt;h2 id="timeline">Timeline&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.pttweb.cc/bbs/C_Chat/M.1730732828.A.70C">Re: [問題] AI 風格怎麼了嗎？為什麼容易膩？ - 看板C_Chat - PTT網頁版&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="sd15">SD1.5&lt;/h2>
+&lt;p>在性能和穩定性上提升很多，社群迎來爆發式成長。&lt;/p>
+&lt;h3 id="milestoneevents">Milestone/Events&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Waifu Diffusion&lt;/strong>：這是一個基於 Stable Diffusion 的模型，專注於生成二次元風格的圖像。該模型使用 Danbooru 資料集進行訓練，適合生成各類動漫風格的圖像。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>NovelAI 模型外洩（NAI）&lt;/strong>：NovelAI 是一個提供 AI 輔助創作的服務平台，其專注於二次元圖像生成的模型曾發生外洩事件。該模型同樣使用 Danbooru 資料集進行訓練。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Anything 系列模型&lt;/strong>：Anything V3 和 V4 是專注於二次元圖像生成的模型，具有較高的生成質量和風格多樣性。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>ChilloutMix&lt;/strong>：這是一個專注於生成寫實風格圖像的模型，能夠生成高品質的寫實人物圖像。&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="resolutions">Resolutions&lt;/h3>
+&lt;ul>
+&lt;li>512 x 512 : 1:1&lt;/li>
+&lt;li>512 X 768 : 2:3&lt;/li>
+&lt;/ul>
+&lt;h3 id="preferences">Preferences&lt;/h3>
+&lt;ul>
+&lt;li>breakdomain_M2150&lt;/li>
+&lt;li>&lt;a href="https://civitai.com/models/96629/realcartoon-anime">RealCartoon-Anime&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://civitai.com/models/248011?modelVersionId=334482">AstrAnime&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="sdxl">SDXL&lt;/h2>
+&lt;p>相比於 SD1.5 在多方面有顯著的提升&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>更大的模型規模&lt;/strong>：SDXL 的參數量遠超 SD1.5，這使其能夠捕捉更複雜的圖像特徵。&lt;/li>
+&lt;li>&lt;strong>更高分辨率&lt;/strong>：SDXL 支持更高分辨率的圖像生成。&lt;/li>
+&lt;li>&lt;strong>雙模型架構&lt;/strong>：SDXL 採用雙模型架構，包含一個基礎模型和一個精煉模型。基礎模型生成初步圖像，精煉模型進一步提升細節和質量，這種分工協作顯著提升了生成效果。&lt;/li>
+&lt;li>&lt;strong>更強的文本理解能力&lt;/strong>：SDXL 在理解複雜提示詞方面表現更好，能更準確地將文本描述轉化為圖像內容，減少誤解和偏差。&lt;/li>
+&lt;/ul>
+&lt;h3 id="milestoneevents-1">Milestone/Events&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Pony Diffusion&lt;/strong>：&lt;/p>
+&lt;ul>
+&lt;li>訓練流程有使用審美分級標籤。&lt;/li>
+&lt;li>原版 Pony 生成的結果接近歐美審美。&lt;/li>
+&lt;li>Pony 系明顯缺點用色偏暗偏髒。&lt;/li>
+&lt;li>Pony 在「多人互動」方面與 nsfw 表現很好。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>NovelAI 3 (NAI3)&lt;/strong>：&lt;/p></description></item><item><title>AI - Ollama - Google Colab + ngrok</title><link>https://HoshikawaRyuukou.github.io/posts/ai---ollama---google-colab-+-ngrok/</link><pubDate>Thu, 16 Jan 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---ollama---google-colab-+-ngrok/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>參考以下教學&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://www.youtube.com/watch?v=ZOCY61424JI">十分钟部署本地离线免费大模型！&lt;/a>&lt;/li>
@@ -105,6 +193,7 @@
 &lt;/ul></description></item><item><title>AI - Note</title><link>https://HoshikawaRyuukou.github.io/posts/ai---note/</link><pubDate>Thu, 29 Aug 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---note/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://www.youtube.com/watch?v=eraWvfD_Ihg">一小時略懂 AI｜GPT、Sora、Diffusion model、類器官智慧OI、圖靈測試、人工智慧史&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=jW2cmZ-9hLk">【人工智能】模型压缩四大方法概述 | 量化、剪枝、蒸馏和二值化 | 模型瘦身 | 降低精度 | 速度提升 | 知识蒸馏 | 温度参数 | XNOR | 优缺点 | 发展方向&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="news">News&lt;/h2>
 &lt;ul>
@@ -187,40 +276,4 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">REM 等待用戶確認並關閉&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">pause&lt;/span> &lt;span style="color:#111">&amp;gt;&lt;/span>nul
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>AI - Art</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art/</link><pubDate>Fri, 10 Mar 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://www.chias.com.tw/category/stable-diffusion/">Stable-Diffusion 彙整 - 瑆知識&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.bilibili.com/video/BV1HDBZYBEjK">Comfyui官方客户端 desktop桌面版来了&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="社群">社群&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://civitai.com/">Civitai&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="畫廊">畫廊&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://www.ptsearch.info/home/">Prompt Search&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://pixai.art/">PixAI.Art&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://aibooru.online/">AIBooru&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://civitai.com/user/Lizardon1025/images">Lizardon1025&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="channel">Channel&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://www.youtube.com/@JackEllie/videos">杰克艾米立&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.hoshikou-ailabo.net/">星光のAIラボ&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="prompt">Prompt&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://www.ptsearch.info/zh-hant/articles/create_exif/">Prompt Viewer&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://danbooru.donmai.us/wiki_pages/tag_group%3Aposture">Danbooru tag group:posture&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://blog.256pages.com/sdxl-prompts-advanced-guide-1/">SDXL Prompts 進階指南 (1) - 鏡頭視角距離&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="extra">Extra&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/leptonai/imgpilot">ImgPilot&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://huggingface.co/2vXpSwA7/iroiro-lora/tree/main">2vXpSwA7/iroiro-lora&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="stable-diffusion---lora-block-weight">Stable-Diffusion - Lora-Block-Weight&lt;/h2>
-&lt;ul>
-&lt;li>XERSON005:1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0&lt;/li>
-&lt;li>PERSON105:1,0,0,1,1,0,0,0,1,1,1,0,0,0,0,0,0&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>
