@@ -3,12 +3,11 @@ title: "AI - Stable diffusion - Note"
 date: 2025-02-06 21:11:00
 draft: false
 
-tags: ["AI", "Stable diffusion"]
+tags: ["AI", "Stable diffusion", "Art"]
 ---
 
 ## Guide
 - [Stable-Diffusion 彙整 - 瑆知識](https://www.chias.com.tw/category/stable-diffusion/)
-- [Comfyui官方客户端 desktop桌面版来了](https://www.bilibili.com/video/BV1HDBZYBEjK)
 
 ## Community
 - [Civitai](https://civitai.com/)

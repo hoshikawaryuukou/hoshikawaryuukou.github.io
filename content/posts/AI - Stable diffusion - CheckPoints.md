@@ -3,7 +3,7 @@ title: "AI - Stable diffusion - CheckPoints"
 date: 2025-02-04 21:11:00
 draft: false
 
-tags: ["AI", "Stable diffusion"]
+tags: ["AI", "Stable diffusion", "Art"]
 ---
 
 ## Quick Chat
@@ -27,11 +27,6 @@ tags: ["AI", "Stable diffusion"]
 ### Resolutions
 - 512 x 512 : 1:1
 - 512 X 768 : 2:3
-
-### Preferences
-- breakdomain_M2150
-- [RealCartoon-Anime](https://civitai.com/models/96629/realcartoon-anime)
-- [AstrAnime](https://civitai.com/models/248011?modelVersionId=334482)
 
 ## SDXL
 相比於 SD1.5 在多方面有顯著的提升
@@ -64,6 +59,3 @@ tags: ["AI", "Stable diffusion"]
 - 896 x 1152 = 7:9
 - 1024 x 1024 = 1:1
 - 1024 x 1536 = 2:3
-
-### Preferences
-- [Hassaku XL (Illustrious)](https://civitai.com/user/Ikena)
