@@ -1,4 +1,166 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Art on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/art/</link><description>Recent content in Art on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Wed, 01 Mar 2023 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/art/index.xml" rel="self" type="application/rss+xml"/><item><title>Art - Drawing - Note</title><link>https://HoshikawaRyuukou.github.io/posts/art---drawing---note/</link><pubDate>Wed, 01 Mar 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/art---drawing---note/</guid><description>&lt;h2 id="新手村">新手村&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Art on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/art/</link><description>Recent content in Art on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Fri, 14 Feb 2025 20:13:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/art/index.xml" rel="self" type="application/rss+xml"/><item><title>AI - Stable diffusion - Favorites Illustrious</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorites-illustrious/</link><pubDate>Fri, 14 Feb 2025 20:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorites-illustrious/</guid><description>&lt;h2 id="checkpoint">CheckPoint&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://civitai.com/models/1240874/nova-flat-xl">Nova Flat XL&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://civitai.com/models/140272?modelVersionId=1240288">Hassaku XL (Illustrious)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://civitai.com/models/1025051?modelVersionId=1343073">Illustrij&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://civitai.com/models/827184?modelVersionId=1410435">WAI-NSFW-illustrious-SDXL&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>AI - Stable diffusion - Favorites sd1.5</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorites-sd1.5/</link><pubDate>Fri, 14 Feb 2025 20:03:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorites-sd1.5/</guid><description>&lt;h2 id="checkpoint">CheckPoint&lt;/h2>
+&lt;ul>
+&lt;li>breakdomain_M2150&lt;/li>
+&lt;li>&lt;a href="https://civitai.com/models/96629/realcartoon-anime">RealCartoon-Anime&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://civitai.com/models/248011?modelVersionId=334482">AstrAnime&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="lora">Lora&lt;/h2></description></item><item><title>AI - Stable diffusion - Parameters</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---parameters/</link><pubDate>Tue, 11 Feb 2025 20:40:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---parameters/</guid><description>&lt;h2 id="steps">Steps&lt;/h2>
+&lt;p>迭代步数 (Steps)的作用&lt;/p>
+&lt;h2 id="cfg-scale">CFG Scale&lt;/h2></description></item><item><title>AI - Stable diffusion - Extensions</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---extensions/</link><pubDate>Mon, 10 Feb 2025 22:16:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---extensions/</guid><description>&lt;h2 id="sd-webui-photopea-embed">sd-webui-photopea-embed&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/Physton/sd-webui-prompt-all-in-one/tree/main">yankooliveira/sd-webui-photopea-embed&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="lora-block-weight">Lora-Block-Weight&lt;/h2>
+&lt;ul>
+&lt;li>XERSON005:1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0&lt;/li>
+&lt;li>PERSON105:1,0,0,1,1,0,0,0,1,1,1,0,0,0,0,0,0&lt;/li>
+&lt;/ul></description></item><item><title>AI - Stable diffusion - GUI</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---gui/</link><pubDate>Mon, 10 Feb 2025 21:16:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---gui/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>建議新手直接從 Forge 入門即可&lt;/p>
+&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.bilibili.com/video/BV1HDBZYBEjK">Comfyui官方客户端 desktop桌面版来了&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="automatic1111httpsgithubcomautomatic1111stable-diffusion-webui">&lt;a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">Automatic1111&lt;/a>&lt;/h2>
+&lt;p>是最早推出的圖形使用者介面之一，為使用者提供了直觀且功能豐富的操作平台。由於其開源性質和強大的社群支持，許多初學者和開發者選擇從 Automatic1111 入手，逐步熟悉 Stable Diffusion 的各項功能和應用。&lt;/p>
+&lt;p>
+ &lt;img src="https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/refs/heads/master/screenshot.png" alt="Automatic1111 Screenshot">
+
+&lt;/p>
+&lt;h2 id="forgehttpsgithubcomlllyasvielstable-diffusion-webui-forge">&lt;a href="https://github.com/lllyasviel/stable-diffusion-webui-forge">Forge&lt;/a>&lt;/h2>
+&lt;p>基於 Automatic1111 進行了多項優化&lt;/p>
+&lt;ul>
+&lt;li>記憶體控制優化且推理速度提升&lt;/li>
+&lt;li>算法優化&lt;/li>
+&lt;li>新增取樣器&lt;/li>
+&lt;li>簡化的命令標誌&lt;/li>
+&lt;/ul>
+&lt;p>介面與 Automatic1111 高度相似，基本能無痛從 Automatic1111 轉移。&lt;/p>
+&lt;h2 id="comfyuihttpsgithubcomcomfyanonymouscomfyui">&lt;a href="https://github.com/comfyanonymous/ComfyUI">ComfyUI&lt;/a>&lt;/h2>
+&lt;p>是一個開源的節點式圖形介面，允許使用者通過直觀的節點系統設計和執行複雜的工作流程。&lt;/p>
+&lt;p>
+ &lt;img src="https://github.com/user-attachments/assets/7ccaf2c1-9b72-41ae-9a89-5688c94b7abe" alt="ComfyUI Screenshot">
+
+&lt;/p></description></item><item><title>AI - Stable diffusion - Environment</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---environment/</link><pubDate>Mon, 10 Feb 2025 20:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---environment/</guid><description>&lt;h2 id="local-deployment">Local deployment&lt;/h2>
+&lt;p>⚠️ 以下皆須安裝指定版本不可貿然升級&lt;/p>
+&lt;ul>
+&lt;li>nvidia 驅動更新至最新&lt;/li>
+&lt;li>cuda: &lt;a href="https://developer.nvidia.com/cuda-12-1-0-download-archive">CUDA 12.1&lt;/a>
+&lt;ul>
+&lt;li>檢查顯卡支援的最高 cuda 支援: &lt;code>nvidia-smi&lt;/code>&lt;/li>
+&lt;li>顯示CUDA編譯工具的版本信息: &lt;code>nvcc --version&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Python: &lt;a href="https://www.python.org/ftp/python/3.10.11/python-3.10.11-amd64.exe">Python 3.10.11&lt;/a>
+&lt;ul>
+&lt;li>&lt;code>python --version&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Git: &lt;a href="https://git-fork.com/">Fork&lt;/a>&lt;/li>
+&lt;li>GUI: &lt;a href="https://github.com/lllyasviel/stable-diffusion-webui-forge">lllyasviel/stable-diffusion-webui-forge&lt;/a>&lt;/li>
+&lt;li>clone 上述專案，執行 &lt;code>webui.bat&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h2 id="google-colab">Google Colab&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/gutris1/segsmaker">gutris1/segsmaker&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/cagliostrolab/forge-colab">cagliostrolab/forge-colab&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>AI - Stable diffusion - Note</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---note/</link><pubDate>Thu, 06 Feb 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---note/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.chias.com.tw/category/stable-diffusion/">Stable-Diffusion 彙整 - 瑆知識&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="community">Community&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://civitai.com/">Civitai&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.qpipi.com/">Qpipi_AI绘画社区和SD模型&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="channel">Channel&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/@JackEllie/videos">杰克艾米立&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.hoshikou-ailabo.net/">星光のAIラボ&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="gallery">Gallery&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.ptsearch.info/home/">Prompt Search&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://pixai.art/">PixAI.Art&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://aibooru.online/">AIBooru&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://civitai.com/user/Lizardon1025/images">Lizardon1025&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>AI - Stable diffusion - Prompts</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---prompts/</link><pubDate>Wed, 05 Feb 2025 20:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---prompts/</guid><description>&lt;h2 id="prompt">Prompt&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.ptsearch.info/zh-hant/articles/create_exif/">Prompt Viewer&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://danbooru.donmai.us/wiki_pages/tag_group%3Aposture">Danbooru tag group:posture&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.256pages.com/sdxl-prompts-advanced-guide-1/">SDXL Prompts 進階指南 (1) - 鏡頭視角距離&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://danbooru.donmai.us/artists">Artists | Danbooru&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="artist">Artist&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=akitetsu">Akitetsu | Danbooru&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=sakamoto_masaru">Sakamoto Masaru | Danbooru&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=fight_yoghurt">Fight Yoghurt | Danbooru&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=reia_76">Reia 76 | Danbooru&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>AI - Stable diffusion - CheckPoints</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---checkpoints/</link><pubDate>Tue, 04 Feb 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---checkpoints/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;ul>
+&lt;li>⚠️ 以下主題專注於二次元/動漫風格圖像生成&lt;/li>
+&lt;/ul>
+&lt;h2 id="timeline">Timeline&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.pttweb.cc/bbs/C_Chat/M.1730732828.A.70C">Re: [問題] AI 風格怎麼了嗎？為什麼容易膩？ - 看板C_Chat - PTT網頁版&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="sd15">SD1.5&lt;/h2>
+&lt;p>在性能和穩定性上提升很多，社群迎來爆發式成長。&lt;/p>
+&lt;h3 id="milestoneevents">Milestone/Events&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Waifu Diffusion&lt;/strong>：這是一個基於 Stable Diffusion 的模型，專注於生成二次元風格的圖像。該模型使用 Danbooru 資料集進行訓練，適合生成各類動漫風格的圖像。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>NovelAI 模型外洩（NAI）&lt;/strong>：NovelAI 是一個提供 AI 輔助創作的服務平台，其專注於二次元圖像生成的模型曾發生外洩事件。該模型同樣使用 Danbooru 資料集進行訓練。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Anything 系列模型&lt;/strong>：Anything V3 和 V4 是專注於二次元圖像生成的模型，具有較高的生成質量和風格多樣性。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>ChilloutMix&lt;/strong>：這是一個專注於生成寫實風格圖像的模型，能夠生成高品質的寫實人物圖像。&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="resolutions">Resolutions&lt;/h3>
+&lt;ul>
+&lt;li>512 x 512 : 1:1&lt;/li>
+&lt;li>512 X 768 : 2:3&lt;/li>
+&lt;/ul>
+&lt;h2 id="sdxl">SDXL&lt;/h2>
+&lt;p>相比於 SD1.5 在多方面有顯著的提升&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>更大的模型規模&lt;/strong>：SDXL 的參數量遠超 SD1.5，這使其能夠捕捉更複雜的圖像特徵。&lt;/li>
+&lt;li>&lt;strong>更高分辨率&lt;/strong>：SDXL 支持更高分辨率的圖像生成。&lt;/li>
+&lt;li>&lt;strong>雙模型架構&lt;/strong>：SDXL 採用雙模型架構，包含一個基礎模型和一個精煉模型。基礎模型生成初步圖像，精煉模型進一步提升細節和質量，這種分工協作顯著提升了生成效果。&lt;/li>
+&lt;li>&lt;strong>更強的文本理解能力&lt;/strong>：SDXL 在理解複雜提示詞方面表現更好，能更準確地將文本描述轉化為圖像內容，減少誤解和偏差。&lt;/li>
+&lt;/ul>
+&lt;h3 id="milestoneevents-1">Milestone/Events&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Pony Diffusion&lt;/strong>：&lt;/p>
+&lt;ul>
+&lt;li>訓練流程有使用審美分級標籤。&lt;/li>
+&lt;li>原版 Pony 生成的結果接近歐美審美。&lt;/li>
+&lt;li>Pony 系明顯缺點用色偏暗偏髒。&lt;/li>
+&lt;li>Pony 在「多人互動」方面與 nsfw 表現很好。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>NovelAI 3 (NAI3)&lt;/strong>：&lt;/p></description></item><item><title>Game Analysis - Assets</title><link>https://HoshikawaRyuukou.github.io/posts/game-analysis---assets/</link><pubDate>Sun, 11 Feb 2024 08:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/game-analysis---assets/</guid><description>&lt;h2 id="games">Games&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/28598519a/TSK_AssetDL">28598519a/TSK_AssetDL&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/ZM-Kimu/Blue-Archive-Asset-Downloader">ZM-Kimu/Blue-Archive-Asset-Downloader&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="extracting">Extracting&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/AssetRipper/AssetRipper">AssetRipper/AssetRipper&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Art - Drawing - Note</title><link>https://HoshikawaRyuukou.github.io/posts/art---drawing---note/</link><pubDate>Wed, 01 Mar 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/art---drawing---note/</guid><description>&lt;h2 id="新手村">新手村&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://www.youtube.com/watch?v=VdLLdRPhvoA">给画画爱好者的入门经验分享，当初有人告诉我该多好！&lt;/a>&lt;/li>
 &lt;/ul>
