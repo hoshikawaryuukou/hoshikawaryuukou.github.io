@@ -432,7 +432,7 @@ CHANGELOG*.md
 &lt;/ol>
 &lt;p>這些指標有助於你了解測試覆蓋率的具體情況，並確保你的程式碼在不同方面都得到充分的測試。&lt;/p>
 &lt;h2 id="extra">Extra&lt;/h2>
-&lt;h3 id="必要時使用括-弧表示法httpswwwtypescriptlangorgdocshandbook2classeshtmlcaveats-訪問屬性private">必要時使用括 &lt;a href="https://www.typescriptlang.org/docs/handbook/2/classes.html#caveats">弧表示法&lt;/a> 訪問屬性private&lt;/h3>
+&lt;h3 id="必要時使用括-弧表示法-訪問屬性private">必要時使用括 &lt;a href="https://www.typescriptlang.org/docs/handbook/2/classes.html#caveats">弧表示法&lt;/a> 訪問屬性private&lt;/h3>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-typescript" data-lang="typescript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75af00">expect&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#75af00">inst&lt;/span>&lt;span style="color:#111">[&lt;/span>&lt;span style="color:#d88200">&amp;#34;_somePrivateProp&amp;#34;&lt;/span>&lt;span style="color:#111">]).&lt;/span>&lt;span style="color:#75af00">toBe&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#d88200">&amp;#34;foo&amp;#34;&lt;/span>&lt;span style="color:#111">);&lt;/span> &lt;span style="color:#75715e">// OK
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Javascript_TypeScript - Javascript Note</title><link>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---javascript-note/</link><pubDate>Mon, 29 Apr 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/javascript_typescript---javascript-note/</guid><description>&lt;h2 id="style">Style&lt;/h2>
 &lt;ul>

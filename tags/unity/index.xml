@@ -390,15 +390,15 @@ Scope(s):
 &lt;li>&lt;a href="https://vuopaja.com/tutorials/android-java-proxy">How to Create Android Java Callbacks to C# in Unity&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://zenn.dev/sunmax/articles/e079dd3ba7c487">UnityからAndroidのクラスや関数を呼び出す&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h3 id="androidjavaclasshttpsdocsunity3dcomscriptreferenceandroidjavaclasshtml">&lt;a href="https://docs.unity3d.com/ScriptReference/AndroidJavaClass.html">AndroidJavaClass&lt;/a>&lt;/h3>
+&lt;h3 id="androidjavaclass">&lt;a href="https://docs.unity3d.com/ScriptReference/AndroidJavaClass.html">AndroidJavaClass&lt;/a>&lt;/h3>
 &lt;ul>
 &lt;li>可以實例化 Java 類、調用 Java 類的靜態方法，以及訪問 Java 類的靜態屬性。&lt;/li>
 &lt;/ul>
-&lt;h3 id="androidjavaobjecthttpsdocsunitycn20223documentationscriptreferenceandroidjavaobjecthtml">&lt;a href="https://docs.unity.cn/2022.3/Documentation/ScriptReference/AndroidJavaObject.html">AndroidJavaObject&lt;/a>&lt;/h3>
+&lt;h3 id="androidjavaobject">&lt;a href="https://docs.unity.cn/2022.3/Documentation/ScriptReference/AndroidJavaObject.html">AndroidJavaObject&lt;/a>&lt;/h3>
 &lt;ul>
 &lt;li>創建 Java 對象的實例。&lt;/li>
 &lt;/ul>
-&lt;h3 id="androidjavaproxyhttpsdocsunity3dcomscriptreferenceandroidjavaproxyhtml">&lt;a href="https://docs.unity3d.com/ScriptReference/AndroidJavaProxy.html">AndroidJavaProxy&lt;/a>&lt;/h3>
+&lt;h3 id="androidjavaproxy">&lt;a href="https://docs.unity3d.com/ScriptReference/AndroidJavaProxy.html">AndroidJavaProxy&lt;/a>&lt;/h3>
 &lt;ul>
 &lt;li>允許在 Unity C# 腳本中實現 Java 接口。&lt;/li>
 &lt;li>允許我們在 Java 中調用方法，這些方法將調用 C# 類上的 &lt;strong>匹配&lt;/strong> 方法。&lt;/li>

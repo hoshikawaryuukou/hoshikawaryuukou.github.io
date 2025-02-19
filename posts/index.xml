@@ -1,4 +1,41 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/posts/</link><description>Recent content in Posts on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Fri, 14 Feb 2025 20:13:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>AI - Stable diffusion - Favorites Illustrious</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorites-illustrious/</link><pubDate>Fri, 14 Feb 2025 20:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorites-illustrious/</guid><description>&lt;h2 id="checkpoint">CheckPoint&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/posts/</link><description>Recent content in Posts on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Mon, 17 Feb 2025 20:40:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>AI - Stable diffusion - Quick Start</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---quick-start/</link><pubDate>Mon, 17 Feb 2025 20:40:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---quick-start/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>本筆記是針對 Stable diffusion 的基本觀念與操作，環境配置請參考&lt;/p>
+&lt;blockquote>
+&lt;p>AI - Stable diffusion - Environment&lt;/p>&lt;/blockquote>
+&lt;h2 id="prompt">Prompt&lt;/h2>
+&lt;p>提示詞（Prompt）是 AI 生成圖片的指令，分為：&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>正向提示詞（Positive Prompt）&lt;/strong> → 預期的元素&lt;/li>
+&lt;li>&lt;strong>負向提示詞（Negative Prompt）&lt;/strong> → 排除的元素&lt;/li>
+&lt;/ol>
+&lt;h3 id="sample">Sample&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>「粉色長髮的美少女，穿著和服，背景是櫻花」&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h3 id="positive-prompt">Positive Prompt&lt;/h3>
+&lt;ol>
+&lt;li>&lt;strong>主題（Main Subject）&lt;/strong> → &lt;em>anime girl, warrior, castle, spaceship&lt;/em>&lt;/li>
+&lt;li>&lt;strong>特徵（Appearance）&lt;/strong> → &lt;em>pink hair, blue eyes, long dress, armor&lt;/em>&lt;/li>
+&lt;li>&lt;strong>背景（Background）&lt;/strong> → &lt;em>cherry blossoms, cyberpunk city, medieval castle&lt;/em>&lt;/li>
+&lt;li>&lt;strong>風格（Style）&lt;/strong> → &lt;em>anime style, photorealistic, oil painting&lt;/em>&lt;/li>
+&lt;li>&lt;strong>燈光（Lighting）&lt;/strong> → &lt;em>soft lighting, cinematic lighting, neon lights&lt;/em>&lt;/li>
+&lt;li>&lt;strong>視角（Camera Perspective）&lt;/strong> → &lt;em>close-up, wide-angle, over-the-shoulder&lt;/em>&lt;/li>
+&lt;/ol>
+&lt;h3 id="negative-prompt">Negative Prompt&lt;/h3>
+&lt;ol>
+&lt;li>&lt;strong>品質問題&lt;/strong> → blurry, low quality, pixelated, noisy&lt;/li>
+&lt;li>&lt;strong>人體錯誤&lt;/strong> → deformed, extra fingers, bad anatomy, malformed limbs&lt;/li>
+&lt;li>&lt;strong>表情問題&lt;/strong> → ugly, weird expression, asymmetrical face&lt;/li>
+&lt;li>&lt;strong>不想要的風格&lt;/strong> → 3D render, cartoonish, sketch&lt;/li>
+&lt;/ol>
+&lt;h3 id="control">Control&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>使用 () 加強&lt;/strong> → &lt;code>((masterpiece)), (highly detailed), (8K ultra HD)&lt;/code>&lt;/li>
+&lt;li>&lt;strong>使用 [] 減弱&lt;/strong> → &lt;code>[blurry], [low quality]&lt;/code>&lt;/li>
+&lt;li>&lt;strong>指定數值&lt;/strong> → &lt;code>(pink hair: x)&lt;/code>, &lt;code>x &amp;gt; 1 加強, x &amp;lt; 1 減弱&lt;/code>&lt;/li>
+&lt;li>&lt;strong>從左到右&lt;/strong>的順序來解析提示詞，&lt;strong>越前面的詞影響越大，越後面的詞影響越小&lt;/strong>。&lt;/li>
+&lt;li>不同的 &lt;strong>Checkpoints&lt;/strong> 對提示詞的理解會有所不同，選對模型才能產生最好的效果。&lt;/li>
+&lt;/ul></description></item><item><title>AI - Stable diffusion - Favorites Illustrious</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorites-illustrious/</link><pubDate>Fri, 14 Feb 2025 20:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorites-illustrious/</guid><description>&lt;h2 id="checkpoint">CheckPoint&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://civitai.com/models/1240874/nova-flat-xl">Nova Flat XL&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://civitai.com/models/140272?modelVersionId=1240288">Hassaku XL (Illustrious)&lt;/a>&lt;/li>
@@ -10,9 +47,7 @@
 &lt;li>&lt;a href="https://civitai.com/models/96629/realcartoon-anime">RealCartoon-Anime&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://civitai.com/models/248011?modelVersionId=334482">AstrAnime&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h2 id="lora">Lora&lt;/h2></description></item><item><title>AI - Stable diffusion - Parameters</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---parameters/</link><pubDate>Tue, 11 Feb 2025 20:40:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---parameters/</guid><description>&lt;h2 id="steps">Steps&lt;/h2>
-&lt;p>迭代步数 (Steps)的作用&lt;/p>
-&lt;h2 id="cfg-scale">CFG Scale&lt;/h2></description></item><item><title>AI - Stable diffusion - Extensions</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---extensions/</link><pubDate>Mon, 10 Feb 2025 22:16:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---extensions/</guid><description>&lt;h2 id="sd-webui-photopea-embed">sd-webui-photopea-embed&lt;/h2>
+&lt;h2 id="lora">Lora&lt;/h2></description></item><item><title>AI - Stable diffusion - Extensions</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---extensions/</link><pubDate>Mon, 10 Feb 2025 22:16:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---extensions/</guid><description>&lt;h2 id="sd-webui-photopea-embed">sd-webui-photopea-embed&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/Physton/sd-webui-prompt-all-in-one/tree/main">yankooliveira/sd-webui-photopea-embed&lt;/a>&lt;/li>
 &lt;/ul>
@@ -26,13 +61,13 @@
 &lt;ul>
 &lt;li>&lt;a href="https://www.bilibili.com/video/BV1HDBZYBEjK">Comfyui官方客户端 desktop桌面版来了&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h2 id="automatic1111httpsgithubcomautomatic1111stable-diffusion-webui">&lt;a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">Automatic1111&lt;/a>&lt;/h2>
+&lt;h2 id="automatic1111">&lt;a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">Automatic1111&lt;/a>&lt;/h2>
 &lt;p>是最早推出的圖形使用者介面之一，為使用者提供了直觀且功能豐富的操作平台。由於其開源性質和強大的社群支持，許多初學者和開發者選擇從 Automatic1111 入手，逐步熟悉 Stable Diffusion 的各項功能和應用。&lt;/p>
 &lt;p>
  &lt;img src="https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/refs/heads/master/screenshot.png" alt="Automatic1111 Screenshot">
 
 &lt;/p>
-&lt;h2 id="forgehttpsgithubcomlllyasvielstable-diffusion-webui-forge">&lt;a href="https://github.com/lllyasviel/stable-diffusion-webui-forge">Forge&lt;/a>&lt;/h2>
+&lt;h2 id="forge">&lt;a href="https://github.com/lllyasviel/stable-diffusion-webui-forge">Forge&lt;/a>&lt;/h2>
 &lt;p>基於 Automatic1111 進行了多項優化&lt;/p>
 &lt;ul>
 &lt;li>記憶體控制優化且推理速度提升&lt;/li>
@@ -41,7 +76,7 @@
 &lt;li>簡化的命令標誌&lt;/li>
 &lt;/ul>
 &lt;p>介面與 Automatic1111 高度相似，基本能無痛從 Automatic1111 轉移。&lt;/p>
-&lt;h2 id="comfyuihttpsgithubcomcomfyanonymouscomfyui">&lt;a href="https://github.com/comfyanonymous/ComfyUI">ComfyUI&lt;/a>&lt;/h2>
+&lt;h2 id="comfyui">&lt;a href="https://github.com/comfyanonymous/ComfyUI">ComfyUI&lt;/a>&lt;/h2>
 &lt;p>是一個開源的節點式圖形介面，允許使用者通過直觀的節點系統設計和執行複雜的工作流程。&lt;/p>
 &lt;p>
  &lt;img src="https://github.com/user-attachments/assets/7ccaf2c1-9b72-41ae-9a89-5688c94b7abe" alt="ComfyUI Screenshot">
@@ -806,14 +841,14 @@
 &lt;ul>
 &lt;li>&lt;a href="https://iceprosurface.com/%E7%9F%A5%E8%AF%86%E5%BA%93/%E7%BC%96%E7%A8%8B/%E5%89%8D%E7%AB%AF/%E8%8C%83%E5%BC%8F%E8%A7%92%E5%BA%A6%E6%80%9D%E8%80%83%E7%9A%84%E5%89%8D%E7%AB%AF%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86">范式角度思考的前端状态管理&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://maliut.space/p/global-state-management/">2022年，我们还需要全局状态管理吗？&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Game Development - Web Game - Overview</title><link>https://HoshikawaRyuukou.github.io/posts/game-development---web-game---overview/</link><pubDate>Sun, 29 Dec 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/game-development---web-game---overview/</guid><description>&lt;h2 id="pixijshttpspixijscom">&lt;a href="https://pixijs.com/">PixiJS&lt;/a>&lt;/h2>
+&lt;/ul></description></item><item><title>Game Development - Web Game - Overview</title><link>https://HoshikawaRyuukou.github.io/posts/game-development---web-game---overview/</link><pubDate>Sun, 29 Dec 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/game-development---web-game---overview/</guid><description>&lt;h2 id="pixijs">&lt;a href="https://pixijs.com/">PixiJS&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>2D 渲染引擎&lt;/li>
 &lt;li>專注於高性能渲染，適合需要流暢繪圖的應用場景&lt;/li>
 &lt;li>提供低層級 API，開發者需要更多手動操作，具高度靈活性&lt;/li>
 &lt;/ul>
 &lt;hr>
-&lt;h2 id="phaserhttpsphaserio">&lt;a href="https://phaser.io/">Phaser&lt;/a>&lt;/h2>
+&lt;h2 id="phaser">&lt;a href="https://phaser.io/">Phaser&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>2D 遊戲框架&lt;/li>
 &lt;li>早期基於 PixiJS 開發，現具自有渲染引擎&lt;/li>
@@ -1292,11 +1327,6 @@ CHANGELOG*.md
 &lt;ul>
 &lt;li>&lt;a href="https://hackmd.io/zh">HackMD：協作 Markdown 文件，分享知識的平台&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h2 id="host">Host&lt;/h2>
-&lt;ul>
-&lt;li>[rejetto/hfs](HFS: HTTP File Server (version 3))&lt;/li>
-&lt;li>&lt;a href="https://github.com/terreng/simple-web-server">terreng/simple-web-server&lt;/a>&lt;/li>
-&lt;/ul>
 &lt;h2 id="image-processing">Image Processing&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://yeoji.github.io/spritesheet-cutter/">Spritesheet Cutter&lt;/a>&lt;/li>
@@ -1322,6 +1352,12 @@ CHANGELOG*.md
 &lt;h2 id="message">Message&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://emojipedia.org/">Emojipedia&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="network">Network&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/rejetto/hfs">rejetto/hfs&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/terreng/simple-web-server">terreng/simple-web-server&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/emanuele-f/PCAPdroid">emanuele-f/PCAPdroid&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="package-manager">Package Manager&lt;/h2>
 &lt;ul>
@@ -2920,7 +2956,7 @@ CHANGELOG*.md
 &lt;/ol>
 &lt;p>這些指標有助於你了解測試覆蓋率的具體情況，並確保你的程式碼在不同方面都得到充分的測試。&lt;/p>
 &lt;h2 id="extra">Extra&lt;/h2>
-&lt;h3 id="必要時使用括-弧表示法httpswwwtypescriptlangorgdocshandbook2classeshtmlcaveats-訪問屬性private">必要時使用括 &lt;a href="https://www.typescriptlang.org/docs/handbook/2/classes.html#caveats">弧表示法&lt;/a> 訪問屬性private&lt;/h3>
+&lt;h3 id="必要時使用括-弧表示法-訪問屬性private">必要時使用括 &lt;a href="https://www.typescriptlang.org/docs/handbook/2/classes.html#caveats">弧表示法&lt;/a> 訪問屬性private&lt;/h3>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-typescript" data-lang="typescript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75af00">expect&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#75af00">inst&lt;/span>&lt;span style="color:#111">[&lt;/span>&lt;span style="color:#d88200">&amp;#34;_somePrivateProp&amp;#34;&lt;/span>&lt;span style="color:#111">]).&lt;/span>&lt;span style="color:#75af00">toBe&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#d88200">&amp;#34;foo&amp;#34;&lt;/span>&lt;span style="color:#111">);&lt;/span> &lt;span style="color:#75715e">// OK
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Mathematics - Note</title><link>https://HoshikawaRyuukou.github.io/posts/mathematics---note/</link><pubDate>Sun, 30 Jun 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/mathematics---note/</guid><description>&lt;h2 id="channel">Channel&lt;/h2>
 &lt;ul>
@@ -3453,15 +3489,15 @@ Scope(s):
 &lt;li>&lt;a href="https://vuopaja.com/tutorials/android-java-proxy">How to Create Android Java Callbacks to C# in Unity&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://zenn.dev/sunmax/articles/e079dd3ba7c487">UnityからAndroidのクラスや関数を呼び出す&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h3 id="androidjavaclasshttpsdocsunity3dcomscriptreferenceandroidjavaclasshtml">&lt;a href="https://docs.unity3d.com/ScriptReference/AndroidJavaClass.html">AndroidJavaClass&lt;/a>&lt;/h3>
+&lt;h3 id="androidjavaclass">&lt;a href="https://docs.unity3d.com/ScriptReference/AndroidJavaClass.html">AndroidJavaClass&lt;/a>&lt;/h3>
 &lt;ul>
 &lt;li>可以實例化 Java 類、調用 Java 類的靜態方法，以及訪問 Java 類的靜態屬性。&lt;/li>
 &lt;/ul>
-&lt;h3 id="androidjavaobjecthttpsdocsunitycn20223documentationscriptreferenceandroidjavaobjecthtml">&lt;a href="https://docs.unity.cn/2022.3/Documentation/ScriptReference/AndroidJavaObject.html">AndroidJavaObject&lt;/a>&lt;/h3>
+&lt;h3 id="androidjavaobject">&lt;a href="https://docs.unity.cn/2022.3/Documentation/ScriptReference/AndroidJavaObject.html">AndroidJavaObject&lt;/a>&lt;/h3>
 &lt;ul>
 &lt;li>創建 Java 對象的實例。&lt;/li>
 &lt;/ul>
-&lt;h3 id="androidjavaproxyhttpsdocsunity3dcomscriptreferenceandroidjavaproxyhtml">&lt;a href="https://docs.unity3d.com/ScriptReference/AndroidJavaProxy.html">AndroidJavaProxy&lt;/a>&lt;/h3>
+&lt;h3 id="androidjavaproxy">&lt;a href="https://docs.unity3d.com/ScriptReference/AndroidJavaProxy.html">AndroidJavaProxy&lt;/a>&lt;/h3>
 &lt;ul>
 &lt;li>允許在 Unity C# 腳本中實現 Java 接口。&lt;/li>
 &lt;li>允許我們在 Java 中調用方法，這些方法將調用 C# 類上的 &lt;strong>匹配&lt;/strong> 方法。&lt;/li>
