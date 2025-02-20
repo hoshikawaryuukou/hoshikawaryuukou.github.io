@@ -1,40 +1,65 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/ai/</link><description>Recent content in AI on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Mon, 17 Feb 2025 20:40:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>AI - Stable diffusion - Quick Start</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---quick-start/</link><pubDate>Mon, 17 Feb 2025 20:40:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---quick-start/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
-&lt;p>本筆記是針對 Stable diffusion 的基本觀念與操作，環境配置請參考&lt;/p>
-&lt;blockquote>
-&lt;p>AI - Stable diffusion - Environment&lt;/p>&lt;/blockquote>
-&lt;h2 id="prompt">Prompt&lt;/h2>
-&lt;p>提示詞（Prompt）是 AI 生成圖片的指令，分為：&lt;/p>
-&lt;ol>
-&lt;li>&lt;strong>正向提示詞（Positive Prompt）&lt;/strong> → 預期的元素&lt;/li>
-&lt;li>&lt;strong>負向提示詞（Negative Prompt）&lt;/strong> → 排除的元素&lt;/li>
-&lt;/ol>
-&lt;h3 id="sample">Sample&lt;/h3>
 &lt;ul>
-&lt;li>&lt;strong>「粉色長髮的美少女，穿著和服，背景是櫻花」&lt;/strong>&lt;/li>
+&lt;li>⚠️ 這是一篇新手導向的筆記，目的不在於精準解釋&lt;/li>
+&lt;li>⚠️ 環境配置請參考 &lt;code>AI - Stable diffusion - Environment&lt;/code>&lt;/li>
 &lt;/ul>
-&lt;h3 id="positive-prompt">Positive Prompt&lt;/h3>
-&lt;ol>
-&lt;li>&lt;strong>主題（Main Subject）&lt;/strong> → &lt;em>anime girl, warrior, castle, spaceship&lt;/em>&lt;/li>
-&lt;li>&lt;strong>特徵（Appearance）&lt;/strong> → &lt;em>pink hair, blue eyes, long dress, armor&lt;/em>&lt;/li>
-&lt;li>&lt;strong>背景（Background）&lt;/strong> → &lt;em>cherry blossoms, cyberpunk city, medieval castle&lt;/em>&lt;/li>
-&lt;li>&lt;strong>風格（Style）&lt;/strong> → &lt;em>anime style, photorealistic, oil painting&lt;/em>&lt;/li>
-&lt;li>&lt;strong>燈光（Lighting）&lt;/strong> → &lt;em>soft lighting, cinematic lighting, neon lights&lt;/em>&lt;/li>
-&lt;li>&lt;strong>視角（Camera Perspective）&lt;/strong> → &lt;em>close-up, wide-angle, over-the-shoulder&lt;/em>&lt;/li>
-&lt;/ol>
-&lt;h3 id="negative-prompt">Negative Prompt&lt;/h3>
-&lt;ol>
-&lt;li>&lt;strong>品質問題&lt;/strong> → blurry, low quality, pixelated, noisy&lt;/li>
-&lt;li>&lt;strong>人體錯誤&lt;/strong> → deformed, extra fingers, bad anatomy, malformed limbs&lt;/li>
-&lt;li>&lt;strong>表情問題&lt;/strong> → ugly, weird expression, asymmetrical face&lt;/li>
-&lt;li>&lt;strong>不想要的風格&lt;/strong> → 3D render, cartoonish, sketch&lt;/li>
-&lt;/ol>
-&lt;h3 id="control">Control&lt;/h3>
+&lt;h2 id="components">Components&lt;/h2>
+&lt;h3 id="checkpoints">Checkpoints&lt;/h3>
 &lt;ul>
-&lt;li>&lt;strong>使用 () 加強&lt;/strong> → &lt;code>((masterpiece)), (highly detailed), (8K ultra HD)&lt;/code>&lt;/li>
-&lt;li>&lt;strong>使用 [] 減弱&lt;/strong> → &lt;code>[blurry], [low quality]&lt;/code>&lt;/li>
-&lt;li>&lt;strong>指定數值&lt;/strong> → &lt;code>(pink hair: x)&lt;/code>, &lt;code>x &amp;gt; 1 加強, x &amp;lt; 1 減弱&lt;/code>&lt;/li>
-&lt;li>&lt;strong>從左到右&lt;/strong>的順序來解析提示詞，&lt;strong>越前面的詞影響越大，越後面的詞影響越小&lt;/strong>。&lt;/li>
-&lt;li>不同的 &lt;strong>Checkpoints&lt;/strong> 對提示詞的理解會有所不同，選對模型才能產生最好的效果。&lt;/li>
+&lt;li>決定生成圖片的基礎風格，例如二次元、寫實等。&lt;/li>
+&lt;li>可從網路下載不同風格的模型，如 &lt;code>SD1.5&lt;/code> 或 &lt;code>SDXL&lt;/code>。&lt;/li>
+&lt;/ul>
+&lt;h3 id="lora">LoRA&lt;/h3>
+&lt;ul>
+&lt;li>可額外載入來增強特定風格或角色。&lt;/li>
+&lt;/ul>
+&lt;h3 id="embedding">Embedding&lt;/h3>
+&lt;ul>
+&lt;li>小型數據文件，用來微調特定特徵或風格。&lt;/li>
+&lt;/ul>
+&lt;h3 id="vae">VAE&lt;/h3>
+&lt;ul>
+&lt;li>可提升顏色與細節。&lt;/li>
+&lt;li>部分 Checkpoints 會內建（Bake）VAE，如使用外部 VAE，請確認是否需要覆蓋內建版本。&lt;/li>
+&lt;/ul>
+&lt;h2 id="generation">Generation&lt;/h2>
+&lt;h3 id="prompt">Prompt&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>正向 Prompt&lt;/strong>：描述想要的畫面，例如 &lt;code>a beautiful girl, wearing kimono, sakura background&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>負向 Prompt&lt;/strong>：描述不想要的內容，例如 &lt;code>blurry, low quality, deformed&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>從左到右的順序&lt;/strong>來解析提示詞，&lt;strong>越前面的詞影響越大&lt;/strong>，越後面的詞影響越小。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>數值控制權重&lt;/strong>：使用 &lt;code>(word:1.2)&lt;/code> 來增加特定詞的影響力，數值越高影響越強。例如：&lt;code>(beautiful:1.5), (dark:0.8)&lt;/code> 讓 &amp;ldquo;beautiful&amp;rdquo; 更突出，而 &amp;ldquo;dark&amp;rdquo; 影響較弱。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>BEEAK&lt;/strong>：可用來分隔不同場景或主題。例如：&lt;code>a warrior in armor BREAK a futuristic cityscape&lt;/code>。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>不同的 &lt;strong>Checkpoints&lt;/strong> 對提示詞的理解會有所不同，選對模型才能產生最好的效果。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="parameters">Parameters&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Checkpoints&lt;/strong> 一般會提供推薦的參數設置，建議依據模型的特性調整，以獲得最佳效果。&lt;/li>
+&lt;li>&lt;strong>Steps（步數）&lt;/strong>：決定圖片細節程度，建議 20~30。&lt;/li>
+&lt;li>&lt;strong>CFG Scale&lt;/strong>：影響 AI 遵循 Prompt 的程度，建議 7~9。&lt;/li>
+&lt;li>&lt;strong>Seed（種子值）&lt;/strong>：相同 Seed 可重現相同圖片，設為 &lt;code>-1&lt;/code> 會隨機變化。&lt;/li>
+&lt;li>&lt;strong>Clip Skip&lt;/strong>：影響 AI 理解 Prompt 的方式，動畫風建議設為 2。&lt;/li>
+&lt;/ul>
+&lt;h3 id="sampler">Sampler&lt;/h3>
+&lt;ul>
+&lt;li>影響生成風格與品質，推薦：
+&lt;ul>
+&lt;li>&lt;strong>Euler a&lt;/strong>：快速預覽。&lt;/li>
+&lt;li>&lt;strong>DPM++ SDE Karras&lt;/strong>：細節較佳。&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;/ul></description></item><item><title>AI - Stable diffusion - Favorites Illustrious</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorites-illustrious/</link><pubDate>Fri, 14 Feb 2025 20:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorites-illustrious/</guid><description>&lt;h2 id="checkpoint">CheckPoint&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://civitai.com/models/1240874/nova-flat-xl">Nova Flat XL&lt;/a>&lt;/li>
