@@ -7,35 +7,48 @@ tags: ["AI", "Stable diffusion", "Art"]
 ---
 
 ## Quick Chat
-本筆記是針對 Stable diffusion 的基本觀念與操作，環境配置請參考
+- ⚠️ 這是一篇新手導向的筆記，目的不在於精準解釋
+- ⚠️ 環境配置請參考 `AI - Stable diffusion - Environment`
 
-> AI - Stable diffusion - Environment
+## Components
 
-## Prompt
-提示詞（Prompt）是 AI 生成圖片的指令，分為：
-1. **正向提示詞（Positive Prompt）** → 預期的元素
-2. **負向提示詞（Negative Prompt）** → 排除的元素
+### Checkpoints
+- 決定生成圖片的基礎風格，例如二次元、寫實等。
+- 可從網路下載不同風格的模型，如 `SD1.5` 或 `SDXL`。
 
-### Sample 
-- **「粉色長髮的美少女，穿著和服，背景是櫻花」**
+### LoRA 
+- 可額外載入來增強特定風格或角色。
+  
+### Embedding
+- 小型數據文件，用來微調特定特徵或風格。
 
-### Positive Prompt 
-1. **主題（Main Subject）** → *anime girl, warrior, castle, spaceship*
-2. **特徵（Appearance）** → *pink hair, blue eyes, long dress, armor*
-3. **背景（Background）** → *cherry blossoms, cyberpunk city, medieval castle*
-4. **風格（Style）** → *anime style, photorealistic, oil painting*
-5. **燈光（Lighting）** → *soft lighting, cinematic lighting, neon lights*
-6. **視角（Camera Perspective）** → *close-up, wide-angle, over-the-shoulder*
+### VAE
+- 可提升顏色與細節。
+- 部分 Checkpoints 會內建（Bake）VAE，如使用外部 VAE，請確認是否需要覆蓋內建版本。
 
-### Negative Prompt
-1. **品質問題** → blurry, low quality, pixelated, noisy
-2. **人體錯誤** → deformed, extra fingers, bad anatomy, malformed limbs
-3. **表情問題** → ugly, weird expression, asymmetrical face
-4. **不想要的風格** → 3D render, cartoonish, sketch
+## Generation
 
-### Control 
-- **使用 () 加強** → `((masterpiece)), (highly detailed), (8K ultra HD)`
-- **使用 [] 減弱** → `[blurry], [low quality]`
-- **指定數值** → `(pink hair: x)`, `x > 1 加強, x < 1 減弱`
-- **從左到右**的順序來解析提示詞，**越前面的詞影響越大，越後面的詞影響越小**。
+### Prompt
+- **正向 Prompt**：描述想要的畫面，例如 `a beautiful girl, wearing kimono, sakura background`
+
+- **負向 Prompt**：描述不想要的內容，例如 `blurry, low quality, deformed`
+
+- **從左到右的順序**來解析提示詞，**越前面的詞影響越大**，越後面的詞影響越小。
+
+- **數值控制權重**：使用 `(word:1.2)` 來增加特定詞的影響力，數值越高影響越強。例如：`(beautiful:1.5), (dark:0.8)` 讓 "beautiful" 更突出，而 "dark" 影響較弱。
+
+- **BEEAK**：可用來分隔不同場景或主題。例如：`a warrior in armor BREAK a futuristic cityscape`。
+
 - 不同的 **Checkpoints** 對提示詞的理解會有所不同，選對模型才能產生最好的效果。
+
+### Parameters
+- **Checkpoints** 一般會提供推薦的參數設置，建議依據模型的特性調整，以獲得最佳效果。
+- **Steps（步數）**：決定圖片細節程度，建議 20~30。
+- **CFG Scale**：影響 AI 遵循 Prompt 的程度，建議 7~9。
+- **Seed（種子值）**：相同 Seed 可重現相同圖片，設為 `-1` 會隨機變化。
+- **Clip Skip**：影響 AI 理解 Prompt 的方式，動畫風建議設為 2。
+
+### Sampler
+- 影響生成風格與品質，推薦：
+  - **Euler a**：快速預覽。
+  - **DPM++ SDE Karras**：細節較佳。
