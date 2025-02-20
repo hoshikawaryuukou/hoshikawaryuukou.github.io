@@ -2,65 +2,58 @@
 &lt;ul>
 &lt;li>⚠️ 這是一篇新手導向的筆記，目的不在於精準解釋&lt;/li>
 &lt;li>⚠️ 環境配置請參考 &lt;code>AI - Stable diffusion - Environment&lt;/code>&lt;/li>
+&lt;li>⚠️ &lt;strong>Checkpoint&lt;/strong> 一般會提供推薦的參數設置，建議依據模型的特性調整，以獲得最佳效果。&lt;/li>
 &lt;/ul>
 &lt;h2 id="components">Components&lt;/h2>
-&lt;h3 id="checkpoints">Checkpoints&lt;/h3>
+&lt;h3 id="checkpoint">Checkpoint&lt;/h3>
 &lt;ul>
-&lt;li>決定生成圖片的基礎風格，例如二次元、寫實等。&lt;/li>
-&lt;li>可從網路下載不同風格的模型，如 &lt;code>SD1.5&lt;/code> 或 &lt;code>SDXL&lt;/code>。&lt;/li>
+&lt;li>決定生成圖片的基礎風格。
+&lt;ul>
+&lt;li>寫實風格 (Photorealistic)&lt;/li>
+&lt;li>動漫風 (Anime)&lt;/li>
+&lt;li>油畫風格 (Painting)&lt;/li>
+&lt;li>科幻賽博龐克 (Cyberpunk)&lt;/li>
+&lt;li>像素風格 (Pixel Art)&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;/ul>
 &lt;h3 id="lora">LoRA&lt;/h3>
 &lt;ul>
 &lt;li>可額外載入來增強特定風格或角色。&lt;/li>
+&lt;li>輕量化微調模型，可以附加到不同的 Checkpoint。&lt;/li>
 &lt;/ul>
 &lt;h3 id="embedding">Embedding&lt;/h3>
 &lt;ul>
+&lt;li>增強對某些 Prompt 的理解。&lt;/li>
 &lt;li>小型數據文件，用來微調特定特徵或風格。&lt;/li>
 &lt;/ul>
 &lt;h3 id="vae">VAE&lt;/h3>
 &lt;ul>
-&lt;li>可提升顏色與細節。&lt;/li>
-&lt;li>部分 Checkpoints 會內建（Bake）VAE，如使用外部 VAE，請確認是否需要覆蓋內建版本。&lt;/li>
-&lt;/ul>
-&lt;h2 id="generation">Generation&lt;/h2>
-&lt;h3 id="prompt">Prompt&lt;/h3>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>正向 Prompt&lt;/strong>：描述想要的畫面，例如 &lt;code>a beautiful girl, wearing kimono, sakura background&lt;/code>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>負向 Prompt&lt;/strong>：描述不想要的內容，例如 &lt;code>blurry, low quality, deformed&lt;/code>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>從左到右的順序&lt;/strong>來解析提示詞，&lt;strong>越前面的詞影響越大&lt;/strong>，越後面的詞影響越小。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>數值控制權重&lt;/strong>：使用 &lt;code>(word:1.2)&lt;/code> 來增加特定詞的影響力，數值越高影響越強。例如：&lt;code>(beautiful:1.5), (dark:0.8)&lt;/code> 讓 &amp;ldquo;beautiful&amp;rdquo; 更突出，而 &amp;ldquo;dark&amp;rdquo; 影響較弱。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>BEEAK&lt;/strong>：可用來分隔不同場景或主題。例如：&lt;code>a warrior in armor BREAK a futuristic cityscape&lt;/code>。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>不同的 &lt;strong>Checkpoints&lt;/strong> 對提示詞的理解會有所不同，選對模型才能產生最好的效果。&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;h3 id="parameters">Parameters&lt;/h3>
-&lt;ul>
-&lt;li>&lt;strong>Checkpoints&lt;/strong> 一般會提供推薦的參數設置，建議依據模型的特性調整，以獲得最佳效果。&lt;/li>
-&lt;li>&lt;strong>Steps（步數）&lt;/strong>：決定圖片細節程度，建議 20~30。&lt;/li>
-&lt;li>&lt;strong>CFG Scale&lt;/strong>：影響 AI 遵循 Prompt 的程度，建議 7~9。&lt;/li>
-&lt;li>&lt;strong>Seed（種子值）&lt;/strong>：相同 Seed 可重現相同圖片，設為 &lt;code>-1&lt;/code> 會隨機變化。&lt;/li>
-&lt;li>&lt;strong>Clip Skip&lt;/strong>：影響 AI 理解 Prompt 的方式，動畫風建議設為 2。&lt;/li>
+&lt;li>提高圖片細節與顏色準確度。&lt;/li>
+&lt;li>部分 Checkpoints 會內建（Baked）VAE，如使用外部 VAE，請確認是否需要覆蓋內建版本。&lt;/li>
+&lt;li>⚠️ 如果發現圖片的型都對，但只有顏色壞掉，通常都是 VAE 的問題。&lt;/li>
 &lt;/ul>
 &lt;h3 id="sampler">Sampler&lt;/h3>
 &lt;ul>
-&lt;li>影響生成風格與品質，推薦：
+&lt;li>從雜訊中逐步還原出圖片的方法。
+&lt;ul>
+&lt;li>圖片細節（清晰度、細緻程度）&lt;/li>
+&lt;li>收斂速度（步數少時的品質）&lt;/li>
+&lt;li>風格穩定度（隨機性 vs 可重現性）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>不同的情境：
 &lt;ul>
 &lt;li>&lt;strong>Euler a&lt;/strong>：快速預覽。&lt;/li>
 &lt;li>&lt;strong>DPM++ SDE Karras&lt;/strong>：細節較佳。&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul></description></item><item><title>AI - Stable diffusion - Favorites Illustrious</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorites-illustrious/</link><pubDate>Fri, 14 Feb 2025 20:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorites-illustrious/</guid><description>&lt;h2 id="checkpoint">CheckPoint&lt;/h2>
+&lt;/ul>
+&lt;h2 id="generation">Generation&lt;/h2>
+&lt;h3 id="prompt">Prompt&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>正向 Prompt&lt;/strong>：描述想要的畫面，例如 &lt;code>a beautiful girl, wearing kimono, sakura background&lt;/code>&lt;/p></description></item><item><title>AI - Stable diffusion - Favorites Illustrious</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorites-illustrious/</link><pubDate>Fri, 14 Feb 2025 20:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorites-illustrious/</guid><description>&lt;h2 id="checkpoint">CheckPoint&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://civitai.com/models/1240874/nova-flat-xl">Nova Flat XL&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://civitai.com/models/140272?modelVersionId=1240288">Hassaku XL (Illustrious)&lt;/a>&lt;/li>
