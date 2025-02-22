@@ -7,45 +7,63 @@ tags: ["AI", "Stable diffusion", "Art"]
 ---
 
 ## Quick Chat
-- ⚠️ 這是一篇新手導向的筆記，目的不在於精準解釋
+- ⚠️ 這是一篇新手導向的筆記，目的不在於精準解釋。
 - ⚠️ 環境配置請參考 `AI - Stable diffusion - Environment`
 - ⚠️ **Checkpoint** 一般會提供推薦的參數設置，建議依據模型的特性調整，以獲得最佳效果。
 
-## Components
+## Checkpoint
+決定生成圖片的基礎風格。
+- 寫實風格 (Photorealistic)
+- 動漫風 (Anime)
+- 油畫風格 (Painting)
+- 科幻賽博龐克 (Cyberpunk)
+- 像素風格 (Pixel Art)
 
-### Checkpoint
-- 決定生成圖片的基礎風格。
-  - 寫實風格 (Photorealistic)
-  - 動漫風 (Anime)
-  - 油畫風格 (Painting)
-  - 科幻賽博龐克 (Cyberpunk)
-  - 像素風格 (Pixel Art)
+## LoRA 
+輕量化微調模型可額外載入來增強特定風格或角色。
+- 簡單的比喻來形容 LoRA 模型，那就是「濾鏡」
 
-### LoRA 
-- 可額外載入來增強特定風格或角色。
-- 輕量化微調模型，可以附加到不同的 Checkpoint。
+## Embedding
+增強對某些 Prompt 的理解。
 
-### Embedding
-- 增強對某些 Prompt 的理解。
-- 小型數據文件，用來微調特定特徵或風格。
-
-### VAE
-- 提高圖片細節與顏色準確度。
-- 部分 Checkpoints 會內建（Baked）VAE，如使用外部 VAE，請確認是否需要覆蓋內建版本。
+## VAE
+提高圖片細節與顏色準確度。
+- 📝 部分 Checkpoints 會內建（Baked）VAE，如使用外部 VAE，請確認是否需要覆蓋內建版本。
 - ⚠️ 如果發現圖片的型都對，但只有顏色壞掉，通常都是 VAE 的問題。
 
-### Sampler
-- 從雜訊中逐步還原出圖片的方法。
-  - 圖片細節（清晰度、細緻程度）
-  - 收斂速度（步數少時的品質）
-  - 風格穩定度（隨機性 vs 可重現性）
-- 不同的情境： 
-  - **Euler a**：快速預覽。
-  - **DPM++ SDE Karras**：細節較佳。
+## Sampler + Schedule 
+Sampler 是從雜訊圖到成品的**去噪算法**。
+- **快速收斂** – 能迅速找到解答，適合驗證創意和想法。
+- **高品質收斂** – 需較長時間，但能提供更精確結果。
+- **無固定收斂** – 無明確收斂條件，為創新提供更大空間。
 
-## Generation
+Schedule 是從雜訊圖到成品的**去噪程度**。
 
-### Prompt
+📝 常用組合
+- Euler A Automatic
+- DPM++ 2M Karras
+- DPM++ SDE Karras
+
+## Steps
+從雜訊圖到成品的**迭代次數**。
+- ⚠️ 步數過少可能導致產生的影像品質不佳。
+- ⚠️ 步數過多可能使影像產生過程變得冗長，但未必能提升品質。
+- 📝 建議從較低的步數開始，例如 15 或 20。
+
+## CFG Scale
+**遵循 Prompt 的程度**。數值越大，產生的影像與文字提示的相關性越高。
+- ⚠️ 但當數值過大時可能會出現過度飽和或不自然的情況。
+- 📝 建議從較低的 CFG 比例值開始並增加它，直到對結果滿意為止。
+- 📝 沒有最佳值，要根據模型的不同來設定不同的值。
+- 📝 常用區間：3 ~ 7
+
+## Seed
+相同 Seed 可重現相同圖片，設為 `-1` 會隨機變化。
+
+## Clip Skip
+影響 AI 理解 Prompt 的方式，動畫風建議設為 2。
+
+## Prompt
 - **正向 Prompt**：描述想要的畫面，例如 `a beautiful girl, wearing kimono, sakura background`
 
 - **負向 Prompt**：描述不想要的內容，例如 `blurry, low quality, deformed`
@@ -62,13 +80,3 @@ tags: ["AI", "Stable diffusion", "Art"]
   - **確定哪些詞有效**
   - **避免無效詞**
   - **確保 Prompt 保持清晰，容易控制風格**
-
-### Parameters
-
-- **Steps（步數）**：決定圖片細節程度，建議 20~30。
-
-- **CFG Scale**：影響 AI 遵循 Prompt 的程度，建議 7~9。
-
-- **Seed（種子值）**：相同 Seed 可重現相同圖片，設為 `-1` 會隨機變化。
-
-- **Clip Skip**：影響 AI 理解 Prompt 的方式，動畫風建議設為 2。

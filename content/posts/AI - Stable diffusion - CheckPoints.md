@@ -9,8 +9,9 @@ tags: ["AI", "Stable diffusion", "Art"]
 ## Quick Chat
 - ⚠️ 以下主題專注於二次元/動漫風格圖像生成
 
-## Timeline
+## Guide
 - [Re: [問題] AI 風格怎麼了嗎？為什麼容易膩？ - 看板C_Chat - PTT網頁版](https://www.pttweb.cc/bbs/C_Chat/M.1730732828.A.70C)
+
 
 ## SD1.5
 在性能和穩定性上提升很多，社群迎來爆發式成長。
