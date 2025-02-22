@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Stable Diffusion on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/stable-diffusion/</link><description>Recent content in Stable Diffusion on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Mon, 17 Feb 2025 20:40:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/stable-diffusion/index.xml" rel="self" type="application/rss+xml"/><item><title>AI - Stable diffusion - Quick Start</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---quick-start/</link><pubDate>Mon, 17 Feb 2025 20:40:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---quick-start/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;ul>
-&lt;li>⚠️ 這是一篇新手導向的筆記，目的不在於精準解釋&lt;/li>
+&lt;li>⚠️ 這是一篇新手導向的筆記，目的不在於精準解釋。&lt;/li>
 &lt;li>⚠️ 環境配置請參考 &lt;code>AI - Stable diffusion - Environment&lt;/code>&lt;/li>
 &lt;li>⚠️ &lt;strong>Checkpoint&lt;/strong> 一般會提供推薦的參數設置，建議依據模型的特性調整，以獲得最佳效果。&lt;/li>
 &lt;/ul>
-&lt;h2 id="components">Components&lt;/h2>
-&lt;h3 id="checkpoint">Checkpoint&lt;/h3>
-&lt;ul>
-&lt;li>決定生成圖片的基礎風格。
+&lt;h2 id="checkpoint">Checkpoint&lt;/h2>
+&lt;p>決定生成圖片的基礎風格。&lt;/p>
 &lt;ul>
 &lt;li>寫實風格 (Photorealistic)&lt;/li>
 &lt;li>動漫風 (Anime)&lt;/li>
@@ -15,45 +13,35 @@
 &lt;li>科幻賽博龐克 (Cyberpunk)&lt;/li>
 &lt;li>像素風格 (Pixel Art)&lt;/li>
 &lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h3 id="lora">LoRA&lt;/h3>
+&lt;h2 id="lora">LoRA&lt;/h2>
+&lt;p>輕量化微調模型可額外載入來增強特定風格或角色。&lt;/p>
 &lt;ul>
-&lt;li>可額外載入來增強特定風格或角色。&lt;/li>
-&lt;li>輕量化微調模型，可以附加到不同的 Checkpoint。&lt;/li>
+&lt;li>簡單的比喻來形容 LoRA 模型，那就是「濾鏡」&lt;/li>
 &lt;/ul>
-&lt;h3 id="embedding">Embedding&lt;/h3>
+&lt;h2 id="embedding">Embedding&lt;/h2>
+&lt;p>增強對某些 Prompt 的理解。&lt;/p>
+&lt;h2 id="vae">VAE&lt;/h2>
+&lt;p>提高圖片細節與顏色準確度。&lt;/p>
 &lt;ul>
-&lt;li>增強對某些 Prompt 的理解。&lt;/li>
-&lt;li>小型數據文件，用來微調特定特徵或風格。&lt;/li>
-&lt;/ul>
-&lt;h3 id="vae">VAE&lt;/h3>
-&lt;ul>
-&lt;li>提高圖片細節與顏色準確度。&lt;/li>
-&lt;li>部分 Checkpoints 會內建（Baked）VAE，如使用外部 VAE，請確認是否需要覆蓋內建版本。&lt;/li>
+&lt;li>📝 部分 Checkpoints 會內建（Baked）VAE，如使用外部 VAE，請確認是否需要覆蓋內建版本。&lt;/li>
 &lt;li>⚠️ 如果發現圖片的型都對，但只有顏色壞掉，通常都是 VAE 的問題。&lt;/li>
 &lt;/ul>
-&lt;h3 id="sampler">Sampler&lt;/h3>
+&lt;h2 id="sampler--schedule">Sampler + Schedule&lt;/h2>
+&lt;p>Sampler 是從雜訊圖到成品的&lt;strong>去噪算法&lt;/strong>。&lt;/p>
 &lt;ul>
-&lt;li>從雜訊中逐步還原出圖片的方法。
-&lt;ul>
-&lt;li>圖片細節（清晰度、細緻程度）&lt;/li>
-&lt;li>收斂速度（步數少時的品質）&lt;/li>
-&lt;li>風格穩定度（隨機性 vs 可重現性）&lt;/li>
+&lt;li>&lt;strong>快速收斂&lt;/strong> – 能迅速找到解答，適合驗證創意和想法。&lt;/li>
+&lt;li>&lt;strong>高品質收斂&lt;/strong> – 需較長時間，但能提供更精確結果。&lt;/li>
+&lt;li>&lt;strong>無固定收斂&lt;/strong> – 無明確收斂條件，為創新提供更大空間。&lt;/li>
 &lt;/ul>
-&lt;/li>
-&lt;li>不同的情境：
+&lt;p>Schedule 是從雜訊圖到成品的&lt;strong>去噪程度&lt;/strong>。&lt;/p>
+&lt;p>📝 常用組合&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Euler a&lt;/strong>：快速預覽。&lt;/li>
-&lt;li>&lt;strong>DPM++ SDE Karras&lt;/strong>：細節較佳。&lt;/li>
+&lt;li>Euler A Automatic&lt;/li>
+&lt;li>DPM++ 2M Karras&lt;/li>
+&lt;li>DPM++ SDE Karras&lt;/li>
 &lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="generation">Generation&lt;/h2>
-&lt;h3 id="prompt">Prompt&lt;/h3>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>正向 Prompt&lt;/strong>：描述想要的畫面，例如 &lt;code>a beautiful girl, wearing kimono, sakura background&lt;/code>&lt;/p></description></item><item><title>AI - Stable diffusion - Favorites Illustrious</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorites-illustrious/</link><pubDate>Fri, 14 Feb 2025 20:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorites-illustrious/</guid><description>&lt;h2 id="checkpoint">CheckPoint&lt;/h2>
+&lt;h2 id="steps">Steps&lt;/h2>
+&lt;p>從雜訊圖到成品的&lt;strong>迭代次數&lt;/strong>。&lt;/p></description></item><item><title>AI - Stable diffusion - Favorites Illustrious</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorites-illustrious/</link><pubDate>Fri, 14 Feb 2025 20:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorites-illustrious/</guid><description>&lt;h2 id="checkpoint">CheckPoint&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://civitai.com/models/1240874/nova-flat-xl">Nova Flat XL&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://civitai.com/models/140272?modelVersionId=1240288">Hassaku XL (Illustrious)&lt;/a>&lt;/li>
@@ -159,7 +147,7 @@
 &lt;ul>
 &lt;li>⚠️ 以下主題專注於二次元/動漫風格圖像生成&lt;/li>
 &lt;/ul>
-&lt;h2 id="timeline">Timeline&lt;/h2>
+&lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://www.pttweb.cc/bbs/C_Chat/M.1730732828.A.70C">Re: [問題] AI 風格怎麼了嗎？為什麼容易膩？ - 看板C_Chat - PTT網頁版&lt;/a>&lt;/li>
 &lt;/ul>
