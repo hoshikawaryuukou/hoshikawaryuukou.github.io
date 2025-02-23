@@ -11,6 +11,9 @@ tags: ["AI", "Stable diffusion", "Art"]
 - ⚠️ 環境配置請參考 `AI - Stable diffusion - Environment`
 - ⚠️ **Checkpoint** 一般會提供推薦的參數設置，建議依據模型的特性調整，以獲得最佳效果。
 
+## Resources
+- [Civitai: The Home of Open-Source Generative AI](https://civitai.com/)
+
 ## Checkpoint
 決定生成圖片的基礎風格。
 - 寫實風格 (Photorealistic)
@@ -58,10 +61,16 @@ Schedule 是從雜訊圖到成品的**去噪程度**。
 - 📝 常用區間：3 ~ 7
 
 ## Seed
-相同 Seed 可重現相同圖片，設為 `-1` 會隨機變化。
+用於生成雜訊圖。
+- ⚠️ 當圖片大小改變時所生成的雜訊圖也會有差異(即使比例一樣)。
+- 📝 使用相同的 Seed 可重現相同圖片(前提是設備/環境需一致)。
+- 📝 設為 `-1` 為隨機。
+- 📝 固定 Seed 進行實驗：在進行圖像生成時，建議固定一個 Seed，然後調整提示詞或其他參數，以便觀察這些變化對最終圖像的影響。
 
 ## Clip Skip
-影響 AI 理解 Prompt 的方式，動畫風建議設為 2。
+調整生成圖像過程中對提示詞的處理方式。
+- 📝 現實系建議設為 2。
+- 📝 動畫風建議設為 2。
 
 ## Prompt
 - **正向 Prompt**：描述想要的畫面，例如 `a beautiful girl, wearing kimono, sakura background`
@@ -80,3 +89,7 @@ Schedule 是從雜訊圖到成品的**去噪程度**。
   - **確定哪些詞有效**
   - **避免無效詞**
   - **確保 Prompt 保持清晰，容易控制風格**
+
+## Extras
+- [img2img - inpaint](https://www.youtube.com/watch?v=srvek4ucH-A)
+- [ControlNet](https://medium.com/%E5%BA%97%E5%B0%8F%E4%BA%8C%E7%9A%84%E5%B8%B3%E7%B0%BF/ai%E7%B9%AA%E5%9C%96-stable-diffusion-008-controlnet-%E5%89%8D%E8%A8%80-716ce415f87)
