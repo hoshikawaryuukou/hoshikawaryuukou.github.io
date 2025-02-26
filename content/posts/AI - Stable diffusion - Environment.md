@@ -21,3 +21,6 @@ tags: ["AI", "Stable diffusion", "Art"]
 ## Google Colab 
 - [gutris1/segsmaker](https://github.com/gutris1/segsmaker)
 - [cagliostrolab/forge-colab](https://github.com/cagliostrolab/forge-colab)
+
+## Civitai API Key
+> Menu > Account Settings(齒輪 icon) > API Keys

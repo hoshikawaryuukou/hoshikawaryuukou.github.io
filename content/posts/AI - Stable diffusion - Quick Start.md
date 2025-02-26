@@ -94,6 +94,7 @@ Schedule 是從雜訊圖到成品的**去噪程度**。
 - Saving images > Saving images/grids
   - **Images filename pattern** : `[datetime]-[seed]`
   - **Add number to filename when saving** : 反選
+  - 這樣避免整合圖片時發生亂序。
 
 ## Extras
 - [img2img - inpaint](https://www.youtube.com/watch?v=srvek4ucH-A)
