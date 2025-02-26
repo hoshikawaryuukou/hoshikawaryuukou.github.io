@@ -107,7 +107,10 @@
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/gutris1/segsmaker">gutris1/segsmaker&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/cagliostrolab/forge-colab">cagliostrolab/forge-colab&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Game Development - Web Game - Device Evaluation</title><link>https://HoshikawaRyuukou.github.io/posts/game-development---web-game---device-evaluation/</link><pubDate>Sun, 09 Feb 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/game-development---web-game---device-evaluation/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;/ul>
+&lt;h2 id="civitai-api-key">Civitai API Key&lt;/h2>
+&lt;blockquote>
+&lt;p>Menu &amp;gt; Account Settings(齒輪 icon) &amp;gt; API Keys&lt;/p>&lt;/blockquote></description></item><item><title>Game Development - Web Game - Device Evaluation</title><link>https://HoshikawaRyuukou.github.io/posts/game-development---web-game---device-evaluation/</link><pubDate>Sun, 09 Feb 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/game-development---web-game---device-evaluation/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>Web 遊戲的測試免不了要在實機上觀測 FPS 數據。&lt;/p>
 &lt;h2 id="device">Device&lt;/h2>
 &lt;ol>
