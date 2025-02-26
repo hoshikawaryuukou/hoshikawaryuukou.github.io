@@ -77,7 +77,7 @@ Schedule 是從雜訊圖到成品的**去噪程度**。
 
 - **負向 Prompt**：描述不想要的內容，例如 `blurry, low quality, deformed`
 
-- **BEEAK**：可用來分隔不同場景或主題。例如：`a warrior in armor BREAK a futuristic cityscape`。
+- **BREAK**：可用來分隔不同場景或主題。例如：`a warrior in armor BREAK a futuristic cityscape`。
 
 - **數值控制權重**：使用 `(word:1.2)` 來增加特定詞的影響力，數值越高影響越強。例如：`(beautiful:1.5), (dark:0.8)` 讓 "beautiful" 更突出，而 "dark" 影響較弱。
 
@@ -89,6 +89,11 @@ Schedule 是從雜訊圖到成品的**去噪程度**。
   - **確定哪些詞有效**
   - **避免無效詞**
   - **確保 Prompt 保持清晰，容易控制風格**
+
+## Settings
+- Saving images > Saving images/grids
+  - **Images filename pattern** : `[datetime]-[seed]`
+  - **Add number to filename when saving** : 反選
 
 ## Extras
 - [img2img - inpaint](https://www.youtube.com/watch?v=srvek4ucH-A)
