@@ -37,12 +37,25 @@
 &lt;li>&lt;strong>高品質收斂&lt;/strong> – 需較長時間，但能提供更精確結果。&lt;/li>
 &lt;li>&lt;strong>無固定收斂&lt;/strong> – 無明確收斂條件，為創新提供更大空間。&lt;/li>
 &lt;/ul>
-&lt;p>Schedule 是從雜訊圖到成品的&lt;strong>去噪程度&lt;/strong>。&lt;/p></description></item><item><title>AI - Stable diffusion - Extensions</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---extensions/</link><pubDate>Mon, 10 Feb 2025 22:16:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---extensions/</guid><description>&lt;h2 id="sd-webui-photopea-embed">sd-webui-photopea-embed&lt;/h2>
+&lt;p>Schedule 是從雜訊圖到成品的&lt;strong>去噪程度&lt;/strong>。&lt;/p></description></item><item><title>AI - Stable diffusion - Extensions</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---extensions/</link><pubDate>Mon, 10 Feb 2025 22:16:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---extensions/</guid><description>&lt;h2 id="a1111-sd-webui-tagcomplete">a1111-sd-webui-tagcomplete&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/DominikDoom/a1111-sd-webui-tagcomplete">DominikDoom/a1111-sd-webui-tagcomplete&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="sd-webui-prompt-all-in-one">sd-webui-prompt-all-in-one&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/Physton/sd-webui-prompt-all-in-one">Physton/sd-webui-prompt-all-in-one&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="adetailer">adetailer&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/Bing-su/adetailer">Bing-su/adetailer&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="sd-webui-photopea-embed">sd-webui-photopea-embed&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/Physton/sd-webui-prompt-all-in-one/tree/main">yankooliveira/sd-webui-photopea-embed&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h2 id="lora-block-weight">Lora-Block-Weight&lt;/h2>
+&lt;h2 id="sd-webui-lora-block-weight">sd-webui-lora-block-weight&lt;/h2>
 &lt;ul>
+&lt;li>&lt;a href="https://github.com/hako-mikan/sd-webui-lora-block-weight">hako-mikan/sd-webui-lora-block-weight&lt;/a>&lt;/li>
 &lt;li>XERSON005:1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0&lt;/li>
 &lt;li>PERSON105:1,0,0,1,1,0,0,0,1,1,1,0,0,0,0,0,0&lt;/li>
 &lt;/ul></description></item><item><title>AI - Stable diffusion - GUI</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---gui/</link><pubDate>Mon, 10 Feb 2025 21:16:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---gui/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
@@ -94,35 +107,64 @@
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/gutris1/segsmaker">gutris1/segsmaker&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/cagliostrolab/forge-colab">cagliostrolab/forge-colab&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>AI - Stable diffusion - Note</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---note/</link><pubDate>Thu, 06 Feb 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---note/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;/ul></description></item><item><title>AI - Stable diffusion - Overview</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---overview/</link><pubDate>Thu, 06 Feb 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---overview/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>建議閱讀順序&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://www.chias.com.tw/category/stable-diffusion/">Stable-Diffusion 彙整 - 瑆知識&lt;/a>&lt;/li>
+&lt;li>AI - Stable diffusion - Environment&lt;/li>
+&lt;li>AI - Stable diffusion - GUI&lt;/li>
+&lt;li>AI - Stable diffusion - Quick Start&lt;/li>
+&lt;li>AI - Stable diffusion - Extensions&lt;/li>
+&lt;li>AI - Stable diffusion - CheckPoints&lt;/li>
+&lt;li>AI - Stable diffusion - Resources&lt;/li>
 &lt;/ul>
-&lt;h2 id="community">Community&lt;/h2>
+&lt;h2 id="core-working-principles">Core Working Principles&lt;/h2>
+&lt;p>Stable Diffusion 主要包含三個核心技術：&lt;/p>
+&lt;h3 id="前向擴散forward-diffusion">前向擴散（Forward Diffusion）&lt;/h3>
+&lt;ul>
+&lt;li>先從大量圖片資料集中學習圖片特徵。&lt;/li>
+&lt;li>然後，系統會逐步加入高斯雜訊（Gaussian Noise），使圖片變得模糊、無法辨識。&lt;/li>
+&lt;li>最後，這個過程會讓圖片變成完全的純雜訊（random noise）。&lt;/li>
+&lt;/ul>
+&lt;h3 id="反向去噪reverse-denoising--u-net">反向去噪（Reverse Denoising / U-Net）&lt;/h3>
+&lt;ul>
+&lt;li>Stable Diffusion 學習如何逆向去噪，一步步從雜訊還原出清晰的圖片。&lt;/li>
+&lt;li>這部分的關鍵是 U-Net 神經網路架構，它可以在多層次的細節中，捕捉圖片的各種特徵。&lt;/li>
+&lt;/ul>
+&lt;h3 id="文本引導text-conditioning--clip">文本引導（Text Conditioning / CLIP）&lt;/h3>
+&lt;ul>
+&lt;li>Stable Diffusion 之所以能生成符合指令的圖片，是因為它使用了CLIP（Contrastive Language-Image Pretraining）。&lt;/li>
+&lt;li>CLIP 會將文字轉換成向量表示（latent embeddings），這些向量再指導模型生成符合描述的圖像。&lt;/li>
+&lt;/ul>
+&lt;h3 id="diagram">Diagram&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://developer.nvidia.com/blog/improving-diffusion-models-as-an-alternative-to-gans-part-1/">Improving Diffusion Models as an Alternative To GANs, Part 1&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>
+ &lt;img src="https://developer-blogs.nvidia.com/wp-content/uploads/2022/04/Generation-with-Diffusion-Models.png" alt="123">
+
+&lt;/p></description></item><item><title>AI - Stable diffusion - Resources</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---resources/</link><pubDate>Wed, 05 Feb 2025 20:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---resources/</guid><description>&lt;h2 id="community">Community&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://civitai.com/">Civitai&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.qpipi.com/">Qpipi_AI绘画社区和SD模型&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="channel">Channel&lt;/h2>
 &lt;ul>
-&lt;li>&lt;a href="https://www.youtube.com/@JackEllie/videos">杰克艾米立&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.hoshikou-ailabo.net/">星光のAIラボ&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://sorenuts.jp/">SoreNuts&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="prompts">Prompts&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://blog.256pages.com/sdxl-prompts-advanced-guide-1/">SDXL Prompts 進階指南 (1) - 鏡頭視角距離&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="gallery">Gallery&lt;/h2>
 &lt;ul>
-&lt;li>&lt;a href="https://www.ptsearch.info/home/">Prompt Search&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://pixai.art/">PixAI.Art&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://aibooru.online/">AIBooru&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://civitai.com/user/Lizardon1025/images">Lizardon1025&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>AI - Stable diffusion - Prompts</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---prompts/</link><pubDate>Wed, 05 Feb 2025 20:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---prompts/</guid><description>&lt;h2 id="prompt">Prompt&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://www.ptsearch.info/zh-hant/articles/create_exif/">Prompt Viewer&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://danbooru.donmai.us/wiki_pages/tag_group%3Aposture">Danbooru tag group:posture&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://blog.256pages.com/sdxl-prompts-advanced-guide-1/">SDXL Prompts 進階指南 (1) - 鏡頭視角距離&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://danbooru.donmai.us/artists">Artists | Danbooru&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h2 id="artist">Artist&lt;/h2>
+&lt;h2 id="artists">Artists&lt;/h2>
 &lt;ul>
+&lt;li>&lt;a href="https://danbooru.donmai.us/artists">Artists | Danbooru&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=akitetsu">Akitetsu | Danbooru&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=sakamoto_masaru">Sakamoto Masaru | Danbooru&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=fight_yoghurt">Fight Yoghurt | Danbooru&lt;/a>&lt;/li>
