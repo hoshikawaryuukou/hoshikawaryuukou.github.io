@@ -172,7 +172,16 @@
 &lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=sakamoto_masaru">Sakamoto Masaru | Danbooru&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=fight_yoghurt">Fight Yoghurt | Danbooru&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=reia_76">Reia 76 | Danbooru&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>AI - Stable diffusion - CheckPoints</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---checkpoints/</link><pubDate>Tue, 04 Feb 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---checkpoints/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="sample">Sample&lt;/h2>
+&lt;p>以動漫系為例&lt;/p>
+&lt;h3 id="positive-prompt">Positive Prompt&lt;/h3>
+&lt;pre tabindex="0">&lt;code>highres, hires, best quality, masterpiece,
+2d, 
+anime coloring, 
+&lt;/code>&lt;/pre>&lt;h3 id="negative-prompt">Negative Prompt&lt;/h3>
+&lt;pre tabindex="0">&lt;code>&lt;/code>&lt;/pre></description></item><item><title>AI - Stable diffusion - CheckPoints</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---checkpoints/</link><pubDate>Tue, 04 Feb 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---checkpoints/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;ul>
 &lt;li>⚠️ 以下主題專注於二次元/動漫風格圖像生成&lt;/li>
 &lt;/ul>
