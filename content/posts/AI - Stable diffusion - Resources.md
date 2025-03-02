@@ -28,3 +28,20 @@ tags: ["AI", "Stable diffusion", "Art"]
 - [Sakamoto Masaru | Danbooru](https://danbooru.donmai.us/posts?tags=sakamoto_masaru)
 - [Fight Yoghurt | Danbooru](https://danbooru.donmai.us/posts?tags=fight_yoghurt)
 - [Reia 76 | Danbooru](https://danbooru.donmai.us/posts?tags=reia_76)
+
+---
+
+## Sample
+以動漫系為例
+
+### Positive Prompt
+```
+highres, hires, best quality, masterpiece,
+2d, 
+anime coloring, 
+```
+
+### Negative Prompt
+```
+
+```
