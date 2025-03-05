@@ -22,20 +22,47 @@
 &lt;li>打開快捷鍵設定 : &lt;code>Ctrl + K Ctrl + S&lt;/code>&lt;/li>
 &lt;/ul></description></item><item><title>Unity - Environment</title><link>https://HoshikawaRyuukou.github.io/posts/unity---environment/</link><pubDate>Tue, 16 Jan 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---environment/</guid><description>&lt;blockquote>
 &lt;p>⚠️ 以下使用 unity 6&lt;/p>&lt;/blockquote>
-&lt;h2 id="os---mac">OS - Mac&lt;/h2>
+&lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
-&lt;li>&lt;a href="https://blog.csdn.net/linxinfa/article/details/124844236">【游戏开发环境】Unity使用Mac电脑开发，开发环境的搭建（Mac mini M1 | VSCode | Git | 好用工具）&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://ithelp.ithome.com.tw/articles/10346751">Day10 / Unity 跟上時代！如何設定 Visual Studio Code 編輯器環境 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="vscode">VSCode&lt;/h2>
+&lt;h3 id="extensions">Extensions&lt;/h3>
 &lt;ul>
-&lt;li>安裝 &lt;a href="https://dotnet.microsoft.com/en-us/download">.NET Core&lt;/a>&lt;/li>
-&lt;li>重新開機使環境變數被應用&lt;/li>
-&lt;li>移除 Visual Studio Code Editor 已經停止維護&lt;/li>
-&lt;li>安裝 Visual Studio Editor&lt;/li>
-&lt;li>Edit &amp;gt; Preferences &amp;gt; External Tools &amp;gt; External Script Editor&lt;/li>
-&lt;li>Extension - C# Dev Kit&lt;/li>
+&lt;li>&lt;a href="">Extension - Unity&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h2 id="preferences">Preferences&lt;/h2>
+&lt;h3 id="net-sdk">.NET SDK&lt;/h3>
+&lt;ul>
+&lt;li>安裝 &lt;a href="https://dotnet.microsoft.com/en-us/download">.NET Core&lt;/a>
+&lt;ul>
+&lt;li>Mac M 系列 ( M1 M2 ) ➔ .NET SDK Arm64 版本&lt;/li>
+&lt;li>Mac 其餘型號 ➔ .NET SDK x64 版本&lt;/li>
+&lt;li>Windows ➔ .NET SDK x64 版本&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>重新開機使環境變數被應用&lt;/li>
+&lt;/ul>
+&lt;h3 id="unity-package-manager">Unity Package Manager&lt;/h3>
+&lt;ul>
+&lt;li>移除 Visual Studio Code Editor 已經停止維護 (比較舊的版本可能要裝)&lt;/li>
+&lt;li>安裝 Visual Studio Editor&lt;/li>
+&lt;/ul>
+&lt;h3 id="preferences">Preferences&lt;/h3>
+&lt;ul>
+&lt;li>Edit &amp;gt; Preferences &amp;gt; External Tools
+&lt;ul>
+&lt;li>External Script Editor &amp;gt; Visual Studio Code&lt;/li>
+&lt;li>Generate .csproj files for
+&lt;ul>
+&lt;li>Embedded packages&lt;/li>
+&lt;li>Local packages&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="common">Common&lt;/h2>
+&lt;h3 id="preferences-1">Preferences&lt;/h3>
 &lt;ul>
 &lt;li>Edit &amp;gt; Preferences &amp;gt; General &amp;gt; Script Changes While Playing (Stop Playing and Recompile)&lt;/li>
 &lt;/ul></description></item></channel></rss>
