@@ -23,6 +23,7 @@ tags: ["AI", "Stable diffusion", "Art"]
 - [Lizardon1025](https://civitai.com/user/Lizardon1025/images)
 
 ## Artists
+- [artist list](https://arca.live/b/aiart/73560719)
 - [Artists | Danbooru](https://danbooru.donmai.us/artists)
 - [Akitetsu | Danbooru](https://danbooru.donmai.us/posts?tags=akitetsu)
 - [Sakamoto Masaru | Danbooru](https://danbooru.donmai.us/posts?tags=sakamoto_masaru)
