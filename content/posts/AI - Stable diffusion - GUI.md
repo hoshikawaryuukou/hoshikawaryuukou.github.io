@@ -11,6 +11,9 @@ tags: ["AI", "Stable diffusion", "Art"]
 
 ## Guide
 - [Comfyui官方客户端 desktop桌面版来了](https://www.bilibili.com/video/BV1HDBZYBEjK)
+- [AI 繪圖的終極沙盒 ComfyUI 快速上手 #1 無視一切規則，AI 神級繪圖工具還給你全方位掌控權！](https://www.youtube.com/watch?v=bbuspQWHt9w)
+- [AI 繪圖的終極沙盒 ComfyUI 快速上手 #2 - LoRA 微調模型 & AI 影像畫質提升](https://www.youtube.com/watch?v=g3COb2joy1A)
+- [AI 繪圖的終極沙盒 ComfyUI 快速上手 #3 - ControlNet 精確構圖技巧](https://www.youtube.com/watch?v=rMlZ2Yaw3Ko)
 
 ## [Automatic1111](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
 是最早推出的圖形使用者介面之一，為使用者提供了直觀且功能豐富的操作平台。由於其開源性質和強大的社群支持，許多初學者和開發者選擇從 Automatic1111 入手，逐步熟悉 Stable Diffusion 的各項功能和應用。
