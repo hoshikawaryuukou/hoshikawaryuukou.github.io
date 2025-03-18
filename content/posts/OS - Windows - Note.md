@@ -1,9 +1,9 @@
 ---
-title: "Windows - Note"
+title: "OS - Windows - Note"
 date: 2024-03-29 21:11:00
 draft: false
 
-tags: ["Windows"]
+tags: ["OS", "Windows"]
 ---
 
 ## Disk
