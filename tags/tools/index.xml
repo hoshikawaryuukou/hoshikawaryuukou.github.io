@@ -1,10 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tools on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/tools/</link><description>Recent content in Tools on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sun, 27 Oct 2024 21:13:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/tools/index.xml" rel="self" type="application/rss+xml"/><item><title>Tools - ExifTool - Note</title><link>https://HoshikawaRyuukou.github.io/posts/tools---exiftool---note/</link><pubDate>Sun, 27 Oct 2024 21:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/tools---exiftool---note/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
-&lt;p>ExifTool 用來讀取、寫入、編輯各種檔案的 元數據（Metadata），特別是 照片、影片、音訊、PDF 等格式。&lt;/p>
-&lt;h2 id="memo">Memo&lt;/h2>
-&lt;h3 id="source-覆蓋-target">source 覆蓋 target&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>exiftool -overwrite_original -all&lt;span style="color:#f92672">=&lt;/span> target.png
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>exiftool -tagsFromFile source.png -all:all target.png
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Tools</title><link>https://HoshikawaRyuukou.github.io/posts/tools/</link><pubDate>Sun, 27 Oct 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/tools/</guid><description>&lt;h2 id="analyzer">Analyzer&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tools on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/tools/</link><description>Recent content in Tools on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sat, 01 Mar 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/tools/index.xml" rel="self" type="application/rss+xml"/><item><title>Tools</title><link>https://HoshikawaRyuukou.github.io/posts/tools/</link><pubDate>Sat, 01 Mar 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/tools/</guid><description>&lt;h2 id="analyzer">Analyzer&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://diskanalyzer.com/">WizTree - The Fastest Disk Space Analyzer&lt;/a>&lt;/li>
 &lt;/ul>
@@ -69,7 +63,7 @@
 &lt;/ul>
 &lt;h2 id="translation">Translation&lt;/h2>
 &lt;ul>
-&lt;li>&lt;a href="https://chromewebstore.google.com/detail/cdonnmffkdaoajfknoeeecmchibpmkmg?hl=zh-TW">Saladict 沙拉查词&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://chromewebstore.google.com/detail/%E6%B2%99%E6%8B%89%E7%BF%BB%E8%AD%AF%EF%BC%9A%E8%81%9A%E5%90%88%E5%AD%97%E5%85%B8%20%E3%80%81%E5%8A%83%E8%A9%9E%E7%BF%BB%E8%AD%AF%20%26%20%E6%9F%A5%E8%A9%9E/kmmcnncdadfmbjkoloakclhfllocaeap">沙拉翻譯：聚合字典 、劃詞翻譯 &amp;amp; 查詞 - Chrome 線上應用程式商店&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/dmMaze/BallonsTranslator">dmMaze/BallonsTranslator&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="search">Search&lt;/h2>
@@ -79,4 +73,10 @@
 &lt;h2 id="site">Site&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://www.youtube.com/watch?v=NrpnYQDQ5s4">史上最簡單「一頁式網站」建置工具！ | Google Sites 協作平台快速上手&lt;/a>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;/ul></description></item><item><title>Tools - ExifTool - Note</title><link>https://HoshikawaRyuukou.github.io/posts/tools---exiftool---note/</link><pubDate>Sun, 27 Oct 2024 21:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/tools---exiftool---note/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>ExifTool 用來讀取、寫入、編輯各種檔案的 元數據（Metadata），特別是 照片、影片、音訊、PDF 等格式。&lt;/p>
+&lt;h2 id="memo">Memo&lt;/h2>
+&lt;h3 id="source-覆蓋-target">source 覆蓋 target&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>exiftool -overwrite_original -all&lt;span style="color:#f92672">=&lt;/span> target.png
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>exiftool -tagsFromFile source.png -all:all target.png
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>

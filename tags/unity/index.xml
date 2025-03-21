@@ -205,6 +205,51 @@ Scope(s):
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/michael811125/OxGFrame">michael811125/OxGFrame&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/gmhevinci/UniFramework">gmhevinci/UniFramework&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Unity - Environment</title><link>https://HoshikawaRyuukou.github.io/posts/unity---environment/</link><pubDate>Mon, 03 Mar 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---environment/</guid><description>&lt;blockquote>
+&lt;p>⚠️ 以下使用 unity 6&lt;/p>&lt;/blockquote>
+&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://ithelp.ithome.com.tw/articles/10346751">Day10 / Unity 跟上時代！如何設定 Visual Studio Code 編輯器環境 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="vscode">VSCode&lt;/h2>
+&lt;h3 id="extensions">Extensions&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://marketplace.visualstudio.com/items?itemName=visualstudiotoolsforunity.vstuc">Extension - Unity&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="net-sdk">.NET SDK&lt;/h3>
+&lt;ul>
+&lt;li>安裝 &lt;a href="https://dotnet.microsoft.com/en-us/download">.NET Core&lt;/a>
+&lt;ul>
+&lt;li>Mac M 系列 ( M1 M2 ) ➔ .NET SDK Arm64 版本&lt;/li>
+&lt;li>Mac 其餘型號 ➔ .NET SDK x64 版本&lt;/li>
+&lt;li>Windows ➔ .NET SDK x64 版本&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>重新開機使環境變數被應用&lt;/li>
+&lt;/ul>
+&lt;h3 id="unity-package-manager">Unity Package Manager&lt;/h3>
+&lt;ul>
+&lt;li>移除 Visual Studio Code Editor 已經停止維護 (比較舊的版本可能要裝)&lt;/li>
+&lt;li>安裝 Visual Studio Editor&lt;/li>
+&lt;/ul>
+&lt;h3 id="preferences">Preferences&lt;/h3>
+&lt;ul>
+&lt;li>Edit &amp;gt; Preferences &amp;gt; External Tools
+&lt;ul>
+&lt;li>External Script Editor &amp;gt; Visual Studio Code&lt;/li>
+&lt;li>Generate .csproj files for
+&lt;ul>
+&lt;li>Embedded packages&lt;/li>
+&lt;li>Local packages&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="common">Common&lt;/h2>
+&lt;h3 id="preferences-1">Preferences&lt;/h3>
+&lt;ul>
+&lt;li>Edit &amp;gt; Preferences &amp;gt; General &amp;gt; Script Changes While Playing (Stop Playing and Recompile)&lt;/li>
 &lt;/ul></description></item><item><title>Unity - Performance - Render - Overdraw</title><link>https://HoshikawaRyuukou.github.io/posts/unity---performance---render---overdraw/</link><pubDate>Wed, 05 Feb 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---performance---render---overdraw/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>Overdraw 就是 &lt;strong>「同一個像素點被繪製多次」&lt;/strong>，當 Unity 把一個畫面繪製出來時，所有 Sprite 都是 &lt;strong>從後到前（Back to Front）&lt;/strong> 疊加上去。如果某個像素被重複繪製了很多次，GPU 的工作量就會變大，導致 &lt;strong>效能下降&lt;/strong>。&lt;/p>
 &lt;h2 id="cases">Cases&lt;/h2>
@@ -595,51 +640,6 @@ Scope(s):
 &lt;ul>
 &lt;li>&lt;a href="https://docs.unity.com/ugs/en-us/manual/cloud-diagnostics/manual/Privacy/apple-privacy">Apple&amp;rsquo;s privacy survey&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.unity.com/ugs/en-us/manual/cloud-diagnostics/manual/Privacy/GoogleDataSafety">Google Play data safety disclosures for Cloud Diagnostics&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Unity - Environment</title><link>https://HoshikawaRyuukou.github.io/posts/unity---environment/</link><pubDate>Tue, 16 Jan 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---environment/</guid><description>&lt;blockquote>
-&lt;p>⚠️ 以下使用 unity 6&lt;/p>&lt;/blockquote>
-&lt;h2 id="guide">Guide&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://ithelp.ithome.com.tw/articles/10346751">Day10 / Unity 跟上時代！如何設定 Visual Studio Code 編輯器環境 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="vscode">VSCode&lt;/h2>
-&lt;h3 id="extensions">Extensions&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="">Extension - Unity&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h3 id="net-sdk">.NET SDK&lt;/h3>
-&lt;ul>
-&lt;li>安裝 &lt;a href="https://dotnet.microsoft.com/en-us/download">.NET Core&lt;/a>
-&lt;ul>
-&lt;li>Mac M 系列 ( M1 M2 ) ➔ .NET SDK Arm64 版本&lt;/li>
-&lt;li>Mac 其餘型號 ➔ .NET SDK x64 版本&lt;/li>
-&lt;li>Windows ➔ .NET SDK x64 版本&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>重新開機使環境變數被應用&lt;/li>
-&lt;/ul>
-&lt;h3 id="unity-package-manager">Unity Package Manager&lt;/h3>
-&lt;ul>
-&lt;li>移除 Visual Studio Code Editor 已經停止維護 (比較舊的版本可能要裝)&lt;/li>
-&lt;li>安裝 Visual Studio Editor&lt;/li>
-&lt;/ul>
-&lt;h3 id="preferences">Preferences&lt;/h3>
-&lt;ul>
-&lt;li>Edit &amp;gt; Preferences &amp;gt; External Tools
-&lt;ul>
-&lt;li>External Script Editor &amp;gt; Visual Studio Code&lt;/li>
-&lt;li>Generate .csproj files for
-&lt;ul>
-&lt;li>Embedded packages&lt;/li>
-&lt;li>Local packages&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="common">Common&lt;/h2>
-&lt;h3 id="preferences-1">Preferences&lt;/h3>
-&lt;ul>
-&lt;li>Edit &amp;gt; Preferences &amp;gt; General &amp;gt; Script Changes While Playing (Stop Playing and Recompile)&lt;/li>
 &lt;/ul></description></item><item><title>Unity - Package Manager - Modify a package</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---modify-a-package/</link><pubDate>Fri, 12 Jan 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---modify-a-package/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>有需要客製化 Unity 官方 / git 直接導入 的 Package 時&lt;/p>
 &lt;h2 id="guide">Guide&lt;/h2>

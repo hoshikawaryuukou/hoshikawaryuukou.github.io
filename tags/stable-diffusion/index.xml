@@ -162,6 +162,7 @@
 &lt;ul>
 &lt;li>&lt;a href="https://blog.256pages.com/sdxl-prompts-advanced-guide-1/">SDXL Prompts 進階指南 (1) - 鏡頭視角距離&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://blog.256pages.com/stable-diffusion-prompt-distance/">Stable Diffusion 用 prompt 控制鏡頭距離及角度&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://civitai.com/articles/8804/illustrious-xl-noobai-xl-hairstyles">Illustrious XL / NoobAI XL Hairstyles&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="gallery">Gallery&lt;/h2>
 &lt;ul>
@@ -177,16 +178,20 @@
 &lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=sakamoto_masaru">Sakamoto Masaru | Danbooru&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=fight_yoghurt">Fight Yoghurt | Danbooru&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=reia_76">Reia 76 | Danbooru&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://danbooru.donmai.us/posts?page=1&amp;amp;tags=kagto_%28alterna%29">Kagto (Alterna) | Danbooru&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://gelbooru.com/index.php?page=post&amp;amp;s=list&amp;amp;tags=mo_%28kireinamo%29">mo (kireinamo) | Gelbooru&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://danbooru.donmai.us/posts?page=4&amp;amp;tags=happoubi_jin">Happoubi Jin | Danbooru&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://danbooru.donmai.us/posts?page=3&amp;amp;tags=ohisashiburi">Ohisashiburi | Danbooru&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=shirotaka_%285choume%29">Shirotaka (5Choume) | Danbooru&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=rokuwata_tomoe">Rokuwata Tomoe | Danbooru&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=fight_yoghurt">Fight Yoghurt | Danbooru&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=hidis0086">Hidis0086 | Danbooru&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://danbooru.donmai.us/posts?page=2&amp;amp;tags=ulrich_%28tagaragakuin%29">Ulrich (Tagaragakuin) | Danbooru&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=haimura_kiyotaka">Haimura Kiyotaka | Danbooru&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;hr>
 &lt;h2 id="sample">Sample&lt;/h2>
-&lt;p>以動漫系為例&lt;/p>
-&lt;h3 id="positive-prompt">Positive Prompt&lt;/h3>
-&lt;pre tabindex="0">&lt;code>highres, hires, best quality, masterpiece,
-2d, 
-anime coloring, 
-&lt;/code>&lt;/pre>&lt;h3 id="negative-prompt">Negative Prompt&lt;/h3>
-&lt;pre tabindex="0">&lt;code>&lt;/code>&lt;/pre></description></item><item><title>AI - Stable diffusion - CheckPoints</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---checkpoints/</link><pubDate>Tue, 04 Feb 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---checkpoints/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>以動漫系為例&lt;/p></description></item><item><title>AI - Stable diffusion - CheckPoints</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---checkpoints/</link><pubDate>Tue, 04 Feb 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---checkpoints/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;ul>
 &lt;li>⚠️ 以下主題專注於二次元/動漫風格圖像生成&lt;/li>
 &lt;/ul>

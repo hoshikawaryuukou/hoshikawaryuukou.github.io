@@ -12,7 +12,7 @@
  &lt;td>Shift + Command + .&lt;/td>
  &lt;/tr>
  &lt;/tbody>
-&lt;/table></description></item><item><title>Unity - Environment</title><link>https://HoshikawaRyuukou.github.io/posts/unity---environment/</link><pubDate>Tue, 16 Jan 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---environment/</guid><description>&lt;blockquote>
+&lt;/table></description></item><item><title>Unity - Environment</title><link>https://HoshikawaRyuukou.github.io/posts/unity---environment/</link><pubDate>Mon, 03 Mar 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---environment/</guid><description>&lt;blockquote>
 &lt;p>⚠️ 以下使用 unity 6&lt;/p>&lt;/blockquote>
 &lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
@@ -21,7 +21,7 @@
 &lt;h2 id="vscode">VSCode&lt;/h2>
 &lt;h3 id="extensions">Extensions&lt;/h3>
 &lt;ul>
-&lt;li>&lt;a href="">Extension - Unity&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://marketplace.visualstudio.com/items?itemName=visualstudiotoolsforunity.vstuc">Extension - Unity&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h3 id="net-sdk">.NET SDK&lt;/h3>
 &lt;ul>

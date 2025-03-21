@@ -384,6 +384,126 @@ Scope(s):
 &lt;h2 id="translation">Translation&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://mangaday.ai/translation">Fast manga translator &amp;amp; Translations in Multiple Languages&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Unity - Environment</title><link>https://HoshikawaRyuukou.github.io/posts/unity---environment/</link><pubDate>Mon, 03 Mar 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---environment/</guid><description>&lt;blockquote>
+&lt;p>⚠️ 以下使用 unity 6&lt;/p>&lt;/blockquote>
+&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://ithelp.ithome.com.tw/articles/10346751">Day10 / Unity 跟上時代！如何設定 Visual Studio Code 編輯器環境 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="vscode">VSCode&lt;/h2>
+&lt;h3 id="extensions">Extensions&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://marketplace.visualstudio.com/items?itemName=visualstudiotoolsforunity.vstuc">Extension - Unity&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="net-sdk">.NET SDK&lt;/h3>
+&lt;ul>
+&lt;li>安裝 &lt;a href="https://dotnet.microsoft.com/en-us/download">.NET Core&lt;/a>
+&lt;ul>
+&lt;li>Mac M 系列 ( M1 M2 ) ➔ .NET SDK Arm64 版本&lt;/li>
+&lt;li>Mac 其餘型號 ➔ .NET SDK x64 版本&lt;/li>
+&lt;li>Windows ➔ .NET SDK x64 版本&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>重新開機使環境變數被應用&lt;/li>
+&lt;/ul>
+&lt;h3 id="unity-package-manager">Unity Package Manager&lt;/h3>
+&lt;ul>
+&lt;li>移除 Visual Studio Code Editor 已經停止維護 (比較舊的版本可能要裝)&lt;/li>
+&lt;li>安裝 Visual Studio Editor&lt;/li>
+&lt;/ul>
+&lt;h3 id="preferences">Preferences&lt;/h3>
+&lt;ul>
+&lt;li>Edit &amp;gt; Preferences &amp;gt; External Tools
+&lt;ul>
+&lt;li>External Script Editor &amp;gt; Visual Studio Code&lt;/li>
+&lt;li>Generate .csproj files for
+&lt;ul>
+&lt;li>Embedded packages&lt;/li>
+&lt;li>Local packages&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="common">Common&lt;/h2>
+&lt;h3 id="preferences-1">Preferences&lt;/h3>
+&lt;ul>
+&lt;li>Edit &amp;gt; Preferences &amp;gt; General &amp;gt; Script Changes While Playing (Stop Playing and Recompile)&lt;/li>
+&lt;/ul></description></item><item><title>Tools</title><link>https://HoshikawaRyuukou.github.io/posts/tools/</link><pubDate>Sat, 01 Mar 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/tools/</guid><description>&lt;h2 id="analyzer">Analyzer&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://diskanalyzer.com/">WizTree - The Fastest Disk Space Analyzer&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="antivirus">Antivirus&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.defenderui.com/">DefenderUI&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="automation">Automation&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/taojy123/KeymouseGo?tab=readme-ov-file">taojy123/KeymouseGo&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="batch">Batch&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://chromewebstore.google.com/detail/save-all-resources/abpdnfjocnmdomablahdcfnoggeeiedb">Save All Resources&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="context">Context&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/BluePointLilac/ContextMenuManager">BluePointLilac/ContextMenuManager&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="diagram">Diagram&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=CU0ZhMoXz7k">只會用 Office 畫流程圖？許多人試用過這個後直呼回不去了 👍 | Draw.io 教學&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://postspark.app/">postspark&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="document">Document&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://hackmd.io/zh">HackMD：協作 Markdown 文件，分享知識的平台&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="media---image">Media - Image&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://yeoji.github.io/spritesheet-cutter/">Spritesheet Cutter&lt;/a>&lt;/li>
+&lt;li>&lt;a href="free-tex-packer.com/">texture packer&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://witnessmonolith.itch.io/atlased">Atlased&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="media---speech">Media - Speech&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/jianchang512/stt">jianchang512/stt&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="media---video">Media - Video&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=ERee4DY2LQ8">如何安裝FFmpeg&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.screentogif.com/">ScreenToGif&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://videodler.com/zh-Hant/">Twitter 影片下載器&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.videolan.org/vlc/index.zh_TW.html">VLC media player&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/Tyrrrz/YoutubeDownloader">Tyrrrz/YoutubeDownloader&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/mifi/lossless-cut">mifi/lossless-cut&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.capcut.com/zh-tw/">CapCut&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="message">Message&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://emojipedia.org/">Emojipedia&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="network">Network&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/rejetto/hfs">rejetto/hfs&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/terreng/simple-web-server">terreng/simple-web-server&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/emanuele-f/PCAPdroid">emanuele-f/PCAPdroid&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="package-manager">Package Manager&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/marticliment/UniGetUI">marticliment/UniGetUI&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="translation">Translation&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://chromewebstore.google.com/detail/%E6%B2%99%E6%8B%89%E7%BF%BB%E8%AD%AF%EF%BC%9A%E8%81%9A%E5%90%88%E5%AD%97%E5%85%B8%20%E3%80%81%E5%8A%83%E8%A9%9E%E7%BF%BB%E8%AD%AF%20%26%20%E6%9F%A5%E8%A9%9E/kmmcnncdadfmbjkoloakclhfllocaeap">沙拉翻譯：聚合字典 、劃詞翻譯 &amp;amp; 查詞 - Chrome 線上應用程式商店&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/dmMaze/BallonsTranslator">dmMaze/BallonsTranslator&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="search">Search&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://felo.ai/zh-Hant/search">Felo - 您的免費 AI 搜尋引擎&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="site">Site&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=NrpnYQDQ5s4">史上最簡單「一頁式網站」建置工具！ | Google Sites 協作平台快速上手&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>AI - Stable diffusion - Quick Start</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---quick-start/</link><pubDate>Mon, 17 Feb 2025 20:40:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---quick-start/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;ul>
 &lt;li>⚠️ 這是一篇新手導向的筆記，目的不在於精準解釋。&lt;/li>
@@ -645,6 +765,7 @@ Scope(s):
 &lt;ul>
 &lt;li>&lt;a href="https://blog.256pages.com/sdxl-prompts-advanced-guide-1/">SDXL Prompts 進階指南 (1) - 鏡頭視角距離&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://blog.256pages.com/stable-diffusion-prompt-distance/">Stable Diffusion 用 prompt 控制鏡頭距離及角度&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://civitai.com/articles/8804/illustrious-xl-noobai-xl-hairstyles">Illustrious XL / NoobAI XL Hairstyles&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="gallery">Gallery&lt;/h2>
 &lt;ul>
@@ -660,16 +781,20 @@ Scope(s):
 &lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=sakamoto_masaru">Sakamoto Masaru | Danbooru&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=fight_yoghurt">Fight Yoghurt | Danbooru&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=reia_76">Reia 76 | Danbooru&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://danbooru.donmai.us/posts?page=1&amp;amp;tags=kagto_%28alterna%29">Kagto (Alterna) | Danbooru&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://gelbooru.com/index.php?page=post&amp;amp;s=list&amp;amp;tags=mo_%28kireinamo%29">mo (kireinamo) | Gelbooru&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://danbooru.donmai.us/posts?page=4&amp;amp;tags=happoubi_jin">Happoubi Jin | Danbooru&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://danbooru.donmai.us/posts?page=3&amp;amp;tags=ohisashiburi">Ohisashiburi | Danbooru&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=shirotaka_%285choume%29">Shirotaka (5Choume) | Danbooru&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=rokuwata_tomoe">Rokuwata Tomoe | Danbooru&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=fight_yoghurt">Fight Yoghurt | Danbooru&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=hidis0086">Hidis0086 | Danbooru&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://danbooru.donmai.us/posts?page=2&amp;amp;tags=ulrich_%28tagaragakuin%29">Ulrich (Tagaragakuin) | Danbooru&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=haimura_kiyotaka">Haimura Kiyotaka | Danbooru&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;hr>
 &lt;h2 id="sample">Sample&lt;/h2>
-&lt;p>以動漫系為例&lt;/p>
-&lt;h3 id="positive-prompt">Positive Prompt&lt;/h3>
-&lt;pre tabindex="0">&lt;code>highres, hires, best quality, masterpiece,
-2d, 
-anime coloring, 
-&lt;/code>&lt;/pre>&lt;h3 id="negative-prompt">Negative Prompt&lt;/h3>
-&lt;pre tabindex="0">&lt;code>&lt;/code>&lt;/pre></description></item><item><title>AI - Stable diffusion - CheckPoints</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---checkpoints/</link><pubDate>Tue, 04 Feb 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---checkpoints/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>以動漫系為例&lt;/p></description></item><item><title>AI - Stable diffusion - CheckPoints</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---checkpoints/</link><pubDate>Tue, 04 Feb 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---checkpoints/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;ul>
 &lt;li>⚠️ 以下主題專注於二次元/動漫風格圖像生成&lt;/li>
 &lt;/ul>
@@ -1734,82 +1859,7 @@ CHANGELOG*.md
 &lt;h3 id="source-覆蓋-target">source 覆蓋 target&lt;/h3>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>exiftool -overwrite_original -all&lt;span style="color:#f92672">=&lt;/span> target.png
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>exiftool -tagsFromFile source.png -all:all target.png
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Tools</title><link>https://HoshikawaRyuukou.github.io/posts/tools/</link><pubDate>Sun, 27 Oct 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/tools/</guid><description>&lt;h2 id="analyzer">Analyzer&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://diskanalyzer.com/">WizTree - The Fastest Disk Space Analyzer&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="antivirus">Antivirus&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://www.defenderui.com/">DefenderUI&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="automation">Automation&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/taojy123/KeymouseGo?tab=readme-ov-file">taojy123/KeymouseGo&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="batch">Batch&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://chromewebstore.google.com/detail/save-all-resources/abpdnfjocnmdomablahdcfnoggeeiedb">Save All Resources&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="context">Context&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/BluePointLilac/ContextMenuManager">BluePointLilac/ContextMenuManager&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="diagram">Diagram&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=CU0ZhMoXz7k">只會用 Office 畫流程圖？許多人試用過這個後直呼回不去了 👍 | Draw.io 教學&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://postspark.app/">postspark&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="document">Document&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://hackmd.io/zh">HackMD：協作 Markdown 文件，分享知識的平台&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="media---image">Media - Image&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://yeoji.github.io/spritesheet-cutter/">Spritesheet Cutter&lt;/a>&lt;/li>
-&lt;li>&lt;a href="free-tex-packer.com/">texture packer&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://witnessmonolith.itch.io/atlased">Atlased&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="media---speech">Media - Speech&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/jianchang512/stt">jianchang512/stt&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="media---video">Media - Video&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=ERee4DY2LQ8">如何安裝FFmpeg&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.screentogif.com/">ScreenToGif&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://videodler.com/zh-Hant/">Twitter 影片下載器&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.videolan.org/vlc/index.zh_TW.html">VLC media player&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/Tyrrrz/YoutubeDownloader">Tyrrrz/YoutubeDownloader&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/mifi/lossless-cut">mifi/lossless-cut&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.capcut.com/zh-tw/">CapCut&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="message">Message&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://emojipedia.org/">Emojipedia&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="network">Network&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/rejetto/hfs">rejetto/hfs&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/terreng/simple-web-server">terreng/simple-web-server&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/emanuele-f/PCAPdroid">emanuele-f/PCAPdroid&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="package-manager">Package Manager&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/marticliment/UniGetUI">marticliment/UniGetUI&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="translation">Translation&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://chromewebstore.google.com/detail/cdonnmffkdaoajfknoeeecmchibpmkmg?hl=zh-TW">Saladict 沙拉查词&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/dmMaze/BallonsTranslator">dmMaze/BallonsTranslator&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="search">Search&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://felo.ai/zh-Hant/search">Felo - 您的免費 AI 搜尋引擎&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="site">Site&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=NrpnYQDQ5s4">史上最簡單「一頁式網站」建置工具！ | Google Sites 協作平台快速上手&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Game Design - System</title><link>https://HoshikawaRyuukou.github.io/posts/game-design---system/</link><pubDate>Fri, 25 Oct 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/game-design---system/</guid><description>&lt;h2 id="戰鬥">戰鬥&lt;/h2>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Game Design - System</title><link>https://HoshikawaRyuukou.github.io/posts/game-design---system/</link><pubDate>Fri, 25 Oct 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/game-design---system/</guid><description>&lt;h2 id="戰鬥">戰鬥&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://wudaijun.com/2017/09/ngs-battle/#valine-comments">探讨服务端回合制战斗系统&lt;/a>&lt;/li>
 &lt;/ul>
@@ -3943,51 +3993,6 @@ CHANGELOG*.md
 &lt;ul>
 &lt;li>&lt;a href="https://docs.unity.com/ugs/en-us/manual/cloud-diagnostics/manual/Privacy/apple-privacy">Apple&amp;rsquo;s privacy survey&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.unity.com/ugs/en-us/manual/cloud-diagnostics/manual/Privacy/GoogleDataSafety">Google Play data safety disclosures for Cloud Diagnostics&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Unity - Environment</title><link>https://HoshikawaRyuukou.github.io/posts/unity---environment/</link><pubDate>Tue, 16 Jan 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---environment/</guid><description>&lt;blockquote>
-&lt;p>⚠️ 以下使用 unity 6&lt;/p>&lt;/blockquote>
-&lt;h2 id="guide">Guide&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://ithelp.ithome.com.tw/articles/10346751">Day10 / Unity 跟上時代！如何設定 Visual Studio Code 編輯器環境 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="vscode">VSCode&lt;/h2>
-&lt;h3 id="extensions">Extensions&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="">Extension - Unity&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h3 id="net-sdk">.NET SDK&lt;/h3>
-&lt;ul>
-&lt;li>安裝 &lt;a href="https://dotnet.microsoft.com/en-us/download">.NET Core&lt;/a>
-&lt;ul>
-&lt;li>Mac M 系列 ( M1 M2 ) ➔ .NET SDK Arm64 版本&lt;/li>
-&lt;li>Mac 其餘型號 ➔ .NET SDK x64 版本&lt;/li>
-&lt;li>Windows ➔ .NET SDK x64 版本&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>重新開機使環境變數被應用&lt;/li>
-&lt;/ul>
-&lt;h3 id="unity-package-manager">Unity Package Manager&lt;/h3>
-&lt;ul>
-&lt;li>移除 Visual Studio Code Editor 已經停止維護 (比較舊的版本可能要裝)&lt;/li>
-&lt;li>安裝 Visual Studio Editor&lt;/li>
-&lt;/ul>
-&lt;h3 id="preferences">Preferences&lt;/h3>
-&lt;ul>
-&lt;li>Edit &amp;gt; Preferences &amp;gt; External Tools
-&lt;ul>
-&lt;li>External Script Editor &amp;gt; Visual Studio Code&lt;/li>
-&lt;li>Generate .csproj files for
-&lt;ul>
-&lt;li>Embedded packages&lt;/li>
-&lt;li>Local packages&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="common">Common&lt;/h2>
-&lt;h3 id="preferences-1">Preferences&lt;/h3>
-&lt;ul>
-&lt;li>Edit &amp;gt; Preferences &amp;gt; General &amp;gt; Script Changes While Playing (Stop Playing and Recompile)&lt;/li>
 &lt;/ul></description></item><item><title>Unity - Package Manager - Modify a package</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---modify-a-package/</link><pubDate>Fri, 12 Jan 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---modify-a-package/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>有需要客製化 Unity 官方 / git 直接導入 的 Package 時&lt;/p>
 &lt;h2 id="guide">Guide&lt;/h2>
