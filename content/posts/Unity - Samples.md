@@ -11,3 +11,4 @@ tags: ["Unity"]
 
 ## Reversi
 - [Unity設計練習 - リバーシ](https://zenn.dev/qemel/articles/f1829f9b847bcb)
+- [qemel/gpp-reversi](https://github.com/qemel/gpp-reversi/tree/main)
