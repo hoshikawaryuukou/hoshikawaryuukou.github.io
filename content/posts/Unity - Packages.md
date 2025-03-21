@@ -1,6 +1,6 @@
 ---
 title: "Unity - Packages"
-date: 2024-04-13 21:11:00
+date: 2025-03-19 21:11:00
 draft: false
 
 tags: ["Unity"]
@@ -59,6 +59,9 @@ Scope(s):
 - [Newtonsoft.Json](https://github.com/jilleJr/Newtonsoft.Json-for-Unity/wiki/Install-official-via-UPM)
   - git - com.unity.nuget.newtonsoft-json
 
+## Language
+- [phanphantz/ThaiTextCare-for-Unity](https://github.com/phanphantz/ThaiTextCare-for-Unity)
+
 ## Localization
 - [Lean Localization](https://assetstore.unity.com/packages/tools/localization/lean-localization-28504)
 
@@ -94,3 +97,8 @@ Scope(s):
 
 ## Web
 - [psygames/UnityWebSocket](https://github.com/psygames/UnityWebSocket)
+- [gree/unity-webview](https://github.com/gree/unity-webview)
+<!-- 
+- [t-34400/SimpleUnity3DWebView](https://github.com/t-34400/SimpleUnity3DWebView) 
+- [TLabAltoh/TLabWebView](https://github.com/TLabAltoh/TLabWebView)
+-->

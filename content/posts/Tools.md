@@ -31,6 +31,7 @@ tags: ["Tools"]
 ## Media - Image
 - [Spritesheet Cutter](https://yeoji.github.io/spritesheet-cutter/)
 - [texture packer](free-tex-packer.com/)
+- [Atlased](https://witnessmonolith.itch.io/atlased)
 
 ## Media - Speech
 - [jianchang512/stt](https://github.com/jianchang512/stt)

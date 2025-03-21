@@ -16,6 +16,7 @@ tags: ["AI", "Stable diffusion", "Art"]
 
 ## Prompts
 - [SDXL Prompts 進階指南 (1) - 鏡頭視角距離](https://blog.256pages.com/sdxl-prompts-advanced-guide-1/)
+- [Stable Diffusion 用 prompt 控制鏡頭距離及角度](https://blog.256pages.com/stable-diffusion-prompt-distance/)
 
 ## Gallery
 - [PixAI.Art](https://pixai.art/)
