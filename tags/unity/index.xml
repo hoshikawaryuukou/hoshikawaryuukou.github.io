@@ -1,4 +1,211 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Unity on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/unity/</link><description>Recent content in Unity on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Wed, 05 Feb 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/unity/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Performance - Render - Overdraw</title><link>https://HoshikawaRyuukou.github.io/posts/unity---performance---render---overdraw/</link><pubDate>Wed, 05 Feb 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---performance---render---overdraw/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Unity on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/unity/</link><description>Recent content in Unity on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Wed, 19 Mar 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/unity/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Packages</title><link>https://HoshikawaRyuukou.github.io/posts/unity---packages/</link><pubDate>Wed, 19 Mar 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---packages/</guid><description>&lt;h2 id="package-manager">Package Manager&lt;/h2>
+&lt;h3 id="installing-packages-using-upm">Installing Packages using UPM&lt;/h3>
+&lt;ol>
+&lt;li>Package manager -&amp;gt; Advanced project settings&lt;/li>
+&lt;li>Add Scoped Registries&lt;/li>
+&lt;/ol>
+&lt;pre tabindex="0">&lt;code>Name: package.openupm.com
+URL: https://package.openupm.com
+Scope(s): 
+ com.cysharp.unitask
+&lt;/code>&lt;/pre>&lt;ol start="3">
+&lt;li>Package manager -&amp;gt; Packages: My Registries -&amp;gt; Install&lt;/li>
+&lt;/ol>
+&lt;h3 id="guide">Guide&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/139090680">Unity中 .asmdef文件的作用&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/146565975">使用OpenUPM发布自己的Unity项目&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.jianshu.com/p/153841d65846">开发Unity PackageManager 插件包&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://neogeek.dev/creating-custom-packages-for-unity-2018.3/">Creating Custom Packages for Unity 2018.3&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://gametorrahod.com/how-to-asmdef-upm/?fbclid=IwAR31P12StjzcTi9IO1vDvwWJIwaKHxIEmUQLic6K1LGElmwv6OFRqe8sVig">How to remodel your project for asmdef and UPM&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://annulusgames-lab.blogspot.com/2023/01/unity-package-manager.html">【Unity】Package Manager活用術&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="package-collection">Package Collection&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/killop/anything_about_game/tree/b5c3b2e573d0970b318fd75b1449dbd9fdaa0ee9">killop/anything_about_game&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/baba-s/awesome-unity-open-source-on-github/tree/master?tab=readme-ov-file">baba-s/awesome-unity-open-source-on-github&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="animation">Animation&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/AnnulusGames/LitMotion">AnnulusGames/LitMotion&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="async">Async&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/Cysharp/UniTask">Cysharp/UniTask&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="debug">Debug&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/yasirkula/UnityIngameDebugConsole">yasirkula/UnityIngameDebugConsole&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="dependency-injection">Dependency Injection&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/hadashiA/VContainer">hadashiA/VContainer&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="dialogue">Dialogue&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/YarnSpinnerTool/YarnSpinner-Unity">YarnSpinnerTool/YarnSpinner-Unity&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="editor">Editor&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/AnnulusGames/Alchemy">AnnulusGames/Alchemy&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="hotfix">HotFix&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://hybridclr.doc.code-philosophy.com/">focus-creative-games/hybridclr&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="io">IO&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/Cysharp/ZString">Cysharp/ZString&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/jilleJr/Newtonsoft.Json-for-Unity/wiki/Install-official-via-UPM">Newtonsoft.Json&lt;/a>
+&lt;ul>
+&lt;li>git - com.unity.nuget.newtonsoft-json&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="language">Language&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/phanphantz/ThaiTextCare-for-Unity">phanphantz/ThaiTextCare-for-Unity&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="localization">Localization&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://assetstore.unity.com/packages/tools/localization/lean-localization-28504">Lean Localization&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="media">Media&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/yasirkula/UnityNativeCamera">yasirkula/UnityNativeCamera&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="messaging">Messaging&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/Cysharp/MessagePipe">Cysharp/MessagePipe&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="particle-effect">Particle Effect&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/mob-sakai/ParticleEffectForUGUI">mob-sakai/ParticleEffectForUGUI&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="persistence">Persistence&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/sabresaurus/PlayerPrefsEditor">sabresaurus/PlayerPrefsEditor&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="resource-management">Resource Management&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/tuyoogame/YooAsset">tuyoogame/YooAsset&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="rx-reactive-extensions">Rx (Reactive Extensions)&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/Cysharp/R3">Cysharp/R3&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="social">Social&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/yasirkula/UnityNativeShare">Unity Native Share Plugin&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="sprite">Sprite&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/elringus/sprite-dicing">elringus/sprite-dicing&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="state-machine">State Machine&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/Inspiaaa/UnityHFSM">Inspiaaa/UnityHFSM&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="ui">UI&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/qiankanglai/LoopScrollRect">qiankanglai/LoopScrollRect&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="web">Web&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/psygames/UnityWebSocket">psygames/UnityWebSocket&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/gree/unity-webview">gree/unity-webview&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Unity - Basic - Sprite and Atlas</title><link>https://HoshikawaRyuukou.github.io/posts/unity---basic---sprite-and-atlas/</link><pubDate>Tue, 18 Mar 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---basic---sprite-and-atlas/</guid><description>&lt;h2 id="sprite">Sprite&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://shibuya24.info/entry/unity-unit">【2Dゲームで必須】UnityのSprite（スプライト）の単位をわかりやすく解説&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://shibuya24.info/entry/unity-ui-texture-size">【間違えやすい】Unityの正しい画像サイズとは&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="spriteatlas">SpriteAtlas&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://shibuya24.info/entry/unity-spriteatlas">【Unity】SpriteをパックするSpriteAtlasの使い方&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>減少DrawCall&lt;/li>
+&lt;li>圖集將圖片打包為2的冪次方的素材大小，可以提升性能&lt;/li>
+&lt;li>減小包體大小&lt;/li>
+&lt;li>使用 AssetBundle 來打包時，&lt;strong>不要勾選&lt;/strong> Include In Build&lt;/li>
+&lt;/ul></description></item><item><title>Unity - Project Structure</title><link>https://HoshikawaRyuukou.github.io/posts/unity---project-structure/</link><pubDate>Tue, 18 Mar 2025 20:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---project-structure/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=o8HIGKObG1Q">Organizing Your Unity Project — Content vs Feature Folders&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://medium.com/@ikonija.bogojevic/organizing-project-folder-structure-function-based-vs-feature-based-168596b6d169">Organizing Project Folder Structure: Function-Based vs Feature-Based&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="content-based依內容分類">Content-Based（依內容分類）&lt;/h2>
+&lt;h3 id="特點">特點&lt;/h3>
+&lt;ul>
+&lt;li>以「資源類型」來劃分資料夾，例如腳本、材質、模型等。&lt;/li>
+&lt;/ul>
+&lt;h3 id="缺點">缺點&lt;/h3>
+&lt;ul>
+&lt;li>同一個功能可能分散在多個資料夾中。&lt;br>
+例如你想找「商店系統」的 prefab、script 和 UI，可能得在三、四個資料夾中翻找。&lt;/li>
+&lt;/ul>
+&lt;h3 id="範例">範例&lt;/h3>
+&lt;pre tabindex="0">&lt;code>Assets/
+├── Materials/
+├── Models/
+├── Textures/
+├── Scripts/
+├── Animations/
+├── Prefabs/
+├── Audio/
+&lt;/code>&lt;/pre>&lt;h2 id="feature-based依功能分類">Feature-Based（依功能分類）&lt;/h2>
+&lt;h3 id="特點-1">特點&lt;/h3>
+&lt;ul>
+&lt;li>以功能模組為單位集中管理相關資源。&lt;/li>
+&lt;li>適合模組化開發，有助於封裝、重用與搬移。&lt;/li>
+&lt;li>找特定功能時，所有相關資源都集中在一起，不需東找西找。&lt;/li>
+&lt;/ul>
+&lt;h3 id="缺點-1">缺點&lt;/h3>
+&lt;ul>
+&lt;li>相同類型的資源（例如所有動畫或音效）會分散各處，不利統一管理。&lt;br>
+（不過透過 Editor 的搜尋功能，其實影響不大。）&lt;/li>
+&lt;li>若模組間耦合度高，可能導致功能邊界模糊。&lt;/li>
+&lt;/ul>
+&lt;h3 id="範例-1">範例&lt;/h3>
+&lt;pre tabindex="0">&lt;code>Assets/
+├── Shop/
+│ ├── Scripts/
+│ ├── Prefabs/
+│ ├── UI/
+├── Player/
+│ ├── Scripts/
+│ ├── Animations/
+│ ├── Prefabs/
+├── Inventory/
+│ ├── Scripts/
+│ ├── UI/
+&lt;/code>&lt;/pre>&lt;h2 id="hybrid混合式">Hybrid（混合式）&lt;/h2>
+&lt;h3 id="特點-2">特點&lt;/h3>
+&lt;ul>
+&lt;li>以 Feature-Based 為主體。&lt;/li>
+&lt;li>共用資源集中放置於 Common 或 Shared 資料夾中，避免重複。&lt;/li>
+&lt;/ul>
+&lt;h3 id="範例-2">範例&lt;/h3>
+&lt;pre tabindex="0">&lt;code>Assets/
+├── Common/
+│ ├── Materials/
+│ ├── Fonts/
+│ ├── Audio/
+├── Player/
+│ ├── Scripts/
+│ ├── Prefabs/
+├── Shop/
+│ ├── Scripts/
+│ ├── UI/
+&lt;/code>&lt;/pre>&lt;h2 id="實踐建議">實踐建議&lt;/h2>
+&lt;ul>
+&lt;li>小型專案或原型（Prototype）建議先採用 Content-Based 結構，快速上手。&lt;/li>
+&lt;li>專案逐漸擴大後，可以逐步轉向 Feature-Based，以利管理與維護。&lt;/li>
+&lt;/ul></description></item><item><title>Unity - Frameworks</title><link>https://HoshikawaRyuukou.github.io/posts/unity---frameworks/</link><pubDate>Sun, 16 Mar 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---frameworks/</guid><description>&lt;h2 id="repository">Repository&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/michael811125/OxGFrame">michael811125/OxGFrame&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/gmhevinci/UniFramework">gmhevinci/UniFramework&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Unity - Performance - Render - Overdraw</title><link>https://HoshikawaRyuukou.github.io/posts/unity---performance---render---overdraw/</link><pubDate>Wed, 05 Feb 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---performance---render---overdraw/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>Overdraw 就是 &lt;strong>「同一個像素點被繪製多次」&lt;/strong>，當 Unity 把一個畫面繪製出來時，所有 Sprite 都是 &lt;strong>從後到前（Back to Front）&lt;/strong> 疊加上去。如果某個像素被重複繪製了很多次，GPU 的工作量就會變大，導致 &lt;strong>效能下降&lt;/strong>。&lt;/p>
 &lt;h2 id="cases">Cases&lt;/h2>
 &lt;h3 id="大量重疊的透明-sprite">大量重疊的透明 Sprite&lt;/h3>
@@ -206,118 +413,6 @@
 &lt;h2 id="reversi">Reversi&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://zenn.dev/qemel/articles/f1829f9b847bcb">Unity設計練習 - リバーシ&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Unity - Packages</title><link>https://HoshikawaRyuukou.github.io/posts/unity---packages/</link><pubDate>Sat, 13 Apr 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---packages/</guid><description>&lt;h2 id="package-manager">Package Manager&lt;/h2>
-&lt;h3 id="installing-packages-using-upm">Installing Packages using UPM&lt;/h3>
-&lt;ol>
-&lt;li>Package manager -&amp;gt; Advanced project settings&lt;/li>
-&lt;li>Add Scoped Registries&lt;/li>
-&lt;/ol>
-&lt;pre tabindex="0">&lt;code>Name: package.openupm.com
-URL: https://package.openupm.com
-Scope(s): 
- com.cysharp.unitask
-&lt;/code>&lt;/pre>&lt;ol start="3">
-&lt;li>Package manager -&amp;gt; Packages: My Registries -&amp;gt; Install&lt;/li>
-&lt;/ol>
-&lt;h3 id="guide">Guide&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/139090680">Unity中 .asmdef文件的作用&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/146565975">使用OpenUPM发布自己的Unity项目&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.jianshu.com/p/153841d65846">开发Unity PackageManager 插件包&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://neogeek.dev/creating-custom-packages-for-unity-2018.3/">Creating Custom Packages for Unity 2018.3&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://gametorrahod.com/how-to-asmdef-upm/?fbclid=IwAR31P12StjzcTi9IO1vDvwWJIwaKHxIEmUQLic6K1LGElmwv6OFRqe8sVig">How to remodel your project for asmdef and UPM&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://annulusgames-lab.blogspot.com/2023/01/unity-package-manager.html">【Unity】Package Manager活用術&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h2 id="package-collection">Package Collection&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/killop/anything_about_game/tree/b5c3b2e573d0970b318fd75b1449dbd9fdaa0ee9">killop/anything_about_game&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/baba-s/awesome-unity-open-source-on-github/tree/master?tab=readme-ov-file">baba-s/awesome-unity-open-source-on-github&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="animation">Animation&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/AnnulusGames/LitMotion">AnnulusGames/LitMotion&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="async">Async&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/Cysharp/UniTask">Cysharp/UniTask&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="debug">Debug&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/yasirkula/UnityIngameDebugConsole">yasirkula/UnityIngameDebugConsole&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="dependency-injection">Dependency Injection&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/hadashiA/VContainer">hadashiA/VContainer&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="dialogue">Dialogue&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/YarnSpinnerTool/YarnSpinner-Unity">YarnSpinnerTool/YarnSpinner-Unity&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="editor">Editor&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/AnnulusGames/Alchemy">AnnulusGames/Alchemy&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="hotfix">HotFix&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://hybridclr.doc.code-philosophy.com/">focus-creative-games/hybridclr&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="io">IO&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/Cysharp/ZString">Cysharp/ZString&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/jilleJr/Newtonsoft.Json-for-Unity/wiki/Install-official-via-UPM">Newtonsoft.Json&lt;/a>
-&lt;ul>
-&lt;li>git - com.unity.nuget.newtonsoft-json&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="localization">Localization&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://assetstore.unity.com/packages/tools/localization/lean-localization-28504">Lean Localization&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="media">Media&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/yasirkula/UnityNativeCamera">yasirkula/UnityNativeCamera&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="messaging">Messaging&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/Cysharp/MessagePipe">Cysharp/MessagePipe&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="particle-effect">Particle Effect&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/mob-sakai/ParticleEffectForUGUI">mob-sakai/ParticleEffectForUGUI&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="persistence">Persistence&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/sabresaurus/PlayerPrefsEditor">sabresaurus/PlayerPrefsEditor&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="resource-management">Resource Management&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/tuyoogame/YooAsset">tuyoogame/YooAsset&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="rx-reactive-extensions">Rx (Reactive Extensions)&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/Cysharp/R3">Cysharp/R3&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="social">Social&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/yasirkula/UnityNativeShare">Unity Native Share Plugin&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="sprite">Sprite&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/elringus/sprite-dicing">elringus/sprite-dicing&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="state-machine">State Machine&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/Inspiaaa/UnityHFSM">Inspiaaa/UnityHFSM&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="ui">UI&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/qiankanglai/LoopScrollRect">qiankanglai/LoopScrollRect&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="web">Web&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/psygames/UnityWebSocket">psygames/UnityWebSocket&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Unity - Package - UniTask</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package---unitask/</link><pubDate>Sat, 10 Feb 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package---unitask/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
 &lt;p>UniTask - Unity 中實現效能最好的 async/await 的函式庫&lt;/p>
 &lt;ul>
@@ -802,30 +897,6 @@ Scope(s):
 &lt;h2 id="misc">Misc&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/facebook/facebook-ios-sdk/issues/2128#issuecomment-1332276033">Library not loaded: @rpath/FBAEMKit.framework/FBAEMKit&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Unity - Basic - Sprite and Atlas</title><link>https://HoshikawaRyuukou.github.io/posts/unity---basic---sprite/</link><pubDate>Mon, 20 Feb 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---basic---sprite/</guid><description>&lt;h2 id="sprite">Sprite&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://shibuya24.info/entry/unity-unit">【2Dゲームで必須】UnityのSprite（スプライト）の単位をわかりやすく解説&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://shibuya24.info/entry/unity-ui-texture-size">【間違えやすい】Unityの正しい画像サイズとは&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="atlas">Atlas&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://shibuya24.info/entry/unity-spriteatlas">【Unity】SpriteをパックするSpriteAtlasの使い方&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h3 id="目的">目的&lt;/h3>
-&lt;ul>
-&lt;li>減少DrawCall&lt;/li>
-&lt;li>圖集將圖片打包為2的冪次方的素材大小，可以提升性能&lt;/li>
-&lt;li>減小包體大小&lt;/li>
-&lt;/ul>
-&lt;h3 id="注意">注意&lt;/h3>
-&lt;ul>
-&lt;li>Sprite Atlas V1 - Always Enabled 啟用圖集時
-&lt;ul>
-&lt;li>Edit Mode : reference the packed Textures&lt;/li>
-&lt;li>Play Mode : reference the original unpacked Textures&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>SpriteAtlas AssetBundle 來打包時，&lt;strong>不要勾選&lt;/strong> Include In Build&lt;/li>
 &lt;/ul></description></item><item><title>Unity - Basics</title><link>https://HoshikawaRyuukou.github.io/posts/unity---basics/</link><pubDate>Mon, 20 Feb 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---basics/</guid><description>&lt;h2 id="analysis">Analysis&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://sharpcoderblog.com/blog/unity-3d-how-to-use-profiler-to-optimize-your-code">Unity Optimize Your Game Using Profiler&lt;/a>&lt;/li>
