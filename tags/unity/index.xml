@@ -413,6 +413,7 @@ Scope(s):
 &lt;h2 id="reversi">Reversi&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://zenn.dev/qemel/articles/f1829f9b847bcb">Unity設計練習 - リバーシ&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/qemel/gpp-reversi/tree/main">qemel/gpp-reversi&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Unity - Package - UniTask</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package---unitask/</link><pubDate>Sat, 10 Feb 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package---unitask/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
 &lt;p>UniTask - Unity 中實現效能最好的 async/await 的函式庫&lt;/p>
 &lt;ul>

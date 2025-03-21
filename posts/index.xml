@@ -1264,6 +1264,7 @@ anime coloring,
 &lt;h2 id="reversi">Reversi&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://zenn.dev/qemel/articles/f1829f9b847bcb">Unity設計練習 - リバーシ&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/qemel/gpp-reversi/tree/main">qemel/gpp-reversi&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Front-End - State Management</title><link>https://HoshikawaRyuukou.github.io/posts/front-end---state-management/</link><pubDate>Tue, 31 Dec 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/front-end---state-management/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;blockquote>
 &lt;p>UI = f( state )&lt;/p>&lt;/blockquote>
