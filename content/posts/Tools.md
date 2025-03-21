@@ -1,6 +1,6 @@
 ---
 title: "Tools"
-date: 2024-10-27 21:11:00
+date: 2025-03-01 21:11:00
 draft: false
 
 tags: ["Tools"]
@@ -57,7 +57,7 @@ tags: ["Tools"]
 - [marticliment/UniGetUI](https://github.com/marticliment/UniGetUI)
 
 ## Translation
-- [Saladict 沙拉查词](https://chromewebstore.google.com/detail/cdonnmffkdaoajfknoeeecmchibpmkmg?hl=zh-TW)
+- [沙拉翻譯：聚合字典 、劃詞翻譯 & 查詞 - Chrome 線上應用程式商店](https://chromewebstore.google.com/detail/%E6%B2%99%E6%8B%89%E7%BF%BB%E8%AD%AF%EF%BC%9A%E8%81%9A%E5%90%88%E5%AD%97%E5%85%B8%20%E3%80%81%E5%8A%83%E8%A9%9E%E7%BF%BB%E8%AD%AF%20%26%20%E6%9F%A5%E8%A9%9E/kmmcnncdadfmbjkoloakclhfllocaeap)
 - [dmMaze/BallonsTranslator](https://github.com/dmMaze/BallonsTranslator)
 
 ## Search

@@ -1,6 +1,6 @@
 ---
 title: "Unity - Environment"
-date: 2024-01-16 21:11:00
+date: 2025-03-03 21:11:00
 draft: false
 
 tags: ["Unity", "Mac", "VScode"]
@@ -14,7 +14,7 @@ tags: ["Unity", "Mac", "VScode"]
 ## VSCode
 
 ### Extensions
-- [Extension - Unity]() 
+- [Extension - Unity](https://marketplace.visualstudio.com/items?itemName=visualstudiotoolsforunity.vstuc) 
 
 ### .NET SDK
 - 安裝 [.NET Core](https://dotnet.microsoft.com/en-us/download)
