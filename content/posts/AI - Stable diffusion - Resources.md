@@ -23,6 +23,7 @@ tags: ["AI", "Stable diffusion", "Art"]
 - [PixAI.Art](https://pixai.art/)
 - [AIBooru](https://aibooru.online/)
 - [Lizardon1025](https://civitai.com/user/Lizardon1025/images)
+- [pepegles](https://civitai.com/user/pepegles/images)
 
 ## Artists
 - [artist list](https://arca.live/b/aiart/73560719)
