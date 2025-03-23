@@ -82,7 +82,8 @@
 &lt;li>簡化的命令標誌&lt;/li>
 &lt;/ul>
 &lt;p>介面與 Automatic1111 高度相似，基本能無痛從 Automatic1111 轉移。&lt;/p>
-&lt;h2 id="comfyui">&lt;a href="https://github.com/comfyanonymous/ComfyUI">ComfyUI&lt;/a>&lt;/h2>
+&lt;pre tabindex="0">&lt;code>set COMMANDLINE_ARGS=--xformers --no-half-vae --medvram
+&lt;/code>&lt;/pre>&lt;h2 id="comfyui">&lt;a href="https://github.com/comfyanonymous/ComfyUI">ComfyUI&lt;/a>&lt;/h2>
 &lt;p>是一個開源的節點式圖形介面，允許使用者通過直觀的節點系統設計和執行複雜的工作流程。&lt;/p>
 &lt;p>
  &lt;img src="https://github.com/user-attachments/assets/7ccaf2c1-9b72-41ae-9a89-5688c94b7abe" alt="ComfyUI Screenshot">
@@ -191,8 +192,10 @@
 &lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=haimura_kiyotaka">Haimura Kiyotaka | Danbooru&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;hr>
-&lt;h2 id="sample">Sample&lt;/h2>
-&lt;p>以動漫系為例&lt;/p></description></item><item><title>AI - Stable diffusion - CheckPoints</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---checkpoints/</link><pubDate>Tue, 04 Feb 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---checkpoints/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=qtian">Qtian | Danbooru&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=zanya_000">Zanya 000 | Danbooru&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>AI - Stable diffusion - CheckPoints</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---checkpoints/</link><pubDate>Tue, 04 Feb 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---checkpoints/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;ul>
 &lt;li>⚠️ 以下主題專注於二次元/動漫風格圖像生成&lt;/li>
 &lt;/ul>
@@ -366,6 +369,11 @@
 &lt;h2 id="document">Document&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://www.youtube.com/watch?v=nl-eVo1EhEQ">新世代 AI 簡報神器 Gamma&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="mcp">MCP&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=RjOMs1AyW1w">Cursor+ MCP + Blender = 人人都能3D建模？&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=GEOxJFacPkM">AI直接操作电脑建模！MCP这个词今年一定要知道！【blender-mcp手把手安装教程】&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="translation">Translation&lt;/h2>
 &lt;ul>

@@ -1,4 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/posts/</link><description>Recent content in Posts on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 20 Mar 2025 13:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Life - Note</title><link>https://HoshikawaRyuukou.github.io/posts/life---note/</link><pubDate>Thu, 20 Mar 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/life---note/</guid><description>&lt;h2 id="sleep">Sleep&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/posts/</link><description>Recent content in Posts on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Fri, 21 Mar 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Economics - Events - Plaza Accord</title><link>https://HoshikawaRyuukou.github.io/posts/economics---events---plaza-accord/</link><pubDate>Fri, 21 Mar 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/economics---events---plaza-accord/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>廣場協議（Plaza Accord）短期內成功讓美元貶值，減緩美國貿易逆差問題，但對日本造成嚴重衝擊，間接導致日本的泡沫經濟與經濟停滯。&lt;/p>
+&lt;h2 id="背景">背景&lt;/h2>
+&lt;ul>
+&lt;li>美國為了抗通膨升息，外資湧入導致美元升值。&lt;/li>
+&lt;li>里根經濟學擴大財政赤字，外國購買美國國債進一步推高美元。&lt;/li>
+&lt;li>美國當時對日本和西德的貿易逆差特別嚴重。&lt;/li>
+&lt;/ul>
+&lt;h2 id="目的">目的&lt;/h2>
+&lt;ul>
+&lt;li>讓&lt;strong>美元貶值&lt;/strong>，降低美國貿易逆差，提高美國出口競爭力。&lt;/li>
+&lt;li>讓日圓、德國馬克升值，減少日本與西德的出口優勢，平衡國際貿易。&lt;/li>
+&lt;/ul>
+&lt;h2 id="操作">操作&lt;/h2>
+&lt;ul>
+&lt;li>1985年9月，美國、日本、西德、法國、英國（G5）在紐約廣場飯店簽訂Plaza Accord。&lt;/li>
+&lt;li>G5 協同干預外匯市場，透過拋售美元、購買日圓與德國馬克來改變匯率。&lt;/li>
+&lt;/ul>
+&lt;h2 id="後果">後果&lt;/h2>
+&lt;h3 id="美國">美國&lt;/h3>
+&lt;ul>
+&lt;li>出口競爭力回升。&lt;/li>
+&lt;/ul>
+&lt;h3 id="日本">日本&lt;/h3>
+&lt;ul>
+&lt;li>日圓升值 → 日本企業競爭力下降，出口受創。&lt;/li>
+&lt;li>日本央行採取低利率與寬鬆貨幣政策來刺激經濟，結果導致資產泡沫（房地產 &amp;amp; 股票暴漲）。&lt;/li>
+&lt;li>1990年代泡沫破裂，進入「失落的十年」。&lt;/li>
+&lt;/ul>
+&lt;h3 id="西德德國">西德（德國）&lt;/h3>
+&lt;ul>
+&lt;li>馬克升值，影響出口，但影響較日本小。&lt;/li>
+&lt;/ul>
+&lt;h3 id="全球">全球&lt;/h3>
+&lt;ul>
+&lt;li>G5後來在1987年簽訂 &lt;strong>「羅浮宮協議」&lt;/strong>（Louvre Accord）來穩定匯率。&lt;/li>
+&lt;/ul></description></item><item><title>Life - Note</title><link>https://HoshikawaRyuukou.github.io/posts/life---note/</link><pubDate>Thu, 20 Mar 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/life---note/</guid><description>&lt;h2 id="sleep">Sleep&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://www.youtube.com/watch?v=5qHI6y4Qisc">睡眠專家：休息的關鍵不在晚上，而是白天｜【初日會客室】哇賽心理學 蔡宇哲&lt;/a>&lt;/li>
 &lt;/ul>
@@ -484,6 +520,7 @@ Scope(s):
 &lt;li>&lt;a href="https://github.com/Tyrrrz/YoutubeDownloader">Tyrrrz/YoutubeDownloader&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/mifi/lossless-cut">mifi/lossless-cut&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.capcut.com/zh-tw/">CapCut&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/Andrews54757/FastStream">Andrews54757/FastStream&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="message">Message&lt;/h2>
 &lt;ul>
@@ -595,7 +632,8 @@ Scope(s):
 &lt;li>簡化的命令標誌&lt;/li>
 &lt;/ul>
 &lt;p>介面與 Automatic1111 高度相似，基本能無痛從 Automatic1111 轉移。&lt;/p>
-&lt;h2 id="comfyui">&lt;a href="https://github.com/comfyanonymous/ComfyUI">ComfyUI&lt;/a>&lt;/h2>
+&lt;pre tabindex="0">&lt;code>set COMMANDLINE_ARGS=--xformers --no-half-vae --medvram
+&lt;/code>&lt;/pre>&lt;h2 id="comfyui">&lt;a href="https://github.com/comfyanonymous/ComfyUI">ComfyUI&lt;/a>&lt;/h2>
 &lt;p>是一個開源的節點式圖形介面，允許使用者通過直觀的節點系統設計和執行複雜的工作流程。&lt;/p>
 &lt;p>
  &lt;img src="https://github.com/user-attachments/assets/7ccaf2c1-9b72-41ae-9a89-5688c94b7abe" alt="ComfyUI Screenshot">
@@ -801,8 +839,10 @@ Scope(s):
 &lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=haimura_kiyotaka">Haimura Kiyotaka | Danbooru&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;hr>
-&lt;h2 id="sample">Sample&lt;/h2>
-&lt;p>以動漫系為例&lt;/p></description></item><item><title>AI - Stable diffusion - CheckPoints</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---checkpoints/</link><pubDate>Tue, 04 Feb 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---checkpoints/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=qtian">Qtian | Danbooru&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=zanya_000">Zanya 000 | Danbooru&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>AI - Stable diffusion - CheckPoints</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---checkpoints/</link><pubDate>Tue, 04 Feb 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---checkpoints/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;ul>
 &lt;li>⚠️ 以下主題專注於二次元/動漫風格圖像生成&lt;/li>
 &lt;/ul>
@@ -1425,43 +1465,7 @@ Scope(s):
 &lt;li>支援開發 HTML5 遊戲，並可輕鬆部署至 iOS、Android 或桌面應用&lt;/li>
 &lt;/ul>
 &lt;hr>
-&lt;p>對於 slot game 這種低互動高表演的類型 PixiJS 也許較具優勢&lt;/p></description></item><item><title>Economics - Events - Plaza Accord</title><link>https://HoshikawaRyuukou.github.io/posts/economics---events---plaza-accord/</link><pubDate>Sat, 28 Dec 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/economics---events---plaza-accord/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
-&lt;p>廣場協議（Plaza Accord）短期內成功讓美元貶值，減緩美國貿易逆差問題，但對日本造成嚴重衝擊，間接導致日本的泡沫經濟與經濟停滯。&lt;/p>
-&lt;h2 id="背景">背景&lt;/h2>
-&lt;ul>
-&lt;li>美國為了抗通膨升息，外資湧入導致美元升值。&lt;/li>
-&lt;li>里根經濟學擴大財政赤字，外國購買美國國債進一步推高美元。&lt;/li>
-&lt;li>美國當時對日本和西德的貿易逆差特別嚴重。&lt;/li>
-&lt;/ul>
-&lt;h2 id="目的">目的&lt;/h2>
-&lt;ul>
-&lt;li>讓&lt;strong>美元貶值&lt;/strong>，降低美國貿易逆差，提高美國出口競爭力。&lt;/li>
-&lt;li>讓日圓、德國馬克升值，減少日本與西德的出口優勢，平衡國際貿易。&lt;/li>
-&lt;/ul>
-&lt;h2 id="操作">操作&lt;/h2>
-&lt;ul>
-&lt;li>1985年9月，美國、日本、西德、法國、英國（G5）在紐約廣場飯店簽訂Plaza Accord。&lt;/li>
-&lt;li>G5 協同干預外匯市場，透過拋售美元、購買日圓與德國馬克來改變匯率。&lt;/li>
-&lt;/ul>
-&lt;h2 id="後果">後果&lt;/h2>
-&lt;h3 id="美國">美國&lt;/h3>
-&lt;ul>
-&lt;li>出口競爭力回升。&lt;/li>
-&lt;/ul>
-&lt;h3 id="日本">日本&lt;/h3>
-&lt;ul>
-&lt;li>日圓升值 → 日本企業競爭力下降，出口受創。&lt;/li>
-&lt;li>日本央行採取低利率與寬鬆貨幣政策來刺激經濟，結果導致資產泡沫（房地產 &amp;amp; 股票暴漲）。&lt;/li>
-&lt;li>1990年代泡沫破裂，進入「失落的十年」。&lt;/li>
-&lt;/ul>
-&lt;h3 id="西德德國">西德（德國）&lt;/h3>
-&lt;ul>
-&lt;li>馬克升值，影響出口，但影響較日本小。&lt;/li>
-&lt;/ul>
-&lt;h3 id="全球">全球&lt;/h3>
-&lt;ul>
-&lt;li>G5後來在1987年簽訂 &lt;strong>「羅浮宮協議」&lt;/strong>（Louvre Accord）來穩定匯率。&lt;/li>
-&lt;/ul></description></item><item><title>Economics - Sunk cost</title><link>https://HoshikawaRyuukou.github.io/posts/economics---sunk-cost/</link><pubDate>Sat, 28 Dec 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/economics---sunk-cost/</guid><description>&lt;h2 id="定義">定義&lt;/h2>
+&lt;p>對於 slot game 這種低互動高表演的類型 PixiJS 也許較具優勢&lt;/p></description></item><item><title>Economics - Sunk cost</title><link>https://HoshikawaRyuukou.github.io/posts/economics---sunk-cost/</link><pubDate>Sat, 28 Dec 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/economics---sunk-cost/</guid><description>&lt;h2 id="定義">定義&lt;/h2>
 &lt;p>&lt;strong>沉沒成本&lt;/strong>（Sunk Cost）是經濟學中的一個概念，指的是過去已經發生且無法回收的支出。這些成本無論未來如何決策都不會改變，因此在理性決策中應該被忽略。然而，人們在實際決策中往往因心理因素而受到沉沒成本的影響，從而作出不利的選擇。&lt;/p>
 &lt;h3 id="核心特點">&lt;strong>核心特點&lt;/strong>&lt;/h3>
 &lt;ol>
@@ -3173,6 +3177,11 @@ CHANGELOG*.md
 &lt;h2 id="document">Document&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://www.youtube.com/watch?v=nl-eVo1EhEQ">新世代 AI 簡報神器 Gamma&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="mcp">MCP&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=RjOMs1AyW1w">Cursor+ MCP + Blender = 人人都能3D建模？&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=GEOxJFacPkM">AI直接操作电脑建模！MCP这个词今年一定要知道！【blender-mcp手把手安装教程】&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="translation">Translation&lt;/h2>
 &lt;ul>
