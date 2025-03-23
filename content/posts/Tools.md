@@ -44,6 +44,7 @@ tags: ["Tools"]
 - [Tyrrrz/YoutubeDownloader](https://github.com/Tyrrrz/YoutubeDownloader)
 - [mifi/lossless-cut](https://github.com/mifi/lossless-cut)
 - [CapCut](https://www.capcut.com/zh-tw/)
+- [Andrews54757/FastStream](https://github.com/Andrews54757/FastStream)
 
 ## Message
 - [Emojipedia](https://emojipedia.org/)

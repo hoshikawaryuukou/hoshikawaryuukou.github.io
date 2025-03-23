@@ -9,6 +9,9 @@ tags: ["Unity", "Performance"]
 ## GC
 - [GC Garbage Collection 垃圾回收](https://www.youtube.com/watch?v=1Hqg-gUUOE0)
 
+## Memory
+- [《Unity6性能优化》灵界篇——基础篇(7)——重新认识MemoryProfiler](https://www.bilibili.com/video/BV1tcR7YBEnQ)
+
 
 
 <!-- 

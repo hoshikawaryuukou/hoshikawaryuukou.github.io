@@ -44,18 +44,6 @@ tags: ["AI", "Stable diffusion", "Art"]
 - [Haimura Kiyotaka | Danbooru](https://danbooru.donmai.us/posts?tags=haimura_kiyotaka)
 
 ---
+- [Qtian | Danbooru](https://danbooru.donmai.us/posts?tags=qtian)
+- [Zanya 000 | Danbooru](https://danbooru.donmai.us/posts?tags=zanya_000)
 
-## Sample
-以動漫系為例
-
-### Positive Prompt
-```
-highres, hires, best quality, masterpiece,
-2d, 
-anime coloring, 
-```
-
-### Negative Prompt
-```
-
-```

@@ -30,6 +30,10 @@ tags: ["AI", "Stable diffusion", "Art"]
 
 介面與 Automatic1111 高度相似，基本能無痛從 Automatic1111 轉移。
 
+```
+set COMMANDLINE_ARGS=--xformers --no-half-vae --medvram
+```
+
 ## [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
 是一個開源的節點式圖形介面，允許使用者通過直觀的節點系統設計和執行複雜的工作流程。
 

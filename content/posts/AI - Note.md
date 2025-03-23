@@ -22,6 +22,10 @@ tags: ["AI"]
 ## Document
 - [新世代 AI 簡報神器 Gamma](https://www.youtube.com/watch?v=nl-eVo1EhEQ)
 
+## MCP
+- [Cursor+ MCP + Blender = 人人都能3D建模？](https://www.youtube.com/watch?v=RjOMs1AyW1w)
+- [AI直接操作电脑建模！MCP这个词今年一定要知道！【blender-mcp手把手安装教程】](https://www.youtube.com/watch?v=GEOxJFacPkM)
+
 ## Translation
 - GPT Translator
 - [SakuraLLM/SakuraLLM](https://github.com/SakuraLLM/SakuraLLM)

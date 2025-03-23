@@ -1,6 +1,6 @@
 ---
 title: "Economics - Events - Plaza Accord"
-date: 2024-12-28 21:11:00
+date: 2025-03-21 21:11:00
 draft: false
 
 tags: ["Economics"]
