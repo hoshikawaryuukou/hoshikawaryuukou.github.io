@@ -16,7 +16,7 @@ tags: ["AI", "Stable diffusion", "Art"]
 - [Bing-su/adetailer](https://github.com/Bing-su/adetailer)
 
 ## sd-webui-photopea-embed
-- [yankooliveira/sd-webui-photopea-embed](https://github.com/Physton/sd-webui-prompt-all-in-one/tree/main)
+- [yankooliveira/sd-webui-photopea-embed](https://github.com/yankooliveira/sd-webui-photopea-embed)
 
 ## sd-webui-lora-block-weight
 - [hako-mikan/sd-webui-lora-block-weight](https://github.com/hako-mikan/sd-webui-lora-block-weight)
