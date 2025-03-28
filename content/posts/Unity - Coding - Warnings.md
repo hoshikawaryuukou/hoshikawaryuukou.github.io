@@ -1,5 +1,5 @@
 ---
-title: "Unity - Coding - Code stripping"
+title: "Unity - Coding - Warnings"
 date: 2025-03-25 21:11:00
 draft: false
 
