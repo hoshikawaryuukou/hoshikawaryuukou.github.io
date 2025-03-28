@@ -1,6 +1,6 @@
 ---
-title: "Unity - Advanced - Code stripping"
-date: 2024-01-17 21:11:00
+title: "Unity - Coding - Warnings"
+date: 2024-03-26 19:11:00
 draft: false
 
 tags: ["Unity"]
