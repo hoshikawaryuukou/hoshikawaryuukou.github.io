@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Unity on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/unity/</link><description>Recent content in Unity on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Wed, 19 Mar 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/unity/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Packages</title><link>https://HoshikawaRyuukou.github.io/posts/unity---packages/</link><pubDate>Wed, 19 Mar 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---packages/</guid><description>&lt;h2 id="package-manager">Package Manager&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Unity on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/unity/</link><description>Recent content in Unity on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Tue, 25 Mar 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/unity/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Coding - Code stripping</title><link>https://HoshikawaRyuukou.github.io/posts/unity---coding---warnings/</link><pubDate>Tue, 25 Mar 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---coding---warnings/</guid><description>&lt;h2 id="unt0023-coalescing-assignment-on-unity-objects">UNT0023 Coalescing assignment on Unity objects&lt;/h2>
+&lt;p>合併賦值運算子 &lt;code>??=&lt;/code> 是 C# 8.0 引入的運算子，其功能是：如果左側運算元為 null，則將右側運算元的值賦給左側運算元。&lt;/p>
+&lt;p>然而，在 Unity 中直接對 Unity 物件 (如 GameObject、Component 等) 使用這個運算子可能會導致問題，因為：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Unity 物件的特殊生命週期&lt;/strong>：Unity 物件即使被銷毀，在 C# 層面的變數可能不會自動設為 null，而是成為&amp;quot;偽 null&amp;quot;物件。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>自訂的 null 檢查行為&lt;/strong>：Unity 覆寫了 &lt;code>==&lt;/code> 運算子，使得對已銷毀的 Unity 物件進行 null 檢查時會返回 true，但 `?? 運算子使用的是底層的 null 檢查機制。&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="使用明確的-null-檢查">使用明確的 null 檢查&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cs" data-lang="cs">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">private&lt;/span> &lt;span style="color:#111">Rigidbody&lt;/span> &lt;span style="color:#111">rb&lt;/span>&lt;span style="color:#111">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">void&lt;/span> &lt;span style="color:#111">Start&lt;/span>&lt;span style="color:#111">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">if&lt;/span> &lt;span style="color:#111">(&lt;/span>&lt;span style="color:#111">rb&lt;/span> &lt;span style="color:#111">==&lt;/span> &lt;span style="color:#00a8c8">null&lt;/span>&lt;span style="color:#111">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">rb&lt;/span> &lt;span style="color:#111">=&lt;/span> &lt;span style="color:#111">GetComponent&lt;/span>&lt;span style="color:#111">&amp;lt;&lt;/span>&lt;span style="color:#111">Rigidbody&lt;/span>&lt;span style="color:#111">&amp;gt;();&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span> 
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Unity - Packages</title><link>https://HoshikawaRyuukou.github.io/posts/unity---packages/</link><pubDate>Wed, 19 Mar 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---packages/</guid><description>&lt;h2 id="package-manager">Package Manager&lt;/h2>
 &lt;h3 id="installing-packages-using-upm">Installing Packages using UPM&lt;/h3>
 &lt;ol>
 &lt;li>Package manager -&amp;gt; Advanced project settings&lt;/li>
@@ -621,28 +642,7 @@ Scope(s):
 &lt;li>&lt;a href="https://developers.google.com/analytics/devguides/collection/android/v4/campaigns?hl=zh-tw#campaign-params">廣告活動參數&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="referrer-狀態">Referrer 狀態&lt;/h2>
-&lt;p>將手機連著 android studio 開啟 Logcat，透過連結前往商店發現有 4 種情境&lt;/p></description></item><item><title>Unity - Coding - Code stripping</title><link>https://HoshikawaRyuukou.github.io/posts/unity---coding---warnings/</link><pubDate>Wed, 17 Jan 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---coding---warnings/</guid><description>&lt;h2 id="unt0023-coalescing-assignment-on-unity-objects">UNT0023 Coalescing assignment on Unity objects&lt;/h2>
-&lt;p>合併賦值運算子 &lt;code>??=&lt;/code> 是 C# 8.0 引入的運算子，其功能是：如果左側運算元為 null，則將右側運算元的值賦給左側運算元。&lt;/p>
-&lt;p>然而，在 Unity 中直接對 Unity 物件 (如 GameObject、Component 等) 使用這個運算子可能會導致問題，因為：&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>&lt;strong>Unity 物件的特殊生命週期&lt;/strong>：Unity 物件即使被銷毀，在 C# 層面的變數可能不會自動設為 null，而是成為&amp;quot;偽 null&amp;quot;物件。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>自訂的 null 檢查行為&lt;/strong>：Unity 覆寫了 &lt;code>==&lt;/code> 運算子，使得對已銷毀的 Unity 物件進行 null 檢查時會返回 true，但 `?? 運算子使用的是底層的 null 檢查機制。&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="使用明確的-null-檢查">使用明確的 null 檢查&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cs" data-lang="cs">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">private&lt;/span> &lt;span style="color:#111">Rigidbody&lt;/span> &lt;span style="color:#111">rb&lt;/span>&lt;span style="color:#111">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">void&lt;/span> &lt;span style="color:#111">Start&lt;/span>&lt;span style="color:#111">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">if&lt;/span> &lt;span style="color:#111">(&lt;/span>&lt;span style="color:#111">rb&lt;/span> &lt;span style="color:#111">==&lt;/span> &lt;span style="color:#00a8c8">null&lt;/span>&lt;span style="color:#111">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">rb&lt;/span> &lt;span style="color:#111">=&lt;/span> &lt;span style="color:#111">GetComponent&lt;/span>&lt;span style="color:#111">&amp;lt;&lt;/span>&lt;span style="color:#111">Rigidbody&lt;/span>&lt;span style="color:#111">&amp;gt;();&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span> 
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Unity - Service - Cloud Diagnostics</title><link>https://HoshikawaRyuukou.github.io/posts/unity---service---cloud-diagnostics/</link><pubDate>Tue, 16 Jan 2024 22:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---service---cloud-diagnostics/</guid><description>&lt;h2 id="簡述">簡述&lt;/h2>
+&lt;p>將手機連著 android studio 開啟 Logcat，透過連結前往商店發現有 4 種情境&lt;/p></description></item><item><title>Unity - Service - Cloud Diagnostics</title><link>https://HoshikawaRyuukou.github.io/posts/unity---service---cloud-diagnostics/</link><pubDate>Tue, 16 Jan 2024 22:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---service---cloud-diagnostics/</guid><description>&lt;h2 id="簡述">簡述&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://unity3ds-software.com/en/cn/products/cloud-diagnostics.html">Official Home Page&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.unity.com/ugs/manual/cloud-diagnostics/manual/CloudDiagnostics/WelcometoCloudDiagnostics">Official Doc&lt;/a>&lt;/li>
