@@ -1,6 +1,6 @@
 ---
 title: "Unity - Coding - Code stripping"
-date: 2024-01-17 21:11:00
+date: 2025-03-25 21:11:00
 draft: false
 
 tags: ["Unity"]
