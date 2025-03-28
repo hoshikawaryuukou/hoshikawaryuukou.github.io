@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/posts/</link><description>Recent content in Posts on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Wed, 26 Mar 2025 13:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>AI - LLM - Note</title><link>https://HoshikawaRyuukou.github.io/posts/ai---llm---note/</link><pubDate>Wed, 26 Mar 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---llm---note/</guid><description>&lt;h2 id="artificial-general-intelligenceagi">Artificial General Intelligence（AGI）&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/posts/</link><description>Recent content in Posts on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 27 Mar 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Art - Photopea - Note</title><link>https://HoshikawaRyuukou.github.io/posts/art---photopea---note/</link><pubDate>Thu, 27 Mar 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/art---photopea---note/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>Photopea 是一款免費線上圖像編輯工具，介面與 Photoshop 相似，支援 PSD、XD、Sketch 等多種檔案格式。使用者無需安裝軟體，即可在瀏覽器中進行圖層編輯、濾鏡處理與設計排版，非常適合快速修圖與設計需求。&lt;/p>
+&lt;h2 id="cases">Cases&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://ushiro-mae.com/photopea-replace-color/">【Photopea】色を置き換える方法&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>AI - LLM - Note</title><link>https://HoshikawaRyuukou.github.io/posts/ai---llm---note/</link><pubDate>Wed, 26 Mar 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---llm---note/</guid><description>&lt;h2 id="artificial-general-intelligenceagi">Artificial General Intelligence（AGI）&lt;/h2>
 &lt;p>簡單來說，AGI（通用人工智慧）就像是一個能夠像人類一樣思考和學習的 AI。現在的 AI 通常只能做特定的事情，比如語音助理能聽懂指令、圖像辨識能認臉，但它們無法舉一反三或解決各種不同的問題。&lt;/p>
 &lt;p>AGI 則不同，它能夠適應各種情境、學習新知識、自己思考並解決問題，就像一個真正有智慧的人。這也是人工智慧發展的終極目標——打造一個可以自由學習、理解世界的「超級 AI」。&lt;/p>
 &lt;h2 id="edge-computing">Edge Computing&lt;/h2>
@@ -3865,7 +3870,44 @@ CHANGELOG*.md
 &lt;h2 id="other">Other&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://www.youtube.com/watch?v=u0yKHP0onwU">windows为什么有两个命令行工具？命令提示符与PowerShell有什么区别？&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Game Analysis - Assets</title><link>https://HoshikawaRyuukou.github.io/posts/game-analysis---assets/</link><pubDate>Sun, 11 Feb 2024 08:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/game-analysis---assets/</guid><description>&lt;h2 id="games">Games&lt;/h2>
+&lt;/ul></description></item><item><title>Unity - Coding - Warnings</title><link>https://HoshikawaRyuukou.github.io/posts/unity---coding---managed-code-stripping/</link><pubDate>Tue, 26 Mar 2024 19:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---coding---managed-code-stripping/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>在構建過程中，Unity 通過稱為託管代碼剝離的過程刪除未使用或無法訪問的代碼，這可以顯著減小應用程式的最終大小。&lt;/p>
+&lt;blockquote>
+&lt;p>File -&amp;gt; Build Settings -&amp;gt; Player Settings -&amp;gt; Optimization -&amp;gt; Managed Stripping Level&lt;/p>&lt;/blockquote>
+&lt;ul>
+&lt;li>⚠️ Managed Stripping Level 等級越高裁剪掉的代碼越多，包體也就越小，但是對應的風險也就更大。&lt;/li>
+&lt;li>藉由屬性或特殊 XML 配置檔的形式提供註釋，以指示 Unity 連結器要保留代碼庫的哪些部分。&lt;/li>
+&lt;/ul>
+&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.unity3d.com/6000.0/Documentation/Manual/managed-code-stripping.html">Unity - Manual: Managed code stripping&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/KuraiAndras/LinkerGenerator">KuraiAndras/LinkerGenerator&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zenn.dev/hatopopo_0113/articles/279d3b89c791d1">IUnityLinkerProcessorでCodeStrippingからコードを守る&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="preserving">Preserving&lt;/h2>
+&lt;h3 id="preserve-attribute">Preserve attribute&lt;/h3>
+&lt;ul>
+&lt;li>⚠️ [Preserve] 屬性屬於“侵入式”的解決方案，不建議&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cs" data-lang="cs">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">class&lt;/span> &lt;span style="color:#75af00">Foo&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75af00"> [Preserve]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">public&lt;/span> &lt;span style="color:#00a8c8">void&lt;/span> &lt;span style="color:#111">PreservedMethod&lt;/span>&lt;span style="color:#111">(){}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="linkxml">link.xml&lt;/h3>
+&lt;ul>
+&lt;li>在專案的 Assets 目錄下創建個 link.xml&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-xml" data-lang="xml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;linker&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;assembly&lt;/span> &lt;span style="color:#75af00">fullname=&lt;/span>&lt;span style="color:#d88200">&amp;#34;DOTween&amp;#34;&lt;/span> &lt;span style="color:#75af00">preserve=&lt;/span>&lt;span style="color:#d88200">&amp;#34;all&amp;#34;&lt;/span> &lt;span style="color:#f92672">/&amp;gt;&lt;/span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;assembly&lt;/span> &lt;span style="color:#75af00">fullname=&lt;/span>&lt;span style="color:#d88200">&amp;#34;Newtonsoft.Json&amp;#34;&lt;/span> &lt;span style="color:#75af00">preserve=&lt;/span>&lt;span style="color:#d88200">&amp;#34;all&amp;#34;&lt;/span> &lt;span style="color:#f92672">/&amp;gt;&lt;/span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;assembly&lt;/span> &lt;span style="color:#75af00">fullname=&lt;/span>&lt;span style="color:#d88200">&amp;#34;Assembly-CSharp&amp;#34;&lt;/span> &lt;span style="color:#75af00">preserve=&lt;/span>&lt;span style="color:#d88200">&amp;#34;all&amp;#34;&lt;/span> &lt;span style="color:#f92672">/&amp;gt;&lt;/span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;assembly&lt;/span> &lt;span style="color:#75af00">fullname=&lt;/span>&lt;span style="color:#d88200">&amp;#34;UnityEngine&amp;#34;&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;type&lt;/span> &lt;span style="color:#75af00">fullname=&lt;/span>&lt;span style="color:#d88200">&amp;#34;UnityEngine.SpriteRenderer&amp;#34;&lt;/span> &lt;span style="color:#75af00">preserve=&lt;/span>&lt;span style="color:#d88200">&amp;#34;all&amp;#34;&lt;/span>&lt;span style="color:#f92672">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;type&lt;/span> &lt;span style="color:#75af00">fullname=&lt;/span>&lt;span style="color:#d88200">&amp;#34;UnityEngine.Rigidbody2D&amp;#34;&lt;/span> &lt;span style="color:#75af00">preserve=&lt;/span>&lt;span style="color:#d88200">&amp;#34;all&amp;#34;&lt;/span>&lt;span style="color:#f92672">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;/assembly&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;/linker&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Game Analysis - Assets</title><link>https://HoshikawaRyuukou.github.io/posts/game-analysis---assets/</link><pubDate>Sun, 11 Feb 2024 08:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/game-analysis---assets/</guid><description>&lt;h2 id="games">Games&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/28598519a/TSK_AssetDL">28598519a/TSK_AssetDL&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/ZM-Kimu/Blue-Archive-Asset-Downloader">ZM-Kimu/Blue-Archive-Asset-Downloader&lt;/a>&lt;/li>
@@ -4021,43 +4063,27 @@ CHANGELOG*.md
 &lt;h3 id="顆粒度更細的單一職責">顆粒度更細的單一職責&lt;/h3>
 &lt;p>Interactor 封裝業務的概念在純 MVX 中是無法直接體會到，因此對之後學習 CA 時起了很大的緩衝，不然對於 Usecase 的設計應該會很不適應。&lt;/p>
 &lt;h3 id="重視-navigation">重視 Navigation&lt;/h3>
-&lt;p>在學習 CA 中始終沒題到 feature/componet module 之間是如何互動的，也是在回頭複習 VIPER 時才重新意識到 Router 的重要性。當沒有特別規劃 Navigation 時很容易會造成 module 之間的耦合。&lt;/p></description></item><item><title>Unity - Advanced - Code stripping</title><link>https://HoshikawaRyuukou.github.io/posts/unity---advanced---managed-code-stripping/</link><pubDate>Wed, 17 Jan 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---advanced---managed-code-stripping/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
-&lt;p>在構建過程中，Unity 通過稱為託管代碼剝離的過程刪除未使用或無法訪問的代碼，這可以顯著減小應用程式的最終大小。&lt;/p>
-&lt;blockquote>
-&lt;p>File -&amp;gt; Build Settings -&amp;gt; Player Settings -&amp;gt; Optimization -&amp;gt; Managed Stripping Level&lt;/p>&lt;/blockquote>
-&lt;ul>
-&lt;li>⚠️ Managed Stripping Level 等級越高裁剪掉的代碼越多，包體也就越小，但是對應的風險也就更大。&lt;/li>
-&lt;li>藉由屬性或特殊 XML 配置檔的形式提供註釋，以指示 Unity 連結器要保留代碼庫的哪些部分。&lt;/li>
-&lt;/ul>
-&lt;h2 id="guide">Guide&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://docs.unity3d.com/6000.0/Documentation/Manual/managed-code-stripping.html">Unity - Manual: Managed code stripping&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/KuraiAndras/LinkerGenerator">KuraiAndras/LinkerGenerator&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://zenn.dev/hatopopo_0113/articles/279d3b89c791d1">IUnityLinkerProcessorでCodeStrippingからコードを守る&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="preserving">Preserving&lt;/h2>
-&lt;h3 id="preserve-attribute">Preserve attribute&lt;/h3>
-&lt;ul>
-&lt;li>⚠️ [Preserve] 屬性屬於“侵入式”的解決方案，不建議&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cs" data-lang="cs">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">class&lt;/span> &lt;span style="color:#75af00">Foo&lt;/span>
+&lt;p>在學習 CA 中始終沒題到 feature/componet module 之間是如何互動的，也是在回頭複習 VIPER 時才重新意識到 Router 的重要性。當沒有特別規劃 Navigation 時很容易會造成 module 之間的耦合。&lt;/p></description></item><item><title>Unity - Coding - Code stripping</title><link>https://HoshikawaRyuukou.github.io/posts/unity---coding---warnings/</link><pubDate>Wed, 17 Jan 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---coding---warnings/</guid><description>&lt;h2 id="unt0023-coalescing-assignment-on-unity-objects">UNT0023 Coalescing assignment on Unity objects&lt;/h2>
+&lt;p>合併賦值運算子 &lt;code>??=&lt;/code> 是 C# 8.0 引入的運算子，其功能是：如果左側運算元為 null，則將右側運算元的值賦給左側運算元。&lt;/p>
+&lt;p>然而，在 Unity 中直接對 Unity 物件 (如 GameObject、Component 等) 使用這個運算子可能會導致問題，因為：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Unity 物件的特殊生命週期&lt;/strong>：Unity 物件即使被銷毀，在 C# 層面的變數可能不會自動設為 null，而是成為&amp;quot;偽 null&amp;quot;物件。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>自訂的 null 檢查行為&lt;/strong>：Unity 覆寫了 &lt;code>==&lt;/code> 運算子，使得對已銷毀的 Unity 物件進行 null 檢查時會返回 true，但 `?? 運算子使用的是底層的 null 檢查機制。&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="使用明確的-null-檢查">使用明確的 null 檢查&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cs" data-lang="cs">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">private&lt;/span> &lt;span style="color:#111">Rigidbody&lt;/span> &lt;span style="color:#111">rb&lt;/span>&lt;span style="color:#111">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">void&lt;/span> &lt;span style="color:#111">Start&lt;/span>&lt;span style="color:#111">()&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75af00"> [Preserve]&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">public&lt;/span> &lt;span style="color:#00a8c8">void&lt;/span> &lt;span style="color:#111">PreservedMethod&lt;/span>&lt;span style="color:#111">(){}&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="linkxml">link.xml&lt;/h3>
-&lt;ul>
-&lt;li>在專案的 Assets 目錄下創建個 link.xml&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-xml" data-lang="xml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;linker&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;assembly&lt;/span> &lt;span style="color:#75af00">fullname=&lt;/span>&lt;span style="color:#d88200">&amp;#34;DOTween&amp;#34;&lt;/span> &lt;span style="color:#75af00">preserve=&lt;/span>&lt;span style="color:#d88200">&amp;#34;all&amp;#34;&lt;/span> &lt;span style="color:#f92672">/&amp;gt;&lt;/span> 
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;assembly&lt;/span> &lt;span style="color:#75af00">fullname=&lt;/span>&lt;span style="color:#d88200">&amp;#34;Newtonsoft.Json&amp;#34;&lt;/span> &lt;span style="color:#75af00">preserve=&lt;/span>&lt;span style="color:#d88200">&amp;#34;all&amp;#34;&lt;/span> &lt;span style="color:#f92672">/&amp;gt;&lt;/span> 
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;assembly&lt;/span> &lt;span style="color:#75af00">fullname=&lt;/span>&lt;span style="color:#d88200">&amp;#34;Assembly-CSharp&amp;#34;&lt;/span> &lt;span style="color:#75af00">preserve=&lt;/span>&lt;span style="color:#d88200">&amp;#34;all&amp;#34;&lt;/span> &lt;span style="color:#f92672">/&amp;gt;&lt;/span> 
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;assembly&lt;/span> &lt;span style="color:#75af00">fullname=&lt;/span>&lt;span style="color:#d88200">&amp;#34;UnityEngine&amp;#34;&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;type&lt;/span> &lt;span style="color:#75af00">fullname=&lt;/span>&lt;span style="color:#d88200">&amp;#34;UnityEngine.SpriteRenderer&amp;#34;&lt;/span> &lt;span style="color:#75af00">preserve=&lt;/span>&lt;span style="color:#d88200">&amp;#34;all&amp;#34;&lt;/span>&lt;span style="color:#f92672">/&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;type&lt;/span> &lt;span style="color:#75af00">fullname=&lt;/span>&lt;span style="color:#d88200">&amp;#34;UnityEngine.Rigidbody2D&amp;#34;&lt;/span> &lt;span style="color:#75af00">preserve=&lt;/span>&lt;span style="color:#d88200">&amp;#34;all&amp;#34;&lt;/span>&lt;span style="color:#f92672">/&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;/assembly&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;/linker&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">if&lt;/span> &lt;span style="color:#111">(&lt;/span>&lt;span style="color:#111">rb&lt;/span> &lt;span style="color:#111">==&lt;/span> &lt;span style="color:#00a8c8">null&lt;/span>&lt;span style="color:#111">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">rb&lt;/span> &lt;span style="color:#111">=&lt;/span> &lt;span style="color:#111">GetComponent&lt;/span>&lt;span style="color:#111">&amp;lt;&lt;/span>&lt;span style="color:#111">Rigidbody&lt;/span>&lt;span style="color:#111">&amp;gt;();&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span> 
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Unity - Service - Cloud Diagnostics</title><link>https://HoshikawaRyuukou.github.io/posts/unity---service---cloud-diagnostics/</link><pubDate>Tue, 16 Jan 2024 22:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---service---cloud-diagnostics/</guid><description>&lt;h2 id="簡述">簡述&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://unity3ds-software.com/en/cn/products/cloud-diagnostics.html">Official Home Page&lt;/a>&lt;/li>
