@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Unity on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/unity/</link><description>Recent content in Unity on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Fri, 28 Mar 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/unity/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Basic - Sprite Atlas</title><link>https://HoshikawaRyuukou.github.io/posts/unity---basic---sprite-atlas/</link><pubDate>Fri, 28 Mar 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---basic---sprite-atlas/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Unity on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/unity/</link><description>Recent content in Unity on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Fri, 28 Mar 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/unity/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Basic - ScriptableObject</title><link>https://HoshikawaRyuukou.github.io/posts/unity---basic---sprite-atlas-copy/</link><pubDate>Fri, 28 Mar 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---basic---sprite-atlas-copy/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>ScriptableObject 是 Unity 中一個非常強大且有用的功能，主要用於儲存共享數據、配置或建立數據驅動的系統。&lt;/p>
+&lt;h2 id="cautions">Cautions&lt;/h2>
+&lt;h3 id="editor-play-mode-persistence">Editor Play Mode Persistence&lt;/h3>
+&lt;ul>
+&lt;li>在編輯器中進入「播放模式」(Play Mode) 時對 ScriptableObject 實例（.asset 文件對應的記憶體物件）所做的修改，在&lt;strong>退出播放模式後會被保留下來&lt;/strong>。&lt;/li>
+&lt;li>如果需要在 Play Mode 中臨時修改數據進行測試，考慮使用 &lt;code>Instantiate()&lt;/code> 創建 ScriptableObject 的副本來操作，這樣修改就不會影響原始的 .asset 文件。&lt;/li>
+&lt;/ul>
+&lt;h3 id="runtime-changes-in-builds">Runtime Changes in Builds&lt;/h3>
+&lt;ul>
+&lt;li>在建構出的遊戲版本 (Build) 中，於執行期間對 ScriptableObject 實例所做的修改&lt;strong>不會被保存&lt;/strong>回原始的資產文件。當遊戲關閉並重新啟動後，ScriptableObject 會恢復到建構時的初始狀態。&lt;/li>
+&lt;li>對於需要持久化的數據，應使用其他儲存機制，例如 PlayerPrefs、儲存為 JSON/XML/二進位檔案，或使用資料庫。&lt;/li>
+&lt;li>ScriptableObject 可以在執行期被修改，用作**單次遊戲會話 (Session)**內的共享狀態容器，但要知道這些變更不會自動存檔。&lt;/li>
+&lt;/ul>
+&lt;h3 id="asset-vs-instance-confusion">Asset vs. Instance Confusion&lt;/h3>
+&lt;ul>
+&lt;li>多個地方直接引用同一個 ScriptableObject &lt;code>.asset&lt;/code>，它們實際上都指向記憶體中的同一個共享實例。&lt;/li>
+&lt;li>對於實現全局配置或共享狀態非常有用。&lt;/li>
+&lt;li>如果每個使用者擁有獨立的數據副本，則需要在執行期 Instantiate() 這個 ScriptableObject 來創建副本。&lt;/li>
+&lt;/ul></description></item><item><title>Unity - Basic - Sprite Atlas</title><link>https://HoshikawaRyuukou.github.io/posts/unity---basic---sprite-atlas/</link><pubDate>Fri, 28 Mar 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---basic---sprite-atlas/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://docs.unity3d.com/6000.0/Documentation/Manual/sprite/atlas/atlas-landing.html">Unity - Manual: Sprite atlas&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.cnblogs.com/chenxiayun/p/18780078">Unity —— SpriteAtlas + Include in Build - 陈侠云 - 博客园&lt;/a>&lt;/li>

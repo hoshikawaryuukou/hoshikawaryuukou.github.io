@@ -61,8 +61,13 @@
 &lt;ul>
 &lt;li>Code Runner&lt;/li>
 &lt;li>&lt;a href="https://marketplace.visualstudio.com/items?itemName=bierner.emojisense">:emojisense:&lt;/a>&lt;/li>
+&lt;li>EditorConfig for VS Code&lt;/li>
 &lt;/ul>
 &lt;h2 id="hot-keys-windows">Hot Keys (Windows)&lt;/h2>
 &lt;ul>
 &lt;li>打開快捷鍵設定 : &lt;code>Ctrl + K Ctrl + S&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h2 id="settingjson">setting.json&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://blog.csdn.net/weixin_44869002/article/details/144644825">explorer.fileNesting：一个可以帮助你更好的管理文件的配置项&lt;/a>&lt;/li>
 &lt;/ul></description></item></channel></rss>
