@@ -20,6 +20,10 @@ tags: ["VScode"]
 ## Extensions
 - Code Runner
 - [:emojisense:](https://marketplace.visualstudio.com/items?itemName=bierner.emojisense)
+- EditorConfig for VS Code
 
 ## Hot Keys (Windows)
 - 打開快捷鍵設定 : `Ctrl + K Ctrl + S`
+
+## setting.json
+- [explorer.fileNesting：一个可以帮助你更好的管理文件的配置项](https://blog.csdn.net/weixin_44869002/article/details/144644825)
