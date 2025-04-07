@@ -15,6 +15,7 @@ tags: ["Game Design"]
 
 ## 場景
 - [樓梯是如何成為遊戲界難題的？拆解鳴潮和絕區零的解決方案](https://www.youtube.com/watch?v=GnOmGdMh7ww)
+- [把重力倒转180度，鸣潮交出了顶级场景设计](https://www.bilibili.com/video/BV1xPoXYgEM2)
 
 ## Shader
 - [【OpenGL 篇】为什么游戏总要编译着色器？](https://www.bilibili.com/video/BV1zi421h7tJ)

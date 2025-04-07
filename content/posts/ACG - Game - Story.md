@@ -12,6 +12,7 @@ tags: ["ACG"]
 ## 鳴潮 (Wuthering Waves)
 - [文明的漂泊者，解剖鳴潮最深的秘密，《鳴潮》究竟講了一個什麽故事？](https://www.youtube.com/watch?v=Md2NdlgPI3g)
 - [鳴學02|信仰寄生，聖女已死，黎那汐塔隱藏的真正秘密，《鳴潮》劇情深度解讀](https://www.youtube.com/watch?v=-2wxVPfm0Lo)
+- [鳴學03|坎特蕾拉你無愧於聖女的名號《鳴潮》劇情深度解讀](https://www.youtube.com/watch?v=MfSEi0N45_k)
 
 ## モンスターハンター (Monster Hunter)
 - [艾森巴赫 - YouTube](https://www.youtube.com/@ShuShiDui/videos)
