@@ -1,4 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/posts/</link><description>Recent content in Posts on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Tue, 01 Apr 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Visual Studio - Note</title><link>https://HoshikawaRyuukou.github.io/posts/visual-studio---code-style/</link><pubDate>Tue, 01 Apr 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/visual-studio---code-style/</guid><description>&lt;h2 id="editorconfig">EditorConfig&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/posts/</link><description>Recent content in Posts on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Wed, 02 Apr 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Basic - Shortcuts</title><link>https://HoshikawaRyuukou.github.io/posts/unity---basic---shortcuts/</link><pubDate>Wed, 02 Apr 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---basic---shortcuts/</guid><description>&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>快捷鍵&lt;/th>
+ &lt;th>功能&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Alt + 箭頭&lt;/strong>&lt;/td>
+ &lt;td>遞迴展開/摺疊資料夾或物件&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>F&lt;/strong>&lt;/td>
+ &lt;td>聚焦選取物件（Scene 視窗）&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table></description></item><item><title>Visual Studio - Note</title><link>https://HoshikawaRyuukou.github.io/posts/visual-studio---code-style/</link><pubDate>Tue, 01 Apr 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/visual-studio---code-style/</guid><description>&lt;h2 id="editorconfig">EditorConfig&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://learn.microsoft.com/zh-tw/visualstudio/ide/code-styles-and-code-cleanup?view=vs-2022#code-styles-in-editorconfig-files">程式碼樣式選項和程式碼清理 - Visual Studio (Windows) | Microsoft Learn&lt;/a>&lt;/li>
 &lt;/ul>
@@ -4244,7 +4261,18 @@ git reset XXXXXXX --hard
 &lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://gitbook.tw/chapters/github/pull-request">與其它開發者的互動 - 使用 Pull Request（PR）&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Unity - Basic - Preprocessor Directives</title><link>https://HoshikawaRyuukou.github.io/posts/unity---basic---preprocessor-directives/</link><pubDate>Fri, 07 Jul 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---basic---preprocessor-directives/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
+&lt;/ul></description></item><item><title>Git - Reapply .gitignore</title><link>https://HoshikawaRyuukou.github.io/posts/git---reapply-.gitignore/</link><pubDate>Fri, 14 Jul 2023 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/git---reapply-.gitignore/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>當你一開始沒 ignore 到某些檔案，後來補上 .gitignore，卻發現 Git 還是繼續追蹤那些檔案。&lt;/p>
+&lt;h2 id="solution">Solution&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 先清掉 Git 的快取（不會刪檔，只是取消追蹤）&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git rm -r --cached .
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 再重新加入所有檔案（讓 .gitignore 這次能正確發揮作用）&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git add .
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 然後提交變更&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git commit -m &lt;span style="color:#d88200">&amp;#34;Reapply .gitignore rules&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Unity - Basic - Preprocessor Directives</title><link>https://HoshikawaRyuukou.github.io/posts/unity---basic---preprocessor-directives/</link><pubDate>Fri, 07 Jul 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---basic---preprocessor-directives/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
 &lt;p>中文稱作 : 前置處理器指示詞&lt;/p>
 &lt;p>筆者最近接觸到的遺舊專案中發現裡面大量地使用 條件式編譯&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-csharp" data-lang="csharp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#if&lt;/span> &lt;span style="color:#111">DEBUG&lt;/span>

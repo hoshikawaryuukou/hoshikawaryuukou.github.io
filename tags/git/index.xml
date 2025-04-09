@@ -48,7 +48,18 @@ git reset XXXXXXX --hard
 &lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://gitbook.tw/chapters/github/pull-request">與其它開發者的互動 - 使用 Pull Request（PR）&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Git - Note</title><link>https://HoshikawaRyuukou.github.io/posts/git---note/</link><pubDate>Sat, 04 Feb 2023 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/git---note/</guid><description>&lt;h2 id="gui-clients">GUI Clients&lt;/h2>
+&lt;/ul></description></item><item><title>Git - Reapply .gitignore</title><link>https://HoshikawaRyuukou.github.io/posts/git---reapply-.gitignore/</link><pubDate>Fri, 14 Jul 2023 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/git---reapply-.gitignore/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>當你一開始沒 ignore 到某些檔案，後來補上 .gitignore，卻發現 Git 還是繼續追蹤那些檔案。&lt;/p>
+&lt;h2 id="solution">Solution&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 先清掉 Git 的快取（不會刪檔，只是取消追蹤）&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git rm -r --cached .
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 再重新加入所有檔案（讓 .gitignore 這次能正確發揮作用）&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git add .
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 然後提交變更&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git commit -m &lt;span style="color:#d88200">&amp;#34;Reapply .gitignore rules&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Git - Note</title><link>https://HoshikawaRyuukou.github.io/posts/git---note/</link><pubDate>Sat, 04 Feb 2023 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/git---note/</guid><description>&lt;h2 id="gui-clients">GUI Clients&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://git-fork.com/">Fork&lt;/a>&lt;/li>
 &lt;/ul>

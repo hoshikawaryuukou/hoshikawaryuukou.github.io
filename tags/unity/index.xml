@@ -1,4 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Unity on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/unity/</link><description>Recent content in Unity on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Fri, 28 Mar 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/unity/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Basic - ScriptableObject</title><link>https://HoshikawaRyuukou.github.io/posts/unity---basic---sprite-atlas-copy/</link><pubDate>Fri, 28 Mar 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---basic---sprite-atlas-copy/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Unity on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/unity/</link><description>Recent content in Unity on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Wed, 02 Apr 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/unity/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Basic - Shortcuts</title><link>https://HoshikawaRyuukou.github.io/posts/unity---basic---shortcuts/</link><pubDate>Wed, 02 Apr 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---basic---shortcuts/</guid><description>&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>快捷鍵&lt;/th>
+ &lt;th>功能&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Alt + 箭頭&lt;/strong>&lt;/td>
+ &lt;td>遞迴展開/摺疊資料夾或物件&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>F&lt;/strong>&lt;/td>
+ &lt;td>聚焦選取物件（Scene 視窗）&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table></description></item><item><title>Unity - Basic - ScriptableObject</title><link>https://HoshikawaRyuukou.github.io/posts/unity---basic---sprite-atlas-copy/</link><pubDate>Fri, 28 Mar 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---basic---sprite-atlas-copy/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>ScriptableObject 是 Unity 中一個非常強大且有用的功能，主要用於儲存共享數據、配置或建立數據驅動的系統。&lt;/p>
 &lt;h2 id="cautions">Cautions&lt;/h2>
 &lt;h3 id="editor-play-mode-persistence">Editor Play Mode Persistence&lt;/h3>
