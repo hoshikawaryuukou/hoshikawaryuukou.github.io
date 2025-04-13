@@ -352,55 +352,10 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">]&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="prettierignore">.prettierignore&lt;/h3>
-
-
-
-&lt;div class="goat svg-container ">
- 
- &lt;svg
- xmlns="http://www.w3.org/2000/svg"
- font-family="Menlo,Lucida Console,monospace"
- 
- viewBox="0 0 120 57"
- >
- &lt;g transform='translate(8,16)'>
-&lt;text text-anchor='middle' x='0' y='4' fill='currentColor' style='font-size:1em'>d&lt;/text>
-&lt;text text-anchor='middle' x='0' y='20' fill='currentColor' style='font-size:1em'>p&lt;/text>
-&lt;text text-anchor='middle' x='0' y='36' fill='currentColor' style='font-size:1em'>C&lt;/text>
-&lt;text text-anchor='middle' x='8' y='4' fill='currentColor' style='font-size:1em'>i&lt;/text>
-&lt;text text-anchor='middle' x='8' y='20' fill='currentColor' style='font-size:1em'>n&lt;/text>
-&lt;text text-anchor='middle' x='8' y='36' fill='currentColor' style='font-size:1em'>H&lt;/text>
-&lt;text text-anchor='middle' x='16' y='4' fill='currentColor' style='font-size:1em'>s&lt;/text>
-&lt;text text-anchor='middle' x='16' y='20' fill='currentColor' style='font-size:1em'>p&lt;/text>
-&lt;text text-anchor='middle' x='16' y='36' fill='currentColor' style='font-size:1em'>A&lt;/text>
-&lt;text text-anchor='middle' x='24' y='4' fill='currentColor' style='font-size:1em'>t&lt;/text>
-&lt;text text-anchor='middle' x='24' y='20' fill='currentColor' style='font-size:1em'>m&lt;/text>
-&lt;text text-anchor='middle' x='24' y='36' fill='currentColor' style='font-size:1em'>N&lt;/text>
-&lt;text text-anchor='middle' x='32' y='20' fill='currentColor' style='font-size:1em'>-&lt;/text>
-&lt;text text-anchor='middle' x='32' y='36' fill='currentColor' style='font-size:1em'>G&lt;/text>
-&lt;text text-anchor='middle' x='40' y='20' fill='currentColor' style='font-size:1em'>l&lt;/text>
-&lt;text text-anchor='middle' x='40' y='36' fill='currentColor' style='font-size:1em'>E&lt;/text>
-&lt;text text-anchor='middle' x='48' y='20' fill='currentColor' style='font-size:1em'>o&lt;/text>
-&lt;text text-anchor='middle' x='48' y='36' fill='currentColor' style='font-size:1em'>L&lt;/text>
-&lt;text text-anchor='middle' x='56' y='20' fill='currentColor' style='font-size:1em'>c&lt;/text>
-&lt;text text-anchor='middle' x='56' y='36' fill='currentColor' style='font-size:1em'>O&lt;/text>
-&lt;text text-anchor='middle' x='64' y='20' fill='currentColor' style='font-size:1em'>k&lt;/text>
-&lt;text text-anchor='middle' x='64' y='36' fill='currentColor' style='font-size:1em'>G&lt;/text>
-&lt;text text-anchor='middle' x='72' y='20' fill='currentColor' style='font-size:1em'>.&lt;/text>
-&lt;text text-anchor='middle' x='72' y='36' fill='currentColor' style='font-size:1em'>*&lt;/text>
-&lt;text text-anchor='middle' x='80' y='20' fill='currentColor' style='font-size:1em'>y&lt;/text>
-&lt;text text-anchor='middle' x='80' y='36' fill='currentColor' style='font-size:1em'>.&lt;/text>
-&lt;text text-anchor='middle' x='88' y='20' fill='currentColor' style='font-size:1em'>a&lt;/text>
-&lt;text text-anchor='middle' x='88' y='36' fill='currentColor' style='font-size:1em'>m&lt;/text>
-&lt;text text-anchor='middle' x='96' y='20' fill='currentColor' style='font-size:1em'>m&lt;/text>
-&lt;text text-anchor='middle' x='96' y='36' fill='currentColor' style='font-size:1em'>d&lt;/text>
-&lt;text text-anchor='middle' x='104' y='20' fill='currentColor' style='font-size:1em'>l&lt;/text>
-&lt;/g>
-
- &lt;/svg>
- 
-&lt;/div>
-&lt;h3 id="eslintconfigjs">eslint.config.js&lt;/h3>
+&lt;pre tabindex="0">&lt;code>dist
+pnpm-lock.yaml
+CHANGELOG*.md
+&lt;/code>&lt;/pre>&lt;h3 id="eslintconfigjs">eslint.config.js&lt;/h3>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-js" data-lang="js">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">import&lt;/span> &lt;span style="color:#75af00">eslintConfigPrettier&lt;/span> &lt;span style="color:#75af00">from&lt;/span> &lt;span style="color:#d88200">&amp;#39;eslint-config-prettier&amp;#39;&lt;/span>&lt;span style="color:#111">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">export&lt;/span> &lt;span style="color:#00a8c8">default&lt;/span> &lt;span style="color:#111">[&lt;/span>

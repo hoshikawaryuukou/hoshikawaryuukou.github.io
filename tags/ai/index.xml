@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/ai/</link><description>Recent content in AI on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Wed, 26 Mar 2025 13:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>AI - LLM - Note</title><link>https://HoshikawaRyuukou.github.io/posts/ai---llm---note/</link><pubDate>Wed, 26 Mar 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---llm---note/</guid><description>&lt;h2 id="artificial-general-intelligenceagi">Artificial General Intelligence（AGI）&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/ai/</link><description>Recent content in AI on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Fri, 11 Apr 2025 08:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>AI - Firebase Studio</title><link>https://HoshikawaRyuukou.github.io/posts/ai---firebase-studio/</link><pubDate>Fri, 11 Apr 2025 08:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---firebase-studio/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>Firebase Studio 的前身是 Project IDX。&lt;/p>
+&lt;p>Firebase Studio 是一個由 Google 提供的基於雲端的開發環境，旨在幫助開發者快速構建和發布全棧 AI 應用。這個平台結合了 AI 助手 Gemini 的功能，提供了一個集成的開發體驗，讓開發者能夠在一個地方完成應用的設計、開發和部署。&lt;/p>
+&lt;p>目前，Firebase Studio 在預覽階段提供三個免費工作區，開發者可以在此期間無需付費使用該平台的功能。&lt;/p>
+&lt;p>總的來說，看起來還輸 Cursor 一段距離，但追上應該是早晚的事。&lt;/p>
+&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.bilibili.com/video/BV1K2d2YWEpW">💥谷歌免费发布Firebase Studio：AI应用开发神器，不试不行!&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>AI - LLM - Note</title><link>https://HoshikawaRyuukou.github.io/posts/ai---llm---note/</link><pubDate>Wed, 26 Mar 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---llm---note/</guid><description>&lt;h2 id="artificial-general-intelligenceagi">Artificial General Intelligence（AGI）&lt;/h2>
 &lt;p>簡單來說，AGI（通用人工智慧）就像是一個能夠像人類一樣思考和學習的 AI。現在的 AI 通常只能做特定的事情，比如語音助理能聽懂指令、圖像辨識能認臉，但它們無法舉一反三或解決各種不同的問題。&lt;/p>
 &lt;p>AGI 則不同，它能夠適應各種情境、學習新知識、自己思考並解決問題，就像一個真正有智慧的人。這也是人工智慧發展的終極目標——打造一個可以自由學習、理解世界的「超級 AI」。&lt;/p>
 &lt;h2 id="edge-computing">Edge Computing&lt;/h2>
@@ -118,77 +126,13 @@
 &lt;li>簡化的命令標誌&lt;/li>
 &lt;/ul>
 &lt;p>介面與 Automatic1111 高度相似，基本能無痛從 Automatic1111 轉移。&lt;/p>
+&lt;pre tabindex="0">&lt;code>set COMMANDLINE_ARGS=--xformers --no-half-vae --medvram
+&lt;/code>&lt;/pre>&lt;h2 id="comfyui">&lt;a href="https://github.com/comfyanonymous/ComfyUI">ComfyUI&lt;/a>&lt;/h2>
+&lt;p>是一個開源的節點式圖形介面，允許使用者通過直觀的節點系統設計和執行複雜的工作流程。&lt;/p>
+&lt;p>
+ &lt;img src="https://github.com/user-attachments/assets/7ccaf2c1-9b72-41ae-9a89-5688c94b7abe" alt="ComfyUI Screenshot">
 
-
-
-&lt;div class="goat svg-container ">
- 
- &lt;svg
- xmlns="http://www.w3.org/2000/svg"
- font-family="Menlo,Lucida Console,monospace"
- 
- viewBox="0 0 448 25"
- >
- &lt;g transform='translate(8,16)'>
-&lt;path d='M 256,0 L 264,0' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 368,0 L 376,0' fill='none' stroke='currentColor'>&lt;/path>
-&lt;text text-anchor='middle' x='0' y='4' fill='currentColor' style='font-size:1em'>s&lt;/text>
-&lt;text text-anchor='middle' x='8' y='4' fill='currentColor' style='font-size:1em'>e&lt;/text>
-&lt;text text-anchor='middle' x='16' y='4' fill='currentColor' style='font-size:1em'>t&lt;/text>
-&lt;text text-anchor='middle' x='32' y='4' fill='currentColor' style='font-size:1em'>C&lt;/text>
-&lt;text text-anchor='middle' x='40' y='4' fill='currentColor' style='font-size:1em'>O&lt;/text>
-&lt;text text-anchor='middle' x='48' y='4' fill='currentColor' style='font-size:1em'>M&lt;/text>
-&lt;text text-anchor='middle' x='56' y='4' fill='currentColor' style='font-size:1em'>M&lt;/text>
-&lt;text text-anchor='middle' x='64' y='4' fill='currentColor' style='font-size:1em'>A&lt;/text>
-&lt;text text-anchor='middle' x='72' y='4' fill='currentColor' style='font-size:1em'>N&lt;/text>
-&lt;text text-anchor='middle' x='80' y='4' fill='currentColor' style='font-size:1em'>D&lt;/text>
-&lt;text text-anchor='middle' x='88' y='4' fill='currentColor' style='font-size:1em'>L&lt;/text>
-&lt;text text-anchor='middle' x='96' y='4' fill='currentColor' style='font-size:1em'>I&lt;/text>
-&lt;text text-anchor='middle' x='104' y='4' fill='currentColor' style='font-size:1em'>N&lt;/text>
-&lt;text text-anchor='middle' x='112' y='4' fill='currentColor' style='font-size:1em'>E&lt;/text>
-&lt;text text-anchor='middle' x='120' y='4' fill='currentColor' style='font-size:1em'>_&lt;/text>
-&lt;text text-anchor='middle' x='128' y='4' fill='currentColor' style='font-size:1em'>A&lt;/text>
-&lt;text text-anchor='middle' x='136' y='4' fill='currentColor' style='font-size:1em'>R&lt;/text>
-&lt;text text-anchor='middle' x='144' y='4' fill='currentColor' style='font-size:1em'>G&lt;/text>
-&lt;text text-anchor='middle' x='152' y='4' fill='currentColor' style='font-size:1em'>S&lt;/text>
-&lt;text text-anchor='middle' x='160' y='4' fill='currentColor' style='font-size:1em'>=&lt;/text>
-&lt;text text-anchor='middle' x='168' y='4' fill='currentColor' style='font-size:1em'>-&lt;/text>
-&lt;text text-anchor='middle' x='176' y='4' fill='currentColor' style='font-size:1em'>-&lt;/text>
-&lt;text text-anchor='middle' x='184' y='4' fill='currentColor' style='font-size:1em'>x&lt;/text>
-&lt;text text-anchor='middle' x='192' y='4' fill='currentColor' style='font-size:1em'>f&lt;/text>
-&lt;text text-anchor='middle' x='200' y='4' fill='currentColor' style='font-size:1em'>o&lt;/text>
-&lt;text text-anchor='middle' x='208' y='4' fill='currentColor' style='font-size:1em'>r&lt;/text>
-&lt;text text-anchor='middle' x='216' y='4' fill='currentColor' style='font-size:1em'>m&lt;/text>
-&lt;text text-anchor='middle' x='224' y='4' fill='currentColor' style='font-size:1em'>e&lt;/text>
-&lt;text text-anchor='middle' x='232' y='4' fill='currentColor' style='font-size:1em'>r&lt;/text>
-&lt;text text-anchor='middle' x='240' y='4' fill='currentColor' style='font-size:1em'>s&lt;/text>
-&lt;text text-anchor='middle' x='264' y='4' fill='currentColor' style='font-size:1em'>-&lt;/text>
-&lt;text text-anchor='middle' x='272' y='4' fill='currentColor' style='font-size:1em'>n&lt;/text>
-&lt;text text-anchor='middle' x='280' y='4' fill='currentColor' style='font-size:1em'>o&lt;/text>
-&lt;text text-anchor='middle' x='288' y='4' fill='currentColor' style='font-size:1em'>-&lt;/text>
-&lt;text text-anchor='middle' x='296' y='4' fill='currentColor' style='font-size:1em'>h&lt;/text>
-&lt;text text-anchor='middle' x='304' y='4' fill='currentColor' style='font-size:1em'>a&lt;/text>
-&lt;text text-anchor='middle' x='312' y='4' fill='currentColor' style='font-size:1em'>l&lt;/text>
-&lt;text text-anchor='middle' x='320' y='4' fill='currentColor' style='font-size:1em'>f&lt;/text>
-&lt;text text-anchor='middle' x='328' y='4' fill='currentColor' style='font-size:1em'>-&lt;/text>
-&lt;text text-anchor='middle' x='336' y='4' fill='currentColor' style='font-size:1em'>v&lt;/text>
-&lt;text text-anchor='middle' x='344' y='4' fill='currentColor' style='font-size:1em'>a&lt;/text>
-&lt;text text-anchor='middle' x='352' y='4' fill='currentColor' style='font-size:1em'>e&lt;/text>
-&lt;text text-anchor='middle' x='376' y='4' fill='currentColor' style='font-size:1em'>-&lt;/text>
-&lt;text text-anchor='middle' x='384' y='4' fill='currentColor' style='font-size:1em'>m&lt;/text>
-&lt;text text-anchor='middle' x='392' y='4' fill='currentColor' style='font-size:1em'>e&lt;/text>
-&lt;text text-anchor='middle' x='400' y='4' fill='currentColor' style='font-size:1em'>d&lt;/text>
-&lt;text text-anchor='middle' x='408' y='4' fill='currentColor' style='font-size:1em'>v&lt;/text>
-&lt;text text-anchor='middle' x='416' y='4' fill='currentColor' style='font-size:1em'>r&lt;/text>
-&lt;text text-anchor='middle' x='424' y='4' fill='currentColor' style='font-size:1em'>a&lt;/text>
-&lt;text text-anchor='middle' x='432' y='4' fill='currentColor' style='font-size:1em'>m&lt;/text>
-&lt;/g>
-
- &lt;/svg>
- 
-&lt;/div>
-&lt;h2 id="comfyui">&lt;a href="https://github.com/comfyanonymous/ComfyUI">ComfyUI&lt;/a>&lt;/h2>
-&lt;p>是一個開源的節點式圖形介面，允許使用者通過直觀的節點系統設計和執行複雜的工作流程。&lt;/p></description></item><item><title>AI - Stable diffusion - Environment</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---environment/</link><pubDate>Mon, 10 Feb 2025 20:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---environment/</guid><description>&lt;h2 id="local-deployment">Local deployment&lt;/h2>
+&lt;/p></description></item><item><title>AI - Stable diffusion - Environment</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---environment/</link><pubDate>Mon, 10 Feb 2025 20:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---environment/</guid><description>&lt;h2 id="local-deployment">Local deployment&lt;/h2>
 &lt;p>⚠️ 以下皆須安裝指定版本不可貿然升級&lt;/p>
 &lt;ul>
 &lt;li>nvidia 驅動更新至最新&lt;/li>

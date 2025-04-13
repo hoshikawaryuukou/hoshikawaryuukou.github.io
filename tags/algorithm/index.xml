@@ -4,99 +4,15 @@
 &lt;/ul>
 &lt;h2 id="sample">Sample&lt;/h2>
 &lt;h3 id="input">input&lt;/h3>
-
-
-
-&lt;div class="goat svg-container ">
- 
- &lt;svg
- xmlns="http://www.w3.org/2000/svg"
- font-family="Menlo,Lucida Console,monospace"
- 
- viewBox="0 0 136 105"
- >
- &lt;g transform='translate(8,16)'>
-&lt;text text-anchor='middle' x='0' y='4' fill='currentColor' style='font-size:1em'>m&lt;/text>
-&lt;text text-anchor='middle' x='0' y='84' fill='currentColor' style='font-size:1em'>]&lt;/text>
-&lt;text text-anchor='middle' x='8' y='4' fill='currentColor' style='font-size:1em'>a&lt;/text>
-&lt;text text-anchor='middle' x='16' y='4' fill='currentColor' style='font-size:1em'>t&lt;/text>
-&lt;text text-anchor='middle' x='24' y='4' fill='currentColor' style='font-size:1em'>r&lt;/text>
-&lt;text text-anchor='middle' x='32' y='4' fill='currentColor' style='font-size:1em'>i&lt;/text>
-&lt;text text-anchor='middle' x='32' y='20' fill='currentColor' style='font-size:1em'>[&lt;/text>
-&lt;text text-anchor='middle' x='32' y='36' fill='currentColor' style='font-size:1em'>[&lt;/text>
-&lt;text text-anchor='middle' x='32' y='52' fill='currentColor' style='font-size:1em'>[&lt;/text>
-&lt;text text-anchor='middle' x='32' y='68' fill='currentColor' style='font-size:1em'>[&lt;/text>
-&lt;text text-anchor='middle' x='40' y='4' fill='currentColor' style='font-size:1em'>x&lt;/text>
-&lt;text text-anchor='middle' x='40' y='20' fill='currentColor' style='font-size:1em'>1&lt;/text>
-&lt;text text-anchor='middle' x='40' y='36' fill='currentColor' style='font-size:1em'>1&lt;/text>
-&lt;text text-anchor='middle' x='40' y='52' fill='currentColor' style='font-size:1em'>1&lt;/text>
-&lt;text text-anchor='middle' x='40' y='68' fill='currentColor' style='font-size:1em'>1&lt;/text>
-&lt;text text-anchor='middle' x='48' y='20' fill='currentColor' style='font-size:1em'>,&lt;/text>
-&lt;text text-anchor='middle' x='48' y='36' fill='currentColor' style='font-size:1em'>,&lt;/text>
-&lt;text text-anchor='middle' x='48' y='52' fill='currentColor' style='font-size:1em'>,&lt;/text>
-&lt;text text-anchor='middle' x='48' y='68' fill='currentColor' style='font-size:1em'>,&lt;/text>
-&lt;text text-anchor='middle' x='56' y='4' fill='currentColor' style='font-size:1em'>=&lt;/text>
-&lt;text text-anchor='middle' x='56' y='20' fill='currentColor' style='font-size:1em'>0&lt;/text>
-&lt;text text-anchor='middle' x='56' y='36' fill='currentColor' style='font-size:1em'>0&lt;/text>
-&lt;text text-anchor='middle' x='56' y='52' fill='currentColor' style='font-size:1em'>1&lt;/text>
-&lt;text text-anchor='middle' x='56' y='68' fill='currentColor' style='font-size:1em'>0&lt;/text>
-&lt;text text-anchor='middle' x='64' y='20' fill='currentColor' style='font-size:1em'>,&lt;/text>
-&lt;text text-anchor='middle' x='64' y='36' fill='currentColor' style='font-size:1em'>,&lt;/text>
-&lt;text text-anchor='middle' x='64' y='52' fill='currentColor' style='font-size:1em'>,&lt;/text>
-&lt;text text-anchor='middle' x='64' y='68' fill='currentColor' style='font-size:1em'>,&lt;/text>
-&lt;text text-anchor='middle' x='72' y='4' fill='currentColor' style='font-size:1em'>[&lt;/text>
-&lt;text text-anchor='middle' x='72' y='20' fill='currentColor' style='font-size:1em'>1&lt;/text>
-&lt;text text-anchor='middle' x='72' y='36' fill='currentColor' style='font-size:1em'>1&lt;/text>
-&lt;text text-anchor='middle' x='72' y='52' fill='currentColor' style='font-size:1em'>1&lt;/text>
-&lt;text text-anchor='middle' x='72' y='68' fill='currentColor' style='font-size:1em'>0&lt;/text>
-&lt;text text-anchor='middle' x='80' y='20' fill='currentColor' style='font-size:1em'>,&lt;/text>
-&lt;text text-anchor='middle' x='80' y='36' fill='currentColor' style='font-size:1em'>,&lt;/text>
-&lt;text text-anchor='middle' x='80' y='52' fill='currentColor' style='font-size:1em'>,&lt;/text>
-&lt;text text-anchor='middle' x='80' y='68' fill='currentColor' style='font-size:1em'>,&lt;/text>
-&lt;text text-anchor='middle' x='88' y='20' fill='currentColor' style='font-size:1em'>0&lt;/text>
-&lt;text text-anchor='middle' x='88' y='36' fill='currentColor' style='font-size:1em'>1&lt;/text>
-&lt;text text-anchor='middle' x='88' y='52' fill='currentColor' style='font-size:1em'>1&lt;/text>
-&lt;text text-anchor='middle' x='88' y='68' fill='currentColor' style='font-size:1em'>1&lt;/text>
-&lt;text text-anchor='middle' x='96' y='20' fill='currentColor' style='font-size:1em'>,&lt;/text>
-&lt;text text-anchor='middle' x='96' y='36' fill='currentColor' style='font-size:1em'>,&lt;/text>
-&lt;text text-anchor='middle' x='96' y='52' fill='currentColor' style='font-size:1em'>,&lt;/text>
-&lt;text text-anchor='middle' x='96' y='68' fill='currentColor' style='font-size:1em'>,&lt;/text>
-&lt;text text-anchor='middle' x='104' y='20' fill='currentColor' style='font-size:1em'>0&lt;/text>
-&lt;text text-anchor='middle' x='104' y='36' fill='currentColor' style='font-size:1em'>1&lt;/text>
-&lt;text text-anchor='middle' x='104' y='52' fill='currentColor' style='font-size:1em'>1&lt;/text>
-&lt;text text-anchor='middle' x='104' y='68' fill='currentColor' style='font-size:1em'>0&lt;/text>
-&lt;text text-anchor='middle' x='112' y='20' fill='currentColor' style='font-size:1em'>]&lt;/text>
-&lt;text text-anchor='middle' x='112' y='36' fill='currentColor' style='font-size:1em'>]&lt;/text>
-&lt;text text-anchor='middle' x='112' y='52' fill='currentColor' style='font-size:1em'>]&lt;/text>
-&lt;text text-anchor='middle' x='112' y='68' fill='currentColor' style='font-size:1em'>]&lt;/text>
-&lt;text text-anchor='middle' x='120' y='20' fill='currentColor' style='font-size:1em'>,&lt;/text>
-&lt;text text-anchor='middle' x='120' y='36' fill='currentColor' style='font-size:1em'>,&lt;/text>
-&lt;text text-anchor='middle' x='120' y='52' fill='currentColor' style='font-size:1em'>,&lt;/text>
-&lt;/g>
-
- &lt;/svg>
- 
-&lt;/div>
-&lt;h3 id="output">output&lt;/h3>
-
-
-
-&lt;div class="goat svg-container ">
- 
- &lt;svg
- xmlns="http://www.w3.org/2000/svg"
- font-family="Menlo,Lucida Console,monospace"
- 
- viewBox="0 0 16 25"
- >
- &lt;g transform='translate(8,16)'>
-&lt;text text-anchor='middle' x='0' y='4' fill='currentColor' style='font-size:1em'>6&lt;/text>
-&lt;/g>
-
- &lt;/svg>
- 
-&lt;/div>
-&lt;h2 id="key-points">Key points&lt;/h2>
+&lt;pre tabindex="0">&lt;code>matrix = [
+ [1,0,1,0,0],
+ [1,0,1,1,1],
+ [1,1,1,1,1],
+ [1,0,0,1,0]
+]
+&lt;/code>&lt;/pre>&lt;h3 id="output">output&lt;/h3>
+&lt;pre tabindex="0">&lt;code>6
+&lt;/code>&lt;/pre>&lt;h2 id="key-points">Key points&lt;/h2>
 &lt;h2 id="solution-1---暴力解">Solution 1 - 暴力解&lt;/h2>
 &lt;ul>
 &lt;li>檢查矩陣中所有可能的矩形，並計算每個矩形是否符合條件。&lt;/li>
@@ -160,65 +76,10 @@
 &lt;/ul>
 &lt;h2 id="sample">Sample&lt;/h2>
 &lt;h3 id="input">input&lt;/h3>
-
-
-
-&lt;div class="goat svg-container ">
- 
- &lt;svg
- xmlns="http://www.w3.org/2000/svg"
- font-family="Menlo,Lucida Console,monospace"
- 
- viewBox="0 0 208 25"
- >
- &lt;g transform='translate(8,16)'>
-&lt;text text-anchor='middle' x='0' y='4' fill='currentColor' style='font-size:1em'>h&lt;/text>
-&lt;text text-anchor='middle' x='8' y='4' fill='currentColor' style='font-size:1em'>e&lt;/text>
-&lt;text text-anchor='middle' x='16' y='4' fill='currentColor' style='font-size:1em'>i&lt;/text>
-&lt;text text-anchor='middle' x='24' y='4' fill='currentColor' style='font-size:1em'>g&lt;/text>
-&lt;text text-anchor='middle' x='32' y='4' fill='currentColor' style='font-size:1em'>h&lt;/text>
-&lt;text text-anchor='middle' x='40' y='4' fill='currentColor' style='font-size:1em'>t&lt;/text>
-&lt;text text-anchor='middle' x='48' y='4' fill='currentColor' style='font-size:1em'>s&lt;/text>
-&lt;text text-anchor='middle' x='64' y='4' fill='currentColor' style='font-size:1em'>=&lt;/text>
-&lt;text text-anchor='middle' x='80' y='4' fill='currentColor' style='font-size:1em'>[&lt;/text>
-&lt;text text-anchor='middle' x='88' y='4' fill='currentColor' style='font-size:1em'>2&lt;/text>
-&lt;text text-anchor='middle' x='96' y='4' fill='currentColor' style='font-size:1em'>,&lt;/text>
-&lt;text text-anchor='middle' x='104' y='4' fill='currentColor' style='font-size:1em'>1&lt;/text>
-&lt;text text-anchor='middle' x='112' y='4' fill='currentColor' style='font-size:1em'>,&lt;/text>
-&lt;text text-anchor='middle' x='120' y='4' fill='currentColor' style='font-size:1em'>5&lt;/text>
-&lt;text text-anchor='middle' x='128' y='4' fill='currentColor' style='font-size:1em'>,&lt;/text>
-&lt;text text-anchor='middle' x='136' y='4' fill='currentColor' style='font-size:1em'>6&lt;/text>
-&lt;text text-anchor='middle' x='144' y='4' fill='currentColor' style='font-size:1em'>,&lt;/text>
-&lt;text text-anchor='middle' x='152' y='4' fill='currentColor' style='font-size:1em'>2&lt;/text>
-&lt;text text-anchor='middle' x='160' y='4' fill='currentColor' style='font-size:1em'>,&lt;/text>
-&lt;text text-anchor='middle' x='168' y='4' fill='currentColor' style='font-size:1em'>3&lt;/text>
-&lt;text text-anchor='middle' x='176' y='4' fill='currentColor' style='font-size:1em'>]&lt;/text>
-&lt;/g>
-
- &lt;/svg>
- 
-&lt;/div>
-&lt;h3 id="output">output&lt;/h3>
-
-
-
-&lt;div class="goat svg-container ">
- 
- &lt;svg
- xmlns="http://www.w3.org/2000/svg"
- font-family="Menlo,Lucida Console,monospace"
- 
- viewBox="0 0 40 25"
- >
- &lt;g transform='translate(8,16)'>
-&lt;text text-anchor='middle' x='0' y='4' fill='currentColor' style='font-size:1em'>1&lt;/text>
-&lt;text text-anchor='middle' x='8' y='4' fill='currentColor' style='font-size:1em'>0&lt;/text>
-&lt;/g>
-
- &lt;/svg>
- 
-&lt;/div>
-&lt;h2 id="key-points">Key points&lt;/h2>
+&lt;pre tabindex="0">&lt;code>heights = [2,1,5,6,2,3] 
+&lt;/code>&lt;/pre>&lt;h3 id="output">output&lt;/h3>
+&lt;pre tabindex="0">&lt;code>10 
+&lt;/code>&lt;/pre>&lt;h2 id="key-points">Key points&lt;/h2>
 &lt;ul>
 &lt;li>目標是 &lt;strong>找到每個柱子能擴展的最大寬度&lt;/strong>，然後計算以該柱子為高度的最大矩形面積。&lt;/li>
 &lt;/ul>

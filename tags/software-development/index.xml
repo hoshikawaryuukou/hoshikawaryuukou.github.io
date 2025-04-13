@@ -199,60 +199,11 @@
 &lt;/ul>
 &lt;h3 id="避免-header-過度使用">避免 Header 過度使用&lt;/h3>
 &lt;p>原本寫作時會下意識的使用不少的三級標題 &lt;code>### Header&lt;/code>&lt;/p>
+&lt;pre tabindex="0">&lt;code>## Header2
 
+### Header3
+分段...
 
-
-&lt;div class="goat svg-container ">
- 
- &lt;svg
- xmlns="http://www.w3.org/2000/svg"
- font-family="Menlo,Lucida Console,monospace"
- 
- viewBox="0 0 96 121"
- >
- &lt;g transform='translate(8,16)'>
-&lt;text text-anchor='middle' x='0' y='4' fill='currentColor' style='font-size:1em'>#&lt;/text>
-&lt;text text-anchor='middle' x='0' y='36' fill='currentColor' style='font-size:1em'>#&lt;/text>
-&lt;text text-anchor='middle' x='0' y='52' fill='currentColor' style='font-size:1em'>分&lt;/text>
-&lt;text text-anchor='middle' x='0' y='84' fill='currentColor' style='font-size:1em'>#&lt;/text>
-&lt;text text-anchor='middle' x='0' y='100' fill='currentColor' style='font-size:1em'>分&lt;/text>
-&lt;text text-anchor='middle' x='8' y='4' fill='currentColor' style='font-size:1em'>#&lt;/text>
-&lt;text text-anchor='middle' x='8' y='36' fill='currentColor' style='font-size:1em'>#&lt;/text>
-&lt;text text-anchor='middle' x='8' y='52' fill='currentColor' style='font-size:1em'>段&lt;/text>
-&lt;text text-anchor='middle' x='8' y='84' fill='currentColor' style='font-size:1em'>#&lt;/text>
-&lt;text text-anchor='middle' x='8' y='100' fill='currentColor' style='font-size:1em'>段&lt;/text>
-&lt;text text-anchor='middle' x='16' y='36' fill='currentColor' style='font-size:1em'>#&lt;/text>
-&lt;text text-anchor='middle' x='16' y='52' fill='currentColor' style='font-size:1em'>.&lt;/text>
-&lt;text text-anchor='middle' x='16' y='84' fill='currentColor' style='font-size:1em'>#&lt;/text>
-&lt;text text-anchor='middle' x='16' y='100' fill='currentColor' style='font-size:1em'>.&lt;/text>
-&lt;text text-anchor='middle' x='24' y='4' fill='currentColor' style='font-size:1em'>H&lt;/text>
-&lt;text text-anchor='middle' x='24' y='52' fill='currentColor' style='font-size:1em'>.&lt;/text>
-&lt;text text-anchor='middle' x='24' y='100' fill='currentColor' style='font-size:1em'>.&lt;/text>
-&lt;text text-anchor='middle' x='32' y='4' fill='currentColor' style='font-size:1em'>e&lt;/text>
-&lt;text text-anchor='middle' x='32' y='36' fill='currentColor' style='font-size:1em'>H&lt;/text>
-&lt;text text-anchor='middle' x='32' y='52' fill='currentColor' style='font-size:1em'>.&lt;/text>
-&lt;text text-anchor='middle' x='32' y='84' fill='currentColor' style='font-size:1em'>H&lt;/text>
-&lt;text text-anchor='middle' x='32' y='100' fill='currentColor' style='font-size:1em'>.&lt;/text>
-&lt;text text-anchor='middle' x='40' y='4' fill='currentColor' style='font-size:1em'>a&lt;/text>
-&lt;text text-anchor='middle' x='40' y='36' fill='currentColor' style='font-size:1em'>e&lt;/text>
-&lt;text text-anchor='middle' x='40' y='84' fill='currentColor' style='font-size:1em'>e&lt;/text>
-&lt;text text-anchor='middle' x='48' y='4' fill='currentColor' style='font-size:1em'>d&lt;/text>
-&lt;text text-anchor='middle' x='48' y='36' fill='currentColor' style='font-size:1em'>a&lt;/text>
-&lt;text text-anchor='middle' x='48' y='84' fill='currentColor' style='font-size:1em'>a&lt;/text>
-&lt;text text-anchor='middle' x='56' y='4' fill='currentColor' style='font-size:1em'>e&lt;/text>
-&lt;text text-anchor='middle' x='56' y='36' fill='currentColor' style='font-size:1em'>d&lt;/text>
-&lt;text text-anchor='middle' x='56' y='84' fill='currentColor' style='font-size:1em'>d&lt;/text>
-&lt;text text-anchor='middle' x='64' y='4' fill='currentColor' style='font-size:1em'>r&lt;/text>
-&lt;text text-anchor='middle' x='64' y='36' fill='currentColor' style='font-size:1em'>e&lt;/text>
-&lt;text text-anchor='middle' x='64' y='84' fill='currentColor' style='font-size:1em'>e&lt;/text>
-&lt;text text-anchor='middle' x='72' y='4' fill='currentColor' style='font-size:1em'>2&lt;/text>
-&lt;text text-anchor='middle' x='72' y='36' fill='currentColor' style='font-size:1em'>r&lt;/text>
-&lt;text text-anchor='middle' x='72' y='84' fill='currentColor' style='font-size:1em'>r&lt;/text>
-&lt;text text-anchor='middle' x='80' y='36' fill='currentColor' style='font-size:1em'>3&lt;/text>
-&lt;text text-anchor='middle' x='80' y='84' fill='currentColor' style='font-size:1em'>3&lt;/text>
-&lt;/g>
-
- &lt;/svg>
- 
-&lt;/div>
-&lt;p>但這次觀察 READMEs 的過程，看到不少以下這種不多做一些分段的寫法&lt;/p></description></item></channel></rss>
+### Header3
+分段...
+&lt;/code>&lt;/pre>&lt;p>但這次觀察 READMEs 的過程，看到不少以下這種不多做一些分段的寫法&lt;/p></description></item></channel></rss>
