@@ -17,11 +17,8 @@ tags: ["AI"]
 ## Audio
 - Suno AI
 
-## Chat Bot
-- [Chat With ChatGPT bot DAN fast and free | FlowGPT](https://flowgpt.com/)
-
-## Document
-- [新世代 AI 簡報神器 Gamma](https://www.youtube.com/watch?v=nl-eVo1EhEQ)
+## Vedio
+- Veo 2
 
 ## Translation
 - GPT Translator
