@@ -1,4 +1,86 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Node.js on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/node.js/</link><description>Recent content in Node.js on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sun, 06 Oct 2024 20:31:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/node.js/index.xml" rel="self" type="application/rss+xml"/><item><title>Workflow - Create a monorepo with pnpm workspace</title><link>https://HoshikawaRyuukou.github.io/posts/workflow---create-a-monorepo-with-pnpm-workspace/</link><pubDate>Sun, 06 Oct 2024 20:31:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow---create-a-monorepo-with-pnpm-workspace/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Node.js on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/node.js/</link><description>Recent content in Node.js on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sun, 13 Oct 2024 09:11:01 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/node.js/index.xml" rel="self" type="application/rss+xml"/><item><title>Node.js - package.json - Export</title><link>https://HoshikawaRyuukou.github.io/posts/node.js---package.json---export/</link><pubDate>Sun, 13 Oct 2024 09:11:01 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/node.js---package.json---export/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://nodejs.org/api/packages.html#package-entry-points">Package entry points&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.typescriptlang.org/docs/handbook/declaration-files/publishing.html#version-selection-with-typesversions">Version selection with typesVersions&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.nullfox.com/multiple-exports-typescript-package-types">Multiple exports with types in a Typescript Package&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/627434408">巧用 exports 和 typeVersions 提升 npm 包用户使用体验&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="suggestion">Suggestion&lt;/h2>
+&lt;ul>
+&lt;li>以較新 Node.js 版本為目標的新包，建議使用 &lt;code>exports&lt;/code> 欄位。&lt;/li>
+&lt;li>sample - &lt;a href="https://github.com/vuejs/core/blob/main/packages/vue/package.json">vue/core&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="notice">Notice&lt;/h2>
+&lt;p>當定義了 exports 欄位時&lt;/p>
+&lt;ul>
+&lt;li>⚠️ Node.js 會優先使用 exports 來決定如何載入模組，只有在 exports 中沒有相應定義時，才會使用 main、module 和 types 欄位。&lt;/li>
+&lt;li>⚠️ 所有子路徑都會被封裝起來，除非明確導出，否則這些子路徑將無法供使用者訪問(會拋出一個 &lt;code>ERR_PACKAGE_PATH_NOT_EXPORTED&lt;/code> 的錯誤)。&lt;/li>
+&lt;/ul>
+&lt;h2 id="fields">Fields&lt;/h2>
+&lt;h3 id="main">main&lt;/h3>
+&lt;p>當套件被作為 CommonJS 模組引入時，預設的入口點。&lt;/p>
+&lt;h3 id="module">module&lt;/h3>
+&lt;p>當套件被作為 ES 模組引入時，預設的入口點。&lt;/p>
+&lt;h3 id="types">types&lt;/h3>
+&lt;p>TypeScript 的類型定義檔案位置，提供 TypeScript 支援。&lt;/p>
+&lt;h3 id="exports">exports&lt;/h3>
+&lt;ul>
+&lt;li>用來細化和取代傳統的 main 和 module 欄位。&lt;/li>
+&lt;li>提高包的安全性：限制用戶可以訪問的內部文件，防止直接訪問內部未經授權的代碼。&lt;/li>
+&lt;li>更清晰的 API：只公開需要使用的部分代碼，簡化使用者的導入過程。&lt;/li>
+&lt;li>支持不同的模組格式：通過同時支持 require 和 import，可以在不同的環境中更靈活使用。&lt;/li>
+&lt;/ul>
+&lt;h2 id="exports---conditional-exports">exports - Conditional Exports&lt;/h2>
+&lt;p>目前指導出 esm 模組，未來需要雙入口再回補。&lt;/p></description></item><item><title>Node.js - Package Manager - pnpm</title><link>https://HoshikawaRyuukou.github.io/posts/node.js---package-manager---pnpm/</link><pubDate>Sat, 12 Oct 2024 21:16:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/node.js---package-manager---pnpm/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://pnpm.nodejs.cn/">pnpm&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.cnblogs.com/cangqinglang/p/14448329.html">为什么现在我更推荐 pnpm 而不是 npm/yarn? &lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://juejin.cn/post/7286362110211489855?searchId=20240731105621AD124E03A93B1AB5027A">pnpm、npm、yarn 包管理工具『优劣对比』及『环境迁移』&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://qborfy.com/today/20230219.html">从pnpm工具了解整个npm包核心管理原理&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.explainthis.io/zh-hant/swe/why-is-pnpm-faster">為什麼 pnpm 比 npm 更快且更省空間？&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.csdn.net/bobo789456123/article/details/132882778">pnpm实战教程&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="install">Install&lt;/h2>
+&lt;h3 id="全域安裝">全域安裝&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>npm install -g pnpm
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="環境配置---windows">環境配置 - Windows&lt;/h3>
+&lt;ul>
+&lt;li>⚠️ 使用 PowerShell 系統管理員&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>Get-ExecutionPolicy
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 如果為 Restricted 則繼續進行 &lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Set-ExecutionPolicy RemoteSigned
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="commands">Commands&lt;/h2>
+&lt;h3 id="pnpm-本體">pnpm 本體&lt;/h3>
+&lt;ul>
+&lt;li>pnpm self-update : 將 pnpm 更新到最新版本。(建議重啟 ide)&lt;/li>
+&lt;/ul>
+&lt;h3 id="nodejs-的執行環境">Node.js 的執行環境&lt;/h3>
+&lt;ul>
+&lt;li>pnpm env use &amp;ndash;global lts : 安裝並使用 LTS 版本&lt;/li>
+&lt;li>pnpm env use &amp;ndash;global {version} : 安裝並使用指定版本&lt;/li>
+&lt;li>pnpm env add &amp;ndash;global {version} : 僅安裝指定版本&lt;/li>
+&lt;li>pnpm env remove &amp;ndash;global {version} : 移除指定版本&lt;/li>
+&lt;li>pnpm env list &amp;ndash;remote : 列出線上可用的版本&lt;/li>
+&lt;/ul>
+&lt;h3 id="packages">packages&lt;/h3>
+&lt;ul>
+&lt;li>pnpm add &lt;code>&amp;lt;pkg&amp;gt;&lt;/code> : 添加依賴&lt;/li>
+&lt;li>pnpm remove &lt;code>&amp;lt;pkg&amp;gt;&lt;/code> : 移除依賴&lt;/li>
+&lt;li>pnpm install : 安裝所有依賴&lt;/li>
+&lt;li>pnpm update : 在 package.json 限制的版本範圍內更新所有依賴&lt;/li>
+&lt;li>pnpm update &amp;ndash;latest : 強更新所有依賴至最新&lt;/li>
+&lt;li>pnpm outdated : 檢查套件是否有更新&lt;/li>
+&lt;li>pnpm store prune : 會清理掉不再被專案引用的包&lt;/li>
+&lt;li>pnpm run &lt;code>&amp;lt;commnad&amp;gt;&lt;/code> : 執行命令 (run 基本)&lt;/li>
+&lt;/ul>
+&lt;h3 id="workspace">workspace&lt;/h3>
+&lt;ul>
+&lt;li>-w : 為工作區參數&lt;/li>
+&lt;li>-wD : 組合使用 - 工作區依賴&lt;/li>
+&lt;li>&amp;ndash;filter &lt;code>&amp;lt;package_selector&amp;gt;&lt;/code>: 對指定 package 操作&lt;/li>
+&lt;/ul></description></item><item><title>Workflow - Create a monorepo with pnpm workspace</title><link>https://HoshikawaRyuukou.github.io/posts/workflow---create-a-monorepo-with-pnpm-workspace/</link><pubDate>Sun, 06 Oct 2024 20:31:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow---create-a-monorepo-with-pnpm-workspace/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://juejin.cn/post/7357546247848198182">Monorepo与pnpm：前端项目管理的完美搭档&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://juejin.cn/post/7316409548994625574?searchId=20240731105621AD124E03A93B1AB5027A">为什么 pnpm+monorepo 是组件库项目的最佳实践&lt;/a>&lt;/li>
@@ -57,7 +139,115 @@
 //npm.pkg.github.com/:_authToken=&amp;#34;${GITHUB_TOKEN}&amp;#34;
 &lt;/code>&lt;/pre>&lt;h2 id="安裝-package">安裝 package&lt;/h2>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>npm install @ooxx/xxx
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Node.js - Note</title><link>https://HoshikawaRyuukou.github.io/posts/node/</link><pubDate>Sun, 26 May 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/node/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Node.js - package.json</title><link>https://HoshikawaRyuukou.github.io/posts/node.js---package.json/</link><pubDate>Fri, 26 Jul 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/node.js---package.json/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>可以將 package.json 檔案新增到套件中，以便其他人可以輕鬆管理和安裝。發佈到註冊表的包必須包含一個 package.json 檔案。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.npmjs.com/creating-a-package-json-file">Creating a package.json file&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="quick-start">Quick Start&lt;/h2>
+&lt;p>根據當前目錄產生預設 package.json&lt;br>
+&lt;code>npm init -y&lt;/code>&lt;/p>
+&lt;h2 id="fields">Fields&lt;/h2>
+&lt;h3 id="name">name&lt;/h3>
+&lt;p>必須是小寫字母和一個單詞，並且可以包含連字符和下劃線&lt;/p>
+&lt;h3 id="version">version&lt;/h3>
+&lt;p>遵循語義版本控制準則 &lt;code>x.x.x&lt;/code>&lt;/p>
+&lt;h3 id="type">type&lt;/h3>
+&lt;p>指定 module system 要用&lt;/p>
+&lt;ul>
+&lt;li>ES : &amp;ldquo;module&amp;rdquo;&lt;/li>
+&lt;li>CommonJS : &amp;ldquo;commonjs&amp;rdquo;&lt;/li>
+&lt;/ul>
+&lt;h3 id="main">main&lt;/h3>
+&lt;p>當套件被作為 CommonJS 模組引入時，預設的入口點。&lt;/p>
+&lt;h3 id="module">module&lt;/h3>
+&lt;p>當套件被作為 ES 模組引入時，預設的入口點。&lt;/p>
+&lt;h3 id="types">types&lt;/h3>
+&lt;p>TypeScript 的類型定義檔案位置，提供 TypeScript 支援。&lt;/p>
+&lt;h3 id="exports">exports&lt;/h3>
+&lt;p>是一個較新的欄位，用來細化和取代傳統的 main 和 module 欄位。它允許你為不同的環境（例如 Node.js、ES 模組、瀏覽器）定義不同的入口點和模組格式。它還允許你控制哪些檔案可以被使用者匯入，提供更多的安全性和靈活性。&lt;/p>
+&lt;p>如果有 exports 欄位，Node.js 會優先使用 exports 來決定如何載入模組，只有在 exports 中沒有相應定義時，才會回退到使用 main、module 和 types 欄位。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;exports&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;.&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;types&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;./build/types/lib.d.ts&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;require&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;./build/cjs/lib.js&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;import&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;./build/esm/lib.js&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;default&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;./build/esm/lib.js&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>&lt;a href="https://www.nullfox.com/multiple-exports-typescript-package-types">Multiple exports with types in a Typescript Package&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>/my-package
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── /dist
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── index.js
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── utils.js
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── internal.js
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>└── /lib
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> └── helper.js
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;name&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;my-package&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;version&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;1.0.0&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;exports&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;.&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;./dist/index.js&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;./utils&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;./dist/utils.js&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;./lib/helper&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;./lib/helper.js&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>⛨ 限制訪問&lt;/p></description></item><item><title>Node.js - Packages</title><link>https://HoshikawaRyuukou.github.io/posts/node.js---packages/</link><pubDate>Sat, 22 Jun 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/node.js---packages/</guid><description>&lt;h2 id="package">Package&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://npmtrends.com/">npm trends&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="npx">npx&lt;/h2>
+&lt;p>&lt;code>npx&lt;/code> 常用於執行一次性操做，允許你在不安裝包到全局或本地的情況下直接運行該包中的可執行文件。且會檢查並執行最新版本的包，確保你不會因為本地包過時而遇到問題。&lt;/p>
+&lt;hr>
+&lt;h2 id="benchmark">Benchmark&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/tinylibs/tinybench">tinybench&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="cli">CLI&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/chalk/chalk">chalk&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/cli-table/cli-table3">cli-table3&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.bilibili.com/read/cv27094154/">tsx: 替代 node 指令、支持运行 TypeScript &amp;amp; ESM 的 CLI 程序&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.npmjs.com/package/console-table-printer">console-table-printer&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="git">Git&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/Rich-Harris/degit">degit&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="https://www.cnblogs.com/Merrys/p/16900767.html">degit简介&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="io">IO&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/isaacs/rimraf">rimraf&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="https://blog.csdn.net/imdeity/article/details/137772287">Rimraf详细介绍&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="ioc">IoC&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/inversify/InversifyJS">InversifyJS&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="multitasking">Multitasking&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/josdejong/workerpool">workerpool&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="test">Test&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://vitest.dev/">Vitest&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="validation">Validation&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/colinhacks/zod">zod&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Node.js - Note</title><link>https://HoshikawaRyuukou.github.io/posts/node.js---note/</link><pubDate>Sun, 26 May 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/node.js---note/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/648238863">Node.js究竟是什么？初学者指南&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/coreybutler/nvm-windows">coreybutler/nvm-windows&lt;/a>&lt;/li>
