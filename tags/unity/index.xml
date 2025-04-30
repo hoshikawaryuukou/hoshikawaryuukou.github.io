@@ -566,6 +566,7 @@ Scope(s):
 &lt;ul>
 &lt;li>&lt;a href="https://hackmd.io/@-xLrSnFfROOeIeRnENCWcQ/Bke4eFcrd">UniTaskを使おう！&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://qiita.com/toRisouP/items/4445b6b9bf00e49eb147">UniTask機能紹介&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://scenarioflow-lab.dotprologue.com/category/unitask/">UniTask | ScenarioFlow Lab&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;p>以下紀錄幾個重點主題&lt;/p>
 &lt;h2 id="awaiter">Awaiter&lt;/h2>
@@ -579,11 +580,7 @@ Scope(s):
 &lt;li>UniTask.SwitchToMainThread 切換到主執行緒，不會等待下一幀。&lt;/li>
 &lt;li>也可以使用 UniTask.Yield 切換到主執行緒，但它總是等待一幀。&lt;/li>
 &lt;/ul>
-&lt;p>但目前尚未有使用到的情境，之後有遇到再嘗試。&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://qiita.com/matchyy/items/44986c3fee410e29e2e5">UniTaskを使えば並列処理で外部機器からデータを簡単に取得できますの紹介&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;p>此外使用執行緒池，將無法與 WebGL 等平台相容。未來應該也會避開使用。&lt;/p></description></item><item><title>Unity - Platform - Android - Build</title><link>https://HoshikawaRyuukou.github.io/posts/unity---platform---android---build/</link><pubDate>Sat, 03 Feb 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---platform---android---build/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;p>但目前尚未有使用到的情境，之後有遇到再嘗試。&lt;/p></description></item><item><title>Unity - Platform - Android - Build</title><link>https://HoshikawaRyuukou.github.io/posts/unity---platform---android---build/</link><pubDate>Sat, 03 Feb 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---platform---android---build/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://www.jianshu.com/p/9058daafa130">Unity 不通過Android studio 打包接SDK&lt;/a>&lt;/li>
 &lt;/ul>
