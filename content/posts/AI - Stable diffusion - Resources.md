@@ -26,6 +26,10 @@ tags: ["AI", "Stable diffusion", "Art"]
 - [pepegles](https://civitai.com/user/pepegles/images)
 
 ## Artists
+- rella
+
+---
+
 - [artist list](https://arca.live/b/aiart/73560719)
 - [Artists | Danbooru](https://danbooru.donmai.us/artists)
 - [Akitetsu | Danbooru](https://danbooru.donmai.us/posts?tags=akitetsu)

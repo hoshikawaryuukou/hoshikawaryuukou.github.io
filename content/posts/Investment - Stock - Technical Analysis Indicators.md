@@ -7,3 +7,4 @@ tags: ["Investment", "Stock"]
 ---
 
 - 月 KD
+- 年線乖離率
