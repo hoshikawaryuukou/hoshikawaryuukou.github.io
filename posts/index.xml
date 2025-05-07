@@ -179,7 +179,7 @@
 &lt;h2 id="モンスターハンター-monster-hunter">モンスターハンター (Monster Hunter)&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://www.youtube.com/@ShuShiDui/videos">艾森巴赫 - YouTube&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Unity - Basic - ScriptableObject</title><link>https://HoshikawaRyuukou.github.io/posts/unity---basic---sprite-atlas-copy/</link><pubDate>Fri, 28 Mar 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---basic---sprite-atlas-copy/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;/ul></description></item><item><title>Unity - Basic - ScriptableObject</title><link>https://HoshikawaRyuukou.github.io/posts/unity---basic---scriptableobject/</link><pubDate>Fri, 28 Mar 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---basic---scriptableobject/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>ScriptableObject 是 Unity 中一個非常強大且有用的功能，主要用於儲存共享數據、配置或建立數據驅動的系統。&lt;/p>
 &lt;h2 id="cautions">Cautions&lt;/h2>
 &lt;h3 id="editor-play-mode-persistence">Editor Play Mode Persistence&lt;/h3>
@@ -202,8 +202,7 @@
 &lt;ul>
 &lt;li>&lt;a href="https://docs.unity3d.com/6000.0/Documentation/Manual/sprite/atlas/atlas-landing.html">Unity - Manual: Sprite atlas&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.cnblogs.com/chenxiayun/p/18780078">Unity —— SpriteAtlas + Include in Build - 陈侠云 - 博客园&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="sprite-atlas-v2">Sprite Atlas V2&lt;/h2></description></item><item><title>Art - Photopea - Note</title><link>https://HoshikawaRyuukou.github.io/posts/art---photopea---note/</link><pubDate>Thu, 27 Mar 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/art---photopea---note/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;/ul></description></item><item><title>Art - Photopea - Note</title><link>https://HoshikawaRyuukou.github.io/posts/art---photopea---note/</link><pubDate>Thu, 27 Mar 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/art---photopea---note/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>Photopea 是一款免費線上圖像編輯工具，介面與 Photoshop 相似，支援 PSD、XD、Sketch 等多種檔案格式。使用者無需安裝軟體，即可在瀏覽器中進行圖層編輯、濾鏡處理與設計排版，非常適合快速修圖與設計需求。&lt;/p>
 &lt;h2 id="cases">Cases&lt;/h2>
 &lt;ul>
