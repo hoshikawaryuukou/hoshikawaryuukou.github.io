@@ -14,12 +14,18 @@ tags: ["AI"]
 ## News
 - [AIbase基地 - 让更多人看到未来 通往AGI之路](https://www.aibase.com/zh/)
 
-## Audio
-- Suno AI
+---
 
-## Vedio
-- Veo 2
+## Coding
+- [GitHub项目理解神器：DeepWiki](https://www.youtube.com/watch?v=IqVo8V4QNm0)
+- [AsyncFuncAI/deepwiki-open](https://github.com/AsyncFuncAI/deepwiki-open)
 
 ## Translation
 - GPT Translator
 - [SakuraLLM/SakuraLLM](https://github.com/SakuraLLM/SakuraLLM)
+- [zyddnys/manga-image-translator](https://github.com/zyddnys/manga-image-translator)
+
+## Vedio
+- Veo 2
+
+
