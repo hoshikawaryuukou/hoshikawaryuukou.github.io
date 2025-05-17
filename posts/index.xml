@@ -1,7 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/posts/</link><description>Recent content in Posts on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 08 May 2025 13:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>AI - LLM - Gemini</title><link>https://HoshikawaRyuukou.github.io/posts/ai---llm---gemini/</link><pubDate>Thu, 08 May 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---llm---gemini/</guid><description>&lt;h2 id="quick">Quick&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/posts/</link><description>Recent content in Posts on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 08 May 2025 13:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>AI - LLM - Gemini</title><link>https://HoshikawaRyuukou.github.io/posts/ai---llm---gemini/</link><pubDate>Thu, 08 May 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---llm---gemini/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>😊 免費方案對於輕度開發綽綽有餘&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://www.youtube.com/watch?v=3jdhFHgvxpg">Gemini新手教学&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>AI - Audio</title><link>https://HoshikawaRyuukou.github.io/posts/ai---audio/</link><pubDate>Wed, 07 May 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---audio/</guid><description>&lt;h2 id="quick">Quick&lt;/h2>
+&lt;li>&lt;a href="https://ai.google.dev/gemini-api/docs?hl=zh-tw">Gemini API  |  Google AI for Developers&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://ai.google.dev/gemini-api/docs/pricing?hl=zh-tw&amp;amp;_gl=1*1bgoxhp*_up*MQ..&amp;amp;gclid=CjwKCAiAopuvBhBCEiwAm8jaMRbEEnIJr7BCEthg7psSBoIKbpA9CmArCYnFF-oHxtxYB-4PtmvykRoC120QAvD_BwE">定價  |  Gemini API  |  Google AI for Developers&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://ai.google.dev/gemini-api/docs/rate-limits?hl=zh-tw&amp;amp;_gl=1*hth47i*_up*MQ..&amp;amp;gclid=CjwKCAiAopuvBhBCEiwAm8jaMRbEEnIJr7BCEthg7psSBoIKbpA9CmArCYnFF-oHxtxYB-4PtmvykRoC120QAvD_BwE">頻率限制  |  Gemini API  |  Google AI for Developers&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="api">API&lt;/h2>
+&lt;ul>
+&lt;li>透過 Google AI Studio &lt;a href="https://aistudio.google.com/apikey">申請&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="hello-world">Hello World&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-js" data-lang="js">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">import&lt;/span> &lt;span style="color:#111">{&lt;/span> &lt;span style="color:#75af00">GoogleGenAI&lt;/span> &lt;span style="color:#111">}&lt;/span> &lt;span style="color:#75af00">from&lt;/span> &lt;span style="color:#d88200">&amp;#34;@google/genai&amp;#34;&lt;/span>&lt;span style="color:#111">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">const&lt;/span> &lt;span style="color:#75af00">ai&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#00a8c8">new&lt;/span> &lt;span style="color:#75af00">GoogleGenAI&lt;/span>&lt;span style="color:#111">({&lt;/span> &lt;span style="color:#75af00">apiKey&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;YOUR_API_KEY&amp;#34;&lt;/span> &lt;span style="color:#111">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">async&lt;/span> &lt;span style="color:#00a8c8">function&lt;/span> &lt;span style="color:#75af00">main&lt;/span>&lt;span style="color:#111">()&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">const&lt;/span> &lt;span style="color:#75af00">response&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#00a8c8">await&lt;/span> &lt;span style="color:#75af00">ai&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">models&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">generateContent&lt;/span>&lt;span style="color:#111">({&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">model&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;gemini-2.0-flash&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">contents&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;Explain how AI works in a few words&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">console&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">log&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#75af00">response&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">text&lt;/span>&lt;span style="color:#111">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">await&lt;/span> &lt;span style="color:#75af00">main&lt;/span>&lt;span style="color:#111">();&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>AI - Audio</title><link>https://HoshikawaRyuukou.github.io/posts/ai---audio/</link><pubDate>Wed, 07 May 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---audio/</guid><description>&lt;h2 id="quick">Quick&lt;/h2>
 &lt;p>這篇是不錯的導讀&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://www.bilibili.com/video/BV17SVUznEGw">AI声音建模：MiniMax Audio 一键声音克隆&lt;/a>&lt;/li>
@@ -214,7 +237,7 @@
 &lt;h2 id="cases">Cases&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://ushiro-mae.com/photopea-replace-color/">【Photopea】色を置き換える方法&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>AI - LLM - Note</title><link>https://HoshikawaRyuukou.github.io/posts/ai---llm---note/</link><pubDate>Wed, 26 Mar 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---llm---note/</guid><description>&lt;h2 id="artificial-general-intelligenceagi">Artificial General Intelligence（AGI）&lt;/h2>
+&lt;/ul></description></item><item><title>AI - Common - Note</title><link>https://HoshikawaRyuukou.github.io/posts/ai---common---note/</link><pubDate>Wed, 26 Mar 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---common---note/</guid><description>&lt;h2 id="artificial-general-intelligenceagi">Artificial General Intelligence（AGI）&lt;/h2>
 &lt;p>簡單來說，AGI（通用人工智慧）就像是一個能夠像人類一樣思考和學習的 AI。現在的 AI 通常只能做特定的事情，比如語音助理能聽懂指令、圖像辨識能認臉，但它們無法舉一反三或解決各種不同的問題。&lt;/p>
 &lt;p>AGI 則不同，它能夠適應各種情境、學習新知識、自己思考並解決問題，就像一個真正有智慧的人。這也是人工智慧發展的終極目標——打造一個可以自由學習、理解世界的「超級 AI」。&lt;/p>
 &lt;h2 id="edge-computing">Edge Computing&lt;/h2>
@@ -2137,7 +2160,10 @@ CHANGELOG*.md
 &lt;li>
 &lt;p>&lt;strong>比較符號 (&lt;code>&amp;lt;&lt;/code>, &lt;code>&amp;lt;=&lt;/code>, &lt;code>&amp;gt;&lt;/code>, &lt;code>&amp;gt;=&lt;/code>)&lt;/strong>&lt;br>
 用於指定版本的上限或下限。&lt;br>
-例如，&lt;code>&amp;lt;2.0.0&lt;/code> 表示可以使用比 &lt;code>2.0.0&lt;/code> 更早的所有版本。&lt;/p></description></item><item><title>Front-End - Html - Note</title><link>https://HoshikawaRyuukou.github.io/posts/front-end---html---note/</link><pubDate>Tue, 29 Oct 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/front-end---html---note/</guid><description>&lt;h2 id="dom-document-object-model">DOM (Document Object Model)&lt;/h2>
+例如，&lt;code>&amp;lt;2.0.0&lt;/code> 表示可以使用比 &lt;code>2.0.0&lt;/code> 更早的所有版本。&lt;/p></description></item><item><title>Front-End - Common - Note</title><link>https://HoshikawaRyuukou.github.io/posts/front-end---common---note/</link><pubDate>Tue, 29 Oct 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/front-end---common---note/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=J_xIxliB0Jo">在你不知道的角落，前端的未来正在回归本源&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Front-End - Html - Note</title><link>https://HoshikawaRyuukou.github.io/posts/front-end---html---note/</link><pubDate>Tue, 29 Oct 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/front-end---html---note/</guid><description>&lt;h2 id="dom-document-object-model">DOM (Document Object Model)&lt;/h2>
 &lt;p>是一種瀏覽器用來表示和操作 HTML 或 XML 文件的結構化方式。當一個網頁加載時，瀏覽器會將 HTML 文檔解析成 DOM 樹，然後讓開發者使用 JavaScript 等語言動態修改網頁的內容、結構和樣式。&lt;/p>
 &lt;h3 id="view-size">view size&lt;/h3>
 &lt;ul>
@@ -3456,6 +3482,7 @@ CHANGELOG*.md
 &lt;li>GPT Translator&lt;/li>
 &lt;li>&lt;a href="https://github.com/SakuraLLM/SakuraLLM">SakuraLLM/SakuraLLM&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/zyddnys/manga-image-translator">zyddnys/manga-image-translator&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/dmMaze/BallonsTranslator">dmMaze/BallonsTranslator&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="vedio">Vedio&lt;/h2>
 &lt;ul>
@@ -3494,6 +3521,9 @@ CHANGELOG*.md
 &lt;li>&lt;a href="https://www.jyt0532.com/toc/">jyt0532&amp;rsquo;s Blog&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://blog.ttulka.com/">Tomas Tulka&amp;rsquo;s Blog&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.entropywins.wtf/blog/">Entropy Wins - A blog on Software Architecture, Design and Craftsmanship&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Software Operation - Note</title><link>https://HoshikawaRyuukou.github.io/posts/software-operation---note/</link><pubDate>Wed, 28 Aug 2024 20:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-operation---note/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=ytOW5t-iYP8">为什么程序员都应该学用容器技术&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>AI - Ollama - Note</title><link>https://HoshikawaRyuukou.github.io/posts/ai---ollama---note/</link><pubDate>Mon, 19 Aug 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---ollama---note/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://ollama.com/">Ollama&lt;/a>&lt;/li>
