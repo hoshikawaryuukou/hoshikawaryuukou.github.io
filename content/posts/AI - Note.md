@@ -24,6 +24,7 @@ tags: ["AI"]
 - GPT Translator
 - [SakuraLLM/SakuraLLM](https://github.com/SakuraLLM/SakuraLLM)
 - [zyddnys/manga-image-translator](https://github.com/zyddnys/manga-image-translator)
+- [dmMaze/BallonsTranslator](https://github.com/dmMaze/BallonsTranslator)
 
 ## Vedio
 - Veo 2
