@@ -1,4 +1,59 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/posts/</link><description>Recent content in Posts on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Fri, 16 May 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Documents - Markdown</title><link>https://HoshikawaRyuukou.github.io/posts/documents---markdown/</link><pubDate>Fri, 16 May 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/documents---markdown/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/posts/</link><description>Recent content in Posts on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Fri, 16 May 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>AI - Stable diffusion - Favorites</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorites/</link><pubDate>Fri, 16 May 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorites/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;ul>
+&lt;li>sd 1.5 系列基本上不使用了&lt;/li>
+&lt;li>Illustrious 是目前的使用主力&lt;/li>
+&lt;/ul>
+&lt;h2 id="checkpoints">Checkpoints&lt;/h2>
+&lt;p>底模基本分成兩種&lt;/p>
+&lt;ul>
+&lt;li>無風格模型 : lora 會很大程度影響出圖風格&lt;/li>
+&lt;li>風格模型 : 模型本身有一定程度的風格，常用於抵消一些有瑕疵的 lora&lt;/li>
+&lt;/ul>
+&lt;h3 id="wai-nsfw-illustrious-sdxl">WAI-NSFW-illustrious-SDXL&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://civitai.com/models/827184?modelVersionId=1490781">link&lt;/a>&lt;/li>
+&lt;li>無風格模型&lt;/li>
+&lt;li>目前使用版本 12&lt;/li>
+&lt;li>實測版本 13 效果似乎不如 12&lt;/li>
+&lt;li>實測版本 14 有改善待測中&lt;/li>
+&lt;li>出圖速度較快，適合搭配優良 lora 使用&lt;/li>
+&lt;/ul>
+&lt;h3 id="steincustom">SteinCustom&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://civitai.com/models/1245022?modelVersionId=1669006">link&lt;/a>&lt;/li>
+&lt;li>無風格模型，但能一定程度約束 lora 風格&lt;/li>
+&lt;li>目前使用版本 6&lt;/li>
+&lt;li>實測版本 7 風格有變得偏 pony 不太喜歡&lt;/li>
+&lt;li>實測版本 8 光影效果表現不好&lt;/li>
+&lt;li>&lt;strong>年齡&lt;/strong> 控制相對有效 prompts (&lt;code>age up, meature female&lt;/code>)&lt;/li>
+&lt;/ul>
+&lt;h2 id="lora---styles">Lora - Styles&lt;/h2>
+&lt;ul>
+&lt;li>大部分的底模都有人物偏萌系/幼態的問題&lt;/li>
+&lt;/ul>
+&lt;h3 id="solo-leveling-anime-style">Solo Leveling Anime Style&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://civitai.com/models/1137411/solo-leveling-anime-style">link&lt;/a>&lt;/li>
+&lt;li>增強 臉部銳利度&lt;/li>
+&lt;li>增強 較長的體態&lt;/li>
+&lt;li>增強 平塗效果&lt;/li>
+&lt;li>⚠️頸部附近的 hard shadow 有時會過於明顯，需調控 prompts (&lt;code>anime coloring&lt;/code>) 權重&lt;/li>
+&lt;/ul>
+&lt;h3 id="violet-evergarden-anime-style">Violet Evergarden Anime Style&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://civitai.com/models/1334756/violet-evergarden-anime-style">link&lt;/a>&lt;/li>
+&lt;li>增強 較小的眼睛&lt;/li>
+&lt;li>增強 平塗效果&lt;/li>
+&lt;/ul>
+&lt;h2 id="prompts---artists">Prompts - Artists&lt;/h2>
+&lt;ul>
+&lt;li>權重超過 0.6 比較穩定(但有些太高會有點 overfitting)&lt;/li>
+&lt;li>rella : 增加一些插畫風格&lt;/li>
+&lt;/ul>
+&lt;h2 id="prompts---negatives">Prompts - Negatives&lt;/h2>
+&lt;ul>
+&lt;li>headwear : 用於移除一切頭部裝飾&lt;/li>
+&lt;/ul></description></item><item><title>Documents - Markdown</title><link>https://HoshikawaRyuukou.github.io/posts/documents---markdown/</link><pubDate>Fri, 16 May 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/documents---markdown/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>Markdown 的優勢主要在於它的簡單易學和易於閱讀。&lt;/p>
 &lt;p>使用 Markdown 寫作，你可以用幾個簡單的符號來標記文字格式，不用像使用傳統文書軟體那樣需要點擊許多按鈕或選單。即使是原始碼狀態的 Markdown 文件，也非常清晰易讀。&lt;/p>
 &lt;p>此外，Markdown 檔案是純文字格式，這讓它具有極佳的可攜性和兼容性，可以在幾乎所有裝置和作業系統上開啟和編輯，而且不容易因為軟體版本不同而產生格式跑掉的問題。&lt;/p>
@@ -18,6 +73,29 @@
 &lt;ul>
 &lt;li>&lt;a href="https://zh.esotericsoftware.com/spine-unity-download#spine-unity">spine-unity 下载&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://zh.esotericsoftware.com/spine-unity">spine-unity 运行时文档&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zh.esotericsoftware.com/spine-unity-assets">spine-unity 资产&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zh.esotericsoftware.com/spine-unity-faq">spine-unity 常见问题(FAQ)&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="notices">Notices&lt;/h2>
+&lt;h3 id="version">Version&lt;/h3>
+&lt;ul>
+&lt;li>Spine 3.8 並未提供 github url，需用 .unitypackage / 自行準備 git url&lt;/li>
+&lt;li>運行時只能載入與 Spine 編輯器版本一致的二進位匯出檔案(新舊版本應執行重導出)&lt;/li>
+&lt;/ul>
+&lt;h3 id="asset">Asset&lt;/h3>
+&lt;ul>
+&lt;li>unity 無法載入部分副檔名需修改
+&lt;ul>
+&lt;li>.skel -&amp;gt; .skel.bytes&lt;/li>
+&lt;li>.atlas -&amp;gt; .atlas.txt&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>json 匯出檔案更穩定，有更大可能與未來版本相容&lt;/li>
+&lt;/ul>
+&lt;h3 id="performance">Performance&lt;/h3>
+&lt;ul>
+&lt;li>Unity 在多 material /多子網格、排序和動態合批(batching)方面有個老毛病，如果使用多 materials 的 skeleton 有多個副本，Unity 的動態合批系統會嘗試將相似的 materials 合批， 但它在有多個相似 materials 的子網格的合批過程，Objectske 中加入一個 Sorting Group 元件。&lt;/li>
+&lt;li>不過若你的 skeleton 只使用一種 texture 和 material，Unity 原生的合批系統性能仍是更好的。&lt;/li>
 &lt;/ul></description></item><item><title>AI - LLM - Gemini</title><link>https://HoshikawaRyuukou.github.io/posts/ai---llm---gemini/</link><pubDate>Thu, 08 May 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---llm---gemini/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>😊 免費方案對於輕度開發綽綽有餘&lt;/p>
 &lt;ul>
@@ -48,55 +126,6 @@
 &lt;p>這篇是不錯的導讀&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://www.bilibili.com/video/BV17SVUznEGw">AI声音建模：MiniMax Audio 一键声音克隆&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>AI - Stable diffusion - Favorites</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorites/</link><pubDate>Fri, 02 May 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorites/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
-&lt;ul>
-&lt;li>sd 1.5 系列基本上不使用了&lt;/li>
-&lt;li>Illustrious 是目前的使用主力&lt;/li>
-&lt;/ul>
-&lt;h2 id="checkpoints">Checkpoints&lt;/h2>
-&lt;p>底模基本分成兩種&lt;/p>
-&lt;ul>
-&lt;li>無風格模型 : lora 會很大程度影響出圖風格&lt;/li>
-&lt;li>風格模型 : 模型本身有一定程度的風格，常用於抵消一些有瑕疵的 lora&lt;/li>
-&lt;/ul>
-&lt;h3 id="wai-nsfw-illustrious-sdxl">WAI-NSFW-illustrious-SDXL&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://civitai.com/models/827184?modelVersionId=1490781">link&lt;/a>&lt;/li>
-&lt;li>無風格模型&lt;/li>
-&lt;li>目前使用版本 12&lt;/li>
-&lt;li>實測版本 13 效果似乎不如 12&lt;/li>
-&lt;li>出圖速度較快，適合搭配優良 lora 使用&lt;/li>
-&lt;/ul>
-&lt;h3 id="steincustom">SteinCustom&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://civitai.com/models/1245022?modelVersionId=1669006">link&lt;/a>&lt;/li>
-&lt;li>無風格模型，但能一定程度約束 lora 風格&lt;/li>
-&lt;li>目前使用版本 6&lt;/li>
-&lt;li>實測版本 7 風格有變得偏 pony 不太喜歡&lt;/li>
-&lt;li>&lt;strong>年齡&lt;/strong> 控制相對有效 prompts (&lt;code>age up, meature female&lt;/code>)&lt;/li>
-&lt;/ul>
-&lt;h2 id="lora---styles">Lora - Styles&lt;/h2>
-&lt;ul>
-&lt;li>大部分的底模都有人物偏萌系/幼態的問題&lt;/li>
-&lt;/ul>
-&lt;h3 id="solo-leveling-anime-style">Solo Leveling Anime Style&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://civitai.com/models/1137411/solo-leveling-anime-style">link&lt;/a>&lt;/li>
-&lt;li>增強 臉部銳利度&lt;/li>
-&lt;li>增強 較長的體態&lt;/li>
-&lt;li>增強 平塗效果&lt;/li>
-&lt;li>⚠️頸部附近的 hard shadow 有時會過於明顯，需調控 prompts (&lt;code>anime coloring&lt;/code>) 權重&lt;/li>
-&lt;/ul>
-&lt;h3 id="violet-evergarden-anime-style">Violet Evergarden Anime Style&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://civitai.com/models/1334756/violet-evergarden-anime-style">link&lt;/a>&lt;/li>
-&lt;li>增強 較小的眼睛&lt;/li>
-&lt;li>增強 平塗效果&lt;/li>
-&lt;/ul>
-&lt;h2 id="prompts---artists">Prompts - Artists&lt;/h2>
-&lt;ul>
-&lt;li>權重超過 0.6 比較穩定(但有些太高會有點 overfitting)&lt;/li>
-&lt;li>rella : 增加一些插畫風格&lt;/li>
 &lt;/ul></description></item><item><title>Scriptwriter - Note</title><link>https://HoshikawaRyuukou.github.io/posts/scriptwriter---note/</link><pubDate>Wed, 23 Apr 2025 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/scriptwriter---note/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://www.bilibili.com/video/BV1R2LizDEof">为什么故事一定要有反派？&lt;/a>&lt;/li>

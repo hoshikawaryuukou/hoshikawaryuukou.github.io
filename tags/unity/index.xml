@@ -2,6 +2,29 @@
 &lt;ul>
 &lt;li>&lt;a href="https://zh.esotericsoftware.com/spine-unity-download#spine-unity">spine-unity 下载&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://zh.esotericsoftware.com/spine-unity">spine-unity 运行时文档&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zh.esotericsoftware.com/spine-unity-assets">spine-unity 资产&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zh.esotericsoftware.com/spine-unity-faq">spine-unity 常见问题(FAQ)&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="notices">Notices&lt;/h2>
+&lt;h3 id="version">Version&lt;/h3>
+&lt;ul>
+&lt;li>Spine 3.8 並未提供 github url，需用 .unitypackage / 自行準備 git url&lt;/li>
+&lt;li>運行時只能載入與 Spine 編輯器版本一致的二進位匯出檔案(新舊版本應執行重導出)&lt;/li>
+&lt;/ul>
+&lt;h3 id="asset">Asset&lt;/h3>
+&lt;ul>
+&lt;li>unity 無法載入部分副檔名需修改
+&lt;ul>
+&lt;li>.skel -&amp;gt; .skel.bytes&lt;/li>
+&lt;li>.atlas -&amp;gt; .atlas.txt&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>json 匯出檔案更穩定，有更大可能與未來版本相容&lt;/li>
+&lt;/ul>
+&lt;h3 id="performance">Performance&lt;/h3>
+&lt;ul>
+&lt;li>Unity 在多 material /多子網格、排序和動態合批(batching)方面有個老毛病，如果使用多 materials 的 skeleton 有多個副本，Unity 的動態合批系統會嘗試將相似的 materials 合批， 但它在有多個相似 materials 的子網格的合批過程，Objectske 中加入一個 Sorting Group 元件。&lt;/li>
+&lt;li>不過若你的 skeleton 只使用一種 texture 和 material，Unity 原生的合批系統性能仍是更好的。&lt;/li>
 &lt;/ul></description></item><item><title>Unity - Basic - Shortcuts</title><link>https://HoshikawaRyuukou.github.io/posts/unity---basic---shortcuts/</link><pubDate>Wed, 02 Apr 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---basic---shortcuts/</guid><description>&lt;table>
  &lt;thead>
  &lt;tr>

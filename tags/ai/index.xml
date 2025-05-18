@@ -1,4 +1,59 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/ai/</link><description>Recent content in AI on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 08 May 2025 13:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>AI - LLM - Gemini</title><link>https://HoshikawaRyuukou.github.io/posts/ai---llm---gemini/</link><pubDate>Thu, 08 May 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---llm---gemini/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/ai/</link><description>Recent content in AI on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Fri, 16 May 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>AI - Stable diffusion - Favorites</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorites/</link><pubDate>Fri, 16 May 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorites/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;ul>
+&lt;li>sd 1.5 系列基本上不使用了&lt;/li>
+&lt;li>Illustrious 是目前的使用主力&lt;/li>
+&lt;/ul>
+&lt;h2 id="checkpoints">Checkpoints&lt;/h2>
+&lt;p>底模基本分成兩種&lt;/p>
+&lt;ul>
+&lt;li>無風格模型 : lora 會很大程度影響出圖風格&lt;/li>
+&lt;li>風格模型 : 模型本身有一定程度的風格，常用於抵消一些有瑕疵的 lora&lt;/li>
+&lt;/ul>
+&lt;h3 id="wai-nsfw-illustrious-sdxl">WAI-NSFW-illustrious-SDXL&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://civitai.com/models/827184?modelVersionId=1490781">link&lt;/a>&lt;/li>
+&lt;li>無風格模型&lt;/li>
+&lt;li>目前使用版本 12&lt;/li>
+&lt;li>實測版本 13 效果似乎不如 12&lt;/li>
+&lt;li>實測版本 14 有改善待測中&lt;/li>
+&lt;li>出圖速度較快，適合搭配優良 lora 使用&lt;/li>
+&lt;/ul>
+&lt;h3 id="steincustom">SteinCustom&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://civitai.com/models/1245022?modelVersionId=1669006">link&lt;/a>&lt;/li>
+&lt;li>無風格模型，但能一定程度約束 lora 風格&lt;/li>
+&lt;li>目前使用版本 6&lt;/li>
+&lt;li>實測版本 7 風格有變得偏 pony 不太喜歡&lt;/li>
+&lt;li>實測版本 8 光影效果表現不好&lt;/li>
+&lt;li>&lt;strong>年齡&lt;/strong> 控制相對有效 prompts (&lt;code>age up, meature female&lt;/code>)&lt;/li>
+&lt;/ul>
+&lt;h2 id="lora---styles">Lora - Styles&lt;/h2>
+&lt;ul>
+&lt;li>大部分的底模都有人物偏萌系/幼態的問題&lt;/li>
+&lt;/ul>
+&lt;h3 id="solo-leveling-anime-style">Solo Leveling Anime Style&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://civitai.com/models/1137411/solo-leveling-anime-style">link&lt;/a>&lt;/li>
+&lt;li>增強 臉部銳利度&lt;/li>
+&lt;li>增強 較長的體態&lt;/li>
+&lt;li>增強 平塗效果&lt;/li>
+&lt;li>⚠️頸部附近的 hard shadow 有時會過於明顯，需調控 prompts (&lt;code>anime coloring&lt;/code>) 權重&lt;/li>
+&lt;/ul>
+&lt;h3 id="violet-evergarden-anime-style">Violet Evergarden Anime Style&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://civitai.com/models/1334756/violet-evergarden-anime-style">link&lt;/a>&lt;/li>
+&lt;li>增強 較小的眼睛&lt;/li>
+&lt;li>增強 平塗效果&lt;/li>
+&lt;/ul>
+&lt;h2 id="prompts---artists">Prompts - Artists&lt;/h2>
+&lt;ul>
+&lt;li>權重超過 0.6 比較穩定(但有些太高會有點 overfitting)&lt;/li>
+&lt;li>rella : 增加一些插畫風格&lt;/li>
+&lt;/ul>
+&lt;h2 id="prompts---negatives">Prompts - Negatives&lt;/h2>
+&lt;ul>
+&lt;li>headwear : 用於移除一切頭部裝飾&lt;/li>
+&lt;/ul></description></item><item><title>AI - LLM - Gemini</title><link>https://HoshikawaRyuukou.github.io/posts/ai---llm---gemini/</link><pubDate>Thu, 08 May 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---llm---gemini/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>😊 免費方案對於輕度開發綽綽有餘&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://www.youtube.com/watch?v=3jdhFHgvxpg">Gemini新手教学&lt;/a>&lt;/li>
@@ -28,55 +83,6 @@
 &lt;p>這篇是不錯的導讀&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://www.bilibili.com/video/BV17SVUznEGw">AI声音建模：MiniMax Audio 一键声音克隆&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>AI - Stable diffusion - Favorites</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorites/</link><pubDate>Fri, 02 May 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorites/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
-&lt;ul>
-&lt;li>sd 1.5 系列基本上不使用了&lt;/li>
-&lt;li>Illustrious 是目前的使用主力&lt;/li>
-&lt;/ul>
-&lt;h2 id="checkpoints">Checkpoints&lt;/h2>
-&lt;p>底模基本分成兩種&lt;/p>
-&lt;ul>
-&lt;li>無風格模型 : lora 會很大程度影響出圖風格&lt;/li>
-&lt;li>風格模型 : 模型本身有一定程度的風格，常用於抵消一些有瑕疵的 lora&lt;/li>
-&lt;/ul>
-&lt;h3 id="wai-nsfw-illustrious-sdxl">WAI-NSFW-illustrious-SDXL&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://civitai.com/models/827184?modelVersionId=1490781">link&lt;/a>&lt;/li>
-&lt;li>無風格模型&lt;/li>
-&lt;li>目前使用版本 12&lt;/li>
-&lt;li>實測版本 13 效果似乎不如 12&lt;/li>
-&lt;li>出圖速度較快，適合搭配優良 lora 使用&lt;/li>
-&lt;/ul>
-&lt;h3 id="steincustom">SteinCustom&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://civitai.com/models/1245022?modelVersionId=1669006">link&lt;/a>&lt;/li>
-&lt;li>無風格模型，但能一定程度約束 lora 風格&lt;/li>
-&lt;li>目前使用版本 6&lt;/li>
-&lt;li>實測版本 7 風格有變得偏 pony 不太喜歡&lt;/li>
-&lt;li>&lt;strong>年齡&lt;/strong> 控制相對有效 prompts (&lt;code>age up, meature female&lt;/code>)&lt;/li>
-&lt;/ul>
-&lt;h2 id="lora---styles">Lora - Styles&lt;/h2>
-&lt;ul>
-&lt;li>大部分的底模都有人物偏萌系/幼態的問題&lt;/li>
-&lt;/ul>
-&lt;h3 id="solo-leveling-anime-style">Solo Leveling Anime Style&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://civitai.com/models/1137411/solo-leveling-anime-style">link&lt;/a>&lt;/li>
-&lt;li>增強 臉部銳利度&lt;/li>
-&lt;li>增強 較長的體態&lt;/li>
-&lt;li>增強 平塗效果&lt;/li>
-&lt;li>⚠️頸部附近的 hard shadow 有時會過於明顯，需調控 prompts (&lt;code>anime coloring&lt;/code>) 權重&lt;/li>
-&lt;/ul>
-&lt;h3 id="violet-evergarden-anime-style">Violet Evergarden Anime Style&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://civitai.com/models/1334756/violet-evergarden-anime-style">link&lt;/a>&lt;/li>
-&lt;li>增強 較小的眼睛&lt;/li>
-&lt;li>增強 平塗效果&lt;/li>
-&lt;/ul>
-&lt;h2 id="prompts---artists">Prompts - Artists&lt;/h2>
-&lt;ul>
-&lt;li>權重超過 0.6 比較穩定(但有些太高會有點 overfitting)&lt;/li>
-&lt;li>rella : 增加一些插畫風格&lt;/li>
 &lt;/ul></description></item><item><title>AI - Firebase Studio</title><link>https://HoshikawaRyuukou.github.io/posts/ai---firebase-studio/</link><pubDate>Fri, 11 Apr 2025 08:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---firebase-studio/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>Firebase Studio 的前身是 Project IDX。&lt;/p>
 &lt;p>Firebase Studio 是一個由 Google 提供的基於雲端的開發環境，旨在幫助開發者快速構建和發布全棧 AI 應用。這個平台結合了 AI 助手 Gemini 的功能，提供了一個集成的開發體驗，讓開發者能夠在一個地方完成應用的設計、開發和部署。&lt;/p>
