@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/posts/</link><description>Recent content in Posts on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 08 May 2025 13:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>AI - LLM - Gemini</title><link>https://HoshikawaRyuukou.github.io/posts/ai---llm---gemini/</link><pubDate>Thu, 08 May 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---llm---gemini/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/posts/</link><description>Recent content in Posts on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Fri, 16 May 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Documents - Markdown</title><link>https://HoshikawaRyuukou.github.io/posts/documents---markdown/</link><pubDate>Fri, 16 May 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/documents---markdown/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>Markdown 的優勢主要在於它的簡單易學和易於閱讀。&lt;/p>
+&lt;p>使用 Markdown 寫作，你可以用幾個簡單的符號來標記文字格式，不用像使用傳統文書軟體那樣需要點擊許多按鈕或選單。即使是原始碼狀態的 Markdown 文件，也非常清晰易讀。&lt;/p>
+&lt;p>此外，Markdown 檔案是純文字格式，這讓它具有極佳的可攜性和兼容性，可以在幾乎所有裝置和作業系統上開啟和編輯，而且不容易因為軟體版本不同而產生格式跑掉的問題。&lt;/p>
+&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one">Markdown All in One&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles">Markdown Preview Github Styling&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="playground">Playground&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://dillinger.io/">Online Markdown Editor - Dillinger, the Last Markdown Editor ever.&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="extras">Extras&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/microsoft/markitdown">microsoft/markitdown&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Unity - Package - Spine SDK</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package---spine-sdk/</link><pubDate>Tue, 13 May 2025 22:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package---spine-sdk/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://zh.esotericsoftware.com/spine-unity-download#spine-unity">spine-unity 下载&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zh.esotericsoftware.com/spine-unity">spine-unity 运行时文档&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>AI - LLM - Gemini</title><link>https://HoshikawaRyuukou.github.io/posts/ai---llm---gemini/</link><pubDate>Thu, 08 May 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---llm---gemini/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>😊 免費方案對於輕度開發綽綽有餘&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://www.youtube.com/watch?v=3jdhFHgvxpg">Gemini新手教学&lt;/a>&lt;/li>
@@ -3894,7 +3914,7 @@ CHANGELOG*.md
 &lt;h2 id="sticker">Sticker&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://www.youtube.com/watch?v=1E25Q6wQ5L8">Telegram 貼圖 DIY教學&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Software Development - README</title><link>https://HoshikawaRyuukou.github.io/posts/software-development---readme/</link><pubDate>Tue, 18 Jun 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-development---readme/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;/ul></description></item><item><title>Documents - README</title><link>https://HoshikawaRyuukou.github.io/posts/documents---readme/</link><pubDate>Tue, 18 Jun 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/documents---readme/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>最近筆者從 Unity 轉向了 Node.js，因此花了大量時間在 npm 上尋找合適的套件。大部分的 README 都寫得很清晰，但也有少數寫得難以理解。&lt;/p>
 &lt;p>README 是 Repository 的門面，這是毋庸置疑的。創建一個好的自述文件，可以向用戶（包括使用者和開發者）顯示基本信息，但不應該用他們可能不需要的內容來淹沒他們。&lt;/p>
 &lt;p>筆者認為應該從一開始就認真對待 README，而不是在最後(專案收尾之際)才一股腦地將資訊灌入，這樣會降低其品質。&lt;/p>
@@ -3902,11 +3922,6 @@ CHANGELOG*.md
 &lt;ul>
 &lt;li>&lt;a href="https://medium.com/dean-lin/%E4%BD%A0%E7%9F%A5%E9%81%93%E5%B0%8D%E5%B0%88%E6%A1%88%E4%BE%86%E8%AA%AA-readme-md-%E6%9C%89%E5%A4%9A%E9%BA%BC%E9%87%8D%E8%A6%81%E5%97%8E-%E5%B7%A5%E7%A8%8B%E5%B8%AB%E8%A1%80%E6%B7%9A%E5%8F%B2-c0fb0908343e">你知道對專案來說，README.md 有多麼重要嗎？ ── 工程師血淚史&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/hackergrrl/art-of-readme/blob/master/README-zh-TW.md">README 的藝術&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="markdown--vscode">Markdown + Vscode&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one">Markdown All in One&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles">Markdown Preview Github Styling&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="template">Template&lt;/h2>
 &lt;ul>
@@ -3949,7 +3964,10 @@ CHANGELOG*.md
 
 ### Header3
 分段...
-&lt;/code>&lt;/pre>&lt;p>但這次觀察 READMEs 的過程，看到不少以下這種不多做一些分段的寫法&lt;/p></description></item><item><title>Algorithm - Note</title><link>https://HoshikawaRyuukou.github.io/posts/algorithm---note/</link><pubDate>Thu, 30 May 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/algorithm---note/</guid><description>&lt;h2 id="books">Books&lt;/h2>
+&lt;/code>&lt;/pre>&lt;p>但這次觀察 READMEs 的過程，看到不少以下這種不多做一些分段的寫法&lt;/p>
+&lt;pre tabindex="0">&lt;code>## Header2
+直接承接本文段落...
+&lt;/code>&lt;/pre>&lt;p>原本以為會很難閱讀，但實際上閱讀時都是順著讀下來，所以好像不會有負面影響。反倒是原先 Header3 過多造成畫面有點割裂。&lt;/p></description></item><item><title>Algorithm - Note</title><link>https://HoshikawaRyuukou.github.io/posts/algorithm---note/</link><pubDate>Thu, 30 May 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/algorithm---note/</guid><description>&lt;h2 id="books">Books&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/labuladong/fucking-algorithm?tab=readme-ov-file">fucking-algorithm&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/krahets/hello-algo">hello-algo&lt;/a>&lt;/li>
