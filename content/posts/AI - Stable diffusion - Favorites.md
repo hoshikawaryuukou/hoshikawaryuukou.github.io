@@ -1,6 +1,6 @@
 ---
 title: "AI - Stable diffusion - Favorites"
-date: 2025-05-02 21:11:00
+date: 2025-05-16 21:11:00
 draft: false
 
 tags: ["AI", "Stable diffusion", "Art"]
@@ -20,6 +20,7 @@ tags: ["AI", "Stable diffusion", "Art"]
 - 無風格模型
 - 目前使用版本 12 
 - 實測版本 13 效果似乎不如 12
+- 實測版本 14 有改善待測中 
 - 出圖速度較快，適合搭配優良 lora 使用
 
 ### SteinCustom
@@ -27,6 +28,7 @@ tags: ["AI", "Stable diffusion", "Art"]
 - 無風格模型，但能一定程度約束 lora 風格
 - 目前使用版本 6 
 - 實測版本 7 風格有變得偏 pony 不太喜歡
+- 實測版本 8 光影效果表現不好
 - **年齡** 控制相對有效 prompts (`age up, meature female`) 
 
 ## Lora - Styles
@@ -47,3 +49,6 @@ tags: ["AI", "Stable diffusion", "Art"]
 ## Prompts - Artists
 - 權重超過 0.6 比較穩定(但有些太高會有點 overfitting)
 - rella : 增加一些插畫風格
+
+## Prompts - Negatives
+- headwear : 用於移除一切頭部裝飾
