@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Network on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/network/</link><description>Recent content in Network on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sun, 02 Feb 2025 20:20:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/network/index.xml" rel="self" type="application/rss+xml"/><item><title>Network - Protocol - SSH</title><link>https://HoshikawaRyuukou.github.io/posts/network---protocol---ssh/</link><pubDate>Sun, 02 Feb 2025 20:20:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/network---protocol---ssh/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Network on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/network/</link><description>Recent content in Network on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sat, 17 May 2025 13:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/network/index.xml" rel="self" type="application/rss+xml"/><item><title>Network - Note</title><link>https://HoshikawaRyuukou.github.io/posts/network---note/</link><pubDate>Sat, 17 May 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/network---note/</guid><description>&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=1NqBQwF4BYM">【白话科普】域名？网址？原来域名是这么个玩意啊！&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=ZqWb5nNzTf8">DNS工作原理 | 什么是DNS 它如何工作&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=m73oA0_ptxc">CDN是什么 | CDN的工作机制&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.bilibili.com/video/BV1mj421d7VE">数字签名和CA数字证书的核心原理和作用&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.bilibili.com/video/BV1KY411t75D">VPN概念，技术原理和误区&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.bilibili.com/video/BV1SZ4y1z7wT">哈希究竟代表什么？哈希表和哈希函数的核心原理&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.bilibili.com/video/BV1Yx4y147tg">交换机的核心工作原理 | 集线器、2层交换机和3层交换机的主要区别&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=tVLIRCJuFW8">你管这破玩意叫网络？ 从设计者的思考角度出发理解网络，合理、靠谱！&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=kjfPAC16k18">【API技术核心原理】REST | GraphQL | gRPC | tRPC&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Network - Protocol - SSH</title><link>https://HoshikawaRyuukou.github.io/posts/network---protocol---ssh/</link><pubDate>Sun, 02 Feb 2025 20:20:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/network---protocol---ssh/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>SSH（Secure Shell）是一種加密的網路協議，允許你安全地連接到遠端伺服器。對 Git 來說，使用 SSH 主要有這些優勢：&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>免密碼認證&lt;/strong>：使用 SSH 金鑰（SSH Keys）後，不需要每次都輸入帳號密碼。&lt;/li>
@@ -35,15 +45,6 @@
 &lt;li>&lt;a href="https://www.adobe.com/tw/creativecloud/file-types/image/raster/webp-file.html">WebP 檔案&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://note.com/reality_eng/n/nc49229b19a7a">Now in REALITY Tech #6 画像をWebP形式に対応した話&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://note.com/reality_eng/n/nad3e6b4a84c6">Now in REALITY Tech #37 UnityでWebPを扱えるようにした話&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Network - Note</title><link>https://HoshikawaRyuukou.github.io/posts/network---note/</link><pubDate>Wed, 04 Jan 2023 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/network---note/</guid><description>&lt;ul>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=1NqBQwF4BYM">【白话科普】域名？网址？原来域名是这么个玩意啊！&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=ZqWb5nNzTf8">DNS工作原理 | 什么是DNS 它如何工作&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=m73oA0_ptxc">CDN是什么 | CDN的工作机制&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.bilibili.com/video/BV1mj421d7VE">数字签名和CA数字证书的核心原理和作用&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.bilibili.com/video/BV1KY411t75D">VPN概念，技术原理和误区&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.bilibili.com/video/BV1SZ4y1z7wT">哈希究竟代表什么？哈希表和哈希函数的核心原理&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.bilibili.com/video/BV1Yx4y147tg">交换机的核心工作原理 | 集线器、2层交换机和3层交换机的主要区别&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=tVLIRCJuFW8">你管这破玩意叫网络？ 从设计者的思考角度出发理解网络，合理、靠谱！&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Network - RPC</title><link>https://HoshikawaRyuukou.github.io/posts/network---rpc/</link><pubDate>Mon, 07 Nov 2022 21:06:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/network---rpc/</guid><description>&lt;h2 id="rpc-remote-procedure-call遠端程序呼叫">RPC (Remote Procedure Call，遠端程序呼叫)&lt;/h2>
 &lt;p>是一種通信協定，多用於分佈式系統的通信。&lt;/p>
 &lt;h3 id="目的">目的&lt;/h3>
