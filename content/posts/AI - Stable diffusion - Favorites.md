@@ -18,9 +18,7 @@ tags: ["AI", "Stable diffusion", "Art"]
 ### WAI-NSFW-illustrious-SDXL
 - [link](https://civitai.com/models/827184?modelVersionId=1490781)
 - 無風格模型
-- 目前使用版本 12 
-- 實測版本 13 效果似乎不如 12
-- 實測版本 14 有改善待測中 
+- 目前使用版本 14
 - 出圖速度較快，適合搭配優良 lora 使用
 
 ### SteinCustom
