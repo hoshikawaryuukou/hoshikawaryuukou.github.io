@@ -11,6 +11,7 @@ tags: ["Life"]
 
 ## Sleep
 - [睡眠專家：休息的關鍵不在晚上，而是白天｜【初日會客室】哇賽心理學 蔡宇哲](https://www.youtube.com/watch?v=5qHI6y4Qisc)
+- [腎臟科名醫：這些人第一次看診，就被我宣布要終身洗腎｜【初日會客室】洪永祥 醫師](https://www.youtube.com/watch?v=NC7rXTxfZmY)
 
 ## Sport
 - [善於長跑的原始部落:現代人忘了跑步的正確方式(跑鞋的誤區) | 暢銷書解讀《天生就會跑》](https://www.youtube.com/watch?v=B1OgDDb_lTs)
