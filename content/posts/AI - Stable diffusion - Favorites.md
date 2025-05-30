@@ -48,5 +48,9 @@ tags: ["AI", "Stable diffusion", "Art"]
 - 權重超過 0.6 比較穩定(但有些太高會有點 overfitting)
 - rella : 增加一些插畫風格
 
-## Prompts - Negatives
+## Prompts - Positive
+- looking up : 往上看而臉被順勢帶起
+- face up : 用於臉完全朝上
+
+## Prompts - Negative
 - headwear : 用於移除一切頭部裝飾
