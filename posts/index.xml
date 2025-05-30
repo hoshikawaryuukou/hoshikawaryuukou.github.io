@@ -66,7 +66,12 @@
 &lt;li>權重超過 0.6 比較穩定(但有些太高會有點 overfitting)&lt;/li>
 &lt;li>rella : 增加一些插畫風格&lt;/li>
 &lt;/ul>
-&lt;h2 id="prompts---negatives">Prompts - Negatives&lt;/h2>
+&lt;h2 id="prompts---positive">Prompts - Positive&lt;/h2>
+&lt;ul>
+&lt;li>looking up : 往上看而臉被順勢帶起&lt;/li>
+&lt;li>face up : 用於臉完全朝上&lt;/li>
+&lt;/ul>
+&lt;h2 id="prompts---negative">Prompts - Negative&lt;/h2>
 &lt;ul>
 &lt;li>headwear : 用於移除一切頭部裝飾&lt;/li>
 &lt;/ul></description></item><item><title>Documents - Markdown</title><link>https://HoshikawaRyuukou.github.io/posts/documents---markdown/</link><pubDate>Fri, 16 May 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/documents---markdown/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
