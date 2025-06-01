@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/posts/</link><description>Recent content in Posts on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Fri, 23 May 2025 13:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Database - Note</title><link>https://HoshikawaRyuukou.github.io/posts/database---note/</link><pubDate>Fri, 23 May 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/database---note/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/posts/</link><description>Recent content in Posts on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Wed, 28 May 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Practice - Effects</title><link>https://HoshikawaRyuukou.github.io/posts/unity---practice---effects/</link><pubDate>Wed, 28 May 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---practice---effects/</guid><description>&lt;h2 id="碎屏">碎屏&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.bilibili.com/video/BV1534y167yG">【unity教程】如何制作屏幕破碎效果&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.bilibili.com/video/BV1yg411A7uX">【Unity】碎屏过场动画&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.bilibili.com/opus/668685275140980753">[笔记]屏幕破碎特效&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Database - Note</title><link>https://HoshikawaRyuukou.github.io/posts/database---note/</link><pubDate>Fri, 23 May 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/database---note/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://www.youtube.com/watch?v=IUUpxfa1SSw">为什么关系数据库的挑战者都没有好下场【让编程再次伟大#25】&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Conceptual Design - Note</title><link>https://HoshikawaRyuukou.github.io/posts/conceptual-design---note/</link><pubDate>Thu, 22 May 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/conceptual-design---note/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
@@ -1693,7 +1698,7 @@ Scope(s):
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
-&lt;/ul></description></item><item><title>Software Engineer - Note</title><link>https://HoshikawaRyuukou.github.io/posts/software-engineer---note/</link><pubDate>Tue, 07 Jan 2025 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-engineer---note/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;/ul></description></item><item><title>Career - Software Engineer</title><link>https://HoshikawaRyuukou.github.io/posts/career---software-engineer/</link><pubDate>Tue, 07 Jan 2025 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/career---software-engineer/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;ul>
 &lt;li>後端: 深入且穩定&lt;/li>
 &lt;li>前端: 廣泛且彈性&lt;/li>
@@ -1872,112 +1877,6 @@ Scope(s):
 &lt;/ol></description></item><item><title>Software Design - Architecture Design</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---architecture-design/</link><pubDate>Wed, 25 Dec 2024 20:03:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---architecture-design/</guid><description>&lt;h2 id="thinking">Thinking&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://minds.md/zakirullin/cognitive#long">Cognitive load is what matters&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Cocos - Env</title><link>https://HoshikawaRyuukou.github.io/posts/cocos---env/</link><pubDate>Tue, 10 Dec 2024 22:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/cocos---env/</guid><description>&lt;h2 id="cocos-creator-ide">cocos creator ide&lt;/h2>
-&lt;ul>
-&lt;li>配置 vscode path
-&lt;blockquote>
-&lt;p>C:\Users\User\AppData\Local\Programs\Microsoft VS Code\Code.exe&lt;/p>&lt;/blockquote>
-&lt;/li>
-&lt;li>⚠️ 較新版的 cocos creator 已經不需要， &lt;code>开发者 -&amp;gt; VS Code 工作流 -&amp;gt; 安装 VS Code 扩展插件&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;h2 id="package-manager">package manager&lt;/h2>
-&lt;ul>
-&lt;li>使用 pnpm&lt;/li>
-&lt;/ul>
-&lt;h2 id="packages">packages&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>pnpm create @eslint/config@latest
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pnpm add -D prettier
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pnpm add -D prettier-plugin-organize-imports
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pnpm add -D eslint-config-prettier
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="vscode---extensions">vscode - extensions&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint">vscode-eslint&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode">esbenp.prettier-vscode&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="vscodeextensionjson">.vscode/extension.json&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;recommendations&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">[&lt;/span>&lt;span style="color:#d88200">&amp;#34;esbenp.prettier-vscode&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#d88200">&amp;#34;dbaeumer.vscode-eslint&amp;#34;&lt;/span>&lt;span style="color:#111">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="vscodesettingjson">.vscode/setting.json&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;files.exclude&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;library/&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#00a8c8">true&lt;/span>&lt;span style="color:#111">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;local/&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#00a8c8">true&lt;/span>&lt;span style="color:#111">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;temp/&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#00a8c8">true&lt;/span>&lt;span style="color:#111">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;**/*.meta&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#00a8c8">true&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">},&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;search.exclude&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;build/&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#00a8c8">true&lt;/span>&lt;span style="color:#111">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;temp/&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#00a8c8">true&lt;/span>&lt;span style="color:#111">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;library/&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#00a8c8">true&lt;/span>&lt;span style="color:#111">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;**/*.anim&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#00a8c8">true&lt;/span>&lt;span style="color:#111">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;**/*.meta&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#00a8c8">true&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">},&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;editor.formatOnSave&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#00a8c8">true&lt;/span>&lt;span style="color:#111">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;[typescript]&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;editor.defaultFormatter&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;esbenp.prettier-vscode&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">},&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;[javascript]&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;editor.defaultFormatter&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;esbenp.prettier-vscode&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">},&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;[json]&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;editor.defaultFormatter&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;esbenp.prettier-vscode&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="packagejson">package.json&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;scripts&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#111">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;format&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;prettier --write --cache .&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;format-check&amp;#34;&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;prettier --check --cache .&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">},&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="eslintconfigmjs">eslint.config.mjs&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-js" data-lang="js">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">import&lt;/span> &lt;span style="color:#75af00">pluginJs&lt;/span> &lt;span style="color:#75af00">from&lt;/span> &lt;span style="color:#d88200">&amp;#39;@eslint/js&amp;#39;&lt;/span>&lt;span style="color:#111">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">import&lt;/span> &lt;span style="color:#75af00">eslintConfigPrettier&lt;/span> &lt;span style="color:#75af00">from&lt;/span> &lt;span style="color:#d88200">&amp;#39;eslint-config-prettier&amp;#39;&lt;/span>&lt;span style="color:#111">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">import&lt;/span> &lt;span style="color:#75af00">globals&lt;/span> &lt;span style="color:#75af00">from&lt;/span> &lt;span style="color:#d88200">&amp;#39;globals&amp;#39;&lt;/span>&lt;span style="color:#111">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">import&lt;/span> &lt;span style="color:#75af00">tseslint&lt;/span> &lt;span style="color:#75af00">from&lt;/span> &lt;span style="color:#d88200">&amp;#39;typescript-eslint&amp;#39;&lt;/span>&lt;span style="color:#111">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">/** @type {import(&amp;#39;eslint&amp;#39;).Linter.Config[]} */&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">export&lt;/span> &lt;span style="color:#00a8c8">default&lt;/span> &lt;span style="color:#111">[&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">{&lt;/span> &lt;span style="color:#75af00">files&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#111">[&lt;/span>&lt;span style="color:#d88200">&amp;#39;**/*.{js,mjs,cjs,ts}&amp;#39;&lt;/span>&lt;span style="color:#111">]&lt;/span> &lt;span style="color:#111">},&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">{&lt;/span> &lt;span style="color:#75af00">languageOptions&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#111">{&lt;/span> &lt;span style="color:#75af00">globals&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#75af00">globals&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">browser&lt;/span> &lt;span style="color:#111">}&lt;/span> &lt;span style="color:#111">},&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">pluginJs&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">configs&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">recommended&lt;/span>&lt;span style="color:#111">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">...&lt;/span>&lt;span style="color:#75af00">tseslint&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">configs&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">recommended&lt;/span>&lt;span style="color:#111">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">eslintConfigPrettier&lt;/span>&lt;span style="color:#111">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">];&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="prettierrc">.prettierrc&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-js" data-lang="js">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#d88200">&amp;#34;semi&amp;#34;&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#00a8c8">true&lt;/span>&lt;span style="color:#111">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#d88200">&amp;#34;trailingComma&amp;#34;&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;all&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#d88200">&amp;#34;singleQuote&amp;#34;&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#00a8c8">true&lt;/span>&lt;span style="color:#111">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#d88200">&amp;#34;printWidth&amp;#34;&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#ae81ff">150&lt;/span>&lt;span style="color:#111">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#d88200">&amp;#34;endOfLine&amp;#34;&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;auto&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#d88200">&amp;#34;singleAttributePerLine&amp;#34;&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#00a8c8">true&lt;/span>&lt;span style="color:#111">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#d88200">&amp;#34;vueIndentScriptAndStyle&amp;#34;&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#00a8c8">true&lt;/span>&lt;span style="color:#111">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#d88200">&amp;#34;htmlWhitespaceSensitivity&amp;#34;&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;ignore&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#d88200">&amp;#34;plugins&amp;#34;&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#111">[&lt;/span>&lt;span style="color:#d88200">&amp;#34;prettier-plugin-organize-imports&amp;#34;&lt;/span>&lt;span style="color:#111">],&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#d88200">&amp;#34;overrides&amp;#34;&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#111">[&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#d88200">&amp;#34;files&amp;#34;&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;.prettierrc&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#d88200">&amp;#34;options&amp;#34;&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#111">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#d88200">&amp;#34;parser&amp;#34;&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;json&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="prettierignore">.prettierignore&lt;/h3>
-&lt;pre tabindex="0">&lt;code>dist
-pnpm-lock.yaml
-CHANGELOG*.md
-&lt;/code>&lt;/pre></description></item><item><title>Cocos - Note</title><link>https://HoshikawaRyuukou.github.io/posts/cocos---note/</link><pubDate>Tue, 10 Dec 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/cocos---note/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://www.youtube.com/playlist?list=PLBJYWvMyUqL8JXx7H516oCyF5j6sv-Ru3">cocos creator零基础教学&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://space.bilibili.com/3546653680208125">Cocos-siki学院&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://hackmd.io/@fm953526/SknYxyiuI/https%3A%2F%2Fhackmd.io%2F%40FfeAyhG7QQ2Oie5fUUBKcg%2FSk1b0vmYK%2F%252Fs%252Ftutorials-tw">Cocos 教學資源&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="rescource">Rescource&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/Leo501/awesome-CocosCreator">awesome-CocosCreator&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Algorithm - Complexity</title><link>https://HoshikawaRyuukou.github.io/posts/algorithm---complexity/</link><pubDate>Thu, 28 Nov 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/algorithm---complexity/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>在尋求最優解法設計 &lt;strong>既快又省&lt;/strong> 的資料結構與演算時，有以下兩個面向&lt;/p>
 &lt;ul>
@@ -4248,10 +4147,11 @@ CHANGELOG*.md
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;type&lt;/span> &lt;span style="color:#75af00">fullname=&lt;/span>&lt;span style="color:#d88200">&amp;#34;UnityEngine.Rigidbody2D&amp;#34;&lt;/span> &lt;span style="color:#75af00">preserve=&lt;/span>&lt;span style="color:#d88200">&amp;#34;all&amp;#34;&lt;/span>&lt;span style="color:#f92672">/&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;/assembly&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;/linker&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Game Analysis - Assets</title><link>https://HoshikawaRyuukou.github.io/posts/game-analysis---assets/</link><pubDate>Sun, 11 Feb 2024 08:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/game-analysis---assets/</guid><description>&lt;h2 id="games">Games&lt;/h2>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Game Assets</title><link>https://HoshikawaRyuukou.github.io/posts/game-assets/</link><pubDate>Sun, 11 Feb 2024 08:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/game-assets/</guid><description>&lt;h2 id="games">Games&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/28598519a/TSK_AssetDL">28598519a/TSK_AssetDL&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/ZM-Kimu/Blue-Archive-Asset-Downloader">ZM-Kimu/Blue-Archive-Asset-Downloader&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/Deathemonic/BA-AD">Deathemonic/BA-AD&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="extracting">Extracting&lt;/h2>
 &lt;ul>
