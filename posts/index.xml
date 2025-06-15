@@ -1,4 +1,47 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/posts/</link><description>Recent content in Posts on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Wed, 04 Jun 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Art - Design - Note</title><link>https://HoshikawaRyuukou.github.io/posts/art---design---note/</link><pubDate>Wed, 04 Jun 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/art---design---note/</guid><description>&lt;h2 id="aesthetic">Aesthetic&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/posts/</link><description>Recent content in Posts on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Fri, 13 Jun 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>AI - Stable diffusion - Favorite Prompts</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorite-prompts/</link><pubDate>Fri, 13 Jun 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorite-prompts/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;ul>
+&lt;li>⚠️ 不同的模型對提示詞的理解會有所不同，選對模型才能產生最好的效果。&lt;/li>
+&lt;li>⚠️ 有時提示詞衝突會導致畫面崩壞無法收斂。&lt;/li>
+&lt;li>⚠️ 盡量不讓權重過 1.5。&lt;/li>
+&lt;/ul>
+&lt;h2 id="prompts---artists">Prompts - Artists&lt;/h2>
+&lt;ul>
+&lt;li>權重超過 0.6 比較穩定(但有些太高會有點 overfitting)&lt;/li>
+&lt;li>增加一些插畫風格 : rella&lt;/li>
+&lt;/ul>
+&lt;h2 id="prompts---positive">Prompts - Positive&lt;/h2>
+&lt;h3 id="body">Body&lt;/h3>
+&lt;ul>
+&lt;li>年齡向上調整 : aged up&lt;/li>
+&lt;li>高頭身 : long legs, tall female&lt;/li>
+&lt;li>臉完全朝上 : face up&lt;/li>
+&lt;li>往上看而臉被順勢帶起 : looking up&lt;/li>
+&lt;/ul>
+&lt;h2 id="prompts---negative">Prompts - Negative&lt;/h2>
+&lt;h3 id="accessories">Accessories&lt;/h3>
+&lt;ul>
+&lt;li>用於移除一切頭部裝飾 : headwear&lt;/li>
+&lt;/ul></description></item><item><title>AI - Stable diffusion - Inpainting</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---inpainting/</link><pubDate>Thu, 12 Jun 2025 20:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---inpainting/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>目前並未特別使用進階修圖技巧。若圖片瑕疵可透過簡單塗色與描邊處理，即會嘗試修復。&lt;/p>
+&lt;p>若瑕疵較嚴重，則多半直接放棄並重新生成 —— 通常下一張會更好。&lt;/p>
+&lt;h2 id="modification">Modification&lt;/h2>
+&lt;ul>
+&lt;li>圖片先送入 &lt;code>img2img&lt;/code>。&lt;/li>
+&lt;li>簡單處理：使用 &lt;code>Inpaint sketch&lt;/code>（注意不要在 sketch 模式下直接生成）。&lt;/li>
+&lt;li>複雜處理：使用 &lt;code>photopea-embed&lt;/code> 進行手動遮罩或編輯。&lt;/li>
+&lt;li>完成後再送回 &lt;code>Inpaint&lt;/code> 重新生成。&lt;/li>
+&lt;/ul>
+&lt;h2 id="generation">Generation&lt;/h2>
+&lt;ul>
+&lt;li>採樣方法（Sampling method）：&lt;code>DPM++ 2M&lt;/code>&lt;/li>
+&lt;li>時間表類型（Schedule type）：&lt;code>Karras&lt;/code>&lt;/li>
+&lt;li>去雜強度（Denoising strength）建議範圍：
+&lt;ul>
+&lt;li>&lt;code>0.2 ~ 0.3&lt;/code>：保留原圖整體色彩結構，僅微調瑕疵與過渡區域。&lt;/li>
+&lt;li>&lt;code>0.3 ~ 0.5&lt;/code>：適度改變結構與細節，適合嘗試新的構圖或調整 seed 取得更好結果。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>Art - Design - Note</title><link>https://HoshikawaRyuukou.github.io/posts/art---design---note/</link><pubDate>Wed, 04 Jun 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/art---design---note/</guid><description>&lt;h2 id="aesthetic">Aesthetic&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://space.bilibili.com/4971601/lists?sid=5379154">合集·基础审美三部曲&lt;/a>&lt;/li>
 &lt;/ul>
@@ -24,7 +67,7 @@
 &lt;li>&lt;a href="https://www.bilibili.com/video/BV1Yx4y147tg">交换机的核心工作原理 | 集线器、2层交换机和3层交换机的主要区别&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.youtube.com/watch?v=tVLIRCJuFW8">你管这破玩意叫网络？ 从设计者的思考角度出发理解网络，合理、靠谱！&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.youtube.com/watch?v=kjfPAC16k18">【API技术核心原理】REST | GraphQL | gRPC | tRPC&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>AI - Stable diffusion - Favorites</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorites/</link><pubDate>Fri, 16 May 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorites/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;/ul></description></item><item><title>AI - Stable diffusion - Favorite Models</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorite-models/</link><pubDate>Fri, 16 May 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorite-models/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;ul>
 &lt;li>sd 1.5 系列基本上不使用了&lt;/li>
 &lt;li>Illustrious 是目前的使用主力&lt;/li>
@@ -976,12 +1019,6 @@ Scope(s):
 &lt;h2 id="sd-webui-photopea-embed">sd-webui-photopea-embed&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/yankooliveira/sd-webui-photopea-embed">yankooliveira/sd-webui-photopea-embed&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="sd-webui-lora-block-weight">sd-webui-lora-block-weight&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/hako-mikan/sd-webui-lora-block-weight">hako-mikan/sd-webui-lora-block-weight&lt;/a>&lt;/li>
-&lt;li>XERSON005:1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0&lt;/li>
-&lt;li>PERSON105:1,0,0,1,1,0,0,0,1,1,1,0,0,0,0,0,0&lt;/li>
 &lt;/ul></description></item><item><title>AI - Stable diffusion - GUI</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---gui/</link><pubDate>Mon, 10 Feb 2025 21:16:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---gui/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>建議新手直接從 Forge 入門即可&lt;/p>
 &lt;h2 id="guide">Guide&lt;/h2>
