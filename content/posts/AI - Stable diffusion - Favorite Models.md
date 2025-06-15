@@ -1,5 +1,5 @@
 ---
-title: "AI - Stable diffusion - Favorites"
+title: "AI - Stable diffusion - Favorite Models"
 date: 2025-05-16 21:11:00
 draft: false
 
