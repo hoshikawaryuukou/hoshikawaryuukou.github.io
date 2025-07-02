@@ -41,6 +41,11 @@ tags: ["Unity", "Web"]
 
 📝 這是因為 `Brotli` 壓縮算法僅在 `HTTPS` 連接中被啟用
 
+### Optional : autoSyncPersistentDataPath
+> 修復了 Application.persistentDataPath 持久化的問題
+
+📝 通過於 index.html 添加新的 JS 配置選項 `autoSyncPersistentDataPath： true` 來啟用 Application.persistentDataPath 到 IndexedDB 的自動同步。
+
 <!-- ## Others
 - [My WebGL assets](https://forum.unity.com/threads/my-webgl-assets.994741/)
 - [kou-yeung/WebGLInput](https://github.com/kou-yeung/WebGLInput)
