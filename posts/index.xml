@@ -1,4 +1,80 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/posts/</link><description>Recent content in Posts on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Fri, 13 Jun 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>AI - Stable diffusion - Favorite Prompts</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorite-prompts/</link><pubDate>Fri, 13 Jun 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorite-prompts/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/posts/</link><description>Recent content in Posts on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Mon, 30 Jun 2025 21:05:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Software Design - Architecture - Slot Game Client</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---architecture---slot-game-client/</link><pubDate>Mon, 30 Jun 2025 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---architecture---slot-game-client/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;blockquote>
+&lt;p>前端開發時，「狀態管理」一直是個大哉問。&lt;/p>&lt;/blockquote>
+&lt;p>本次的應用是 &lt;strong>Slot Game&lt;/strong>，這類應用強調「表現層細節」，所以對於狀態的控制不像一般資料應用一樣單純，需要處理許多細部和即時的變化。&lt;/p>
+&lt;h3 id="狀態管理挑戰">狀態管理挑戰&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>響應式 data-binding 限制 :&lt;/p>
+&lt;ul>
+&lt;li>若完全依賴響應式 data-binding，容易產生太多「中間態」(例如動畫進行中、結果待顯示、部分組件已經觸發&amp;hellip;等)。&lt;/li>
+&lt;li>這樣會造成 state 爆炸、難以追蹤維護。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>命令式流程控制的必要性 :&lt;/p>
+&lt;ul>
+&lt;li>部分場景下，直接用命令式（imperative）流程更有效率。&lt;/li>
+&lt;li>多組件聯動時的「動畫序列控制」。&lt;/li>
+&lt;li>一連串的 user action/遊戲事件，需明確依序觸發。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="-技術棧一覽">⚙️ 技術棧一覽&lt;/h3>
+&lt;ul>
+&lt;li>UniTask (異步)&lt;/li>
+&lt;li>R3 (Rx，UniRx 後繼者)&lt;/li>
+&lt;li>VContainer (依賴注入)&lt;/li>
+&lt;li>LitMotion (Tween)&lt;/li>
+&lt;li>YooAsset (資源管理)&lt;/li>
+&lt;li>Newtonsoft Json (Json 解析)&lt;/li>
+&lt;li>Alchemy (編輯器擴充)&lt;/li>
+&lt;/ul>
+&lt;h2 id="專案結構">專案結構&lt;/h2>
+&lt;h3 id="modules-主架構">Modules 主架構&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>project-root/
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── _Debug/ &lt;span style="color:#75715e"># 測試或實驗用模組&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── App/ &lt;span style="color:#75715e"># 啟動點與業務邏輯總控&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── GameAPI/ &lt;span style="color:#75715e"># 遊戲 API 定義&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── GameRunner/ &lt;span style="color:#75715e"># 遊戲平台通用組件 (純 UIComponent)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── GameStage/ &lt;span style="color:#75715e"># 遊戲表演組件 (純 UIComponent)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>└── Shared/ &lt;span style="color:#75715e"># 共用模組&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>App：負責組合、調度各個模組，等於是專案的大腦。&lt;/li>
+&lt;li>GameAPI：只放介面定義，跨模組通訊與擴充。&lt;/li>
+&lt;li>GameRunner / GameStage：都是純 UIComponent (基本都是 Mono)。&lt;/li>
+&lt;li>Shared：共用邏輯、工具類、資料結構都放這裡。&lt;/li>
+&lt;li>_Debug：僅用於測試、debug，正式版本不打包。&lt;/li>
+&lt;/ul>
+&lt;h3 id="module-模組以單一模組為例">Module 模組（以單一模組為例）&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>module-root/
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── Res/ &lt;span style="color:#75715e"># 模組獨立資源&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>└── Scripts/ &lt;span style="color:#75715e"># 腳本程式碼&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ├── Editor/ &lt;span style="color:#75715e"># 編輯器相關&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> └── Runtime/ &lt;span style="color:#75715e"># 執行時相關&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>Res：模組內專屬資源包。&lt;/li>
+&lt;li>Scripts/Editor：編輯器工具。&lt;/li>
+&lt;li>Scripts/Runtime：模組實際邏輯，遊戲執行時會用到的部分。&lt;/li>
+&lt;/ul>
+&lt;h3 id="app-runtime運行時架構">App-Runtime（運行時架構）&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>App-Runtime-root/
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── Configs/ &lt;span style="color:#75715e"># 配置與定義&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── Services/ &lt;span style="color:#75715e"># 封裝各種業務操作&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── Presenters/ &lt;span style="color:#75715e"># 控制流程、狀態綁定&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>└── Stores/ &lt;span style="color:#75715e"># 狀態管理&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>Configs：所有定義類、配置文件，便於集中管理。&lt;/li>
+&lt;li>Services：將業務操作進行封裝，利於重用及維護。&lt;/li>
+&lt;li>Presenters：類似 MVP Pattern 的 Presenter，專注於流程控制和資料流。&lt;/li>
+&lt;li>Stores：專責狀態儲存和監聽，確保資料一致性。&lt;/li>
+&lt;/ul>
+&lt;h2 id="實作體悟-1響應式與命令式">實作體悟 1：響應式與命令式&lt;/h2>
+&lt;h3 id="響應式的場合--當操作與狀態變化是多對多關係">響應式的場合 : 當操作與狀態變化是多對多關係&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>一個操作觸發多處改變（One-to-Many updates）&lt;br>
+例如：用戶點擊「開始」後，同時啟動動畫、鎖定按鈕、重置分數、播放音效。&lt;/p></description></item><item><title>AI - Stable diffusion - Favorite Prompts</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorite-prompts/</link><pubDate>Fri, 13 Jun 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorite-prompts/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;ul>
 &lt;li>⚠️ 不同的模型對提示詞的理解會有所不同，選對模型才能產生最好的效果。&lt;/li>
 &lt;li>⚠️ 有時提示詞衝突會導致畫面崩壞無法收斂。&lt;/li>
