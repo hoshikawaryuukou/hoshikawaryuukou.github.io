@@ -67,13 +67,12 @@
 &lt;li>Configs：所有定義類、配置文件，便於集中管理。&lt;/li>
 &lt;li>Services：將業務操作進行封裝，利於重用及維護。&lt;/li>
 &lt;li>Presenters：類似 MVP Pattern 的 Presenter，專注於流程控制和資料流。&lt;/li>
-&lt;li>Stores：專責狀態儲存和監聽，確保資料一致性。&lt;/li>
+&lt;li>Stores：專責狀態儲存，確保資料一致性。&lt;/li>
 &lt;/ul>
-&lt;h2 id="實作體悟-1響應式與命令式">實作體悟 1：響應式與命令式&lt;/h2>
-&lt;h3 id="響應式的場合--當操作與狀態變化是多對多關係">響應式的場合 : 當操作與狀態變化是多對多關係&lt;/h3>
+&lt;h2 id="實作體悟-1實務上的狀態變化">實作體悟 1：實務上的狀態變化&lt;/h2>
 &lt;ul>
 &lt;li>
-&lt;p>一個操作觸發多處改變（One-to-Many updates）&lt;br>
+&lt;p>一個操作觸發多處改變（One-to-Many Updates）&lt;br>
 例如：用戶點擊「開始」後，同時啟動動畫、鎖定按鈕、重置分數、播放音效。&lt;/p></description></item><item><title>Software Design - Architecture Design</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---architecture-design/</link><pubDate>Wed, 25 Dec 2024 20:03:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---architecture-design/</guid><description>&lt;h2 id="thinking">Thinking&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://minds.md/zakirullin/cognitive#long">Cognitive load is what matters&lt;/a>&lt;/li>
