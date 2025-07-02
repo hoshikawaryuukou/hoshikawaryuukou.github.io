@@ -71,26 +71,24 @@ App-Runtime-root/
 - Configs：所有定義類、配置文件，便於集中管理。
 - Services：將業務操作進行封裝，利於重用及維護。
 - Presenters：類似 MVP Pattern 的 Presenter，專注於流程控制和資料流。
-- Stores：專責狀態儲存和監聽，確保資料一致性。
+- Stores：專責狀態儲存，確保資料一致性。
 
 
-## 實作體悟 1：響應式與命令式
+## 實作體悟 1：實務上的狀態變化
 
-### 響應式的場合 : 當操作與狀態變化是多對多關係
-
-- 一個操作觸發多處改變（One-to-Many updates）  
+- 一個操作觸發多處改變（One-to-Many Updates）  
 例如：用戶點擊「開始」後，同時啟動動畫、鎖定按鈕、重置分數、播放音效。
 
-- 一個改變被多處觸發（Many-to-One triggers）  
+- 一個改變能被多處觸發（Many-to-One Triggers）  
 例如：分數變化可能來自多種事件（贏分、補分、特殊獎勵），這些事件又同時影響相同的分數狀態。
 
-為了簡化這種多對多的糾纏，筆者選擇將狀態邏輯獨立成 Store，這些狀態變更都「單向流動」，透過 RX（Reactive Extensions）等觀察者模式來集中處理。
+### 響應式的場合 : 狀態需要被多處觀測時
+有些狀態會被多個元件同時觀察，並且常常需要被組合運用來驅動畫面邏輯。針對這類情境，筆者會選擇將相關的狀態邏輯獨立封裝到 Store 內，並採取「單向資料流」設計，結合 RX（Reactive Extensions）等觀察者模式來統一管理狀態變化。
 
 這種做法有幾個優點：
-- 狀態變動集中管理，不怕多個來源同時改亂。
-- Presenter 只管訂閱需要的狀態，不需再手動監聽彼此。
-- 複雜的流程可以用 RX 的 stream/pipe/merge/combine 等操作很直觀地串起來
-例如：多個事件合併成一個 stream，或根據不同事件切換狀態流。
+- 狀態變動能集中管理，避免多個來源同時修改導致混亂。
+- Presenter（或 UI 層）只需要訂閱自己關心的狀態，無需額外管理彼此之間的監聽。
+- 透過 RX 的 stream、pipe、merge、combine 等操作，可以很直覺地將複雜流程串接起來。
 
 ```cs
 // 當 (GameState 變為 Idle) or (舞台表演結束)
@@ -129,7 +127,7 @@ Observable.EveryUpdate()
 ```
 
 ### 命令式的場合 : 狀態封閉於單一流程時
-但有些狀態其實不會到處被訂閱或修改，像是遊戲中的「表演流程」這種緊密耦合、步驟明確的處理，筆者會直接用命令式的寫法，流程步驟一目了然，也比較方便 Debug 跟維護。
+有些狀態其實不會到處被訂閱或修改，像是遊戲中的「表演流程」這種緊密耦合、步驟明確的處理，筆者會直接用命令式的寫法，流程步驟一目了然，也比較方便 Debug 跟維護。
 
 ```cs
 public async UniTask RunStep(StateStore stateStore, CancellationToken ct)
@@ -175,8 +173,6 @@ public async UniTask RunStep(StateStore stateStore, CancellationToken ct)
     }
 }
 ```
-
-
 
 ## 實作體悟 2：封裝操作
 
