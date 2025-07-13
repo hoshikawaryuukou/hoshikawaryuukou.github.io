@@ -6,4 +6,9 @@ draft: false
 tags: ["AI", "Agent"]
 ---
 
+## Quick Chat
+
+## Install
+```bash
 pnpm add -g @google/gemini-cli
+```
