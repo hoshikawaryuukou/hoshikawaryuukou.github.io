@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Node.js on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/node.js/</link><description>Recent content in Node.js on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sun, 13 Oct 2024 09:11:01 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/node.js/index.xml" rel="self" type="application/rss+xml"/><item><title>Node.js - package.json - Export</title><link>https://HoshikawaRyuukou.github.io/posts/node.js---package.json---export/</link><pubDate>Sun, 13 Oct 2024 09:11:01 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/node.js---package.json---export/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Node.js on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/node.js/</link><description>Recent content in Node.js on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Tue, 08 Jul 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/node.js/index.xml" rel="self" type="application/rss+xml"/><item><title>Node.js - Environment</title><link>https://HoshikawaRyuukou.github.io/posts/node.js---environment/</link><pubDate>Tue, 08 Jul 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/node.js---environment/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>nvm-windows 是一款 Windows 作業系統下的 Node.js 版本管理器，可讓使用者在同一台電腦上安裝、切換和管理多個不同的 Node.js 版本。&lt;/p>
+&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/coreybutler/nvm-windows">coreybutler/nvm-windows&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://medium.com/@ray102467/nvm-windows-%E7%AE%A1%E7%90%86-windows-node-js-%E7%89%88%E6%9C%AC-68d789cf84d7">nvm-windows 管理 Windows Node.js 版本&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="commands">Commands&lt;/h2>
+&lt;ul>
+&lt;li>nvm -v : 查看 nvm 版本&lt;/li>
+&lt;li>nvm install lts : 安裝最新的 Node.js LTS 版本&lt;/li>
+&lt;li>nvm install {version} : 安裝版本&lt;/li>
+&lt;li>nvm use {version} : 切換版本&lt;/li>
+&lt;/ul></description></item><item><title>Node.js - package.json - Export</title><link>https://HoshikawaRyuukou.github.io/posts/node.js---package.json---export/</link><pubDate>Sun, 13 Oct 2024 09:11:01 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/node.js---package.json---export/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://nodejs.org/api/packages.html#package-entry-points">Package entry points&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.typescriptlang.org/docs/handbook/declaration-files/publishing.html#version-selection-with-typesversions">Version selection with typesVersions&lt;/a>&lt;/li>
@@ -250,8 +263,6 @@
 &lt;/ul></description></item><item><title>Node.js - Note</title><link>https://HoshikawaRyuukou.github.io/posts/node.js---note/</link><pubDate>Sun, 26 May 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/node.js---note/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/648238863">Node.js究竟是什么？初学者指南&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/coreybutler/nvm-windows">coreybutler/nvm-windows&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://medium.com/@ray102467/nvm-windows-%E7%AE%A1%E7%90%86-windows-node-js-%E7%89%88%E6%9C%AC-68d789cf84d7">nvm-windows 管理 Windows Node.js 版本&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://pjchender.dev/npm/npm-cli-and-package-json/">[指令] npm cli &amp;amp; package.json&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.jianshu.com/p/a07eeb43d8b3">解决Node.js的命令行输出中文乱码问题（也适用于Electron）&lt;/a>&lt;/li>
 &lt;/ul>
