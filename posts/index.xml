@@ -1,4 +1,85 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/posts/</link><description>Recent content in Posts on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Tue, 08 Jul 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Node.js - Environment</title><link>https://HoshikawaRyuukou.github.io/posts/node.js---environment/</link><pubDate>Tue, 08 Jul 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/node.js---environment/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/posts/</link><description>Recent content in Posts on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Fri, 18 Jul 2025 21:05:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Software Design - Code Smells - Side Effect</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---code-smells---side-effect/</link><pubDate>Fri, 18 Jul 2025 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---code-smells---side-effect/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>副作用（Side Effect）指的是一段程式在執行後，&lt;strong>除了回傳值之外還影響了外部狀態&lt;/strong>。&lt;/p>
+&lt;p>在錯誤的位置或缺乏揭露的情況下使用副作用，會造成：&lt;/p>
+&lt;ul>
+&lt;li>函式不可預測&lt;/li>
+&lt;li>測試困難&lt;/li>
+&lt;li>程式閱讀成本上升&lt;/li>
+&lt;li>Bug 躲藏不易察覺&lt;/li>
+&lt;/ul>
+&lt;h2 id="bad-examples">Bad Examples&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-js" data-lang="js">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">function&lt;/span> &lt;span style="color:#75af00">getUserName&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#75af00">user&lt;/span>&lt;span style="color:#111">)&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">saveLog&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#75af00">user&lt;/span>&lt;span style="color:#111">);&lt;/span> &lt;span style="color:#75715e">// 副作用：寫入外部 log
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#75af00">notifyOthers&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#75af00">user&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">name&lt;/span>&lt;span style="color:#111">);&lt;/span> &lt;span style="color:#75715e">// 副作用：發送通知
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#00a8c8">return&lt;/span> &lt;span style="color:#75af00">user&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">name&lt;/span>&lt;span style="color:#111">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="extras">Extras&lt;/h2>
+&lt;p>很多時候副作用可能是無法規避的，因此重點不在「禁止副作用」，而是「把副作用設計得可控、可觀測、可預期」。&lt;/p>
+&lt;p>較健康的副作用處理策略：&lt;/p>
+&lt;ul>
+&lt;li>明確命名：像 updateState, notifyUser, logError&lt;/li>
+&lt;li>設計邊界：像 useEffect、controller 層 專職處理副作用&lt;/li>
+&lt;/ul></description></item><item><title>Software Design - Pattern - Orchestrator Pattern</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---orchestrator-pattern/</link><pubDate>Fri, 18 Jul 2025 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---orchestrator-pattern/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>協調者模式，主要用於管理多個獨立服務或元件之間錯綜複雜的互動。&lt;/p>
+&lt;p>其核心理念是在系統中引入一個專責的「協調者」（Orchestrator）或「控制器」（Controller）元件，作為整體業務流程的指揮者。這個協調者本身並不執行具體的業務邏輯，而是像導演一樣，負責調度各個「參與者」（Participants）或「服務」（Services）來完成任務。每個參與者專注於自己擅長的部分（例如資料查詢、驗證、計算等），執行完後將結果回傳給協調者。&lt;/p>
+&lt;p>協調者則根據這些結果，決定後續該呼叫哪個參與者、是否中斷流程，或如何彙整輸出，以推進整體流程邏輯。如此一來，流程控制與業務邏輯得以明確分離，讓系統更具彈性與可維護性。&lt;/p>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-js" data-lang="js">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">class&lt;/span> &lt;span style="color:#75af00">BaseGame&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">play&lt;/span>&lt;span style="color:#111">()&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">console&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">log&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#d88200">&amp;#34;Playing base game...&amp;#34;&lt;/span>&lt;span style="color:#111">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">const&lt;/span> &lt;span style="color:#75af00">result&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#00a8c8">this&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">spin&lt;/span>&lt;span style="color:#111">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">return&lt;/span> &lt;span style="color:#75af00">result&lt;/span>&lt;span style="color:#111">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">spin&lt;/span>&lt;span style="color:#111">()&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">return&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">symbols&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#111">[&lt;/span>&lt;span style="color:#d88200">&amp;#34;Free&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#d88200">&amp;#34;Free&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span> &lt;span style="color:#d88200">&amp;#34;Free&amp;#34;&lt;/span>&lt;span style="color:#111">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">freeSpinCount&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#ae81ff">3&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">win&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#ae81ff">100&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">};&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">class&lt;/span> &lt;span style="color:#75af00">FreeGame&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">play&lt;/span>&lt;span style="color:#111">()&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">console&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">log&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#d88200">&amp;#34;Playing free game...&amp;#34;&lt;/span>&lt;span style="color:#111">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">return&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">win&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#ae81ff">200&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">spins&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#ae81ff">6&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">};&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">class&lt;/span> &lt;span style="color:#75af00">GameFlowController&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">constructor&lt;/span>&lt;span style="color:#111">()&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">this&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">baseGame&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#00a8c8">new&lt;/span> &lt;span style="color:#75af00">BaseGame&lt;/span>&lt;span style="color:#111">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">this&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">freeGame&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#00a8c8">new&lt;/span> &lt;span style="color:#75af00">FreeGame&lt;/span>&lt;span style="color:#111">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">run&lt;/span>&lt;span style="color:#111">()&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">const&lt;/span> &lt;span style="color:#75af00">baseResult&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#00a8c8">this&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">baseGame&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">play&lt;/span>&lt;span style="color:#111">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">let&lt;/span> &lt;span style="color:#75af00">finalResult&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">from&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;base only&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">baseResult&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">};&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">if&lt;/span> &lt;span style="color:#111">(&lt;/span>&lt;span style="color:#75af00">baseResult&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">freeSpinCount&lt;/span> &lt;span style="color:#f92672">&amp;gt;=&lt;/span> &lt;span style="color:#ae81ff">3&lt;/span>&lt;span style="color:#111">)&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">const&lt;/span> &lt;span style="color:#75af00">freeResult&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#00a8c8">this&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">freeGame&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">play&lt;/span>&lt;span style="color:#111">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">finalResult&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#111">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">from&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;base + free&amp;#34;&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">baseResult&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">freeResult&lt;/span>&lt;span style="color:#111">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">};&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">return&lt;/span> &lt;span style="color:#75af00">finalResult&lt;/span>&lt;span style="color:#111">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">const&lt;/span> &lt;span style="color:#75af00">controller&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#00a8c8">new&lt;/span> &lt;span style="color:#75af00">GameFlowController&lt;/span>&lt;span style="color:#111">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">const&lt;/span> &lt;span style="color:#75af00">result&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#75af00">controller&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">run&lt;/span>&lt;span style="color:#111">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75af00">console&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#75af00">log&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#75af00">result&lt;/span>&lt;span style="color:#111">);&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Node.js - Environment</title><link>https://HoshikawaRyuukou.github.io/posts/node.js---environment/</link><pubDate>Tue, 08 Jul 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/node.js---environment/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>nvm-windows 是一款 Windows 作業系統下的 Node.js 版本管理器，可讓使用者在同一台電腦上安裝、切換和管理多個不同的 Node.js 版本。&lt;/p>
 &lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
