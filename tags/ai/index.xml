@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/ai/</link><description>Recent content in AI on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 03 Jul 2025 13:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>AI - Agent - Gemini CLI</title><link>https://HoshikawaRyuukou.github.io/posts/ai---agent---gemini-cli/</link><pubDate>Thu, 03 Jul 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---agent---gemini-cli/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://gemini-cli.gh.miniasp.com/">歡迎使用 Gemini CLI 使用手冊 | Gemini CLI 使用手冊&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;h2 id="install">Install&lt;/h2>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>pnpm add -g @google/gemini-cli
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>AI - Stable diffusion - Favorite Prompts</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorite-prompts/</link><pubDate>Fri, 13 Jun 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorite-prompts/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="commands">Commands&lt;/h2>
+&lt;ul>
+&lt;li>&lt;code>-v&lt;/code> : 查看版版本&lt;/li>
+&lt;li>&lt;code>--model&lt;/code> : 指定模型&lt;/li>
+&lt;/ul></description></item><item><title>AI - Stable diffusion - Favorite Prompts</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorite-prompts/</link><pubDate>Fri, 13 Jun 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorite-prompts/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;ul>
 &lt;li>⚠️ 不同的模型對提示詞的理解會有所不同，選對模型才能產生最好的效果。&lt;/li>
 &lt;li>⚠️ 有時提示詞衝突會導致畫面崩壞無法收斂。&lt;/li>
