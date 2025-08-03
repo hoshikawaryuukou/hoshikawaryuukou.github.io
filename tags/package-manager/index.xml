@@ -1,4 +1,46 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Package Manager on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/package-manager/</link><description>Recent content in Package Manager on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sat, 01 Feb 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/package-manager/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Package Manager - Import a private package from GitHub repository</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---import-a-private-package-from-github-repository/</link><pubDate>Sat, 01 Feb 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---import-a-private-package-from-github-repository/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Package Manager on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/package-manager/</link><description>Recent content in Package Manager on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sat, 26 Jul 2025 21:16:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/package-manager/index.xml" rel="self" type="application/rss+xml"/><item><title>Node.js - Package Manager - pnpm</title><link>https://HoshikawaRyuukou.github.io/posts/node.js---package-manager---pnpm/</link><pubDate>Sat, 26 Jul 2025 21:16:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/node.js---package-manager---pnpm/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://pnpm.nodejs.cn/">pnpm&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.cnblogs.com/cangqinglang/p/14448329.html">为什么现在我更推荐 pnpm 而不是 npm/yarn? &lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://juejin.cn/post/7286362110211489855?searchId=20240731105621AD124E03A93B1AB5027A">pnpm、npm、yarn 包管理工具『优劣对比』及『环境迁移』&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://qborfy.com/today/20230219.html">从pnpm工具了解整个npm包核心管理原理&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.explainthis.io/zh-hant/swe/why-is-pnpm-faster">為什麼 pnpm 比 npm 更快且更省空間？&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.csdn.net/bobo789456123/article/details/132882778">pnpm实战教程&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://medium.com/%E6%89%8B%E5%AF%AB%E7%AD%86%E8%A8%98/%E7%82%BA%E4%BB%80%E9%BA%BC%E4%BD%BF%E7%94%A8-turborepo-%E5%90%8C%E6%99%82%E9%9C%80%E8%A6%81%E4%BD%BF%E7%94%A8-pnpm-workspace-9f0899c90d44">為什麼使用 Turborepo 同時需要使用 pnpm workspace？&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="install">Install&lt;/h2>
+&lt;h3 id="全域安裝">全域安裝&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>npm install -g pnpm
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="環境配置---windows">環境配置 - Windows&lt;/h3>
+&lt;ul>
+&lt;li>⚠️ 使用 PowerShell 系統管理員&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>Get-ExecutionPolicy
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 如果為 Restricted 則繼續進行 &lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Set-ExecutionPolicy RemoteSigned
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="commands">Commands&lt;/h2>
+&lt;h3 id="pnpm-本體">pnpm 本體&lt;/h3>
+&lt;ul>
+&lt;li>pnpm self-update : 將 pnpm 更新到最新版本。(建議重啟)&lt;/li>
+&lt;/ul>
+&lt;h3 id="packages">packages&lt;/h3>
+&lt;ul>
+&lt;li>pnpm add &lt;code>&amp;lt;pkg&amp;gt;&lt;/code> : 添加依賴&lt;/li>
+&lt;li>pnpm remove &lt;code>&amp;lt;pkg&amp;gt;&lt;/code> : 移除依賴&lt;/li>
+&lt;li>pnpm install : 安裝所有依賴&lt;/li>
+&lt;li>pnpm update : 在 package.json 限制的版本範圍內更新所有依賴&lt;/li>
+&lt;li>pnpm update &amp;ndash;latest : 強更新所有依賴至最新&lt;/li>
+&lt;li>pnpm outdated : 檢查套件是否有更新&lt;/li>
+&lt;li>pnpm store prune : 會清理掉不再被專案引用的包&lt;/li>
+&lt;li>pnpm run &lt;code>&amp;lt;commnad&amp;gt;&lt;/code> : 執行命令 (run 基本)&lt;/li>
+&lt;/ul>
+&lt;h3 id="workspace">workspace&lt;/h3>
+&lt;ul>
+&lt;li>-w : 為工作區參數&lt;/li>
+&lt;li>-wD : 組合使用 - 工作區依賴&lt;/li>
+&lt;li>&amp;ndash;filter &lt;code>&amp;lt;package_selector&amp;gt;&lt;/code>: 對指定 package 操作&lt;/li>
+&lt;/ul></description></item><item><title>Unity - Package Manager - Import a private package from GitHub repository</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---import-a-private-package-from-github-repository/</link><pubDate>Sat, 01 Feb 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---import-a-private-package-from-github-repository/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>Unity Package Manager (UPM) 支援從 Git repository 直接安裝與管理 package，這對於團隊開發和共享自定義 package 非常有用。&lt;/p>
 &lt;ul>
 &lt;li>⚠️ 如果是 organization 協同，需開啟相關的成員權限。&lt;/li>
