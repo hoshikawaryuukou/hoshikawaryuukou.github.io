@@ -1,9 +1,9 @@
 ---
 title: "Node.js - Package Manager - pnpm"
-date: 2024-10-12 21:16:00
+date: 2025-07-26 21:16:00
 draft: false
 
-tags: ["Node.js", "pnpm"]
+tags: ["Node.js", "Package Manager", "pnpm"]
 ---
 
 ## Guide
@@ -13,6 +13,7 @@ tags: ["Node.js", "pnpm"]
 - [从pnpm工具了解整个npm包核心管理原理](https://qborfy.com/today/20230219.html)
 - [為什麼 pnpm 比 npm 更快且更省空間？](https://www.explainthis.io/zh-hant/swe/why-is-pnpm-faster)
 - [pnpm实战教程](https://blog.csdn.net/bobo789456123/article/details/132882778)
+- [為什麼使用 Turborepo 同時需要使用 pnpm workspace？](https://medium.com/%E6%89%8B%E5%AF%AB%E7%AD%86%E8%A8%98/%E7%82%BA%E4%BB%80%E9%BA%BC%E4%BD%BF%E7%94%A8-turborepo-%E5%90%8C%E6%99%82%E9%9C%80%E8%A6%81%E4%BD%BF%E7%94%A8-pnpm-workspace-9f0899c90d44)
 
 ## Install
 
@@ -33,14 +34,7 @@ Set-ExecutionPolicy RemoteSigned
 ## Commands
 
 ### pnpm 本體
-- pnpm self-update : 將 pnpm 更新到最新版本。(建議重啟 ide)
-
-### Node.js 的執行環境
-- pnpm env use --global lts : 安裝並使用 LTS 版本 
-- pnpm env use --global {version} : 安裝並使用指定版本
-- pnpm env add --global {version} : 僅安裝指定版本
-- pnpm env remove --global {version} : 移除指定版本
-- pnpm env list --remote : 列出線上可用的版本
+- pnpm self-update : 將 pnpm 更新到最新版本。(建議重啟)
 
 ### packages
 - pnpm add `<pkg>` : 添加依賴
