@@ -40,6 +40,11 @@
 &lt;li>-w : 為工作區參數&lt;/li>
 &lt;li>-wD : 組合使用 - 工作區依賴&lt;/li>
 &lt;li>&amp;ndash;filter &lt;code>&amp;lt;package_selector&amp;gt;&lt;/code>: 對指定 package 操作&lt;/li>
+&lt;/ul></description></item><item><title>Software Design - Code Smells - Note</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---code-smells---note/</link><pubDate>Fri, 18 Jul 2025 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---code-smells---note/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>「Code Smells（程式碼異味）」是一個軟體工程的術語，指的是程式碼中潛在問題的「警訊」。雖然這些寫法不一定會直接造成錯誤，但它們通常代表設計不良、可讀性差、難以維護或擴充的風險。&lt;/p>
+&lt;h2 id="guide">Guide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://luzkan.github.io/smells/">Code Smells Catalog&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Software Design - Code Smells - Side Effect</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---code-smells---side-effect/</link><pubDate>Fri, 18 Jul 2025 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---code-smells---side-effect/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>副作用（Side Effect）指的是一段程式在執行後，&lt;strong>除了回傳值之外還影響了外部狀態&lt;/strong>。&lt;/p>
 &lt;p>在錯誤的位置或缺乏揭露的情況下使用副作用，會造成：&lt;/p>
