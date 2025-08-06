@@ -142,7 +142,7 @@
 &lt;/ul></description></item><item><title>AI - Agent - Gemini CLI</title><link>https://HoshikawaRyuukou.github.io/posts/ai---agent---gemini-cli/</link><pubDate>Thu, 03 Jul 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---agent---gemini-cli/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
-&lt;li>&lt;a href="https://gemini-cli.gh.miniasp.com/">歡迎使用 Gemini CLI 使用手冊 | Gemini CLI 使用手冊&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://gemini-cli.xyz/docs/zh/">欢迎使用 Gemini CLI 文档 | Gemini CLI Docs&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="install">Install&lt;/h2>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>pnpm add -g @google/gemini-cli
