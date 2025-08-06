@@ -1,5 +1,5 @@
 ---
-title: "AI - Ollama - Google Colab + ngrok"
+title: "AI - Env - Ollama - Google Colab + ngrok"
 date: 2025-01-16 21:11:00
 draft: false
 

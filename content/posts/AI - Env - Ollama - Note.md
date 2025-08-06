@@ -1,5 +1,5 @@
 ---
-title: "AI - Ollama - Note"
+title: "AI - Env - Ollama - Note"
 date: 2024-08-19 21:11:00
 draft: false
 

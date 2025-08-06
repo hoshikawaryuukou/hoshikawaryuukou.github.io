@@ -1,5 +1,5 @@
 ---
-title: "AI - Firebase Studio"
+title: "AI - Coding - Firebase Studio"
 date: 2025-04-11 08:11:00
 draft: false
 

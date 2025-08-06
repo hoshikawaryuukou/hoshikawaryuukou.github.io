@@ -1,9 +1,9 @@
 ---
-title: "Career - Mindset"
+title: "Chat - Career - Mindset"
 date: 2025-05-24 21:05:00
 draft: true
 
-tags: ["Career"]
+tags: ["Chat", "Career"]
 ---
 
 ## Quick Chat

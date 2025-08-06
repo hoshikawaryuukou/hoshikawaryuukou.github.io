@@ -1,9 +1,9 @@
 ---
-title: "AI - Stable diffusion - Overview"
+title: "AI - Art - Stable diffusion - Overview"
 date: 2025-02-06 21:11:00
 draft: false
 
-tags: ["AI", "Stable diffusion", "Art"]
+tags: ["AI", "Art", "Stable diffusion"]
 ---
 
 ## Quick Chat

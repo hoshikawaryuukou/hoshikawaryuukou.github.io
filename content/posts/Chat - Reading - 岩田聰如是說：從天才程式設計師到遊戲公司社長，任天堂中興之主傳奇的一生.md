@@ -3,7 +3,7 @@ title: "Reading - 岩田聰如是說：從天才程式設計師到遊戲公司�
 date: 2024-11-22 21:11:00
 draft: false
 
-tags: ["Reading"]
+tags: ["Chat", "Reading"]
 ---
 
 ## Quick Chat

@@ -1,9 +1,9 @@
 ---
-title: "AI - Stable diffusion - Extensions"
+title: "AI - Art - Stable diffusion - Extensions"
 date: 2025-02-10 22:16:00
 draft: false
 
-tags: ["AI", "Stable diffusion", "Art"]
+tags: ["AI", "Art", "Stable diffusion"]
 ---
 
 ## a1111-sd-webui-tagcomplete

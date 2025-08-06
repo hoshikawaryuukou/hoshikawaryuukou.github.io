@@ -1,9 +1,9 @@
 ---
-title: "AI - Stable diffusion - Favorite Prompts"
+title: "AI - Art - Stable diffusion - Favorite Prompts"
 date: 2025-06-13 21:11:00
 draft: false
 
-tags: ["AI", "Stable diffusion", "Art"]
+tags: ["AI", "Art", "Stable diffusion"]
 ---
 
 ## Quick Chat

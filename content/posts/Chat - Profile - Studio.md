@@ -1,9 +1,9 @@
 ---
-title: "Profile - Studio"
+title: "Chat - Profile - Studio"
 date: 2024-10-02 13:11:00
 draft: false
 
-tags: ["Profile"]
+tags: ["Chat", "Profile"]
 ---
 
 ## 箱庭工作室 (Miniature Garden Studio)

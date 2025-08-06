@@ -1,9 +1,9 @@
 ---
-title: "AI - Stable diffusion - CheckPoints"
+title: "AI - Art - Stable diffusion - CheckPoints"
 date: 2025-02-04 21:11:00
 draft: false
 
-tags: ["AI", "Stable diffusion", "Art"]
+tags: ["AI", "Art", "Stable diffusion"]
 ---
 
 ## Quick Chat

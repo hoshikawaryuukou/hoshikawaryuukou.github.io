@@ -1,9 +1,9 @@
 ---
-title: "AI - Stable diffusion - Environment"
+title: "AI - Art - Stable diffusion - Environment"
 date: 2025-02-10 20:13:00
 draft: false
 
-tags: ["AI", "Stable diffusion", "Art"]
+tags: ["AI", "Art", "Stable diffusion"]
 ---
 
 ## Local deployment

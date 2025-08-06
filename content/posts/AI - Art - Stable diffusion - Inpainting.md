@@ -1,9 +1,9 @@
 ---
-title: "AI - Stable diffusion - Inpainting"
+title: "AI - Art - Stable diffusion - Inpainting"
 date: 2025-06-12 20:13:00
 draft: false
 
-tags: ["AI", "Stable diffusion", "Art"]
+tags: ["AI", "Art", "Stable diffusion"]
 ---
 
 ## Quick Chat

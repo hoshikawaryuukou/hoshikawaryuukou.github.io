@@ -1,9 +1,9 @@
 ---
-title: "AI - Stable diffusion - Favorite Models"
+title: "AI - Art - Stable diffusion - Favorite Models"
 date: 2025-05-16 21:11:00
 draft: false
 
-tags: ["AI", "Stable diffusion", "Art"]
+tags: ["AI", "Art", "Stable diffusion"]
 ---
 
 ## Quick Chat

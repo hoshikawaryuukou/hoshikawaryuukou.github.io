@@ -24,6 +24,7 @@ tags: ["Assets"]
 - [Google Fonts](https://fonts.google.com/)
 - [2022/0113更新# 36個合法免費高品質字體](https://forum.gamer.com.tw/C.php?bsn=60076&snA=3906436)
 - [fontget](https://www.fontget.com/)
+- [LINE Seed](https://seed.line.me/index_tw.html)
 
 ## Icon
 - [ICOOON MONO](https://icooon-mono.com/)
