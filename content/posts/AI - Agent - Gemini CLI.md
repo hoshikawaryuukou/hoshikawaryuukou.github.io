@@ -10,7 +10,7 @@ tags: ["AI", "Agent"]
 
 
 ## Guide
-- [歡迎使用 Gemini CLI 使用手冊 | Gemini CLI 使用手冊](https://gemini-cli.gh.miniasp.com/)
+- [欢迎使用 Gemini CLI 文档 | Gemini CLI Docs](https://gemini-cli.xyz/docs/zh/)
 
 ## Install
 ```bash
