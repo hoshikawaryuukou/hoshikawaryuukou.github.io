@@ -9,7 +9,7 @@
 &lt;ul>
 &lt;li>&lt;code>-v&lt;/code> : 查看版版本&lt;/li>
 &lt;li>&lt;code>--model&lt;/code> : 指定模型&lt;/li>
-&lt;/ul></description></item><item><title>AI - Stable diffusion - Favorite Prompts</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorite-prompts/</link><pubDate>Fri, 13 Jun 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorite-prompts/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;/ul></description></item><item><title>AI - Art - Stable diffusion - Favorite Prompts</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---favorite-prompts/</link><pubDate>Fri, 13 Jun 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---favorite-prompts/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;ul>
 &lt;li>⚠️ 不同的模型對提示詞的理解會有所不同，選對模型才能產生最好的效果。&lt;/li>
 &lt;li>⚠️ 有時提示詞衝突會導致畫面崩壞無法收斂。&lt;/li>
@@ -32,7 +32,7 @@
 &lt;h3 id="accessories">Accessories&lt;/h3>
 &lt;ul>
 &lt;li>用於移除一切頭部裝飾 : headwear&lt;/li>
-&lt;/ul></description></item><item><title>AI - Stable diffusion - Inpainting</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---inpainting/</link><pubDate>Thu, 12 Jun 2025 20:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---inpainting/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;/ul></description></item><item><title>AI - Art - Stable diffusion - Inpainting</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---inpainting/</link><pubDate>Thu, 12 Jun 2025 20:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---inpainting/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>目前並未特別使用進階修圖技巧。若圖片瑕疵可透過簡單塗色與描邊處理，即會嘗試修復。&lt;/p>
 &lt;p>若瑕疵較嚴重，則多半直接放棄並重新生成 —— 通常下一張會更好。&lt;/p>
 &lt;h2 id="modification">Modification&lt;/h2>
@@ -52,7 +52,7 @@
 &lt;li>&lt;code>0.3 ~ 0.5&lt;/code>：適度改變結構與細節，適合嘗試新的構圖或調整 seed 取得更好結果。&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul></description></item><item><title>AI - Stable diffusion - Favorite Models</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorite-models/</link><pubDate>Fri, 16 May 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorite-models/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;/ul></description></item><item><title>AI - Art - Stable diffusion - Favorite Models</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---favorite-models/</link><pubDate>Fri, 16 May 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---favorite-models/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;ul>
 &lt;li>sd 1.5 系列基本上不使用了&lt;/li>
 &lt;li>Illustrious 是目前的使用主力&lt;/li>
@@ -136,11 +136,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">await&lt;/span> &lt;span style="color:#75af00">main&lt;/span>&lt;span style="color:#111">();&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>AI - Audio</title><link>https://HoshikawaRyuukou.github.io/posts/ai---audio/</link><pubDate>Wed, 07 May 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---audio/</guid><description>&lt;h2 id="quick">Quick&lt;/h2>
-&lt;p>這篇是不錯的導讀&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://www.bilibili.com/video/BV17SVUznEGw">AI声音建模：MiniMax Audio 一键声音克隆&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>AI - Firebase Studio</title><link>https://HoshikawaRyuukou.github.io/posts/ai---firebase-studio/</link><pubDate>Fri, 11 Apr 2025 08:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---firebase-studio/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>AI - Coding - Firebase Studio</title><link>https://HoshikawaRyuukou.github.io/posts/ai---coding---firebase-studio/</link><pubDate>Fri, 11 Apr 2025 08:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---coding---firebase-studio/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>Firebase Studio 的前身是 Project IDX。&lt;/p>
 &lt;p>Firebase Studio 是一個由 Google 提供的基於雲端的開發環境，旨在幫助開發者快速構建和發布全棧 AI 應用。這個平台結合了 AI 助手 Gemini 的功能，提供了一個集成的開發體驗，讓開發者能夠在一個地方完成應用的設計、開發和部署。&lt;/p>
 &lt;p>目前，Firebase Studio 在預覽階段提供三個免費工作區，開發者可以在此期間無需付費使用該平台的功能。&lt;/p>
@@ -184,7 +180,7 @@
 &lt;li>基於參考圖二次創作(風格遷移)&lt;/li>
 &lt;/ul>
 &lt;h2 id="model-context-protocolmcp">Model Context Protocol（MCP）&lt;/h2>
-&lt;p>模型上下文協議（Model Context Protocol，MCP）由 Anthropic 提出，是一種開放標準，用來規範 AI 模型與外部工具、資料來源的互動方式。&lt;/p></description></item><item><title>AI - Stable diffusion - Quick Start</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---quick-start/</link><pubDate>Mon, 17 Feb 2025 20:40:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---quick-start/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>模型上下文協議（Model Context Protocol，MCP）由 Anthropic 提出，是一種開放標準，用來規範 AI 模型與外部工具、資料來源的互動方式。&lt;/p></description></item><item><title>AI - Art - Stable diffusion - Quick Start</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---quick-start/</link><pubDate>Mon, 17 Feb 2025 20:40:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---quick-start/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;ul>
 &lt;li>⚠️ 這是一篇新手導向的筆記，目的不在於精準解釋。&lt;/li>
 &lt;li>⚠️ 環境配置請參考 &lt;code>AI - Stable diffusion - Environment&lt;/code>&lt;/li>
@@ -223,7 +219,7 @@
 &lt;li>&lt;strong>高品質收斂&lt;/strong> – 需較長時間，但能提供更精確結果。&lt;/li>
 &lt;li>&lt;strong>無固定收斂&lt;/strong> – 無明確收斂條件，為創新提供更大空間。&lt;/li>
 &lt;/ul>
-&lt;p>Schedule 是從雜訊圖到成品的&lt;strong>去噪程度&lt;/strong>。&lt;/p></description></item><item><title>AI - Stable diffusion - Extensions</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---extensions/</link><pubDate>Mon, 10 Feb 2025 22:16:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---extensions/</guid><description>&lt;h2 id="a1111-sd-webui-tagcomplete">a1111-sd-webui-tagcomplete&lt;/h2>
+&lt;p>Schedule 是從雜訊圖到成品的&lt;strong>去噪程度&lt;/strong>。&lt;/p></description></item><item><title>AI - Art - Stable diffusion - Extensions</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---extensions/</link><pubDate>Mon, 10 Feb 2025 22:16:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---extensions/</guid><description>&lt;h2 id="a1111-sd-webui-tagcomplete">a1111-sd-webui-tagcomplete&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/DominikDoom/a1111-sd-webui-tagcomplete">DominikDoom/a1111-sd-webui-tagcomplete&lt;/a>&lt;/li>
 &lt;/ul>
@@ -238,7 +234,7 @@
 &lt;h2 id="sd-webui-photopea-embed">sd-webui-photopea-embed&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/yankooliveira/sd-webui-photopea-embed">yankooliveira/sd-webui-photopea-embed&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>AI - Stable diffusion - GUI</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---gui/</link><pubDate>Mon, 10 Feb 2025 21:16:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---gui/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;/ul></description></item><item><title>AI - Art - Stable diffusion - GUI</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---gui/</link><pubDate>Mon, 10 Feb 2025 21:16:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---gui/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>建議新手直接從 Forge 入門即可&lt;/p>
 &lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
@@ -268,7 +264,7 @@
 &lt;p>
  &lt;img src="https://github.com/user-attachments/assets/7ccaf2c1-9b72-41ae-9a89-5688c94b7abe" alt="ComfyUI Screenshot">
 
-&lt;/p></description></item><item><title>AI - Stable diffusion - Environment</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---environment/</link><pubDate>Mon, 10 Feb 2025 20:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---environment/</guid><description>&lt;h2 id="local-deployment">Local deployment&lt;/h2>
+&lt;/p></description></item><item><title>AI - Art - Stable diffusion - Environment</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---environment/</link><pubDate>Mon, 10 Feb 2025 20:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---environment/</guid><description>&lt;h2 id="local-deployment">Local deployment&lt;/h2>
 &lt;p>⚠️ 以下皆須安裝指定版本不可貿然升級&lt;/p>
 &lt;ul>
 &lt;li>nvidia 驅動更新至最新&lt;/li>
@@ -294,7 +290,7 @@
 &lt;/ul>
 &lt;h2 id="civitai-api-key">Civitai API Key&lt;/h2>
 &lt;blockquote>
-&lt;p>Menu &amp;gt; Account Settings(齒輪 icon) &amp;gt; API Keys&lt;/p>&lt;/blockquote></description></item><item><title>AI - Stable diffusion - Overview</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---overview/</link><pubDate>Thu, 06 Feb 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---overview/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>Menu &amp;gt; Account Settings(齒輪 icon) &amp;gt; API Keys&lt;/p>&lt;/blockquote></description></item><item><title>AI - Art - Stable diffusion - Overview</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---overview/</link><pubDate>Thu, 06 Feb 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---overview/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>建議閱讀順序&lt;/p>
 &lt;ul>
 &lt;li>AI - Stable diffusion - Environment&lt;/li>
@@ -329,7 +325,7 @@
 &lt;p>
  &lt;img src="https://developer-blogs.nvidia.com/wp-content/uploads/2022/04/Generation-with-Diffusion-Models.png" alt="123">
 
-&lt;/p></description></item><item><title>AI - Stable diffusion - Resources</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---resources/</link><pubDate>Wed, 05 Feb 2025 20:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---resources/</guid><description>&lt;h2 id="community">Community&lt;/h2>
+&lt;/p></description></item><item><title>AI - Art - Stable diffusion - Resources</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---resources/</link><pubDate>Wed, 05 Feb 2025 20:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---resources/</guid><description>&lt;h2 id="community">Community&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://civitai.com/">Civitai&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.qpipi.com/">Qpipi_AI绘画社区和SD模型&lt;/a>&lt;/li>
@@ -379,7 +375,7 @@
 &lt;ul>
 &lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=qtian">Qtian | Danbooru&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=zanya_000">Zanya 000 | Danbooru&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>AI - Stable diffusion - CheckPoints</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---checkpoints/</link><pubDate>Tue, 04 Feb 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---checkpoints/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;/ul></description></item><item><title>AI - Art - Stable diffusion - CheckPoints</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---checkpoints/</link><pubDate>Tue, 04 Feb 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---checkpoints/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;ul>
 &lt;li>⚠️ 以下主題專注於二次元/動漫風格圖像生成&lt;/li>
 &lt;/ul>
@@ -429,7 +425,7 @@
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>NovelAI 3 (NAI3)&lt;/strong>：&lt;/p></description></item><item><title>AI - Ollama - Google Colab + ngrok</title><link>https://HoshikawaRyuukou.github.io/posts/ai---ollama---google-colab-+-ngrok/</link><pubDate>Thu, 16 Jan 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---ollama---google-colab-+-ngrok/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>&lt;strong>NovelAI 3 (NAI3)&lt;/strong>：&lt;/p></description></item><item><title>AI - Env - Ollama - Google Colab + ngrok</title><link>https://HoshikawaRyuukou.github.io/posts/ai---env---ollama---google-colab-+-ngrok/</link><pubDate>Thu, 16 Jan 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---env---ollama---google-colab-+-ngrok/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>參考以下教學&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://www.youtube.com/watch?v=ZOCY61424JI">十分钟部署本地离线免费大模型！&lt;/a>&lt;/li>
@@ -544,6 +540,10 @@
 &lt;li>&lt;a href="https://www.aibase.com/zh/">AIbase基地 - 让更多人看到未来 通往AGI之路&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;hr>
+&lt;h2 id="audio">Audio&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.bilibili.com/video/BV17SVUznEGw">AI声音建模：MiniMax Audio 一键声音克隆&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;h2 id="coding">Coding&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://www.youtube.com/watch?v=IqVo8V4QNm0">GitHub项目理解神器：DeepWiki&lt;/a>&lt;/li>
@@ -555,11 +555,7 @@
 &lt;li>&lt;a href="https://github.com/SakuraLLM/SakuraLLM">SakuraLLM/SakuraLLM&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/zyddnys/manga-image-translator">zyddnys/manga-image-translator&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/dmMaze/BallonsTranslator">dmMaze/BallonsTranslator&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="vedio">Vedio&lt;/h2>
-&lt;ul>
-&lt;li>Veo 2&lt;/li>
-&lt;/ul></description></item><item><title>AI - Ollama - Note</title><link>https://HoshikawaRyuukou.github.io/posts/ai---ollama---note/</link><pubDate>Mon, 19 Aug 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---ollama---note/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;/ul></description></item><item><title>AI - Env - Ollama - Note</title><link>https://HoshikawaRyuukou.github.io/posts/ai---env---ollama---note/</link><pubDate>Mon, 19 Aug 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---env---ollama---note/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://ollama.com/">Ollama&lt;/a>&lt;/li>
 &lt;/ul>

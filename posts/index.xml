@@ -225,7 +225,7 @@
 &lt;ul>
 &lt;li>
 &lt;p>一個操作觸發多處改變（One-to-Many Updates）&lt;br>
-例如：用戶點擊「開始」後，同時啟動動畫、鎖定按鈕、重置分數、播放音效。&lt;/p></description></item><item><title>AI - Stable diffusion - Favorite Prompts</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorite-prompts/</link><pubDate>Fri, 13 Jun 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorite-prompts/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+例如：用戶點擊「開始」後，同時啟動動畫、鎖定按鈕、重置分數、播放音效。&lt;/p></description></item><item><title>AI - Art - Stable diffusion - Favorite Prompts</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---favorite-prompts/</link><pubDate>Fri, 13 Jun 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---favorite-prompts/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;ul>
 &lt;li>⚠️ 不同的模型對提示詞的理解會有所不同，選對模型才能產生最好的效果。&lt;/li>
 &lt;li>⚠️ 有時提示詞衝突會導致畫面崩壞無法收斂。&lt;/li>
@@ -248,7 +248,7 @@
 &lt;h3 id="accessories">Accessories&lt;/h3>
 &lt;ul>
 &lt;li>用於移除一切頭部裝飾 : headwear&lt;/li>
-&lt;/ul></description></item><item><title>AI - Stable diffusion - Inpainting</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---inpainting/</link><pubDate>Thu, 12 Jun 2025 20:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---inpainting/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;/ul></description></item><item><title>AI - Art - Stable diffusion - Inpainting</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---inpainting/</link><pubDate>Thu, 12 Jun 2025 20:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---inpainting/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>目前並未特別使用進階修圖技巧。若圖片瑕疵可透過簡單塗色與描邊處理，即會嘗試修復。&lt;/p>
 &lt;p>若瑕疵較嚴重，則多半直接放棄並重新生成 —— 通常下一張會更好。&lt;/p>
 &lt;h2 id="modification">Modification&lt;/h2>
@@ -294,7 +294,7 @@
 &lt;li>&lt;a href="https://www.bilibili.com/video/BV1Yx4y147tg">交换机的核心工作原理 | 集线器、2层交换机和3层交换机的主要区别&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.youtube.com/watch?v=tVLIRCJuFW8">你管这破玩意叫网络？ 从设计者的思考角度出发理解网络，合理、靠谱！&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.youtube.com/watch?v=kjfPAC16k18">【API技术核心原理】REST | GraphQL | gRPC | tRPC&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>AI - Stable diffusion - Favorite Models</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorite-models/</link><pubDate>Fri, 16 May 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---favorite-models/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;/ul></description></item><item><title>AI - Art - Stable diffusion - Favorite Models</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---favorite-models/</link><pubDate>Fri, 16 May 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---favorite-models/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;ul>
 &lt;li>sd 1.5 系列基本上不使用了&lt;/li>
 &lt;li>Illustrious 是目前的使用主力&lt;/li>
@@ -421,14 +421,10 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">await&lt;/span> &lt;span style="color:#75af00">main&lt;/span>&lt;span style="color:#111">();&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>AI - Audio</title><link>https://HoshikawaRyuukou.github.io/posts/ai---audio/</link><pubDate>Wed, 07 May 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---audio/</guid><description>&lt;h2 id="quick">Quick&lt;/h2>
-&lt;p>這篇是不錯的導讀&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://www.bilibili.com/video/BV17SVUznEGw">AI声音建模：MiniMax Audio 一键声音克隆&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Scriptwriter - Note</title><link>https://HoshikawaRyuukou.github.io/posts/scriptwriter---note/</link><pubDate>Wed, 23 Apr 2025 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/scriptwriter---note/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Scriptwriter - Note</title><link>https://HoshikawaRyuukou.github.io/posts/scriptwriter---note/</link><pubDate>Wed, 23 Apr 2025 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/scriptwriter---note/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://www.bilibili.com/video/BV1R2LizDEof">为什么故事一定要有反派？&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>AI - Firebase Studio</title><link>https://HoshikawaRyuukou.github.io/posts/ai---firebase-studio/</link><pubDate>Fri, 11 Apr 2025 08:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---firebase-studio/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;/ul></description></item><item><title>AI - Coding - Firebase Studio</title><link>https://HoshikawaRyuukou.github.io/posts/ai---coding---firebase-studio/</link><pubDate>Fri, 11 Apr 2025 08:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---coding---firebase-studio/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>Firebase Studio 的前身是 Project IDX。&lt;/p>
 &lt;p>Firebase Studio 是一個由 Google 提供的基於雲端的開發環境，旨在幫助開發者快速構建和發布全棧 AI 應用。這個平台結合了 AI 助手 Gemini 的功能，提供了一個集成的開發體驗，讓開發者能夠在一個地方完成應用的設計、開發和部署。&lt;/p>
 &lt;p>目前，Firebase Studio 在預覽階段提供三個免費工作區，開發者可以在此期間無需付費使用該平台的功能。&lt;/p>
@@ -1190,7 +1186,7 @@ Scope(s):
 &lt;h2 id="site">Site&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://www.youtube.com/watch?v=NrpnYQDQ5s4">史上最簡單「一頁式網站」建置工具！ | Google Sites 協作平台快速上手&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>AI - Stable diffusion - Quick Start</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---quick-start/</link><pubDate>Mon, 17 Feb 2025 20:40:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---quick-start/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;/ul></description></item><item><title>AI - Art - Stable diffusion - Quick Start</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---quick-start/</link><pubDate>Mon, 17 Feb 2025 20:40:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---quick-start/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;ul>
 &lt;li>⚠️ 這是一篇新手導向的筆記，目的不在於精準解釋。&lt;/li>
 &lt;li>⚠️ 環境配置請參考 &lt;code>AI - Stable diffusion - Environment&lt;/code>&lt;/li>
@@ -1229,7 +1225,7 @@ Scope(s):
 &lt;li>&lt;strong>高品質收斂&lt;/strong> – 需較長時間，但能提供更精確結果。&lt;/li>
 &lt;li>&lt;strong>無固定收斂&lt;/strong> – 無明確收斂條件，為創新提供更大空間。&lt;/li>
 &lt;/ul>
-&lt;p>Schedule 是從雜訊圖到成品的&lt;strong>去噪程度&lt;/strong>。&lt;/p></description></item><item><title>AI - Stable diffusion - Extensions</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---extensions/</link><pubDate>Mon, 10 Feb 2025 22:16:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---extensions/</guid><description>&lt;h2 id="a1111-sd-webui-tagcomplete">a1111-sd-webui-tagcomplete&lt;/h2>
+&lt;p>Schedule 是從雜訊圖到成品的&lt;strong>去噪程度&lt;/strong>。&lt;/p></description></item><item><title>AI - Art - Stable diffusion - Extensions</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---extensions/</link><pubDate>Mon, 10 Feb 2025 22:16:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---extensions/</guid><description>&lt;h2 id="a1111-sd-webui-tagcomplete">a1111-sd-webui-tagcomplete&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/DominikDoom/a1111-sd-webui-tagcomplete">DominikDoom/a1111-sd-webui-tagcomplete&lt;/a>&lt;/li>
 &lt;/ul>
@@ -1244,7 +1240,7 @@ Scope(s):
 &lt;h2 id="sd-webui-photopea-embed">sd-webui-photopea-embed&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/yankooliveira/sd-webui-photopea-embed">yankooliveira/sd-webui-photopea-embed&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>AI - Stable diffusion - GUI</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---gui/</link><pubDate>Mon, 10 Feb 2025 21:16:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---gui/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;/ul></description></item><item><title>AI - Art - Stable diffusion - GUI</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---gui/</link><pubDate>Mon, 10 Feb 2025 21:16:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---gui/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>建議新手直接從 Forge 入門即可&lt;/p>
 &lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
@@ -1274,7 +1270,7 @@ Scope(s):
 &lt;p>
  &lt;img src="https://github.com/user-attachments/assets/7ccaf2c1-9b72-41ae-9a89-5688c94b7abe" alt="ComfyUI Screenshot">
 
-&lt;/p></description></item><item><title>AI - Stable diffusion - Environment</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---environment/</link><pubDate>Mon, 10 Feb 2025 20:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---environment/</guid><description>&lt;h2 id="local-deployment">Local deployment&lt;/h2>
+&lt;/p></description></item><item><title>AI - Art - Stable diffusion - Environment</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---environment/</link><pubDate>Mon, 10 Feb 2025 20:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---environment/</guid><description>&lt;h2 id="local-deployment">Local deployment&lt;/h2>
 &lt;p>⚠️ 以下皆須安裝指定版本不可貿然升級&lt;/p>
 &lt;ul>
 &lt;li>nvidia 驅動更新至最新&lt;/li>
@@ -1331,7 +1327,7 @@ Scope(s):
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75af00">loop&lt;/span>&lt;span style="color:#111">();&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">})();&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>AI - Stable diffusion - Overview</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---overview/</link><pubDate>Thu, 06 Feb 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---overview/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>AI - Art - Stable diffusion - Overview</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---overview/</link><pubDate>Thu, 06 Feb 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---overview/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>建議閱讀順序&lt;/p>
 &lt;ul>
 &lt;li>AI - Stable diffusion - Environment&lt;/li>
@@ -1432,7 +1428,7 @@ Scope(s):
 &lt;h3 id="改用-tilemap">改用 Tilemap&lt;/h3>
 &lt;ul>
 &lt;li>如果遊戲是 2D 地圖類型（像素風格、平面地圖等），可以用 Unity &lt;strong>Tilemap&lt;/strong> 來減少 Overdraw，因為 Tilemap 會幫妳合併小區塊來優化繪製。&lt;/li>
-&lt;/ul></description></item><item><title>AI - Stable diffusion - Resources</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---resources/</link><pubDate>Wed, 05 Feb 2025 20:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---resources/</guid><description>&lt;h2 id="community">Community&lt;/h2>
+&lt;/ul></description></item><item><title>AI - Art - Stable diffusion - Resources</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---resources/</link><pubDate>Wed, 05 Feb 2025 20:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---resources/</guid><description>&lt;h2 id="community">Community&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://civitai.com/">Civitai&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.qpipi.com/">Qpipi_AI绘画社区和SD模型&lt;/a>&lt;/li>
@@ -1482,7 +1478,7 @@ Scope(s):
 &lt;ul>
 &lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=qtian">Qtian | Danbooru&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=zanya_000">Zanya 000 | Danbooru&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>AI - Stable diffusion - CheckPoints</title><link>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---checkpoints/</link><pubDate>Tue, 04 Feb 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---stable-diffusion---checkpoints/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;/ul></description></item><item><title>AI - Art - Stable diffusion - CheckPoints</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---checkpoints/</link><pubDate>Tue, 04 Feb 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---checkpoints/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;ul>
 &lt;li>⚠️ 以下主題專注於二次元/動漫風格圖像生成&lt;/li>
 &lt;/ul>
@@ -1779,7 +1775,7 @@ Scope(s):
 &lt;h2 id="issue">Issue&lt;/h2>
 &lt;h3 id="error--failed-to-parse-binary-data-file-buildxxxdatabr">Error : Failed to parse binary data file Build/xxx.data.br&amp;hellip;&lt;/h3>
 &lt;blockquote>
-&lt;p>Failed to parse binary data file Build/web.data.br (with &amp;ldquo;Content-Type: null&amp;rdquo;), because it is still brotli-compressed. It should have been uncompressed by the browser, but it was unable to do so since the web server provided the compressed content without specifying the HTTP Response Header &amp;ldquo;Content-Encoding: br&amp;rdquo; that would have informed the browser that decompression is needed. Please verify your web server hosting configuration to add the missing &amp;ldquo;Content-Encoding: br&amp;rdquo; HTTP Response Header.&lt;/p></description></item><item><title>AI - Ollama - Google Colab + ngrok</title><link>https://HoshikawaRyuukou.github.io/posts/ai---ollama---google-colab-+-ngrok/</link><pubDate>Thu, 16 Jan 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---ollama---google-colab-+-ngrok/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>Failed to parse binary data file Build/web.data.br (with &amp;ldquo;Content-Type: null&amp;rdquo;), because it is still brotli-compressed. It should have been uncompressed by the browser, but it was unable to do so since the web server provided the compressed content without specifying the HTTP Response Header &amp;ldquo;Content-Encoding: br&amp;rdquo; that would have informed the browser that decompression is needed. Please verify your web server hosting configuration to add the missing &amp;ldquo;Content-Encoding: br&amp;rdquo; HTTP Response Header.&lt;/p></description></item><item><title>AI - Env - Ollama - Google Colab + ngrok</title><link>https://HoshikawaRyuukou.github.io/posts/ai---env---ollama---google-colab-+-ngrok/</link><pubDate>Thu, 16 Jan 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---env---ollama---google-colab-+-ngrok/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>參考以下教學&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://www.youtube.com/watch?v=ZOCY61424JI">十分钟部署本地离线免费大模型！&lt;/a>&lt;/li>
@@ -1963,7 +1959,7 @@ Scope(s):
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
-&lt;/ul></description></item><item><title>Career - Software Engineer</title><link>https://HoshikawaRyuukou.github.io/posts/career---software-engineer/</link><pubDate>Tue, 07 Jan 2025 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/career---software-engineer/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;/ul></description></item><item><title>Chat - Career - Software Engineer</title><link>https://HoshikawaRyuukou.github.io/posts/chat---career---software-engineer/</link><pubDate>Tue, 07 Jan 2025 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/chat---career---software-engineer/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;ul>
 &lt;li>後端: 深入且穩定&lt;/li>
 &lt;li>前端: 廣泛且彈性&lt;/li>
@@ -2022,55 +2018,7 @@ Scope(s):
 &lt;li>適用於那些需要在某個範圍內共享狀態，但範圍結束後無需保持的物件。&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ol></description></item><item><title>PixiJS - Basic</title><link>https://HoshikawaRyuukou.github.io/posts/pixijs---basic/</link><pubDate>Sat, 04 Jan 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/pixijs---basic/</guid><description>&lt;h2 id="core">Core&lt;/h2>
-&lt;ul>
-&lt;li>&lt;code>Application&lt;/code>: 是一個簡化使用 PixiJS 的輔助類別。它會建立渲染器、建立舞台，然後啟動一個用於更新的計時器。&lt;/li>
-&lt;li>&lt;code>Container&lt;/code>: 現在是所有 PixiJS 物件的基本類別。&lt;/li>
-&lt;/ul>
-&lt;h2 id="擴充元件">擴充元件&lt;/h2>
-&lt;p>會自行安裝，只須匯入類別即可使用。&lt;/p>
-&lt;blockquote>
-&lt;p>import &amp;lsquo;@pixi/accessibility&amp;rsquo;;&lt;/p>&lt;/blockquote></description></item><item><title>PixiJS - Note</title><link>https://HoshikawaRyuukou.github.io/posts/pixijs---note/</link><pubDate>Sat, 04 Jan 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/pixijs---note/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://pixijs.com/">PixiJS | The HTML5 Creation Engine | PixiJS&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="starter">Starter&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://pixijs.io/create-pixi/">PixiJS Create | PixiJS Create&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>pnpm create pixi.js
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="extensions">Extensions&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://pixijs.io/devtools/">PixiJS Devtools | PixiJS Devtools&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://chromewebstore.google.com/detail/pixijs-devtools/aamddddknhcagpehecnhphigffljadon">PixiJS Devtools&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="template">Template&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/turbokirichenko/pixijs-typescript-vite-template">turbokirichenko/pixijs-typescript-vite-template&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/t-tonyo-maru/pub_template_web_pixijs-gsap-spine">t-tonyo-maru/pub_template_web_pixijs-gsap-spine&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="sample">Sample&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/pixijs/open-games">pixijs/open-games&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/MateuszSuder/PixiSlot">MateuszSuder/PixiSlot&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/CyberDex/pixi-game-ui/tree/main">CyberDex/pixi-game-ui&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://codepen.io/selcukcura/pen/gGPVww">Particle experiment using Pixi.js &amp;amp; GSAP&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="sample---slot">Sample - slot&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/ktsalik/sloticon">ktsalik/sloticon&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/artdon/angular-pixi-slots">artdon/angular-pixi-slots&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/Slamaio/pixi-js-slot-machine">Slamaio/pixi-js-slot-machine&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/jogracz/pixi-slot-game?tab=readme-ov-file">jogracz/pixi-slot-game&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://codepen.io/pop-kst/pen/YzYQGGG">Slot-PixiJS&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://pixijs.com/8.x/examples/advanced/slots">Slots | PixiJS&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/feldhaus/slot-machine?tab=readme-ov-file">feldhaus/slot-machine&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="others">Others&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://gsap.com/docs/v3/Plugins/PixiPlugin/">Pixi | GSAP | Docs &amp;amp; Learning&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/pixijs/pixijs/issues/9141#issuecomment-1573726217">Bug: Visual issue rendering spine on v7&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Unity - Samples</title><link>https://HoshikawaRyuukou.github.io/posts/unity---samples/</link><pubDate>Thu, 02 Jan 2025 22:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---samples/</guid><description>&lt;h2 id="solitaire">Solitaire&lt;/h2>
+&lt;/ol></description></item><item><title>Unity - Samples</title><link>https://HoshikawaRyuukou.github.io/posts/unity---samples/</link><pubDate>Thu, 02 Jan 2025 22:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---samples/</guid><description>&lt;h2 id="solitaire">Solitaire&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/gubicsz/Solitaire">gubicsz/Solitaire&lt;/a>&lt;/li>
 &lt;/ul>
@@ -2185,7 +2133,7 @@ Scope(s):
 &lt;h2 id="limitations">Limitations&lt;/h2>
 &lt;ul>
 &lt;li>在高度互動和即時性要求高的系統中，狀態的不可變性可能增加性能開銷。&lt;/li>
-&lt;/ul></description></item><item><title>Reading - 岩田聰如是說：從天才程式設計師到遊戲公司社長，任天堂中興之主傳奇的一生</title><link>https://HoshikawaRyuukou.github.io/posts/reading---%E5%B2%A9%E7%94%B0%E8%81%B0%E5%A6%82%E6%98%AF%E8%AA%AA%E5%BE%9E%E5%A4%A9%E6%89%8D%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E5%B8%AB%E5%88%B0%E9%81%8A%E6%88%B2%E5%85%AC%E5%8F%B8%E7%A4%BE%E9%95%B7%E4%BB%BB%E5%A4%A9%E5%A0%82%E4%B8%AD%E8%88%88%E4%B9%8B%E4%B8%BB%E5%82%B3%E5%A5%87%E7%9A%84%E4%B8%80%E7%94%9F/</link><pubDate>Fri, 22 Nov 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/reading---%E5%B2%A9%E7%94%B0%E8%81%B0%E5%A6%82%E6%98%AF%E8%AA%AA%E5%BE%9E%E5%A4%A9%E6%89%8D%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E5%B8%AB%E5%88%B0%E9%81%8A%E6%88%B2%E5%85%AC%E5%8F%B8%E7%A4%BE%E9%95%B7%E4%BB%BB%E5%A4%A9%E5%A0%82%E4%B8%AD%E8%88%88%E4%B9%8B%E4%B8%BB%E5%82%B3%E5%A5%87%E7%9A%84%E4%B8%80%E7%94%9F/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;/ul></description></item><item><title>Reading - 岩田聰如是說：從天才程式設計師到遊戲公司社長，任天堂中興之主傳奇的一生</title><link>https://HoshikawaRyuukou.github.io/posts/chat---reading---%E5%B2%A9%E7%94%B0%E8%81%B0%E5%A6%82%E6%98%AF%E8%AA%AA%E5%BE%9E%E5%A4%A9%E6%89%8D%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E5%B8%AB%E5%88%B0%E9%81%8A%E6%88%B2%E5%85%AC%E5%8F%B8%E7%A4%BE%E9%95%B7%E4%BB%BB%E5%A4%A9%E5%A0%82%E4%B8%AD%E8%88%88%E4%B9%8B%E4%B8%BB%E5%82%B3%E5%A5%87%E7%9A%84%E4%B8%80%E7%94%9F/</link><pubDate>Fri, 22 Nov 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/chat---reading---%E5%B2%A9%E7%94%B0%E8%81%B0%E5%A6%82%E6%98%AF%E8%AA%AA%E5%BE%9E%E5%A4%A9%E6%89%8D%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E5%B8%AB%E5%88%B0%E9%81%8A%E6%88%B2%E5%85%AC%E5%8F%B8%E7%A4%BE%E9%95%B7%E4%BB%BB%E5%A4%A9%E5%A0%82%E4%B8%AD%E8%88%88%E4%B9%8B%E4%B8%BB%E5%82%B3%E5%A5%87%E7%9A%84%E4%B8%80%E7%94%9F/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>這本書偏向經營管理和領導力的層面，特別是岩田聰如何作為任天堂的社長，帶領公司走向成功。雖然書中也有描述岩田聰作為程式設計師的背景，但更多的焦點放在他如何運用管理哲學和人性化領導來塑造任天堂的發展。&lt;/p>
 &lt;h2 id="review">Review&lt;/h2>
 &lt;h3 id="第一章-岩田先生成為社長以前">第一章 岩田先生成為社長以前。&lt;/h3>
@@ -3008,7 +2956,7 @@ Scope(s):
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>└── package.json &lt;span style="color:#75715e"># 項目配置文件&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="thought">Thought&lt;/h2>
-&lt;p>主體思想是基於 Clean Architecture，Clean Architecture 主張將業務邏輯與框架、UI 和其他技術細節分離，使得核心業務邏輯不依賴於特定的運行環境或框架。&lt;/p></description></item><item><title>Profile - Studio</title><link>https://HoshikawaRyuukou.github.io/posts/profile---studio/</link><pubDate>Wed, 02 Oct 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/profile---studio/</guid><description>&lt;h2 id="箱庭工作室-miniature-garden-studio">箱庭工作室 (Miniature Garden Studio)&lt;/h2>
+&lt;p>主體思想是基於 Clean Architecture，Clean Architecture 主張將業務邏輯與框架、UI 和其他技術細節分離，使得核心業務邏輯不依賴於特定的運行環境或框架。&lt;/p></description></item><item><title>Chat - Profile - Studio</title><link>https://HoshikawaRyuukou.github.io/posts/chat---profile---studio/</link><pubDate>Wed, 02 Oct 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/chat---profile---studio/</guid><description>&lt;h2 id="箱庭工作室-miniature-garden-studio">箱庭工作室 (Miniature Garden Studio)&lt;/h2>
 &lt;p>這是筆者的工作室名。&lt;/p>
 &lt;h3 id="核心思想">核心思想&lt;/h3>
 &lt;blockquote>
@@ -3622,7 +3570,7 @@ CHANGELOG*.md
 &lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/688748483">从Balatro小丑牌的成功说起：浅谈rogue的核心体验与设计&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.bilibili.com/video/BV1GPH4erETC">什么驱使着人们玩游戏？【游戏设计知识分享-动机1】&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.bilibili.com/video/BV1WJxMepE2i">人们一直玩是因为游戏好？【游戏设计知识分享-动机2】&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Android - Reverse Engineering</title><link>https://HoshikawaRyuukou.github.io/posts/android---reverse-engineering-copy/</link><pubDate>Fri, 30 Aug 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/android---reverse-engineering-copy/</guid><description>&lt;h2 id="apktool">apktool&lt;/h2>
+&lt;/ul></description></item><item><title>Android - Reverse Engineering</title><link>https://HoshikawaRyuukou.github.io/posts/android---reverse-engineering/</link><pubDate>Fri, 30 Aug 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/android---reverse-engineering/</guid><description>&lt;h2 id="apktool">apktool&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://www.cnblogs.com/hanyuanhun/p/18266371">APKTool反编译&lt;/a>&lt;/li>
 &lt;/ul>
@@ -3658,6 +3606,10 @@ CHANGELOG*.md
 &lt;li>&lt;a href="https://www.aibase.com/zh/">AIbase基地 - 让更多人看到未来 通往AGI之路&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;hr>
+&lt;h2 id="audio">Audio&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.bilibili.com/video/BV17SVUznEGw">AI声音建模：MiniMax Audio 一键声音克隆&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;h2 id="coding">Coding&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://www.youtube.com/watch?v=IqVo8V4QNm0">GitHub项目理解神器：DeepWiki&lt;/a>&lt;/li>
@@ -3669,10 +3621,6 @@ CHANGELOG*.md
 &lt;li>&lt;a href="https://github.com/SakuraLLM/SakuraLLM">SakuraLLM/SakuraLLM&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/zyddnys/manga-image-translator">zyddnys/manga-image-translator&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/dmMaze/BallonsTranslator">dmMaze/BallonsTranslator&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="vedio">Vedio&lt;/h2>
-&lt;ul>
-&lt;li>Veo 2&lt;/li>
 &lt;/ul></description></item><item><title>Software Development - Sites</title><link>https://HoshikawaRyuukou.github.io/posts/software-development---sites/</link><pubDate>Wed, 28 Aug 2024 20:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-development---sites/</guid><description>&lt;h2 id="developer-community">Developer Community&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://juejin.cn/">稀土掘金&lt;/a>&lt;/li>
@@ -3710,7 +3658,7 @@ CHANGELOG*.md
 &lt;/ul></description></item><item><title>Software Operation - Note</title><link>https://HoshikawaRyuukou.github.io/posts/software-operation---note/</link><pubDate>Wed, 28 Aug 2024 20:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-operation---note/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://www.youtube.com/watch?v=ytOW5t-iYP8">为什么程序员都应该学用容器技术&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>AI - Ollama - Note</title><link>https://HoshikawaRyuukou.github.io/posts/ai---ollama---note/</link><pubDate>Mon, 19 Aug 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---ollama---note/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+&lt;/ul></description></item><item><title>AI - Env - Ollama - Note</title><link>https://HoshikawaRyuukou.github.io/posts/ai---env---ollama---note/</link><pubDate>Mon, 19 Aug 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---env---ollama---note/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://ollama.com/">Ollama&lt;/a>&lt;/li>
 &lt;/ul>
@@ -4361,15 +4309,15 @@ CHANGELOG*.md
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;type&lt;/span> &lt;span style="color:#75af00">fullname=&lt;/span>&lt;span style="color:#d88200">&amp;#34;UnityEngine.Rigidbody2D&amp;#34;&lt;/span> &lt;span style="color:#75af00">preserve=&lt;/span>&lt;span style="color:#d88200">&amp;#34;all&amp;#34;&lt;/span>&lt;span style="color:#f92672">/&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;/assembly&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;/linker&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Game Assets</title><link>https://HoshikawaRyuukou.github.io/posts/game-assets/</link><pubDate>Sun, 11 Feb 2024 08:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/game-assets/</guid><description>&lt;h2 id="games">Games&lt;/h2>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Assets - Game</title><link>https://HoshikawaRyuukou.github.io/posts/assets---game/</link><pubDate>Sun, 11 Feb 2024 08:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/assets---game/</guid><description>&lt;h2 id="extracting">Extracting&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/AssetRipper/AssetRipper">AssetRipper/AssetRipper&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="games">Games&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/28598519a/TSK_AssetDL">28598519a/TSK_AssetDL&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/ZM-Kimu/Blue-Archive-Asset-Downloader">ZM-Kimu/Blue-Archive-Asset-Downloader&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/Deathemonic/BA-AD">Deathemonic/BA-AD&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="extracting">Extracting&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/AssetRipper/AssetRipper">AssetRipper/AssetRipper&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Unity - Package - UniTask</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package---unitask/</link><pubDate>Sat, 10 Feb 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package---unitask/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
 &lt;p>UniTask - Unity 中實現效能最好的 async/await 的函式庫&lt;/p>
 &lt;ul>
@@ -5380,6 +5328,7 @@ git reset XXXXXXX --hard
 &lt;li>&lt;a href="https://fonts.google.com/">Google Fonts&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://forum.gamer.com.tw/C.php?bsn=60076&amp;amp;snA=3906436">2022/0113更新# 36個合法免費高品質字體&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.fontget.com/">fontget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://seed.line.me/index_tw.html">LINE Seed&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="icon">Icon&lt;/h2>
 &lt;ul>
