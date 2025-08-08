@@ -9,7 +9,7 @@ tags: ["Software Design", "Pattern"]
 ## 前述
 
 Service Locator 確實也是 IoC 的一種實作方式，不過採用的是 依賴尋找(Dependency Lookup) 的設計。
-筆者之前有一陣子蠻常使用這 pattern，那時對 DI 與 IoC 的概念並不熟悉，只覺得這樣使用依賴變得很方便。
+我之前有一陣子蠻常使用這 pattern，那時對 DI 與 IoC 的概念並不熟悉，只覺得這樣使用依賴變得很方便。
 
 因為我可以在任何地方直接這樣取用資源
 ```csharp
@@ -28,9 +28,9 @@ var target = ServiceLocator.Resovle<Target>();
 
 因為這次接觸到的專案嚴重依賴 Singleton，且組員也已習慣 Singleton 的寫法了，要直切換到  DI / IoC Container 會有不小的陣痛期(當然實務上能不能切又是另一個故事了)。
 
-於是筆者想起了 Service Locator，有以下理由
+於是我想起了 Service Locator，有以下理由
 1. 因為在使用上就很像是 Singleton
-2. 筆者希望組員能快速感受到 IoC 所帶來的紅利
+2. 我希望組員能快速感受到 IoC 所帶來的紅利
 3. 集中管理依賴
 
 ## 實作

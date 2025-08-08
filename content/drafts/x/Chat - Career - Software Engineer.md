@@ -1,7 +1,7 @@
 ---
 title: "Chat - Career - Software Engineer"
 date: 2025-01-07 21:05:00
-draft: false
+draft: true
 
 tags: ["Chat", "Career"]
 ---

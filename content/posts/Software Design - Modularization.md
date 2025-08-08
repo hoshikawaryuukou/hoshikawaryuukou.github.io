@@ -31,12 +31,12 @@ tags: ["Software Design"]
 **各 Package 策略的圖請參考上方連結 34 章摘要心得**
 
 ## Package By Layer
-筆者在剛接觸 CA 時有一個很大的迷思是以為 CA Layers 一圈就是一個模組(如果應用程式複雜度不高，確實適用)，所以整個應用程式分三個模組。
+我在剛接觸 CA 時有一個很大的迷思是以為 CA Layers 一圈就是一個模組(如果應用程式複雜度不高，確實適用)，所以整個應用程式分三個模組。
 - Domain
 - Application
 - Adapter
 
-一開始功能不多時確實運作得很好，隨著功能的增加，出現了一個問題 **共用**，UseCase 可以操作所有的 Domain 與 Input/Output Port，責任開始變得紊亂(UseCase 知道太多細節)。我們需要一種更能反映業務功能的模組分法，使讓專案能夠重新 **Screaming**，以下是筆者比較常用的兩個演化方向。
+一開始功能不多時確實運作得很好，隨著功能的增加，出現了一個問題 **共用**，UseCase 可以操作所有的 Domain 與 Input/Output Port，責任開始變得紊亂(UseCase 知道太多細節)。我們需要一種更能反映業務功能的模組分法，使讓專案能夠重新 **Screaming**，以下是我比較常用的兩個演化方向。
 
 ## Package By Component
 - 僅提供**服務**，沒有 UI 操作。
@@ -47,7 +47,7 @@ tags: ["Software Design"]
 - 包含 UI 操作。
 
 --------
-筆者在一個應用程式中多是這樣分成以下三類模組
+我在一個應用程式中多是這樣分成以下三類模組
 
 ## Core Module
 - 一般以 Package By Component 的方式實作。

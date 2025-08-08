@@ -11,12 +11,12 @@ tags: ["Software Design", "Pattern"]
 此篇的實作參考到以下文件 (提到不少 Presentation layer 設計原則)
 > [Android Developers 文件/指南/UI 層](https://developer.android.com/topic/architecture/ui-layer?hl=zh-tw)
 
-該文件的更新頻率算高且會與時俱進，筆者印象中其架構設計從 MVVM -> Domain/Application Driven 設計，可以看出主流架構有產生變化。之後的討論雖然使用 ViewModel 但不會詳細介紹 MVVM 的細節，如果對 MVX 系列不熟，可以先讀筆者之前的文章 **<<通用設計 - Pattern - MVP>>** 裡面的 References。
+該文件的更新頻率算高且會與時俱進，我印象中其架構設計從 MVVM -> Domain/Application Driven 設計，可以看出主流架構有產生變化。之後的討論雖然使用 ViewModel 但不會詳細介紹 MVVM 的細節，如果對 MVX 系列不熟，可以先讀我之前的文章 **<<通用設計 - Pattern - MVP>>** 裡面的 References。
 
 
 ## 探索
 
-回到正題，筆者在最近的業務上遇到
+回到正題，我在最近的業務上遇到
 > 如何在 **服務端未完成** 的情況下，讓 Client 獲得完整的體驗流 ?
 
 以下用交叉反問的方式來分析問題

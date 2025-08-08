@@ -1,13 +1,13 @@
 ---
 title: "Chat - Career - Mindset"
-date: 2025-05-24 21:05:00
-draft: true
+date: 2025-07-24 21:05:00
+draft: false
 
 tags: ["Chat", "Career"]
 ---
 
 ## Quick Chat
-這是筆者近年於職場上的心態轉變，也算是告別曾經的那份天真👀。
+這是我近年於職場上的心態轉變，也算是告別曾經的那份天真👀。
 
 ## **不再自我感動：職場沒有默契，只有溝通**
 

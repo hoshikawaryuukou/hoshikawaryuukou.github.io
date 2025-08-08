@@ -20,7 +20,7 @@ tags: ["Software Design", "Pattern"]
 - [【Unity】MV(R)Pパターンのすすめ](https://annulusgames-lab.blogspot.com/2022/12/unity-ui-mvrp.html)
 - [Unravelling MVC, MVP and MVVM](https://www.pragmaticcoding.ca/javafx/Frameworks/)
 
-以下則對筆者實作中比較常用的 MVP 多做一些討論
+以下則對我實作中比較常用的 MVP 多做一些討論
 
 ## 關注點(責任)
 在 MVP 的構成下分成三個部分
@@ -29,7 +29,7 @@ tags: ["Software Design", "Pattern"]
 - Presenter:  View 和 Model 之間的中介。
 
 ### Passive View
-這是 MVP 的一種實作風格，也是筆者主要使用的風格。
+這是 MVP 的一種實作風格，也是我主要使用的風格。
 - Presenter 對 View 有完全控制權
 - View 提供方法與事件給 Presenter 使用
 - View 對 Presenter 一無所知

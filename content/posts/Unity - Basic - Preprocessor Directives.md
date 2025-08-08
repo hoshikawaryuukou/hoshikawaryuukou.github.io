@@ -10,14 +10,14 @@ tags: ["Unity", "CSharp"]
 
 中文稱作 : 前置處理器指示詞
 
-筆者最近接觸到的遺舊專案中發現裡面大量地使用 條件式編譯 
+我最近接觸到的遺舊專案中發現裡面大量地使用 條件式編譯 
 ```csharp
 #if DEBUG
     Console.WriteLine("Debug version");
 #endif
 ```
 
-筆者之前有使用也基本只使用 定義區域 (排版效果)
+我之前有使用也基本只使用 定義區域 (排版效果)
 ```csharp
 #region MyClass definition
     public class MyClass
@@ -65,7 +65,7 @@ public class PlatformDefines : MonoBehaviour
 ## 方案
 這個前置處理器指示詞一直是個蠻有爭議的作法，有一派人士是不使用的(通過使用條件分支、策略模式或依賴注入等其他方式，更可以清晰地表達了代碼的邏輯，提高了程式的可維護性)。
 
-筆者也傾向不使用(業務邏輯不用，其餘的看狀況)。
+我也傾向不使用(業務邏輯不用，其餘的看狀況)。
 
 ### Case. Editor
 有時後會有需要客製編輯器時，會這樣跟 MonoBehaviour 寫在一起並用 UNITY_EDITOR 處理。但事實上獨立一個檔案放在 **Editor 資料夾** 應該會更好。

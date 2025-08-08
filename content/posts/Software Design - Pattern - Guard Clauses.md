@@ -19,7 +19,7 @@ tags: ["Software Design", "Pattern"]
 ## Extra - Value Object
 [Stop using trivial Guard Clauses! Try this instead](https://codeopinion.com/stop-using-trivial-guard-clauses-try-this-instead/) 
 
-文章作者避免瑣碎 Guard 的方式，是使用 Value Object，來避免域接受到無效參數。這個作法在筆者看來才是真正意義上的 Fail Fast。(YT評論區也建議閱讀，有許多不錯的討論)
+文章作者避免瑣碎 Guard 的方式，是使用 Value Object，來避免域接受到無效參數。這個作法在我看來才是真正意義上的 Fail Fast。(YT評論區也建議閱讀，有許多不錯的討論)
 
 但不可否認的 Guard Clause 作法在大多情況下是有益的。
 

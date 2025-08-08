@@ -24,13 +24,13 @@ Sample 資料夾後面加了波浪號 (~) 告訴 Unity 忽略 Samples~ 文件夾
 - 在內部確實使用了名為 Samples 的文件夾 (沒有 Samples~ )
 - 在推送新包版本之前通過腳本對其進行重命名(透過 CI )
 
-[OpenUPM](https://medium.com/openupm/how-to-maintain-upm-package-part-1-7b4daf88d4c4) 的作者也是使用類似的工作流，總之筆者也調整為上述的方式。
+[OpenUPM](https://medium.com/openupm/how-to-maintain-upm-package-part-1-7b4daf88d4c4) 的作者也是使用類似的工作流，總之我也調整為上述的方式。
 
 ## 透過 GitHub Actions Workflow 調整目錄名
 
-筆者不熟 GitHub Actions/ YAML/ 文件操作，但這種初階的操作就交由 chatgpt 代勞，幫我省去不少實驗成本。這裡的操作只是堪用，應該有更好的方式。
+我不熟 GitHub Actions/ YAML/ 文件操作，但這種初階的操作就交由 chatgpt 代勞，幫我省去不少實驗成本。這裡的操作只是堪用，應該有更好的方式。
 
-以下是筆者要求的條件
+以下是我要求的條件
 
 - 想透過 GitHub Actions 中的 workflow 完成 
 - 如果 forPackage 分支已存在則將其刪除    

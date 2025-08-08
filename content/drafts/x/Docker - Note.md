@@ -7,7 +7,7 @@ tags: ["Docker"]
 ---
 
 ## 安裝
-筆者的環境是 Windows 10 Home 版，所以需要做些額外設定
+我的環境是 Windows 10 Home 版，所以需要做些額外設定
 - 參考官網 https://docs.docker.com/desktop/install/windows-install/
 - 到 控制台\程式集\程式和功能 -> 開啟或關閉 Windows 功能
 - 啟用 **Windows 子系統 Linux版** 與 **虛擬機器平台**
