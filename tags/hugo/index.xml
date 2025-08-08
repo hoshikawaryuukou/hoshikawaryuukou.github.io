@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/hugo/</link><description>Recent content in Hugo on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 30 Jan 2025 14:12:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo - Github Actions + Github Pages</title><link>https://HoshikawaRyuukou.github.io/posts/hugo---github-actions-+-github-pages/</link><pubDate>Thu, 30 Jan 2025 14:12:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/hugo---github-actions-+-github-pages/</guid><description>&lt;h2 id="github-actions">GitHub Actions&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/hugo/</link><description>Recent content in Hugo on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Tue, 05 Aug 2025 21:05:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Chat - Studying - Knowledge Management</title><link>https://HoshikawaRyuukou.github.io/posts/chat---career---knowledge-management/</link><pubDate>Tue, 05 Aug 2025 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/chat---career---knowledge-management/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>🤓 正在摸索 Obsidian&amp;hellip;&lt;/p>
+&lt;p>我對筆記工具有幾個核心要求：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>本地與格式自由：筆記必須可以用 &lt;strong>Markdown&lt;/strong> 格式 &lt;strong>本地儲存&lt;/strong>。我習慣掌控自己的資料，不希望將筆記內容完全託管給雲端服務。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>公開與分享：能輕鬆與 &lt;strong>GitHub&lt;/strong> 整合，並輸出 &lt;strong>靜態網頁&lt;/strong>。這讓我的知識不僅僅是個人資產，更能方便地公開分享與傳播。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>高效檢索：強大的 &lt;strong>標籤（Tags）與搜尋功能&lt;/strong> 是知識管理不可或缺的環節。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>AI 輔助整合：我希望筆記工具能與 AI 結合，實現自動製圖、格式化、提取大綱等輔助功能，讓工作流更加高效。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="從舊流程到新挑戰">從舊流程到新挑戰&lt;/h2>
+&lt;p>過去，我的知識管理流程是：使用 &lt;strong>Markdown&lt;/strong> 搭配 &lt;strong>VS Code&lt;/strong> 撰寫，再透過 &lt;strong>GitHub Actions&lt;/strong> 部署成 &lt;strong>Hugo 靜態網站&lt;/strong>。這套系統行之有年，但在筆記數量突破 &lt;strong>200 篇&lt;/strong> 後，我遇到了瓶頸。&lt;/p>
+&lt;p>在海量的 &lt;code>.md&lt;/code> 檔案中，無論是在 VS Code 裡用 &lt;code>Ctrl+F&lt;/code>，或是在網站上透過標籤與搜尋，要精準定位到特定內容變得越來越困難。我隱約意識到，單純的檔案整理已經不夠，我需要一個能將知識點相互連結的工具，建立一個真正屬於自己的知識網絡。&lt;/p>
+&lt;p>其實早在前年，我就聽聞過 Obsidian 的大名，但當時的生態系和功能尚未成熟，所以沒有深入嘗試。&lt;/p>
+&lt;p>如今，Obsidian 的基礎設施已相當完善，社群分享的 「Obsidian + AI」工作流 更是如雨後春筍般湧現，尤其在我的社群動態中，這類分享佔據了很大的比例。這讓我意識到，是時候徹底重塑我的知識管理體系了。&lt;/p></description></item><item><title>Hugo - Github Actions + Github Pages</title><link>https://HoshikawaRyuukou.github.io/posts/hugo---github-actions-+-github-pages/</link><pubDate>Thu, 30 Jan 2025 14:12:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/hugo---github-actions-+-github-pages/</guid><description>&lt;h2 id="github-actions">GitHub Actions&lt;/h2>
 &lt;h3 id="gh-pagesyml">gh-pages.yml&lt;/h3>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yml" data-lang="yml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">github pages&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>

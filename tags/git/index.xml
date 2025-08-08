@@ -19,7 +19,7 @@
 &lt;/ul>
 &lt;h2 id="設置-github-variables">設置 GitHub Variables&lt;/h2>
 &lt;p>GitHub 專案中&lt;/p></description></item><item><title>Git - Rebase</title><link>https://HoshikawaRyuukou.github.io/posts/git---rebase/</link><pubDate>Sun, 16 Jul 2023 20:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/git---rebase/</guid><description>&lt;blockquote>
-&lt;p>之前筆者一直以為 rebase 是進行類似 &lt;strong>剪下貼上&lt;/strong> 的操作，但實際上是 &lt;strong>複製貼上&lt;/strong>&lt;/p>&lt;/blockquote>
+&lt;p>之前我一直以為 rebase 是進行類似 &lt;strong>剪下貼上&lt;/strong> 的操作，但實際上是 &lt;strong>複製貼上&lt;/strong>&lt;/p>&lt;/blockquote>
 &lt;h2 id="情境">情境&lt;/h2>
 &lt;ul>
 &lt;li>合併時不會像 merge 時會有 commit 的節點&lt;/li>

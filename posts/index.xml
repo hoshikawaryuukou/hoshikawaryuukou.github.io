@@ -1,4 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/posts/</link><description>Recent content in Posts on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sat, 26 Jul 2025 21:16:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Node.js - Package Manager - pnpm</title><link>https://HoshikawaRyuukou.github.io/posts/node.js---package-manager---pnpm/</link><pubDate>Sat, 26 Jul 2025 21:16:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/node.js---package-manager---pnpm/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/posts/</link><description>Recent content in Posts on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Wed, 06 Aug 2025 20:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Obsidian - Note</title><link>https://HoshikawaRyuukou.github.io/posts/obsidian---note/</link><pubDate>Wed, 06 Aug 2025 20:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/obsidian---note/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;h2 id="主要特色">主要特色&lt;/h2>
+&lt;h2 id="雙向連結">雙向連結&lt;/h2>
+&lt;h2 id="quide">Quide&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://medium.com/pm%E7%9A%84%E7%94%9F%E7%94%A2%E5%8A%9B%E5%B7%A5%E5%85%B7%E7%AE%B1/obsidian-%E4%BD%BF%E7%94%A8%E6%95%99%E5%AD%B8-%E5%9F%BA%E7%A4%8E%E7%AF%87-%E8%AA%8D%E8%AD%98%E9%A0%90%E8%A8%AD%E4%BB%8B%E9%9D%A2%E8%88%87%E5%9F%BA%E7%A4%8E%E5%8A%9F%E8%83%BD-dc59232bcca8">【Obsidian 使用教學】基礎篇 01 — 認識預設介面與基礎功能&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mlosun.com/blog/obsidian-github-hugo/">Obsidian + Github + Hugo 一站式笔记发布工作流 – 开源笔记 Mlosun.com&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.csdn.net/gitblog_00029/article/details/139555451">推荐：将Obsidian笔记无缝集成到Hugo网站的利器 —— Obsidian to Hugo&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Chat - Studying - Knowledge Management</title><link>https://HoshikawaRyuukou.github.io/posts/chat---career---knowledge-management/</link><pubDate>Tue, 05 Aug 2025 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/chat---career---knowledge-management/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>🤓 正在摸索 Obsidian&amp;hellip;&lt;/p>
+&lt;p>我對筆記工具有幾個核心要求：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>本地與格式自由：筆記必須可以用 &lt;strong>Markdown&lt;/strong> 格式 &lt;strong>本地儲存&lt;/strong>。我習慣掌控自己的資料，不希望將筆記內容完全託管給雲端服務。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>公開與分享：能輕鬆與 &lt;strong>GitHub&lt;/strong> 整合，並輸出 &lt;strong>靜態網頁&lt;/strong>。這讓我的知識不僅僅是個人資產，更能方便地公開分享與傳播。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>高效檢索：強大的 &lt;strong>標籤（Tags）與搜尋功能&lt;/strong> 是知識管理不可或缺的環節。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>AI 輔助整合：我希望筆記工具能與 AI 結合，實現自動製圖、格式化、提取大綱等輔助功能，讓工作流更加高效。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="從舊流程到新挑戰">從舊流程到新挑戰&lt;/h2>
+&lt;p>過去，我的知識管理流程是：使用 &lt;strong>Markdown&lt;/strong> 搭配 &lt;strong>VS Code&lt;/strong> 撰寫，再透過 &lt;strong>GitHub Actions&lt;/strong> 部署成 &lt;strong>Hugo 靜態網站&lt;/strong>。這套系統行之有年，但在筆記數量突破 &lt;strong>200 篇&lt;/strong> 後，我遇到了瓶頸。&lt;/p>
+&lt;p>在海量的 &lt;code>.md&lt;/code> 檔案中，無論是在 VS Code 裡用 &lt;code>Ctrl+F&lt;/code>，或是在網站上透過標籤與搜尋，要精準定位到特定內容變得越來越困難。我隱約意識到，單純的檔案整理已經不夠，我需要一個能將知識點相互連結的工具，建立一個真正屬於自己的知識網絡。&lt;/p>
+&lt;p>其實早在前年，我就聽聞過 Obsidian 的大名，但當時的生態系和功能尚未成熟，所以沒有深入嘗試。&lt;/p>
+&lt;p>如今，Obsidian 的基礎設施已相當完善，社群分享的 「Obsidian + AI」工作流 更是如雨後春筍般湧現，尤其在我的社群動態中，這類分享佔據了很大的比例。這讓我意識到，是時候徹底重塑我的知識管理體系了。&lt;/p></description></item><item><title>Node.js - Package Manager - pnpm</title><link>https://HoshikawaRyuukou.github.io/posts/node.js---package-manager---pnpm/</link><pubDate>Sat, 26 Jul 2025 21:16:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/node.js---package-manager---pnpm/</guid><description>&lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://pnpm.nodejs.cn/">pnpm&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.cnblogs.com/cangqinglang/p/14448329.html">为什么现在我更推荐 pnpm 而不是 npm/yarn? &lt;/a>&lt;/li>
@@ -40,7 +69,28 @@
 &lt;li>-w : 為工作區參數&lt;/li>
 &lt;li>-wD : 組合使用 - 工作區依賴&lt;/li>
 &lt;li>&amp;ndash;filter &lt;code>&amp;lt;package_selector&amp;gt;&lt;/code>: 對指定 package 操作&lt;/li>
-&lt;/ul></description></item><item><title>Software Design - Code Smells - Note</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---code-smells---note/</link><pubDate>Fri, 18 Jul 2025 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---code-smells---note/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;/ul></description></item><item><title>Chat - Career - Mindset</title><link>https://HoshikawaRyuukou.github.io/posts/chat---career---mindset/</link><pubDate>Thu, 24 Jul 2025 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/chat---career---mindset/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
+&lt;p>這是我近年於職場上的心態轉變，也算是告別曾經的那份天真👀。&lt;/p>
+&lt;h2 id="不再自我感動職場沒有默契只有溝通">&lt;strong>不再自我感動：職場沒有默契，只有溝通&lt;/strong>&lt;/h2>
+&lt;blockquote>
+&lt;p>以前常會想：「我都做到這樣了，應該會被看見吧？」&lt;/p>&lt;/blockquote>
+&lt;p>但現實往往是——大家都在忙，沒人會有空觀察你、理解你努力背後的細節。&lt;/p>
+&lt;blockquote>
+&lt;p>有額外做，就清楚地說。這不是邀功，是讓資訊透明、讓決策更有依據。&lt;/p>&lt;/blockquote>
+&lt;h2 id="不再腦補結論有問題就問不猜測別人怎麼想">&lt;strong>不再腦補結論：有問題就問，不猜測別人怎麼想&lt;/strong>&lt;/h2>
+&lt;p>很多時候一句主管的語氣、一個同事的反應，可能讓人開始內心小劇場：&lt;/p>
+&lt;blockquote>
+&lt;p>「是不是我表現不好？他是不是在暗示我？」&lt;/p>&lt;/blockquote>
+&lt;p>但其實根本沒這麼複雜，有問題就說、想知道就問。&lt;/p>
+&lt;blockquote>
+&lt;p>不確定的事先標註是猜測，別拿來當決策依據。&lt;/p>&lt;/blockquote>
+&lt;h2 id="不再只看自己的工具箱用對資源比技術更重要">&lt;strong>不再只看自己的工具箱：用對資源比技術更重要&lt;/strong>&lt;/h2>
+&lt;p>這是最近一個明顯體悟。某次 server 誤刪資料，技術面很難復原，大家都在討論備份或 rollback 的可能性。但以營運部門的觀點：&lt;/p>
+&lt;blockquote>
+&lt;p>其實有個方式可以救到 70% 關鍵資料，而且成本很低。&lt;/p>&lt;/blockquote>
+&lt;p>因為他們知道哪些資料「真有價值」。技術不該只解「怎麼做」，更該問「為什麼做、為什麼這樣做比較值得」。&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>不要急著找最強的技術解，要先找到對的人問對的問題。&lt;/strong>&lt;/p>&lt;/blockquote></description></item><item><title>Software Design - Code Smells - Note</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---code-smells---note/</link><pubDate>Fri, 18 Jul 2025 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---code-smells---note/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>「Code Smells（程式碼異味）」是一個軟體工程的術語，指的是程式碼中潛在問題的「警訊」。雖然這些寫法不一定會直接造成錯誤，但它們通常代表設計不良、可讀性差、難以維護或擴充的風險。&lt;/p>
 &lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
@@ -615,6 +665,9 @@
 &lt;li>基於參考圖二次創作(風格遷移)&lt;/li>
 &lt;/ul>
 &lt;h2 id="model-context-protocolmcp">Model Context Protocol（MCP）&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.bilibili.com/video/BV1XFhPzoEBx">Function Calling、MCP和A2A的核心原理与区别&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;p>模型上下文協議（Model Context Protocol，MCP）由 Anthropic 提出，是一種開放標準，用來規範 AI 模型與外部工具、資料來源的互動方式。&lt;/p></description></item><item><title>Unity - Coding - Warnings</title><link>https://HoshikawaRyuukou.github.io/posts/unity---coding---warnings/</link><pubDate>Tue, 25 Mar 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---coding---warnings/</guid><description>&lt;h2 id="unt0023-coalescing-assignment-on-unity-objects">UNT0023 Coalescing assignment on Unity objects&lt;/h2>
 &lt;p>合併賦值運算子 &lt;code>??=&lt;/code> 是 C# 8.0 引入的運算子，其功能是：如果左側運算元為 null，則將右側運算元的值賦給左側運算元。&lt;/p>
 &lt;p>然而，在 Unity 中直接對 Unity 物件 (如 GameObject、Component 等) 使用這個運算子可能會導致問題，因為：&lt;/p>
@@ -1959,14 +2012,6 @@ Scope(s):
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#111">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
-&lt;/ul></description></item><item><title>Chat - Career - Software Engineer</title><link>https://HoshikawaRyuukou.github.io/posts/chat---career---software-engineer/</link><pubDate>Tue, 07 Jan 2025 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/chat---career---software-engineer/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
-&lt;ul>
-&lt;li>後端: 深入且穩定&lt;/li>
-&lt;li>前端: 廣泛且彈性&lt;/li>
-&lt;/ul>
-&lt;h2 id="roadmap">Roadmap&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://roadmap.sh/">Developer Roadmaps - roadmap.sh&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Software Design - Concept - Object Lifecycle Management</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---concept---object-lifecycle-management/</link><pubDate>Sat, 04 Jan 2025 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---concept---object-lifecycle-management/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;p>物件生命週期管理（Object Lifecycle Management）是指在程式運行過程中，對物件的創建、使用、及銷毀進行有效的控制和管理。&lt;/p>
 &lt;p>適當的物件生命週期管理有助於提高應用程式的性能、可維護性和資源利用效率。&lt;/p>
@@ -2363,7 +2408,7 @@ Scope(s):
 &lt;p>HackMD 的核心思想是&lt;/p>
 &lt;blockquote>
 &lt;p>輕鬆使用 Markdown 協作文件的工具&lt;/p>&lt;/blockquote>
-&lt;p>符合的筆者的使用需求&lt;/p>
+&lt;p>符合的我的使用需求&lt;/p>
 &lt;ul>
 &lt;li>免費方案適合輕度用戶&lt;/li>
 &lt;li>跨平台兼容性（桌面/移動設備）&lt;/li>
@@ -2957,7 +3002,7 @@ Scope(s):
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>└── package.json &lt;span style="color:#75715e"># 項目配置文件&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="thought">Thought&lt;/h2>
 &lt;p>主體思想是基於 Clean Architecture，Clean Architecture 主張將業務邏輯與框架、UI 和其他技術細節分離，使得核心業務邏輯不依賴於特定的運行環境或框架。&lt;/p></description></item><item><title>Chat - Profile - Studio</title><link>https://HoshikawaRyuukou.github.io/posts/chat---profile---studio/</link><pubDate>Wed, 02 Oct 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/chat---profile---studio/</guid><description>&lt;h2 id="箱庭工作室-miniature-garden-studio">箱庭工作室 (Miniature Garden Studio)&lt;/h2>
-&lt;p>這是筆者的工作室名。&lt;/p>
+&lt;p>這是我的工作室名。&lt;/p>
 &lt;h3 id="核心思想">核心思想&lt;/h3>
 &lt;blockquote>
 &lt;p>每個應用程式都是一個精心構築的 &lt;strong>箱庭/微型世界&lt;/strong>，在有限的環境中創造豐富且深度的體驗，讓使用者能夠沉浸其中。&lt;/p>&lt;/blockquote>
@@ -3720,7 +3765,7 @@ CHANGELOG*.md
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">REM 等待用戶確認並關閉&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">pause&lt;/span> &lt;span style="color:#111">&amp;gt;&lt;/span>nul
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Software Development - Repository Structure</title><link>https://HoshikawaRyuukou.github.io/posts/software-development---repository-structure---note/</link><pubDate>Mon, 12 Aug 2024 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-development---repository-structure---note/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
-&lt;p>最近筆者在開發公司的共用套件時，踩了不少坑，尤其是在儲存庫結構方面。&lt;/p>
+&lt;p>最近我在開發公司的共用套件時，踩了不少坑，尤其是在儲存庫結構方面。&lt;/p>
 &lt;p>最初選擇了 polyrepo 的結構，但隨著開發的進展，碰到了一些問題：&lt;/p>
 &lt;ul>
 &lt;li>要確保這些獨立的 repo 配置能夠同步。&lt;/li>
@@ -4029,9 +4074,9 @@ CHANGELOG*.md
 &lt;ul>
 &lt;li>&lt;a href="https://www.youtube.com/watch?v=1E25Q6wQ5L8">Telegram 貼圖 DIY教學&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Documents - README</title><link>https://HoshikawaRyuukou.github.io/posts/documents---readme/</link><pubDate>Tue, 18 Jun 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/documents---readme/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
-&lt;p>最近筆者從 Unity 轉向了 Node.js，因此花了大量時間在 npm 上尋找合適的套件。大部分的 README 都寫得很清晰，但也有少數寫得難以理解。&lt;/p>
+&lt;p>最近我從 Unity 轉向了 Node.js，因此花了大量時間在 npm 上尋找合適的套件。大部分的 README 都寫得很清晰，但也有少數寫得難以理解。&lt;/p>
 &lt;p>README 是 Repository 的門面，這是毋庸置疑的。創建一個好的自述文件，可以向用戶（包括使用者和開發者）顯示基本信息，但不應該用他們可能不需要的內容來淹沒他們。&lt;/p>
-&lt;p>筆者認為應該從一開始就認真對待 README，而不是在最後(專案收尾之際)才一股腦地將資訊灌入，這樣會降低其品質。&lt;/p>
+&lt;p>我認為應該從一開始就認真對待 README，而不是在最後(專案收尾之際)才一股腦地將資訊灌入，這樣會降低其品質。&lt;/p>
 &lt;h2 id="guide">Guide&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://medium.com/dean-lin/%E4%BD%A0%E7%9F%A5%E9%81%93%E5%B0%8D%E5%B0%88%E6%A1%88%E4%BE%86%E8%AA%AA-readme-md-%E6%9C%89%E5%A4%9A%E9%BA%BC%E9%87%8D%E8%A6%81%E5%97%8E-%E5%B7%A5%E7%A8%8B%E5%B8%AB%E8%A1%80%E6%B7%9A%E5%8F%B2-c0fb0908343e">你知道對專案來說，README.md 有多麼重要嗎？ ── 工程師血淚史&lt;/a>&lt;/li>
@@ -4459,7 +4504,7 @@ CHANGELOG*.md
 &lt;li>Presenter 作為 Binder 將 View / Interactor / Router 整合&lt;/li>
 &lt;/ul>
 &lt;h2 id="啟發">啟發&lt;/h2>
-&lt;p>VIPER 是筆者學習架構路上很重要的一個過渡，有以下兩點的思想轉變&lt;/p>
+&lt;p>VIPER 是我學習架構路上很重要的一個過渡，有以下兩點的思想轉變&lt;/p>
 &lt;h3 id="顆粒度更細的單一職責">顆粒度更細的單一職責&lt;/h3>
 &lt;p>Interactor 封裝業務的概念在純 MVX 中是無法直接體會到，因此對之後學習 CA 時起了很大的緩衝，不然對於 Usecase 的設計應該會很不適應。&lt;/p>
 &lt;h3 id="重視-navigation">重視 Navigation&lt;/h3>
@@ -4519,9 +4564,9 @@ CHANGELOG*.md
 &lt;p>此篇的實作參考到以下文件 (提到不少 Presentation layer 設計原則)&lt;/p>
 &lt;blockquote>
 &lt;p>&lt;a href="https://developer.android.com/topic/architecture/ui-layer?hl=zh-tw">Android Developers 文件/指南/UI 層&lt;/a>&lt;/p>&lt;/blockquote>
-&lt;p>該文件的更新頻率算高且會與時俱進，筆者印象中其架構設計從 MVVM -&amp;gt; Domain/Application Driven 設計，可以看出主流架構有產生變化。之後的討論雖然使用 ViewModel 但不會詳細介紹 MVVM 的細節，如果對 MVX 系列不熟，可以先讀筆者之前的文章 &lt;strong>&amp;laquo;通用設計 - Pattern - MVP&amp;raquo;&lt;/strong> 裡面的 References。&lt;/p>
+&lt;p>該文件的更新頻率算高且會與時俱進，我印象中其架構設計從 MVVM -&amp;gt; Domain/Application Driven 設計，可以看出主流架構有產生變化。之後的討論雖然使用 ViewModel 但不會詳細介紹 MVVM 的細節，如果對 MVX 系列不熟，可以先讀我之前的文章 &lt;strong>&amp;laquo;通用設計 - Pattern - MVP&amp;raquo;&lt;/strong> 裡面的 References。&lt;/p>
 &lt;h2 id="探索">探索&lt;/h2>
-&lt;p>回到正題，筆者在最近的業務上遇到&lt;/p>
+&lt;p>回到正題，我在最近的業務上遇到&lt;/p>
 &lt;blockquote>
 &lt;p>如何在 &lt;strong>服務端未完成&lt;/strong> 的情況下，讓 Client 獲得完整的體驗流 ?&lt;/p>&lt;/blockquote>
 &lt;p>以下用交叉反問的方式來分析問題&lt;/p>
@@ -4545,7 +4590,7 @@ A: 監聽 View 事件/ 與 Service 互動/ 管理畫面狀態/ 呼叫 View 刷�
 &lt;li>&lt;a href="https://unitysquare.co.kr/growwith/unityblog/webinarView?id=387&amp;amp;utm_source=facebook-page&amp;amp;utm_medium=social&amp;amp;utm_campaign=korea_memoryprofilerapp387">Memory Profiler로 애플리케이션의 물리적 메모리 사용량 분석&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://blog.csdn.net/Nbin_Newby/article/details/131537227">Unity内存分析与优化实践(1.1版本前)&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Git - Rebase</title><link>https://HoshikawaRyuukou.github.io/posts/git---rebase/</link><pubDate>Sun, 16 Jul 2023 20:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/git---rebase/</guid><description>&lt;blockquote>
-&lt;p>之前筆者一直以為 rebase 是進行類似 &lt;strong>剪下貼上&lt;/strong> 的操作，但實際上是 &lt;strong>複製貼上&lt;/strong>&lt;/p>&lt;/blockquote>
+&lt;p>之前我一直以為 rebase 是進行類似 &lt;strong>剪下貼上&lt;/strong> 的操作，但實際上是 &lt;strong>複製貼上&lt;/strong>&lt;/p>&lt;/blockquote>
 &lt;h2 id="情境">情境&lt;/h2>
 &lt;ul>
 &lt;li>合併時不會像 merge 時會有 commit 的節點&lt;/li>
@@ -4587,11 +4632,11 @@ git reset XXXXXXX --hard
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git commit -m &lt;span style="color:#d88200">&amp;#34;Reapply .gitignore rules&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Unity - Basic - Preprocessor Directives</title><link>https://HoshikawaRyuukou.github.io/posts/unity---basic---preprocessor-directives/</link><pubDate>Fri, 07 Jul 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---basic---preprocessor-directives/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
 &lt;p>中文稱作 : 前置處理器指示詞&lt;/p>
-&lt;p>筆者最近接觸到的遺舊專案中發現裡面大量地使用 條件式編譯&lt;/p>
+&lt;p>我最近接觸到的遺舊專案中發現裡面大量地使用 條件式編譯&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-csharp" data-lang="csharp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#if&lt;/span> &lt;span style="color:#111">DEBUG&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">Console&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">WriteLine&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#d88200">&amp;#34;Debug version&amp;#34;&lt;/span>&lt;span style="color:#111">);&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#endif&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>筆者之前有使用也基本只使用 定義區域 (排版效果)&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>我之前有使用也基本只使用 定義區域 (排版效果)&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-csharp" data-lang="csharp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#region&lt;/span> &lt;span style="color:#111">MyClass&lt;/span> &lt;span style="color:#111">definition&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">public&lt;/span> &lt;span style="color:#00a8c8">class&lt;/span> &lt;span style="color:#75af00">MyClass&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">{&lt;/span>
@@ -4631,13 +4676,13 @@ git reset XXXXXXX --hard
 &lt;p>上述這些狀況都會導致 &lt;strong>延後發現問題的時間 !&lt;/strong>&lt;/p>
 &lt;h2 id="方案">方案&lt;/h2>
 &lt;p>這個前置處理器指示詞一直是個蠻有爭議的作法，有一派人士是不使用的(通過使用條件分支、策略模式或依賴注入等其他方式，更可以清晰地表達了代碼的邏輯，提高了程式的可維護性)。&lt;/p>
-&lt;p>筆者也傾向不使用(業務邏輯不用，其餘的看狀況)。&lt;/p>
+&lt;p>我也傾向不使用(業務邏輯不用，其餘的看狀況)。&lt;/p>
 &lt;h3 id="case-editor">Case. Editor&lt;/h3>
 &lt;p>有時後會有需要客製編輯器時，會這樣跟 MonoBehaviour 寫在一起並用 UNITY_EDITOR 處理。但事實上獨立一個檔案放在 &lt;strong>Editor 資料夾&lt;/strong> 應該會更好。&lt;/p></description></item><item><title>Unity - Platform - iOS - plug-in</title><link>https://HoshikawaRyuukou.github.io/posts/unity---platform---ios---plug-in/</link><pubDate>Wed, 05 Jul 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---platform---ios---plug-in/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
 &lt;p>這次的業務需求是&lt;/p>
 &lt;blockquote>
 &lt;p>取得 ios 實機的 &amp;ldquo;地區&amp;rdquo;，並讓 C# 能拿到 Swift 所返回的字串&lt;/p>&lt;/blockquote>
-&lt;p>因為在 ios 的環境下 unity / C# 拿到的值並不正確。此外筆者對 Swift / Objective-C 幾乎零基礎，目前只針對一些教學文件做些修改，之後有機會更熟再回頭深究。&lt;/p>
+&lt;p>因為在 ios 的環境下 unity / C# 拿到的值並不正確。此外我對 Swift / Objective-C 幾乎零基礎，目前只針對一些教學文件做些修改，之後有機會更熟再回頭深究。&lt;/p>
 &lt;h2 id="實作">實作&lt;/h2>
 &lt;ul>
 &lt;li>SwiftDeviceInfoPlugin.swift 須放置於 Plugins\iOS 之下&lt;/li>
@@ -4690,7 +4735,7 @@ git reset XXXXXXX --hard
 &lt;li>&lt;a href="https://betterprogramming.pub/setting-up-ios-framework-for-unity-9ef4e577db89">Setting Up iOS Framework for Unity From Swift to C#&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Software Design - Pattern - Service Locator</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---service-locator/</link><pubDate>Wed, 28 Jun 2023 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---service-locator/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
 &lt;p>Service Locator 確實也是 IoC 的一種實作方式，不過採用的是 依賴尋找(Dependency Lookup) 的設計。
-筆者之前有一陣子蠻常使用這 pattern，那時對 DI 與 IoC 的概念並不熟悉，只覺得這樣使用依賴變得很方便。&lt;/p>
+我之前有一陣子蠻常使用這 pattern，那時對 DI 與 IoC 的概念並不熟悉，只覺得這樣使用依賴變得很方便。&lt;/p>
 &lt;p>因為我可以在任何地方直接這樣取用資源&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-csharp" data-lang="csharp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">var&lt;/span> &lt;span style="color:#111">target&lt;/span> &lt;span style="color:#111">=&lt;/span> &lt;span style="color:#111">ServiceLocator&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">Resovle&lt;/span>&lt;span style="color:#111">&amp;lt;&lt;/span>&lt;span style="color:#111">Target&lt;/span>&lt;span style="color:#111">&amp;gt;();&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>這樣的寫法有以下問題 :&lt;/p>
@@ -4702,10 +4747,10 @@ git reset XXXXXXX --hard
 &lt;h2 id="應用">應用&lt;/h2>
 &lt;p>但這次工作上反而覺得 Service Locator 可以勝任從 Singleton 過渡到 DI / IoC Container 的中繼階段。&lt;/p>
 &lt;p>因為這次接觸到的專案嚴重依賴 Singleton，且組員也已習慣 Singleton 的寫法了，要直切換到 DI / IoC Container 會有不小的陣痛期(當然實務上能不能切又是另一個故事了)。&lt;/p>
-&lt;p>於是筆者想起了 Service Locator，有以下理由&lt;/p>
+&lt;p>於是我想起了 Service Locator，有以下理由&lt;/p>
 &lt;ol>
 &lt;li>因為在使用上就很像是 Singleton&lt;/li>
-&lt;li>筆者希望組員能快速感受到 IoC 所帶來的紅利&lt;/li>
+&lt;li>我希望組員能快速感受到 IoC 所帶來的紅利&lt;/li>
 &lt;li>集中管理依賴&lt;/li>
 &lt;/ol>
 &lt;h2 id="實作">實作&lt;/h2>
@@ -4828,10 +4873,10 @@ git reset XXXXXXX --hard
 &lt;li>在內部確實使用了名為 Samples 的文件夾 (沒有 Samples~ )&lt;/li>
 &lt;li>在推送新包版本之前通過腳本對其進行重命名(透過 CI )&lt;/li>
 &lt;/ul>
-&lt;p>&lt;a href="https://medium.com/openupm/how-to-maintain-upm-package-part-1-7b4daf88d4c4">OpenUPM&lt;/a> 的作者也是使用類似的工作流，總之筆者也調整為上述的方式。&lt;/p>
+&lt;p>&lt;a href="https://medium.com/openupm/how-to-maintain-upm-package-part-1-7b4daf88d4c4">OpenUPM&lt;/a> 的作者也是使用類似的工作流，總之我也調整為上述的方式。&lt;/p>
 &lt;h2 id="透過-github-actions-workflow-調整目錄名">透過 GitHub Actions Workflow 調整目錄名&lt;/h2>
-&lt;p>筆者不熟 GitHub Actions/ YAML/ 文件操作，但這種初階的操作就交由 chatgpt 代勞，幫我省去不少實驗成本。這裡的操作只是堪用，應該有更好的方式。&lt;/p>
-&lt;p>以下是筆者要求的條件&lt;/p>
+&lt;p>我不熟 GitHub Actions/ YAML/ 文件操作，但這種初階的操作就交由 chatgpt 代勞，幫我省去不少實驗成本。這裡的操作只是堪用，應該有更好的方式。&lt;/p>
+&lt;p>以下是我要求的條件&lt;/p>
 &lt;ul>
 &lt;li>想透過 GitHub Actions 中的 workflow 完成&lt;/li>
 &lt;li>如果 forPackage 分支已存在則將其刪除&lt;/li>
@@ -4852,15 +4897,15 @@ git reset XXXXXXX --hard
 &lt;li>&lt;a href="https://github.com/focus-creative-games/hybridclr">focus-creative-games/hybridclr&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/focus-creative-games/hybridclr_trial">focus-creative-games/hybridclr_trial&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;p>HybridCLR 筆者已經應用於工作環境好一陣子了(從 2.X 版本開始)，其最讓人驚豔的地方在於，過往的開發流幾乎不用更動(當然要好 Asmdef 的規劃)，僅在打包時調整一下工作流即可。&lt;/p>
-&lt;p>其極大簡化過往麻煩且效率不彰的熱更流程。xLua 和 ILRuntime 在筆者看來最難受的事是「侵入性」極強，搞得綁手綁腳。大家也都抱怨很久了，但也沒有其他可靠方案，直到 HybridCLR 出現。&lt;/p>
+&lt;p>HybridCLR 我已經應用於工作環境好一陣子了(從 2.X 版本開始)，其最讓人驚豔的地方在於，過往的開發流幾乎不用更動(當然要好 Asmdef 的規劃)，僅在打包時調整一下工作流即可。&lt;/p>
+&lt;p>其極大簡化過往麻煩且效率不彰的熱更流程。xLua 和 ILRuntime 在我看來最難受的事是「侵入性」極強，搞得綁手綁腳。大家也都抱怨很久了，但也沒有其他可靠方案，直到 HybridCLR 出現。&lt;/p>
 &lt;h2 id="快速上手">快速上手&lt;/h2>
 &lt;p>3.0 版本後流程優化得更順暢了，照著 &lt;a href="https://hybridclr.doc.code-philosophy.com/#/beginner/quickstart">文件&lt;/a> 可以很快地感受到其威力。&lt;/p>
 &lt;h2 id="注意">注意&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/focus-creative-games/hybridclr/issues/57">请问，Generate All、补充元数据的DLL更新的执行时机的最佳实践？&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/focus-creative-games/hybridclr/issues/19">怎么卸载热更dll&lt;/a>&lt;/li>
-&lt;li>CLI 規範中只能以 AppDomain 形式卸載所有 dll，不支持卸載單獨的 dll。而 il2cpp 是單例 AppDomain，因此這個要求是不符合規範的。要採用 HybridCLR DHE 的商業方案。不過筆者倒是不太擔心，畢竟 Unity client 通常不是需要常駐的應用，使用者也不太會把應用的每一個功能都點一遍，初估是還可以接受的。&lt;/li>
+&lt;li>CLI 規範中只能以 AppDomain 形式卸載所有 dll，不支持卸載單獨的 dll。而 il2cpp 是單例 AppDomain，因此這個要求是不符合規範的。要採用 HybridCLR DHE 的商業方案。不過我倒是不太擔心，畢竟 Unity client 通常不是需要常駐的應用，使用者也不太會把應用的每一個功能都點一遍，初估是還可以接受的。&lt;/li>
 &lt;/ul></description></item><item><title>Unity - Basic - DontDestroyOnLoad</title><link>https://HoshikawaRyuukou.github.io/posts/unity---basic---dontdestroyonload/</link><pubDate>Mon, 20 Mar 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---basic---dontdestroyonload/</guid><description>&lt;h2 id="用例">用例&lt;/h2>
 &lt;p>被標記為 DontDestroyOnLoad 的物件場景更改時不會被破壞。&lt;/p>
 &lt;ol>
@@ -5084,8 +5129,8 @@ git reset XXXXXXX --hard
  &lt;img src="https://blog.cleancoder.com/uncle-bob/images/2012-08-13-the-clean-architecture/CleanArchitecture.jpg" alt="CA Layers">
 
 &lt;/p>
-&lt;p>筆者認爲可擴展性是系統架構的重要考量。畢竟應用程式會演化，必須不斷更新與修改系統以滿足新的需求，而 CA 是其中一種實現方針。筆者在這裡不會寫出詳細的介紹，想了解的可以參考 Ref 整理的連結或是 CA 相關書籍。&lt;/p>
-&lt;p>本文著重於促使筆者思考方式改變的幾個重要觀念。&lt;/p>
+&lt;p>我認爲可擴展性是系統架構的重要考量。畢竟應用程式會演化，必須不斷更新與修改系統以滿足新的需求，而 CA 是其中一種實現方針。我在這裡不會寫出詳細的介紹，想了解的可以參考 Ref 整理的連結或是 CA 相關書籍。&lt;/p>
+&lt;p>本文著重於促使我思考方式改變的幾個重要觀念。&lt;/p>
 &lt;h2 id="依賴關係">依賴關係&lt;/h2>
 &lt;ul>
 &lt;li>相依性: 向內圈依賴，且盡量避免跨層依賴 (有些例外之後說明)。&lt;/li>
@@ -5096,7 +5141,7 @@ git reset XXXXXXX --hard
 &lt;li>單向依賴流 : 紊亂的依賴流可能造成牽一髮動全身的窘境。尤其是當 Domain 去依賴到細節時。&lt;/li>
 &lt;li>延後實作 : UseCase/Adapter 都是依賴於應用層所開出的介面。因此業務/畫面能獨立開發，不用互相等待(理想狀態)。&lt;/li>
 &lt;/ul>
-&lt;p>而筆者在實作時的基本型架構通常如下圖(比較接近 CA 書中的另外一張圖，我這裡做了簡化)，Adapter 只分成 Input/Output Port。
+&lt;p>而我在實作時的基本型架構通常如下圖(比較接近 CA 書中的另外一張圖，我這裡做了簡化)，Adapter 只分成 Input/Output Port。
 
  &lt;img src="https://HoshikawaRyuukou.github.io/images/CleanArchitectureBasic.png" alt="Clean Architecture Basic">
 
@@ -5172,7 +5217,7 @@ git reset XXXXXXX --hard
 &lt;/ul>
 &lt;h2 id="extra---value-object">Extra - Value Object&lt;/h2>
 &lt;p>&lt;a href="https://codeopinion.com/stop-using-trivial-guard-clauses-try-this-instead/">Stop using trivial Guard Clauses! Try this instead&lt;/a>&lt;/p>
-&lt;p>文章作者避免瑣碎 Guard 的方式，是使用 Value Object，來避免域接受到無效參數。這個作法在筆者看來才是真正意義上的 Fail Fast。(YT評論區也建議閱讀，有許多不錯的討論)&lt;/p>
+&lt;p>文章作者避免瑣碎 Guard 的方式，是使用 Value Object，來避免域接受到無效參數。這個作法在我看來才是真正意義上的 Fail Fast。(YT評論區也建議閱讀，有許多不錯的討論)&lt;/p>
 &lt;p>但不可否認的 Guard Clause 作法在大多情況下是有益的。&lt;/p>
 &lt;h2 id="ref">Ref&lt;/h2>
 &lt;ul>
@@ -5221,9 +5266,9 @@ git reset XXXXXXX --hard
 &lt;ul>
 &lt;li>&lt;a href="https://www.youtube.com/watch?v=nH_C3poH3-4">C# 記憶體管理 Value Type 與 Reference Type&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/178307774">工作十余年，还是一直被问 委托和事件 有什么区别？ 真是够了&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Software Design - Domain-Driven Design 初探</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---domain-driven-design/</link><pubDate>Thu, 15 Dec 2022 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---domain-driven-design/</guid><description>&lt;p>必須先聲明筆者仍在學習中，以下屬個人觀點&lt;/p>
+&lt;/ul></description></item><item><title>Software Design - Domain-Driven Design 初探</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---domain-driven-design/</link><pubDate>Thu, 15 Dec 2022 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---domain-driven-design/</guid><description>&lt;p>必須先聲明我仍在學習中，以下屬個人觀點&lt;/p>
 &lt;h2 id="動機">動機&lt;/h2>
-&lt;p>筆者發現在使用 Clean Architecture (CA) 時越來越力不從心，因此開始研究 Domain-Driven Design (DDD)，事出有因，列出幾點問題與對應方式。&lt;/p>
+&lt;p>我發現在使用 Clean Architecture (CA) 時越來越力不從心，因此開始研究 Domain-Driven Design (DDD)，事出有因，列出幾點問題與對應方式。&lt;/p>
 &lt;h4 id="重複的程式碼">重複的程式碼&lt;/h4>
 &lt;ul>
 &lt;li>主因是 貧血域模型 (Anemic Domain Model)，表示模型中幾乎只有 Get/Set，這導致了 Domain層 (業務邏輯) 滲透到 Application層 (應用邏輯)，某些對 Domain 的操作重複出現在多個的 Usecase (應用邏輯)。&lt;/li>
@@ -5239,7 +5284,7 @@ git reset XXXXXXX --hard
 &lt;li>這會造成對模型的不信任，進而寫出一些防禦性程式設計。&lt;/li>
 &lt;li>引入值物件(Value Object)來確保不變性與自我驗證(即不正確就不應該存在)。&lt;/li>
 &lt;/ul>
-&lt;p>以上這幾點是筆者比較有感的。&lt;/p>
+&lt;p>以上這幾點是我比較有感的。&lt;/p>
 &lt;h2 id="概述與想法">概述與想法&lt;/h2>
 &lt;p>Domain-Driven Design (DDD)，出自 Eric Evans 2003 年出版的一本書，以領域模型為中心來進行系統的分析設計。不是架構也不是技術，是一種方法論，可以搭配不同類型的架構來實現&lt;/p>
 &lt;ul>
@@ -5248,7 +5293,7 @@ git reset XXXXXXX --hard
 &lt;li>Clean Architecture (以下稱 CA )&lt;/li>
 &lt;li>Command Query Responsibility Segregation (CQRS)&lt;/li>
 &lt;/ul>
-&lt;p>原著中是使用 Layered Architecture 的架構作為示範，但該章的重點是在隔離 Domain，在 Google 的時候有所謂 &amp;ldquo;DDD 架構圖&amp;rdquo;，但筆者覺得不太精確，因為 DDD 主要的發力點是在 Domain，應該稱作 &amp;ldquo;OO架構以DDD實作Domain&amp;rdquo; 會比較合適。&lt;/p></description></item><item><title>Software Design - Pattern - Data Transfer Object (DTO)</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---data-transfer-object-dto/</link><pubDate>Sun, 11 Dec 2022 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---data-transfer-object-dto/</guid><description>&lt;h2 id="什麼是-dto">什麼是 DTO？&lt;/h2>
+&lt;p>原著中是使用 Layered Architecture 的架構作為示範，但該章的重點是在隔離 Domain，在 Google 的時候有所謂 &amp;ldquo;DDD 架構圖&amp;rdquo;，但我覺得不太精確，因為 DDD 主要的發力點是在 Domain，應該稱作 &amp;ldquo;OO架構以DDD實作Domain&amp;rdquo; 會比較合適。&lt;/p></description></item><item><title>Software Design - Pattern - Data Transfer Object (DTO)</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---data-transfer-object-dto/</link><pubDate>Sun, 11 Dec 2022 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---data-transfer-object-dto/</guid><description>&lt;h2 id="什麼是-dto">什麼是 DTO？&lt;/h2>
 &lt;p>Data Transfer Object (數據傳輸對象) 是定義如何在應用程序之間發送數據的對象。它僅用於發送和接收數據，本身不包含任何業務邏輯。&lt;/p>
 &lt;h2 id="為什麼使用-dto">為什麼使用 DTO？&lt;/h2>
 &lt;h3 id="輕鬆收發">輕鬆收發&lt;/h3>
@@ -5291,7 +5336,7 @@ git reset XXXXXXX --hard
 &lt;li>&lt;a href="https://annulusgames-lab.blogspot.com/2022/12/unity-ui-mvrp.html">【Unity】MV(R)Pパターンのすすめ&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.pragmaticcoding.ca/javafx/Frameworks/">Unravelling MVC, MVP and MVVM&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;p>以下則對筆者實作中比較常用的 MVP 多做一些討論&lt;/p>
+&lt;p>以下則對我實作中比較常用的 MVP 多做一些討論&lt;/p>
 &lt;h2 id="關注點責任">關注點(責任)&lt;/h2>
 &lt;p>在 MVP 的構成下分成三個部分&lt;/p>
 &lt;ul>
@@ -5300,7 +5345,7 @@ git reset XXXXXXX --hard
 &lt;li>Presenter: View 和 Model 之間的中介。&lt;/li>
 &lt;/ul>
 &lt;h3 id="passive-view">Passive View&lt;/h3>
-&lt;p>這是 MVP 的一種實作風格，也是筆者主要使用的風格。&lt;/p>
+&lt;p>這是 MVP 的一種實作風格，也是我主要使用的風格。&lt;/p>
 &lt;ul>
 &lt;li>Presenter 對 View 有完全控制權&lt;/li>
 &lt;li>View 提供方法與事件給 Presenter 使用&lt;/li>

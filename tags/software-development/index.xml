@@ -115,7 +115,7 @@
 &lt;li>&lt;a href="https://blog.ttulka.com/">Tomas Tulka&amp;rsquo;s Blog&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.entropywins.wtf/blog/">Entropy Wins - A blog on Software Architecture, Design and Craftsmanship&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Software Development - Repository Structure</title><link>https://HoshikawaRyuukou.github.io/posts/software-development---repository-structure---note/</link><pubDate>Mon, 12 Aug 2024 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-development---repository-structure---note/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
-&lt;p>最近筆者在開發公司的共用套件時，踩了不少坑，尤其是在儲存庫結構方面。&lt;/p>
+&lt;p>最近我在開發公司的共用套件時，踩了不少坑，尤其是在儲存庫結構方面。&lt;/p>
 &lt;p>最初選擇了 polyrepo 的結構，但隨著開發的進展，碰到了一些問題：&lt;/p>
 &lt;ul>
 &lt;li>要確保這些獨立的 repo 配置能夠同步。&lt;/li>

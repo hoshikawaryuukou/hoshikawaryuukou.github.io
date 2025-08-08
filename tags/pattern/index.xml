@@ -86,9 +86,9 @@
 &lt;p>此篇的實作參考到以下文件 (提到不少 Presentation layer 設計原則)&lt;/p>
 &lt;blockquote>
 &lt;p>&lt;a href="https://developer.android.com/topic/architecture/ui-layer?hl=zh-tw">Android Developers 文件/指南/UI 層&lt;/a>&lt;/p>&lt;/blockquote>
-&lt;p>該文件的更新頻率算高且會與時俱進，筆者印象中其架構設計從 MVVM -&amp;gt; Domain/Application Driven 設計，可以看出主流架構有產生變化。之後的討論雖然使用 ViewModel 但不會詳細介紹 MVVM 的細節，如果對 MVX 系列不熟，可以先讀筆者之前的文章 &lt;strong>&amp;laquo;通用設計 - Pattern - MVP&amp;raquo;&lt;/strong> 裡面的 References。&lt;/p>
+&lt;p>該文件的更新頻率算高且會與時俱進，我印象中其架構設計從 MVVM -&amp;gt; Domain/Application Driven 設計，可以看出主流架構有產生變化。之後的討論雖然使用 ViewModel 但不會詳細介紹 MVVM 的細節，如果對 MVX 系列不熟，可以先讀我之前的文章 &lt;strong>&amp;laquo;通用設計 - Pattern - MVP&amp;raquo;&lt;/strong> 裡面的 References。&lt;/p>
 &lt;h2 id="探索">探索&lt;/h2>
-&lt;p>回到正題，筆者在最近的業務上遇到&lt;/p>
+&lt;p>回到正題，我在最近的業務上遇到&lt;/p>
 &lt;blockquote>
 &lt;p>如何在 &lt;strong>服務端未完成&lt;/strong> 的情況下，讓 Client 獲得完整的體驗流 ?&lt;/p>&lt;/blockquote>
 &lt;p>以下用交叉反問的方式來分析問題&lt;/p>
@@ -99,7 +99,7 @@ A: 只需要實作一個 FakeService 來產生假資料即可&lt;/p>
 &lt;p>Q: 當想要將業務與表現解耦時，很常使用中介者的手法來黏合兩者，如果使用標準的 MVP 實做，Presenter 實際做了哪些事呢 ? &lt;br>
 A: 監聽 View 事件/ 與 Service 互動/ 管理畫面狀態/ 呼叫 View 刷新&lt;/p></description></item><item><title>Software Design - Pattern - Service Locator</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---service-locator/</link><pubDate>Wed, 28 Jun 2023 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---service-locator/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
 &lt;p>Service Locator 確實也是 IoC 的一種實作方式，不過採用的是 依賴尋找(Dependency Lookup) 的設計。
-筆者之前有一陣子蠻常使用這 pattern，那時對 DI 與 IoC 的概念並不熟悉，只覺得這樣使用依賴變得很方便。&lt;/p>
+我之前有一陣子蠻常使用這 pattern，那時對 DI 與 IoC 的概念並不熟悉，只覺得這樣使用依賴變得很方便。&lt;/p>
 &lt;p>因為我可以在任何地方直接這樣取用資源&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-csharp" data-lang="csharp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">var&lt;/span> &lt;span style="color:#111">target&lt;/span> &lt;span style="color:#111">=&lt;/span> &lt;span style="color:#111">ServiceLocator&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">Resovle&lt;/span>&lt;span style="color:#111">&amp;lt;&lt;/span>&lt;span style="color:#111">Target&lt;/span>&lt;span style="color:#111">&amp;gt;();&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>這樣的寫法有以下問題 :&lt;/p>
@@ -111,10 +111,10 @@ A: 監聽 View 事件/ 與 Service 互動/ 管理畫面狀態/ 呼叫 View 刷�
 &lt;h2 id="應用">應用&lt;/h2>
 &lt;p>但這次工作上反而覺得 Service Locator 可以勝任從 Singleton 過渡到 DI / IoC Container 的中繼階段。&lt;/p>
 &lt;p>因為這次接觸到的專案嚴重依賴 Singleton，且組員也已習慣 Singleton 的寫法了，要直切換到 DI / IoC Container 會有不小的陣痛期(當然實務上能不能切又是另一個故事了)。&lt;/p>
-&lt;p>於是筆者想起了 Service Locator，有以下理由&lt;/p>
+&lt;p>於是我想起了 Service Locator，有以下理由&lt;/p>
 &lt;ol>
 &lt;li>因為在使用上就很像是 Singleton&lt;/li>
-&lt;li>筆者希望組員能快速感受到 IoC 所帶來的紅利&lt;/li>
+&lt;li>我希望組員能快速感受到 IoC 所帶來的紅利&lt;/li>
 &lt;li>集中管理依賴&lt;/li>
 &lt;/ol>
 &lt;h2 id="實作">實作&lt;/h2>
@@ -131,7 +131,7 @@ A: 監聽 View 事件/ 與 Service 互動/ 管理畫面狀態/ 呼叫 View 刷�
 &lt;/ul>
 &lt;h2 id="extra---value-object">Extra - Value Object&lt;/h2>
 &lt;p>&lt;a href="https://codeopinion.com/stop-using-trivial-guard-clauses-try-this-instead/">Stop using trivial Guard Clauses! Try this instead&lt;/a>&lt;/p>
-&lt;p>文章作者避免瑣碎 Guard 的方式，是使用 Value Object，來避免域接受到無效參數。這個作法在筆者看來才是真正意義上的 Fail Fast。(YT評論區也建議閱讀，有許多不錯的討論)&lt;/p>
+&lt;p>文章作者避免瑣碎 Guard 的方式，是使用 Value Object，來避免域接受到無效參數。這個作法在我看來才是真正意義上的 Fail Fast。(YT評論區也建議閱讀，有許多不錯的討論)&lt;/p>
 &lt;p>但不可否認的 Guard Clause 作法在大多情況下是有益的。&lt;/p>
 &lt;h2 id="ref">Ref&lt;/h2>
 &lt;ul>
@@ -182,7 +182,7 @@ A: 監聽 View 事件/ 與 Service 互動/ 管理畫面狀態/ 呼叫 View 刷�
 &lt;li>&lt;a href="https://annulusgames-lab.blogspot.com/2022/12/unity-ui-mvrp.html">【Unity】MV(R)Pパターンのすすめ&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.pragmaticcoding.ca/javafx/Frameworks/">Unravelling MVC, MVP and MVVM&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;p>以下則對筆者實作中比較常用的 MVP 多做一些討論&lt;/p>
+&lt;p>以下則對我實作中比較常用的 MVP 多做一些討論&lt;/p>
 &lt;h2 id="關注點責任">關注點(責任)&lt;/h2>
 &lt;p>在 MVP 的構成下分成三個部分&lt;/p>
 &lt;ul>
@@ -191,7 +191,7 @@ A: 監聽 View 事件/ 與 Service 互動/ 管理畫面狀態/ 呼叫 View 刷�
 &lt;li>Presenter: View 和 Model 之間的中介。&lt;/li>
 &lt;/ul>
 &lt;h3 id="passive-view">Passive View&lt;/h3>
-&lt;p>這是 MVP 的一種實作風格，也是筆者主要使用的風格。&lt;/p>
+&lt;p>這是 MVP 的一種實作風格，也是我主要使用的風格。&lt;/p>
 &lt;ul>
 &lt;li>Presenter 對 View 有完全控制權&lt;/li>
 &lt;li>View 提供方法與事件給 Presenter 使用&lt;/li>

@@ -54,7 +54,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#d88200">&amp;#39;packages/*&amp;#39;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="extra---在專案中限用-pnpm">Extra - 在專案中限用 pnpm&lt;/h2>
 &lt;p>⚠️ 但目前 npm hook - preinstall 未如預期運作。&lt;/p></description></item><item><title>Workflow - Optimize a monorepo with pnpm and Turborepo</title><link>https://HoshikawaRyuukou.github.io/posts/workflow---optimize-a-monorepo-with-pnpm-and-turborepo/</link><pubDate>Sun, 06 Oct 2024 20:31:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow---optimize-a-monorepo-with-pnpm-and-turborepo/</guid><description>&lt;h2 id="guide">Guide&lt;/h2></description></item><item><title>Software Development - Repository Structure</title><link>https://HoshikawaRyuukou.github.io/posts/software-development---repository-structure---note/</link><pubDate>Mon, 12 Aug 2024 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-development---repository-structure---note/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
-&lt;p>最近筆者在開發公司的共用套件時，踩了不少坑，尤其是在儲存庫結構方面。&lt;/p>
+&lt;p>最近我在開發公司的共用套件時，踩了不少坑，尤其是在儲存庫結構方面。&lt;/p>
 &lt;p>最初選擇了 polyrepo 的結構，但隨著開發的進展，碰到了一些問題：&lt;/p>
 &lt;ul>
 &lt;li>要確保這些獨立的 repo 配置能夠同步。&lt;/li>

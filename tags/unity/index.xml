@@ -765,11 +765,11 @@ Scope(s):
 &lt;li>&lt;a href="https://blog.csdn.net/Nbin_Newby/article/details/131537227">Unity内存分析与优化实践(1.1版本前)&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Unity - Basic - Preprocessor Directives</title><link>https://HoshikawaRyuukou.github.io/posts/unity---basic---preprocessor-directives/</link><pubDate>Fri, 07 Jul 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---basic---preprocessor-directives/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
 &lt;p>中文稱作 : 前置處理器指示詞&lt;/p>
-&lt;p>筆者最近接觸到的遺舊專案中發現裡面大量地使用 條件式編譯&lt;/p>
+&lt;p>我最近接觸到的遺舊專案中發現裡面大量地使用 條件式編譯&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-csharp" data-lang="csharp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#if&lt;/span> &lt;span style="color:#111">DEBUG&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">Console&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">WriteLine&lt;/span>&lt;span style="color:#111">(&lt;/span>&lt;span style="color:#d88200">&amp;#34;Debug version&amp;#34;&lt;/span>&lt;span style="color:#111">);&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#endif&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>筆者之前有使用也基本只使用 定義區域 (排版效果)&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>我之前有使用也基本只使用 定義區域 (排版效果)&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-csharp" data-lang="csharp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#region&lt;/span> &lt;span style="color:#111">MyClass&lt;/span> &lt;span style="color:#111">definition&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00a8c8">public&lt;/span> &lt;span style="color:#00a8c8">class&lt;/span> &lt;span style="color:#75af00">MyClass&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#111">{&lt;/span>
@@ -809,13 +809,13 @@ Scope(s):
 &lt;p>上述這些狀況都會導致 &lt;strong>延後發現問題的時間 !&lt;/strong>&lt;/p>
 &lt;h2 id="方案">方案&lt;/h2>
 &lt;p>這個前置處理器指示詞一直是個蠻有爭議的作法，有一派人士是不使用的(通過使用條件分支、策略模式或依賴注入等其他方式，更可以清晰地表達了代碼的邏輯，提高了程式的可維護性)。&lt;/p>
-&lt;p>筆者也傾向不使用(業務邏輯不用，其餘的看狀況)。&lt;/p>
+&lt;p>我也傾向不使用(業務邏輯不用，其餘的看狀況)。&lt;/p>
 &lt;h3 id="case-editor">Case. Editor&lt;/h3>
 &lt;p>有時後會有需要客製編輯器時，會這樣跟 MonoBehaviour 寫在一起並用 UNITY_EDITOR 處理。但事實上獨立一個檔案放在 &lt;strong>Editor 資料夾&lt;/strong> 應該會更好。&lt;/p></description></item><item><title>Unity - Platform - iOS - plug-in</title><link>https://HoshikawaRyuukou.github.io/posts/unity---platform---ios---plug-in/</link><pubDate>Wed, 05 Jul 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---platform---ios---plug-in/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
 &lt;p>這次的業務需求是&lt;/p>
 &lt;blockquote>
 &lt;p>取得 ios 實機的 &amp;ldquo;地區&amp;rdquo;，並讓 C# 能拿到 Swift 所返回的字串&lt;/p>&lt;/blockquote>
-&lt;p>因為在 ios 的環境下 unity / C# 拿到的值並不正確。此外筆者對 Swift / Objective-C 幾乎零基礎，目前只針對一些教學文件做些修改，之後有機會更熟再回頭深究。&lt;/p>
+&lt;p>因為在 ios 的環境下 unity / C# 拿到的值並不正確。此外我對 Swift / Objective-C 幾乎零基礎，目前只針對一些教學文件做些修改，之後有機會更熟再回頭深究。&lt;/p>
 &lt;h2 id="實作">實作&lt;/h2>
 &lt;ul>
 &lt;li>SwiftDeviceInfoPlugin.swift 須放置於 Plugins\iOS 之下&lt;/li>
@@ -912,10 +912,10 @@ Scope(s):
 &lt;li>在內部確實使用了名為 Samples 的文件夾 (沒有 Samples~ )&lt;/li>
 &lt;li>在推送新包版本之前通過腳本對其進行重命名(透過 CI )&lt;/li>
 &lt;/ul>
-&lt;p>&lt;a href="https://medium.com/openupm/how-to-maintain-upm-package-part-1-7b4daf88d4c4">OpenUPM&lt;/a> 的作者也是使用類似的工作流，總之筆者也調整為上述的方式。&lt;/p>
+&lt;p>&lt;a href="https://medium.com/openupm/how-to-maintain-upm-package-part-1-7b4daf88d4c4">OpenUPM&lt;/a> 的作者也是使用類似的工作流，總之我也調整為上述的方式。&lt;/p>
 &lt;h2 id="透過-github-actions-workflow-調整目錄名">透過 GitHub Actions Workflow 調整目錄名&lt;/h2>
-&lt;p>筆者不熟 GitHub Actions/ YAML/ 文件操作，但這種初階的操作就交由 chatgpt 代勞，幫我省去不少實驗成本。這裡的操作只是堪用，應該有更好的方式。&lt;/p>
-&lt;p>以下是筆者要求的條件&lt;/p>
+&lt;p>我不熟 GitHub Actions/ YAML/ 文件操作，但這種初階的操作就交由 chatgpt 代勞，幫我省去不少實驗成本。這裡的操作只是堪用，應該有更好的方式。&lt;/p>
+&lt;p>以下是我要求的條件&lt;/p>
 &lt;ul>
 &lt;li>想透過 GitHub Actions 中的 workflow 完成&lt;/li>
 &lt;li>如果 forPackage 分支已存在則將其刪除&lt;/li>
@@ -936,15 +936,15 @@ Scope(s):
 &lt;li>&lt;a href="https://github.com/focus-creative-games/hybridclr">focus-creative-games/hybridclr&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/focus-creative-games/hybridclr_trial">focus-creative-games/hybridclr_trial&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;p>HybridCLR 筆者已經應用於工作環境好一陣子了(從 2.X 版本開始)，其最讓人驚豔的地方在於，過往的開發流幾乎不用更動(當然要好 Asmdef 的規劃)，僅在打包時調整一下工作流即可。&lt;/p>
-&lt;p>其極大簡化過往麻煩且效率不彰的熱更流程。xLua 和 ILRuntime 在筆者看來最難受的事是「侵入性」極強，搞得綁手綁腳。大家也都抱怨很久了，但也沒有其他可靠方案，直到 HybridCLR 出現。&lt;/p>
+&lt;p>HybridCLR 我已經應用於工作環境好一陣子了(從 2.X 版本開始)，其最讓人驚豔的地方在於，過往的開發流幾乎不用更動(當然要好 Asmdef 的規劃)，僅在打包時調整一下工作流即可。&lt;/p>
+&lt;p>其極大簡化過往麻煩且效率不彰的熱更流程。xLua 和 ILRuntime 在我看來最難受的事是「侵入性」極強，搞得綁手綁腳。大家也都抱怨很久了，但也沒有其他可靠方案，直到 HybridCLR 出現。&lt;/p>
 &lt;h2 id="快速上手">快速上手&lt;/h2>
 &lt;p>3.0 版本後流程優化得更順暢了，照著 &lt;a href="https://hybridclr.doc.code-philosophy.com/#/beginner/quickstart">文件&lt;/a> 可以很快地感受到其威力。&lt;/p>
 &lt;h2 id="注意">注意&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/focus-creative-games/hybridclr/issues/57">请问，Generate All、补充元数据的DLL更新的执行时机的最佳实践？&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/focus-creative-games/hybridclr/issues/19">怎么卸载热更dll&lt;/a>&lt;/li>
-&lt;li>CLI 規範中只能以 AppDomain 形式卸載所有 dll，不支持卸載單獨的 dll。而 il2cpp 是單例 AppDomain，因此這個要求是不符合規範的。要採用 HybridCLR DHE 的商業方案。不過筆者倒是不太擔心，畢竟 Unity client 通常不是需要常駐的應用，使用者也不太會把應用的每一個功能都點一遍，初估是還可以接受的。&lt;/li>
+&lt;li>CLI 規範中只能以 AppDomain 形式卸載所有 dll，不支持卸載單獨的 dll。而 il2cpp 是單例 AppDomain，因此這個要求是不符合規範的。要採用 HybridCLR DHE 的商業方案。不過我倒是不太擔心，畢竟 Unity client 通常不是需要常駐的應用，使用者也不太會把應用的每一個功能都點一遍，初估是還可以接受的。&lt;/li>
 &lt;/ul></description></item><item><title>Unity - Basic - DontDestroyOnLoad</title><link>https://HoshikawaRyuukou.github.io/posts/unity---basic---dontdestroyonload/</link><pubDate>Mon, 20 Mar 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---basic---dontdestroyonload/</guid><description>&lt;h2 id="用例">用例&lt;/h2>
 &lt;p>被標記為 DontDestroyOnLoad 的物件場景更改時不會被破壞。&lt;/p>
 &lt;ol>

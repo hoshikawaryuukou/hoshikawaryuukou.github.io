@@ -402,7 +402,7 @@
 &lt;li>Presenter 作為 Binder 將 View / Interactor / Router 整合&lt;/li>
 &lt;/ul>
 &lt;h2 id="啟發">啟發&lt;/h2>
-&lt;p>VIPER 是筆者學習架構路上很重要的一個過渡，有以下兩點的思想轉變&lt;/p>
+&lt;p>VIPER 是我學習架構路上很重要的一個過渡，有以下兩點的思想轉變&lt;/p>
 &lt;h3 id="顆粒度更細的單一職責">顆粒度更細的單一職責&lt;/h3>
 &lt;p>Interactor 封裝業務的概念在純 MVX 中是無法直接體會到，因此對之後學習 CA 時起了很大的緩衝，不然對於 Usecase 的設計應該會很不適應。&lt;/p>
 &lt;h3 id="重視-navigation">重視 Navigation&lt;/h3>
@@ -410,9 +410,9 @@
 &lt;p>此篇的實作參考到以下文件 (提到不少 Presentation layer 設計原則)&lt;/p>
 &lt;blockquote>
 &lt;p>&lt;a href="https://developer.android.com/topic/architecture/ui-layer?hl=zh-tw">Android Developers 文件/指南/UI 層&lt;/a>&lt;/p>&lt;/blockquote>
-&lt;p>該文件的更新頻率算高且會與時俱進，筆者印象中其架構設計從 MVVM -&amp;gt; Domain/Application Driven 設計，可以看出主流架構有產生變化。之後的討論雖然使用 ViewModel 但不會詳細介紹 MVVM 的細節，如果對 MVX 系列不熟，可以先讀筆者之前的文章 &lt;strong>&amp;laquo;通用設計 - Pattern - MVP&amp;raquo;&lt;/strong> 裡面的 References。&lt;/p>
+&lt;p>該文件的更新頻率算高且會與時俱進，我印象中其架構設計從 MVVM -&amp;gt; Domain/Application Driven 設計，可以看出主流架構有產生變化。之後的討論雖然使用 ViewModel 但不會詳細介紹 MVVM 的細節，如果對 MVX 系列不熟，可以先讀我之前的文章 &lt;strong>&amp;laquo;通用設計 - Pattern - MVP&amp;raquo;&lt;/strong> 裡面的 References。&lt;/p>
 &lt;h2 id="探索">探索&lt;/h2>
-&lt;p>回到正題，筆者在最近的業務上遇到&lt;/p>
+&lt;p>回到正題，我在最近的業務上遇到&lt;/p>
 &lt;blockquote>
 &lt;p>如何在 &lt;strong>服務端未完成&lt;/strong> 的情況下，讓 Client 獲得完整的體驗流 ?&lt;/p>&lt;/blockquote>
 &lt;p>以下用交叉反問的方式來分析問題&lt;/p>
@@ -423,7 +423,7 @@ A: 只需要實作一個 FakeService 來產生假資料即可&lt;/p>
 &lt;p>Q: 當想要將業務與表現解耦時，很常使用中介者的手法來黏合兩者，如果使用標準的 MVP 實做，Presenter 實際做了哪些事呢 ? &lt;br>
 A: 監聽 View 事件/ 與 Service 互動/ 管理畫面狀態/ 呼叫 View 刷新&lt;/p></description></item><item><title>Software Design - Pattern - Service Locator</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---service-locator/</link><pubDate>Wed, 28 Jun 2023 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---service-locator/</guid><description>&lt;h2 id="前述">前述&lt;/h2>
 &lt;p>Service Locator 確實也是 IoC 的一種實作方式，不過採用的是 依賴尋找(Dependency Lookup) 的設計。
-筆者之前有一陣子蠻常使用這 pattern，那時對 DI 與 IoC 的概念並不熟悉，只覺得這樣使用依賴變得很方便。&lt;/p>
+我之前有一陣子蠻常使用這 pattern，那時對 DI 與 IoC 的概念並不熟悉，只覺得這樣使用依賴變得很方便。&lt;/p>
 &lt;p>因為我可以在任何地方直接這樣取用資源&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-csharp" data-lang="csharp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00a8c8">var&lt;/span> &lt;span style="color:#111">target&lt;/span> &lt;span style="color:#111">=&lt;/span> &lt;span style="color:#111">ServiceLocator&lt;/span>&lt;span style="color:#111">.&lt;/span>&lt;span style="color:#111">Resovle&lt;/span>&lt;span style="color:#111">&amp;lt;&lt;/span>&lt;span style="color:#111">Target&lt;/span>&lt;span style="color:#111">&amp;gt;();&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>這樣的寫法有以下問題 :&lt;/p>
@@ -435,10 +435,10 @@ A: 監聽 View 事件/ 與 Service 互動/ 管理畫面狀態/ 呼叫 View 刷�
 &lt;h2 id="應用">應用&lt;/h2>
 &lt;p>但這次工作上反而覺得 Service Locator 可以勝任從 Singleton 過渡到 DI / IoC Container 的中繼階段。&lt;/p>
 &lt;p>因為這次接觸到的專案嚴重依賴 Singleton，且組員也已習慣 Singleton 的寫法了，要直切換到 DI / IoC Container 會有不小的陣痛期(當然實務上能不能切又是另一個故事了)。&lt;/p>
-&lt;p>於是筆者想起了 Service Locator，有以下理由&lt;/p>
+&lt;p>於是我想起了 Service Locator，有以下理由&lt;/p>
 &lt;ol>
 &lt;li>因為在使用上就很像是 Singleton&lt;/li>
-&lt;li>筆者希望組員能快速感受到 IoC 所帶來的紅利&lt;/li>
+&lt;li>我希望組員能快速感受到 IoC 所帶來的紅利&lt;/li>
 &lt;li>集中管理依賴&lt;/li>
 &lt;/ol>
 &lt;h2 id="實作">實作&lt;/h2>
@@ -474,8 +474,8 @@ A: 監聽 View 事件/ 與 Service 互動/ 管理畫面狀態/ 呼叫 View 刷�
  &lt;img src="https://blog.cleancoder.com/uncle-bob/images/2012-08-13-the-clean-architecture/CleanArchitecture.jpg" alt="CA Layers">
 
 &lt;/p>
-&lt;p>筆者認爲可擴展性是系統架構的重要考量。畢竟應用程式會演化，必須不斷更新與修改系統以滿足新的需求，而 CA 是其中一種實現方針。筆者在這裡不會寫出詳細的介紹，想了解的可以參考 Ref 整理的連結或是 CA 相關書籍。&lt;/p>
-&lt;p>本文著重於促使筆者思考方式改變的幾個重要觀念。&lt;/p>
+&lt;p>我認爲可擴展性是系統架構的重要考量。畢竟應用程式會演化，必須不斷更新與修改系統以滿足新的需求，而 CA 是其中一種實現方針。我在這裡不會寫出詳細的介紹，想了解的可以參考 Ref 整理的連結或是 CA 相關書籍。&lt;/p>
+&lt;p>本文著重於促使我思考方式改變的幾個重要觀念。&lt;/p>
 &lt;h2 id="依賴關係">依賴關係&lt;/h2>
 &lt;ul>
 &lt;li>相依性: 向內圈依賴，且盡量避免跨層依賴 (有些例外之後說明)。&lt;/li>
@@ -486,7 +486,7 @@ A: 監聽 View 事件/ 與 Service 互動/ 管理畫面狀態/ 呼叫 View 刷�
 &lt;li>單向依賴流 : 紊亂的依賴流可能造成牽一髮動全身的窘境。尤其是當 Domain 去依賴到細節時。&lt;/li>
 &lt;li>延後實作 : UseCase/Adapter 都是依賴於應用層所開出的介面。因此業務/畫面能獨立開發，不用互相等待(理想狀態)。&lt;/li>
 &lt;/ul>
-&lt;p>而筆者在實作時的基本型架構通常如下圖(比較接近 CA 書中的另外一張圖，我這裡做了簡化)，Adapter 只分成 Input/Output Port。
+&lt;p>而我在實作時的基本型架構通常如下圖(比較接近 CA 書中的另外一張圖，我這裡做了簡化)，Adapter 只分成 Input/Output Port。
 
  &lt;img src="https://HoshikawaRyuukou.github.io/images/CleanArchitectureBasic.png" alt="Clean Architecture Basic">
 
@@ -513,7 +513,7 @@ A: 監聽 View 事件/ 與 Service 互動/ 管理畫面狀態/ 呼叫 View 刷�
 &lt;/ul>
 &lt;h2 id="extra---value-object">Extra - Value Object&lt;/h2>
 &lt;p>&lt;a href="https://codeopinion.com/stop-using-trivial-guard-clauses-try-this-instead/">Stop using trivial Guard Clauses! Try this instead&lt;/a>&lt;/p>
-&lt;p>文章作者避免瑣碎 Guard 的方式，是使用 Value Object，來避免域接受到無效參數。這個作法在筆者看來才是真正意義上的 Fail Fast。(YT評論區也建議閱讀，有許多不錯的討論)&lt;/p>
+&lt;p>文章作者避免瑣碎 Guard 的方式，是使用 Value Object，來避免域接受到無效參數。這個作法在我看來才是真正意義上的 Fail Fast。(YT評論區也建議閱讀，有許多不錯的討論)&lt;/p>
 &lt;p>但不可否認的 Guard Clause 作法在大多情況下是有益的。&lt;/p>
 &lt;h2 id="ref">Ref&lt;/h2>
 &lt;ul>
@@ -521,9 +521,9 @@ A: 監聽 View 事件/ 與 Service 互動/ 管理畫面狀態/ 呼叫 View 刷�
 &lt;li>&lt;a href="http://teddy-chen-tw.blogspot.com/2012/05/implementation-patterns-guard-clause.html">Implementation Patterns: Guard Clause&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/ardalis/GuardClauses">GuardClauses&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://codeopinion.com/stop-using-trivial-guard-clauses-try-this-instead/">Stop using trivial Guard Clauses! Try this instead&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Software Design - Domain-Driven Design 初探</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---domain-driven-design/</link><pubDate>Thu, 15 Dec 2022 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---domain-driven-design/</guid><description>&lt;p>必須先聲明筆者仍在學習中，以下屬個人觀點&lt;/p>
+&lt;/ul></description></item><item><title>Software Design - Domain-Driven Design 初探</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---domain-driven-design/</link><pubDate>Thu, 15 Dec 2022 20:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---domain-driven-design/</guid><description>&lt;p>必須先聲明我仍在學習中，以下屬個人觀點&lt;/p>
 &lt;h2 id="動機">動機&lt;/h2>
-&lt;p>筆者發現在使用 Clean Architecture (CA) 時越來越力不從心，因此開始研究 Domain-Driven Design (DDD)，事出有因，列出幾點問題與對應方式。&lt;/p>
+&lt;p>我發現在使用 Clean Architecture (CA) 時越來越力不從心，因此開始研究 Domain-Driven Design (DDD)，事出有因，列出幾點問題與對應方式。&lt;/p>
 &lt;h4 id="重複的程式碼">重複的程式碼&lt;/h4>
 &lt;ul>
 &lt;li>主因是 貧血域模型 (Anemic Domain Model)，表示模型中幾乎只有 Get/Set，這導致了 Domain層 (業務邏輯) 滲透到 Application層 (應用邏輯)，某些對 Domain 的操作重複出現在多個的 Usecase (應用邏輯)。&lt;/li>
@@ -539,7 +539,7 @@ A: 監聽 View 事件/ 與 Service 互動/ 管理畫面狀態/ 呼叫 View 刷�
 &lt;li>這會造成對模型的不信任，進而寫出一些防禦性程式設計。&lt;/li>
 &lt;li>引入值物件(Value Object)來確保不變性與自我驗證(即不正確就不應該存在)。&lt;/li>
 &lt;/ul>
-&lt;p>以上這幾點是筆者比較有感的。&lt;/p>
+&lt;p>以上這幾點是我比較有感的。&lt;/p>
 &lt;h2 id="概述與想法">概述與想法&lt;/h2>
 &lt;p>Domain-Driven Design (DDD)，出自 Eric Evans 2003 年出版的一本書，以領域模型為中心來進行系統的分析設計。不是架構也不是技術，是一種方法論，可以搭配不同類型的架構來實現&lt;/p>
 &lt;ul>
@@ -548,7 +548,7 @@ A: 監聽 View 事件/ 與 Service 互動/ 管理畫面狀態/ 呼叫 View 刷�
 &lt;li>Clean Architecture (以下稱 CA )&lt;/li>
 &lt;li>Command Query Responsibility Segregation (CQRS)&lt;/li>
 &lt;/ul>
-&lt;p>原著中是使用 Layered Architecture 的架構作為示範，但該章的重點是在隔離 Domain，在 Google 的時候有所謂 &amp;ldquo;DDD 架構圖&amp;rdquo;，但筆者覺得不太精確，因為 DDD 主要的發力點是在 Domain，應該稱作 &amp;ldquo;OO架構以DDD實作Domain&amp;rdquo; 會比較合適。&lt;/p></description></item><item><title>Software Design - Pattern - Data Transfer Object (DTO)</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---data-transfer-object-dto/</link><pubDate>Sun, 11 Dec 2022 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---data-transfer-object-dto/</guid><description>&lt;h2 id="什麼是-dto">什麼是 DTO？&lt;/h2>
+&lt;p>原著中是使用 Layered Architecture 的架構作為示範，但該章的重點是在隔離 Domain，在 Google 的時候有所謂 &amp;ldquo;DDD 架構圖&amp;rdquo;，但我覺得不太精確，因為 DDD 主要的發力點是在 Domain，應該稱作 &amp;ldquo;OO架構以DDD實作Domain&amp;rdquo; 會比較合適。&lt;/p></description></item><item><title>Software Design - Pattern - Data Transfer Object (DTO)</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---data-transfer-object-dto/</link><pubDate>Sun, 11 Dec 2022 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---data-transfer-object-dto/</guid><description>&lt;h2 id="什麼是-dto">什麼是 DTO？&lt;/h2>
 &lt;p>Data Transfer Object (數據傳輸對象) 是定義如何在應用程序之間發送數據的對象。它僅用於發送和接收數據，本身不包含任何業務邏輯。&lt;/p>
 &lt;h2 id="為什麼使用-dto">為什麼使用 DTO？&lt;/h2>
 &lt;h3 id="輕鬆收發">輕鬆收發&lt;/h3>
@@ -591,7 +591,7 @@ A: 監聽 View 事件/ 與 Service 互動/ 管理畫面狀態/ 呼叫 View 刷�
 &lt;li>&lt;a href="https://annulusgames-lab.blogspot.com/2022/12/unity-ui-mvrp.html">【Unity】MV(R)Pパターンのすすめ&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.pragmaticcoding.ca/javafx/Frameworks/">Unravelling MVC, MVP and MVVM&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;p>以下則對筆者實作中比較常用的 MVP 多做一些討論&lt;/p>
+&lt;p>以下則對我實作中比較常用的 MVP 多做一些討論&lt;/p>
 &lt;h2 id="關注點責任">關注點(責任)&lt;/h2>
 &lt;p>在 MVP 的構成下分成三個部分&lt;/p>
 &lt;ul>
@@ -600,7 +600,7 @@ A: 監聽 View 事件/ 與 Service 互動/ 管理畫面狀態/ 呼叫 View 刷�
 &lt;li>Presenter: View 和 Model 之間的中介。&lt;/li>
 &lt;/ul>
 &lt;h3 id="passive-view">Passive View&lt;/h3>
-&lt;p>這是 MVP 的一種實作風格，也是筆者主要使用的風格。&lt;/p>
+&lt;p>這是 MVP 的一種實作風格，也是我主要使用的風格。&lt;/p>
 &lt;ul>
 &lt;li>Presenter 對 View 有完全控制權&lt;/li>
 &lt;li>View 提供方法與事件給 Presenter 使用&lt;/li>

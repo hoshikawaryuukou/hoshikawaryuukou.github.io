@@ -110,10 +110,10 @@
 &lt;li>在內部確實使用了名為 Samples 的文件夾 (沒有 Samples~ )&lt;/li>
 &lt;li>在推送新包版本之前通過腳本對其進行重命名(透過 CI )&lt;/li>
 &lt;/ul>
-&lt;p>&lt;a href="https://medium.com/openupm/how-to-maintain-upm-package-part-1-7b4daf88d4c4">OpenUPM&lt;/a> 的作者也是使用類似的工作流，總之筆者也調整為上述的方式。&lt;/p>
+&lt;p>&lt;a href="https://medium.com/openupm/how-to-maintain-upm-package-part-1-7b4daf88d4c4">OpenUPM&lt;/a> 的作者也是使用類似的工作流，總之我也調整為上述的方式。&lt;/p>
 &lt;h2 id="透過-github-actions-workflow-調整目錄名">透過 GitHub Actions Workflow 調整目錄名&lt;/h2>
-&lt;p>筆者不熟 GitHub Actions/ YAML/ 文件操作，但這種初階的操作就交由 chatgpt 代勞，幫我省去不少實驗成本。這裡的操作只是堪用，應該有更好的方式。&lt;/p>
-&lt;p>以下是筆者要求的條件&lt;/p>
+&lt;p>我不熟 GitHub Actions/ YAML/ 文件操作，但這種初階的操作就交由 chatgpt 代勞，幫我省去不少實驗成本。這裡的操作只是堪用，應該有更好的方式。&lt;/p>
+&lt;p>以下是我要求的條件&lt;/p>
 &lt;ul>
 &lt;li>想透過 GitHub Actions 中的 workflow 完成&lt;/li>
 &lt;li>如果 forPackage 分支已存在則將其刪除&lt;/li>

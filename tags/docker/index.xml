@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docker on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/docker/</link><description>Recent content in Docker on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sat, 29 Jul 2023 20:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml"/><item><title>Docker - Note</title><link>https://HoshikawaRyuukou.github.io/drafts/x/docker---note/</link><pubDate>Sat, 29 Jul 2023 20:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/drafts/x/docker---note/</guid><description>&lt;h2 id="安裝">安裝&lt;/h2>
-&lt;p>筆者的環境是 Windows 10 Home 版，所以需要做些額外設定&lt;/p>
+&lt;p>我的環境是 Windows 10 Home 版，所以需要做些額外設定&lt;/p>
 &lt;ul>
 &lt;li>參考官網 &lt;a href="https://docs.docker.com/desktop/install/windows-install/">https://docs.docker.com/desktop/install/windows-install/&lt;/a>&lt;/li>
 &lt;li>到 控制台\程式集\程式和功能 -&amp;gt; 開啟或關閉 Windows 功能&lt;/li>

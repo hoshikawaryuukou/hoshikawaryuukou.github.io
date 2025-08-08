@@ -180,6 +180,9 @@
 &lt;li>基於參考圖二次創作(風格遷移)&lt;/li>
 &lt;/ul>
 &lt;h2 id="model-context-protocolmcp">Model Context Protocol（MCP）&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.bilibili.com/video/BV1XFhPzoEBx">Function Calling、MCP和A2A的核心原理与区别&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;p>模型上下文協議（Model Context Protocol，MCP）由 Anthropic 提出，是一種開放標準，用來規範 AI 模型與外部工具、資料來源的互動方式。&lt;/p></description></item><item><title>AI - Art - Stable diffusion - Quick Start</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---quick-start/</link><pubDate>Mon, 17 Feb 2025 20:40:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---quick-start/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
 &lt;ul>
 &lt;li>⚠️ 這是一篇新手導向的筆記，目的不在於精準解釋。&lt;/li>
