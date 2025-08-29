@@ -1,386 +1,130 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Art on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/art/</link><description>Recent content in Art on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Fri, 13 Jun 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/art/index.xml" rel="self" type="application/rss+xml"/><item><title>AI - Art - Stable diffusion - Favorite Prompts</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---favorite-prompts/</link><pubDate>Fri, 13 Jun 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---favorite-prompts/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
-&lt;ul>
-&lt;li>⚠️ 不同的模型對提示詞的理解會有所不同，選對模型才能產生最好的效果。&lt;/li>
-&lt;li>⚠️ 有時提示詞衝突會導致畫面崩壞無法收斂。&lt;/li>
-&lt;li>⚠️ 盡量不讓權重過 1.5。&lt;/li>
-&lt;/ul>
-&lt;h2 id="prompts---artists">Prompts - Artists&lt;/h2>
-&lt;ul>
-&lt;li>權重超過 0.6 比較穩定(但有些太高會有點 overfitting)&lt;/li>
-&lt;li>增加一些插畫風格 : rella&lt;/li>
-&lt;/ul>
-&lt;h2 id="prompts---positive">Prompts - Positive&lt;/h2>
-&lt;h3 id="body">Body&lt;/h3>
-&lt;ul>
-&lt;li>年齡向上調整 : aged up&lt;/li>
-&lt;li>高頭身 : long legs, tall female&lt;/li>
-&lt;li>臉完全朝上 : face up&lt;/li>
-&lt;li>往上看而臉被順勢帶起 : looking up&lt;/li>
-&lt;/ul>
-&lt;h2 id="prompts---negative">Prompts - Negative&lt;/h2>
-&lt;h3 id="accessories">Accessories&lt;/h3>
-&lt;ul>
-&lt;li>用於移除一切頭部裝飾 : headwear&lt;/li>
-&lt;/ul></description></item><item><title>AI - Art - Stable diffusion - Inpainting</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---inpainting/</link><pubDate>Thu, 12 Jun 2025 20:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---inpainting/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
-&lt;p>目前並未特別使用進階修圖技巧。若圖片瑕疵可透過簡單塗色與描邊處理，即會嘗試修復。&lt;/p>
-&lt;p>若瑕疵較嚴重，則多半直接放棄並重新生成 —— 通常下一張會更好。&lt;/p>
-&lt;h2 id="modification">Modification&lt;/h2>
-&lt;ul>
-&lt;li>圖片先送入 &lt;code>img2img&lt;/code>。&lt;/li>
-&lt;li>簡單處理：使用 &lt;code>Inpaint sketch&lt;/code>（注意不要在 sketch 模式下直接生成）。&lt;/li>
-&lt;li>複雜處理：使用 &lt;code>photopea-embed&lt;/code> 進行手動遮罩或編輯。&lt;/li>
-&lt;li>完成後再送回 &lt;code>Inpaint&lt;/code> 重新生成。&lt;/li>
-&lt;/ul>
-&lt;h2 id="generation">Generation&lt;/h2>
-&lt;ul>
-&lt;li>採樣方法（Sampling method）：&lt;code>DPM++ 2M&lt;/code>&lt;/li>
-&lt;li>時間表類型（Schedule type）：&lt;code>Karras&lt;/code>&lt;/li>
-&lt;li>去雜強度（Denoising strength）建議範圍：
-&lt;ul>
-&lt;li>&lt;code>0.2 ~ 0.3&lt;/code>：保留原圖整體色彩結構，僅微調瑕疵與過渡區域。&lt;/li>
-&lt;li>&lt;code>0.3 ~ 0.5&lt;/code>：適度改變結構與細節，適合嘗試新的構圖或調整 seed 取得更好結果。&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul></description></item><item><title>Art - Design - Note</title><link>https://HoshikawaRyuukou.github.io/posts/art---design---note/</link><pubDate>Wed, 04 Jun 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/art---design---note/</guid><description>&lt;h2 id="aesthetic">Aesthetic&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://space.bilibili.com/4971601/lists?sid=5379154">合集·基础审美三部曲&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="conceptual-design">Conceptual Design&lt;/h2>
-&lt;p>概念設計是用來探索、表達和傳達創作初期核心想法的視覺化過程。&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://www.bilibili.com/video/BV1aVECzMEqS">概念设计师Leo Li：概念设计最大误区：刚入门就一味追求风格 | 齿轮视界&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>AI - Art - Stable diffusion - Favorite Models</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---favorite-models/</link><pubDate>Fri, 16 May 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---favorite-models/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
-&lt;ul>
-&lt;li>sd 1.5 系列基本上不使用了&lt;/li>
-&lt;li>Illustrious 是目前的使用主力&lt;/li>
-&lt;/ul>
-&lt;h2 id="checkpoints">Checkpoints&lt;/h2>
-&lt;p>底模基本分成兩種&lt;/p>
-&lt;ul>
-&lt;li>無風格模型 : lora 會很大程度影響出圖風格&lt;/li>
-&lt;li>風格模型 : 模型本身有一定程度的風格，常用於抵消一些有瑕疵的 lora&lt;/li>
-&lt;/ul>
-&lt;h3 id="wai-nsfw-illustrious-sdxl">WAI-NSFW-illustrious-SDXL&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://civitai.com/models/827184?modelVersionId=1490781">link&lt;/a>&lt;/li>
-&lt;li>無風格模型&lt;/li>
-&lt;li>目前使用版本 14&lt;/li>
-&lt;li>出圖速度較快，適合搭配優良 lora 使用&lt;/li>
-&lt;/ul>
-&lt;h3 id="steincustom">SteinCustom&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://civitai.com/models/1245022?modelVersionId=1669006">link&lt;/a>&lt;/li>
-&lt;li>無風格模型，但能一定程度約束 lora 風格&lt;/li>
-&lt;li>目前使用版本 6&lt;/li>
-&lt;li>實測版本 7 風格有變得偏 pony 不太喜歡&lt;/li>
-&lt;li>實測版本 8 光影效果表現不好&lt;/li>
-&lt;li>&lt;strong>年齡&lt;/strong> 控制相對有效 prompts (&lt;code>age up, meature female&lt;/code>)&lt;/li>
-&lt;/ul>
-&lt;h2 id="lora---styles">Lora - Styles&lt;/h2>
-&lt;ul>
-&lt;li>大部分的底模都有人物偏萌系/幼態的問題&lt;/li>
-&lt;/ul>
-&lt;h3 id="solo-leveling-anime-style">Solo Leveling Anime Style&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://civitai.com/models/1137411/solo-leveling-anime-style">link&lt;/a>&lt;/li>
-&lt;li>增強 臉部銳利度&lt;/li>
-&lt;li>增強 較長的體態&lt;/li>
-&lt;li>增強 平塗效果&lt;/li>
-&lt;li>⚠️頸部附近的 hard shadow 有時會過於明顯，需調控 prompts (&lt;code>anime coloring&lt;/code>) 權重&lt;/li>
-&lt;/ul>
-&lt;h3 id="violet-evergarden-anime-style">Violet Evergarden Anime Style&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://civitai.com/models/1334756/violet-evergarden-anime-style">link&lt;/a>&lt;/li>
-&lt;li>增強 較小的眼睛&lt;/li>
-&lt;li>增強 平塗效果&lt;/li>
-&lt;/ul>
-&lt;h2 id="prompts---artists">Prompts - Artists&lt;/h2>
-&lt;ul>
-&lt;li>權重超過 0.6 比較穩定(但有些太高會有點 overfitting)&lt;/li>
-&lt;li>rella : 增加一些插畫風格&lt;/li>
-&lt;/ul>
-&lt;h2 id="prompts---positive">Prompts - Positive&lt;/h2>
-&lt;ul>
-&lt;li>looking up : 往上看而臉被順勢帶起&lt;/li>
-&lt;li>face up : 用於臉完全朝上&lt;/li>
-&lt;/ul>
-&lt;h2 id="prompts---negative">Prompts - Negative&lt;/h2>
-&lt;ul>
-&lt;li>headwear : 用於移除一切頭部裝飾&lt;/li>
-&lt;/ul></description></item><item><title>Art - Photopea - Note</title><link>https://HoshikawaRyuukou.github.io/posts/art---photopea---note/</link><pubDate>Thu, 27 Mar 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/art---photopea---note/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
-&lt;p>Photopea 是一款免費線上圖像編輯工具，介面與 Photoshop 相似，支援 PSD、XD、Sketch 等多種檔案格式。使用者無需安裝軟體，即可在瀏覽器中進行圖層編輯、濾鏡處理與設計排版，非常適合快速修圖與設計需求。&lt;/p>
-&lt;h2 id="cases">Cases&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://ushiro-mae.com/photopea-replace-color/">【Photopea】色を置き換える方法&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>AI - Art - Stable diffusion - Quick Start</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---quick-start/</link><pubDate>Mon, 17 Feb 2025 20:40:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---quick-start/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
-&lt;ul>
-&lt;li>⚠️ 這是一篇新手導向的筆記，目的不在於精準解釋。&lt;/li>
-&lt;li>⚠️ 環境配置請參考 &lt;code>AI - Stable diffusion - Environment&lt;/code>&lt;/li>
-&lt;li>⚠️ &lt;strong>Checkpoint&lt;/strong> 一般會提供推薦的參數設置，建議依據模型的特性調整，以獲得最佳效果。&lt;/li>
-&lt;/ul>
-&lt;h2 id="resources">Resources&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://civitai.com/">Civitai: The Home of Open-Source Generative AI&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="checkpoint">Checkpoint&lt;/h2>
-&lt;p>決定生成圖片的基礎風格。&lt;/p>
-&lt;ul>
-&lt;li>寫實風格 (Photorealistic)&lt;/li>
-&lt;li>動漫風 (Anime)&lt;/li>
-&lt;li>油畫風格 (Painting)&lt;/li>
-&lt;li>科幻賽博龐克 (Cyberpunk)&lt;/li>
-&lt;li>像素風格 (Pixel Art)&lt;/li>
-&lt;/ul>
-&lt;h2 id="lora">LoRA&lt;/h2>
-&lt;p>輕量化微調模型可額外載入來增強特定風格或角色。&lt;/p>
-&lt;ul>
-&lt;li>簡單的比喻來形容 LoRA 模型，那就是「濾鏡」&lt;/li>
-&lt;/ul>
-&lt;h2 id="embedding">Embedding&lt;/h2>
-&lt;p>增強對某些 Prompt 的理解。&lt;/p>
-&lt;h2 id="vae">VAE&lt;/h2>
-&lt;p>提高圖片細節與顏色準確度。&lt;/p>
-&lt;ul>
-&lt;li>📝 部分 Checkpoints 會內建（Baked）VAE，如使用外部 VAE，請確認是否需要覆蓋內建版本。&lt;/li>
-&lt;li>⚠️ 如果發現圖片的型都對，但只有顏色壞掉，通常都是 VAE 的問題。&lt;/li>
-&lt;/ul>
-&lt;h2 id="sampler--schedule">Sampler + Schedule&lt;/h2>
-&lt;p>Sampler 是從雜訊圖到成品的&lt;strong>去噪算法&lt;/strong>。&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>快速收斂&lt;/strong> – 能迅速找到解答，適合驗證創意和想法。&lt;/li>
-&lt;li>&lt;strong>高品質收斂&lt;/strong> – 需較長時間，但能提供更精確結果。&lt;/li>
-&lt;li>&lt;strong>無固定收斂&lt;/strong> – 無明確收斂條件，為創新提供更大空間。&lt;/li>
-&lt;/ul>
-&lt;p>Schedule 是從雜訊圖到成品的&lt;strong>去噪程度&lt;/strong>。&lt;/p></description></item><item><title>AI - Art - Stable diffusion - Extensions</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---extensions/</link><pubDate>Mon, 10 Feb 2025 22:16:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---extensions/</guid><description>&lt;h2 id="a1111-sd-webui-tagcomplete">a1111-sd-webui-tagcomplete&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/DominikDoom/a1111-sd-webui-tagcomplete">DominikDoom/a1111-sd-webui-tagcomplete&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="sd-webui-prompt-all-in-one">sd-webui-prompt-all-in-one&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/Physton/sd-webui-prompt-all-in-one">Physton/sd-webui-prompt-all-in-one&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="adetailer">adetailer&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/Bing-su/adetailer">Bing-su/adetailer&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="sd-webui-photopea-embed">sd-webui-photopea-embed&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/yankooliveira/sd-webui-photopea-embed">yankooliveira/sd-webui-photopea-embed&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>AI - Art - Stable diffusion - GUI</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---gui/</link><pubDate>Mon, 10 Feb 2025 21:16:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---gui/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
-&lt;p>建議新手直接從 Forge 入門即可&lt;/p>
-&lt;h2 id="guide">Guide&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://www.bilibili.com/video/BV1HDBZYBEjK">Comfyui官方客户端 desktop桌面版来了&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=bbuspQWHt9w">AI 繪圖的終極沙盒 ComfyUI 快速上手 #1 無視一切規則，AI 神級繪圖工具還給你全方位掌控權！&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=g3COb2joy1A">AI 繪圖的終極沙盒 ComfyUI 快速上手 #2 - LoRA 微調模型 &amp;amp; AI 影像畫質提升&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=rMlZ2Yaw3Ko">AI 繪圖的終極沙盒 ComfyUI 快速上手 #3 - ControlNet 精確構圖技巧&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="automatic1111">&lt;a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">Automatic1111&lt;/a>&lt;/h2>
-&lt;p>是最早推出的圖形使用者介面之一，為使用者提供了直觀且功能豐富的操作平台。由於其開源性質和強大的社群支持，許多初學者和開發者選擇從 Automatic1111 入手，逐步熟悉 Stable Diffusion 的各項功能和應用。&lt;/p>
-&lt;p>
- &lt;img src="https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/refs/heads/master/screenshot.png" alt="Automatic1111 Screenshot">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Art on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/art/</link><description>Recent content in Art on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 12 Jun 2025 10:00:00 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/art/index.xml" rel="self" type="application/rss+xml"/><item><title>AI - Art - Stable Diffusion - Inpainting</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---inpainting/</link><pubDate>Thu, 12 Jun 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---inpainting/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;目前並未特別使用進階修圖技巧。若圖片瑕疵可透過簡單塗色與描邊處理，即會嘗試修復。&lt;/p&gt;
+&lt;p&gt;若瑕疵較嚴重，則多半直接放棄並重新生成 —— 通常下一張會更好。&lt;/p&gt;
+&lt;h2 id="modification"&gt;Modification&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;圖片先送入 &lt;code&gt;img2img&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;簡單處理：使用 &lt;code&gt;Inpaint sketch&lt;/code&gt;（注意不要在 sketch 模式下直接生成）。&lt;/li&gt;
+&lt;li&gt;複雜處理：使用 &lt;code&gt;photopea-embed&lt;/code&gt; 進行手動遮罩或編輯。&lt;/li&gt;
+&lt;li&gt;完成後再送回 &lt;code&gt;Inpaint&lt;/code&gt; 重新生成。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="generation"&gt;Generation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;採樣方法（Sampling method）：&lt;code&gt;DPM++ 2M&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;時間表類型（Schedule type）：&lt;code&gt;Karras&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;去雜強度（Denoising strength）建議範圍：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;0.2 ~ 0.3&lt;/code&gt;：保留原圖整體色彩結構，僅微調瑕疵與過渡區域。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;0.3 ~ 0.5&lt;/code&gt;：適度改變結構與細節，適合嘗試新的構圖或調整 seed 取得更好結果。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>AI - Art - Stable Diffusion - Quick Start</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---quick-start/</link><pubDate>Mon, 17 Feb 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---quick-start/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;⚠️ 這是一篇新手導引，目的不在於精準解釋。&lt;/li&gt;
+&lt;li&gt;⚠️ &lt;strong&gt;Checkpoint&lt;/strong&gt; 一般會提供推薦的參數設置，建議依據模型的特性調整，以獲得最佳效果。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="resources"&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://civitai.com/"&gt;Civitai: The Home of Open-Source Generative AI&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="checkpoint"&gt;Checkpoint&lt;/h2&gt;
+&lt;p&gt;決定生成圖片的基礎風格。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;寫實風格 (Photorealistic)&lt;/li&gt;
+&lt;li&gt;動漫風 (Anime)&lt;/li&gt;
+&lt;li&gt;油畫風格 (Painting)&lt;/li&gt;
+&lt;li&gt;科幻賽博龐克 (Cyberpunk)&lt;/li&gt;
+&lt;li&gt;像素風格 (Pixel Art)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="lora"&gt;LoRA&lt;/h2&gt;
+&lt;p&gt;輕量化微調模型可額外載入來增強特定風格或角色。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;簡單的比喻來形容 LoRA 模型，那就是「濾鏡」&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="embedding"&gt;Embedding&lt;/h2&gt;
+&lt;p&gt;增強對某些 Prompt 的理解。&lt;/p&gt;
+&lt;h2 id="vae"&gt;VAE&lt;/h2&gt;
+&lt;p&gt;提高圖片細節與顏色準確度。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;📝 部分 Checkpoints 會內建（Baked）VAE，如使用外部 VAE，請確認是否需要覆蓋內建版本。&lt;/li&gt;
+&lt;li&gt;⚠️ 如果發現圖片的型都對，但只有顏色壞掉，通常都是 VAE 的問題。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="resolutions"&gt;Resolutions&lt;/h2&gt;
+&lt;p&gt;不同種類的 Checkpoints 建議的解析度會有所不同&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SD 1.5
+&lt;ul&gt;
+&lt;li&gt;512 x 512 : 1:1&lt;/li&gt;
+&lt;li&gt;512 X 768 : 2:3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SDXL
+&lt;ul&gt;
+&lt;li&gt;640 x 1536 = 5:12&lt;/li&gt;
+&lt;li&gt;768 x 1344 = 4:7&lt;/li&gt;
+&lt;li&gt;832 x 1216 = 13:19&lt;/li&gt;
+&lt;li&gt;896 x 1152 = 7:9&lt;/li&gt;
+&lt;li&gt;1024 x 1024 = 1:1&lt;/li&gt;
+&lt;li&gt;1024 x 1536 = 2:3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="sampler--schedule"&gt;Sampler + Schedule&lt;/h2&gt;
+&lt;p&gt;Sampler 是從雜訊圖到成品的&lt;strong&gt;去噪算法&lt;/strong&gt;。&lt;/p&gt;</description></item><item><title>AI - Art - Stable Diffusion - Env</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---env/</link><pubDate>Mon, 10 Feb 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---env/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;⚠️ 以下皆須安裝指定版本不可貿然升級。&lt;/p&gt;
+&lt;p&gt;目前產圖只使用到 Forge + SDXL 。&lt;/p&gt;
+&lt;h2 id="local-deployment"&gt;Local deployment&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;nvidia 驅動更新至最新&lt;/li&gt;
+&lt;li&gt;檢查顯卡支援的最高 cuda 支援: &lt;code&gt;nvidia-smi&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;安裝 &lt;a href="https://developer.nvidia.com/cuda-12-1-0-download-archive"&gt;CUDA 12.1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;顯示 cuda 編譯工具的版本信息: &lt;code&gt;nvcc --version&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;安裝 [&lt;a href="https://github.com/lllyasviel/stable-diffusion-webui-forge"&gt;stable-diffusion-webui-forge&lt;/a&gt;]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="google-colab"&gt;Google Colab&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/gutris1/segsmaker"&gt;gutris1/segsmaker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;配置 Civitai API Key
+&lt;ul&gt;
+&lt;li&gt;Civitai 網站 Menu &amp;gt; Account Settings(齒輪 icon) &amp;gt; API Keys&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="extensions"&gt;Extensions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/DominikDoom/a1111-sd-webui-tagcomplete"&gt;DominikDoom/a1111-sd-webui-tagcomplete&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/Physton/sd-webui-prompt-all-in-one"&gt;Physton/sd-webui-prompt-all-in-one&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/Bing-su/adetailer"&gt;Bing-su/adetailer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/yankooliveira/sd-webui-photopea-embed"&gt;yankooliveira/sd-webui-photopea-embed&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>AI - Art - Stable Diffusion</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion/</link><pubDate>Thu, 06 Feb 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;目前 Stable Diffusion 只拿來自娛自樂 😃。&lt;/p&gt;
+&lt;h2 id="core-working-principles"&gt;Core Working Principles&lt;/h2&gt;
+&lt;p&gt;Stable Diffusion 主要包含三個核心技術：&lt;/p&gt;
+&lt;h3 id="前向擴散forward-diffusion"&gt;前向擴散（Forward Diffusion）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;先從大量圖片資料集中學習圖片特徵。&lt;/li&gt;
+&lt;li&gt;然後，系統會逐步加入高斯雜訊（Gaussian Noise），使圖片變得模糊、無法辨識。&lt;/li&gt;
+&lt;li&gt;最後，這個過程會讓圖片變成完全的純雜訊（random noise）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="反向去噪reverse-denoising--u-net"&gt;反向去噪（Reverse Denoising / U-Net）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Stable Diffusion 學習如何逆向去噪，一步步從雜訊還原出清晰的圖片。&lt;/li&gt;
+&lt;li&gt;這部分的關鍵是 U-Net 神經網路架構，它可以在多層次的細節中，捕捉圖片的各種特徵。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="文本引導text-conditioning--clip"&gt;文本引導（Text Conditioning / CLIP）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Stable Diffusion 之所以能生成符合指令的圖片，是因為它使用了CLIP（Contrastive Language-Image Pretraining）。&lt;/li&gt;
+&lt;li&gt;CLIP 會將文字轉換成向量表示（latent embeddings），這些向量再指導模型生成符合描述的圖像。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="diagram"&gt;Diagram&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://developer.nvidia.com/blog/improving-diffusion-models-as-an-alternative-to-gans-part-1/"&gt;Improving Diffusion Models as an Alternative To GANs, Part 1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+ &lt;img src="https://developer-blogs.nvidia.com/wp-content/uploads/2022/04/Generation-with-Diffusion-Models.png" alt="123"&gt;
 
-&lt;/p>
-&lt;h2 id="forge">&lt;a href="https://github.com/lllyasviel/stable-diffusion-webui-forge">Forge&lt;/a>&lt;/h2>
-&lt;p>基於 Automatic1111 進行了多項優化&lt;/p>
-&lt;ul>
-&lt;li>記憶體控制優化且推理速度提升&lt;/li>
-&lt;li>算法優化&lt;/li>
-&lt;li>新增取樣器&lt;/li>
-&lt;li>簡化的命令標誌&lt;/li>
-&lt;/ul>
-&lt;p>介面與 Automatic1111 高度相似，基本能無痛從 Automatic1111 轉移。&lt;/p>
-&lt;pre tabindex="0">&lt;code>set COMMANDLINE_ARGS=--xformers --no-half-vae --medvram
-&lt;/code>&lt;/pre>&lt;h2 id="comfyui">&lt;a href="https://github.com/comfyanonymous/ComfyUI">ComfyUI&lt;/a>&lt;/h2>
-&lt;p>是一個開源的節點式圖形介面，允許使用者通過直觀的節點系統設計和執行複雜的工作流程。&lt;/p>
-&lt;p>
- &lt;img src="https://github.com/user-attachments/assets/7ccaf2c1-9b72-41ae-9a89-5688c94b7abe" alt="ComfyUI Screenshot">
-
-&lt;/p></description></item><item><title>AI - Art - Stable diffusion - Environment</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---environment/</link><pubDate>Mon, 10 Feb 2025 20:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---environment/</guid><description>&lt;h2 id="local-deployment">Local deployment&lt;/h2>
-&lt;p>⚠️ 以下皆須安裝指定版本不可貿然升級&lt;/p>
-&lt;ul>
-&lt;li>nvidia 驅動更新至最新&lt;/li>
-&lt;li>cuda: &lt;a href="https://developer.nvidia.com/cuda-12-1-0-download-archive">CUDA 12.1&lt;/a>
-&lt;ul>
-&lt;li>檢查顯卡支援的最高 cuda 支援: &lt;code>nvidia-smi&lt;/code>&lt;/li>
-&lt;li>顯示CUDA編譯工具的版本信息: &lt;code>nvcc --version&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Python: &lt;a href="https://www.python.org/ftp/python/3.10.11/python-3.10.11-amd64.exe">Python 3.10.11&lt;/a>
-&lt;ul>
-&lt;li>&lt;code>python --version&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Git: &lt;a href="https://git-fork.com/">Fork&lt;/a>&lt;/li>
-&lt;li>GUI: &lt;a href="https://github.com/lllyasviel/stable-diffusion-webui-forge">lllyasviel/stable-diffusion-webui-forge&lt;/a>&lt;/li>
-&lt;li>clone 上述專案，執行 &lt;code>webui.bat&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;h2 id="google-colab">Google Colab&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/gutris1/segsmaker">gutris1/segsmaker&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/cagliostrolab/forge-colab">cagliostrolab/forge-colab&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="civitai-api-key">Civitai API Key&lt;/h2>
-&lt;blockquote>
-&lt;p>Menu &amp;gt; Account Settings(齒輪 icon) &amp;gt; API Keys&lt;/p>&lt;/blockquote></description></item><item><title>AI - Art - Stable diffusion - Overview</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---overview/</link><pubDate>Thu, 06 Feb 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---overview/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
-&lt;p>建議閱讀順序&lt;/p>
-&lt;ul>
-&lt;li>AI - Stable diffusion - Environment&lt;/li>
-&lt;li>AI - Stable diffusion - GUI&lt;/li>
-&lt;li>AI - Stable diffusion - Quick Start&lt;/li>
-&lt;li>AI - Stable diffusion - Extensions&lt;/li>
-&lt;li>AI - Stable diffusion - CheckPoints&lt;/li>
-&lt;li>AI - Stable diffusion - Resources&lt;/li>
-&lt;/ul>
-&lt;h2 id="core-working-principles">Core Working Principles&lt;/h2>
-&lt;p>Stable Diffusion 主要包含三個核心技術：&lt;/p>
-&lt;h3 id="前向擴散forward-diffusion">前向擴散（Forward Diffusion）&lt;/h3>
-&lt;ul>
-&lt;li>先從大量圖片資料集中學習圖片特徵。&lt;/li>
-&lt;li>然後，系統會逐步加入高斯雜訊（Gaussian Noise），使圖片變得模糊、無法辨識。&lt;/li>
-&lt;li>最後，這個過程會讓圖片變成完全的純雜訊（random noise）。&lt;/li>
-&lt;/ul>
-&lt;h3 id="反向去噪reverse-denoising--u-net">反向去噪（Reverse Denoising / U-Net）&lt;/h3>
-&lt;ul>
-&lt;li>Stable Diffusion 學習如何逆向去噪，一步步從雜訊還原出清晰的圖片。&lt;/li>
-&lt;li>這部分的關鍵是 U-Net 神經網路架構，它可以在多層次的細節中，捕捉圖片的各種特徵。&lt;/li>
-&lt;/ul>
-&lt;h3 id="文本引導text-conditioning--clip">文本引導（Text Conditioning / CLIP）&lt;/h3>
-&lt;ul>
-&lt;li>Stable Diffusion 之所以能生成符合指令的圖片，是因為它使用了CLIP（Contrastive Language-Image Pretraining）。&lt;/li>
-&lt;li>CLIP 會將文字轉換成向量表示（latent embeddings），這些向量再指導模型生成符合描述的圖像。&lt;/li>
-&lt;/ul>
-&lt;h3 id="diagram">Diagram&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://developer.nvidia.com/blog/improving-diffusion-models-as-an-alternative-to-gans-part-1/">Improving Diffusion Models as an Alternative To GANs, Part 1&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;p>
- &lt;img src="https://developer-blogs.nvidia.com/wp-content/uploads/2022/04/Generation-with-Diffusion-Models.png" alt="123">
-
-&lt;/p></description></item><item><title>AI - Art - Stable diffusion - Resources</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---resources/</link><pubDate>Wed, 05 Feb 2025 20:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---resources/</guid><description>&lt;h2 id="community">Community&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://civitai.com/">Civitai&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.qpipi.com/">Qpipi_AI绘画社区和SD模型&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="channel">Channel&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://www.hoshikou-ailabo.net/">星光のAIラボ&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://sorenuts.jp/">SoreNuts&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="prompts">Prompts&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://blog.256pages.com/sdxl-prompts-advanced-guide-1/">SDXL Prompts 進階指南 (1) - 鏡頭視角距離&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://blog.256pages.com/stable-diffusion-prompt-distance/">Stable Diffusion 用 prompt 控制鏡頭距離及角度&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://civitai.com/articles/8804/illustrious-xl-noobai-xl-hairstyles">Illustrious XL / NoobAI XL Hairstyles&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="gallery">Gallery&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://pixai.art/">PixAI.Art&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://aibooru.online/">AIBooru&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://civitai.com/user/Lizardon1025/images">Lizardon1025&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://civitai.com/user/pepegles/images">pepegles&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="artists">Artists&lt;/h2>
-&lt;ul>
-&lt;li>rella&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;ul>
-&lt;li>&lt;a href="https://arca.live/b/aiart/73560719">artist list&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://danbooru.donmai.us/artists">Artists | Danbooru&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=akitetsu">Akitetsu | Danbooru&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=sakamoto_masaru">Sakamoto Masaru | Danbooru&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=fight_yoghurt">Fight Yoghurt | Danbooru&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=reia_76">Reia 76 | Danbooru&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://danbooru.donmai.us/posts?page=1&amp;amp;tags=kagto_%28alterna%29">Kagto (Alterna) | Danbooru&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://gelbooru.com/index.php?page=post&amp;amp;s=list&amp;amp;tags=mo_%28kireinamo%29">mo (kireinamo) | Gelbooru&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://danbooru.donmai.us/posts?page=4&amp;amp;tags=happoubi_jin">Happoubi Jin | Danbooru&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://danbooru.donmai.us/posts?page=3&amp;amp;tags=ohisashiburi">Ohisashiburi | Danbooru&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=shirotaka_%285choume%29">Shirotaka (5Choume) | Danbooru&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=rokuwata_tomoe">Rokuwata Tomoe | Danbooru&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=fight_yoghurt">Fight Yoghurt | Danbooru&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=hidis0086">Hidis0086 | Danbooru&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://danbooru.donmai.us/posts?page=2&amp;amp;tags=ulrich_%28tagaragakuin%29">Ulrich (Tagaragakuin) | Danbooru&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=haimura_kiyotaka">Haimura Kiyotaka | Danbooru&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;ul>
-&lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=qtian">Qtian | Danbooru&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://danbooru.donmai.us/posts?tags=zanya_000">Zanya 000 | Danbooru&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>AI - Art - Stable diffusion - CheckPoints</title><link>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---checkpoints/</link><pubDate>Tue, 04 Feb 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---art---stable-diffusion---checkpoints/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
-&lt;ul>
-&lt;li>⚠️ 以下主題專注於二次元/動漫風格圖像生成&lt;/li>
-&lt;/ul>
-&lt;h2 id="guide">Guide&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://www.pttweb.cc/bbs/C_Chat/M.1730732828.A.70C">Re: [問題] AI 風格怎麼了嗎？為什麼容易膩？ - 看板C_Chat - PTT網頁版&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="sd15">SD1.5&lt;/h2>
-&lt;p>在性能和穩定性上提升很多，社群迎來爆發式成長。&lt;/p>
-&lt;h3 id="milestoneevents">Milestone/Events&lt;/h3>
-&lt;ol>
-&lt;li>
-&lt;p>&lt;strong>Waifu Diffusion&lt;/strong>：這是一個基於 Stable Diffusion 的模型，專注於生成二次元風格的圖像。該模型使用 Danbooru 資料集進行訓練，適合生成各類動漫風格的圖像。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>NovelAI 模型外洩（NAI）&lt;/strong>：NovelAI 是一個提供 AI 輔助創作的服務平台，其專注於二次元圖像生成的模型曾發生外洩事件。該模型同樣使用 Danbooru 資料集進行訓練。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Anything 系列模型&lt;/strong>：Anything V3 和 V4 是專注於二次元圖像生成的模型，具有較高的生成質量和風格多樣性。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>ChilloutMix&lt;/strong>：這是一個專注於生成寫實風格圖像的模型，能夠生成高品質的寫實人物圖像。&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="resolutions">Resolutions&lt;/h3>
-&lt;ul>
-&lt;li>512 x 512 : 1:1&lt;/li>
-&lt;li>512 X 768 : 2:3&lt;/li>
-&lt;/ul>
-&lt;h2 id="sdxl">SDXL&lt;/h2>
-&lt;p>相比於 SD1.5 在多方面有顯著的提升&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>更大的模型規模&lt;/strong>：SDXL 的參數量遠超 SD1.5，這使其能夠捕捉更複雜的圖像特徵。&lt;/li>
-&lt;li>&lt;strong>更高分辨率&lt;/strong>：SDXL 支持更高分辨率的圖像生成。&lt;/li>
-&lt;li>&lt;strong>雙模型架構&lt;/strong>：SDXL 採用雙模型架構，包含一個基礎模型和一個精煉模型。基礎模型生成初步圖像，精煉模型進一步提升細節和質量，這種分工協作顯著提升了生成效果。&lt;/li>
-&lt;li>&lt;strong>更強的文本理解能力&lt;/strong>：SDXL 在理解複雜提示詞方面表現更好，能更準確地將文本描述轉化為圖像內容，減少誤解和偏差。&lt;/li>
-&lt;/ul>
-&lt;h3 id="milestoneevents-1">Milestone/Events&lt;/h3>
-&lt;ol>
-&lt;li>
-&lt;p>&lt;strong>Pony Diffusion&lt;/strong>：&lt;/p>
-&lt;ul>
-&lt;li>訓練流程有使用審美分級標籤。&lt;/li>
-&lt;li>原版 Pony 生成的結果接近歐美審美。&lt;/li>
-&lt;li>Pony 系明顯缺點用色偏暗偏髒。&lt;/li>
-&lt;li>Pony 在「多人互動」方面與 nsfw 表現很好。&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>NovelAI 3 (NAI3)&lt;/strong>：&lt;/p></description></item><item><title>Art - Drawing - Note</title><link>https://HoshikawaRyuukou.github.io/posts/art---drawing---note/</link><pubDate>Wed, 01 Mar 2023 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/art---drawing---note/</guid><description>&lt;h2 id="新手村">新手村&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=VdLLdRPhvoA">给画画爱好者的入门经验分享，当初有人告诉我该多好！&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=FFTzCkdjkeY">你是哪种握笔？4大绘画握笔法哪种最强 ！？&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="community">Community&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://www.pinterest.com/">Pinterest&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="channel">Channel&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://www.pixiv.net/users/70834530">taco1704&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/@hidechannel2/streams">hide channel【顔と体の描き方講座】&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/@kookiefunk">曲奇放克&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="practice">Practice&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://line-of-action.com/">Line of Action&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="book">Book&lt;/h2>
-&lt;ul>
-&lt;li>ミニキャラの描き方　「ちまっとかわいい」を描く基本＆表現テクニック&lt;/li>
-&lt;/ul>
-&lt;h2 id="分析">分析&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=LWAHZdAQ0To">【舊版獵人】的美術真的強到爆嗎？用插畫家的角度來分析看看。 / HUNTER x HUNTER (1999)&lt;/a>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;/p&gt;
+&lt;h2 id="extras"&gt;Extras&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.pttweb.cc/bbs/C_Chat/M.1730732828.A.70C"&gt;Re: [問題] AI 風格怎麼了嗎？為什麼容易膩？ - 看板C_Chat - PTT網頁版&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

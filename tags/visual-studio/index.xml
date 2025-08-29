@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Visual Studio on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/visual-studio/</link><description>Recent content in Visual Studio on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Tue, 01 Apr 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/visual-studio/index.xml" rel="self" type="application/rss+xml"/><item><title>Visual Studio - Note</title><link>https://HoshikawaRyuukou.github.io/posts/visual-studio---code-style/</link><pubDate>Tue, 01 Apr 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/visual-studio---code-style/</guid><description>&lt;h2 id="editorconfig">EditorConfig&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://learn.microsoft.com/zh-tw/visualstudio/ide/code-styles-and-code-cleanup?view=vs-2022#code-styles-in-editorconfig-files">程式碼樣式選項和程式碼清理 - Visual Studio (Windows) | Microsoft Learn&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h3 id="生成-editorconfig-檔案">生成 .editorconfig 檔案&lt;/h3>
-&lt;blockquote>
-&lt;p>Tools &amp;gt; Options &amp;gt; Text Editor &amp;gt; C# &amp;gt; Code Style &amp;gt; General&lt;/p>&lt;/blockquote></description></item></channel></rss>

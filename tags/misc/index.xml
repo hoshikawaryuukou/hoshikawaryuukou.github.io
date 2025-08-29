@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Misc on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/misc/</link><description>Recent content in Misc on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 28 Aug 2025 15:02:36 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/misc/index.xml" rel="self" type="application/rss+xml"/><item><title>Chat - Misc - Pangu Spacing</title><link>https://HoshikawaRyuukou.github.io/posts/chat---misc---pangu-spacing/</link><pubDate>Thu, 28 Aug 2025 15:02:36 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/chat---misc---pangu-spacing/</guid><description>&lt;h2 id="quick"&gt;Quick&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我總是習慣在中英文之間加個順眼的空白，如今我才知道他有 &lt;strong&gt;盤古之白&lt;/strong&gt; 這名頭。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;「盤古之白」這個概念在英文中通常被稱為 &lt;strong&gt;Pangu spacing&lt;/strong&gt;。這個術語用來描述在中文與半形英文字母、數字或符號之間需要插入的空格，以提高排版的可讀性和美觀性。&lt;/p&gt;
+&lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;定義&lt;/strong&gt;：Pangu spacing 指的是在中文和英文（或數字）之間插入的空格，旨在劈開全形字和半形字之間的混沌，使得文本更易於閱讀。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;排版規範&lt;/strong&gt;：在中英文混排的情況下，通常建議在中文和半形英文字母之間加入空格，例如「當你凝視著 bug，bug 也凝視著你」而不是「當你凝視著bug，bug也凝視著你」。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="extra"&gt;Extra&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/vinta/pangu.js"&gt;GitHub - vinta/pangu.js&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

@@ -1,89 +1,44 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Git on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/git/</link><description>Recent content in Git on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sat, 19 Oct 2024 19:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/git/index.xml" rel="self" type="application/rss+xml"/><item><title>Workflow - Send messages to Telegram via GitHub Actions</title><link>https://HoshikawaRyuukou.github.io/posts/workflow---send-messages-to-telegram-via-github-actions/</link><pubDate>Sat, 19 Oct 2024 19:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow---send-messages-to-telegram-via-github-actions/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
-&lt;p>以下範例為 :&lt;/p>
-&lt;blockquote>
-&lt;p>在 git push 後透過 Github Actions 將 tag + commit 訊息發送到指定的 Telegram 群組&lt;/p>&lt;/blockquote>
-&lt;h2 id="設置-telegram-bot">設置 Telegram Bot&lt;/h2>
-&lt;ul>
-&lt;li>在 Telegram 中搜尋 @BotFather 並建立一個新的 bot，記下 API token。&lt;/li>
-&lt;li>將 bot 加入群組並發送訊息給 bot&lt;/li>
-&lt;li>使用 &lt;code>https://api.telegram.org/bot&amp;lt;YourBotToken&amp;gt;/getUpdates&lt;/code> 來獲取群組 ID。&lt;/li>
-&lt;/ul>
-&lt;h2 id="設置-github-secrets">設置 GitHub Secrets&lt;/h2>
-&lt;p>GitHub 專案中&lt;/p>
-&lt;blockquote>
-&lt;p>Settings -&amp;gt; Security -&amp;gt; Secrets and variables -&amp;gt; Actions -&amp;gt; Repository secrets&lt;/p>&lt;/blockquote>
-&lt;p>新增以下 secrets :&lt;/p>
-&lt;ul>
-&lt;li>TELEGRAM_BOT_TOKEN : Telegram Bot Token&lt;/li>
-&lt;li>TELEGRAM_CHAT_ID : Telegram 群組 ID&lt;/li>
-&lt;/ul>
-&lt;h2 id="設置-github-variables">設置 GitHub Variables&lt;/h2>
-&lt;p>GitHub 專案中&lt;/p></description></item><item><title>Git - Rebase</title><link>https://HoshikawaRyuukou.github.io/posts/git---rebase/</link><pubDate>Sun, 16 Jul 2023 20:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/git---rebase/</guid><description>&lt;blockquote>
-&lt;p>之前我一直以為 rebase 是進行類似 &lt;strong>剪下貼上&lt;/strong> 的操作，但實際上是 &lt;strong>複製貼上&lt;/strong>&lt;/p>&lt;/blockquote>
-&lt;h2 id="情境">情境&lt;/h2>
-&lt;ul>
-&lt;li>合併時不會像 merge 時會有 commit 的節點&lt;/li>
-&lt;li>想整理 &lt;strong>還沒推出去&lt;/strong> 的 commit 可以使用&lt;/li>
-&lt;li>&lt;strong>避免修改已經推出去的歷史&lt;/strong>&lt;/li>
-&lt;/ul>
-&lt;h3 id="如何取消操作">如何取消操作&lt;/h3>
-&lt;p>使用 reflog 列印出所有「歷史紀錄」找到 rebase 的前一個 commit id，並進行 reset 即可&lt;/p>
-&lt;pre tabindex="0">&lt;code>git reflog
-git reset XXXXXXX --hard
-&lt;/code>&lt;/pre>&lt;p>此外當進行比較危險操作時 git 會額外紀錄前一個 head 於 ORIG_HEAD，因此也可以直接執行以下，來達到同樣效果&lt;/p>
-&lt;pre tabindex="0">&lt;code>git reset ORIG_HEAD --hard
-&lt;/code>&lt;/pre>&lt;h2 id="ref">Ref&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=HeF7dwVyzow">另一種合併方式（使用 rebase）&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jessie75919.medium.com/git-rebase-%E7%94%A8%E6%B3%95-3e1ef046e357">git rebase 用法&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jessie75919.medium.com/%E4%BA%BA%E7%94%9F%E5%A6%82%E6%9E%9C%E6%9C%89-git-1-git-rebase-i-drop-94cc1c018465">git rebase -i (drop)&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jessie75919.medium.com/%E4%BA%BA%E7%94%9F%E5%A6%82%E6%9E%9C%E6%9C%89-git-2-git-rebase-i-pick-c623301ff2db">git rebase -i (pick)&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jessie75919.medium.com/%E4%BA%BA%E7%94%9F%E5%A6%82%E6%9E%9C%E6%9C%89-git-3-git-rebase-i-reword-370edc23f336">git rebase -i (reword)&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Git - Pull Request</title><link>https://HoshikawaRyuukou.github.io/posts/git---pull-request/</link><pubDate>Fri, 14 Jul 2023 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/git---pull-request/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
-&lt;blockquote>
-&lt;p>有的環境也稱 Merge Request&lt;/p>&lt;/blockquote>
-&lt;p>開發產品時一般會挑選固定一個分支做為可以上線的正式版本分支(master)，需注意的是在進行多人協同開發時，讓每個人都可以 Commit 到專案正式上線的分支不是個好的做法。&lt;/p>
-&lt;p>可以透過 pull request 方式控管權限，由負責管理這個專案的人收到其他開發者的 pull request 並確認無誤後便可進行合併，來確保產品分支處於隨時都是可上線的狀態。&lt;/p>
-&lt;p>參與開源專案時，在創建 pull request 之前，建議先在本地分支上運行 git rebase 命令，確保你的更改基於最新的進度以降低審查者的理解難度。&lt;/p>
-&lt;h2 id="guide">Guide&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://gitbook.tw/chapters/github/pull-request">與其它開發者的互動 - 使用 Pull Request（PR）&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Git - Reapply .gitignore</title><link>https://HoshikawaRyuukou.github.io/posts/git---reapply-.gitignore/</link><pubDate>Fri, 14 Jul 2023 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/git---reapply-.gitignore/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
-&lt;p>當你一開始沒 ignore 到某些檔案，後來補上 .gitignore，卻發現 Git 還是繼續追蹤那些檔案。&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 先清掉 Git 的快取（不會刪檔，只是取消追蹤）&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git rm -r --cached .
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 再重新加入所有檔案（讓 .gitignore 這次能正確發揮作用）&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git add .
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 然後提交變更&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git commit -m &lt;span style="color:#d88200">&amp;#34;Reapply .gitignore rules&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Git - Note</title><link>https://HoshikawaRyuukou.github.io/posts/git---note/</link><pubDate>Sat, 04 Feb 2023 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/git---note/</guid><description>&lt;h2 id="gui-clients">GUI Clients&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://git-fork.com/">Fork&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="common">Common&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://www.youtube.com/playlist?list=PLDBEQHWAyt9FbN7TANIXlUvtRhdoBCEQ5">两小时Git教程&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://developer.aliyun.com/article/634481">Git忽略规则.gitignore不生效&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.github.com/zh/get-started/getting-started-with-git/configuring-git-to-handle-line-endings#global-settings-for-line-endings">配置 Git 处理行结束符&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="workflow">Workflow&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/556418580">如何做好分支管理，保证高效CI/CD？&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=vDs3K6Szstg">【GeekHour教程】分支管理和工作流模型&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://blog.puckwang.com/posts/2020/git-submodule-vs-subtree/">Git 進階應用 Submodule 與 Subtree，使用它們來拆分專案&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="operation">Operation&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://www.bilibili.com/video/BV1S4421f7MS">git revert 是如何让你丢失代码的？&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=ol7CMoJuAvI">十分钟学会常用git撤销操作，全面掌握git的时光机&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://gist.github.com/myusuf3/7f645819ded92bda6677">How effectively delete a git submodule.&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://faun.pub/git-cherry-pick-a-commit-to-another-repo-30dc64d61acb">Git cherry pick a commit to another repo&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="git-hook">git hook&lt;/h2>
-&lt;ul>
-&lt;li>git hook 是每次執行 git 操作時都會運行的命令或腳本。&lt;/li>
-&lt;li>如果 git hook 的執行失敗，則 git 操作將中止。&lt;/li>
-&lt;/ul></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Git on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/git/</link><description>Recent content in Git on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sun, 16 Jul 2023 10:08:39 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/git/index.xml" rel="self" type="application/rss+xml"/><item><title>Git - Rebase</title><link>https://HoshikawaRyuukou.github.io/posts/git---rebase/</link><pubDate>Sun, 16 Jul 2023 10:08:39 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/git---rebase/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;過去常以為 &lt;code&gt;rebase&lt;/code&gt; 是像「剪下貼上」的操作，但實際上更像是「複製貼上」，它會將一系列的 Commit 複製一份，並重新套用在新的基底上，因此會產生新的 SHA-1 值。&lt;/p&gt;
+&lt;h3 id="主要情境與特性"&gt;&lt;strong&gt;主要情境與特性&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;歷史紀錄更簡潔&lt;/strong&gt;：&lt;code&gt;rebase&lt;/code&gt; 不會像 &lt;code&gt;merge&lt;/code&gt; 那樣產生額外的合併節點（Merge Commit），讓 Commit 歷史紀錄更為線性、乾淨。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;適用於未推送的 Commit&lt;/strong&gt;：當你想要整理、合併或修改本地端「還沒推送到遠端」的 Commit 時，&lt;code&gt;rebase&lt;/code&gt; 是非常實用的工具。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;避免修改已推送的歷史&lt;/strong&gt;：由於 &lt;code&gt;rebase&lt;/code&gt; 會改寫 Commit 歷史，因此 &lt;strong&gt;絕對不要&lt;/strong&gt; 對已經推送到遠端（與他人協作中）的分支進行 &lt;code&gt;rebase&lt;/code&gt; 操作，以免造成他人的困擾。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=HeF7dwVyzow"&gt;另一種合併方式（使用 rebase）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://jessie75919.medium.com/git-rebase-%E7%94%A8%E6%B3%95-3e1ef046e357"&gt;git rebase 用法&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="extras"&gt;Extras&lt;/h2&gt;
+&lt;h3 id="如何取消-rebase-操作"&gt;&lt;strong&gt;如何取消 Rebase 操作&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;如果你在進行 &lt;code&gt;rebase&lt;/code&gt; 時後悔了，可以透過以下兩種方式安全地回溯到操作之前的狀態：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;使用 &lt;code&gt;git reflog&lt;/code&gt; 尋找歷史紀錄&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;輸入 &lt;code&gt;git reflog&lt;/code&gt;，這會列出你所有的 Git 操作紀錄。&lt;/li&gt;
+&lt;li&gt;找到 &lt;code&gt;rebase&lt;/code&gt; 執行前的 Commit ID。&lt;/li&gt;
+&lt;li&gt;輸入 &lt;code&gt;git reset XXXXXXX --hard&lt;/code&gt; 來回溯（其中 &lt;code&gt;XXXXXXX&lt;/code&gt; 為該 Commit ID）。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;使用 &lt;code&gt;ORIG_HEAD&lt;/code&gt; 快速回溯&lt;/strong&gt; 由於 Git 在執行 &lt;code&gt;reset&lt;/code&gt; 等具風險的操作時，會額外將上一個 HEAD 的位置記錄在 &lt;code&gt;ORIG_HEAD&lt;/code&gt; 中。因此，你也可以直接執行以下指令來快速達到相同的效果：&lt;/p&gt;</description></item><item><title>Git - Reapply .gitignore</title><link>https://HoshikawaRyuukou.github.io/posts/git---reapply-.gitignore/</link><pubDate>Fri, 14 Jul 2023 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/git---reapply-.gitignore/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;當你一開始沒 ignore 到某些檔案，後來補上 .gitignore，卻發現 Git 還是繼續追蹤那些檔案。&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 先清掉 Git 的快取（不會刪檔，只是取消追蹤）&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git rm -r --cached .
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 再重新加入所有檔案（讓 .gitignore 這次能正確發揮作用）&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git add .
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 然後提交變更&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git commit -m &lt;span style="color:#d88200"&gt;&amp;#34;Reapply .gitignore rules&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item></channel></rss>

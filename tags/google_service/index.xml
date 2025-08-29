@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Google_Service on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/google_service/</link><description>Recent content in Google_Service on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Wed, 08 Nov 2023 12:46:15 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/google_service/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Package - External Dependency Manager for Unity (EDM4U)</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package---external-dependency-manager-for-unity-edm4u/</link><pubDate>Wed, 08 Nov 2023 12:46:15 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package---external-dependency-manager-for-unity-edm4u/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;Google 停止維護 Game Package Registry (GPR) 導致不能直接使用 Package Manager 導入包。必須到封存檔網站下載「.tgz」手動導入。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://developers.google.com/unity/archive?hl=zh-tw#external_dependency_manager_for_unity"&gt;Google Unity 套件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.unity3d.com/Manual/upm-ui-tarball.html"&gt;Install a package from a local tarball file&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;其他的相關的 Google Service 依賴(AR/Firebase/Google Play等)也可以用此方法導入。&lt;/p&gt;
+&lt;h2 id="configuration"&gt;Configuration&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Assets &amp;gt; External Dependency Manager &amp;gt; Android Resolver &amp;gt; Settings&lt;/code&gt;
+啟用這三個 Patch&lt;/p&gt;
+&lt;p&gt;
+ &lt;img src="../images/EDM4U_01.png" alt="EDM4U_01"&gt;
+
+&lt;/p&gt;
+&lt;p&gt;並至 &lt;code&gt;Player Settings &amp;gt; Publishing Settings&lt;/code&gt;
+啟用以下選項&lt;/p&gt;
+&lt;p&gt;
+ &lt;img src="../images/EDM4U_02.png" alt="EDM4U_02"&gt;
+
+&lt;/p&gt;
+&lt;h2 id="auto-resolution"&gt;Auto Resolution&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Assets &amp;gt; External Dependency Manager &amp;gt; Android Resolver &amp;gt; Force Resolve&lt;/code&gt;
+後會去收集專案&lt;strong&gt;所有 Editor 資料夾&lt;/strong&gt;下的 *&lt;strong&gt;Dependencies.xml&lt;/strong&gt; 加到 mainTemplate 中&lt;/p&gt;</description></item></channel></rss>

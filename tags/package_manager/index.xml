@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Package_Manager on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/package_manager/</link><description>Recent content in Package_Manager on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Wed, 19 Mar 2025 12:46:15 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/package_manager/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Package Manager</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package-manager/</link><pubDate>Wed, 19 Mar 2025 12:46:15 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package-manager/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Unity Package Manager (UPM) 的設計理念，是向現代軟體開發的 「套件管理系統」
+看齊，最主要的借鏡對象就是網頁開發領域的 NPM (Node Package Manager)。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;模組化&lt;/strong&gt;：不同功能（像是 2D 工具、Timeline、Addressables）都能獨立存在，更新或安裝時不會牽動整個專案。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;可控版本&lt;/strong&gt;：可以指定版本，就像你在 npm 裡選擇某個 library 的版本，確保團隊成員與 CI 環境一致。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;遠端來源&lt;/strong&gt;：除了 Unity 官方 registry，也可以掛上私有 registry，甚至用 Git URL 或本地資料夾引入。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;幾個重要觀念：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;所有透過 UPM 安裝的套件都會被存放在 &lt;code&gt;Packages&lt;/code&gt; 資料夾。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Packages&lt;/code&gt; 是唯讀的，不過仍有方式能夠修改。&lt;/li&gt;
+&lt;li&gt;UPM 的主要使用情境是管理可重用的「功能模組」，這些通常以程式碼為核心。而遊戲專案中獨特的、需頻繁修改的藝術素材 （如模型、貼圖、音效），其歸宿依然是傳統的 &lt;code&gt;Assets&lt;/code&gt; 資料夾。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.jianshu.com/p/153841d65846"&gt;开发Unity PackageManager 插件包&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://neogeek.dev/creating-custom-packages-for-unity-2018.3/"&gt;Creating Custom Packages for Unity 2018.3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://gametorrahod.com/how-to-asmdef-upm/?fbclid=IwAR31P12StjzcTi9IO1vDvwWJIwaKHxIEmUQLic6K1LGElmwv6OFRqe8sVig"&gt;How to remodel your project for asmdef and UPM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://annulusgames-lab.blogspot.com/2023/01/unity-package-manager.html"&gt;【Unity】Package Manager活用術&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://zhuanlan.zhihu.com/p/146565975"&gt;使用OpenUPM发布自己的Unity项目&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="installing-packages-using-upm"&gt;Installing Packages using UPM&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Package manager -&amp;gt; Advanced project settings&lt;/li&gt;
+&lt;li&gt;Add Scoped Registries&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Name: package.openupm.com
+URL: https://package.openupm.com
+Scope(s): 
+ com.cysharp.unitask
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start="3"&gt;
+&lt;li&gt;Package manager -&amp;gt; Packages: My Registries -&amp;gt; Install&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title>Unity - Package Manager - Modify a Package</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---modify-a-package/</link><pubDate>Fri, 12 Jan 2024 12:46:15 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---modify-a-package/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;客製化 Unity 官方 / git 直接導入 的 Package&lt;/p&gt;
+&lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://support.unity.com/hc/en-us/articles/9113460764052-How-can-I-modify-built-in-packages-"&gt;How can I modify built-in packages?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.csdn.net/linjf520/article/details/125738218"&gt;Unity - 如何修改一个 Package 或是如何将 Package Local化&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="steps"&gt;Steps&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;至 &lt;code&gt;ProjrctRoot\Library\PackageCache&lt;/code&gt; 找到目標的 Package&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;剪下貼上&lt;/strong&gt;至 &lt;code&gt;ProjrctRoot\Packages&lt;/code&gt; 即可&lt;/li&gt;
+&lt;/ol&gt;</description></item></channel></rss>

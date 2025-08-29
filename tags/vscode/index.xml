@@ -1,73 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>VScode on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/vscode/</link><description>Recent content in VScode on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Mon, 03 Mar 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/vscode/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Environment</title><link>https://HoshikawaRyuukou.github.io/posts/unity---environment/</link><pubDate>Mon, 03 Mar 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---environment/</guid><description>&lt;blockquote>
-&lt;p>⚠️ 以下使用 unity 6&lt;/p>&lt;/blockquote>
-&lt;h2 id="guide">Guide&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://ithelp.ithome.com.tw/articles/10346751">Day10 / Unity 跟上時代！如何設定 Visual Studio Code 編輯器環境 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="vscode">VSCode&lt;/h2>
-&lt;h3 id="extensions">Extensions&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://marketplace.visualstudio.com/items?itemName=visualstudiotoolsforunity.vstuc">Extension - Unity&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h3 id="net-sdk">.NET SDK&lt;/h3>
-&lt;ul>
-&lt;li>安裝 &lt;a href="https://dotnet.microsoft.com/en-us/download">.NET Core&lt;/a>
-&lt;ul>
-&lt;li>Mac M 系列 ( M1 M2 ) ➔ .NET SDK Arm64 版本&lt;/li>
-&lt;li>Mac 其餘型號 ➔ .NET SDK x64 版本&lt;/li>
-&lt;li>Windows ➔ .NET SDK x64 版本&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>重新開機使環境變數被應用&lt;/li>
-&lt;/ul>
-&lt;h3 id="unity-package-manager">Unity Package Manager&lt;/h3>
-&lt;ul>
-&lt;li>移除 Visual Studio Code Editor 已經停止維護 (比較舊的版本可能要裝)&lt;/li>
-&lt;li>安裝 Visual Studio Editor&lt;/li>
-&lt;/ul>
-&lt;h3 id="preferences">Preferences&lt;/h3>
-&lt;ul>
-&lt;li>Edit &amp;gt; Preferences &amp;gt; External Tools
-&lt;ul>
-&lt;li>External Script Editor &amp;gt; Visual Studio Code&lt;/li>
-&lt;li>Generate .csproj files for
-&lt;ul>
-&lt;li>Embedded packages&lt;/li>
-&lt;li>Local packages&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="common">Common&lt;/h2>
-&lt;h3 id="preferences-1">Preferences&lt;/h3>
-&lt;ul>
-&lt;li>Edit &amp;gt; Preferences &amp;gt; General &amp;gt; Script Changes While Playing (Stop Playing and Recompile)&lt;/li>
-&lt;/ul></description></item><item><title>VScode - Note</title><link>https://HoshikawaRyuukou.github.io/posts/vscode---note/</link><pubDate>Sat, 30 Mar 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/vscode---note/</guid><description>&lt;h2 id="diagrams">Diagrams&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio">Draw.io Integration&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.dandoescode.com/blog/plantuml-vs-mermaid">Software Diagrams - Plant UML vs Mermaid&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://mermaid.js.org/intro/">Mermaid Doc&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="encoding">Encoding&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://umin27.medium.com/vs-code%E6%8E%A1%E7%94%A8code-runner%E9%81%87%E5%88%B0%E7%9A%84-output%E4%B8%AD%E6%96%87%E4%BA%82%E7%A2%BC%E5%95%8F%E9%A1%8C-python-55e73edf9d0b">VS Code採用Code Runner遇到的 Output中文亂碼問題 (Python)&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="display">Display&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://kiwi-half.medium.com/visual-studio-code-vs-code-%E5%88%87%E6%8F%9B%E6%88%90%E4%B8%AD%E6%96%87%E7%89%88-%E5%8D%8A%E7%86%9F%E5%A5%87%E7%95%B0%E6%9E%9C-kiwi-tech-e469f4450429">Visual Studio Code ( VS Code) 切換成中文版&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="extensions">Extensions&lt;/h2>
-&lt;ul>
-&lt;li>Code Runner&lt;/li>
-&lt;li>&lt;a href="https://marketplace.visualstudio.com/items?itemName=bierner.emojisense">:emojisense:&lt;/a>&lt;/li>
-&lt;li>EditorConfig for VS Code&lt;/li>
-&lt;/ul>
-&lt;h2 id="hot-keys-windows">Hot Keys (Windows)&lt;/h2>
-&lt;ul>
-&lt;li>打開快捷鍵設定 : &lt;code>Ctrl + K Ctrl + S&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;h2 id="settingjson">setting.json&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://blog.csdn.net/weixin_44869002/article/details/144644825">explorer.fileNesting：一个可以帮助你更好的管理文件的配置项&lt;/a>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>VScode on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/vscode/</link><description>Recent content in VScode on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Fri, 28 Mar 2025 16:56:18 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/vscode/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Env - IDE</title><link>https://HoshikawaRyuukou.github.io/posts/unity---env---ide/</link><pubDate>Fri, 28 Mar 2025 16:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---env---ide/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;我目前在 &lt;strong&gt;Windows 環境&lt;/strong&gt;下，會依需求在 &lt;strong&gt;Visual Studio&lt;/strong&gt; 與 &lt;strong&gt;VS Code&lt;/strong&gt; 之間切換：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Visual Studio&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;專案初期建置&lt;/li&gt;
+&lt;li&gt;需要進行檔案或命名重構 (renaming)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;VS Code&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;需要使用 &lt;strong&gt;GitHub Copilot&lt;/strong&gt; 時&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="configuration---vs-code"&gt;Configuration - VS Code&lt;/h2&gt;
+&lt;h3 id="net-sdk-安裝"&gt;.NET SDK 安裝&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;前往 &lt;a href="https://dotnet.microsoft.com/en-us/download"&gt;.NET 官方下載頁面&lt;/a&gt; 下載對應版本&lt;/li&gt;
+&lt;li&gt;選擇對應平台的 SDK：
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Mac M 系列 (M1/M2)&lt;/strong&gt; ➔ 安裝 &lt;strong&gt;Arm64&lt;/strong&gt; 版本&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;其他 Mac 型號&lt;/strong&gt; ➔ 安裝 &lt;strong&gt;x64&lt;/strong&gt; 版本&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Windows&lt;/strong&gt; ➔ 安裝 &lt;strong&gt;x64&lt;/strong&gt; 版本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;安裝完成後 &lt;strong&gt;重新啟動電腦&lt;/strong&gt;，以讓環境變數生效&lt;/li&gt;
+&lt;/ol&gt;</description></item></channel></rss>

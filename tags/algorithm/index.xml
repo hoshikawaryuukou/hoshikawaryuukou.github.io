@@ -1,228 +1,190 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Algorithm on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/algorithm/</link><description>Recent content in Algorithm on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 13 Mar 2025 13:13:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/algorithm/index.xml" rel="self" type="application/rss+xml"/><item><title>Algorithm - LeetCode 85 - Maximal Rectangle</title><link>https://HoshikawaRyuukou.github.io/posts/algorithm---leetcode-85---maximal-rectangle/</link><pubDate>Thu, 13 Mar 2025 13:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/algorithm---leetcode-85---maximal-rectangle/</guid><description>&lt;h2 id="description">Description&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://leetcode.cn/problems/maximal-rectangle/description/">85. 最大矩形&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="sample">Sample&lt;/h2>
-&lt;h3 id="input">input&lt;/h3>
-&lt;pre tabindex="0">&lt;code>matrix = [
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Algorithm on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/algorithm/</link><description>Recent content in Algorithm on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 13 Mar 2025 15:03:00 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/algorithm/index.xml" rel="self" type="application/rss+xml"/><item><title>LeetCode 85 - Maximal Rectangle</title><link>https://HoshikawaRyuukou.github.io/posts/leetcode-85---maximal-rectangle/</link><pubDate>Thu, 13 Mar 2025 15:03:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/leetcode-85---maximal-rectangle/</guid><description>&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://leetcode.cn/problems/maximal-rectangle/description/"&gt;85. 最大矩形&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="sample"&gt;Sample&lt;/h2&gt;
+&lt;h3 id="input"&gt;input&lt;/h3&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;matrix = [
  [1,0,1,0,0],
  [1,0,1,1,1],
  [1,1,1,1,1],
  [1,0,0,1,0]
 ]
-&lt;/code>&lt;/pre>&lt;h3 id="output">output&lt;/h3>
-&lt;pre tabindex="0">&lt;code>6
-&lt;/code>&lt;/pre>&lt;h2 id="key-points">Key points&lt;/h2>
-&lt;h2 id="solution-1---暴力解">Solution 1 - 暴力解&lt;/h2>
-&lt;ul>
-&lt;li>檢查矩陣中所有可能的矩形，並計算每個矩形是否符合條件。&lt;/li>
-&lt;li>對每個可能的矩形進行迴圈遍歷。&lt;/li>
-&lt;li>計算該矩形內的元素是否符合條件。&lt;/li>
-&lt;/ul>
-&lt;h3 id="複雜度">複雜度&lt;/h3>
-&lt;ul>
-&lt;li>m 為 row 的長度 ，n 是 column 的長度&lt;/li>
-&lt;li>時間複雜度：O(m^2 x n^2)&lt;/li>
-&lt;li>空間複雜度：O(m x n)&lt;/li>
-&lt;/ul>
-&lt;h2 id="solution-2---單調棧">Solution 2 - 單調棧&lt;/h2>
-&lt;ul>
-&lt;li>將原矩陣根據各 row 提取出數個高度(連續的1)陣列。&lt;/li>
-&lt;li>便可將問題拆解成數個 84 題。&lt;/li>
-&lt;/ul>
-&lt;h3 id="推導">推導&lt;/h3>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th>Step&lt;/th>
- &lt;th>Matrix Row&lt;/th>
- &lt;th>heights[]&lt;/th>
- &lt;th>result by No.84&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td>1&lt;/td>
- &lt;td>[1,0,1,0,0]&lt;/td>
- &lt;td>[1, 0, 1, 0, 0]&lt;/td>
- &lt;td>1&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>2&lt;/td>
- &lt;td>[1,0,1,1,1]&lt;/td>
- &lt;td>[2, 0, 2, 1, 1]&lt;/td>
- &lt;td>2&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>3&lt;/td>
- &lt;td>[1,1,1,1,1]&lt;/td>
- &lt;td>[3, 1, 3, 2, 2]&lt;/td>
- &lt;td>6&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>4&lt;/td>
- &lt;td>[1,0,0,1,0]&lt;/td>
- &lt;td>[4, 0, 0, 3, 0]&lt;/td>
- &lt;td>4&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;p>
- &lt;img src="https://HoshikawaRyuukou.github.io/images/Leetcode85.png" alt="Leetcode85">
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id="output"&gt;output&lt;/h3&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;6
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="key-points"&gt;Key points&lt;/h2&gt;
+&lt;h2 id="solution-1---暴力解"&gt;Solution 1 - 暴力解&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;檢查矩陣中所有可能的矩形，並計算每個矩形是否符合條件。&lt;/li&gt;
+&lt;li&gt;對每個可能的矩形進行迴圈遍歷。&lt;/li&gt;
+&lt;li&gt;計算該矩形內的元素是否符合條件。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="複雜度"&gt;複雜度&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;m 為 row 的長度 ，n 是 column 的長度&lt;/li&gt;
+&lt;li&gt;時間複雜度：O(m^2 x n^2)&lt;/li&gt;
+&lt;li&gt;空間複雜度：O(m x n)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="solution-2---單調棧"&gt;Solution 2 - 單調棧&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;將原矩陣根據各 row 提取出數個高度(連續的1)陣列。&lt;/li&gt;
+&lt;li&gt;便可將問題拆解成數個 84 題。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="推導"&gt;推導&lt;/h3&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Step&lt;/th&gt;
+ &lt;th&gt;Matrix Row&lt;/th&gt;
+ &lt;th&gt;heights[]&lt;/th&gt;
+ &lt;th&gt;result by No.84&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;td&gt;[1,0,1,0,0]&lt;/td&gt;
+ &lt;td&gt;[1, 0, 1, 0, 0]&lt;/td&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;2&lt;/td&gt;
+ &lt;td&gt;[1,0,1,1,1]&lt;/td&gt;
+ &lt;td&gt;[2, 0, 2, 1, 1]&lt;/td&gt;
+ &lt;td&gt;2&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;3&lt;/td&gt;
+ &lt;td&gt;[1,1,1,1,1]&lt;/td&gt;
+ &lt;td&gt;[3, 1, 3, 2, 2]&lt;/td&gt;
+ &lt;td&gt;6&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;4&lt;/td&gt;
+ &lt;td&gt;[1,0,0,1,0]&lt;/td&gt;
+ &lt;td&gt;[4, 0, 0, 3, 0]&lt;/td&gt;
+ &lt;td&gt;4&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+ &lt;img src="../images/Leetcode85.png" alt="Leetcode85"&gt;
 
-&lt;/p></description></item><item><title>Algorithm - LeetCode 84 - Largest Rectangle in Histogram</title><link>https://HoshikawaRyuukou.github.io/posts/algorithm---leetcode-84---largest-rectangle-in-histogram/</link><pubDate>Thu, 13 Mar 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/algorithm---leetcode-84---largest-rectangle-in-histogram/</guid><description>&lt;h2 id="description">Description&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://leetcode.cn/problems/largest-rectangle-in-histogram/description/">84. 柱状图中最大的矩形&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="sample">Sample&lt;/h2>
-&lt;h3 id="input">input&lt;/h3>
-&lt;pre tabindex="0">&lt;code>heights = [2,1,5,6,2,3] 
-&lt;/code>&lt;/pre>&lt;h3 id="output">output&lt;/h3>
-&lt;pre tabindex="0">&lt;code>10 
-&lt;/code>&lt;/pre>&lt;h2 id="key-points">Key points&lt;/h2>
-&lt;ul>
-&lt;li>目標是 &lt;strong>找到每個柱子能擴展的最大寬度&lt;/strong>，然後計算以該柱子為高度的最大矩形面積。&lt;/li>
-&lt;/ul>
-&lt;h2 id="solution-1---暴力解">Solution 1 - 暴力解&lt;/h2>
-&lt;ul>
-&lt;li>對於每個 &lt;code>heights[i]&lt;/code>，向 &lt;strong>左&lt;/strong>、&lt;strong>右&lt;/strong> 擴展，直到遇到比它矮的柱子。&lt;/li>
-&lt;li>&lt;strong>左邊界 (left)&lt;/strong>：找第一個小於 heights[i] 的索引&lt;/li>
-&lt;li>&lt;strong>右邊界 (right)&lt;/strong>：找第一個小於 heights[i] 的索引&lt;/li>
-&lt;li>&lt;strong>寬度 (width)&lt;/strong>：&lt;code>width = right - left - 1&lt;/code>&lt;/li>
-&lt;li>&lt;strong>面積 (area)&lt;/strong>：&lt;code>area = heights[i] * (right - left - 1)&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;h3 id="推導">推導&lt;/h3>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th>i&lt;/th>
- &lt;th>heights[i]&lt;/th>
- &lt;th>left&lt;/th>
- &lt;th>right&lt;/th>
- &lt;th>width&lt;/th>
- &lt;th>area&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td>0&lt;/td>
- &lt;td>2&lt;/td>
- &lt;td>-1&lt;/td>
- &lt;td>1&lt;/td>
- &lt;td>1&lt;/td>
- &lt;td>2&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>1&lt;/td>
- &lt;td>1&lt;/td>
- &lt;td>-1&lt;/td>
- &lt;td>6&lt;/td>
- &lt;td>6&lt;/td>
- &lt;td>6&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>2&lt;/td>
- &lt;td>5&lt;/td>
- &lt;td>1&lt;/td>
- &lt;td>4&lt;/td>
- &lt;td>2&lt;/td>
- &lt;td>10&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>3&lt;/td>
- &lt;td>6&lt;/td>
- &lt;td>2&lt;/td>
- &lt;td>4&lt;/td>
- &lt;td>1&lt;/td>
- &lt;td>6&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>4&lt;/td>
- &lt;td>2&lt;/td>
- &lt;td>1&lt;/td>
- &lt;td>6&lt;/td>
- &lt;td>4&lt;/td>
- &lt;td>8&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>5&lt;/td>
- &lt;td>3&lt;/td>
- &lt;td>4&lt;/td>
- &lt;td>6&lt;/td>
- &lt;td>1&lt;/td>
- &lt;td>3&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;p>&lt;strong>最大矩形面積 = &lt;code>10&lt;/code>&lt;/strong>&lt;/p></description></item><item><title>Algorithm - Complexity</title><link>https://HoshikawaRyuukou.github.io/posts/algorithm---complexity/</link><pubDate>Thu, 28 Nov 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/algorithm---complexity/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
-&lt;p>在尋求最優解法設計 &lt;strong>既快又省&lt;/strong> 的資料結構與演算時，有以下兩個面向&lt;/p>
-&lt;ul>
-&lt;li>時間效率：演算法執行時間的長短。&lt;/li>
-&lt;li>空間效率：演算法佔用記憶體空間的大小。&lt;/li>
-&lt;/ul>
-&lt;h2 id="guide">Guide&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://www.hello-algo.com/chapter_computational_complexity/">第 2 章 - 复杂度分析&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="時間複雜度-time-complexity">時間複雜度 (Time Complexity)&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://www.hello-algo.com/zh-hant/chapter_computational_complexity/time_complexity/">2.3 時間複雜度&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;blockquote>
-&lt;p>⚠️ 時間複雜度分析統計的不是演算法執行時間，而是演算法執行時間隨著資料量變大時的增長趨勢。&lt;/p>&lt;/blockquote>
-&lt;ul>
-&lt;li>有效評估演算法效率。&lt;/li>
-&lt;li>推算方法更簡便。&lt;/li>
-&lt;li>存在一定的侷限性(當輸入資料大小較小時)。&lt;/li>
-&lt;/ul>
-&lt;h2 id="空間複雜度-space-complexity">空間複雜度 (Space Complexity)&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://www.hello-algo.com/zh-hant/chapter_computational_complexity/space_complexity/">2.4 空間複雜度&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;blockquote>
-&lt;p>⚠️ 我們通常只關注最差空間複雜度。&lt;/p>&lt;/blockquote>
-&lt;ul>
-&lt;li>輸入空間：演算法的輸入資料。&lt;/li>
-&lt;li>暫存空間：執行過程中的變數、物件、函式上下文等資料。&lt;/li>
-&lt;li>輸出空間：儲存演算法的輸出資料。&lt;/li>
-&lt;/ul></description></item><item><title>Algorithm - Sampling - Alias Method</title><link>https://HoshikawaRyuukou.github.io/posts/algorithm---sampling---alias-method/</link><pubDate>Sun, 04 Aug 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/algorithm---sampling---alias-method/</guid><description>&lt;p>別名方法是一種眾所周知的演算法，用於從任意離散機率分佈中進行恆定時間採樣，該演算法依賴於簡單的預先計算的查找表。&lt;/p>
-&lt;h2 id="guide">Guide&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://blog.csdn.net/rover2002/article/details/106760664">Alias Method: 非均匀随机抽样算法&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.keithschwarz.com/darts-dice-coins/">Darts, Dice, and Coins: Sampling from a Discrete Distribution&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://zliu.org/post/weighted-random/">Weighted Random: algorithms for sampling from discrete probability distributions&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/mackysoft/Choice?tab=readme-ov-file#speed-measurement">mackysoft/Choice&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/jgrapht/jgrapht/blob/master/jgrapht-core/src/main/java/org/jgrapht/alg/util/AliasMethodSampler.java">jgrapht-core/src/main/java/org/jgrapht/alg/util/AliasMethodSampler.java&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;p>務必先觀看&lt;/p>
-&lt;ul>
-&lt;li>第一篇文章的漸進思考與核心精神&lt;/li>
-&lt;li>第二篇文章最後的 Vose&amp;rsquo;s Alias Method 圖解&lt;/li>
-&lt;/ul>
-&lt;h2 id="example">Example&lt;/h2>
-&lt;p>給定的權重 &lt;code>[0.1, 0.2, 0.3, 0.4]&lt;/code>。&lt;/p>
-&lt;h3 id="按均值縮放權重">&lt;strong>按均值縮放權重&lt;/strong>：&lt;/h3>
-&lt;ul>
-&lt;li>均值為 : 0.25&lt;/li>
-&lt;li>縮放後的權重：&lt;code>[0.4, 0.8, 1.2, 1.6]&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;h3 id="分類權重到-large-和-small-隊列">&lt;strong>分類權重到 large 和 small 隊列&lt;/strong>：&lt;/h3>
-&lt;ul>
-&lt;li>初始狀態：&lt;code>small = [], large = []&lt;/code>&lt;/li>
-&lt;li>權重 &lt;code>0.4&lt;/code> 小於 1，放入 &lt;code>small&lt;/code>：&lt;code>small = [0]&lt;/code>&lt;/li>
-&lt;li>權重 &lt;code>0.8&lt;/code> 小於 1，放入 &lt;code>small&lt;/code>：&lt;code>small = [0, 1]&lt;/code>&lt;/li>
-&lt;li>權重 &lt;code>1.2&lt;/code> 大於 1，放入 &lt;code>large&lt;/code>：&lt;code>large = [2]&lt;/code>&lt;/li>
-&lt;li>權重 &lt;code>1.6&lt;/code> 大於 1，放入 &lt;code>large&lt;/code>：&lt;code>large = [2, 3]&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;h3 id="構建別名表">&lt;strong>構建別名表&lt;/strong>：&lt;/h3>
-&lt;ul>
-&lt;li>
-&lt;p>初始狀態：&lt;/p></description></item><item><title>Algorithm - Note</title><link>https://HoshikawaRyuukou.github.io/posts/algorithm---note/</link><pubDate>Thu, 30 May 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/algorithm---note/</guid><description>&lt;h2 id="books">Books&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/labuladong/fucking-algorithm?tab=readme-ov-file">fucking-algorithm&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/krahets/hello-algo">hello-algo&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="repo">Repo&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/TheAlgorithms">The Algorithms&lt;/a>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;/p&gt;</description></item><item><title>LeetCode 84 - Largest Rectangle in Histogram</title><link>https://HoshikawaRyuukou.github.io/posts/leetcode-84---largest-rectangle-in-histogram/</link><pubDate>Thu, 13 Mar 2025 11:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/leetcode-84---largest-rectangle-in-histogram/</guid><description>&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://leetcode.cn/problems/largest-rectangle-in-histogram/description/"&gt;84. 柱状图中最大的矩形&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="sample"&gt;Sample&lt;/h2&gt;
+&lt;h3 id="input"&gt;input&lt;/h3&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;heights = [2,1,5,6,2,3] 
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id="output"&gt;output&lt;/h3&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;10 
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="key-points"&gt;Key points&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;目標是 &lt;strong&gt;找到每個柱子能擴展的最大寬度&lt;/strong&gt;，然後計算以該柱子為高度的最大矩形面積。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="solution-1---暴力解"&gt;Solution 1 - 暴力解&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;對於每個 &lt;code&gt;heights[i]&lt;/code&gt;，向 &lt;strong&gt;左&lt;/strong&gt;、&lt;strong&gt;右&lt;/strong&gt; 擴展，直到遇到比它矮的柱子。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;左邊界 (left)&lt;/strong&gt;：找第一個小於 heights[i] 的索引&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;右邊界 (right)&lt;/strong&gt;：找第一個小於 heights[i] 的索引&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;寬度 (width)&lt;/strong&gt;：&lt;code&gt;width = right - left - 1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;面積 (area)&lt;/strong&gt;：&lt;code&gt;area = heights[i] * (right - left - 1)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="推導"&gt;推導&lt;/h3&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;i&lt;/th&gt;
+ &lt;th&gt;heights[i]&lt;/th&gt;
+ &lt;th&gt;left&lt;/th&gt;
+ &lt;th&gt;right&lt;/th&gt;
+ &lt;th&gt;width&lt;/th&gt;
+ &lt;th&gt;area&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;td&gt;2&lt;/td&gt;
+ &lt;td&gt;-1&lt;/td&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;td&gt;2&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;td&gt;-1&lt;/td&gt;
+ &lt;td&gt;6&lt;/td&gt;
+ &lt;td&gt;6&lt;/td&gt;
+ &lt;td&gt;6&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;2&lt;/td&gt;
+ &lt;td&gt;5&lt;/td&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;td&gt;4&lt;/td&gt;
+ &lt;td&gt;2&lt;/td&gt;
+ &lt;td&gt;10&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;3&lt;/td&gt;
+ &lt;td&gt;6&lt;/td&gt;
+ &lt;td&gt;2&lt;/td&gt;
+ &lt;td&gt;4&lt;/td&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;td&gt;6&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;4&lt;/td&gt;
+ &lt;td&gt;2&lt;/td&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;td&gt;6&lt;/td&gt;
+ &lt;td&gt;4&lt;/td&gt;
+ &lt;td&gt;8&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;5&lt;/td&gt;
+ &lt;td&gt;3&lt;/td&gt;
+ &lt;td&gt;4&lt;/td&gt;
+ &lt;td&gt;6&lt;/td&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;td&gt;3&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;最大矩形面積 = &lt;code&gt;10&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Algorithm - Sampling - Alias Method</title><link>https://HoshikawaRyuukou.github.io/posts/algorithm---sampling---alias-method/</link><pubDate>Sun, 04 Aug 2024 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/algorithm---sampling---alias-method/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;別名方法是一種眾所周知的演算法，用於從任意離散機率分佈中進行恆定時間採樣，該演算法依賴於簡單的預先計算的查找表。&lt;/p&gt;
+&lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://blog.csdn.net/rover2002/article/details/106760664"&gt;Alias Method: 非均匀随机抽样算法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.keithschwarz.com/darts-dice-coins/"&gt;Darts, Dice, and Coins: Sampling from a Discrete Distribution&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://zliu.org/post/weighted-random/"&gt;Weighted Random: algorithms for sampling from discrete probability distributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/mackysoft/Choice?tab=readme-ov-file#speed-measurement"&gt;mackysoft/Choice&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/jgrapht/jgrapht/blob/master/jgrapht-core/src/main/java/org/jgrapht/alg/util/AliasMethodSampler.java"&gt;jgrapht-core/src/main/java/org/jgrapht/alg/util/AliasMethodSampler.java&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;務必先觀看&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第一篇文章的漸進思考與核心精神&lt;/li&gt;
+&lt;li&gt;第二篇文章最後的 Vose&amp;rsquo;s Alias Method 圖解&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="example"&gt;Example&lt;/h2&gt;
+&lt;p&gt;給定的權重 &lt;code&gt;[0.1, 0.2, 0.3, 0.4]&lt;/code&gt;。&lt;/p&gt;
+&lt;h3 id="按均值縮放權重"&gt;&lt;strong&gt;按均值縮放權重&lt;/strong&gt;：&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;均值為 : 0.25&lt;/li&gt;
+&lt;li&gt;縮放後的權重：&lt;code&gt;[0.4, 0.8, 1.2, 1.6]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="分類權重到-large-和-small-隊列"&gt;&lt;strong&gt;分類權重到 large 和 small 隊列&lt;/strong&gt;：&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;初始狀態：&lt;code&gt;small = [], large = []&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;權重 &lt;code&gt;0.4&lt;/code&gt; 小於 1，放入 &lt;code&gt;small&lt;/code&gt;：&lt;code&gt;small = [0]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;權重 &lt;code&gt;0.8&lt;/code&gt; 小於 1，放入 &lt;code&gt;small&lt;/code&gt;：&lt;code&gt;small = [0, 1]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;權重 &lt;code&gt;1.2&lt;/code&gt; 大於 1，放入 &lt;code&gt;large&lt;/code&gt;：&lt;code&gt;large = [2]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;權重 &lt;code&gt;1.6&lt;/code&gt; 大於 1，放入 &lt;code&gt;large&lt;/code&gt;：&lt;code&gt;large = [2, 3]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="構建別名表"&gt;&lt;strong&gt;構建別名表&lt;/strong&gt;：&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;初始狀態：&lt;/p&gt;</description></item></channel></rss>

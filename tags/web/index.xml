@@ -1,32 +1,50 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Web on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/web/</link><description>Recent content in Web on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sun, 19 Jan 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/web/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Platform - Web</title><link>https://HoshikawaRyuukou.github.io/posts/unity---platform---web/</link><pubDate>Sun, 19 Jan 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---platform---web/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
-&lt;ul>
-&lt;li>⚠️ 使用 &lt;strong>Unity 6&lt;/strong> 開發&lt;/li>
-&lt;/ul>
-&lt;h2 id="guide">Guide&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://docs.unity3d.com/6000.0/Documentation/Manual/webgl.html">Unity - Manual: Web&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://learn.unity.com/tutorial/getting-started-with-unity-web">Getting started with Unity Web&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://qiita.com/kazuki_kuriyama/items/3155606bb6cb5861ce68">【Unity】WebGL開発時の注意事項&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://blog.csdn.net/GoodCooking/article/details/136307133">Unity发布webgl获取浏览器的URL&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://tech.framesynthesis.co.jp/unity/webgl/">Unity WebGLビルドメモ - フレームシンセシス&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://zenn.dev/happy_elements/articles/hekk_ac_20231215">Unity 製 WebGL ゲームを AWS でお手軽公開&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="template">Template&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://seansleblanc.itch.io/better-minimal-webgl-template">(Unity) Better Minimal WebGL Template&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="performance">Performance&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://learn.unity.com/tutorial/getting-started-with-unity-web#670ea950edbc2a2240868db0">Using the Unity Profiler&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://learn.unity.com/tutorial/getting-started-with-unity-web#670ea9d0edbc2a2240868dc1">Using the web platform Diagnostics Overlay tool&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/JohannesDeml/UnityWebGL-LoadingTest?tab=readme-ov-file">Unity WebGL Loading Test&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="host">Host&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/terreng/simple-web-server">terreng/simple-web-server&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/terreng/sws-unity-plugin">terreng/sws-unity-plugin&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="issue">Issue&lt;/h2>
-&lt;h3 id="error--failed-to-parse-binary-data-file-buildxxxdatabr">Error : Failed to parse binary data file Build/xxx.data.br&amp;hellip;&lt;/h3>
-&lt;blockquote>
-&lt;p>Failed to parse binary data file Build/web.data.br (with &amp;ldquo;Content-Type: null&amp;rdquo;), because it is still brotli-compressed. It should have been uncompressed by the browser, but it was unable to do so since the web server provided the compressed content without specifying the HTTP Response Header &amp;ldquo;Content-Encoding: br&amp;rdquo; that would have informed the browser that decompression is needed. Please verify your web server hosting configuration to add the missing &amp;ldquo;Content-Encoding: br&amp;rdquo; HTTP Response Header.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Web on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/web/</link><description>Recent content in Web on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Tue, 26 Aug 2025 16:56:18 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/web/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Platform - Web - Build</title><link>https://HoshikawaRyuukou.github.io/posts/unity---platform---web/</link><pubDate>Tue, 26 Aug 2025 16:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---platform---web/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;⚠️ 建議使用 &lt;strong&gt;Unity 2021&lt;/strong&gt; 以上開發，我目前使用 &lt;strong&gt;Unity 6&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.unity3d.com/6000.2/Documentation/Manual/webgl-develop.html"&gt;Unity - Manual: Web development&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://learn.unity.com/tutorial/getting-started-with-unity-web"&gt;Getting started with Unity Web&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="webassembly"&gt;WebAssembly&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://developer.open-douyin.com/docs/resource/zh-CN/mini-game/develop/guide/game-engine/rd-to-SCgame/open-capacity/overview-and-compatibility/sc_webgl_overview"&gt;WebGL适配方案概述_抖音开放平台&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="template"&gt;Template&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://seansleblanc.itch.io/better-minimal-webgl-template"&gt;(Unity) Better Minimal WebGL Template&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="build"&gt;Build&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.crazygames.com/resources/export-tips/"&gt;Export tips - CrazyGames Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://developer.open-douyin.com/docs/resource/zh-CN/mini-game/develop/guide/game-engine/rd-to-SCgame/open-capacity/changelog-and-resource/sc_webgl_resource"&gt;小游戏资源部署与缓存_小游戏_抖音开放平台&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="host"&gt;Host&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/terreng/simple-web-server"&gt;terreng/simple-web-server&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/terreng/sws-unity-plugin"&gt;terreng/sws-unity-plugin&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="optimization"&gt;Optimization&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/live/DlnS53TYJO8"&gt;Crazy Web Game Jam 24: Masterclass #1 - Web Optimization - YouTube&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://developer.open-douyin.com/docs/resource/zh-CN/mini-game/develop/guide/game-engine/rd-to-SCgame/open-capacity/performance-optimization/sc_webgl_performance_optimization"&gt;性能优化总览_抖音开放平台&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://developer.open-douyin.com/docs/resource/zh-CN/mini-game/develop/guide/performance-optimization/startup-performance/sc_webgl_start_speed"&gt;提升Unity WebGL游戏启动速度_抖音开放平台&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://developer.open-douyin.com/docs/resource/zh-CN/mini-game/develop/guide/performance-optimization/runtime-performance/optimize-game-memory"&gt;优化普通小游戏内存_抖音开放平台&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://developer.open-douyin.com/docs/resource/zh-CN/mini-game/develop/guide/performance-optimization/runtime-performance/sc_webgl_runtime_optimization"&gt;Unity WebGL 运行时优化建议_抖音开放平台&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.unity3d.com/6000.2/Documentation/Manual/webgl-texture-compression.html"&gt;Unity - Manual: Texture compression in Web&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Package Manager &lt;strong&gt;停用&lt;/strong&gt; 不使用的 &lt;strong&gt;Built-in&lt;/strong&gt; 模組&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="others"&gt;Others&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://blog.csdn.net/GoodCooking/article/details/136307133"&gt;Unity发布webgl获取浏览器的URL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/Marinerer/unity-webgl"&gt;GitHub - Marinerer/unity-webg&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="possibly-outdated"&gt;Possibly Outdated&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://tech.framesynthesis.co.jp/unity/webgl/"&gt;Unity WebGLビルドメモ - フレームシンセシス&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://zenn.dev/happy_elements/articles/hekk_ac_20231215"&gt;Unity 製 WebGL ゲームを AWS でお手軽公開&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Unity - Platform - Web - Issue</title><link>https://HoshikawaRyuukou.github.io/posts/unity---platform---web---issue/</link><pubDate>Sun, 19 Jan 2025 16:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---platform---web---issue/</guid><description>&lt;h2 id="error"&gt;Error&lt;/h2&gt;
+&lt;h3 id="error--failed-to-parse-binary-data-file-buildxxxdatabr"&gt;Error : Failed to parse binary data file Build/xxx.data.br&amp;hellip;&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Failed to parse binary data file Build/web.data.br (with &amp;ldquo;Content-Type: null&amp;rdquo;), because it is still brotli-compressed. It should have been uncompressed by the browser, but it was unable to do so since the web server provided the compressed content without specifying the HTTP Response Header &amp;ldquo;Content-Encoding: br&amp;rdquo; that would have informed the browser that decompression is needed. Please verify your web server hosting configuration to add the missing &amp;ldquo;Content-Encoding: br&amp;rdquo; HTTP Response Header.&lt;/p&gt;</description></item></channel></rss>

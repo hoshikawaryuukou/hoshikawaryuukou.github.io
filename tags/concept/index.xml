@@ -1,52 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Concept on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/concept/</link><description>Recent content in Concept on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sat, 04 Jan 2025 21:05:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/concept/index.xml" rel="self" type="application/rss+xml"/><item><title>Software Design - Concept - Object Lifecycle Management</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---concept---object-lifecycle-management/</link><pubDate>Sat, 04 Jan 2025 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---concept---object-lifecycle-management/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
-&lt;p>物件生命週期管理（Object Lifecycle Management）是指在程式運行過程中，對物件的創建、使用、及銷毀進行有效的控制和管理。&lt;/p>
-&lt;p>適當的物件生命週期管理有助於提高應用程式的性能、可維護性和資源利用效率。&lt;/p>
-&lt;h2 id="stage">Stage&lt;/h2>
-&lt;ol>
-&lt;li>
-&lt;p>&lt;strong>創建&lt;/strong>：&lt;/p>
-&lt;ul>
-&lt;li>物件被創建並初始化。&lt;/li>
-&lt;li>創建時，可能會注入其他依賴物件或設定一些必要的屬性。&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>使用&lt;/strong>：&lt;/p>
-&lt;ul>
-&lt;li>物件在應用程式中進行各種操作，如方法調用、屬性設定等。&lt;/li>
-&lt;li>這是物件的活躍期，通常是應用程式邏輯處理的核心部分。&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>銷毀&lt;/strong>：&lt;/p>
-&lt;ul>
-&lt;li>物件不再被需要時，它的資源會被釋放。&lt;/li>
-&lt;li>這個過程通常涉及到記憶體回收和釋放外部資源（例如檔案、資料庫連線等）。&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="lifetime">Lifetime&lt;/h2>
-&lt;ol>
-&lt;li>
-&lt;p>&lt;strong>Transient（瞬時）&lt;/strong>：&lt;/p>
-&lt;ul>
-&lt;li>每次請求或需要該物件時會創建一個新的實例。&lt;/li>
-&lt;li>適用於短暫的、不需要保持狀態的物件。&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Singleton（單例）&lt;/strong>：&lt;/p>
-&lt;ul>
-&lt;li>整個應用程式生命周期內，只有一個實例被創建。&lt;/li>
-&lt;li>適用於那些需要跨應用程式共享狀態的物件。&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Scoped（範圍）&lt;/strong>：&lt;/p>
-&lt;ul>
-&lt;li>物件的生命周期被限制在特定的範圍內，通常是某個特定的操作或請求範圍。&lt;/li>
-&lt;li>在範圍內，物件實例會被共享。但範圍結束後，物件會被銷毀。&lt;/li>
-&lt;li>適用於那些需要在某個範圍內共享狀態，但範圍結束後無需保持的物件。&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ol></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Concept on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/concept/</link><description>Recent content in Concept on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sat, 04 Jan 2025 21:56:18 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/concept/index.xml" rel="self" type="application/rss+xml"/><item><title>Software Design - Concept - Object Lifecycle Management</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---concept---object-lifecycle-management/</link><pubDate>Sat, 04 Jan 2025 21:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---concept---object-lifecycle-management/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;物件生命週期管理（Object Lifecycle Management）&lt;strong&gt;是程式設計中的一個重要概念，它指的是有效控制和管理一個物件從&lt;/strong&gt;建立&lt;/strong&gt;、&lt;strong&gt;使用&lt;/strong&gt;到&lt;strong&gt;銷毀&lt;/strong&gt;的整個過程。良好的生命週期管理不僅能提升應用程式的效能，還能提高程式碼的可維護性，並有效地利用系統資源。&lt;/p&gt;
+&lt;h2 id="stage"&gt;Stage&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;建立（Creation）&lt;/p&gt;
+&lt;p&gt;物件被初始化並在記憶體中生成。在這個階段，程式碼通常會執行建構函式，完成必要的設定，或注入所需的依賴項。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用（Usage）&lt;/p&gt;
+&lt;p&gt;物件處於活躍狀態，執行其核心功能。這段期間，應用程式會不斷地呼叫物件的方法，讀取或修改其屬性，處理各項業務邏輯。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;銷毀（Destruction）&lt;/p&gt;
+&lt;p&gt;當物件不再被需要時，系統會回收其所佔用的資源。這個過程通常涉及垃圾回收機制（Garbage Collection），並釋放如檔案連線、資料庫連線等外部資源，避免資源洩漏。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="lifetime"&gt;Lifetime&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;瞬時（Transient）&lt;/p&gt;
+&lt;p&gt;這種模式下的物件是一次性的。每次需要時，系統都會建立一個全新的實例。它特別適合那些不帶有狀態（Stateless）或只在短期內使用的物件，確保每次呼叫都是一個獨立乾淨的實體。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;單例（Singleton）&lt;/p&gt;
+&lt;p&gt;顧名思義，在整個應用程式的執行期間，只會建立一個單一的實例。所有對該物件的請求都會共用同一個實體。這種模式常用於管理全域性資源，例如設定檔、日誌記錄器或資料庫連線池等。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;範圍（Scoped）&lt;/p&gt;
+&lt;p&gt;這是一種介於瞬時和單例之間的模式。物件的生命週期被限制在一個特定的作用範圍內，例如一次 HTTP 請求或一個獨立的執行單元。在該範圍內，該物件都是唯一的；但當範圍結束時，該物件就會被銷毀。這種模式非常適合在單次請求中共享狀態，同時又確保不同請求之間不會互相干擾。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description></item></channel></rss>

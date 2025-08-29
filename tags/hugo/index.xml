@@ -1,114 +1,145 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/hugo/</link><description>Recent content in Hugo on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Tue, 05 Aug 2025 21:05:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Chat - Studying - Knowledge Management</title><link>https://HoshikawaRyuukou.github.io/posts/chat---career---knowledge-management/</link><pubDate>Tue, 05 Aug 2025 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/chat---career---knowledge-management/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
-&lt;p>🤓 正在摸索 Obsidian&amp;hellip;&lt;/p>
-&lt;p>我對筆記工具有幾個核心要求：&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>本地與格式自由：筆記必須可以用 &lt;strong>Markdown&lt;/strong> 格式 &lt;strong>本地儲存&lt;/strong>。我習慣掌控自己的資料，不希望將筆記內容完全託管給雲端服務。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>公開與分享：能輕鬆與 &lt;strong>GitHub&lt;/strong> 整合，並輸出 &lt;strong>靜態網頁&lt;/strong>。這讓我的知識不僅僅是個人資產，更能方便地公開分享與傳播。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>高效檢索：強大的 &lt;strong>標籤（Tags）與搜尋功能&lt;/strong> 是知識管理不可或缺的環節。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>AI 輔助整合：我希望筆記工具能與 AI 結合，實現自動製圖、格式化、提取大綱等輔助功能，讓工作流更加高效。&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="從舊流程到新挑戰">從舊流程到新挑戰&lt;/h2>
-&lt;p>過去，我的知識管理流程是：使用 &lt;strong>Markdown&lt;/strong> 搭配 &lt;strong>VS Code&lt;/strong> 撰寫，再透過 &lt;strong>GitHub Actions&lt;/strong> 部署成 &lt;strong>Hugo 靜態網站&lt;/strong>。這套系統行之有年，但在筆記數量突破 &lt;strong>200 篇&lt;/strong> 後，我遇到了瓶頸。&lt;/p>
-&lt;p>在海量的 &lt;code>.md&lt;/code> 檔案中，無論是在 VS Code 裡用 &lt;code>Ctrl+F&lt;/code>，或是在網站上透過標籤與搜尋，要精準定位到特定內容變得越來越困難。我隱約意識到，單純的檔案整理已經不夠，我需要一個能將知識點相互連結的工具，建立一個真正屬於自己的知識網絡。&lt;/p>
-&lt;p>其實早在前年，我就聽聞過 Obsidian 的大名，但當時的生態系和功能尚未成熟，所以沒有深入嘗試。&lt;/p>
-&lt;p>如今，Obsidian 的基礎設施已相當完善，社群分享的 「Obsidian + AI」工作流 更是如雨後春筍般湧現，尤其在我的社群動態中，這類分享佔據了很大的比例。這讓我意識到，是時候徹底重塑我的知識管理體系了。&lt;/p></description></item><item><title>Hugo - Github Actions + Github Pages</title><link>https://HoshikawaRyuukou.github.io/posts/hugo---github-actions-+-github-pages/</link><pubDate>Thu, 30 Jan 2025 14:12:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/hugo---github-actions-+-github-pages/</guid><description>&lt;h2 id="github-actions">GitHub Actions&lt;/h2>
-&lt;h3 id="gh-pagesyml">gh-pages.yml&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yml" data-lang="yml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">github pages&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">on&lt;/span>&lt;span style="color:#111">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">push&lt;/span>&lt;span style="color:#111">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">branches&lt;/span>&lt;span style="color:#111">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#ae81ff">main&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">pull_request&lt;/span>&lt;span style="color:#111">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">jobs&lt;/span>&lt;span style="color:#111">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">deploy&lt;/span>&lt;span style="color:#111">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">runs-on&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">ubuntu-22.04&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">steps&lt;/span>&lt;span style="color:#111">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">uses&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">actions/checkout@v3&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">with&lt;/span>&lt;span style="color:#111">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">submodules&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#00a8c8">true&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">fetch-depth&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span> &lt;span style="color:#75715e"># Fetch all history for .GitInfo and .Lastmod&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Setup Hugo&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">uses&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">peaceiris/actions-hugo@v3&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">with&lt;/span>&lt;span style="color:#111">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">hugo-version&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#d88200">&amp;#34;latest&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">extended&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#00a8c8">true&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Build&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">run&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">hugo --minify&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">Deploy&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">uses&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">peaceiris/actions-gh-pages@v4&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">if&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">github.ref == &amp;#39;refs/heads/main&amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">with&lt;/span>&lt;span style="color:#111">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">github_token&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">${{ secrets.GITHUB_TOKEN }}&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">publish_dir&lt;/span>&lt;span style="color:#111">:&lt;/span> &lt;span style="color:#ae81ff">./public&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Hugo - Image Reference</title><link>https://HoshikawaRyuukou.github.io/posts/hugo---image-reference/</link><pubDate>Thu, 30 Jan 2025 14:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/hugo---image-reference/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
-&lt;p>使用 Hugo 建立網站時，Markdown 編輯器預覽圖片時可能遇到的問題。&lt;/p>
-&lt;p>原因是相對路徑&lt;/p>
-&lt;ul>
-&lt;li>文章位於 &lt;code>/content/posts&lt;/code> 目錄&lt;/li>
-&lt;li>圖片位於 &lt;code>/static/images&lt;/code> 目錄&lt;/li>
-&lt;/ul>
-&lt;p>Hugo 能夠正確渲染圖片，因為它知道 /images 是相對於 static 目錄的路徑。然而，許多 Markdown 編輯器在預覽時，無法識別這種相對路徑，導致圖片無法顯示。&lt;/p>
-&lt;h2 id="solutions">Solutions&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://mikefrobbins.com/2023/02/08/rendering-images-in-markdown-preview-of-hugo-site/">Rendering Images in Markdown Preview of Hugo Site&lt;/a>
-&lt;ul>
-&lt;li>在 Hugo 項目的根目錄創建一個指向 static/images 目錄的符號連結（symlink）。&lt;/li>
-&lt;li>以管理員權限開啟 cmd&lt;/li>
-&lt;li>mklink /D images .\static\images&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul></description></item><item><title>Hugo - Note</title><link>https://HoshikawaRyuukou.github.io/posts/hugo---note/</link><pubDate>Thu, 30 Jan 2025 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/hugo---note/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
-&lt;p>Blog/筆記軟體 平台玲瑯滿目，但依賴於平台的風險難以忽視(倒站/政策改變)，網站搬家也讓人很頭疼。此 Blog 採方案是 &lt;code>Github Pages + Hugo&lt;/code>。&lt;/p>
-&lt;h2 id="guide">Guide&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://gohugo.io/">The world’s fastest framework for building websites | Hugo&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/gohugoio/hugo">gohugoio/hugo&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://devbricker.github.io/post/hugo/deploy/hugo_environment/">Hugo 從零開始 環境安裝(Windows)&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="environment">Environment&lt;/h2>
-&lt;ul>
-&lt;li>至 &lt;a href="https://github.com/gohugoio/hugo/releases">Hugo github release&lt;/a> 下載執行檔 (hugo_extended)&lt;/li>
-&lt;li>設置環境變數&lt;/li>
-&lt;li>&lt;code>hugo version&lt;/code> : 檢視 hugo 版本&lt;/li>
-&lt;/ul>
-&lt;h2 id="quick-chat-1">Quick Chat&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/adityatelange/hugo-PaperMod">adityatelange/hugo-PaperMod&lt;/a>
-&lt;ul>
-&lt;li>建議新手使用該主題練習&lt;/li>
-&lt;li>社群較活躍&lt;/li>
-&lt;li>教學較完善&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="themes">Themes&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://themes.gohugo.io/">Hugo Themes&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/hoshikawaryuukou/hugo-theme-cactus">hoshikawaryuukou/hugo-theme-cactus&lt;/a>
-&lt;ul>
-&lt;li>本 Blog Theme 基於以下 repository 修改&lt;/li>
-&lt;li>&lt;a href="https://github.com/monkeyWzr/hugo-theme-cactus">monkeyWzr/hugo-theme-cactus&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/OmeletWithoutEgg/hugo-theme-cactus">OmeletWithoutEgg/hugo-theme-cactus&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="custom">Custom&lt;/h2>
-&lt;ul>
-&lt;li>使用 git submodule 導入主題。&lt;/li>
-&lt;li>不要直接修改主題範本文件。&lt;/li>
-&lt;li>要修改的文件從主題範本 &lt;strong>複製(文件夾結構要相同)&lt;/strong> 出來到根目錄，&lt;a href="https://gohugo.io/templates/lookup-order/">Hugo 會照優先度來處理&lt;/a>。&lt;/li>
-&lt;li>多數主題都有配置 Google Analytics，只需填入 id 到 config 即可。&lt;/li>
-&lt;/ul></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/hugo/</link><description>Recent content in Hugo on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Wed, 13 Aug 2025 20:31:00 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Workflow – Mirroring Obsidian Notes to Hugo</title><link>https://HoshikawaRyuukou.github.io/posts/workflow--mirror-obsidian-notes-to-hugo/</link><pubDate>Wed, 13 Aug 2025 20:31:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow--mirror-obsidian-notes-to-hugo/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;使用 &lt;code&gt;robocopy&lt;/code&gt; 以鏡像方式，將 &lt;code&gt;obsidian-notes&lt;/code&gt; 中的 &lt;code&gt;posts&lt;/code&gt; 與 &lt;code&gt;images&lt;/code&gt; 資料夾，同步到 Hugo 專案的對應目錄。&lt;/p&gt;
+&lt;h2 id="operation"&gt;Operation&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;詢問使用者&lt;/strong&gt;是否要執行同步任務。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;設定並驗證路徑&lt;/strong&gt;，確保來源與目標皆存在。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;執行 &lt;code&gt;robocopy&lt;/code&gt; 鏡像同步&lt;/strong&gt;，將來源內容完整覆蓋至 Hugo 專案目標位置。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="mirrorbat"&gt;mirror.bat&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;@echo off
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;setlocal
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;:: Ask &lt;span style="color:#00a8c8"&gt;if&lt;/span&gt; the sync task should be run
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;echo&lt;/span&gt; Do you want to run the sync task? &lt;span style="color:#f92672"&gt;(&lt;/span&gt;Y/N&lt;span style="color:#f92672"&gt;)&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;set&lt;/span&gt; /p &lt;span style="color:#111"&gt;RUN_SYNC&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00a8c8"&gt;if&lt;/span&gt; /I not &lt;span style="color:#d88200"&gt;&amp;#34;%RUN_SYNC%&amp;#34;&lt;/span&gt;&lt;span style="color:#f92672"&gt;==&lt;/span&gt;&lt;span style="color:#d88200"&gt;&amp;#34;Y&amp;#34;&lt;/span&gt; &lt;span style="color:#f92672"&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#111"&gt;echo&lt;/span&gt; Sync task cancelled.
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; pause
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; goto :EOF
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;:: Get the directory of the current script
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;set&lt;/span&gt; &lt;span style="color:#d88200"&gt;&amp;#34;SCRIPT_DIR=%~dp0&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;:: Set relative paths
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;set&lt;/span&gt; &lt;span style="color:#d88200"&gt;&amp;#34;SRC_POSTS=%SCRIPT_DIR%..\obsidian-notes\blog\posts&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;set&lt;/span&gt; &lt;span style="color:#d88200"&gt;&amp;#34;SRC_IMGS=%SCRIPT_DIR%..\obsidian-notes\blog\images&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;set&lt;/span&gt; &lt;span style="color:#d88200"&gt;&amp;#34;DST_POSTS=%SCRIPT_DIR%content\posts&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;set&lt;/span&gt; &lt;span style="color:#d88200"&gt;&amp;#34;DST_IMGS=%SCRIPT_DIR%static\images&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;:: Check &lt;span style="color:#00a8c8"&gt;if&lt;/span&gt; &lt;span style="color:#111"&gt;source&lt;/span&gt; paths exist
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;echo&lt;/span&gt; Checking &lt;span style="color:#111"&gt;source&lt;/span&gt; paths...
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00a8c8"&gt;if&lt;/span&gt; not exist &lt;span style="color:#d88200"&gt;&amp;#34;%SRC_POSTS%&amp;#34;&lt;/span&gt; &lt;span style="color:#f92672"&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#111"&gt;echo&lt;/span&gt; ERROR: Source posts directory not found: %SRC_POSTS%
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#111"&gt;echo&lt;/span&gt; Please confirm that the blog-obsidian project location is correct.
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; pause
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; goto :EOF
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00a8c8"&gt;if&lt;/span&gt; not exist &lt;span style="color:#d88200"&gt;&amp;#34;%SRC_IMGS%&amp;#34;&lt;/span&gt; &lt;span style="color:#f92672"&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#111"&gt;echo&lt;/span&gt; ERROR: Source images directory not found: %SRC_IMGS%
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#111"&gt;echo&lt;/span&gt; Please confirm that the blog-obsidian project location is correct.
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; pause
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; goto :EOF
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;echo&lt;/span&gt; Source path check passed.
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo.
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;echo&lt;/span&gt; Starting synchronization...
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;:: Run synchronization
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;echo&lt;/span&gt; Syncing posts directory...
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;robocopy &lt;span style="color:#d88200"&gt;&amp;#34;%SRC_POSTS%&amp;#34;&lt;/span&gt; &lt;span style="color:#d88200"&gt;&amp;#34;%DST_POSTS%&amp;#34;&lt;/span&gt; /MIR
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo.
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;echo&lt;/span&gt; Syncing images directory...
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;robocopy &lt;span style="color:#d88200"&gt;&amp;#34;%SRC_IMGS%&amp;#34;&lt;/span&gt; &lt;span style="color:#d88200"&gt;&amp;#34;%DST_IMGS%&amp;#34;&lt;/span&gt; /MIR
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo.
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;echo&lt;/span&gt; Synchronization complete!
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pause
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;endlocal
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Workflow – Build and Deploy Hugo Site</title><link>https://HoshikawaRyuukou.github.io/posts/workflow--build-and-deploy-hugo-site/</link><pubDate>Thu, 30 Jan 2025 14:12:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow--build-and-deploy-hugo-site/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;當 &lt;code&gt;main&lt;/code&gt; 分支有 push，或有 pull request 時，會自動用 Hugo 生成靜態網站，並將 &lt;code&gt;public&lt;/code&gt; 目錄的內容部署到 GitHub Pages。&lt;/p&gt;
+&lt;h2 id="operation"&gt;Operation&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;檢出程式碼&lt;/strong&gt;（含 submodules，全歷史）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;安裝 Hugo&lt;/strong&gt;（最新版、Extended 版）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;建置網站&lt;/strong&gt;（&lt;code&gt;hugo --minify&lt;/code&gt; 壓縮輸出）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;部署到 GitHub Pages&lt;/strong&gt;（僅 &lt;code&gt;main&lt;/code&gt; 分支才執行部署）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="gh-pagesyml"&gt;gh-pages.yml&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-yml" data-lang="yml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;name&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;github pages&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;on&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;push&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;branches&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; - &lt;span style="color:#ae81ff"&gt;main&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;pull_request&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;jobs&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;deploy&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;runs-on&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;ubuntu-22.04&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;steps&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; - &lt;span style="color:#f92672"&gt;uses&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;actions/checkout@v3&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;with&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;submodules&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#00a8c8"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;fetch-depth&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt; &lt;span style="color:#75715e"&gt;# Fetch all history for .GitInfo and .Lastmod&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; - &lt;span style="color:#f92672"&gt;name&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;Setup Hugo&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;uses&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;peaceiris/actions-hugo@v3&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;with&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;hugo-version&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#d88200"&gt;&amp;#34;latest&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;extended&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#00a8c8"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; - &lt;span style="color:#f92672"&gt;name&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;Build&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;run&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;hugo --minify&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; - &lt;span style="color:#f92672"&gt;name&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;Deploy&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;uses&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;peaceiris/actions-gh-pages@v4&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;if&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;github.ref == &amp;#39;refs/heads/main&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;with&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;github_token&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;${{ secrets.GITHUB_TOKEN }}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;publish_dir&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;./public&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Hugo</title><link>https://HoshikawaRyuukou.github.io/posts/hugo/</link><pubDate>Thu, 30 Jan 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/hugo/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Hugo&lt;/strong&gt; 是一款以 &lt;strong&gt;Go 語言&lt;/strong&gt;編寫的 &lt;strong&gt;靜態網站生成器（Static Site Generator, SSG）&lt;/strong&gt;，特色是 &lt;strong&gt;速度極快&lt;/strong&gt;、&lt;strong&gt;部署簡單&lt;/strong&gt;，且&lt;strong&gt;不依賴後端伺服器程式&lt;/strong&gt;。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;對於非前端專業的我來說，Hugo 最大的優勢在於：能專注於以 &lt;strong&gt;Markdown&lt;/strong&gt; 撰寫內容，不必過度投入在前端細節。當然，若有需要，也能自製或改造主題。&lt;/p&gt;
+&lt;p&gt;建議新手可以先嘗試以下功能完整且持續維護的主題：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/adityatelange/hugo-PaperMod"&gt;adityatelange/hugo-PaperMod&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/nunocoracao/blowfish"&gt;nunocoracao/blowfish&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://gohugo.io/"&gt;The world’s fastest framework for building websites | Hugo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://devbricker.github.io/post/hugo/deploy/hugo_environment/"&gt;Hugo 從零開始：環境安裝（Windows）&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="environment"&gt;Environment&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;從 &lt;a href="https://github.com/gohugoio/hugo/releases"&gt;Hugo GitHub Release&lt;/a&gt; 下載執行檔（建議選擇 &lt;strong&gt;hugo_extended&lt;/strong&gt; 版本）&lt;/li&gt;
+&lt;li&gt;設置環境變數&lt;/li&gt;
+&lt;li&gt;常用指令：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hugo version&lt;/code&gt;：檢視 Hugo 版本&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hugo server&lt;/code&gt;：本地預覽網站&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="theme"&gt;Theme&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;⚠️ 安裝主題前，請先閱讀該主題作者的安裝與配置文件（不同主題的流程可能略有差異）。&lt;/li&gt;
+&lt;li&gt;主題資源：&lt;a href="https://themes.gohugo.io/"&gt;Hugo Themes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;本 blog 主題：&lt;a href="https://github.com/hoshikawaryuukou/hugo-theme-cactus"&gt;hoshikawaryuukou/hugo-theme-cactus&lt;/a&gt; 是基於以下 repository 修改：
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/monkeyWzr/hugo-theme-cactus"&gt;monkeyWzr/hugo-theme-cactus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/OmeletWithoutEgg/hugo-theme-cactus"&gt;OmeletWithoutEgg/hugo-theme-cactus&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="小幅修改主題"&gt;小幅修改主題&lt;/h3&gt;
+&lt;p&gt;⚠️ &lt;strong&gt;不要直接修改主題原始檔案&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;若需要修改，請將要編輯的文件 &lt;strong&gt;依相同資料夾結構&lt;/strong&gt; 複製到專案根目錄，Hugo 會依&lt;a href="https://gohugo.io/templates/lookup-order/"&gt;模板查找優先順序&lt;/a&gt;載入你修改的版本。&lt;/p&gt;</description></item></channel></rss>

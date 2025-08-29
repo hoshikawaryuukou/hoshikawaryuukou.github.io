@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cuda on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/cuda/</link><description>Recent content in Cuda on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Fri, 08 Nov 2024 10:11:10 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/cuda/index.xml" rel="self" type="application/rss+xml"/><item><title>Nvidia - Note</title><link>https://HoshikawaRyuukou.github.io/posts/nvidia---note/</link><pubDate>Fri, 08 Nov 2024 10:11:10 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/nvidia---note/</guid><description>&lt;h2 id="cuda">CUDA&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 查找 GPU 支持的 CUDA 版本&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>nvidia-smi 
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 如果安裝了CUDA，將顯示CUDA編譯工具的版本信息&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>nvcc --version
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>

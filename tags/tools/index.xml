@@ -1,83 +1,98 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tools on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/tools/</link><description>Recent content in Tools on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sat, 01 Mar 2025 21:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/tools/index.xml" rel="self" type="application/rss+xml"/><item><title>Tools</title><link>https://HoshikawaRyuukou.github.io/posts/tools/</link><pubDate>Sat, 01 Mar 2025 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/tools/</guid><description>&lt;h2 id="analyzer">Analyzer&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://diskanalyzer.com/">WizTree - The Fastest Disk Space Analyzer&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="antivirus">Antivirus&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://www.defenderui.com/">DefenderUI&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="automation">Automation&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/taojy123/KeymouseGo?tab=readme-ov-file">taojy123/KeymouseGo&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="batch">Batch&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://chromewebstore.google.com/detail/save-all-resources/abpdnfjocnmdomablahdcfnoggeeiedb">Save All Resources&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="context">Context&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/BluePointLilac/ContextMenuManager">BluePointLilac/ContextMenuManager&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="diagram">Diagram&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=CU0ZhMoXz7k">只會用 Office 畫流程圖？許多人試用過這個後直呼回不去了 👍 | Draw.io 教學&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://postspark.app/">postspark&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="document">Document&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://hackmd.io/zh">HackMD：協作 Markdown 文件，分享知識的平台&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="media---image">Media - Image&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://yeoji.github.io/spritesheet-cutter/">Spritesheet Cutter&lt;/a>&lt;/li>
-&lt;li>&lt;a href="free-tex-packer.com/">texture packer&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://witnessmonolith.itch.io/atlased">Atlased&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="media---speech">Media - Speech&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/jianchang512/stt">jianchang512/stt&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="media---video">Media - Video&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=ERee4DY2LQ8">如何安裝FFmpeg&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.screentogif.com/">ScreenToGif&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://videodler.com/zh-Hant/">Twitter 影片下載器&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.videolan.org/vlc/index.zh_TW.html">VLC media player&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/Tyrrrz/YoutubeDownloader">Tyrrrz/YoutubeDownloader&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/mifi/lossless-cut">mifi/lossless-cut&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.capcut.com/zh-tw/">CapCut&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/Andrews54757/FastStream">Andrews54757/FastStream&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="message">Message&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://emojipedia.org/">Emojipedia&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="network">Network&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/rejetto/hfs">rejetto/hfs&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/terreng/simple-web-server">terreng/simple-web-server&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/emanuele-f/PCAPdroid">emanuele-f/PCAPdroid&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="package-manager">Package Manager&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/marticliment/UniGetUI">marticliment/UniGetUI&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="translation">Translation&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://chromewebstore.google.com/detail/%E6%B2%99%E6%8B%89%E7%BF%BB%E8%AD%AF%EF%BC%9A%E8%81%9A%E5%90%88%E5%AD%97%E5%85%B8%20%E3%80%81%E5%8A%83%E8%A9%9E%E7%BF%BB%E8%AD%AF%20%26%20%E6%9F%A5%E8%A9%9E/kmmcnncdadfmbjkoloakclhfllocaeap">沙拉翻譯：聚合字典 、劃詞翻譯 &amp;amp; 查詞 - Chrome 線上應用程式商店&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/dmMaze/BallonsTranslator">dmMaze/BallonsTranslator&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="search">Search&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://felo.ai/zh-Hant/search">Felo - 您的免費 AI 搜尋引擎&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="site">Site&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=NrpnYQDQ5s4">史上最簡單「一頁式網站」建置工具！ | Google Sites 協作平台快速上手&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Tools - ExifTool - Note</title><link>https://HoshikawaRyuukou.github.io/posts/tools---exiftool---note/</link><pubDate>Sun, 27 Oct 2024 21:13:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/tools---exiftool---note/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
-&lt;p>ExifTool 用來讀取、寫入、編輯各種檔案的 元數據（Metadata），特別是 照片、影片、音訊、PDF 等格式。&lt;/p>
-&lt;h2 id="memo">Memo&lt;/h2>
-&lt;h3 id="source-覆蓋-target">source 覆蓋 target&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>exiftool -overwrite_original -all&lt;span style="color:#f92672">=&lt;/span> target.png
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>exiftool -tagsFromFile source.png -all:all target.png
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tools on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/tools/</link><description>Recent content in Tools on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sun, 10 Aug 2025 09:56:18 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/tools/index.xml" rel="self" type="application/rss+xml"/><item><title>OS - Windows - Tools</title><link>https://HoshikawaRyuukou.github.io/posts/os---windows---tools/</link><pubDate>Sun, 10 Aug 2025 09:56:18 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/os---windows---tools/</guid><description>&lt;h2 id="robocopy"&gt;robocopy&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;全名是 &lt;strong&gt;Robust File Copy&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;是 Windows 作業系統內建的&lt;strong&gt;命令列檔案複製工具&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;支援多執行緒、差異複製、恢復中斷等功能。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;robocopy source destination /MIR
+&lt;/code&gt;&lt;/pre&gt;&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;source&lt;/code&gt; : 來源資料夾路徑&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;destination&lt;/code&gt; : 目標資料夾路徑&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/MIR&lt;/code&gt; : 鏡像同步
+&lt;ul&gt;
+&lt;li&gt;新增來源有但目標沒有的檔案&lt;/li&gt;
+&lt;li&gt;覆蓋來源較新的檔案&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;刪除&lt;/strong&gt;目標有但來源已刪除的檔案（⚠️注意不可逆）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title>Tools</title><link>https://HoshikawaRyuukou.github.io/posts/tools/</link><pubDate>Sat, 01 Mar 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/tools/</guid><description>&lt;h2 id="antivirus"&gt;Antivirus&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.cyberlock.global/DefenderUI.aspx"&gt;DefenderUI - Unlocks the full power of Windows Defender with an intuitive, streamlined interface.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="automation"&gt;Automation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/taojy123/KeymouseGo?tab=readme-ov-file"&gt;taojy123/KeymouseGo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="batch"&gt;Batch&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://chromewebstore.google.com/detail/save-all-resources/abpdnfjocnmdomablahdcfnoggeeiedb"&gt;Save All Resources&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="context"&gt;Context&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/BluePointLilac/ContextMenuManager"&gt;BluePointLilac/ContextMenuManager&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="diagram"&gt;Diagram&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=CU0ZhMoXz7k"&gt;只會用 Office 畫流程圖？許多人試用過這個後直呼回不去了 👍 | Draw.io 教學&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://postspark.app/"&gt;postspark&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="disk"&gt;Disk&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://diskanalyzer.com/"&gt;WizTree - The Fastest Disk Space Analyzer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="document"&gt;Document&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://hackmd.io/zh"&gt;HackMD：協作 Markdown 文件，分享知識的平台&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="media---image"&gt;Media - Image&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://yeoji.github.io/spritesheet-cutter/"&gt;Spritesheet Cutter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="free-tex-packer.com/"&gt;texture packer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://witnessmonolith.itch.io/atlased"&gt;Atlased&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="media---speech"&gt;Media - Speech&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/jianchang512/stt"&gt;jianchang512/stt&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="media---video"&gt;Media - Video&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=ERee4DY2LQ8"&gt;如何安裝FFmpeg&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.screentogif.com/"&gt;ScreenToGif&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://videodler.com/zh-Hant/"&gt;Twitter 影片下載器&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.videolan.org/vlc/index.zh_TW.html"&gt;VLC media player&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/Tyrrrz/YoutubeDownloader"&gt;Tyrrrz/YoutubeDownloader&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/mifi/lossless-cut"&gt;mifi/lossless-cut&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.capcut.com/zh-tw/"&gt;CapCut&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/Andrews54757/FastStream"&gt;Andrews54757/FastStream&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="message"&gt;Message&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://emojipedia.org/"&gt;Emojipedia&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="network"&gt;Network&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/rejetto/hfs"&gt;rejetto/hfs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/terreng/simple-web-server"&gt;terreng/simple-web-server&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/emanuele-f/PCAPdroid"&gt;emanuele-f/PCAPdroid&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="package-manager"&gt;Package Manager&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/marticliment/UniGetUI"&gt;marticliment/UniGetUI&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="translation"&gt;Translation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://chromewebstore.google.com/detail/%E6%B2%99%E6%8B%89%E7%BF%BB%E8%AD%AF%EF%BC%9A%E8%81%9A%E5%90%88%E5%AD%97%E5%85%B8%20%E3%80%81%E5%8A%83%E8%A9%9E%E7%BF%BB%E8%AD%AF%20%26%20%E6%9F%A5%E8%A9%9E/kmmcnncdadfmbjkoloakclhfllocaeap"&gt;沙拉翻譯：聚合字典 、劃詞翻譯 &amp;amp; 查詞 - Chrome 線上應用程式商店&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dmMaze/BallonsTranslator"&gt;dmMaze/BallonsTranslator&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="search"&gt;Search&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://felo.ai/zh-Hant/search"&gt;Felo - 您的免費 AI 搜尋引擎&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="site"&gt;Site&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=NrpnYQDQ5s4"&gt;史上最簡單「一頁式網站」建置工具！ | Google Sites 協作平台快速上手&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="misc"&gt;Misc&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://tools.wingzero.tw/web/page/1"&gt;網路資源列表| DeTools&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

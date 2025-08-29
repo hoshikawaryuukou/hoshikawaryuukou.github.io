@@ -1,112 +1,63 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Chat on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/chat/</link><description>Recent content in Chat on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Tue, 05 Aug 2025 21:05:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/chat/index.xml" rel="self" type="application/rss+xml"/><item><title>Chat - Studying - Knowledge Management</title><link>https://HoshikawaRyuukou.github.io/posts/chat---career---knowledge-management/</link><pubDate>Tue, 05 Aug 2025 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/chat---career---knowledge-management/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
-&lt;p>🤓 正在摸索 Obsidian&amp;hellip;&lt;/p>
-&lt;p>我對筆記工具有幾個核心要求：&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>本地與格式自由：筆記必須可以用 &lt;strong>Markdown&lt;/strong> 格式 &lt;strong>本地儲存&lt;/strong>。我習慣掌控自己的資料，不希望將筆記內容完全託管給雲端服務。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>公開與分享：能輕鬆與 &lt;strong>GitHub&lt;/strong> 整合，並輸出 &lt;strong>靜態網頁&lt;/strong>。這讓我的知識不僅僅是個人資產，更能方便地公開分享與傳播。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>高效檢索：強大的 &lt;strong>標籤（Tags）與搜尋功能&lt;/strong> 是知識管理不可或缺的環節。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>AI 輔助整合：我希望筆記工具能與 AI 結合，實現自動製圖、格式化、提取大綱等輔助功能，讓工作流更加高效。&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="從舊流程到新挑戰">從舊流程到新挑戰&lt;/h2>
-&lt;p>過去，我的知識管理流程是：使用 &lt;strong>Markdown&lt;/strong> 搭配 &lt;strong>VS Code&lt;/strong> 撰寫，再透過 &lt;strong>GitHub Actions&lt;/strong> 部署成 &lt;strong>Hugo 靜態網站&lt;/strong>。這套系統行之有年，但在筆記數量突破 &lt;strong>200 篇&lt;/strong> 後，我遇到了瓶頸。&lt;/p>
-&lt;p>在海量的 &lt;code>.md&lt;/code> 檔案中，無論是在 VS Code 裡用 &lt;code>Ctrl+F&lt;/code>，或是在網站上透過標籤與搜尋，要精準定位到特定內容變得越來越困難。我隱約意識到，單純的檔案整理已經不夠，我需要一個能將知識點相互連結的工具，建立一個真正屬於自己的知識網絡。&lt;/p>
-&lt;p>其實早在前年，我就聽聞過 Obsidian 的大名，但當時的生態系和功能尚未成熟，所以沒有深入嘗試。&lt;/p>
-&lt;p>如今，Obsidian 的基礎設施已相當完善，社群分享的 「Obsidian + AI」工作流 更是如雨後春筍般湧現，尤其在我的社群動態中，這類分享佔據了很大的比例。這讓我意識到，是時候徹底重塑我的知識管理體系了。&lt;/p></description></item><item><title>Chat - Career - Mindset</title><link>https://HoshikawaRyuukou.github.io/posts/chat---career---mindset/</link><pubDate>Thu, 24 Jul 2025 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/chat---career---mindset/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
-&lt;p>這是我近年於職場上的心態轉變，也算是告別曾經的那份天真👀。&lt;/p>
-&lt;h2 id="不再自我感動職場沒有默契只有溝通">&lt;strong>不再自我感動：職場沒有默契，只有溝通&lt;/strong>&lt;/h2>
-&lt;blockquote>
-&lt;p>以前常會想：「我都做到這樣了，應該會被看見吧？」&lt;/p>&lt;/blockquote>
-&lt;p>但現實往往是——大家都在忙，沒人會有空觀察你、理解你努力背後的細節。&lt;/p>
-&lt;blockquote>
-&lt;p>有額外做，就清楚地說。這不是邀功，是讓資訊透明、讓決策更有依據。&lt;/p>&lt;/blockquote>
-&lt;h2 id="不再腦補結論有問題就問不猜測別人怎麼想">&lt;strong>不再腦補結論：有問題就問，不猜測別人怎麼想&lt;/strong>&lt;/h2>
-&lt;p>很多時候一句主管的語氣、一個同事的反應，可能讓人開始內心小劇場：&lt;/p>
-&lt;blockquote>
-&lt;p>「是不是我表現不好？他是不是在暗示我？」&lt;/p>&lt;/blockquote>
-&lt;p>但其實根本沒這麼複雜，有問題就說、想知道就問。&lt;/p>
-&lt;blockquote>
-&lt;p>不確定的事先標註是猜測，別拿來當決策依據。&lt;/p>&lt;/blockquote>
-&lt;h2 id="不再只看自己的工具箱用對資源比技術更重要">&lt;strong>不再只看自己的工具箱：用對資源比技術更重要&lt;/strong>&lt;/h2>
-&lt;p>這是最近一個明顯體悟。某次 server 誤刪資料，技術面很難復原，大家都在討論備份或 rollback 的可能性。但以營運部門的觀點：&lt;/p>
-&lt;blockquote>
-&lt;p>其實有個方式可以救到 70% 關鍵資料，而且成本很低。&lt;/p>&lt;/blockquote>
-&lt;p>因為他們知道哪些資料「真有價值」。技術不該只解「怎麼做」，更該問「為什麼做、為什麼這樣做比較值得」。&lt;/p>
-&lt;blockquote>
-&lt;p>&lt;strong>不要急著找最強的技術解，要先找到對的人問對的問題。&lt;/strong>&lt;/p>&lt;/blockquote></description></item><item><title>Reading - 岩田聰如是說：從天才程式設計師到遊戲公司社長，任天堂中興之主傳奇的一生</title><link>https://HoshikawaRyuukou.github.io/posts/chat---reading---%E5%B2%A9%E7%94%B0%E8%81%B0%E5%A6%82%E6%98%AF%E8%AA%AA%E5%BE%9E%E5%A4%A9%E6%89%8D%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E5%B8%AB%E5%88%B0%E9%81%8A%E6%88%B2%E5%85%AC%E5%8F%B8%E7%A4%BE%E9%95%B7%E4%BB%BB%E5%A4%A9%E5%A0%82%E4%B8%AD%E8%88%88%E4%B9%8B%E4%B8%BB%E5%82%B3%E5%A5%87%E7%9A%84%E4%B8%80%E7%94%9F/</link><pubDate>Fri, 22 Nov 2024 21:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/chat---reading---%E5%B2%A9%E7%94%B0%E8%81%B0%E5%A6%82%E6%98%AF%E8%AA%AA%E5%BE%9E%E5%A4%A9%E6%89%8D%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E5%B8%AB%E5%88%B0%E9%81%8A%E6%88%B2%E5%85%AC%E5%8F%B8%E7%A4%BE%E9%95%B7%E4%BB%BB%E5%A4%A9%E5%A0%82%E4%B8%AD%E8%88%88%E4%B9%8B%E4%B8%BB%E5%82%B3%E5%A5%87%E7%9A%84%E4%B8%80%E7%94%9F/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
-&lt;p>這本書偏向經營管理和領導力的層面，特別是岩田聰如何作為任天堂的社長，帶領公司走向成功。雖然書中也有描述岩田聰作為程式設計師的背景，但更多的焦點放在他如何運用管理哲學和人性化領導來塑造任天堂的發展。&lt;/p>
-&lt;h2 id="review">Review&lt;/h2>
-&lt;h3 id="第一章-岩田先生成為社長以前">第一章 岩田先生成為社長以前。&lt;/h3>
-&lt;p>展示了岩田聰如何從一名年輕的程式設計師，逐步成為一位備受尊敬的遊戲業領袖。&lt;/p>
-&lt;blockquote>
-&lt;p>引導組織發揮優勢，揚長避短，這就是經營。&lt;/p>&lt;/blockquote>
-&lt;h4 id="高中時代萌芽的天賦與熱忱">高中時代：萌芽的天賦與熱忱&lt;/h4>
-&lt;ul>
-&lt;li>靠好奇心和創造力自行探索早期計算機，嘗試開發遊戲，奠定基礎技能。&lt;/li>
-&lt;li>在實驗中累積對電腦的深刻理解，明白其「能與不能」。&lt;/li>
-&lt;li>受到讚賞後獲得正向激勵，促使他不斷進步。&lt;/li>
-&lt;/ul>
-&lt;h4 id="大學時代實踐中學習">大學時代：實踐中學習&lt;/h4>
-&lt;ul>
-&lt;li>積極參與程式聚會，認識志同道合的朋友。&lt;/li>
-&lt;li>進入 &lt;strong>HAL 研究所&lt;/strong> 打工，正式踏足遊戲開發領域。&lt;/li>
-&lt;li>雖認同大學教育的價值，但認為工作所需的技能多來自實踐經驗。&lt;/li>
-&lt;/ul>
-&lt;h4 id="hal-開發組時期快速成長的責任">HAL 開發組時期：快速成長的責任&lt;/h4>
-&lt;ul>
-&lt;li>作為 HAL 開發組的創始成員，必須負責從技術到決策的多項工作。&lt;/li>
-&lt;li>見證團隊從 5 人擴展到 90 人，搭上任天堂紅白機的成功浪潮。&lt;/li>
-&lt;li>被提拔為開發部長，承擔更大的管理責任。&lt;/li>
-&lt;/ul>
-&lt;h4 id="hal-社長時期---經營危機">HAL 社長時期 - 經營危機&lt;/h4>
-&lt;ul>
-&lt;li>在公司面臨破產時毅然接任社長，直言：「這件事由我來做最合理。」&lt;/li>
-&lt;li>在極限壓力下經歷人情冷暖，領悟短期迅速獲利未必是最佳解。&lt;/li>
-&lt;li>花一個月與全體員工進行個別面談，建立決策基準。&lt;/li>
-&lt;li>「做決策，就是收集，分析情報，決定事務的優先度」&lt;/li>
-&lt;li>「依照訂立的優先順序推行即可」&lt;/li>
-&lt;/ul>
-&lt;h4 id="hal-社長時期---以心換心">HAL 社長時期 - 以心換心&lt;/h4>
-&lt;ul>
-&lt;li>理想的公司：&lt;code>老闆能理解員工的公司&lt;/code> 與 &lt;code>老闆認真為每個員工的幸福考慮的公司&lt;/code>&lt;/li>
-&lt;li>面談第一個問題 : &lt;code>你現在開心嗎?&lt;/code>&lt;/li>
-&lt;li>有些話只有面對面才能說出口。&lt;/li>
-&lt;li>先讓對方說完，才有可能真心對話。&lt;/li>
-&lt;li>面談則是聊到 : &lt;code>何時豁然開朗&lt;/code>&lt;/li>
-&lt;li>確定雙方價值觀，盡可能解釋決策動機。&lt;/li>
-&lt;li>「所謂的公司，是擁有共同目標的人們各司其職、齊心協力完成目標的地方，因此最好先制定共同的目標」&lt;/li>
-&lt;li>「若是如此這般的背景條件，換作是你，你有何想法?」&lt;/li>
-&lt;li>建立信任：實際看到那個人解決問題 -&amp;gt; 相信那個人的決定&lt;/li>
-&lt;/ul>
-&lt;h4 id="hal-社長時期---轉折契機">HAL 社長時期 - 轉折契機&lt;/h4>
-&lt;ul>
-&lt;li>勇敢叫停《叮噹波波》的修改，即使導致銷售部顏面掃地。&lt;/li>
-&lt;li>帶領團隊推出《星之卡比》，憑藉亮眼表現大獲成功，預購量達預期的 200 倍。&lt;/li>
-&lt;/ul>
-&lt;h3 id="第二章-岩田先生的領導能力">第二章 岩田先生的領導能力。&lt;/h3>
-&lt;h3 id="第三章-岩田先生的個性">第三章 岩田先生的個性。&lt;/h3>
-&lt;h3 id="第四章-岩田先生信賴的人">第四章 岩田先生信賴的人。&lt;/h3>
-&lt;h3 id="第五章-岩田先生所追求的遊戲">第五章 岩田先生所追求的遊戲。&lt;/h3>
-&lt;h3 id="第六章-別人口中的岩田先生">第六章 別人口中的岩田先生。&lt;/h3>
-&lt;h3 id="宮本茂口中的岩田先生">宮本茂口中的岩田先生&lt;/h3>
-&lt;h3 id="系井重里口中的岩田先生">系井重里口中的岩田先生&lt;/h3>
-&lt;h3 id="第七章-岩田先生這個人">第七章 岩田先生這個人。&lt;/h3></description></item><item><title>Chat - Profile - Studio</title><link>https://HoshikawaRyuukou.github.io/posts/chat---profile---studio/</link><pubDate>Wed, 02 Oct 2024 13:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/chat---profile---studio/</guid><description>&lt;h2 id="箱庭工作室-miniature-garden-studio">箱庭工作室 (Miniature Garden Studio)&lt;/h2>
-&lt;p>這是我的工作室名。&lt;/p>
-&lt;h3 id="核心思想">核心思想&lt;/h3>
-&lt;blockquote>
-&lt;p>每個應用程式都是一個精心構築的 &lt;strong>箱庭/微型世界&lt;/strong>，在有限的環境中創造豐富且深度的體驗，讓使用者能夠沉浸其中。&lt;/p>&lt;/blockquote>
-&lt;h2 id="現實中的箱庭">現實中的箱庭&lt;/h2>
-&lt;p>箱庭（はこにわ，Hakoniwa），它是一種縮小版的庭園或景觀模型。這個概念源於日本，最早用來指代傳統日式庭園的迷你模型，但後來這個詞的應用範圍擴展到了各種縮小版的自然景觀創作。&lt;/p>
-&lt;h2 id="遊戲中的箱庭">遊戲中的箱庭&lt;/h2>
-&lt;p>箱庭設計在遊戲中已成為一種經典理念。&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://www.ign.com.cn/ign-xiao-ke-tang/22014/feature/ignxiao-ke-tang-49xiang-ting">IGN小课堂#49：箱庭&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.gcores.com/articles/122163">从沙盒和开放世界谈起，说说日本的箱庭设计理念&lt;/a>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Chat on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/chat/</link><description>Recent content in Chat on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 28 Aug 2025 15:02:36 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/chat/index.xml" rel="self" type="application/rss+xml"/><item><title>Chat - Misc - Pangu Spacing</title><link>https://HoshikawaRyuukou.github.io/posts/chat---misc---pangu-spacing/</link><pubDate>Thu, 28 Aug 2025 15:02:36 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/chat---misc---pangu-spacing/</guid><description>&lt;h2 id="quick"&gt;Quick&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我總是習慣在中英文之間加個順眼的空白，如今我才知道他有 &lt;strong&gt;盤古之白&lt;/strong&gt; 這名頭。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;「盤古之白」這個概念在英文中通常被稱為 &lt;strong&gt;Pangu spacing&lt;/strong&gt;。這個術語用來描述在中文與半形英文字母、數字或符號之間需要插入的空格，以提高排版的可讀性和美觀性。&lt;/p&gt;
+&lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;定義&lt;/strong&gt;：Pangu spacing 指的是在中文和英文（或數字）之間插入的空格，旨在劈開全形字和半形字之間的混沌，使得文本更易於閱讀。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;排版規範&lt;/strong&gt;：在中英文混排的情況下，通常建議在中文和半形英文字母之間加入空格，例如「當你凝視著 bug，bug 也凝視著你」而不是「當你凝視著bug，bug也凝視著你」。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="extra"&gt;Extra&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/vinta/pangu.js"&gt;GitHub - vinta/pangu.js&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Chat - Career - Mindset</title><link>https://HoshikawaRyuukou.github.io/posts/chat---career---mindset/</link><pubDate>Thu, 24 Jul 2025 20:31:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/chat---career---mindset/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;這是我近年於職場上的心態轉變，也算是告別曾經的那份天真👀。&lt;/p&gt;
+&lt;h2 id="不再自我感動職場沒有默契只有溝通"&gt;&lt;strong&gt;不再自我感動：職場沒有默契，只有溝通&lt;/strong&gt;&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;以前常會想：「我都做到這樣了，應該會被看見吧？」&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;但現實往往是——大家都在忙，沒人會有空觀察你、理解你努力背後的細節。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;有額外做，就清楚地說。這不是邀功，是讓資訊透明、讓決策更有依據。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id="不再腦補結論有問題就問不猜測別人怎麼想"&gt;&lt;strong&gt;不再腦補結論：有問題就問，不猜測別人怎麼想&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;很多時候一句主管的語氣、一個同事的反應，可能讓人開始內心小劇場：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;「是不是我表現不好？他是不是在暗示我？」&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;但其實根本沒這麼複雜，有問題就說、想知道就問。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;不確定的事先標註是猜測，別拿來當決策依據。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id="不再只看自己的工具箱用對資源比技術更重要"&gt;&lt;strong&gt;不再只看自己的工具箱：用對資源比技術更重要&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;這是最近一個明顯體悟。某次 server 誤刪資料，技術面很難復原，大家都在討論備份或 rollback 的可能性。但以營運部門的觀點：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;其實有個方式可以救到 70% 關鍵資料，而且成本很低。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;因為他們知道哪些資料「真有價值」。技術不該只解「怎麼做」，更該問「為什麼做、為什麼這樣做比較值得」。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;不要急著找最強的技術解，要先找到對的人問對的問題。&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;</description></item><item><title>Chat - Profile - Studio</title><link>https://HoshikawaRyuukou.github.io/posts/chat---profile---studio/</link><pubDate>Tue, 13 Aug 2024 20:31:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/chat---profile---studio/</guid><description>&lt;h2 id="箱庭工作室-miniature-garden-studio"&gt;箱庭工作室 (Miniature Garden Studio)&lt;/h2&gt;
+&lt;p&gt;這是我的工作室名，其核心思想是&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;每個創作都是一個精心構築的 &lt;strong&gt;箱庭/微型世界&lt;/strong&gt;，在有限的環境中創造豐富且深度的體驗，讓使用者能夠沉浸其中。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id="現實中的箱庭"&gt;現實中的箱庭&lt;/h2&gt;
+&lt;p&gt;箱庭（はこにわ，Hakoniwa），它是一種縮小版的庭園或景觀模型。這個概念源於日本，最早用來指代傳統日式庭園的迷你模型，但後來這個詞的應用範圍擴展到了各種縮小版的自然景觀創作。&lt;/p&gt;
+&lt;h2 id="遊戲中的箱庭"&gt;遊戲中的箱庭&lt;/h2&gt;
+&lt;p&gt;箱庭設計在遊戲中已成為一種經典理念。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.ign.com.cn/ign-xiao-ke-tang/22014/feature/ignxiao-ke-tang-49xiang-ting"&gt;IGN小课堂#49：箱庭&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.gcores.com/articles/122163"&gt;从沙盒和开放世界谈起，说说日本的箱庭设计理念&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Chat - Career - Software Engineer</title><link>https://HoshikawaRyuukou.github.io/posts/chat---career---software-engineer/</link><pubDate>Thu, 30 May 2024 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/chat---career---software-engineer/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;後端：深入且穩定&lt;/li&gt;
+&lt;li&gt;前端：廣泛且彈性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="roadmap"&gt;Roadmap&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://roadmap.sh/"&gt;Developer Roadmaps - roadmap.sh&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="algorithm"&gt;Algorithm&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/labuladong/fucking-algorithm?tab=readme-ov-file"&gt;fucking-algorithm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/krahets/hello-algo"&gt;hello-algo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/TheAlgorithms"&gt;The Algorithms&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

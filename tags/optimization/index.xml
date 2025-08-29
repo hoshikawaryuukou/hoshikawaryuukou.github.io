@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Optimization on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/optimization/</link><description>Recent content in Optimization on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Fri, 08 Aug 2025 16:56:18 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/optimization/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Optimization</title><link>https://HoshikawaRyuukou.github.io/posts/unity---optimization/</link><pubDate>Fri, 08 Aug 2025 16:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---optimization/</guid><description>&lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.crazygames.com/resources/development-tips/"&gt;Development tips - CrazyGames Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="profiler"&gt;Profiler&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://sharpcoderblog.com/blog/unity-3d-how-to-use-profiler-to-optimize-your-code"&gt;Unity Optimize Your Game Using Profiler&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.chunfuchao.com/posts/unity-profiling-tools/"&gt;Unity 手機遊戲最佳化雜談– 內建Profiling&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="project-auditor"&gt;Project Auditor&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.unity3d.com/Packages/com.unity.project-auditor@1.0/manual/index.html"&gt;Project Auditor package | Project Auditor | 1.0.1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/attiliohimeki/unity-project-analysis-with-the-project-auditor-2pea"&gt;Unity Project analysis with the Project Auditor - DEV Community&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

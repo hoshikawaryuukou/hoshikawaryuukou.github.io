@@ -1,30 +1,124 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/obsidian/</link><description>Recent content in Obsidian on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Wed, 06 Aug 2025 20:11:00 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>Obsidian - Note</title><link>https://HoshikawaRyuukou.github.io/posts/obsidian---note/</link><pubDate>Wed, 06 Aug 2025 20:11:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/obsidian---note/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
-&lt;h2 id="主要特色">主要特色&lt;/h2>
-&lt;h2 id="雙向連結">雙向連結&lt;/h2>
-&lt;h2 id="quide">Quide&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://medium.com/pm%E7%9A%84%E7%94%9F%E7%94%A2%E5%8A%9B%E5%B7%A5%E5%85%B7%E7%AE%B1/obsidian-%E4%BD%BF%E7%94%A8%E6%95%99%E5%AD%B8-%E5%9F%BA%E7%A4%8E%E7%AF%87-%E8%AA%8D%E8%AD%98%E9%A0%90%E8%A8%AD%E4%BB%8B%E9%9D%A2%E8%88%87%E5%9F%BA%E7%A4%8E%E5%8A%9F%E8%83%BD-dc59232bcca8">【Obsidian 使用教學】基礎篇 01 — 認識預設介面與基礎功能&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://mlosun.com/blog/obsidian-github-hugo/">Obsidian + Github + Hugo 一站式笔记发布工作流 – 开源笔记 Mlosun.com&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://blog.csdn.net/gitblog_00029/article/details/139555451">推荐：将Obsidian笔记无缝集成到Hugo网站的利器 —— Obsidian to Hugo&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Chat - Studying - Knowledge Management</title><link>https://HoshikawaRyuukou.github.io/posts/chat---career---knowledge-management/</link><pubDate>Tue, 05 Aug 2025 21:05:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/chat---career---knowledge-management/</guid><description>&lt;h2 id="quick-chat">Quick Chat&lt;/h2>
-&lt;p>🤓 正在摸索 Obsidian&amp;hellip;&lt;/p>
-&lt;p>我對筆記工具有幾個核心要求：&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>本地與格式自由：筆記必須可以用 &lt;strong>Markdown&lt;/strong> 格式 &lt;strong>本地儲存&lt;/strong>。我習慣掌控自己的資料，不希望將筆記內容完全託管給雲端服務。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>公開與分享：能輕鬆與 &lt;strong>GitHub&lt;/strong> 整合，並輸出 &lt;strong>靜態網頁&lt;/strong>。這讓我的知識不僅僅是個人資產，更能方便地公開分享與傳播。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>高效檢索：強大的 &lt;strong>標籤（Tags）與搜尋功能&lt;/strong> 是知識管理不可或缺的環節。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>AI 輔助整合：我希望筆記工具能與 AI 結合，實現自動製圖、格式化、提取大綱等輔助功能，讓工作流更加高效。&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="從舊流程到新挑戰">從舊流程到新挑戰&lt;/h2>
-&lt;p>過去，我的知識管理流程是：使用 &lt;strong>Markdown&lt;/strong> 搭配 &lt;strong>VS Code&lt;/strong> 撰寫，再透過 &lt;strong>GitHub Actions&lt;/strong> 部署成 &lt;strong>Hugo 靜態網站&lt;/strong>。這套系統行之有年，但在筆記數量突破 &lt;strong>200 篇&lt;/strong> 後，我遇到了瓶頸。&lt;/p>
-&lt;p>在海量的 &lt;code>.md&lt;/code> 檔案中，無論是在 VS Code 裡用 &lt;code>Ctrl+F&lt;/code>，或是在網站上透過標籤與搜尋，要精準定位到特定內容變得越來越困難。我隱約意識到，單純的檔案整理已經不夠，我需要一個能將知識點相互連結的工具，建立一個真正屬於自己的知識網絡。&lt;/p>
-&lt;p>其實早在前年，我就聽聞過 Obsidian 的大名，但當時的生態系和功能尚未成熟，所以沒有深入嘗試。&lt;/p>
-&lt;p>如今，Obsidian 的基礎設施已相當完善，社群分享的 「Obsidian + AI」工作流 更是如雨後春筍般湧現，尤其在我的社群動態中，這類分享佔據了很大的比例。這讓我意識到，是時候徹底重塑我的知識管理體系了。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/obsidian/</link><description>Recent content in Obsidian on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Wed, 20 Aug 2025 09:56:18 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>Obsidian - Plugins</title><link>https://HoshikawaRyuukou.github.io/posts/obsidian---plugins/</link><pubDate>Wed, 20 Aug 2025 09:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/obsidian---plugins/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;紀錄目前在使用的外掛。&lt;/p&gt;
+&lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
+&lt;h3 id="auto-link-title"&gt;Auto Link Title&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;自動取得貼上連結的網頁標題，並將其轉換成Markdown格式的鏈接。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="open-vault-in-vscode"&gt;Open vault in VSCode&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;在 VSCode 直接開啟整個 Obsidian Vault。&lt;/li&gt;
+&lt;li&gt;對於有時要做一些程序性的處理比較方便。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="image-converter"&gt;Image Converter&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;批量處理圖片。&lt;/li&gt;
+&lt;li&gt;支援剪貼簿直接貼上圖片，並將圖片放置指定位置。&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Obsidian - CSS Snippets</title><link>https://HoshikawaRyuukou.github.io/posts/obsidian---css-snippets/</link><pubDate>Fri, 15 Aug 2025 20:00:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/obsidian---css-snippets/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;試過幾款主題，但沒有特別喜歡的，感覺還是用預設主題就好。&lt;/p&gt;
+&lt;p&gt;不過，Markdown 的顯示樣式還是想稍微調整一下。&lt;/p&gt;
+&lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://help.obsidian.md/snippets"&gt;CSS snippets - Obsidian Help&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="configuration"&gt;Configuration&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;開啟 &lt;strong&gt;設定&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;在 &lt;strong&gt;外觀 → CSS 片段&lt;/strong&gt; 中，點選 &lt;strong&gt;開啟片段資料夾&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;在該資料夾中建立一個 &lt;code&gt;.css&lt;/code&gt; 檔，並寫入自訂的程式碼片段。&lt;/li&gt;
+&lt;li&gt;回到 Obsidian，於 &lt;strong&gt;外觀 → CSS 片段&lt;/strong&gt; 中，點選 &lt;strong&gt;重新載入片段&lt;/strong&gt;，即可在清單中看到新片段。&lt;/li&gt;
+&lt;li&gt;開啟對應的切換按鈕以啟用程式碼片段。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="modification"&gt;Modification&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;H2 與 H3&lt;/strong&gt; 字體大小太接近&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;H2&lt;/strong&gt; 標題下方加一條淡色分隔線&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;清單項目&lt;/strong&gt;之間的間距稍微拉開&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="customcss"&gt;custom.css&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-css" data-lang="css"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;.&lt;/span&gt;&lt;span style="color:#75af00"&gt;markdown-preview-view&lt;/span&gt; &lt;span style="color:#f92672"&gt;h2&lt;/span&gt; &lt;span style="color:#111"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#00a8c8"&gt;font-size&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1.6&lt;/span&gt;&lt;span style="color:#00a8c8"&gt;em&lt;/span&gt;&lt;span style="color:#111"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#00a8c8"&gt;font-weight&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#00a8c8"&gt;bold&lt;/span&gt;&lt;span style="color:#111"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#00a8c8"&gt;border-bottom&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;&lt;span style="color:#00a8c8"&gt;px&lt;/span&gt; &lt;span style="color:#00a8c8"&gt;solid&lt;/span&gt; &lt;span style="color:#75af00"&gt;var&lt;/span&gt;&lt;span style="color:#111"&gt;(&lt;/span&gt;&lt;span style="color:#f92672"&gt;--&lt;/span&gt;&lt;span style="color:#111"&gt;background&lt;/span&gt;&lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#111"&gt;modifier&lt;/span&gt;&lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#111"&gt;border&lt;/span&gt;&lt;span style="color:#111"&gt;);&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#00a8c8"&gt;padding-bottom&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;0.2&lt;/span&gt;&lt;span style="color:#00a8c8"&gt;em&lt;/span&gt;&lt;span style="color:#111"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#00a8c8"&gt;margin-bottom&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;0.5&lt;/span&gt;&lt;span style="color:#00a8c8"&gt;em&lt;/span&gt;&lt;span style="color:#111"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;.&lt;/span&gt;&lt;span style="color:#75af00"&gt;markdown-preview-view&lt;/span&gt; &lt;span style="color:#f92672"&gt;h3&lt;/span&gt; &lt;span style="color:#111"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#00a8c8"&gt;font-size&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1.3&lt;/span&gt;&lt;span style="color:#00a8c8"&gt;em&lt;/span&gt;&lt;span style="color:#111"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#00a8c8"&gt;font-weight&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#00a8c8"&gt;bold&lt;/span&gt;&lt;span style="color:#111"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;.&lt;/span&gt;&lt;span style="color:#75af00"&gt;markdown-preview-view&lt;/span&gt; &lt;span style="color:#f92672"&gt;li&lt;/span&gt; &lt;span style="color:#111"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#00a8c8"&gt;margin-bottom&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;0.25&lt;/span&gt;&lt;span style="color:#00a8c8"&gt;em&lt;/span&gt;&lt;span style="color:#111"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;.&lt;/span&gt;&lt;span style="color:#75af00"&gt;markdown-preview-view&lt;/span&gt; &lt;span style="color:#f92672"&gt;ul&lt;/span&gt;&lt;span style="color:#f92672"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;.&lt;/span&gt;&lt;span style="color:#75af00"&gt;markdown-preview-view&lt;/span&gt; &lt;span style="color:#f92672"&gt;ol&lt;/span&gt; &lt;span style="color:#111"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#00a8c8"&gt;margin-bottom&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;0.5&lt;/span&gt;&lt;span style="color:#00a8c8"&gt;em&lt;/span&gt;&lt;span style="color:#111"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Workflow – Mirroring Obsidian Notes to Hugo</title><link>https://HoshikawaRyuukou.github.io/posts/workflow--mirror-obsidian-notes-to-hugo/</link><pubDate>Wed, 13 Aug 2025 20:31:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow--mirror-obsidian-notes-to-hugo/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;使用 &lt;code&gt;robocopy&lt;/code&gt; 以鏡像方式，將 &lt;code&gt;obsidian-notes&lt;/code&gt; 中的 &lt;code&gt;posts&lt;/code&gt; 與 &lt;code&gt;images&lt;/code&gt; 資料夾，同步到 Hugo 專案的對應目錄。&lt;/p&gt;
+&lt;h2 id="operation"&gt;Operation&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;詢問使用者&lt;/strong&gt;是否要執行同步任務。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;設定並驗證路徑&lt;/strong&gt;，確保來源與目標皆存在。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;執行 &lt;code&gt;robocopy&lt;/code&gt; 鏡像同步&lt;/strong&gt;，將來源內容完整覆蓋至 Hugo 專案目標位置。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="mirrorbat"&gt;mirror.bat&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;@echo off
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;setlocal
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;:: Ask &lt;span style="color:#00a8c8"&gt;if&lt;/span&gt; the sync task should be run
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;echo&lt;/span&gt; Do you want to run the sync task? &lt;span style="color:#f92672"&gt;(&lt;/span&gt;Y/N&lt;span style="color:#f92672"&gt;)&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;set&lt;/span&gt; /p &lt;span style="color:#111"&gt;RUN_SYNC&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00a8c8"&gt;if&lt;/span&gt; /I not &lt;span style="color:#d88200"&gt;&amp;#34;%RUN_SYNC%&amp;#34;&lt;/span&gt;&lt;span style="color:#f92672"&gt;==&lt;/span&gt;&lt;span style="color:#d88200"&gt;&amp;#34;Y&amp;#34;&lt;/span&gt; &lt;span style="color:#f92672"&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#111"&gt;echo&lt;/span&gt; Sync task cancelled.
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; pause
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; goto :EOF
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;:: Get the directory of the current script
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;set&lt;/span&gt; &lt;span style="color:#d88200"&gt;&amp;#34;SCRIPT_DIR=%~dp0&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;:: Set relative paths
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;set&lt;/span&gt; &lt;span style="color:#d88200"&gt;&amp;#34;SRC_POSTS=%SCRIPT_DIR%..\obsidian-notes\blog\posts&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;set&lt;/span&gt; &lt;span style="color:#d88200"&gt;&amp;#34;SRC_IMGS=%SCRIPT_DIR%..\obsidian-notes\blog\images&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;set&lt;/span&gt; &lt;span style="color:#d88200"&gt;&amp;#34;DST_POSTS=%SCRIPT_DIR%content\posts&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;set&lt;/span&gt; &lt;span style="color:#d88200"&gt;&amp;#34;DST_IMGS=%SCRIPT_DIR%static\images&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;:: Check &lt;span style="color:#00a8c8"&gt;if&lt;/span&gt; &lt;span style="color:#111"&gt;source&lt;/span&gt; paths exist
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;echo&lt;/span&gt; Checking &lt;span style="color:#111"&gt;source&lt;/span&gt; paths...
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00a8c8"&gt;if&lt;/span&gt; not exist &lt;span style="color:#d88200"&gt;&amp;#34;%SRC_POSTS%&amp;#34;&lt;/span&gt; &lt;span style="color:#f92672"&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#111"&gt;echo&lt;/span&gt; ERROR: Source posts directory not found: %SRC_POSTS%
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#111"&gt;echo&lt;/span&gt; Please confirm that the blog-obsidian project location is correct.
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; pause
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; goto :EOF
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00a8c8"&gt;if&lt;/span&gt; not exist &lt;span style="color:#d88200"&gt;&amp;#34;%SRC_IMGS%&amp;#34;&lt;/span&gt; &lt;span style="color:#f92672"&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#111"&gt;echo&lt;/span&gt; ERROR: Source images directory not found: %SRC_IMGS%
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#111"&gt;echo&lt;/span&gt; Please confirm that the blog-obsidian project location is correct.
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; pause
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; goto :EOF
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;echo&lt;/span&gt; Source path check passed.
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo.
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;echo&lt;/span&gt; Starting synchronization...
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;:: Run synchronization
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;echo&lt;/span&gt; Syncing posts directory...
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;robocopy &lt;span style="color:#d88200"&gt;&amp;#34;%SRC_POSTS%&amp;#34;&lt;/span&gt; &lt;span style="color:#d88200"&gt;&amp;#34;%DST_POSTS%&amp;#34;&lt;/span&gt; /MIR
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo.
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;echo&lt;/span&gt; Syncing images directory...
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;robocopy &lt;span style="color:#d88200"&gt;&amp;#34;%SRC_IMGS%&amp;#34;&lt;/span&gt; &lt;span style="color:#d88200"&gt;&amp;#34;%DST_IMGS%&amp;#34;&lt;/span&gt; /MIR
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo.
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;echo&lt;/span&gt; Synchronization complete!
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pause
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;endlocal
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item></channel></rss>
