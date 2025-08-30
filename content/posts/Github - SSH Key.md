@@ -1,9 +1,9 @@
 ---
 draft: false
-title: Github - SSH Key
+title: GitHub - SSH Key
 date: 2025-02-02T10:08:39+08:00
 tags:
-  - Github
+  - GitHub
 ---
 
 ## Configuration

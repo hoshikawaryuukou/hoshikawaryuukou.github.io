@@ -10,7 +10,7 @@ tags:
 
 ## Quick Chat
 
-- ⚠️需要在 Unity 中開啟 **Decompression Fallback** 功能（GitHub Pages 不支援壓縮）。
+- ⚠️ 需要在 Unity 中開啟 **Decompression Fallback** 功能（GitHub Pages 不支援壓縮）。
 - ⚠️ **公開的 Repository (Public Repository)** 才能免費使用 GitHub Pages。
 
 以下提供兩種簡單方案（暫不涉及 CI 自動化）：
@@ -26,8 +26,6 @@ tags:
 1. 建立並切換到孤兒分支（例如 `gh-pages`）。
 2. 將 Unity WebGL 的建置輸出檔案推送到該分支。
 3. 在 GitHub 設定中，選擇包含 `index.html` 的目錄，即可完成部署。
-
-🤖 以下使用 gemini 生成
 
 ### 腳本生成 - AI Prompt
 

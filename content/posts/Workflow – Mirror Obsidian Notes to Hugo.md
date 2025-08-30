@@ -6,6 +6,7 @@ tags:
   - Workflow
   - Obsidian
   - Hugo
+  - PowerShell
 ---
 
 ## Quick Chat

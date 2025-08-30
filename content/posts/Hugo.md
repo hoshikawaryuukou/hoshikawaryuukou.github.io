@@ -42,3 +42,6 @@ tags:
 ⚠️ **不要直接修改主題原始檔案**。  
 
 若需要修改，請將要編輯的文件 **依相同資料夾結構** 複製到專案根目錄，Hugo 會依[模板查找優先順序](https://gohugo.io/templates/lookup-order/)載入你修改的版本。
+
+## Extras
+- [Rendering Images in Markdown Preview of Hugo Site](https://mikefrobbins.com/2023/02/08/rendering-images-in-markdown-preview-of-hugo-site/)
