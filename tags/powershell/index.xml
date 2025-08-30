@@ -5,4 +5,116 @@
 &lt;pre tabindex="0"&gt;&lt;code&gt;[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;把 &lt;code&gt;.ps1&lt;/code&gt; 檔案存成 &lt;strong&gt;UTF-8 with BOM&lt;/strong&gt;。&lt;/li&gt;
-&lt;/ol&gt;</description></item></channel></rss>
+&lt;/ol&gt;</description></item><item><title>Workflow – Mirroring Obsidian Notes to Hugo</title><link>https://HoshikawaRyuukou.github.io/posts/workflow--mirror-obsidian-notes-to-hugo/</link><pubDate>Wed, 13 Aug 2025 20:31:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow--mirror-obsidian-notes-to-hugo/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;使用 &lt;code&gt;robocopy&lt;/code&gt; 以鏡像方式，將 &lt;code&gt;obsidian-notes&lt;/code&gt; 中的 &lt;code&gt;posts&lt;/code&gt; 與 &lt;code&gt;images&lt;/code&gt; 資料夾，同步到 Hugo 專案的對應目錄。&lt;/p&gt;
+&lt;h2 id="operation"&gt;Operation&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;詢問使用者&lt;/strong&gt;是否要執行同步任務。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;設定並驗證路徑&lt;/strong&gt;，確保來源與目標皆存在。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;執行 &lt;code&gt;robocopy&lt;/code&gt; 鏡像同步&lt;/strong&gt;，將來源內容完整覆蓋至 Hugo 專案目標位置。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="mirrorbat"&gt;mirror.bat&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;@echo off
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;setlocal
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;:: Ask &lt;span style="color:#00a8c8"&gt;if&lt;/span&gt; the sync task should be run
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;echo&lt;/span&gt; Do you want to run the sync task? &lt;span style="color:#f92672"&gt;(&lt;/span&gt;Y/N&lt;span style="color:#f92672"&gt;)&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;set&lt;/span&gt; /p &lt;span style="color:#111"&gt;RUN_SYNC&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00a8c8"&gt;if&lt;/span&gt; /I not &lt;span style="color:#d88200"&gt;&amp;#34;%RUN_SYNC%&amp;#34;&lt;/span&gt;&lt;span style="color:#f92672"&gt;==&lt;/span&gt;&lt;span style="color:#d88200"&gt;&amp;#34;Y&amp;#34;&lt;/span&gt; &lt;span style="color:#f92672"&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#111"&gt;echo&lt;/span&gt; Sync task cancelled.
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; pause
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; goto :EOF
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;:: Get the directory of the current script
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;set&lt;/span&gt; &lt;span style="color:#d88200"&gt;&amp;#34;SCRIPT_DIR=%~dp0&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;:: Set relative paths
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;set&lt;/span&gt; &lt;span style="color:#d88200"&gt;&amp;#34;SRC_POSTS=%SCRIPT_DIR%..\obsidian-notes\blog\posts&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;set&lt;/span&gt; &lt;span style="color:#d88200"&gt;&amp;#34;SRC_IMGS=%SCRIPT_DIR%..\obsidian-notes\blog\images&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;set&lt;/span&gt; &lt;span style="color:#d88200"&gt;&amp;#34;DST_POSTS=%SCRIPT_DIR%content\posts&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;set&lt;/span&gt; &lt;span style="color:#d88200"&gt;&amp;#34;DST_IMGS=%SCRIPT_DIR%static\images&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;:: Check &lt;span style="color:#00a8c8"&gt;if&lt;/span&gt; &lt;span style="color:#111"&gt;source&lt;/span&gt; paths exist
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;echo&lt;/span&gt; Checking &lt;span style="color:#111"&gt;source&lt;/span&gt; paths...
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00a8c8"&gt;if&lt;/span&gt; not exist &lt;span style="color:#d88200"&gt;&amp;#34;%SRC_POSTS%&amp;#34;&lt;/span&gt; &lt;span style="color:#f92672"&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#111"&gt;echo&lt;/span&gt; ERROR: Source posts directory not found: %SRC_POSTS%
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#111"&gt;echo&lt;/span&gt; Please confirm that the blog-obsidian project location is correct.
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; pause
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; goto :EOF
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00a8c8"&gt;if&lt;/span&gt; not exist &lt;span style="color:#d88200"&gt;&amp;#34;%SRC_IMGS%&amp;#34;&lt;/span&gt; &lt;span style="color:#f92672"&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#111"&gt;echo&lt;/span&gt; ERROR: Source images directory not found: %SRC_IMGS%
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#111"&gt;echo&lt;/span&gt; Please confirm that the blog-obsidian project location is correct.
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; pause
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; goto :EOF
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;echo&lt;/span&gt; Source path check passed.
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo.
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;echo&lt;/span&gt; Starting synchronization...
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;:: Run synchronization
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;echo&lt;/span&gt; Syncing posts directory...
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;robocopy &lt;span style="color:#d88200"&gt;&amp;#34;%SRC_POSTS%&amp;#34;&lt;/span&gt; &lt;span style="color:#d88200"&gt;&amp;#34;%DST_POSTS%&amp;#34;&lt;/span&gt; /MIR
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo.
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;echo&lt;/span&gt; Syncing images directory...
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;robocopy &lt;span style="color:#d88200"&gt;&amp;#34;%SRC_IMGS%&amp;#34;&lt;/span&gt; &lt;span style="color:#d88200"&gt;&amp;#34;%DST_IMGS%&amp;#34;&lt;/span&gt; /MIR
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo.
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;echo&lt;/span&gt; Synchronization complete!
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pause
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;endlocal
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Workflow – Clean Up Old GitHub Deployments</title><link>https://HoshikawaRyuukou.github.io/posts/workflow--clean-up-old-github-deployments/</link><pubDate>Wed, 13 Nov 2024 20:31:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow--clean-up-old-github-deployments/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;透過 GitHub CLI (&lt;strong&gt;&lt;code&gt;gh&lt;/code&gt;&lt;/strong&gt;) 刪除一個儲存庫中&lt;strong&gt;最舊的部署（deployment）記錄&lt;/strong&gt;，保留最新的 10 筆。&lt;/p&gt;
+&lt;h2 id="operation"&gt;Operation&lt;/h2&gt;
+&lt;h3 id="登入"&gt;登入&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;gh auth login
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="clean-up-old-github-deploymentsps1"&gt;Clean-Up-Old-GitHub-Deployments.ps1&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;取得指定儲存庫的所有部署記錄 ID。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;跳過最新的 10 個 ID。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;對剩下的（最舊的）每一個 ID：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;顯示一條刪除提示訊息。&lt;/li&gt;
+&lt;li&gt;發送一個 &lt;code&gt;DELETE&lt;/code&gt; API 請求，將其從 GitHub 移除。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-ps1" data-lang="ps1"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;$Owner&lt;/span&gt; &lt;span style="color:#111"&gt;=&lt;/span&gt; &lt;span style="color:#d88200"&gt;&amp;#34;Owner Name&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;$Repo&lt;/span&gt; &lt;span style="color:#111"&gt;=&lt;/span&gt; &lt;span style="color:#d88200"&gt;&amp;#34;Repo Name&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;gh&lt;/span&gt; &lt;span style="color:#111"&gt;api&lt;/span&gt; &lt;span style="color:#111"&gt;repos&lt;/span&gt;&lt;span style="color:#111"&gt;/&lt;/span&gt;&lt;span style="color:#111"&gt;$Owner&lt;/span&gt;&lt;span style="color:#111"&gt;/&lt;/span&gt;&lt;span style="color:#111"&gt;$Repo&lt;/span&gt;&lt;span style="color:#111"&gt;/&lt;/span&gt;&lt;span style="color:#111"&gt;deployments&lt;/span&gt; &lt;span style="color:#111"&gt;-&lt;/span&gt;&lt;span style="color:#111"&gt;-paginate&lt;/span&gt; &lt;span style="color:#111"&gt;-&lt;/span&gt;&lt;span style="color:#111"&gt;-jq&lt;/span&gt; &lt;span style="color:#d88200"&gt;&amp;#39;.[].id&amp;#39;&lt;/span&gt; &lt;span style="color:#111"&gt;|&lt;/span&gt; &lt;span style="color:#111"&gt;Select-Object&lt;/span&gt; &lt;span style="color:#111"&gt;-Skip&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;10&lt;/span&gt; &lt;span style="color:#111"&gt;|&lt;/span&gt; &lt;span style="color:#111"&gt;ForEach-Object&lt;/span&gt; &lt;span style="color:#111"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#111"&gt;Write-Host&lt;/span&gt; &lt;span style="color:#d88200"&gt;&amp;#34;Deleting deployment &lt;/span&gt;&lt;span style="color:#111"&gt;$_&lt;/span&gt;&lt;span style="color:#d88200"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#111"&gt;gh&lt;/span&gt; &lt;span style="color:#111"&gt;api&lt;/span&gt; &lt;span style="color:#111"&gt;-&lt;/span&gt;&lt;span style="color:#111"&gt;-method&lt;/span&gt; &lt;span style="color:#111"&gt;DELETE&lt;/span&gt; &lt;span style="color:#111"&gt;repos&lt;/span&gt;&lt;span style="color:#111"&gt;/&lt;/span&gt;&lt;span style="color:#111"&gt;$Owner&lt;/span&gt;&lt;span style="color:#111"&gt;/&lt;/span&gt;&lt;span style="color:#111"&gt;$Repo&lt;/span&gt;&lt;span style="color:#111"&gt;/&lt;/span&gt;&lt;span style="color:#111"&gt;deployments&lt;/span&gt;&lt;span style="color:#111"&gt;/&lt;/span&gt;&lt;span style="color:#111"&gt;$_&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;這段程式碼可以拆解為幾個部分來理解：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;$Owner&lt;/code&gt; 和 &lt;code&gt;$Repo&lt;/code&gt; 是 PowerShell 的&lt;strong&gt;變數&lt;/strong&gt;，用來存放你的 GitHub 儲存庫的擁有者和名稱。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;gh api repos/$Owner/$Repo/deployments --paginate --jq '.[].id'&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$Owner&lt;/code&gt; 和 &lt;code&gt;$Repo&lt;/code&gt; 會被替換成你設定的值。&lt;/li&gt;
+&lt;li&gt;這段指令會透過 GitHub CLI 取得你指定儲存庫的所有部署記錄，並只列出它們的 ID。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;| Select-Object -Skip 10&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;這段指令會&lt;strong&gt;跳過&lt;/strong&gt;清單中&lt;strong&gt;最前面的 10 個 ID&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;因為 GitHub API 預設是把最新的記錄放在最前面，所以這個步驟等於是保留了最新的 10 筆部署，並選取了剩下的、最舊的部署。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;| ForEach-Object { ... }&lt;/code&gt;&lt;/p&gt;</description></item></channel></rss>

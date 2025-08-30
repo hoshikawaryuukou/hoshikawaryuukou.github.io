@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Workflow on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/workflow/</link><description>Recent content in Workflow on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Mon, 18 Aug 2025 20:38:51 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/workflow/index.xml" rel="self" type="application/rss+xml"/><item><title>Workflow – Host Unity Web Game on GitHub Pages</title><link>https://HoshikawaRyuukou.github.io/posts/workflow--host-unity-web-game-on-github-pages/</link><pubDate>Mon, 18 Aug 2025 20:38:51 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow--host-unity-web-game-on-github-pages/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;⚠️需要在 Unity 中開啟 &lt;strong&gt;Decompression Fallback&lt;/strong&gt; 功能（GitHub Pages 不支援壓縮）。&lt;/li&gt;
+&lt;li&gt;⚠️ 需要在 Unity 中開啟 &lt;strong&gt;Decompression Fallback&lt;/strong&gt; 功能（GitHub Pages 不支援壓縮）。&lt;/li&gt;
 &lt;li&gt;⚠️ &lt;strong&gt;公開的 Repository (Public Repository)&lt;/strong&gt; 才能免費使用 GitHub Pages。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;以下提供兩種簡單方案（暫不涉及 CI 自動化）：&lt;/p&gt;
@@ -16,7 +16,6 @@
 &lt;li&gt;將 Unity WebGL 的建置輸出檔案推送到該分支。&lt;/li&gt;
 &lt;li&gt;在 GitHub 設定中，選擇包含 &lt;code&gt;index.html&lt;/code&gt; 的目錄，即可完成部署。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;🤖 以下使用 gemini 生成&lt;/p&gt;
 &lt;h3 id="腳本生成---ai-prompt"&gt;腳本生成 - AI Prompt&lt;/h3&gt;
 &lt;p&gt;目錄結構&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;project-root/ 
@@ -130,4 +129,52 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;with&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;github_token&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;${{ secrets.GITHUB_TOKEN }}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;publish_dir&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;./public&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item></channel></rss>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Workflow – Clean Up Old GitHub Deployments</title><link>https://HoshikawaRyuukou.github.io/posts/workflow--clean-up-old-github-deployments/</link><pubDate>Wed, 13 Nov 2024 20:31:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow--clean-up-old-github-deployments/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;透過 GitHub CLI (&lt;strong&gt;&lt;code&gt;gh&lt;/code&gt;&lt;/strong&gt;) 刪除一個儲存庫中&lt;strong&gt;最舊的部署（deployment）記錄&lt;/strong&gt;，保留最新的 10 筆。&lt;/p&gt;
+&lt;h2 id="operation"&gt;Operation&lt;/h2&gt;
+&lt;h3 id="登入"&gt;登入&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;gh auth login
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="clean-up-old-github-deploymentsps1"&gt;Clean-Up-Old-GitHub-Deployments.ps1&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;取得指定儲存庫的所有部署記錄 ID。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;跳過最新的 10 個 ID。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;對剩下的（最舊的）每一個 ID：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;顯示一條刪除提示訊息。&lt;/li&gt;
+&lt;li&gt;發送一個 &lt;code&gt;DELETE&lt;/code&gt; API 請求，將其從 GitHub 移除。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-ps1" data-lang="ps1"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;$Owner&lt;/span&gt; &lt;span style="color:#111"&gt;=&lt;/span&gt; &lt;span style="color:#d88200"&gt;&amp;#34;Owner Name&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;$Repo&lt;/span&gt; &lt;span style="color:#111"&gt;=&lt;/span&gt; &lt;span style="color:#d88200"&gt;&amp;#34;Repo Name&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;gh&lt;/span&gt; &lt;span style="color:#111"&gt;api&lt;/span&gt; &lt;span style="color:#111"&gt;repos&lt;/span&gt;&lt;span style="color:#111"&gt;/&lt;/span&gt;&lt;span style="color:#111"&gt;$Owner&lt;/span&gt;&lt;span style="color:#111"&gt;/&lt;/span&gt;&lt;span style="color:#111"&gt;$Repo&lt;/span&gt;&lt;span style="color:#111"&gt;/&lt;/span&gt;&lt;span style="color:#111"&gt;deployments&lt;/span&gt; &lt;span style="color:#111"&gt;-&lt;/span&gt;&lt;span style="color:#111"&gt;-paginate&lt;/span&gt; &lt;span style="color:#111"&gt;-&lt;/span&gt;&lt;span style="color:#111"&gt;-jq&lt;/span&gt; &lt;span style="color:#d88200"&gt;&amp;#39;.[].id&amp;#39;&lt;/span&gt; &lt;span style="color:#111"&gt;|&lt;/span&gt; &lt;span style="color:#111"&gt;Select-Object&lt;/span&gt; &lt;span style="color:#111"&gt;-Skip&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;10&lt;/span&gt; &lt;span style="color:#111"&gt;|&lt;/span&gt; &lt;span style="color:#111"&gt;ForEach-Object&lt;/span&gt; &lt;span style="color:#111"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#111"&gt;Write-Host&lt;/span&gt; &lt;span style="color:#d88200"&gt;&amp;#34;Deleting deployment &lt;/span&gt;&lt;span style="color:#111"&gt;$_&lt;/span&gt;&lt;span style="color:#d88200"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#111"&gt;gh&lt;/span&gt; &lt;span style="color:#111"&gt;api&lt;/span&gt; &lt;span style="color:#111"&gt;-&lt;/span&gt;&lt;span style="color:#111"&gt;-method&lt;/span&gt; &lt;span style="color:#111"&gt;DELETE&lt;/span&gt; &lt;span style="color:#111"&gt;repos&lt;/span&gt;&lt;span style="color:#111"&gt;/&lt;/span&gt;&lt;span style="color:#111"&gt;$Owner&lt;/span&gt;&lt;span style="color:#111"&gt;/&lt;/span&gt;&lt;span style="color:#111"&gt;$Repo&lt;/span&gt;&lt;span style="color:#111"&gt;/&lt;/span&gt;&lt;span style="color:#111"&gt;deployments&lt;/span&gt;&lt;span style="color:#111"&gt;/&lt;/span&gt;&lt;span style="color:#111"&gt;$_&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;這段程式碼可以拆解為幾個部分來理解：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;$Owner&lt;/code&gt; 和 &lt;code&gt;$Repo&lt;/code&gt; 是 PowerShell 的&lt;strong&gt;變數&lt;/strong&gt;，用來存放你的 GitHub 儲存庫的擁有者和名稱。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;gh api repos/$Owner/$Repo/deployments --paginate --jq '.[].id'&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$Owner&lt;/code&gt; 和 &lt;code&gt;$Repo&lt;/code&gt; 會被替換成你設定的值。&lt;/li&gt;
+&lt;li&gt;這段指令會透過 GitHub CLI 取得你指定儲存庫的所有部署記錄，並只列出它們的 ID。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;| Select-Object -Skip 10&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;這段指令會&lt;strong&gt;跳過&lt;/strong&gt;清單中&lt;strong&gt;最前面的 10 個 ID&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;因為 GitHub API 預設是把最新的記錄放在最前面，所以這個步驟等於是保留了最新的 10 筆部署，並選取了剩下的、最舊的部署。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;| ForEach-Object { ... }&lt;/code&gt;&lt;/p&gt;</description></item></channel></rss>
