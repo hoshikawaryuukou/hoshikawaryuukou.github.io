@@ -9,7 +9,7 @@ copyright = "HoshikawaRyuukou"
 # Used when comments is enabled. Cactus will use site title if not set
 disqusShortname = "example" 
 
-# googleAnalytics = "UA-1234-5"
+googleAnalytics = "G-GJK533W9NW"
 # summaryLength = 2
 
 # Main menu which appears below site header.
@@ -29,9 +29,14 @@ url = "/tags"
 weight = 3
 
 [[menu.main]]
+name = "Search"
+url = "/search/"
+weight = 4
+
+[[menu.main]]
 name = "About"
 url = "/about"
-weight = 4
+weight = 5
 
 [markup]
   [markup.tableOfContents]
@@ -90,8 +95,8 @@ weight = 4
     name = "github"
     link = "https://github.com/HoshikawaRyuukou"
   [[params.social]]
-    name = "linkedin"
-    link = "https://www.linkedin.com/company/github/"
-  [[params.social]]
     name = "email"
-    link = "example@example.com"  # no need for "mailto:" in the head
+    link = "y22883y22883@gmail.com"  # no need for "mailto:" in the head
+
+[outputs]
+    home = ["HTML", "JSON"]

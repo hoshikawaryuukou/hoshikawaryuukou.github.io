@@ -30,7 +30,7 @@
 
     {{ else }}
     <ul class="post-list">
-      {{ .Scratch.Set "count" 5 }}
+      {{ .Scratch.Set "count" 10 }}
       {{ if isset .Site.Params "postsonhomepage" }}
         {{ .Scratch.Set "count" .Site.Params.postsOnHomePage }}
       {{ end }}

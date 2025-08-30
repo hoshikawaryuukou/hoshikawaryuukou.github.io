@@ -1,23 +1,29 @@
 ---
-title: "Unity - Basic - DontDestroyOnLoad"
-date: 2023-03-20 21:11:00
 draft: false
-
-tags: ["Unity"]
+title: Unity - Basic - DontDestroyOnLoad
+date: 2023-03-20T10:00:00+08:00
+tags:
+  - Unity
 ---
 
-## 用例
-被標記為 DontDestroyOnLoad 的物件場景更改時不會被破壞。
+## Quick Chat
 
-1. 全域管理器：因為整個遊戲期間一直存在。例如，音效管理器、遊戲設定管理器或玩家數據管理器等物件可以在場景切換時保留，以確保它們的功能和數據在各個場景中持續存在。
-2. 持久性數據：如果你有需要在多個場景中共享的持久性數據，可以將存儲這些數據的物件標記為  DontDestroyOnLoad。例如，玩家的遊戲進度或全域的配置設置等數據可以在場景切換時保留，以便在不同場景中訪問和更新。
-3. UI 元素：某些UI元素，如遊戲狀態面板、計時器或得分顯示，可能需要在多個場景中保留。通過將這些UI元素物件標記為 DontDestroyOnLoad，可以確保它們在場景切換時不會被銷毀，以便在不同場景中持續顯示和更新。
+- **「在尚未深入依賴注入框架前，我常使用它來管理跨場景的資源。」**
+- **「當然，在小專案中，它仍是一個相當方便實用的工具。」**
 
+## Guide
 
-## 問題
-1. 記憶體管理問題：使用 DontDestroyOnLoad 將遊戲物件保留在多個場景中可能會導致記憶體洩漏。如果你的遊戲物件不再需要，但沒有被正確銷毀，它們將繼續存在於記憶體中，佔用系統資源，可能導致性能下降。
-2. 場景管理問題：DontDestroyOnLoad 會打破場景之間的清晰界限。場景是 Unity 中組織和管理遊戲邏輯的基本單位，每個場景都應該是相對獨立的。通過在多個場景之間保持物件，會增加場景之間的耦合性，導致代碼難以維護和測試。
+- [Unity - Scripting API: Object.DontDestroyOnLoad](https://docs.unity3d.com/ScriptReference/Object.DontDestroyOnLoad.html)
 
+**`DontDestroyOnLoad`** 標籤能確保物件在場景切換時不會被銷毀，主要應用於以下三種情境：
 
-## Ref
-- [Object.DontDestroyOnLoad](https://docs.unity3d.com/ScriptReference/Object.DontDestroyOnLoad.html)
+1.  **全域管理器**：此類物件需要貫穿遊戲始終，例如**音效管理器**、**遊戲設定**或**玩家數據**。標記為 `DontDestroyOnLoad` 後，這些管理器便能持續發揮功能並保留數據，確保遊戲體驗不間斷。
+2.  **持久性資料**：當有多個場景需要共享同一份資料時，例如**玩家的遊戲進度**或**全域配置設定**，可以將儲存這些資料的物件設為 `DontDestroyOnLoad`，確保不同場景都能存取並更新。
+3.  **常駐物件**：某些物件（如**遊戲狀態面板**、**計時器**或**得分顯示**）需要持續顯示。透過 `DontDestroyOnLoad`，這些物件在場景切換時不會消失，能保持持續更新。
+
+## Notice
+
+雖然 `DontDestroyOnLoad` 很實用，但使用不當會引發以下問題：
+
+1.  **記憶體洩漏**：如果一個 `DontDestroyOnLoad` 物件在後續場景中不再需要，但沒有手動銷毀，它會一直存在於記憶體中。這會造成**記憶體佔用增加**，導致遊戲效能下降，甚至出現記憶體洩漏。
+2.  **場景耦合**：`DontDestroyOnLoad` 會打破 Unity 場景應有的**獨立性**。當場景之間存在大量共享物件時，會增加它們之間的依賴性（**高耦合**），使得程式碼難以管理、維護和測試。
