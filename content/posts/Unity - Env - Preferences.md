@@ -11,6 +11,11 @@ tags:
 
 紀錄常用的配置
 
+## Config
+
+- [services-config.json で使えるカラム情報のお話](https://zenn.dev/kazu0617/articles/be682e8c1a204c)
+
+
 ## Configuration
 
 ### 避免執行期間變動導致不可預料的問題
@@ -23,3 +28,4 @@ tags:
 - Generate .csproj files for
     - Embedded packages
     - Local packages 
+

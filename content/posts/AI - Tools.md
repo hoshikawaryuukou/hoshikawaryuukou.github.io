@@ -1,7 +1,7 @@
 ---
 draft: false
 title: AI - Tools
-date: 2025-08-27T10:08:39+08:00
+date: 2025-08-29T10:08:39+08:00
 tags:
   - AI
 ---
@@ -18,6 +18,10 @@ tags:
 
 - [GitHub项目理解神器：DeepWiki](https://www.youtube.com/watch?v=IqVo8V4QNm0)
 - [AsyncFuncAI/deepwiki-open](https://github.com/AsyncFuncAI/deepwiki-open)
+
+## Design
+
+- [【Lovart】設計師偷偷在用的AI 工具🫢 3分鐘搞定 Logo＋海報＋網站🔥 Laichu - YouTube](https://www.youtube.com/watch?v=c0K308mLz8U)
 
 ## Translation
 
