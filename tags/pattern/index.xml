@@ -215,4 +215,23 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id="trade-off"&gt;Trade-off&lt;/h2&gt;
-&lt;p&gt;需要額外定義 DTO 類別與轉換邏輯，增加了程式碼量。在極簡單的應用中可能顯得過度設計。&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;需要額外定義 DTO 類別與轉換邏輯，增加了程式碼量。在極簡單的應用中可能顯得過度設計。&lt;/p&gt;</description></item><item><title>Software Design - Pattern - Model View Presenter (MVP)</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---model-view-presenter-mvp/</link><pubDate>Sat, 10 Dec 2022 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---model-view-presenter-mvp/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;在 Unity 開發中，MVP（Model-View-Presenter）是我最常用的架構模式。相比之下，MVC（Model-View-Controller）在實作上常有模糊地帶，Controller 容易與 View 過度耦合；而 MVVM（Model-View-ViewModel）則仰賴 Data Binding 機制的支援，會限制 View 的寫法與彈性。&lt;/p&gt;
+&lt;p&gt;MVP 的概念相對純粹，能清楚劃分各層的責任。在「關注點分離」（Separation of Concerns）的原則下，MVP 的構成如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Model&lt;/strong&gt;：負責資料處理與業務邏輯，不涉及畫面呈現，專注於商業規則。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;View&lt;/strong&gt;：負責 UI 與使用者互動。在理想情況下，View 是「被動的」，只根據 Presenter 指令更新畫面，並將使用者操作回報給 Presenter。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Presenter&lt;/strong&gt;：作為 View 與 Model 的中介者，從 Model 取得資料並整理後交給 View 顯示；同時處理來自 View 的事件並驅動 Model。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/livoras/blog/issues/11"&gt;界面之下：还原真实的MV*模式&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://juejin.cn/post/6901200799242649607"&gt;正确认识 MVC/MVP/MVVM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://juejin.cn/post/6998093259893407757#comment"&gt;站在思想层面看MVX架构&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.pragmaticcoding.ca/javafx/Frameworks/"&gt;Unravelling MVC, MVP and MVVM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://annulusgames-lab.blogspot.com/2022/12/unity-ui-mvrp.html"&gt;【Unity】MV(R)Pパターンのすすめ&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="dependency"&gt;Dependency&lt;/h2&gt;
+&lt;p&gt;在 MVP 模式中，Presenter 與 View 的互動方式主要有兩種，其核心差異在於「依賴方向」。&lt;/p&gt;
+&lt;h3 id="1-view-依賴-presenter-supervising-controller"&gt;1. View 依賴 Presenter (Supervising Controller)&lt;/h3&gt;
+&lt;p&gt;在這種做法中，View 會持有 Presenter 的引用。當發生使用者操作（如按鈕點擊），View 直接呼叫 Presenter 的方法處理。&lt;/p&gt;</description></item></channel></rss>

@@ -362,6 +362,10 @@
 &lt;/ul&gt;
 &lt;p&gt;更多細節可參考 &lt;a href="https://unity.com/blog/unity-6-1-is-now-available"&gt;官方說明&lt;/a&gt;。&lt;/p&gt;</description></item><item><title>Unity - Env - Preferences</title><link>https://HoshikawaRyuukou.github.io/posts/unity---env---preferences/</link><pubDate>Sat, 29 Mar 2025 16:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---env---preferences/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;紀錄常用的配置&lt;/p&gt;
+&lt;h2 id="config"&gt;Config&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://zenn.dev/kazu0617/articles/be682e8c1a204c"&gt;services-config.json で使えるカラム情報のお話&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id="configuration"&gt;Configuration&lt;/h2&gt;
 &lt;h3 id="避免執行期間變動導致不可預料的問題"&gt;避免執行期間變動導致不可預料的問題&lt;/h3&gt;
 &lt;ul&gt;
