@@ -58,7 +58,7 @@ matrix = [
 | 3    | [1,1,1,1,1] | [3, 1, 3, 2, 2] | 6               |
 | 4    | [1,0,0,1,0] | [4, 0, 0, 3, 0] | 4               |
 
-![Leetcode85](../images/Leetcode85.png)
+![Leetcode85](/images/blog/Leetcode85.png)
 
 **最大矩形面積 = `6`**
 

@@ -14,10 +14,10 @@ if /I not "%RUN_SYNC%"=="Y" (
 set "SCRIPT_DIR=%~dp0"
 
 :: Set relative paths
-set "SRC_POSTS=%SCRIPT_DIR%..\obsidian-notes\blog\posts"
-set "SRC_IMGS=%SCRIPT_DIR%..\obsidian-notes\blog\images"
+set "SRC_POSTS=%SCRIPT_DIR%..\obsidian-notes\blog"
+set "SRC_IMGS=%SCRIPT_DIR%..\obsidian-notes\images\blog"
 set "DST_POSTS=%SCRIPT_DIR%content\posts"
-set "DST_IMGS=%SCRIPT_DIR%static\images"
+set "DST_IMGS=%SCRIPT_DIR%static\images\blog"
 
 :: Check if source paths exist
 echo Checking source paths...

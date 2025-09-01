@@ -21,12 +21,12 @@ Google 停止維護 Game Package Registry (GPR) 導致不能直接使用 Package
 `Assets > External Dependency Manager > Android Resolver > Settings`
 啟用這三個 Patch 
 
-![EDM4U_01](../images/EDM4U_01.png)
+![EDM4U_01](/images/blog/EDM4U_01.png)
 
 並至 `Player Settings > Publishing Settings` 
 啟用以下選項
 
-![EDM4U_02](../images/EDM4U_02.png)
+![EDM4U_02](/images/blog/EDM4U_02.png)
 
 ## Auto Resolution
 

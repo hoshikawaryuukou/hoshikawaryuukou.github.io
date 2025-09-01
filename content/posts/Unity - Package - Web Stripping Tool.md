@@ -56,10 +56,11 @@ tags:
 	- 使用這個版本導出可剝離的子模組清單。
 
 2. 我會將壓縮算法的子模組重新納入
-	- ![Exempted Compression Algorithm](Unity%20-%20Package%20-%20Web%20Stripping%20Tool-1756364223758.png)
 	- 約 0.1 MB 還可以接受。
 	- 壓縮算法到導出的階段都可能在調整。
 	- 如果真的要保持極限乾淨的包體，之後應該會寫 BuildPipeline。 
+
+	 ![Exempted Compression Algorithm](/images/blog/Unity%20-%20Package%20-%20Web%20Stripping%20Tool-1756364223758.png)
 
 3. 輸出 Release 版本 
 	- 於 Submodules Stripping 面板勾選 Strip Automatically After Build 
