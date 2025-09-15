@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Github on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/github/</link><description>Recent content in Github on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Mon, 18 Aug 2025 20:38:51 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/github/index.xml" rel="self" type="application/rss+xml"/><item><title>Workflow – Host Unity Web Game on GitHub Pages</title><link>https://HoshikawaRyuukou.github.io/posts/workflow--host-unity-web-game-on-github-pages/</link><pubDate>Mon, 18 Aug 2025 20:38:51 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow--host-unity-web-game-on-github-pages/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;⚠️ 需要在 Unity 中開啟 &lt;strong&gt;Decompression Fallback&lt;/strong&gt; 功能（GitHub Pages 不支援壓縮）。&lt;/li&gt;
-&lt;li&gt;⚠️ &lt;strong&gt;公開的 Repository (Public Repository)&lt;/strong&gt; 才能免費使用 GitHub Pages。&lt;/li&gt;
+&lt;li&gt;⚠️ 在 Unity 中需啟用 &lt;strong&gt;Decompression Fallback&lt;/strong&gt;（因 GitHub Pages 不支援壓縮檔案）。&lt;/li&gt;
+&lt;li&gt;⚠️ &lt;strong&gt;僅 Public Repository&lt;/strong&gt; 可免費使用 GitHub Pages。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;以下提供兩種簡單方案（暫不涉及 CI 自動化）：&lt;/p&gt;
-&lt;h2 id="方法一獨立-public-repository"&gt;方法一：獨立 Public Repository&lt;/h2&gt;
+&lt;p&gt;以下提供兩種簡單的部署方式（此處不討論 CI 自動化）：&lt;/p&gt;
+&lt;h2 id="方法一建立獨立的-public-repository"&gt;方法一：建立獨立的 Public Repository&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;建立一個新的 &lt;strong&gt;Public Repository&lt;/strong&gt;。&lt;/li&gt;
 &lt;li&gt;將 Unity WebGL 的建置輸出檔案上傳至該 Repository。&lt;/li&gt;
-&lt;li&gt;在 GitHub 設定中，選擇包含 &lt;code&gt;index.html&lt;/code&gt; 的目錄，即可完成部署。&lt;/li&gt;
+&lt;li&gt;在 GitHub 設定中，指定包含 &lt;code&gt;index.html&lt;/code&gt; 的資料夾，即可完成部署。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id="方法二孤兒分支-orphan-branch"&gt;方法二：孤兒分支 (Orphan Branch)&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;建立並切換到孤兒分支（例如 &lt;code&gt;gh-pages&lt;/code&gt;）。&lt;/li&gt;
-&lt;li&gt;將 Unity WebGL 的建置輸出檔案推送到該分支。&lt;/li&gt;
-&lt;li&gt;在 GitHub 設定中，選擇包含 &lt;code&gt;index.html&lt;/code&gt; 的目錄，即可完成部署。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id="腳本生成---ai-prompt"&gt;腳本生成 - AI Prompt&lt;/h3&gt;
-&lt;p&gt;目錄結構&lt;/p&gt;
+&lt;p&gt;我已封裝好一個 PowerShell 工具，能快速完成部署：&lt;/p&gt;
+&lt;p&gt;👉 &lt;a href="https://github.com/hoshikawaryuukou/MGST-PowerShell-Toolkit/tree/main/GH-Pages-Deploy"&gt;MGST-PowerShell-Toolkit/GH-Pages-Deploy&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;此工具能將指定 Git 倉庫中的建置成果部署到 GitHub Pages 的 &lt;code&gt;gh-pages&lt;/code&gt; 分支。&lt;br&gt;
+它透過 &lt;strong&gt;Git worktree&lt;/strong&gt; 與 &lt;strong&gt;孤兒分支（orphan branch）&lt;/strong&gt; 技術，能在不影響主分支開發的情況下，獨立維護部署內容。&lt;/p&gt;
+&lt;p&gt;請先確認目標目錄符合以下結構：&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;project-root/ 
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;├── .git
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;├── Builds/Web/
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;└── PowerShellCommands/gh-page-command.ps1 
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;我想實作 gh-page-command.ps1
-目標是將指定目錄 (Builds/Web/) 內容推送至 git 的 orphan branch (gh-pages) 上&lt;/p&gt;</description></item><item><title>Chat –Personal Knowledge Management</title><link>https://HoshikawaRyuukou.github.io/posts/chat---personal-knowledge-management/</link><pubDate>Thu, 07 Aug 2025 09:56:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/chat---personal-knowledge-management/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;└── Builds/
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Chat –Personal Knowledge Management</title><link>https://HoshikawaRyuukou.github.io/posts/chat---personal-knowledge-management/</link><pubDate>Thu, 07 Aug 2025 09:56:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/chat---personal-knowledge-management/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;我對理想的筆記工具有四個核心要求：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;

@@ -1,21 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tools on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/tools/</link><description>Recent content in Tools on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sun, 10 Aug 2025 09:56:18 +0000</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/tools/index.xml" rel="self" type="application/rss+xml"/><item><title>OS - Windows - Tools</title><link>https://HoshikawaRyuukou.github.io/posts/os---windows---tools/</link><pubDate>Sun, 10 Aug 2025 09:56:18 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/os---windows---tools/</guid><description>&lt;h2 id="robocopy"&gt;robocopy&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;全名是 &lt;strong&gt;Robust File Copy&lt;/strong&gt;。&lt;/li&gt;
-&lt;li&gt;是 Windows 作業系統內建的&lt;strong&gt;命令列檔案複製工具&lt;/strong&gt;。&lt;/li&gt;
-&lt;li&gt;支援多執行緒、差異複製、恢復中斷等功能。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre tabindex="0"&gt;&lt;code&gt;robocopy source destination /MIR
-&lt;/code&gt;&lt;/pre&gt;&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;source&lt;/code&gt; : 來源資料夾路徑&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;destination&lt;/code&gt; : 目標資料夾路徑&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;/MIR&lt;/code&gt; : 鏡像同步
-&lt;ul&gt;
-&lt;li&gt;新增來源有但目標沒有的檔案&lt;/li&gt;
-&lt;li&gt;覆蓋來源較新的檔案&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;刪除&lt;/strong&gt;目標有但來源已刪除的檔案（⚠️注意不可逆）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title>Tools</title><link>https://HoshikawaRyuukou.github.io/posts/tools/</link><pubDate>Sat, 01 Mar 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/tools/</guid><description>&lt;h2 id="antivirus"&gt;Antivirus&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tools on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/tools/</link><description>Recent content in Tools on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Fri, 12 Sep 2025 10:00:00 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/tools/index.xml" rel="self" type="application/rss+xml"/><item><title>Tools</title><link>https://HoshikawaRyuukou.github.io/posts/tools/</link><pubDate>Fri, 12 Sep 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/tools/</guid><description>&lt;h2 id="antivirus"&gt;Antivirus&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.cyberlock.global/DefenderUI.aspx"&gt;DefenderUI - Unlocks the full power of Windows Defender with an intuitive, streamlined interface.&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -39,6 +22,7 @@
 &lt;h2 id="disk"&gt;Disk&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://diskanalyzer.com/"&gt;WizTree - The Fastest Disk Space Analyzer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.voidtools.com/"&gt;Everything&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="document"&gt;Document&lt;/h2&gt;
 &lt;ul&gt;
@@ -65,6 +49,7 @@
 &lt;li&gt;&lt;a href="https://github.com/mifi/lossless-cut"&gt;mifi/lossless-cut&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.capcut.com/zh-tw/"&gt;CapCut&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/Andrews54757/FastStream"&gt;Andrews54757/FastStream&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/alyssaxuu/screenity"&gt;GitHub - alyssaxuu/screenity: The free and privacy-friendly screen recorder with no limits 🎥&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="message"&gt;Message&lt;/h2&gt;
 &lt;ul&gt;
@@ -96,4 +81,43 @@
 &lt;h2 id="misc"&gt;Misc&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://tools.wingzero.tw/web/page/1"&gt;網路資源列表| DeTools&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item></channel></rss>
+&lt;/ul&gt;</description></item><item><title>AI - Favorites</title><link>https://HoshikawaRyuukou.github.io/posts/ai---favorites/</link><pubDate>Fri, 05 Sep 2025 10:25:42 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---favorites/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;記錄些目前使用率很高的 AI 工具 🤓。&lt;/p&gt;
+&lt;h2 id="collections"&gt;Collections&lt;/h2&gt;
+&lt;h3 id="chat"&gt;Chat&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://aistudio.google.com/prompts/new_chat"&gt;Google AI Studio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://chatgpt.com/"&gt;ChatGPT&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://gemini.google.com/app?hl=zh-TW"&gt;Google Gemini&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://grok.com/"&gt;Grok&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="search"&gt;Search&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://felo.ai/zh-Hant/search"&gt;Felo - 您的免費 AI 搜尋引擎&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="all-in-one"&gt;All-in-One&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.genspark.ai/"&gt;Genspark - 一站式 AI 工作空間&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="design"&gt;Design&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.lovart.ai/zh-TW"&gt;Lovart | 全球首個設計智能體&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=XtWHGmEz5CA"&gt;🔥Google Stitch颠覆传统UI设计！10秒生成专业级UI！快速生成产品原型！小白也能开发精美UI。 支持无缝导入Figma！ Stitch保姆级教程：从想法到APP大师级界面效果堪比专业团队 - YouTube&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>OS - Windows - Tools</title><link>https://HoshikawaRyuukou.github.io/posts/os---windows---tools/</link><pubDate>Sun, 10 Aug 2025 09:56:18 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/os---windows---tools/</guid><description>&lt;h2 id="robocopy"&gt;robocopy&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;全名是 &lt;strong&gt;Robust File Copy&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;是 Windows 作業系統內建的&lt;strong&gt;命令列檔案複製工具&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;支援多執行緒、差異複製、恢復中斷等功能。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;robocopy source destination /MIR
+&lt;/code&gt;&lt;/pre&gt;&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;source&lt;/code&gt; : 來源資料夾路徑&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;destination&lt;/code&gt; : 目標資料夾路徑&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/MIR&lt;/code&gt; : 鏡像同步
+&lt;ul&gt;
+&lt;li&gt;新增來源有但目標沒有的檔案&lt;/li&gt;
+&lt;li&gt;覆蓋來源較新的檔案&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;刪除&lt;/strong&gt;目標有但來源已刪除的檔案（⚠️注意不可逆）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description></item></channel></rss>

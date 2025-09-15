@@ -33,6 +33,7 @@
 &lt;li&gt;&lt;a href="https://developer.open-douyin.com/docs/resource/zh-CN/mini-game/develop/guide/performance-optimization/runtime-performance/optimize-game-memory"&gt;优化普通小游戏内存_抖音开放平台&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://developer.open-douyin.com/docs/resource/zh-CN/mini-game/develop/guide/performance-optimization/runtime-performance/sc_webgl_runtime_optimization"&gt;Unity WebGL 运行时优化建议_抖音开放平台&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://docs.unity3d.com/6000.2/Documentation/Manual/webgl-texture-compression.html"&gt;Unity - Manual: Texture compression in Web&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.csdn.net/egostudio/article/details/145555816"&gt;Unity WebGL包体压缩_unity webgl 压缩-CSDN博客&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Package Manager &lt;strong&gt;停用&lt;/strong&gt; 不使用的 &lt;strong&gt;Built-in&lt;/strong&gt; 模組&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id="others"&gt;Others&lt;/h3&gt;

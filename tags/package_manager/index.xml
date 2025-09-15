@@ -32,7 +32,11 @@ Scope(s):
  com.cysharp.unitask
 &lt;/code&gt;&lt;/pre&gt;&lt;ol start="3"&gt;
 &lt;li&gt;Package manager -&amp;gt; Packages: My Registries -&amp;gt; Install&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title>Unity - Package Manager - Modify a Package</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---modify-a-package/</link><pubDate>Fri, 12 Jan 2024 12:46:15 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---modify-a-package/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ol&gt;
+&lt;h2 id="package-template"&gt;Package Template&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/IvanMurzak/Unity-Package-Template"&gt;GitHub - IvanMurzak/Unity-Package-Template: Template Unity Package for OpenUPM and NPMJS. Supports UPM (Unity Package Manager) with versioning.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Unity - Package Manager - Modify a Package</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---modify-a-package/</link><pubDate>Fri, 12 Jan 2024 12:46:15 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---modify-a-package/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;客製化 Unity 官方 / git 直接導入 的 Package&lt;/p&gt;
 &lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
 &lt;ul&gt;

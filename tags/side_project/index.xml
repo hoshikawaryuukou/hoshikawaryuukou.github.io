@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Side_Project on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/side_project/</link><description>Recent content in Side_Project on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sun, 31 Aug 2025 10:00:00 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/side_project/index.xml" rel="self" type="application/rss+xml"/><item><title>Side Project - Track Piece</title><link>https://HoshikawaRyuukou.github.io/posts/side-project---track-piece/</link><pubDate>Sun, 31 Aug 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/side-project---track-piece/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;此專案已開源，完整設計思路請參見 repo。&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/hoshikawaryuukou/MGSP_TrackPiece"&gt;GitHub - hoshikawaryuukou/MGSP_TrackPiece&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="專案目標"&gt;專案目標&lt;/h2&gt;
+&lt;p&gt;這是一個實驗性質的 side project，用來驗證 &lt;strong&gt;single feature / tiny game&lt;/strong&gt; 的開發模式。 有以下目標：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;嘗試設計一個複雜度適中，且能快速應用於其他遊戲的架構。&lt;/li&gt;
+&lt;li&gt;測試 Unity Web 的輸出與效能優化方式。&lt;/li&gt;
+&lt;li&gt;作為小型遊戲開發的設計實驗案例。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="遊戲介紹"&gt;遊戲介紹&lt;/h2&gt;
+&lt;h3 id="遊戲目標"&gt;遊戲目標&lt;/h3&gt;
+&lt;p&gt;玩家需要讓自己的棋子連成一線（水平、垂直或對角線）以取得勝利。&lt;/p&gt;
+&lt;h3 id="遊戲規則"&gt;遊戲規則&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;遊戲由兩名玩家進行，分別使用 &lt;strong&gt;黑子&lt;/strong&gt; 與 &lt;strong&gt;白子&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;棋盤大小可選擇 &lt;strong&gt;4x4&lt;/strong&gt; 或 &lt;strong&gt;6x6&lt;/strong&gt;，初始時所有格子為空。&lt;/li&gt;
+&lt;li&gt;玩家輪流在棋盤上放置棋子。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="遊戲玩法"&gt;遊戲玩法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;放置棋子&lt;/strong&gt;：玩家在自己的回合選擇一個空格放下棋子。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;旋轉棋盤&lt;/strong&gt;：每次放置後，棋盤上的所有棋子會 &lt;strong&gt;逆時針旋轉一格&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;勝利判定&lt;/strong&gt;：若有玩家的棋子形成一條直線（橫、縱或斜線），該玩家即獲勝。若棋盤仍有空格且尚未分出勝負，則換下一位玩家繼續。&lt;/li&gt;
+&lt;/ol&gt;</description></item></channel></rss>
