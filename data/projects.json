@@ -1,14 +1,9 @@
 {
   "list": [
     {
-      "name": "Memory Master",
-      "url": "https://play.google.com/store/apps/details?id=com.miniaturegardenstudio.memorymaster&hl=zh_TW",
-      "desc": "Memory Matching Game"
-    },
-    {
-      "name": "Photo Puzzle",
-      "url": "https://play.google.com/store/apps/details?id=com.miniaturegardenstudio.photopuzzle&hl=zh_TW",
-      "desc": "Puzzle Game"
+      "name": "MGSP-TrackPiece",
+      "url": "https://hoshikawaryuukou.github.io/MGSP_TrackPiece/",
+      "desc": "瞬息萬變的連線棋局！棋盤轉動，考驗你的空間預判與靈活應變。"
     }
   ]
 }

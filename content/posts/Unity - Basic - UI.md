@@ -18,6 +18,7 @@ tags:
 - [Designing UI for Multiple Resolutions](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/HOWTO-UIMultiResolution.html)
 - [Unity Canvas Scaler 组件的使用](https://blog.csdn.net/hello_1995/article/details/122130097)
 - [Unity分辨率适配方案设置](https://blog.csdn.net/qq_42672770/article/details/121886944)
+- [Unity教程：如何让UI自适应分辨率\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1AFvTzFEbG)
 
 ### Material
 

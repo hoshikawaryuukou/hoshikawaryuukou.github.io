@@ -115,6 +115,8 @@ Schedule 是從雜訊圖到成品的**去噪程度**。
 	- **確保 Prompt 保持清晰，容易控制風格**
 - [Illustrious XL 提示 (+ 更新！)](https://civitai.com/articles/8380/tips-for-illustrious-xl-prompting-updates)
 - [NOOBAI XL快速指南](https://fcnk27d6mpa5.feishu.cn/wiki/S8Z4wy7fSiePNRksiBXcyrUenOh)
+- [NAIv3 Style Codex: Single Artist](https://300huafeng.vercel.app/single_artist_style.html)
+- [NAIv3 Style Codex: Mixed Artists](https://300huafeng.vercel.app/mixed_artists_style.html)
 
 
 ## Settings

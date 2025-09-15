@@ -41,6 +41,7 @@ tags:
 - [优化普通小游戏内存\_抖音开放平台](https://developer.open-douyin.com/docs/resource/zh-CN/mini-game/develop/guide/performance-optimization/runtime-performance/optimize-game-memory)
 - [Unity WebGL 运行时优化建议\_抖音开放平台](https://developer.open-douyin.com/docs/resource/zh-CN/mini-game/develop/guide/performance-optimization/runtime-performance/sc_webgl_runtime_optimization)
 - [Unity - Manual: Texture compression in Web](https://docs.unity3d.com/6000.2/Documentation/Manual/webgl-texture-compression.html)
+- [Unity WebGL包体压缩\_unity webgl 压缩-CSDN博客](https://blog.csdn.net/egostudio/article/details/145555816)
 - Package Manager **停用** 不使用的 **Built-in** 模組
 
 ### Others

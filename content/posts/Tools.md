@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Tools
-date: 2025-03-01T10:00:00+08:00
+date: 2025-09-12T10:00:00+08:00
 tags:
   - Tools
 ---
@@ -30,6 +30,7 @@ tags:
 ## Disk
 
 - [WizTree - The Fastest Disk Space Analyzer](https://diskanalyzer.com/)
+- [Everything](https://www.voidtools.com/)
 
 ## Document
 
@@ -56,6 +57,7 @@ tags:
 - [mifi/lossless-cut](https://github.com/mifi/lossless-cut)
 - [CapCut](https://www.capcut.com/zh-tw/)
 - [Andrews54757/FastStream](https://github.com/Andrews54757/FastStream)
+- [GitHub - alyssaxuu/screenity: The free and privacy-friendly screen recorder with no limits 🎥](https://github.com/alyssaxuu/screenity)
 
 ## Message
 

@@ -41,3 +41,7 @@ Scope(s):
          com.cysharp.unitask
 ```
 3. Package manager -> Packages: My Registries -> Install
+
+## Package Template
+
+- [GitHub - IvanMurzak/Unity-Package-Template: Template Unity Package for OpenUPM and NPMJS. Supports UPM (Unity Package Manager) with versioning.](https://github.com/IvanMurzak/Unity-Package-Template)
