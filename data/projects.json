@@ -4,6 +4,11 @@
       "name": "MGSP-TrackPiece",
       "url": "https://hoshikawaryuukou.github.io/MGSP_TrackPiece/",
       "desc": "瞬息萬變的連線棋局！棋盤轉動，考驗你的空間預判與靈活應變。"
+    },
+    {
+      "name": "MGSP-PhotoPuzzle",
+      "url": "https://hoshikawaryuukou.github.io/MGSP_PhotoPuzzle/",
+      "desc": "化碎片為完整！隨機打亂的照片等你重組，考驗你的觀察力與解題直覺。"
     }
   ]
 }
