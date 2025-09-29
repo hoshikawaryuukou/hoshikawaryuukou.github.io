@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/posts/</link><description>Recent content in Posts on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sat, 20 Sep 2025 10:00:00 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Side Project - Photo Puzzle</title><link>https://HoshikawaRyuukou.github.io/posts/side-project---photo-puzzle/</link><pubDate>Sat, 20 Sep 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/side-project---photo-puzzle/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/posts/</link><description>Recent content in Posts on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sat, 27 Sep 2025 13:55:55 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>AI - Prompt - Headshot</title><link>https://HoshikawaRyuukou.github.io/posts/ai---prompt---headshot/</link><pubDate>Sat, 27 Sep 2025 13:55:55 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---prompt---headshot/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;最近為了更新履歷需要一張專業大頭照，但我手邊只有生活照。於是我嘗試使用 Google AI Studio 上的 &lt;strong&gt;Gemini 2.5 Flash&lt;/strong&gt;，效果相當不錯。&lt;/p&gt;
+&lt;h2 id="practice"&gt;Practice&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;服裝&lt;/strong&gt;：深色西裝
+&lt;strong&gt;光線&lt;/strong&gt;：側光，額頭去除油光
+&lt;strong&gt;構圖&lt;/strong&gt;：半身照，臉部佔 70%~80%
+&lt;strong&gt;尺寸&lt;/strong&gt;：4.5 公分 × 3.5 公分
+&lt;strong&gt;表情&lt;/strong&gt;：微笑但自然，嘴巴合閉不露齒
+&lt;strong&gt;背景&lt;/strong&gt;：白色，光源均勻，無陰影或反光
+&lt;strong&gt;品質&lt;/strong&gt;：清晰對焦，高品質無摺痕
+&lt;strong&gt;角度&lt;/strong&gt;：眼睛正視鏡頭&lt;/p&gt;
+&lt;p&gt;⚠️ 關於&lt;strong&gt;尺寸&lt;/strong&gt;的指令（如 4.5cm × 3.5cm），目前的 AI 模型通常無法直接生成精確的實體尺寸。 加入這項指令主要是為了讓 AI 更理解「這是一張證件照」的脈絡，從而優化構圖與臉部比例。最終，你仍需要將生成圖片匯入影像編輯軟體進行手動裁切，以符合最終需求。&lt;/p&gt;</description></item><item><title>Chat - Career - Work Milestones</title><link>https://HoshikawaRyuukou.github.io/posts/chat---career---work-milestones/</link><pubDate>Wed, 24 Sep 2025 20:31:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/chat---career---work-milestones/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;h3 id="第一站朱o數位科技-unity-數位內容開發"&gt;&lt;strong&gt;第一站：朱O數位科技 (Unity 數位內容開發)&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;我的第一份正職工作，是大學產學合作的延伸。對於剛畢業的我來說，薪資條件相當不錯，當時的想法很單純，就是希望能邊做邊學，持續精進技術。&lt;/p&gt;
+&lt;p&gt;主要的工作內容是開發 Unity 數位教材和 VR 應用。然而，經過一年的實踐，我開始感覺到一絲不安。團隊的開發模式比較接近大學時期的專案，缺乏業界標準化的流程。加上我是公司唯一的 Unity 開發者，雖然獨立完成了許多專案，卻也少了程式碼審查 (Code Review) 和技術交流的機會，讓我擔心自己會逐漸與業界主流脫節。&lt;/p&gt;
+&lt;p&gt;在某次合作案中，我深刻體會到，一個專案若缺乏專業的企劃或產品經理 (PM)，會對產品方向和開發效率造成多大的衝擊。這段經歷讓我第一次意識到，軟體開發不僅僅是寫程式而已。&lt;/p&gt;
+&lt;p&gt;不久後，公司業務受到中國「雙減政策」的影響，我也在這波變動中，以半資遣、半主動的方式離開，踏上了尋找下一站的旅程。&lt;/p&gt;
+&lt;h3 id="轉職沉澱期系統化地重塑技術根基"&gt;&lt;strong&gt;轉職沉澱期：系統化地重塑技術根基&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;離開第一份工作後，我沒有急著投入下一間公司，而是決定給自己一段時間，系統性地打好技術基礎。&lt;/p&gt;
+&lt;p&gt;為什麼不直接在工作中學習呢？我詢問了身邊的朋友，發現許多公司的開發環境，更要求你快速融入既有的工作流，反而學習新技術的機會相對有限。這給我一種「你可能會成為資深員工，卻不一定是資深工程師」的感覺。&lt;/p&gt;
+&lt;p&gt;因此，我開始有計劃地深入學習 Design Pattern、軟體架構 (Architecture)，並大量閱讀國外開發者的經驗分享。我不是空想，而是將這些理論在 Unity 中反覆實踐、驗證，逐步建立起屬於自己的設計思維體系。這段時期的每一次練習，都成為了我日後解決問題的基石。&lt;/p&gt;
+&lt;h3 id="第二站青o遊戲-遊戲客戶端開發"&gt;&lt;strong&gt;第二站：青O遊戲 (遊戲客戶端開發)&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;在面試時，老闆提及他曾是工程師出身，並且非常認同我的設計理念。這讓我燃起了熱情，希望能到第一線的開發戰場，實際驗證我所學的知識，並深入了解如何與美術、企劃、PM 等不同角色進行高效的協同開發。&lt;/p&gt;
+&lt;p&gt;進入公司後，我觀察到核心團隊成員大多是跟隨老闆從學校時期一路打拼至今的夥伴，這使得公司的技術棧相對傳統。我所參與的客戶端專案，不僅累積了大量的技術債，架構也比較混亂。在無法進行大規模重構的前提下，我的首要任務是為專案「續命」，成功導入了熱更新機制和資源管理系統，以維持產品的穩定運作。&lt;/p&gt;
+&lt;p&gt;此外，公司也賦予我「為團隊注入技術新血」的任務，我開始負責新技術的研究與分享，希望能帶動團隊的技術氛圍。然而，當時公司正處於現金流不穩的階段，我時常需要支援不同單位的緊急任務，導致工作體驗變得相當破碎。&lt;/p&gt;
+&lt;p&gt;我曾提出一些關於改善開發流程的建議，雖然得到了認同，但受限於資源，最終無力執行。技術單位的角色，逐漸淪為專案需求的附庸。在這次經歷後，我意識到，一個體制完善、流程清晰的工作環境，對於工程師的長期發展至關重要，也因此萌生了尋找更成熟團隊的想法。&lt;/p&gt;</description></item><item><title>Side Project - Photo Puzzle</title><link>https://HoshikawaRyuukou.github.io/posts/side-project---photo-puzzle/</link><pubDate>Sat, 20 Sep 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/side-project---photo-puzzle/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;此專案已開源，完整設計思路請參見 repo。&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/hoshikawaryuukou/MGSP_PhotoPuzzle"&gt;GitHub - hoshikawaryuukou/MGSP_PhotoPuzzle&lt;/a&gt;&lt;/li&gt;
@@ -421,6 +446,7 @@
 &lt;li&gt;剝離過程是在遊戲完成初步建構後進行的，屬於建構管線的 &lt;strong&gt;後處理&lt;/strong&gt; 步驟。&lt;/li&gt;
 &lt;li&gt;建議將設置文件納入版本控制。&lt;/li&gt;
 &lt;li&gt;該工具將持續改進，並計劃支持更多子模組。&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://discussions.unity.com/t/question-about-original-wasm-size-behavior-with-strip-automatically-after-build/1684619/5"&gt;Question about Original wasm size behavior with Strip Automatically After Build - Unity Engine - Unity Discussions&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id="workflow"&gt;Workflow&lt;/h2&gt;
 &lt;ol&gt;
@@ -1707,7 +1733,37 @@ Scope(s):
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://hackernoon.com/observer-vs-pub-sub-pattern-50d3b27f838c"&gt;Observer vs Pub-Sub pattern&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.semicolonandsons.com/code_diary/architecture/pub-sub-system-pros-and-cons"&gt;Pub sub system pros and cons&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Unity - Package - LitMotion</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package---litmotion/</link><pubDate>Fri, 23 Aug 2024 10:08:39 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package---litmotion/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Unity - Package - UniTask</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package---unitask/</link><pubDate>Tue, 24 Sep 2024 09:45:17 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package---unitask/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;UniTask 是一個專為 Unity 設計的高效能非同步程式設計函式庫，它以 C# 的 &lt;code&gt;async/await&lt;/code&gt; 語法為基礎，旨在提供一個比 Unity 原生 Coroutine (協程) 和內建 Task 更高效能、更低記憶體消耗的非同步解決方案。&lt;/p&gt;
+&lt;p&gt;雖然 Unity 2023.1 版本已正式引入 &lt;code&gt;UnityEngine.Awaitable&lt;/code&gt;，為 &lt;code&gt;async/await&lt;/code&gt; 提供了官方支援，但目前 UniTask 的生態系（例如與其他常用函式庫的整合）依然更加成熟和廣泛，因此在專案中導入 UniTask 仍是主流且可靠的選擇。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.unity3d.com/2023.2/Documentation/Manual/AwaitSupport.html"&gt;Unity - Manual: Await support&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=B2jiquau_TQ"&gt;【Unity 2023.1】 C# async/await 正式サポート？ Awaitable を使ってみよう！&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
+&lt;p&gt;UniTask 官方文件對其核心功能有非常清晰的說明，是最好的入門起點：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/Cysharp/UniTask"&gt;Cysharp/UniTask (Official GitHub)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;若想參考更多教學資源，以下文章也提供了詳盡的介紹與範例：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://scenarioflow-lab.dotprologue.com/category/unitask/"&gt;UniTask | ScenarioFlow Lab&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://qiita.com/toRisouP/items/4445b6b9bf00e49eb147"&gt;UniTask機能紹介 (Qiita)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://hackmd.io/@-xLrSnFfROOeIeRnENCWcQ/Bke4eFcrd"&gt;UniTaskを使おう！ (HackMD)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="vs-coroutine"&gt;vs. Coroutine&lt;/h2&gt;
+&lt;p&gt;Coroutine 是 Unity 原生支援的非同步處理方式。雖然堪用，但在複雜度、性能與可讀性上，UniTask 提供了更現代且強大的解決方案。&lt;/p&gt;
+&lt;p&gt;以下我們從幾個關鍵面向進行比較：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;可讀性：從非線性結構到線性邏輯&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Coroutine&lt;/strong&gt;: 透過 &lt;code&gt;yield return&lt;/code&gt; 語法來暫停與恢復。當非同步操作需要串接時（如下載完檔案再解析），程式碼的邏輯會被分割在不同的 &lt;code&gt;yield&lt;/code&gt; 點之間，導致結構上的非線性，可讀性隨複雜度下降。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;UniTask&lt;/strong&gt;: &lt;code&gt;async/await&lt;/code&gt; 語法將複雜的狀態機轉換隱藏在編譯層面，讓開發者能以&lt;strong&gt;從上到下的同步風格&lt;/strong&gt;編寫非同步程式碼，邏輯始終保持清晰。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;回傳值：從迂迴的 Callback 到直接 &lt;code&gt;await&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Unity - Package - LitMotion</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package---litmotion/</link><pubDate>Fri, 23 Aug 2024 10:08:39 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package---litmotion/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;從 DOTween 轉換到 LitMotion 的過程很順利，特別是看中它「零記憶體配置」（Zero Allocation）的特性。加上它對 UniTask 和 R3 的良好支援。&lt;/p&gt;
 &lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
 &lt;ul&gt;
