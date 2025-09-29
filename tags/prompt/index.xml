@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Prompt on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/prompt/</link><description>Recent content in Prompt on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sat, 27 Sep 2025 13:55:55 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/prompt/index.xml" rel="self" type="application/rss+xml"/><item><title>AI - Prompt - Headshot</title><link>https://HoshikawaRyuukou.github.io/posts/ai---prompt---headshot/</link><pubDate>Sat, 27 Sep 2025 13:55:55 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---prompt---headshot/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
-&lt;p&gt;最近為了更新履歷需要一張專業大頭照，但我手邊只有生活照。於是我嘗試使用 Google AI Studio 上的 &lt;strong&gt;Gemini 2.5 Flash&lt;/strong&gt;，效果相當不錯。&lt;/p&gt;
+&lt;p&gt;最近為了更新履歷需要一張專業大頭照，但我手邊只有生活照。於是我使用 Google AI Studio 上的 &lt;strong&gt;Gemini 2.5 Flash Image (Nano Banana)&lt;/strong&gt;，效果相當不錯。&lt;/p&gt;
 &lt;h2 id="practice"&gt;Practice&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;服裝&lt;/strong&gt;：深色西裝
-&lt;strong&gt;光線&lt;/strong&gt;：側光，額頭去除油光
-&lt;strong&gt;構圖&lt;/strong&gt;：半身照，臉部佔 70%~80%
-&lt;strong&gt;尺寸&lt;/strong&gt;：4.5 公分 × 3.5 公分
-&lt;strong&gt;表情&lt;/strong&gt;：微笑但自然，嘴巴合閉不露齒
-&lt;strong&gt;背景&lt;/strong&gt;：白色，光源均勻，無陰影或反光
-&lt;strong&gt;品質&lt;/strong&gt;：清晰對焦，高品質無摺痕
+&lt;p&gt;&lt;strong&gt;服裝&lt;/strong&gt;：深色西裝 &lt;br&gt;
+&lt;strong&gt;光線&lt;/strong&gt;：側光，額頭去除油光 &lt;br&gt;
+&lt;strong&gt;構圖&lt;/strong&gt;：半身照，臉部佔 70%~80% &lt;br&gt;
+&lt;strong&gt;尺寸&lt;/strong&gt;：4.5 公分 × 3.5 公分 &lt;br&gt;
+&lt;strong&gt;表情&lt;/strong&gt;：微笑但自然，嘴巴合閉不露齒 &lt;br&gt;
+&lt;strong&gt;背景&lt;/strong&gt;：白色，光源均勻，無陰影或反光 &lt;br&gt;
+&lt;strong&gt;品質&lt;/strong&gt;：清晰對焦，高品質無摺痕 &lt;br&gt;
 &lt;strong&gt;角度&lt;/strong&gt;：眼睛正視鏡頭&lt;/p&gt;
 &lt;p&gt;⚠️ 關於&lt;strong&gt;尺寸&lt;/strong&gt;的指令（如 4.5cm × 3.5cm），目前的 AI 模型通常無法直接生成精確的實體尺寸。 加入這項指令主要是為了讓 AI 更理解「這是一張證件照」的脈絡，從而優化構圖與臉部比例。最終，你仍需要將生成圖片匯入影像編輯軟體進行手動裁切，以符合最終需求。&lt;/p&gt;</description></item></channel></rss>
