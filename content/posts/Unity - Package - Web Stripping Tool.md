@@ -27,6 +27,7 @@ tags:
 3. 剝離過程是在遊戲完成初步建構後進行的，屬於建構管線的 **後處理** 步驟。
 4. 建議將設置文件納入版本控制。
 5. 該工具將持續改進，並計劃支持更多子模組。
+6. [Question about Original wasm size behavior with Strip Automatically After Build - Unity Engine - Unity Discussions](https://discussions.unity.com/t/question-about-original-wasm-size-behavior-with-strip-automatically-after-build/1684619/5)
 
 ## Workflow
 
