@@ -47,3 +47,4 @@ AGI 就像能像人類一樣思考和學習的 AI。與目前只能處理特定�
 - [一小時略懂 AI｜GPT、Sora、Diffusion model、類器官智慧OI、圖靈測試、人工智慧史](https://www.youtube.com/watch?v=eraWvfD_Ihg)
 - [【人工智能】模型压缩四大方法概述 | 量化、剪枝、蒸馏和二值化 | 模型瘦身 | 降低精度 | 速度提升 | 知识蒸馏 | 温度参数 | XNOR | 优缺点 | 发展方向](https://www.youtube.com/watch?v=jW2cmZ-9hLk)
 - [Gemini逆袭Controlnet？扩散模型和自回归模型的真正秘密](https://www.bilibili.com/video/BV1z8XpYKEnr)
+- [AI思维链是幻象吗？\[白话读论文\] - YouTube](https://www.youtube.com/watch?v=ZLDfTwHm56A)
