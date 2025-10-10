@@ -1,6 +1,6 @@
 ---
 draft: false
-title: Chat –Personal Knowledge Management
+title: Chat - Personal Knowledge Management
 date: 2025-08-07T09:56:00+08:00
 tags:
   - Obsidian
