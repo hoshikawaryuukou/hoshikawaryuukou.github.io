@@ -137,7 +137,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;publish_dir&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;./public&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Hugo</title><link>https://HoshikawaRyuukou.github.io/posts/hugo/</link><pubDate>Thu, 30 Jan 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/hugo/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Hugo&lt;/strong&gt; 是一款以 &lt;strong&gt;Go 語言&lt;/strong&gt;編寫的 &lt;strong&gt;靜態網站生成器（Static Site Generator, SSG）&lt;/strong&gt;，特色是 &lt;strong&gt;速度極快&lt;/strong&gt;、&lt;strong&gt;部署簡單&lt;/strong&gt;，且&lt;strong&gt;不依賴後端伺服器程式&lt;/strong&gt;。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Hugo&lt;/strong&gt; 是一款以 &lt;strong&gt;Go 語言&lt;/strong&gt;編寫的 &lt;strong&gt;靜態網站生成器（Static Site Generator, SSG）&lt;/strong&gt;，特色是 &lt;strong&gt;速度極快&lt;/strong&gt;、&lt;strong&gt;部署簡單&lt;/strong&gt;，且&lt;strong&gt;不依賴後端伺服器程式&lt;/strong&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;對於非前端專業的我來說，Hugo 最大的優勢在於：能專注於以 &lt;strong&gt;Markdown&lt;/strong&gt; 撰寫內容，不必過度投入在前端細節。當然，若有需要，也能自製或改造主題。&lt;/p&gt;
 &lt;p&gt;建議新手可以先嘗試以下功能完整且持續維護的主題：&lt;/p&gt;
 &lt;ul&gt;

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Package_Manager on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/package_manager/</link><description>Recent content in Package_Manager on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Wed, 19 Mar 2025 12:46:15 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/package_manager/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Package Manager</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package-manager/</link><pubDate>Wed, 19 Mar 2025 12:46:15 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package-manager/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Unity Package Manager (UPM) 的設計理念，是向現代軟體開發的 「套件管理系統」
-看齊，最主要的借鏡對象就是網頁開發領域的 NPM (Node Package Manager)。&lt;/p&gt;&lt;/blockquote&gt;
+看齊，最主要的借鏡對象就是網頁開發領域的 NPM (Node Package Manager)。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;模組化&lt;/strong&gt;：不同功能（像是 2D 工具、Timeline、Addressables）都能獨立存在，更新或安裝時不會牽動整個專案。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;可控版本&lt;/strong&gt;：可以指定版本，就像你在 npm 裡選擇某個 library 的版本，確保團隊成員與 CI 環境一致。&lt;/li&gt;

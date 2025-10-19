@@ -153,7 +153,8 @@
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;| ForEach-Object { ... }&lt;/code&gt;&lt;/p&gt;</description></item><item><title>GitHub - GitHub CLI</title><link>https://HoshikawaRyuukou.github.io/posts/github---github-cli/</link><pubDate>Tue, 12 Nov 2024 13:08:39 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/github---github-cli/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;GitHub 網頁面板上沒辦法執行刪除 deployment，得用 GitHub CLI 來操作😂。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;GitHub 網頁面板上沒辦法執行刪除 deployment，得用 GitHub CLI 來操作😂。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://cli.github.com/"&gt;GitHub CLI | Take GitHub to the command line&lt;/a&gt;&lt;/li&gt;
@@ -163,7 +164,8 @@
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;gh auth login
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>GitHub - Pull Request</title><link>https://HoshikawaRyuukou.github.io/posts/github---pull-request/</link><pubDate>Fri, 14 Jul 2023 10:08:39 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/github---pull-request/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;有些環境也稱為合併請求（Merge Request）。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;有些環境也稱為合併請求（Merge Request）。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;產品開發中，通常會指定一個分支作為可發布的正式版本分支（例如 &lt;code&gt;master&lt;/code&gt; 或 &lt;code&gt;main&lt;/code&gt;）。在多人協作時，讓每位開發者都能直接提交（Commit）至這個正式分支並非最佳實踐。&lt;/p&gt;
 &lt;p&gt;為了有效管理，可以採用 &lt;strong&gt;Pull Request (PR)&lt;/strong&gt; 的方式來控制權限。當其他開發者完成工作後，他們會發起一個 PR。專案管理者在審核並確認無誤後，即可將其合併，這能確保產品分支始終處於隨時可發布的狀態。&lt;/p&gt;
 &lt;p&gt;若您參與開源專案，在建立 PR 前，建議先在本地分支上執行 &lt;code&gt;git rebase&lt;/code&gt; 指令，將您的變更建立在最新的程式碼進度之上，這有助於降低審核者的理解與合併難度。&lt;/p&gt;

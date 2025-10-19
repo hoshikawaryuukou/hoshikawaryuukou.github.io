@@ -11,10 +11,12 @@
 &lt;/ol&gt;
 &lt;p&gt;IoC 正是為了解決這些問題而提出的，它帶來一個核心理念：&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;依賴的「使用者」不再自己主動去建立和配置依賴，而是把這個「控制權」交給外部機制（通常是 IoC 容器）。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;依賴的「使用者」不再自己主動去建立和配置依賴，而是把這個「控制權」交給外部機制（通常是 IoC 容器）。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;換句話說：&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;依賴的「使用者」只需要「接收」或「查詢」它所需的依賴，然後專心「使用」它們。這樣它就能專注在核心邏輯上，而不必分心處理依賴管理，進而提升模組化與可維護性。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;依賴的「使用者」只需要「接收」或「查詢」它所需的依賴，然後專心「使用」它們。這樣它就能專注在核心邏輯上，而不必分心處理依賴管理，進而提升模組化與可維護性。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id="advantages"&gt;Advantages&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -57,4 +59,7 @@
 &lt;p&gt;這種方式的核心是&lt;strong&gt;由需求方「主動地」向容器請求所需的依賴&lt;/strong&gt;。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;實作原理：&lt;/strong&gt; 需求方會直接呼叫容器的方法（例如 &lt;code&gt;container.resolve()&lt;/code&gt;），來取得所需的服務。&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;&lt;strong&gt;實作原理：&lt;/strong&gt; 需求方會直接呼叫容器的方法（例如 &lt;code&gt;container.resolve()&lt;/code&gt;），來取得所需的服務。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;優點：&lt;/strong&gt; 簡單直觀。&lt;/p&gt;</description></item></channel></rss>

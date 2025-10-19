@@ -155,6 +155,7 @@
 &lt;li&gt;&lt;a href="https://docs.unity3d.com/6000.2/Documentation/Manual/webgl-texture-compression.html"&gt;Unity - Manual: Texture compression in Web&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://blog.csdn.net/egostudio/article/details/145555816"&gt;Unity WebGL包体压缩_unity webgl 压缩-CSDN博客&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Package Manager &lt;strong&gt;停用&lt;/strong&gt; 不使用的 &lt;strong&gt;Built-in&lt;/strong&gt; 模組&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://qiita.com/ogix/items/91c850fefee902afaf80"&gt;Unity WebGL の起動高速化技術まとめ #Unity - Qiita&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id="others"&gt;Others&lt;/h3&gt;
 &lt;ul&gt;
@@ -246,7 +247,8 @@
 &lt;li&gt;&lt;a href="https://uycc.unity3d.jp/"&gt;Unityユースクリエイターカップ&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description></item><item><title>Unity - Package - Web Stripping Tool</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package---web-stripping-tool/</link><pubDate>Fri, 15 Aug 2025 12:46:15 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package---web-stripping-tool/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;透過移除未使用的 &lt;strong&gt;子模組（Submodules）&lt;/strong&gt;，你可以在不刪除整個功能套件的情況下，有效縮減遊戲的最終建置大小。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;透過移除未使用的 &lt;strong&gt;子模組（Submodules）&lt;/strong&gt;，你可以在不刪除整個功能套件的情況下，有效縮減遊戲的最終建置大小。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;這款套件可說是 &lt;strong&gt;Unity 6&lt;/strong&gt; 推出至今，我個人認為最有價值的工具之一。然而，它卻只在 &lt;strong&gt;Unity Korea&lt;/strong&gt; 的 YouTube 頻道上發布介紹，而且幾乎沒有任何宣傳，這點實在令人費解 😂。&lt;/p&gt;
 &lt;p&gt;⚠️ 詳細的具體操作步驟，請務必參考官方文件與影片說明。此處僅列出幾個關鍵要點。&lt;/p&gt;
 &lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
@@ -282,7 +284,8 @@
 &lt;li&gt;&lt;a href="https://dev.to/attiliohimeki/unity-project-analysis-with-the-project-auditor-2pea"&gt;Unity Project analysis with the Project Auditor - DEV Community&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description></item><item><title>Software Design - Architecture - Unity Slot Game Client</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---architecture---unity-slot-game-client/</link><pubDate>Mon, 30 Jun 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---architecture---unity-slot-game-client/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;前端開發時，「狀態管理」一直是個大哉問。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;前端開發時，「狀態管理」一直是個大哉問。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;本次的應用是 &lt;strong&gt;Slot Game&lt;/strong&gt;，這類應用強調「表現層細節」，所以對於狀態的控制不像一般資料應用一樣單純，需要處理許多細部和即時的變化。&lt;/p&gt;
 &lt;h3 id="狀態管理挑戰"&gt;狀態管理挑戰&lt;/h3&gt;
 &lt;ol&gt;
@@ -578,7 +581,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Unity - Package Manager</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package-manager/</link><pubDate>Wed, 19 Mar 2025 12:46:15 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package-manager/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Unity Package Manager (UPM) 的設計理念，是向現代軟體開發的 「套件管理系統」
-看齊，最主要的借鏡對象就是網頁開發領域的 NPM (Node Package Manager)。&lt;/p&gt;&lt;/blockquote&gt;
+看齊，最主要的借鏡對象就是網頁開發領域的 NPM (Node Package Manager)。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;模組化&lt;/strong&gt;：不同功能（像是 2D 工具、Timeline、Addressables）都能獨立存在，更新或安裝時不會牽動整個專案。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;可控版本&lt;/strong&gt;：可以指定版本，就像你在 npm 裡選擇某個 library 的版本，確保團隊成員與 CI 環境一致。&lt;/li&gt;
@@ -803,7 +807,8 @@ Scope(s):
 &lt;/ol&gt;</description></item><item><title>Unity - Coding - Managed code stripping</title><link>https://HoshikawaRyuukou.github.io/posts/unity---coding---managed-code-stripping/</link><pubDate>Tue, 26 Mar 2024 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---coding---managed-code-stripping/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;在構建過程中，Unity 通過稱為託管代碼剝離的過程刪除未使用或無法訪問的代碼，這可以顯著減小應用程式的最終大小。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;File -&amp;gt; Build Settings -&amp;gt; Player Settings -&amp;gt; Optimization -&amp;gt; Managed Stripping Level&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;File -&amp;gt; Build Settings -&amp;gt; Player Settings -&amp;gt; Optimization -&amp;gt; Managed Stripping Level&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;⚠️ Managed Stripping Level 等級越高裁剪掉的代碼越多，包體也就越小，但是對應的風險也就更大。&lt;/li&gt;
 &lt;li&gt;藉由屬性或特殊 XML 配置檔的形式提供註釋，以指示 Unity 連結器要保留代碼庫的哪些部分。&lt;/li&gt;
@@ -949,7 +954,8 @@ Scope(s):
 &lt;h2 id="常見的結構runtime-與-editor"&gt;常見的結構：Runtime 與 Editor&lt;/h2&gt;
 &lt;p&gt;在許多 Unity 專案和套件中，最常見的 &lt;code&gt;asmdef&lt;/code&gt; 結構是將程式碼區分為 &lt;strong&gt;Runtime&lt;/strong&gt; 和 &lt;strong&gt;Editor&lt;/strong&gt; 兩部分：&lt;/p&gt;</description></item><item><title>Unity - Editor - Scripted Importer</title><link>https://HoshikawaRyuukou.github.io/posts/unity---editor---scripted-importer/</link><pubDate>Sat, 27 May 2023 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---editor---scripted-importer/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;為 Unity 本身不支持的文件格式編寫自定義資源導入器，從而添加支持。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;為 Unity 本身不支持的文件格式編寫自定義資源導入器，從而添加支持。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;⚠️無法處理已由 Unity 本身處理的文件擴展名。&lt;/p&gt;
 &lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
 &lt;ul&gt;

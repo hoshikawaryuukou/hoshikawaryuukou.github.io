@@ -85,7 +85,8 @@
 &lt;p&gt;&lt;strong&gt;實作外部能力 (Infrastructure)&lt;/strong&gt;
 我會開始實作之前在 Core 層定義的 &lt;code&gt;Port&lt;/code&gt; 介面。例如，用 &lt;code&gt;PlayerPrefs&lt;/code&gt; 來實作 &lt;code&gt;ISaveGamePort&lt;/code&gt;。因為 Core 只依賴介面，未來要換成雲端存檔也很容易。&lt;/p&gt;</description></item><item><title>Software Design - Architecture - Unity Slot Game Client</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---architecture---unity-slot-game-client/</link><pubDate>Mon, 30 Jun 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---architecture---unity-slot-game-client/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;前端開發時，「狀態管理」一直是個大哉問。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;前端開發時，「狀態管理」一直是個大哉問。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;本次的應用是 &lt;strong&gt;Slot Game&lt;/strong&gt;，這類應用強調「表現層細節」，所以對於狀態的控制不像一般資料應用一樣單純，需要處理許多細部和即時的變化。&lt;/p&gt;
 &lt;h3 id="狀態管理挑戰"&gt;狀態管理挑戰&lt;/h3&gt;
 &lt;ol&gt;

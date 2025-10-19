@@ -32,7 +32,8 @@
 &lt;li&gt;設計邊界：像 useEffect、controller 層 專職處理副作用&lt;/li&gt;
 &lt;/ul&gt;</description></item><item><title>Software Design - Pattern - Orchestrator Pattern</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---orchestrator-pattern/</link><pubDate>Fri, 18 Jul 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---orchestrator-pattern/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;協調者模式，主要用於管理多個獨立服務或元件之間錯綜複雜的互動。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;協調者模式，主要用於管理多個獨立服務或元件之間錯綜複雜的互動。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;其核心理念是在系統中引入一個專責的「協調者」（Orchestrator）或「控制器」（Controller）元件，作為整體業務流程的指揮者。&lt;/p&gt;
 &lt;p&gt;協調者本身並不執行具體的業務邏輯，而是像導演一樣，負責調度各個「參與者」（Participants）或「服務」（Services）來完成任務。每個參與者專注於自己擅長的部分（例如資料查詢、驗證、計算等），執行完後將結果回傳給協調者。&lt;/p&gt;
 &lt;p&gt;協調者則根據這些結果，決定後續該呼叫哪個參與者、是否中斷流程，或如何彙整輸出，以推進整體流程邏輯。如此一來，流程控制與業務邏輯得以明確分離，讓系統更具彈性與可維護性。&lt;/p&gt;
@@ -94,7 +95,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75af00"&gt;console&lt;/span&gt;&lt;span style="color:#111"&gt;.&lt;/span&gt;&lt;span style="color:#75af00"&gt;log&lt;/span&gt;&lt;span style="color:#111"&gt;(&lt;/span&gt;&lt;span style="color:#75af00"&gt;result&lt;/span&gt;&lt;span style="color:#111"&gt;);&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Software Design - Architecture - Unity Slot Game Client</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---architecture---unity-slot-game-client/</link><pubDate>Mon, 30 Jun 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---architecture---unity-slot-game-client/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;前端開發時，「狀態管理」一直是個大哉問。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;前端開發時，「狀態管理」一直是個大哉問。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;本次的應用是 &lt;strong&gt;Slot Game&lt;/strong&gt;，這類應用強調「表現層細節」，所以對於狀態的控制不像一般資料應用一樣單純，需要處理許多細部和即時的變化。&lt;/p&gt;
 &lt;h3 id="狀態管理挑戰"&gt;狀態管理挑戰&lt;/h3&gt;
 &lt;ol&gt;
@@ -180,10 +182,12 @@
 &lt;/ol&gt;
 &lt;p&gt;IoC 正是為了解決這些問題而提出的，它帶來一個核心理念：&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;依賴的「使用者」不再自己主動去建立和配置依賴，而是把這個「控制權」交給外部機制（通常是 IoC 容器）。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;依賴的「使用者」不再自己主動去建立和配置依賴，而是把這個「控制權」交給外部機制（通常是 IoC 容器）。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;換句話說：&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;依賴的「使用者」只需要「接收」或「查詢」它所需的依賴，然後專心「使用」它們。這樣它就能專注在核心邏輯上，而不必分心處理依賴管理，進而提升模組化與可維護性。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;依賴的「使用者」只需要「接收」或「查詢」它所需的依賴，然後專心「使用」它們。這樣它就能專注在核心邏輯上，而不必分心處理依賴管理，進而提升模組化與可維護性。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id="advantages"&gt;Advantages&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -226,7 +230,10 @@
 &lt;p&gt;這種方式的核心是&lt;strong&gt;由需求方「主動地」向容器請求所需的依賴&lt;/strong&gt;。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;實作原理：&lt;/strong&gt; 需求方會直接呼叫容器的方法（例如 &lt;code&gt;container.resolve()&lt;/code&gt;），來取得所需的服務。&lt;/p&gt;</description></item><item><title>Software Design - Concept - Object Lifecycle Management</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---concept---object-lifecycle-management/</link><pubDate>Sat, 04 Jan 2025 21:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---concept---object-lifecycle-management/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;實作原理：&lt;/strong&gt; 需求方會直接呼叫容器的方法（例如 &lt;code&gt;container.resolve()&lt;/code&gt;），來取得所需的服務。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;優點：&lt;/strong&gt; 簡單直觀。&lt;/p&gt;</description></item><item><title>Software Design - Concept - Object Lifecycle Management</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---concept---object-lifecycle-management/</link><pubDate>Sat, 04 Jan 2025 21:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---concept---object-lifecycle-management/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;物件生命週期管理（Object Lifecycle Management）&lt;strong&gt;是程式設計中的一個重要概念，它指的是有效控制和管理一個物件從&lt;/strong&gt;建立&lt;/strong&gt;、&lt;strong&gt;使用&lt;/strong&gt;到&lt;strong&gt;銷毀&lt;/strong&gt;的整個過程。良好的生命週期管理不僅能提升應用程式的效能，還能提高程式碼的可維護性，並有效地利用系統資源。&lt;/p&gt;
 &lt;h2 id="stage"&gt;Stage&lt;/h2&gt;
 &lt;ol&gt;
