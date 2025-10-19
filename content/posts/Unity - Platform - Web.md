@@ -43,6 +43,7 @@ tags:
 - [Unity - Manual: Texture compression in Web](https://docs.unity3d.com/6000.2/Documentation/Manual/webgl-texture-compression.html)
 - [Unity WebGL包体压缩\_unity webgl 压缩-CSDN博客](https://blog.csdn.net/egostudio/article/details/145555816)
 - Package Manager **停用** 不使用的 **Built-in** 模組
+- [Unity WebGL の起動高速化技術まとめ #Unity - Qiita](https://qiita.com/ogix/items/91c850fefee902afaf80)
 
 ### Others
 - [Unity发布webgl获取浏览器的URL](https://blog.csdn.net/GoodCooking/article/details/136307133)

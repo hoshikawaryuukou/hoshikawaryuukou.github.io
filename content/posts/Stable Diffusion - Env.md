@@ -1,6 +1,6 @@
 ---
 draft: false
-title: AI - Art - Stable Diffusion - Env
+title: Stable Diffusion - Env
 date: 2025-02-10T10:00:00+08:00
 tags:
   - AI

@@ -1,6 +1,6 @@
 ---
 draft: false
-title: AI - Art - Stable Diffusion - Inpainting
+title: Stable Diffusion - Inpainting
 date: 2025-06-12T10:00:00+08:00
 tags:
   - AI

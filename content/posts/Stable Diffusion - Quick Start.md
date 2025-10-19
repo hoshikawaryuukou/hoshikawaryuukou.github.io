@@ -1,6 +1,6 @@
 ---
 draft: false
-title: AI - Art - Stable Diffusion - Quick Start
+title: Stable Diffusion - Quick Start
 date: 2025-02-17T10:00:00+08:00
 tags:
   - AI
