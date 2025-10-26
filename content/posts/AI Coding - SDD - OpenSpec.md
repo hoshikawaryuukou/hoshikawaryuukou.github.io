@@ -1,6 +1,6 @@
 ---
 draft: false
-title: AI - Coding - SDD - OpenSpec
+title: AI Coding - SDD - OpenSpec
 date: 2025-10-17T14:12:33+08:00
 tags:
   - AI
