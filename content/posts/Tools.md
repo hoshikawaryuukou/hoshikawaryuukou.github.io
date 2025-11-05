@@ -42,6 +42,7 @@ tags:
 - [texture packer](free-tex-packer.com/)
 - [Atlased](https://witnessmonolith.itch.io/atlased)
 - [Texture Atlas Generator Web App by Umesh KC](https://umesh-kc.itch.io/free-online-texture-packer-alternative)
+- [iLoveIMG \| 影像文檔線上編輯工具](https://www.iloveimg.com/zh-tw)
 
 ## Media - Speech
 

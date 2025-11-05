@@ -1,6 +1,6 @@
 ---
 draft: false
-title: Gemini - Google AI Studio
+title: Google - Gemini - Google AI Studio
 date: 2025-10-15T15:17:27+08:00
 tags:
   - AI

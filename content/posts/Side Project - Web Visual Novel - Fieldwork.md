@@ -24,6 +24,10 @@ tags:
 - **Prototype**：一些樣本或是還在 WIP 的半成品，適合參考。
 - **Editor**：純粹的資源/對話編輯器。
 
+### Project
+
+- [GitHub - ba-archive/blue-archive: 碧蓝档案的档案。我们期待着更多老师的加入，欢迎通过邮件、B站私信或 discussion 联系我们](https://github.com/ba-archive/blue-archive/)
+
 ### Engine
 
 - [GitHub - OpenWebGAL/WebGAL: A brand new web Visual Novel engine \| 全新的网页端视觉小说引擎](https://github.com/OpenWebGAL/WebGAL)
