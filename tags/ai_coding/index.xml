@@ -57,7 +57,7 @@
 &lt;li&gt;&lt;strong&gt;執行任務 (Implement Tasks)：&lt;/strong&gt; AI 依據最終拍板定案的規格與任務列表，開始進行程式碼的編寫。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;套用變更 (Apply the Change)：&lt;/strong&gt; 開發者審查 AI 生成的程式碼，確認無誤後，執行指令將程式碼合併到專案中。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;封存與更新 (Archive &amp;amp; Update Specs)：&lt;/strong&gt; 變更完成後，該次的變更紀錄會被完整地「封存」到 &lt;code&gt;archive/&lt;/code&gt; 資料夾，同時更新 &lt;code&gt;specs/&lt;/code&gt; 中的主要規格文件，確保規格文件永遠處於最新狀態，為下一次的變更做好準備。&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title>Gemini - Google AI Studio</title><link>https://HoshikawaRyuukou.github.io/posts/gemini---google-ai-studio/</link><pubDate>Wed, 15 Oct 2025 15:17:27 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/gemini---google-ai-studio/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ol&gt;</description></item><item><title>Google - Gemini - Google AI Studio</title><link>https://HoshikawaRyuukou.github.io/posts/google---gemini---google-ai-studio/</link><pubDate>Wed, 15 Oct 2025 15:17:27 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/google---gemini---google-ai-studio/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;Google AI Studio 是 Google 推出的線上平台，主要定位在協助開發者、學生與研究人員快速試用 &lt;strong&gt;Gemini 模型&lt;/strong&gt;，並透過 &lt;strong&gt;Gemini Developer API&lt;/strong&gt; 來建立原型或應用程式。&lt;/p&gt;
 &lt;p&gt;與一般的 Gemini 應用（像 ChatGPT 類型的介面）相比，AI Studio 提供了更多的 &lt;strong&gt;免費額度&lt;/strong&gt;，對想要動手實驗 Gemini 功能的人來說相當友善。&lt;/p&gt;
 &lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
