@@ -36,6 +36,8 @@ tags:
 - [GitHub - ZHO-ZHO-ZHO/ZHO-nano-banana-Creation: 我的 nano-banana 创意玩法大合集！ 持续更新中！](https://github.com/ZHO-ZHO-ZHO/ZHO-nano-banana-Creation)
 - [🍌Nano Banana - nanobanana, gpt4o, chatgpt 提示词案例库](https://opennana.com/awesome-prompt-gallery/)
 - [nano-bananaでモバイルアプリUIモックアップを作る](https://zenn.dev/oikon/articles/nanobanana-mobile-mock)
+- [Character sheet](https://x.com/towya_aillust/status/1969589230830829888)
+- [任意の領域をアウトペイント](https://x.com/schnapoon/status/1988124536047628402)
 
 ## Tips 
 

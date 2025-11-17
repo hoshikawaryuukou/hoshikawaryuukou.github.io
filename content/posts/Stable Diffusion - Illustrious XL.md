@@ -1,6 +1,6 @@
 ---
 draft: false
-title: Stable Diffusion
+title: Stable Diffusion - Illustrious XL
 date: 2025-02-06T10:00:00+08:00
 tags:
   - AI

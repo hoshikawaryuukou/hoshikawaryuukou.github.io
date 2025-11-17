@@ -15,6 +15,7 @@ tags:
 - [unityroom](https://unityroom.com/)
 - [Qiita|Unity](https://qiita.com/tags/unity)
 - [Zenn|Unity](https://zenn.dev/topics/unity?order=daily)
+- [Zenn_Unity](https://x.com/Zenn_Unity)
 - [Unity Learning Materials](https://learning.unity3d.jp/)
 - [「unity」の人気の記事一覧｜note](https://note.com/search?q=unity&context=note&mode=search)
 
