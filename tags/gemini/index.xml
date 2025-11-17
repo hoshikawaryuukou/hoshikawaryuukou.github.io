@@ -1,27 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gemini on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/gemini/</link><description>Recent content in Gemini on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Wed, 15 Oct 2025 15:17:27 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/gemini/index.xml" rel="self" type="application/rss+xml"/><item><title>Google - Gemini - Google AI Studio</title><link>https://HoshikawaRyuukou.github.io/posts/google---gemini---google-ai-studio/</link><pubDate>Wed, 15 Oct 2025 15:17:27 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/google---gemini---google-ai-studio/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
-&lt;p&gt;Google AI Studio 是 Google 推出的線上平台，主要定位在協助開發者、學生與研究人員快速試用 &lt;strong&gt;Gemini 模型&lt;/strong&gt;，並透過 &lt;strong&gt;Gemini Developer API&lt;/strong&gt; 來建立原型或應用程式。&lt;/p&gt;
-&lt;p&gt;與一般的 Gemini 應用（像 ChatGPT 類型的介面）相比，AI Studio 提供了更多的 &lt;strong&gt;免費額度&lt;/strong&gt;，對想要動手實驗 Gemini 功能的人來說相當友善。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gemini on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/gemini/</link><description>Recent content in Gemini on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sat, 15 Nov 2025 15:17:27 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/gemini/index.xml" rel="self" type="application/rss+xml"/><item><title>Google - AI Studio</title><link>https://HoshikawaRyuukou.github.io/posts/google---ai-studio/</link><pubDate>Sat, 15 Nov 2025 15:17:27 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/google---ai-studio/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;Google AI Studio 是 Google 專為開發者、學生與研究人員設計的線上平台，旨在讓使用者能快速體驗 &lt;strong&gt;Gemini 模型&lt;/strong&gt;，並利用 &lt;strong&gt;Gemini Developer API&lt;/strong&gt; 輕鬆建構應用原型。&lt;/p&gt;
+&lt;p&gt;相較於一般的 Gemini 應用，AI Studio 提供更充裕的&lt;strong&gt;免費額度&lt;/strong&gt;，對於想動手實驗 Gemini 各項功能的使用者而言，是相當友善的入門選擇。&lt;/p&gt;
 &lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
 &lt;h3 id="chat"&gt;Chat&lt;/h3&gt;
-&lt;p&gt;常用的控制項包括：&lt;/p&gt;
+&lt;p&gt;關鍵控制項：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Grounding with Google Search&lt;/strong&gt;：可在回答前透過 Google 搜尋補強資訊，使回覆更準確。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;URL context&lt;/strong&gt;：可將指定連結內容作為上下文，讓回答更貼近指定網頁的資訊。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Grounding with Google Search&lt;/strong&gt;：在生成回覆前，透過 Google 搜尋強化資訊的即時性與準確性。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;URL context&lt;/strong&gt;：將指定網址內容納為上下文，使回覆能更貼近特定網頁的資訊。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;YouTube 影片裁切&lt;/strong&gt;：可指定 YouTube 影片的時間區間進行分析。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id="build"&gt;Build&lt;/h3&gt;
-&lt;p&gt;這個區域能將「文字提示」轉化為可執行的 Web 應用程式。&lt;/p&gt;
+&lt;p&gt;實用系統指令 (System Instructions) 範例：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Vibe Coding&lt;/strong&gt; 功能在開發簡單原型或概念驗證（PoC）時相當好用。&lt;/li&gt;
-&lt;li&gt;不過在進行功能迭代時，有時會導致整個結構被重新生成 😂。&lt;/li&gt;
-&lt;li&gt;若只是開發「自用型」應用程式（不綁 API Key），頂多遇到免費流量上限就無法繼續使用；&lt;/li&gt;
-&lt;li&gt;若要分享或部署給他人，則需要考慮 &lt;strong&gt;API 使用費用&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;YouTube 中文分段導讀&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;目前開發了幾個小應用&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Gemini 圖片翻譯器：使用 Gemini 翻譯圖片而不是 Google Translate。&lt;/li&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt; 照時間軸中文分段導讀
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Markdown 文章潤飾&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="notice"&gt;Notice&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;1. 不要改變 header2 與 header3
+2. 潤飾/精煉 markdown 段落
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id="build"&gt;Build&lt;/h3&gt;
+&lt;p&gt;此區塊能將您的「文字提示」直接轉換為一個可執行的 Web 應用程式。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;若開啟歷史紀錄功能，AI Studio 的紀錄會自動儲存在 &lt;strong&gt;Google Drive&lt;/strong&gt;。&lt;/li&gt;
-&lt;li&gt;由於目前平台 &lt;strong&gt;未提供批次刪除功能&lt;/strong&gt;，若想清空紀錄，必須手動至 Google Drive 操作。&lt;/li&gt;
-&lt;/ul&gt;</description></item></channel></rss>
+&lt;li&gt;&lt;strong&gt;Vibe Coding&lt;/strong&gt; 功能對於快速開發簡易原型或進行概念驗證 (PoC) 非常實用。&lt;/li&gt;
+&lt;li&gt;然而，在進行功能迭代時，有時可能導致整個應用程式結構被重新生成，需多加留意。&lt;/li&gt;
+&lt;li&gt;若開發的是不需綁定 API Key 的「個人自用型」應用，主要限制僅為免費額度的用量上限。&lt;/li&gt;
+&lt;li&gt;若需將應用分享或部署給他人使用，則必須將 &lt;strong&gt;API 金鑰的使用成本&lt;/strong&gt;納入考量。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;以下分享幾個已開發的個人應用範例：&lt;/p&gt;</description></item></channel></rss>

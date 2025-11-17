@@ -51,7 +51,23 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;AI 在遊戲產業的應用正迅速發展，涵蓋自動填寫 Bug 單、推算台詞與動作、利用影像與聲音進行自動化測試、自動生成規格書等領域。&lt;/p&gt;</description></item><item><title>Unity - Architecture - Client Research</title><link>https://HoshikawaRyuukou.github.io/posts/unity---architecture---client-research/</link><pubDate>Sun, 05 Oct 2025 22:16:53 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---architecture---client-research/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;AI 在遊戲產業的應用正迅速發展，涵蓋自動填寫 Bug 單、推算台詞與動作、利用影像與聲音進行自動化測試、自動生成規格書等領域。&lt;/p&gt;</description></item><item><title>Unity - Frameworks</title><link>https://HoshikawaRyuukou.github.io/posts/unity---frameworks/</link><pubDate>Sat, 01 Nov 2025 11:00:57 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---frameworks/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;此處主要整理了數個積極維護，或是在文檔中詳述其設計思路的開源專案，作為個人觀摩與學習之用。&lt;/p&gt;
+&lt;h2 id="resources"&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/michael811125/OxGFrame"&gt;GitHub - michael811125/OxGFrame&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/gmhevinci/UniFramework"&gt;GitHub - gmhevinci/UniFramework&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/404Lcc/Lcc"&gt;GitHub - 404Lcc/Lcc&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/Alex-Rachel/TEngine"&gt;GitHub - Alex-Rachel/TEngine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/SaiTingHu/HTFramework"&gt;GitHub - SaiTingHu/HTFramework&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/yimengfan/BDFramework.Core"&gt;GitHub - yimengfan/BDFramework.Core&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/winddyhe/knight"&gt;GitHub - winddyhe/knight&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/liangxiegame/QFramework"&gt;GitHub - liangxiegame/QFramework&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="system"&gt;System&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[&lt;a href="https://github.com/m969/EGamePlay"&gt;GitHub - m969/EGamePlay&lt;/a&gt;]&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Unity - Architecture - Client Research</title><link>https://HoshikawaRyuukou.github.io/posts/unity---architecture---client-research/</link><pubDate>Sun, 05 Oct 2025 22:16:53 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---architecture---client-research/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;在設計一個&lt;strong&gt;真正符合自身需求&lt;/strong&gt;的架構過程中，我查閱了許多開發者與企業的設計分享。
 不同規模、不同組織背景下，策略與取捨自然各不相同。&lt;/p&gt;
 &lt;p&gt;這些實作未必人人適用，但往往能從中擷取值得借鑑的部分。
@@ -249,6 +265,7 @@
 &lt;li&gt;&lt;a href="https://unityroom.com/"&gt;unityroom&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://qiita.com/tags/unity"&gt;Qiita|Unity&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://zenn.dev/topics/unity?order=daily"&gt;Zenn|Unity&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://x.com/Zenn_Unity"&gt;Zenn_Unity&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://learning.unity3d.jp/"&gt;Unity Learning Materials&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://note.com/search?q=unity&amp;amp;context=note&amp;amp;mode=search"&gt;「unity」の人気の記事一覧｜note&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
