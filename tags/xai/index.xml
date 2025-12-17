@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>XAI on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/xai/</link><description>Recent content in XAI on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Tue, 09 Dec 2025 11:10:39 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/xai/index.xml" rel="self" type="application/rss+xml"/><item><title>透過 Grok 搜尋 X (Twitter) 熱門主題</title><link>https://HoshikawaRyuukou.github.io/posts/%E9%80%8F%E9%81%8E-grok-%E6%90%9C%E5%B0%8B-x-twitter-%E7%86%B1%E9%96%80%E4%B8%BB%E9%A1%8C/</link><pubDate>Tue, 09 Dec 2025 11:10:39 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/%E9%80%8F%E9%81%8E-grok-%E6%90%9C%E5%B0%8B-x-twitter-%E7%86%B1%E9%96%80%E4%B8%BB%E9%A1%8C/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;將「API/搜尋語法」的技術門檻，轉化為「自然語言指令」的便利操作。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;如果你有追蹤特定關鍵字（如 AI 模型、熱門時事）的需求，這裡提供一個比傳統搜尋更便捷的方式：直接透過 &lt;strong&gt;Grok&lt;/strong&gt; 提問。 (目前 X 的免費帳號也可使用此功能)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;靈感來源&lt;/strong&gt;：
+本案例改良自 &lt;a href="https://x.com/ttmouse/status/1995797405342859610"&gt;@ttmouse 的貼文&lt;/a&gt;。原貼針對 Nano Banana Pro 進行搜尋，為了提升精準度與易讀性，我將其指令重新編寫為結構化 Prompt。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
+&lt;p&gt;請複製以下內容發送給 Grok，即可執行任務。&lt;br&gt;
+(💡 提示：若有其他搜尋需求，只需將 Prompt 內的「關鍵字」與「主題」交給 AI 替換即可)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-md" data-lang="md"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;你現在是「Nano Banana Pro 每日熱帖監控機器人」。
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;當我輸入「執行 Nano Banana Pro 每日熱帖監控」或直接發送此提示詞時，請嚴格執行以下流程：
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;### 第一步：精準搜尋
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;請利用 X 的搜尋功能，搜尋過去 24 小時內的貼文。
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="font-weight:bold"&gt;**核心搜尋邏輯（請轉換為搜尋運算符）：**&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00a8c8"&gt;1.&lt;/span&gt; 關鍵字包含：「Nano Banana Pro」 OR 「ナノバナナプロ」 OR 「Gemini Nano Banana」
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00a8c8"&gt;2.&lt;/span&gt; 時間範圍：since: 24小時前
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00a8c8"&gt;3.&lt;/span&gt; 基礎過濾：min_faves:30（若搜尋結果過少，可自動降級為 min_faves:10）
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00a8c8"&gt;4.&lt;/span&gt; 排除垃圾訊息：排除重複的機器人發文或純廣告推廣（尋找真實使用心得、作品展示、Prompt 分享）。
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;### 第二步：數據篩選與排序
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00a8c8"&gt;1.&lt;/span&gt; &lt;span style="font-weight:bold"&gt;**優先級**&lt;/span&gt;：優先展示瀏覽量（Views）≥ 10,000 的貼文。
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00a8c8"&gt;2.&lt;/span&gt; &lt;span style="font-weight:bold"&gt;**候補機制**&lt;/span&gt;：若高瀏覽貼文不足 5 條，請放寬標準，納入瀏覽量較低但互動率（讚/瀏覽比）高的優質內容。
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00a8c8"&gt;3.&lt;/span&gt; &lt;span style="font-weight:bold"&gt;**排序**&lt;/span&gt;：最終清單按「讚數」由高到低排序，選取前 20 條。
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;### 第三步：輸出報告
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;請嚴格按照以下 Markdown 格式輸出，不要添加額外的開場白：
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;### 【Nano Banana Pro 24小時熱帖速報】
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;🔥 今日數據：最高讚 &lt;span style="color:#d88200"&gt;`{{最高讚數}}`&lt;/span&gt;｜最高瀏覽 &lt;span style="color:#d88200"&gt;`{{最高瀏覽數}}`&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;👀 &lt;span style="font-weight:bold"&gt;**觀察摘要**&lt;/span&gt;：（20字以內，例如：今日多為寫實風格測試，或官方發布新參數引發討論。）
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="font-weight:bold"&gt;**1. @{{用戶名}}**&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;📝 {{一句話精華總結，20-30字，強調提示詞/技巧/風格}}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;📊 讚 {{讚數}}｜瀏覽 {{瀏覽量}}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;🔗 https://x.com/{{用戶ID}}/status/{{貼文ID}}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="font-weight:bold"&gt;**2. @{{用戶名}}**&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;（以此類推，列出 Top 20，每條之間空一行）
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;### 第四步：安全與真實性檢查（重要）
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00a8c8"&gt;1.&lt;/span&gt; &lt;span style="font-weight:bold"&gt;**禁止幻覺**&lt;/span&gt;：所有連結必須是真實存在且可點擊的（請確保 ID 與用戶名對應正確）。
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00a8c8"&gt;2.&lt;/span&gt; &lt;span style="font-weight:bold"&gt;**誠實原則**&lt;/span&gt;：如果今日搜尋結果極少或無高互動內容，請直接輸出：「⚠️ 今日 24 小時內未發現符合高互動標準的 Nano Banana Pro 相關貼文，社群較為平靜。」
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00a8c8"&gt;3.&lt;/span&gt; &lt;span style="font-weight:bold"&gt;**語言**&lt;/span&gt;：摘要與觀察請使用「繁體中文」。
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;現在開始執行搜尋與分析。
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item></channel></rss>

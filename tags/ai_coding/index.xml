@@ -2,6 +2,9 @@
 &lt;p&gt;Google AI Studio 是 Google 專為開發者、學生與研究人員設計的線上平台，旨在讓使用者能快速體驗 &lt;strong&gt;Gemini 模型&lt;/strong&gt;，並利用 &lt;strong&gt;Gemini Developer API&lt;/strong&gt; 輕鬆建構應用原型。&lt;/p&gt;
 &lt;p&gt;相較於一般的 Gemini 應用，AI Studio 提供更充裕的&lt;strong&gt;免費額度&lt;/strong&gt;，對於想動手實驗 Gemini 各項功能的使用者而言，是相當友善的入門選擇。&lt;/p&gt;
 &lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=07IlRW9nrho"&gt;Gemini 3.0 参数调教指南 | Google AI Studio全面解析（附提示词模版） - YouTube&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id="chat"&gt;Chat&lt;/h3&gt;
 &lt;p&gt;關鍵控制項：&lt;/p&gt;
 &lt;ul&gt;
