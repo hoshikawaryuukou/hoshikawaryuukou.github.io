@@ -16,6 +16,8 @@ Google AI Studio 是 Google 專為開發者、學生與研究人員設計的線�
 
 ## Guide
 
+- [Gemini 3.0 参数调教指南 \| Google AI Studio全面解析（附提示词模版） - YouTube](https://www.youtube.com/watch?v=07IlRW9nrho)
+
 ### Chat
 
 關鍵控制項：

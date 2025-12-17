@@ -9,6 +9,8 @@ tags:
 
 ## Quick Chat
 
+⚠️ Nano Banana Pro 已經於 2025-11-21 推出。
+
 **Nano Banana** 是一款由 Google DeepMind 開發的 **AI 圖像生成與編輯模型**，其正式名稱是 **Gemini 2.5 Flash Image**。
 
 ### ✨ 核心特色：
