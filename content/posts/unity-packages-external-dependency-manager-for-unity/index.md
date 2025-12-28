@@ -1,6 +1,6 @@
 ---
 draft: false
-title: Unity - Package - External Dependency Manager for Unity (EDM4U)
+title: Unity - Packages - External Dependency Manager for Unity (EDM4U)
 date: 2023-11-08T12:46:15+08:00
 tags:
   - Unity
@@ -21,12 +21,12 @@ Google 停止維護 Game Package Registry (GPR) 導致不能直接使用 Package
 `Assets > External Dependency Manager > Android Resolver > Settings`
 啟用這三個 Patch 
 
-![EDM4U_01](/images/blog/EDM4U_01.png)
+![](EDM4U_01.webp)
 
 並至 `Player Settings > Publishing Settings` 
 啟用以下選項
 
-![EDM4U_02](/images/blog/EDM4U_02.png)
+![](EDM4U_02.webp)
 
 ## Auto Resolution
 

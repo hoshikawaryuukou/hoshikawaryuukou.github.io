@@ -1,6 +1,6 @@
 ---
 draft: false
-title: Hugo
+title: 淺談 Hugo：簡單好用的靜態網站生成器
 date: 2025-01-30T10:00:00+08:00
 tags:
   - Hugo

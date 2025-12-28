@@ -15,21 +15,12 @@ set "SCRIPT_DIR=%~dp0"
 
 :: Set relative paths
 set "SRC_POSTS=%SCRIPT_DIR%..\obsidian-notes\blog"
-set "SRC_IMGS=%SCRIPT_DIR%..\obsidian-notes\images\blog"
 set "DST_POSTS=%SCRIPT_DIR%content\posts"
-set "DST_IMGS=%SCRIPT_DIR%static\images\blog"
 
-:: Check if source paths exist
-echo Checking source paths...
+:: Check if source path exists
+echo Checking source path...
 if not exist "%SRC_POSTS%" (
     echo ERROR: Source posts directory not found: %SRC_POSTS%
-    echo Please confirm that the blog-obsidian project location is correct.
-    pause
-    goto :EOF
-)
-
-if not exist "%SRC_IMGS%" (
-    echo ERROR: Source images directory not found: %SRC_IMGS%
     echo Please confirm that the blog-obsidian project location is correct.
     pause
     goto :EOF
@@ -42,10 +33,6 @@ echo Starting synchronization...
 :: Run synchronization
 echo Syncing posts directory...
 robocopy "%SRC_POSTS%" "%DST_POSTS%" /MIR
-
-echo.
-echo Syncing images directory...
-robocopy "%SRC_IMGS%" "%DST_IMGS%" /MIR
 
 echo.
 echo Synchronization complete!

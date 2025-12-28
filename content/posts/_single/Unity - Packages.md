@@ -41,9 +41,6 @@ tags:
 ## Language
 - [phanphantz/ThaiTextCare-for-Unity](https://github.com/phanphantz/ThaiTextCare-for-Unity)
 
-## Localization
-- [Lean Localization](https://assetstore.unity.com/packages/tools/localization/lean-localization-28504)
-
 ## Logging
 - [JoanStinson/UnityLoggerExtended](https://github.com/JoanStinson/UnityLoggerExtended)
 

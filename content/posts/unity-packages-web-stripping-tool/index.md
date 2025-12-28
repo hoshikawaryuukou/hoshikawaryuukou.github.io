@@ -1,6 +1,6 @@
 ---
 draft: false
-title: Unity - Package - Web Stripping Tool
+title: Unity - Packages - Web Stripping Tool
 date: 2025-08-15T12:46:15+08:00
 tags:
   - Unity
@@ -61,7 +61,7 @@ tags:
 	- 壓縮算法到導出的階段都可能在調整。
 	- 如果真的要保持極限乾淨的包體，之後應該會寫 BuildPipeline。 
 
-	 ![Exempted Compression Algorithm](/images/blog/Unity%20-%20Package%20-%20Web%20Stripping%20Tool-1756364223758.png)
+	 ![Exempted Compression Algorithm](images/Exempted%20Compression%20Algorithm.webp)
 
 3. 輸出 Release 版本 
 	- 於 Submodules Stripping 面板勾選 Strip Automatically After Build 

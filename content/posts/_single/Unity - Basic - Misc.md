@@ -16,6 +16,3 @@ tags:
 
 - [How to capture the screen in Unity (3 methods)](https://gamedevbeginner.com/how-to-capture-the-screen-in-unity-3-methods/)
 
-<!-- ## Spine
-- [Spiners MeetUp vol.5 UnityでのSpine実装方法 〜前編〜](https://note.g2-studios.net/n/n153d92f96866)  -->
-
