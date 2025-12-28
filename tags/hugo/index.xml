@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/hugo/</link><description>Recent content in Hugo on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Wed, 13 Aug 2025 20:31:00 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Workflow – Mirroring Obsidian Notes to Hugo</title><link>https://HoshikawaRyuukou.github.io/posts/workflow--mirror-obsidian-notes-to-hugo/</link><pubDate>Wed, 13 Aug 2025 20:31:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow--mirror-obsidian-notes-to-hugo/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/hugo/</link><description>Recent content in Hugo on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sat, 27 Dec 2025 15:33:30 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>減少寫作的摩擦力：試試 Hugo Page Bundles</title><link>https://HoshikawaRyuukou.github.io/posts/hugo-page-bundles/</link><pubDate>Sat, 27 Dec 2025 15:33:30 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/hugo-page-bundles/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;最近回顧舊文，我發現一個顯著的趨勢：&lt;strong&gt;我的配圖變少了&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;過去我採用 &lt;code&gt;file-based post&lt;/code&gt; 搭配統一 &lt;code&gt;static assets&lt;/code&gt; 資料夾的架構。雖然結構單純，但這種分離式的管理方式，導致我在寫作時，下意識地避開了需要配圖的場景。&lt;/p&gt;
+&lt;p&gt;深入探究，瓶頸在於「附件管理」流程帶來的心理阻力：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;圖文分離&lt;/strong&gt;：多媒體素材與文章分開存放，若要單獨遷移或備份某篇文章，過程相當繁瑣。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;檔案混亂&lt;/strong&gt;：隨著文章增加，統一的 assets 資料夾變得雜亂龐大，難以維護。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;殘留垃圾&lt;/strong&gt;：刪除文章時，往往容易遺漏未清理的圖片，導致專案中充斥無用檔案。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;至於為何不使用圖床？核心考量還是「&lt;strong&gt;資料自主權&lt;/strong&gt;」。我希望將內容與素材完全掌握在自己手中，不依賴外部服務的存續。&lt;/p&gt;
+&lt;p&gt;為了解決這個痛點，我決定將架構遷移至 Hugo 的 &lt;strong&gt;Page Bundles (Folder-based)&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;改用這種架構後，多媒體與 Markdown 檔位於同一目錄。雖然專案結構目錄變多了，但其優勢在於：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;管理直覺&lt;/strong&gt;：素材與文章強綁定。移動或刪除文章資料夾時，圖片隨之變動，徹底告別殘留檔案。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;效能紅利&lt;/strong&gt;：這是額外的驚喜。改用 Page Bundles 後，Hugo 能將圖片視為 Page Resources，進一步實現圖片處理與載入優化。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://gohugo.io/content-management/page-bundles/"&gt;Page bundles&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;改版後的目錄結構如下，採用 Leaf Bundle 形式：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;content/
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;└─ posts/
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; └─ my-article/ &amp;lt;-- 文章獨立成資料夾
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ├─ index.md &amp;lt;-- 文章本體
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ├─ cover.jpg &amp;lt;-- 素材就近管理
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; └─ diagram.png
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Workflow – Mirroring Obsidian Notes to Hugo</title><link>https://HoshikawaRyuukou.github.io/posts/_single/workflow--mirror-obsidian-notes-to-hugo/</link><pubDate>Wed, 13 Aug 2025 20:31:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/workflow--mirror-obsidian-notes-to-hugo/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;使用 &lt;code&gt;robocopy&lt;/code&gt; 以鏡像方式，將 &lt;code&gt;obsidian-notes&lt;/code&gt; 中的 &lt;code&gt;posts&lt;/code&gt; 與 &lt;code&gt;images&lt;/code&gt; 資料夾，同步到 Hugo 專案的對應目錄。&lt;/p&gt;
 &lt;h2 id="operation"&gt;Operation&lt;/h2&gt;
 &lt;ol&gt;
@@ -62,7 +89,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pause
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;endlocal
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Chat - Personal Knowledge Management</title><link>https://HoshikawaRyuukou.github.io/posts/chat---personal-knowledge-management/</link><pubDate>Thu, 07 Aug 2025 09:56:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/chat---personal-knowledge-management/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Chat - Personal Knowledge Management</title><link>https://HoshikawaRyuukou.github.io/posts/_single/chat---personal-knowledge-management/</link><pubDate>Thu, 07 Aug 2025 09:56:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/chat---personal-knowledge-management/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;我對理想的筆記工具有四個核心要求：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -93,7 +120,7 @@
 &lt;p&gt;&lt;strong&gt;舊流程：&lt;/strong&gt; 筆記內容與 Hugo 專案深度耦合。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;新流程：&lt;/strong&gt; 將筆記視為一個獨立的專案，作為唯一的數據源（&lt;strong&gt;Single Source of Truth&lt;/strong&gt;）。Hugo 僅作為靜態網站的生成工具，不再直接編輯文章，而是接收 Obsidian 匯出的結果。&lt;/p&gt;</description></item><item><title>Workflow – Build and Deploy Hugo Site</title><link>https://HoshikawaRyuukou.github.io/posts/workflow--build-and-deploy-hugo-site/</link><pubDate>Thu, 30 Jan 2025 14:12:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow--build-and-deploy-hugo-site/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;新流程：&lt;/strong&gt; 將筆記視為一個獨立的專案，作為唯一的數據源（&lt;strong&gt;Single Source of Truth&lt;/strong&gt;）。Hugo 僅作為靜態網站的生成工具，不再直接編輯文章，而是接收 Obsidian 匯出的結果。&lt;/p&gt;</description></item><item><title>Workflow – Build and Deploy Hugo Site</title><link>https://HoshikawaRyuukou.github.io/posts/_single/workflow--build-and-deploy-hugo-site/</link><pubDate>Thu, 30 Jan 2025 14:12:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/workflow--build-and-deploy-hugo-site/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;當 &lt;code&gt;main&lt;/code&gt; 分支有 push，或有 pull request 時，會自動用 Hugo 生成靜態網站，並將 &lt;code&gt;public&lt;/code&gt; 目錄的內容部署到 GitHub Pages。&lt;/p&gt;
 &lt;h2 id="operation"&gt;Operation&lt;/h2&gt;
 &lt;ol&gt;
@@ -135,7 +162,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;with&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;github_token&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;${{ secrets.GITHUB_TOKEN }}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;publish_dir&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;./public&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Hugo</title><link>https://HoshikawaRyuukou.github.io/posts/hugo/</link><pubDate>Thu, 30 Jan 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/hugo/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>淺談 Hugo：簡單好用的靜態網站生成器</title><link>https://HoshikawaRyuukou.github.io/posts/hugo-overview/</link><pubDate>Thu, 30 Jan 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/hugo-overview/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Hugo&lt;/strong&gt; 是一款以 &lt;strong&gt;Go 語言&lt;/strong&gt;編寫的 &lt;strong&gt;靜態網站生成器（Static Site Generator, SSG）&lt;/strong&gt;，特色是 &lt;strong&gt;速度極快&lt;/strong&gt;、&lt;strong&gt;部署簡單&lt;/strong&gt;，且&lt;strong&gt;不依賴後端伺服器程式&lt;/strong&gt;。&lt;/p&gt;
 &lt;/blockquote&gt;

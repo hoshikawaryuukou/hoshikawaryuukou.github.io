@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/posts/</link><description>Recent content in Posts on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Tue, 09 Dec 2025 11:10:39 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>透過 Grok 搜尋 X (Twitter) 熱門主題</title><link>https://HoshikawaRyuukou.github.io/posts/%E9%80%8F%E9%81%8E-grok-%E6%90%9C%E5%B0%8B-x-twitter-%E7%86%B1%E9%96%80%E4%B8%BB%E9%A1%8C/</link><pubDate>Tue, 09 Dec 2025 11:10:39 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/%E9%80%8F%E9%81%8E-grok-%E6%90%9C%E5%B0%8B-x-twitter-%E7%86%B1%E9%96%80%E4%B8%BB%E9%A1%8C/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/posts/</link><description>Recent content in Posts on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sat, 27 Dec 2025 15:33:30 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>減少寫作的摩擦力：試試 Hugo Page Bundles</title><link>https://HoshikawaRyuukou.github.io/posts/hugo-page-bundles/</link><pubDate>Sat, 27 Dec 2025 15:33:30 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/hugo-page-bundles/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;最近回顧舊文，我發現一個顯著的趨勢：&lt;strong&gt;我的配圖變少了&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;過去我採用 &lt;code&gt;file-based post&lt;/code&gt; 搭配統一 &lt;code&gt;static assets&lt;/code&gt; 資料夾的架構。雖然結構單純，但這種分離式的管理方式，導致我在寫作時，下意識地避開了需要配圖的場景。&lt;/p&gt;
+&lt;p&gt;深入探究，瓶頸在於「附件管理」流程帶來的心理阻力：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;圖文分離&lt;/strong&gt;：多媒體素材與文章分開存放，若要單獨遷移或備份某篇文章，過程相當繁瑣。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;檔案混亂&lt;/strong&gt;：隨著文章增加，統一的 assets 資料夾變得雜亂龐大，難以維護。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;殘留垃圾&lt;/strong&gt;：刪除文章時，往往容易遺漏未清理的圖片，導致專案中充斥無用檔案。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;至於為何不使用圖床？核心考量還是「&lt;strong&gt;資料自主權&lt;/strong&gt;」。我希望將內容與素材完全掌握在自己手中，不依賴外部服務的存續。&lt;/p&gt;
+&lt;p&gt;為了解決這個痛點，我決定將架構遷移至 Hugo 的 &lt;strong&gt;Page Bundles (Folder-based)&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;改用這種架構後，多媒體與 Markdown 檔位於同一目錄。雖然專案結構目錄變多了，但其優勢在於：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;管理直覺&lt;/strong&gt;：素材與文章強綁定。移動或刪除文章資料夾時，圖片隨之變動，徹底告別殘留檔案。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;效能紅利&lt;/strong&gt;：這是額外的驚喜。改用 Page Bundles 後，Hugo 能將圖片視為 Page Resources，進一步實現圖片處理與載入優化。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://gohugo.io/content-management/page-bundles/"&gt;Page bundles&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;改版後的目錄結構如下，採用 Leaf Bundle 形式：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;content/
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;└─ posts/
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; └─ my-article/ &amp;lt;-- 文章獨立成資料夾
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ├─ index.md &amp;lt;-- 文章本體
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ├─ cover.jpg &amp;lt;-- 素材就近管理
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; └─ diagram.png
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>透過 Grok 搜尋 X (Twitter) 熱門主題</title><link>https://HoshikawaRyuukou.github.io/posts/_single/%E9%80%8F%E9%81%8E-grok-%E6%90%9C%E5%B0%8B-x-twitter-%E7%86%B1%E9%96%80%E4%B8%BB%E9%A1%8C/</link><pubDate>Tue, 09 Dec 2025 11:10:39 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/%E9%80%8F%E9%81%8E-grok-%E6%90%9C%E5%B0%8B-x-twitter-%E7%86%B1%E9%96%80%E4%B8%BB%E9%A1%8C/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;將「API/搜尋語法」的技術門檻，轉化為「自然語言指令」的便利操作。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -51,7 +78,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00a8c8"&gt;3.&lt;/span&gt; &lt;span style="font-weight:bold"&gt;**語言**&lt;/span&gt;：摘要與觀察請使用「繁體中文」。
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;現在開始執行搜尋與分析。
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Google - AI Studio</title><link>https://HoshikawaRyuukou.github.io/posts/google---ai-studio/</link><pubDate>Sat, 15 Nov 2025 15:17:27 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/google---ai-studio/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Google - AI Studio</title><link>https://HoshikawaRyuukou.github.io/posts/_single/google---ai-studio/</link><pubDate>Sat, 15 Nov 2025 15:17:27 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/google---ai-studio/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;Google AI Studio 是 Google 專為開發者、學生與研究人員設計的線上平台，旨在讓使用者能快速體驗 &lt;strong&gt;Gemini 模型&lt;/strong&gt;，並利用 &lt;strong&gt;Gemini Developer API&lt;/strong&gt; 輕鬆建構應用原型。&lt;/p&gt;
 &lt;p&gt;相較於一般的 Gemini 應用，AI Studio 提供更充裕的&lt;strong&gt;免費額度&lt;/strong&gt;，對於想動手實驗 Gemini 各項功能的使用者而言，是相當友善的入門選擇。&lt;/p&gt;
 &lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
@@ -83,7 +110,7 @@
 &lt;li&gt;若開發的是不需綁定 API Key 的「個人自用型」應用，主要限制僅為免費額度的用量上限。&lt;/li&gt;
 &lt;li&gt;若需將應用分享或部署給他人使用，則必須將 &lt;strong&gt;API 金鑰的使用成本&lt;/strong&gt;納入考量。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;以下分享幾個已開發的個人應用範例：&lt;/p&gt;</description></item><item><title>Unity - With AI</title><link>https://HoshikawaRyuukou.github.io/posts/unity---with-ai/</link><pubDate>Sun, 09 Nov 2025 11:10:37 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---with-ai/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;以下分享幾個已開發的個人應用範例：&lt;/p&gt;</description></item><item><title>Unity - With AI</title><link>https://HoshikawaRyuukou.github.io/posts/_single/unity---with-ai/</link><pubDate>Sun, 09 Nov 2025 11:10:37 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/unity---with-ai/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;與前端領域相比，將 AI 直接整合至 Unity 開發流程中尚未有標準化的作法。本文旨在彙整社群中針對此議題的幾種導入方法與實踐經驗。&lt;/p&gt;
 &lt;h2 id="mcp"&gt;MCP&lt;/h2&gt;
 &lt;p&gt;Model Context Protocol (MCP) 是一種讓 AI 模型能夠與外部工具（如 Unity 編輯器）互動的協定。以下是一些社群開發的 MCP 伺服器實作：&lt;/p&gt;
@@ -136,7 +163,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;AI 在遊戲產業的應用正迅速發展，涵蓋自動填寫 Bug 單、推算台詞與動作、利用影像與聲音進行自動化測試、自動生成規格書等領域。&lt;/p&gt;</description></item><item><title>Affinity</title><link>https://HoshikawaRyuukou.github.io/posts/affinity/</link><pubDate>Thu, 06 Nov 2025 14:52:23 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/affinity/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;AI 在遊戲產業的應用正迅速發展，涵蓋自動填寫 Bug 單、推算台詞與動作、利用影像與聲音進行自動化測試、自動生成規格書等領域。&lt;/p&gt;</description></item><item><title>Affinity</title><link>https://HoshikawaRyuukou.github.io/posts/_single/affinity/</link><pubDate>Thu, 06 Nov 2025 14:52:23 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/affinity/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;Canva 宣布，將旗下的 &lt;strong&gt;Affinity 套件&lt;/strong&gt;（包含 Designer、Photo、Publisher）整合成一個全新的應用程式（v3），並將其&lt;strong&gt;永久免費&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;Affinity 套件的功能對應 Adobe 產品如下：&lt;/p&gt;
 &lt;table&gt;
@@ -169,7 +196,7 @@
 &lt;p&gt;雖然有些教學是舊版，但核心操作大致相同。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=LbqqXxmn9hk"&gt;Affinity Photo 快速上手！全網公認 CP 值最高的影像處理軟體！ - YouTube&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Google - Nano Banana</title><link>https://HoshikawaRyuukou.github.io/posts/google---nano-banana/</link><pubDate>Sat, 01 Nov 2025 11:44:33 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/google---nano-banana/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Google - Nano Banana</title><link>https://HoshikawaRyuukou.github.io/posts/_single/google---nano-banana/</link><pubDate>Sat, 01 Nov 2025 11:44:33 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/google---nano-banana/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;⚠️ Nano Banana Pro 已經於 2025-11-21 推出。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Nano Banana&lt;/strong&gt; 是一款由 Google DeepMind 開發的 &lt;strong&gt;AI 圖像生成與編輯模型&lt;/strong&gt;，其正式名稱是 &lt;strong&gt;Gemini 2.5 Flash Image&lt;/strong&gt;。&lt;/p&gt;
 &lt;h3 id="-核心特色"&gt;✨ 核心特色：&lt;/h3&gt;
@@ -200,7 +227,7 @@
 &lt;/ul&gt;
 &lt;h2 id="tips"&gt;Tips&lt;/h2&gt;
 &lt;h3 id="1-使用英文及專業術語"&gt;1. 使用英文及專業術語&lt;/h3&gt;
-&lt;p&gt;由於模型允許自然語言進行圖像編輯，口語化的描述詞彙可能會影響輸出結果。建議盡量使用英文和專業術語來確保指令的精確度。&lt;/p&gt;</description></item><item><title>Unity - Frameworks</title><link>https://HoshikawaRyuukou.github.io/posts/unity---frameworks/</link><pubDate>Sat, 01 Nov 2025 11:00:57 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---frameworks/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;由於模型允許自然語言進行圖像編輯，口語化的描述詞彙可能會影響輸出結果。建議盡量使用英文和專業術語來確保指令的精確度。&lt;/p&gt;</description></item><item><title>Unity - Frameworks</title><link>https://HoshikawaRyuukou.github.io/posts/_single/unity---frameworks/</link><pubDate>Sat, 01 Nov 2025 11:00:57 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/unity---frameworks/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;此處主要整理了數個積極維護，或是在文檔中詳述其設計思路的開源專案，作為個人觀摩與學習之用。&lt;/p&gt;
 &lt;h2 id="resources"&gt;Resources&lt;/h2&gt;
 &lt;ul&gt;
@@ -216,7 +243,7 @@
 &lt;h3 id="system"&gt;System&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;[&lt;a href="https://github.com/m969/EGamePlay"&gt;GitHub - m969/EGamePlay&lt;/a&gt;]&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Google - NotebookLM</title><link>https://HoshikawaRyuukou.github.io/posts/google---notebooklm/</link><pubDate>Thu, 30 Oct 2025 09:46:46 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/google---notebooklm/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Google - NotebookLM</title><link>https://HoshikawaRyuukou.github.io/posts/_single/google---notebooklm/</link><pubDate>Thu, 30 Oct 2025 09:46:46 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/google---notebooklm/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;是一款強大的 &lt;strong&gt;AI 驅動型筆記工具與智慧助理&lt;/strong&gt;，專為幫助使用者&lt;strong&gt;整理、分析和理解&lt;/strong&gt;上傳的內容而設計，適用於學術研究、內容寫作、沉浸式學習等多元情境。&lt;/p&gt;
 &lt;h3 id="核心特色"&gt;核心特色：&lt;/h3&gt;
 &lt;ul&gt;
@@ -241,7 +268,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=zgWerTIynVA"&gt;NotebookLM 完整教學！93%的人還不知道的8個隱藏用法，完勝ChatGPT| 分析報告 | 會議記錄 | 自動生成Podcast、教學影片 - YouTube&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=7DURw1VU-I"&gt;NotebookLM 又進化了！自訂人格、影片支援80種語言、除了摘要還能生成更多創作內容 - YouTube&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Google - Google Labs</title><link>https://HoshikawaRyuukou.github.io/posts/google---google-labs/</link><pubDate>Sun, 26 Oct 2025 15:39:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/google---google-labs/</guid><description>&lt;p&gt;以下是為您潤飾後的版本，著重於更流暢、專業且吸引人的表達：&lt;/p&gt;
+&lt;/ul&gt;</description></item><item><title>Google - Google Labs</title><link>https://HoshikawaRyuukou.github.io/posts/_single/google---google-labs/</link><pubDate>Sun, 26 Oct 2025 15:39:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/google---google-labs/</guid><description>&lt;p&gt;以下是為您潤飾後的版本，著重於更流暢、專業且吸引人的表達：&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;一個展示 Google 正在測試階段的新專案和產品的示範網站&lt;/strong&gt;。它同時也是新開發服務的實驗與試驗場域。&lt;/p&gt;
@@ -251,19 +278,7 @@
 &lt;p&gt;目前主要開放美國地區使用，台灣尚未開放。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=MmP-q-SXG3c"&gt;【無料で簡単】GoogleのAIアプリ構築ツール「Opal」の活用例と使い方を徹底解説します - YouTube&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="stitch"&gt;Stitch&lt;/h3&gt;
-&lt;p&gt;一款多模態 AI UI 設計工具。使用者只需透過文字描述、圖片或手繪線稿，即可快速生成完整的網頁或行動應用程式介面設計，並支援導出程式碼或直接貼入 Figma。&lt;/p&gt;
-&lt;p&gt;官方建議的設計推進方式是採用小規模的迭代，而非一次性提供過多資訊。&lt;/p&gt;
-&lt;p&gt;實際體驗觀察：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;功能導向的應用表現相當不錯；然而，在遊戲類應用方面表現較弱。&lt;/li&gt;
-&lt;li&gt;輸出的中文支援度仍有限。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=GrPuG1BXjbc"&gt;Stitch - AI UI介面生成 • UI/UX 教學 (含CC字幕) - YouTube&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=XtWHGmEz5CA"&gt;🔥Google Stitch颠覆传统UI设计！10秒生成专业级UI！快速生成产品原型！小白也能开发精美UI。 支持无缝导入Figma！ Stitch保姆级教程：从想法到APP大师级界面效果堪比专业团队 - YouTube&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>AI Coding - Spec-Driven Development (SDD)</title><link>https://HoshikawaRyuukou.github.io/posts/ai-coding---spec-driven-development-sdd/</link><pubDate>Fri, 24 Oct 2025 11:41:40 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai-coding---spec-driven-development-sdd/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>AI Coding - Spec-Driven Development (SDD)</title><link>https://HoshikawaRyuukou.github.io/posts/_single/ai-coding---spec-driven-development-sdd/</link><pubDate>Fri, 24 Oct 2025 11:41:40 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/ai-coding---spec-driven-development-sdd/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;首先，&lt;strong&gt;規格驅動開發（SDD）並非在 AI 程式碼生成技術出現後才被提出&lt;/strong&gt;，它是一個早已存在的概念。&lt;/p&gt;
 &lt;p&gt;然而，在當前環境下，SDD 重新受到關注：&lt;/p&gt;
 &lt;ol&gt;
@@ -287,7 +302,7 @@
 &lt;li&gt;&lt;strong&gt;消除鴻溝&lt;/strong&gt;：SDD 透過使規格說明及其具體的實作計畫&lt;strong&gt;可執行化 (Executable)&lt;/strong&gt;，從而&lt;strong&gt;消除了規格說明與實際程式碼之間的鴻溝&lt;/strong&gt;。當規格說明直接生成程式碼時，這不再是手動實作，而是一個&lt;strong&gt;純粹的轉化 (Transformation) 過程&lt;/strong&gt;。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id="thinking"&gt;Thinking&lt;/h2&gt;
-&lt;p&gt;在採用 SDD 之前，我們需要先自問：&lt;strong&gt;你是否希望在一個完全由 AI 主導的結構中工作，每次迭代都只透過修改文件來完成？&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Google - Whisk</title><link>https://HoshikawaRyuukou.github.io/posts/google---whisk/</link><pubDate>Thu, 23 Oct 2025 09:17:49 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/google---whisk/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;在採用 SDD 之前，我們需要先自問：&lt;strong&gt;你是否希望在一個完全由 AI 主導的結構中工作，每次迭代都只透過修改文件來完成？&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Google - Whisk</title><link>https://HoshikawaRyuukou.github.io/posts/_single/google---whisk/</link><pubDate>Thu, 23 Oct 2025 09:17:49 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/google---whisk/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;🚀 目前仍處於 EXPERIMENT 階段。&lt;/p&gt;
 &lt;p&gt;Google Whisk 採用 &lt;strong&gt;雙引擎系統&lt;/strong&gt; 進行圖像創作：&lt;/p&gt;
 &lt;ol&gt;
@@ -305,12 +320,12 @@
 &lt;li&gt;&lt;strong&gt;場景環境 (Scene/Setting)&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;藝術風格 (Style)&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;此外，可以上傳圖片作為輸入。系統會自動分析並產生提示詞（Prompt），用戶可以針對這些提示詞進行多次修改，以產生新的創作。&lt;/p&gt;</description></item><item><title>Google - Gmail</title><link>https://HoshikawaRyuukou.github.io/posts/google---gmail/</link><pubDate>Sun, 19 Oct 2025 10:19:14 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/google---gmail/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;此外，可以上傳圖片作為輸入。系統會自動分析並產生提示詞（Prompt），用戶可以針對這些提示詞進行多次修改，以產生新的創作。&lt;/p&gt;</description></item><item><title>Google - Gmail</title><link>https://HoshikawaRyuukou.github.io/posts/_single/google---gmail/</link><pubDate>Sun, 19 Oct 2025 10:19:14 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/google---gmail/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;直到最近因應多帳號註冊需求，才發現並開始使用 Gmail 的「&lt;strong&gt;信箱別名&lt;/strong&gt;」功能 😅&lt;/p&gt;
 &lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://blog.csdn.net/easylife206/article/details/129395222"&gt;如何利用谷歌邮箱别名功能获取无限 Gmail 邮箱-CSDN博客&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>AI Coding - SDD - OpenSpec</title><link>https://HoshikawaRyuukou.github.io/posts/ai-coding---sdd---openspec/</link><pubDate>Fri, 17 Oct 2025 14:12:33 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai-coding---sdd---openspec/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>AI Coding - SDD - OpenSpec</title><link>https://HoshikawaRyuukou.github.io/posts/_single/ai-coding---sdd---openspec/</link><pubDate>Fri, 17 Oct 2025 14:12:33 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/ai-coding---sdd---openspec/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;在使用 OpenSpec 進行開發的體驗相當不錯，我認為原作者的設計理念解決了許多團隊在導入 AI 協作時的痛點。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -345,7 +360,7 @@
 &lt;li&gt;&lt;strong&gt;執行任務 (Implement Tasks)：&lt;/strong&gt; AI 依據最終拍板定案的規格與任務列表，開始進行程式碼的編寫。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;套用變更 (Apply the Change)：&lt;/strong&gt; 開發者審查 AI 生成的程式碼，確認無誤後，執行指令將程式碼合併到專案中。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;封存與更新 (Archive &amp;amp; Update Specs)：&lt;/strong&gt; 變更完成後，該次的變更紀錄會被完整地「封存」到 &lt;code&gt;archive/&lt;/code&gt; 資料夾，同時更新 &lt;code&gt;specs/&lt;/code&gt; 中的主要規格文件，確保規格文件永遠處於最新狀態，為下一次的變更做好準備。&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title>Side Project - Web Visual Novel - Fieldwork</title><link>https://HoshikawaRyuukou.github.io/posts/side-project---web-visual-novel---fieldwork/</link><pubDate>Thu, 09 Oct 2025 21:56:55 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/side-project---web-visual-novel---fieldwork/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ol&gt;</description></item><item><title>Side Project - Web Visual Novel - Fieldwork</title><link>https://HoshikawaRyuukou.github.io/posts/_single/side-project---web-visual-novel---fieldwork/</link><pubDate>Thu, 09 Oct 2025 21:56:55 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/side-project---web-visual-novel---fieldwork/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;稍微調查了一下現存的 Web 視覺小說方案。&lt;br&gt;
 不意外地，大部分是用 React 寫的。&lt;/p&gt;
 &lt;p&gt;目前的階段主要是先循過一輪，看看主流生態是用什麼技術堆出來的，順便了解一下有哪些常備功能是必須要有的。&lt;/p&gt;
@@ -384,7 +399,7 @@
 &lt;h3 id="editor"&gt;Editor&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/MangoButtermilch/dialogue-editor"&gt;GitHub - MangoButtermilch/dialogue-editor: Web based tool to generate non linear dialogues.&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Art - Color</title><link>https://HoshikawaRyuukou.github.io/posts/art---color/</link><pubDate>Wed, 08 Oct 2025 20:41:44 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/art---color/</guid><description>&lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Art - Color</title><link>https://HoshikawaRyuukou.github.io/posts/_single/art---color/</link><pubDate>Wed, 08 Oct 2025 20:41:44 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/art---color/</guid><description>&lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=PCYD7codKXQ"&gt;如何找出好配色？照著這個步驟做，讓你的設計更具吸引力！！&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.bilibili.com/video/BV1B64y177Bw"&gt;什么是更好的渐变？&lt;/a&gt;&lt;/li&gt;
@@ -399,7 +414,7 @@
 &lt;h2 id="scheme"&gt;Scheme&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://x.com/n_seitan"&gt;x.com/n_seitan&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Unity - Architecture - Client Research</title><link>https://HoshikawaRyuukou.github.io/posts/unity---architecture---client-research/</link><pubDate>Sun, 05 Oct 2025 22:16:53 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---architecture---client-research/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Unity - Architecture - Client Research</title><link>https://HoshikawaRyuukou.github.io/posts/_single/unity---architecture---client-research/</link><pubDate>Sun, 05 Oct 2025 22:16:53 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/unity---architecture---client-research/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;在設計一個&lt;strong&gt;真正符合自身需求&lt;/strong&gt;的架構過程中，我查閱了許多開發者與企業的設計分享。
 不同規模、不同組織背景下，策略與取捨自然各不相同。&lt;/p&gt;
 &lt;p&gt;這些實作未必人人適用，但往往能從中擷取值得借鑑的部分。
@@ -449,7 +464,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href="https://sg.wantedly.com/companies/endroll/post_articles/883646"&gt;ENDROLL の Unity アーキテクチャとかの話 | 株式会社ENDROLL&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Unity - Architecture - Fundamental Client</title><link>https://HoshikawaRyuukou.github.io/posts/unity---architecture---fundamental-client/</link><pubDate>Thu, 02 Oct 2025 11:39:32 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---architecture---fundamental-client/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://sg.wantedly.com/companies/endroll/post_articles/883646"&gt;ENDROLL の Unity アーキテクチャとかの話 | 株式会社ENDROLL&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Unity - Architecture - Fundamental Client</title><link>https://HoshikawaRyuukou.github.io/posts/_single/unity---architecture---fundamental-client/</link><pubDate>Thu, 02 Oct 2025 11:39:32 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/unity---architecture---fundamental-client/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;因應 AI 輔助開發的浪潮，我將個人最熟悉的輕量級應用開發模式進行了系統化的整理與規範。&lt;/p&gt;
 &lt;p&gt;這個架構的核心理念是讓 AI 扮演「填空者」的角色。開發者預先定義好應用的骨架與規範，而 AI 則專注於填充細部的實作邏輯。如此一來，開發者便能在自己熟悉的框架下，快速理解並整合 AI 的產出，有效降低驗證與重構的認知成本。&lt;/p&gt;
 &lt;p&gt;關於這個架構的詳細構成請參考以下文檔&lt;/p&gt;
@@ -484,7 +499,7 @@
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;實作外部能力 (Infrastructure)&lt;/strong&gt;
-我會開始實作之前在 Core 層定義的 &lt;code&gt;Port&lt;/code&gt; 介面。例如，用 &lt;code&gt;PlayerPrefs&lt;/code&gt; 來實作 &lt;code&gt;ISaveGamePort&lt;/code&gt;。因為 Core 只依賴介面，未來要換成雲端存檔也很容易。&lt;/p&gt;</description></item><item><title>AI - Prompt - Headshot</title><link>https://HoshikawaRyuukou.github.io/posts/ai---prompt---headshot/</link><pubDate>Sat, 27 Sep 2025 13:55:55 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---prompt---headshot/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+我會開始實作之前在 Core 層定義的 &lt;code&gt;Port&lt;/code&gt; 介面。例如，用 &lt;code&gt;PlayerPrefs&lt;/code&gt; 來實作 &lt;code&gt;ISaveGamePort&lt;/code&gt;。因為 Core 只依賴介面，未來要換成雲端存檔也很容易。&lt;/p&gt;</description></item><item><title>AI - Prompt - Headshot</title><link>https://HoshikawaRyuukou.github.io/posts/_single/ai---prompt---headshot/</link><pubDate>Sat, 27 Sep 2025 13:55:55 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/ai---prompt---headshot/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;最近為了更新履歷需要一張專業大頭照，但我手邊只有生活照。於是我使用 Google AI Studio 上的 &lt;strong&gt;Gemini 2.5 Flash Image (Nano Banana)&lt;/strong&gt;，效果相當不錯。&lt;/p&gt;
 &lt;h2 id="practice"&gt;Practice&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;服裝&lt;/strong&gt;：深色西裝 &lt;br&gt;
@@ -495,7 +510,7 @@
 &lt;strong&gt;背景&lt;/strong&gt;：白色，光源均勻，無陰影或反光 &lt;br&gt;
 &lt;strong&gt;品質&lt;/strong&gt;：清晰對焦，高品質無摺痕 &lt;br&gt;
 &lt;strong&gt;角度&lt;/strong&gt;：眼睛正視鏡頭&lt;/p&gt;
-&lt;p&gt;⚠️ 關於&lt;strong&gt;尺寸&lt;/strong&gt;的指令（如 4.5cm × 3.5cm），目前的 AI 模型通常無法直接生成精確的實體尺寸。 加入這項指令主要是為了讓 AI 更理解「這是一張證件照」的脈絡，從而優化構圖與臉部比例。最終，你仍需要將生成圖片匯入影像編輯軟體進行手動裁切，以符合最終需求。&lt;/p&gt;</description></item><item><title>Unity - Package - MessagePipe</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package---messagepipe/</link><pubDate>Thu, 25 Sep 2025 16:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package---messagepipe/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;⚠️ 關於&lt;strong&gt;尺寸&lt;/strong&gt;的指令（如 4.5cm × 3.5cm），目前的 AI 模型通常無法直接生成精確的實體尺寸。 加入這項指令主要是為了讓 AI 更理解「這是一張證件照」的脈絡，從而優化構圖與臉部比例。最終，你仍需要將生成圖片匯入影像編輯軟體進行手動裁切，以符合最終需求。&lt;/p&gt;</description></item><item><title>Unity - Package - MessagePipe</title><link>https://HoshikawaRyuukou.github.io/posts/_single/unity---package---messagepipe/</link><pubDate>Thu, 25 Sep 2025 16:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/unity---package---messagepipe/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;MessagePipe 是一個實現了「發布/訂閱」模式（Pub/Sub）的訊息中介函式庫。&lt;/p&gt;
 &lt;p&gt;Pub/Sub 的核心價值在於&lt;strong&gt;實現最大化的鬆散耦合 (Loose Coupling)&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;想像一個場景：&lt;/p&gt;
@@ -530,7 +545,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="notice"&gt;Notice&lt;/h2&gt;
 &lt;p&gt;利用 MessagePipe 實現低耦合是個優秀的架構實踐，它能讓專案更具彈性，易於維護與擴展。然而，&lt;strong&gt;任何工具都應避免濫用&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;過度的解耦，例如將所有事件都透過 Pub/Sub 傳遞，會導致&lt;strong&gt;程式碼的流程變得隱晦、難以追蹤&lt;/strong&gt;。當你無法輕易地從一個事件的發布點找到所有訂閱者時，專案的整體邏輯就會變得支離破碎，這反而會增加除錯與維護的難度。&lt;/p&gt;
-&lt;p&gt;建議當模組之間確實沒有直接關聯，且需要「一對多」的廣播通知時，才是 MessagePipe 的最佳使用時機。&lt;/p&gt;</description></item><item><title>Chat - Career - Work Milestones</title><link>https://HoshikawaRyuukou.github.io/posts/chat---career---work-milestones/</link><pubDate>Wed, 24 Sep 2025 20:31:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/chat---career---work-milestones/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;建議當模組之間確實沒有直接關聯，且需要「一對多」的廣播通知時，才是 MessagePipe 的最佳使用時機。&lt;/p&gt;</description></item><item><title>Chat - Career - Work Milestones</title><link>https://HoshikawaRyuukou.github.io/posts/_single/chat---career---work-milestones/</link><pubDate>Wed, 24 Sep 2025 20:31:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/chat---career---work-milestones/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;h3 id="第一站朱o數位科技-unity-數位內容開發"&gt;&lt;strong&gt;第一站：朱O數位科技 (Unity 數位內容開發)&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;我的第一份正職工作，是大學產學合作的延伸。對於剛畢業的我來說，薪資條件相當不錯，當時的想法很單純，就是希望能邊做邊學，持續精進技術。&lt;/p&gt;
 &lt;p&gt;主要的工作內容是開發 Unity 數位教材和 VR 應用。然而，經過一年的實踐，我開始感覺到一絲不安。團隊的開發模式比較接近大學時期的專案，缺乏業界標準化的流程。加上我是公司唯一的 Unity 開發者，雖然獨立完成了許多專案，卻也少了程式碼審查 (Code Review) 和技術交流的機會，讓我擔心自己會逐漸與業界主流脫節。&lt;/p&gt;
@@ -544,7 +559,7 @@
 &lt;p&gt;在面試時，老闆提及他曾是工程師出身，並且非常認同我的設計理念。這讓我燃起了熱情，希望能到第一線的開發戰場，實際驗證我所學的知識，並深入了解如何與美術、企劃、PM 等不同角色進行高效的協同開發。&lt;/p&gt;
 &lt;p&gt;進入公司後，我觀察到核心團隊成員大多是跟隨老闆從學校時期一路打拼至今的夥伴，這使得公司的技術棧相對傳統。我所參與的客戶端專案，不僅累積了大量的技術債，架構也比較混亂。在無法進行大規模重構的前提下，我的首要任務是為專案「續命」，成功導入了熱更新機制和資源管理系統，以維持產品的穩定運作。&lt;/p&gt;
 &lt;p&gt;此外，公司也賦予我「為團隊注入技術新血」的任務，我開始負責新技術的研究與分享，希望能帶動團隊的技術氛圍。然而，當時公司正處於現金流不穩的階段，我時常需要支援不同單位的緊急任務，導致工作體驗變得相當破碎。&lt;/p&gt;
-&lt;p&gt;我曾提出一些關於改善開發流程的建議，雖然得到了認同，但受限於資源，最終無力執行。技術單位的角色，逐漸淪為專案需求的附庸。在這次經歷後，我意識到，一個體制完善、流程清晰的工作環境，對於工程師的長期發展至關重要，也因此萌生了尋找更成熟團隊的想法。&lt;/p&gt;</description></item><item><title>Side Project - Photo Puzzle</title><link>https://HoshikawaRyuukou.github.io/posts/side-project---photo-puzzle/</link><pubDate>Sat, 20 Sep 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/side-project---photo-puzzle/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;我曾提出一些關於改善開發流程的建議，雖然得到了認同，但受限於資源，最終無力執行。技術單位的角色，逐漸淪為專案需求的附庸。在這次經歷後，我意識到，一個體制完善、流程清晰的工作環境，對於工程師的長期發展至關重要，也因此萌生了尋找更成熟團隊的想法。&lt;/p&gt;</description></item><item><title>Side Project - Photo Puzzle</title><link>https://HoshikawaRyuukou.github.io/posts/_single/side-project---photo-puzzle/</link><pubDate>Sat, 20 Sep 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/side-project---photo-puzzle/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;此專案已開源，完整設計思路請參見 repo。&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/hoshikawaryuukou/MGSP_PhotoPuzzle"&gt;GitHub - hoshikawaryuukou/MGSP_PhotoPuzzle&lt;/a&gt;&lt;/li&gt;
@@ -563,7 +578,7 @@
 &lt;li&gt;&lt;strong&gt;設定挑戰&lt;/strong&gt;：選擇盤面大小，系統自動載入隨機圖片&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;交換碎片&lt;/strong&gt;：點選第一塊拼圖碎片，再點選第二塊，兩者位置即會交換&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;完成挑戰&lt;/strong&gt;：持續交換直到所有碎片歸位，還原完整圖像即獲勝！&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title>Python</title><link>https://HoshikawaRyuukou.github.io/posts/python/</link><pubDate>Sun, 14 Sep 2025 17:12:40 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/python/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ol&gt;</description></item><item><title>Python</title><link>https://HoshikawaRyuukou.github.io/posts/_single/python/</link><pubDate>Sun, 14 Sep 2025 17:12:40 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/python/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;當初想學 Python，卻常常卡在版本跟依賴的混亂。現在再回來，生態整合好多了，總算可以專心在「學」這件事上。&lt;/p&gt;
 &lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
 &lt;h3 id="env"&gt;Env&lt;/h3&gt;
@@ -571,7 +586,7 @@
 &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=aVXs8lb7i9U"&gt;用uv管理Python的一切！ - YouTube&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=jd1aRE5pJWc"&gt;从pip到uv：一口气梳理现代Python项目管理全流程！ - YouTube&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=2m0Ygyzli5I"&gt;build + hatchling 15分钟搞懂Python项目结构和打包 - YouTube&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Tools</title><link>https://HoshikawaRyuukou.github.io/posts/tools/</link><pubDate>Fri, 12 Sep 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/tools/</guid><description>&lt;h2 id="antivirus"&gt;Antivirus&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Tools</title><link>https://HoshikawaRyuukou.github.io/posts/_single/tools/</link><pubDate>Fri, 12 Sep 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/tools/</guid><description>&lt;h2 id="antivirus"&gt;Antivirus&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.cyberlock.global/DefenderUI.aspx"&gt;DefenderUI - Unlocks the full power of Windows Defender with an intuitive, streamlined interface.&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -656,7 +671,7 @@
 &lt;h2 id="misc"&gt;Misc&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://tools.wingzero.tw/web/page/1"&gt;網路資源列表| DeTools&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>AI - Favorites</title><link>https://HoshikawaRyuukou.github.io/posts/ai---favorites/</link><pubDate>Fri, 05 Sep 2025 10:25:42 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---favorites/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>AI - Favorites</title><link>https://HoshikawaRyuukou.github.io/posts/_single/ai---favorites/</link><pubDate>Fri, 05 Sep 2025 10:25:42 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/ai---favorites/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;記錄些目前使用率很高的 AI 工具 🤓。&lt;/p&gt;
 &lt;h2 id="collections"&gt;Collections&lt;/h2&gt;
 &lt;h3 id="chat"&gt;Chat&lt;/h3&gt;
@@ -678,7 +693,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.lovart.ai/zh-TW"&gt;Lovart | 全球首個設計智能體&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=XtWHGmEz5CA"&gt;🔥Google Stitch颠覆传统UI设计！10秒生成专业级UI！快速生成产品原型！小白也能开发精美UI。 支持无缝导入Figma！ Stitch保姆级教程：从想法到APP大师级界面效果堪比专业团队 - YouTube&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Side Project - Track Piece</title><link>https://HoshikawaRyuukou.github.io/posts/side-project---track-piece/</link><pubDate>Sun, 31 Aug 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/side-project---track-piece/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Side Project - Track Piece</title><link>https://HoshikawaRyuukou.github.io/posts/_single/side-project---track-piece/</link><pubDate>Sun, 31 Aug 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/side-project---track-piece/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;此專案已開源，完整設計思路請參見 repo。&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/hoshikawaryuukou/MGSP_TrackPiece"&gt;GitHub - hoshikawaryuukou/MGSP_TrackPiece&lt;/a&gt;&lt;/li&gt;
@@ -710,7 +725,7 @@
 &lt;li&gt;在「旋轉棋盤」的步驟完成&lt;strong&gt;後&lt;/strong&gt;，檢查棋盤。&lt;/li&gt;
 &lt;li&gt;若有任何一方的棋子連成一條線（橫線、直線或對角線），該玩家立即獲勝，遊戲結束。&lt;/li&gt;
 &lt;li&gt;若棋盤所有格子皆已下滿，仍未分出勝負，則為平局。&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>AI - Tools</title><link>https://HoshikawaRyuukou.github.io/posts/ai---tools/</link><pubDate>Fri, 29 Aug 2025 10:08:39 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/ai---tools/</guid><description>&lt;h2 id="news"&gt;News&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>AI - Tools</title><link>https://HoshikawaRyuukou.github.io/posts/_single/ai---tools/</link><pubDate>Fri, 29 Aug 2025 10:08:39 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/ai---tools/</guid><description>&lt;h2 id="news"&gt;News&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.aibase.com/zh/"&gt;AIbase基地 - 让更多人看到未来 通往AGI之路&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -732,14 +747,14 @@
 &lt;li&gt;&lt;a href="https://github.com/SakuraLLM/SakuraLLM"&gt;SakuraLLM/SakuraLLM&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/zyddnys/manga-image-translator"&gt;zyddnys/manga-image-translator&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/dmMaze/BallonsTranslator"&gt;dmMaze/BallonsTranslator&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>OS - Window - PowerShell</title><link>https://HoshikawaRyuukou.github.io/posts/os---windows---powershell/</link><pubDate>Thu, 28 Aug 2025 16:24:30 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/os---windows---powershell/</guid><description>&lt;h2 id="issues"&gt;Issues&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>OS - Window - PowerShell</title><link>https://HoshikawaRyuukou.github.io/posts/_single/os---windows---powershell/</link><pubDate>Thu, 28 Aug 2025 16:24:30 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/os---windows---powershell/</guid><description>&lt;h2 id="issues"&gt;Issues&lt;/h2&gt;
 &lt;h3 id="中文顯示問題"&gt;中文顯示問題&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;在腳本第一行再加上這行
 &lt;pre tabindex="0"&gt;&lt;code&gt;[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;把 &lt;code&gt;.ps1&lt;/code&gt; 檔案存成 &lt;strong&gt;UTF-8 with BOM&lt;/strong&gt;。&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title>Chat - Misc - Pangu Spacing</title><link>https://HoshikawaRyuukou.github.io/posts/chat---misc---pangu-spacing/</link><pubDate>Thu, 28 Aug 2025 15:02:36 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/chat---misc---pangu-spacing/</guid><description>&lt;h2 id="quick"&gt;Quick&lt;/h2&gt;
+&lt;/ol&gt;</description></item><item><title>Chat - Misc - Pangu Spacing</title><link>https://HoshikawaRyuukou.github.io/posts/_single/chat---misc---pangu-spacing/</link><pubDate>Thu, 28 Aug 2025 15:02:36 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/chat---misc---pangu-spacing/</guid><description>&lt;h2 id="quick"&gt;Quick&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;我總習慣在中英文之間加個空格，讓排版看起來更舒服。今天才知道，原來這個習慣性的空格有個詩意的名字，叫做「&lt;strong&gt;盤古之白&lt;/strong&gt;」，而它在英文裡則被稱為 &lt;strong&gt;Pangu spacing&lt;/strong&gt;。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -755,7 +770,7 @@
 &lt;h2 id="extra"&gt;Extra&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/vinta/pangu.js"&gt;GitHub - vinta/pangu.js&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Unity - Platform - Web - Build</title><link>https://HoshikawaRyuukou.github.io/posts/unity---platform---web/</link><pubDate>Tue, 26 Aug 2025 16:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---platform---web/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Unity - Platform - Web - Build</title><link>https://HoshikawaRyuukou.github.io/posts/_single/unity---platform---web/</link><pubDate>Tue, 26 Aug 2025 16:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/unity---platform---web/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;⚠️ 建議使用 &lt;strong&gt;Unity 2021&lt;/strong&gt; 以上開發，我目前使用 &lt;strong&gt;Unity 6&lt;/strong&gt;。&lt;/li&gt;
 &lt;/ul&gt;
@@ -803,7 +818,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://tech.framesynthesis.co.jp/unity/webgl/"&gt;Unity WebGLビルドメモ - フレームシンセシス&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://zenn.dev/happy_elements/articles/hekk_ac_20231215"&gt;Unity 製 WebGL ゲームを AWS でお手軽公開&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Obsidian - Plugins</title><link>https://HoshikawaRyuukou.github.io/posts/obsidian---plugins/</link><pubDate>Wed, 20 Aug 2025 09:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/obsidian---plugins/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Obsidian - Plugins</title><link>https://HoshikawaRyuukou.github.io/posts/_single/obsidian---plugins/</link><pubDate>Wed, 20 Aug 2025 09:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/obsidian---plugins/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;紀錄目前在使用的外掛。&lt;/p&gt;
 &lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
 &lt;h3 id="auto-link-title"&gt;Auto Link Title&lt;/h3&gt;
@@ -819,7 +834,7 @@
 &lt;ul&gt;
 &lt;li&gt;批量處理圖片。&lt;/li&gt;
 &lt;li&gt;支援剪貼簿直接貼上圖片，並將圖片放置指定位置。&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Workflow – Host Unity Web Game on GitHub Pages</title><link>https://HoshikawaRyuukou.github.io/posts/workflow--host-unity-web-game-on-github-pages/</link><pubDate>Mon, 18 Aug 2025 20:38:51 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow--host-unity-web-game-on-github-pages/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Workflow – Host Unity Web Game on GitHub Pages</title><link>https://HoshikawaRyuukou.github.io/posts/_single/workflow--host-unity-web-game-on-github-pages/</link><pubDate>Mon, 18 Aug 2025 20:38:51 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/workflow--host-unity-web-game-on-github-pages/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;⚠️ 在 Unity 中需啟用 &lt;strong&gt;Decompression Fallback&lt;/strong&gt;（因 GitHub Pages 不支援壓縮檔案）。&lt;/li&gt;
 &lt;li&gt;⚠️ &lt;strong&gt;僅 Public Repository&lt;/strong&gt; 可免費使用 GitHub Pages。&lt;/li&gt;
@@ -840,7 +855,7 @@
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;project-root/ 
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;├── .git
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;└── Builds/
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Unity - Sites</title><link>https://HoshikawaRyuukou.github.io/posts/unity---sites/</link><pubDate>Sat, 16 Aug 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---sites/</guid><description>&lt;h2 id="news"&gt;News&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Unity - Sites</title><link>https://HoshikawaRyuukou.github.io/posts/_single/unity---sites/</link><pubDate>Sat, 16 Aug 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/unity---sites/</guid><description>&lt;h2 id="news"&gt;News&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://blog.yucchiy.com/"&gt;Yucchiy&amp;rsquo;s Note&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -899,7 +914,7 @@
 &lt;li&gt;&lt;a href="https://meetup.unity3d.jp/jp/"&gt;Unity Meetup&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://qiita.com/advent-calendar/2023/unity"&gt;Unity Advent Calendar&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://uycc.unity3d.jp/"&gt;Unityユースクリエイターカップ&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Obsidian - CSS Snippets</title><link>https://HoshikawaRyuukou.github.io/posts/obsidian---css-snippets/</link><pubDate>Fri, 15 Aug 2025 20:00:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/obsidian---css-snippets/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Obsidian - CSS Snippets</title><link>https://HoshikawaRyuukou.github.io/posts/_single/obsidian---css-snippets/</link><pubDate>Fri, 15 Aug 2025 20:00:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/obsidian---css-snippets/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;試過幾款主題，但沒有特別喜歡的，感覺還是用預設主題就好。&lt;/p&gt;
 &lt;p&gt;不過，Markdown 的顯示樣式還是想稍微調整一下。&lt;/p&gt;
 &lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
@@ -942,7 +957,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;.&lt;/span&gt;&lt;span style="color:#75af00"&gt;markdown-preview-view&lt;/span&gt; &lt;span style="color:#f92672"&gt;ol&lt;/span&gt; &lt;span style="color:#111"&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#00a8c8"&gt;margin-bottom&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;0.5&lt;/span&gt;&lt;span style="color:#00a8c8"&gt;em&lt;/span&gt;&lt;span style="color:#111"&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Unity - Package - Web Stripping Tool</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package---web-stripping-tool/</link><pubDate>Fri, 15 Aug 2025 12:46:15 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package---web-stripping-tool/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Unity - Packages - Web Stripping Tool</title><link>https://HoshikawaRyuukou.github.io/posts/unity-packages-web-stripping-tool/</link><pubDate>Fri, 15 Aug 2025 12:46:15 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-packages-web-stripping-tool/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;透過移除未使用的 &lt;strong&gt;子模組（Submodules）&lt;/strong&gt;，你可以在不刪除整個功能套件的情況下，有效縮減遊戲的最終建置大小。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -966,7 +981,7 @@
 &lt;h2 id="workflow"&gt;Workflow&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;安裝與設置&lt;/strong&gt;：&lt;/p&gt;</description></item><item><title>Workflow – Mirroring Obsidian Notes to Hugo</title><link>https://HoshikawaRyuukou.github.io/posts/workflow--mirror-obsidian-notes-to-hugo/</link><pubDate>Wed, 13 Aug 2025 20:31:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow--mirror-obsidian-notes-to-hugo/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;安裝與設置&lt;/strong&gt;：&lt;/p&gt;</description></item><item><title>Workflow – Mirroring Obsidian Notes to Hugo</title><link>https://HoshikawaRyuukou.github.io/posts/_single/workflow--mirror-obsidian-notes-to-hugo/</link><pubDate>Wed, 13 Aug 2025 20:31:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/workflow--mirror-obsidian-notes-to-hugo/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;使用 &lt;code&gt;robocopy&lt;/code&gt; 以鏡像方式，將 &lt;code&gt;obsidian-notes&lt;/code&gt; 中的 &lt;code&gt;posts&lt;/code&gt; 與 &lt;code&gt;images&lt;/code&gt; 資料夾，同步到 Hugo 專案的對應目錄。&lt;/p&gt;
 &lt;h2 id="operation"&gt;Operation&lt;/h2&gt;
 &lt;ol&gt;
@@ -1030,7 +1045,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pause
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;endlocal
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>OS - Windows - Tools</title><link>https://HoshikawaRyuukou.github.io/posts/os---windows---tools/</link><pubDate>Sun, 10 Aug 2025 09:56:18 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/os---windows---tools/</guid><description>&lt;h2 id="robocopy"&gt;robocopy&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>OS - Windows - Tools</title><link>https://HoshikawaRyuukou.github.io/posts/_single/os---windows---tools/</link><pubDate>Sun, 10 Aug 2025 09:56:18 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/os---windows---tools/</guid><description>&lt;h2 id="robocopy"&gt;robocopy&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;全名是 &lt;strong&gt;Robust File Copy&lt;/strong&gt;。&lt;/li&gt;
 &lt;li&gt;是 Windows 作業系統內建的&lt;strong&gt;命令列檔案複製工具&lt;/strong&gt;。&lt;/li&gt;
@@ -1047,7 +1062,7 @@
 &lt;li&gt;&lt;strong&gt;刪除&lt;/strong&gt;目標有但來源已刪除的檔案（⚠️注意不可逆）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title>Unity - Optimization</title><link>https://HoshikawaRyuukou.github.io/posts/unity---optimization/</link><pubDate>Fri, 08 Aug 2025 16:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---optimization/</guid><description>&lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
+&lt;/ol&gt;</description></item><item><title>Unity - Optimization</title><link>https://HoshikawaRyuukou.github.io/posts/_single/unity---optimization/</link><pubDate>Fri, 08 Aug 2025 16:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/unity---optimization/</guid><description>&lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://docs.crazygames.com/resources/development-tips/"&gt;Development tips - CrazyGames Documentation&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -1060,7 +1075,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://docs.unity3d.com/Packages/com.unity.project-auditor@1.0/manual/index.html"&gt;Project Auditor package | Project Auditor | 1.0.1&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://dev.to/attiliohimeki/unity-project-analysis-with-the-project-auditor-2pea"&gt;Unity Project analysis with the Project Auditor - DEV Community&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Chat - Personal Knowledge Management</title><link>https://HoshikawaRyuukou.github.io/posts/chat---personal-knowledge-management/</link><pubDate>Thu, 07 Aug 2025 09:56:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/chat---personal-knowledge-management/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Chat - Personal Knowledge Management</title><link>https://HoshikawaRyuukou.github.io/posts/_single/chat---personal-knowledge-management/</link><pubDate>Thu, 07 Aug 2025 09:56:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/chat---personal-knowledge-management/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;我對理想的筆記工具有四個核心要求：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -1091,7 +1106,7 @@
 &lt;p&gt;&lt;strong&gt;舊流程：&lt;/strong&gt; 筆記內容與 Hugo 專案深度耦合。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;新流程：&lt;/strong&gt; 將筆記視為一個獨立的專案，作為唯一的數據源（&lt;strong&gt;Single Source of Truth&lt;/strong&gt;）。Hugo 僅作為靜態網站的生成工具，不再直接編輯文章，而是接收 Obsidian 匯出的結果。&lt;/p&gt;</description></item><item><title>Chat - Career - Mindset</title><link>https://HoshikawaRyuukou.github.io/posts/chat---career---mindset/</link><pubDate>Thu, 24 Jul 2025 20:31:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/chat---career---mindset/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;新流程：&lt;/strong&gt; 將筆記視為一個獨立的專案，作為唯一的數據源（&lt;strong&gt;Single Source of Truth&lt;/strong&gt;）。Hugo 僅作為靜態網站的生成工具，不再直接編輯文章，而是接收 Obsidian 匯出的結果。&lt;/p&gt;</description></item><item><title>Chat - Career - Mindset</title><link>https://HoshikawaRyuukou.github.io/posts/_single/chat---career---mindset/</link><pubDate>Thu, 24 Jul 2025 20:31:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/chat---career---mindset/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;這是我近年於職場上的心態轉變，也算是告別曾經的那份天真👀。&lt;/p&gt;
 &lt;h2 id="不再自我感動職場沒有默契只有溝通"&gt;&lt;strong&gt;不再自我感動：職場沒有默契，只有溝通&lt;/strong&gt;&lt;/h2&gt;
 &lt;blockquote&gt;
@@ -1118,7 +1133,7 @@
 &lt;p&gt;因為他們知道哪些資料「真有價值」。技術不該只解「怎麼做」，更該問「為什麼做、為什麼這樣做比較值得」。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;不要急著找最強的技術解，要先找到對的人問對的問題。&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;</description></item><item><title>Software Design - Code Smell</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---code-smell/</link><pubDate>Fri, 18 Jul 2025 16:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---code-smell/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/blockquote&gt;</description></item><item><title>Software Design - Code Smell</title><link>https://HoshikawaRyuukou.github.io/posts/_single/software-design---code-smell/</link><pubDate>Fri, 18 Jul 2025 16:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/software-design---code-smell/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;「Code Smells（程式碼異味）」是一個軟體工程的術語，指的是程式碼中潛在問題的「警訊」。雖然這些寫法不一定會直接造成錯誤，但它們通常代表設計不良、可讀性差、難以維護或擴充的風險。&lt;/p&gt;
 &lt;p&gt;⚠️ 不過在實務上&lt;/p&gt;
 &lt;ul&gt;
@@ -1129,7 +1144,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://refactoring.guru/refactoring/smells"&gt;Code Smells&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://luzkan.github.io/smells/"&gt;Code Smells Catalog&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Software Design - Code Smell - Side Effect</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---code-smell---side-effect/</link><pubDate>Fri, 18 Jul 2025 16:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---code-smell---side-effect/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Software Design - Code Smell - Side Effect</title><link>https://HoshikawaRyuukou.github.io/posts/_single/software-design---code-smell---side-effect/</link><pubDate>Fri, 18 Jul 2025 16:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/software-design---code-smell---side-effect/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;副作用（Side Effect）指的是一段程式在執行後，&lt;strong&gt;除了回傳值之外還影響了外部狀態&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;在錯誤的位置或缺乏揭露的情況下使用副作用，會造成：&lt;/p&gt;
 &lt;ul&gt;
@@ -1150,7 +1165,7 @@
 &lt;ul&gt;
 &lt;li&gt;明確命名：像 updateState, notifyUser, logError&lt;/li&gt;
 &lt;li&gt;設計邊界：像 useEffect、controller 層 專職處理副作用&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Software Design - Pattern - Orchestrator Pattern</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---orchestrator-pattern/</link><pubDate>Fri, 18 Jul 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---orchestrator-pattern/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Software Design - Pattern - Orchestrator Pattern</title><link>https://HoshikawaRyuukou.github.io/posts/_single/software-design---pattern---orchestrator-pattern/</link><pubDate>Fri, 18 Jul 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/software-design---pattern---orchestrator-pattern/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;協調者模式，主要用於管理多個獨立服務或元件之間錯綜複雜的互動。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1213,7 +1228,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00a8c8"&gt;const&lt;/span&gt; &lt;span style="color:#75af00"&gt;controller&lt;/span&gt; &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#00a8c8"&gt;new&lt;/span&gt; &lt;span style="color:#75af00"&gt;GameFlowController&lt;/span&gt;&lt;span style="color:#111"&gt;();&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00a8c8"&gt;const&lt;/span&gt; &lt;span style="color:#75af00"&gt;result&lt;/span&gt; &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#75af00"&gt;controller&lt;/span&gt;&lt;span style="color:#111"&gt;.&lt;/span&gt;&lt;span style="color:#75af00"&gt;run&lt;/span&gt;&lt;span style="color:#111"&gt;();&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75af00"&gt;console&lt;/span&gt;&lt;span style="color:#111"&gt;.&lt;/span&gt;&lt;span style="color:#75af00"&gt;log&lt;/span&gt;&lt;span style="color:#111"&gt;(&lt;/span&gt;&lt;span style="color:#75af00"&gt;result&lt;/span&gt;&lt;span style="color:#111"&gt;);&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Software Design - Architecture - Unity Slot Game Client</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---architecture---unity-slot-game-client/</link><pubDate>Mon, 30 Jun 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---architecture---unity-slot-game-client/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Software Design - Architecture - Unity Slot Game Client</title><link>https://HoshikawaRyuukou.github.io/posts/_single/software-design---architecture---unity-slot-game-client/</link><pubDate>Mon, 30 Jun 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/software-design---architecture---unity-slot-game-client/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;前端開發時，「狀態管理」一直是個大哉問。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1289,7 +1304,7 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;一個操作觸發多處改變（One-to-Many Updates）&lt;br&gt;
-例如：用戶點擊「開始」後，同時啟動動畫、鎖定按鈕、重置分數、播放音效。&lt;/p&gt;</description></item><item><title>Stable Diffusion - Inpainting</title><link>https://HoshikawaRyuukou.github.io/posts/stable-diffusion---inpainting/</link><pubDate>Thu, 12 Jun 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/stable-diffusion---inpainting/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+例如：用戶點擊「開始」後，同時啟動動畫、鎖定按鈕、重置分數、播放音效。&lt;/p&gt;</description></item><item><title>Stable Diffusion - Inpainting</title><link>https://HoshikawaRyuukou.github.io/posts/_single/stable-diffusion---inpainting/</link><pubDate>Thu, 12 Jun 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/stable-diffusion---inpainting/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;目前並未特別使用進階修圖技巧。若圖片瑕疵可透過簡單塗色與描邊處理，即會嘗試修復。&lt;/p&gt;
 &lt;p&gt;若瑕疵較嚴重，則多半直接放棄並重新生成 —— 通常下一張會更好。&lt;/p&gt;
 &lt;h2 id="modification"&gt;Modification&lt;/h2&gt;
@@ -1309,7 +1324,7 @@
 &lt;li&gt;&lt;code&gt;0.3 ~ 0.5&lt;/code&gt;：適度改變結構與細節，適合嘗試新的構圖或調整 seed 取得更好結果。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Unity - Packages</title><link>https://HoshikawaRyuukou.github.io/posts/unity---packages/</link><pubDate>Mon, 19 May 2025 12:46:15 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---packages/</guid><description>&lt;h2 id="package-collection"&gt;Package Collection&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Unity - Packages</title><link>https://HoshikawaRyuukou.github.io/posts/_single/unity---packages/</link><pubDate>Mon, 19 May 2025 12:46:15 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/unity---packages/</guid><description>&lt;h2 id="package-collection"&gt;Package Collection&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/XINCGer/Unity3DTraining/tree/0501d6b93520f9d3481f76cd092b71c945e3e3f7?tab=readme-ov-file"&gt;XINCGer/Unity3DTraining&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/killop/anything_about_game/tree/b5c3b2e573d0970b318fd75b1449dbd9fdaa0ee9"&gt;killop/anything_about_game&lt;/a&gt;&lt;/li&gt;
@@ -1355,10 +1370,6 @@
 &lt;h2 id="language"&gt;Language&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/phanphantz/ThaiTextCare-for-Unity"&gt;phanphantz/ThaiTextCare-for-Unity&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="localization"&gt;Localization&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://assetstore.unity.com/packages/tools/localization/lean-localization-28504"&gt;Lean Localization&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="logging"&gt;Logging&lt;/h2&gt;
 &lt;ul&gt;
@@ -1408,7 +1419,7 @@
 &lt;li&gt;&lt;a href="https://github.com/gree/unity-webview"&gt;gree/unity-webview&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/t-34400/SimpleUnity3DWebView"&gt;t-34400/SimpleUnity3DWebView&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/TLabAltoh/TLabWebView"&gt;TLabAltoh/TLabWebView&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Unity</title><link>https://HoshikawaRyuukou.github.io/posts/unity/</link><pubDate>Thu, 15 May 2025 10:22:16 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Unity</title><link>https://HoshikawaRyuukou.github.io/posts/_single/unity/</link><pubDate>Thu, 15 May 2025 10:22:16 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/unity/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;在Unity這幾年的發展中，無疑經歷了不少波折&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Unity Runtime Fee 事件&lt;/li&gt;
@@ -1432,7 +1443,7 @@
 &lt;li&gt;適合新專案或開發中的專案，追求 &lt;strong&gt;最新功能&lt;/strong&gt;、&lt;strong&gt;平台支援&lt;/strong&gt; 與 &lt;strong&gt;效能優化&lt;/strong&gt; 的團隊。&lt;/li&gt;
 &lt;li&gt;⚠️ 只會維護最新版本（例如 6.2 發布後，6.1 將停止維護）。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;更多細節可參考 &lt;a href="https://unity.com/blog/unity-6-1-is-now-available"&gt;官方說明&lt;/a&gt;。&lt;/p&gt;</description></item><item><title>Unity - Env - Preferences</title><link>https://HoshikawaRyuukou.github.io/posts/unity---env---preferences/</link><pubDate>Sat, 29 Mar 2025 16:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---env---preferences/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;更多細節可參考 &lt;a href="https://unity.com/blog/unity-6-1-is-now-available"&gt;官方說明&lt;/a&gt;。&lt;/p&gt;</description></item><item><title>Unity - Env - Preferences</title><link>https://HoshikawaRyuukou.github.io/posts/_single/unity---env---preferences/</link><pubDate>Sat, 29 Mar 2025 16:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/unity---env---preferences/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;紀錄常用的配置&lt;/p&gt;
 &lt;h2 id="config"&gt;Config&lt;/h2&gt;
 &lt;ul&gt;
@@ -1452,7 +1463,7 @@
 &lt;li&gt;Local packages&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>ACG - Game - Story</title><link>https://HoshikawaRyuukou.github.io/posts/acg---game---story/</link><pubDate>Sat, 29 Mar 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/acg---game---story/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>ACG - Game - Story</title><link>https://HoshikawaRyuukou.github.io/posts/_single/acg---game---story/</link><pubDate>Sat, 29 Mar 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/acg---game---story/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;有持續關注的遊戲劇情與遊戲設定。&lt;/p&gt;
 &lt;h2 id="series"&gt;Series&lt;/h2&gt;
 &lt;h3 id="ブルーアーカイブ-blue-archive"&gt;ブルーアーカイブ (Blue Archive)&lt;/h3&gt;
@@ -1466,7 +1477,7 @@
 &lt;h3 id="モンスターハンター-monster-hunter"&gt;モンスターハンター (Monster Hunter)&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/@ShuShiDui/videos"&gt;艾森巴赫 - YouTube&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Unity - Basic - ScriptableObject</title><link>https://HoshikawaRyuukou.github.io/posts/unity---basic---scriptableobject/</link><pubDate>Fri, 28 Mar 2025 16:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---basic---scriptableobject/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Unity - Basic - ScriptableObject</title><link>https://HoshikawaRyuukou.github.io/posts/_single/unity---basic---scriptableobject/</link><pubDate>Fri, 28 Mar 2025 16:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/unity---basic---scriptableobject/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;ScriptableObjects 的主要用例是：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;在編輯器會話期間儲存和儲存資料。&lt;/li&gt;
@@ -1493,7 +1504,7 @@
 &lt;li&gt;多個地方直接引用同一個 ScriptableObject &lt;code&gt;.asset&lt;/code&gt;，它們實際上都指向記憶體中的同一個共享實例。&lt;/li&gt;
 &lt;li&gt;對於實現全局配置或共享狀態非常有用。&lt;/li&gt;
 &lt;li&gt;如果每個使用者擁有獨立的數據副本，則需要在執行期 Instantiate() 這個 ScriptableObject 來創建副本。&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Unity - Env - IDE</title><link>https://HoshikawaRyuukou.github.io/posts/unity---env---ide/</link><pubDate>Fri, 28 Mar 2025 16:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---env---ide/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Unity - Env - IDE</title><link>https://HoshikawaRyuukou.github.io/posts/_single/unity---env---ide/</link><pubDate>Fri, 28 Mar 2025 16:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/unity---env---ide/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;我目前在 &lt;strong&gt;Windows 環境&lt;/strong&gt;下，會依需求在 &lt;strong&gt;Visual Studio&lt;/strong&gt; 與 &lt;strong&gt;VS Code&lt;/strong&gt; 之間切換：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -1522,7 +1533,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;安裝完成後 &lt;strong&gt;重新啟動電腦&lt;/strong&gt;，以讓環境變數生效&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title>Unity - Coding - Warnings</title><link>https://HoshikawaRyuukou.github.io/posts/unity---coding---warnings/</link><pubDate>Tue, 25 Mar 2025 16:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---coding---warnings/</guid><description>&lt;h2 id="unt0023-coalescing-assignment-on-unity-objects"&gt;UNT0023 Coalescing assignment on Unity objects&lt;/h2&gt;
+&lt;/ol&gt;</description></item><item><title>Unity - Coding - Warnings</title><link>https://HoshikawaRyuukou.github.io/posts/_single/unity---coding---warnings/</link><pubDate>Tue, 25 Mar 2025 16:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/unity---coding---warnings/</guid><description>&lt;h2 id="unt0023-coalescing-assignment-on-unity-objects"&gt;UNT0023 Coalescing assignment on Unity objects&lt;/h2&gt;
 &lt;p&gt;合併賦值運算子 &lt;code&gt;??=&lt;/code&gt; 是 C# 8.0 引入的運算子，其功能是：如果左側運算元為 null，則將右側運算元的值賦給左側運算元。&lt;/p&gt;
 &lt;p&gt;然而，在 Unity 中直接對 Unity 物件 (如 GameObject、Component 等) 使用這個運算子可能會導致問題，因為：&lt;/p&gt;
 &lt;ol&gt;
@@ -1543,7 +1554,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#111"&gt;rb&lt;/span&gt; &lt;span style="color:#111"&gt;=&lt;/span&gt; &lt;span style="color:#111"&gt;GetComponent&lt;/span&gt;&lt;span style="color:#111"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#111"&gt;Rigidbody&lt;/span&gt;&lt;span style="color:#111"&gt;&amp;gt;();&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#111"&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;}&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Unity - Package Manager</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package-manager/</link><pubDate>Wed, 19 Mar 2025 12:46:15 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package-manager/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Unity - Package Manager</title><link>https://HoshikawaRyuukou.github.io/posts/_single/unity---package-manager/</link><pubDate>Wed, 19 Mar 2025 12:46:15 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/unity---package-manager/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Unity Package Manager (UPM) 的設計理念，是向現代軟體開發的 「套件管理系統」
 看齊，最主要的借鏡對象就是網頁開發領域的 NPM (Node Package Manager)。&lt;/p&gt;
@@ -1582,7 +1593,7 @@ Scope(s):
 &lt;h2 id="package-template"&gt;Package Template&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/IvanMurzak/Unity-Package-Template"&gt;GitHub - IvanMurzak/Unity-Package-Template: Template Unity Package for OpenUPM and NPMJS. Supports UPM (Unity Package Manager) with versioning.&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Unity - Project Structure</title><link>https://HoshikawaRyuukou.github.io/posts/unity---project-structure/</link><pubDate>Tue, 18 Mar 2025 12:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---project-structure/</guid><description>&lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Unity - Project Structure</title><link>https://HoshikawaRyuukou.github.io/posts/_single/unity---project-structure/</link><pubDate>Tue, 18 Mar 2025 12:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/unity---project-structure/</guid><description>&lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=o8HIGKObG1Q"&gt;Organizing Your Unity Project — Content vs Feature Folders&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://medium.com/@ikonija.bogojevic/organizing-project-folder-structure-function-based-vs-feature-based-168596b6d169"&gt;Organizing Project Folder Structure: Function-Based vs Feature-Based&lt;/a&gt;&lt;/li&gt;
@@ -1654,7 +1665,7 @@ Scope(s):
 &lt;ul&gt;
 &lt;li&gt;小型專案或原型（Prototype）建議先採用 Content-Based 結構，快速上手。&lt;/li&gt;
 &lt;li&gt;專案逐漸擴大後，可以逐步轉向 Feature-Based，以利管理與維護。&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>LeetCode 85 - Maximal Rectangle</title><link>https://HoshikawaRyuukou.github.io/posts/leetcode-85---maximal-rectangle/</link><pubDate>Thu, 13 Mar 2025 15:03:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/leetcode-85---maximal-rectangle/</guid><description>&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>LeetCode 85 - Maximal Rectangle</title><link>https://HoshikawaRyuukou.github.io/posts/leetcode-85-maximal-rectangle/</link><pubDate>Thu, 13 Mar 2025 15:03:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/leetcode-85-maximal-rectangle/</guid><description>&lt;h2 id="description"&gt;Description&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://leetcode.cn/problems/maximal-rectangle/description/"&gt;85. 最大矩形&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -1724,9 +1735,9 @@ Scope(s):
  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;
- &lt;img src="https://HoshikawaRyuukou.github.io/images/blog/Leetcode85.png" alt="Leetcode85"&gt;
+ &lt;img src="images/Leetcode85.webp" alt="Leetcode85"&gt;
 
-&lt;/p&gt;</description></item><item><title>LeetCode 84 - Largest Rectangle in Histogram</title><link>https://HoshikawaRyuukou.github.io/posts/leetcode-84---largest-rectangle-in-histogram/</link><pubDate>Thu, 13 Mar 2025 11:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/leetcode-84---largest-rectangle-in-histogram/</guid><description>&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;/p&gt;</description></item><item><title>LeetCode 84 - Largest Rectangle in Histogram</title><link>https://HoshikawaRyuukou.github.io/posts/leetcode-84-largest-rectangle-in-histogram/</link><pubDate>Thu, 13 Mar 2025 11:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/leetcode-84-largest-rectangle-in-histogram/</guid><description>&lt;h2 id="description"&gt;Description&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://leetcode.cn/problems/largest-rectangle-in-histogram/description/"&gt;84. 柱状图中最大的矩形&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -1810,7 +1821,7 @@ Scope(s):
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;最大矩形面積 = &lt;code&gt;10&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>ACG</title><link>https://HoshikawaRyuukou.github.io/posts/acg/</link><pubDate>Thu, 06 Mar 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/acg/</guid><description>&lt;h2 id="search"&gt;Search&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;最大矩形面積 = &lt;code&gt;10&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>ACG</title><link>https://HoshikawaRyuukou.github.io/posts/_single/acg/</link><pubDate>Thu, 06 Mar 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/acg/</guid><description>&lt;h2 id="search"&gt;Search&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://gelbooru.iqdb.org/"&gt;Gelbooru image search&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://danbooru.iqdb.org/"&gt;Danbooru image search&lt;/a&gt;&lt;/li&gt;
@@ -1819,7 +1830,7 @@ Scope(s):
 &lt;h2 id="translation"&gt;Translation&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://mangaday.ai/translation"&gt;Fast manga translator &amp;amp; Translations in Multiple Languages&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Stable Diffusion - Quick Start</title><link>https://HoshikawaRyuukou.github.io/posts/stable-diffusion---quick-start/</link><pubDate>Mon, 17 Feb 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/stable-diffusion---quick-start/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Stable Diffusion - Quick Start</title><link>https://HoshikawaRyuukou.github.io/posts/_single/stable-diffusion---quick-start/</link><pubDate>Mon, 17 Feb 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/stable-diffusion---quick-start/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;⚠️ 這是一篇新手導引，目的不在於精準解釋。&lt;/li&gt;
 &lt;li&gt;⚠️ &lt;strong&gt;Checkpoint&lt;/strong&gt; 一般會提供推薦的參數設置，建議依據模型的特性調整，以獲得最佳效果。&lt;/li&gt;
@@ -1871,7 +1882,7 @@ Scope(s):
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="sampler--schedule"&gt;Sampler + Schedule&lt;/h2&gt;
-&lt;p&gt;Sampler 是從雜訊圖到成品的&lt;strong&gt;去噪算法&lt;/strong&gt;。&lt;/p&gt;</description></item><item><title>Stable Diffusion - Env</title><link>https://HoshikawaRyuukou.github.io/posts/stable-diffusion---env/</link><pubDate>Mon, 10 Feb 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/stable-diffusion---env/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;Sampler 是從雜訊圖到成品的&lt;strong&gt;去噪算法&lt;/strong&gt;。&lt;/p&gt;</description></item><item><title>Stable Diffusion - Env</title><link>https://HoshikawaRyuukou.github.io/posts/_single/stable-diffusion---env/</link><pubDate>Mon, 10 Feb 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/stable-diffusion---env/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;⚠️ 以下皆須安裝指定版本不可貿然升級。&lt;/p&gt;
 &lt;p&gt;目前產圖只使用到 Forge + SDXL 。&lt;/p&gt;
 &lt;h2 id="local-deployment"&gt;Local deployment&lt;/h2&gt;
@@ -1897,7 +1908,7 @@ Scope(s):
 &lt;li&gt;&lt;a href="https://github.com/Physton/sd-webui-prompt-all-in-one"&gt;Physton/sd-webui-prompt-all-in-one&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/Bing-su/adetailer"&gt;Bing-su/adetailer&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/yankooliveira/sd-webui-photopea-embed"&gt;yankooliveira/sd-webui-photopea-embed&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Stable Diffusion - Illustrious XL</title><link>https://HoshikawaRyuukou.github.io/posts/stable-diffusion---illustrious-xl/</link><pubDate>Thu, 06 Feb 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/stable-diffusion---illustrious-xl/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Stable Diffusion - Illustrious XL</title><link>https://HoshikawaRyuukou.github.io/posts/_single/stable-diffusion---illustrious-xl/</link><pubDate>Thu, 06 Feb 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/stable-diffusion---illustrious-xl/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;目前 Stable Diffusion 只拿來自娛自樂 😃。&lt;/p&gt;
 &lt;h2 id="core-working-principles"&gt;Core Working Principles&lt;/h2&gt;
 &lt;p&gt;Stable Diffusion 主要包含三個核心技術：&lt;/p&gt;
@@ -1928,7 +1939,7 @@ Scope(s):
 &lt;h2 id="extras"&gt;Extras&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.pttweb.cc/bbs/C_Chat/M.1730732828.A.70C"&gt;Re: [問題] AI 風格怎麼了嗎？為什麼容易膩？ - 看板C_Chat - PTT網頁版&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>GitHub - SSH Key</title><link>https://HoshikawaRyuukou.github.io/posts/github---ssh-key/</link><pubDate>Sun, 02 Feb 2025 10:08:39 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/github---ssh-key/</guid><description>&lt;h2 id="configuration"&gt;Configuration&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>GitHub - SSH Key</title><link>https://HoshikawaRyuukou.github.io/posts/_single/github---ssh-key/</link><pubDate>Sun, 02 Feb 2025 10:08:39 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/github---ssh-key/</guid><description>&lt;h2 id="configuration"&gt;Configuration&lt;/h2&gt;
 &lt;p&gt;在 GitHub 上設定 SSH Key 主要有兩個情境：&lt;/p&gt;
 &lt;h3 id="1-新增至個人帳戶"&gt;1. 新增至個人帳戶&lt;/h3&gt;
 &lt;ul&gt;
@@ -1939,7 +1950,7 @@ Scope(s):
 &lt;ul&gt;
 &lt;li&gt;適用情境：您的 SSH Key &lt;strong&gt;僅需存取組織下某個特定的儲存庫&lt;/strong&gt;，而非整個帳戶。&lt;/li&gt;
 &lt;li&gt;設定位置：&lt;code&gt;GitHub 組織 &amp;gt; 目標 Repository &amp;gt; Settings &amp;gt; Deploy keys&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Workflow – Build and Deploy Hugo Site</title><link>https://HoshikawaRyuukou.github.io/posts/workflow--build-and-deploy-hugo-site/</link><pubDate>Thu, 30 Jan 2025 14:12:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow--build-and-deploy-hugo-site/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Workflow – Build and Deploy Hugo Site</title><link>https://HoshikawaRyuukou.github.io/posts/_single/workflow--build-and-deploy-hugo-site/</link><pubDate>Thu, 30 Jan 2025 14:12:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/workflow--build-and-deploy-hugo-site/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;當 &lt;code&gt;main&lt;/code&gt; 分支有 push，或有 pull request 時，會自動用 Hugo 生成靜態網站，並將 &lt;code&gt;public&lt;/code&gt; 目錄的內容部署到 GitHub Pages。&lt;/p&gt;
 &lt;h2 id="operation"&gt;Operation&lt;/h2&gt;
 &lt;ol&gt;
@@ -1981,7 +1992,7 @@ Scope(s):
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;with&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;github_token&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;${{ secrets.GITHUB_TOKEN }}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;publish_dir&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;./public&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Hugo</title><link>https://HoshikawaRyuukou.github.io/posts/hugo/</link><pubDate>Thu, 30 Jan 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/hugo/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>淺談 Hugo：簡單好用的靜態網站生成器</title><link>https://HoshikawaRyuukou.github.io/posts/hugo-overview/</link><pubDate>Thu, 30 Jan 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/hugo-overview/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Hugo&lt;/strong&gt; 是一款以 &lt;strong&gt;Go 語言&lt;/strong&gt;編寫的 &lt;strong&gt;靜態網站生成器（Static Site Generator, SSG）&lt;/strong&gt;，特色是 &lt;strong&gt;速度極快&lt;/strong&gt;、&lt;strong&gt;部署簡單&lt;/strong&gt;，且&lt;strong&gt;不依賴後端伺服器程式&lt;/strong&gt;。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2024,18 +2035,18 @@ Scope(s):
 &lt;h2 id="extras"&gt;Extras&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://mikefrobbins.com/2023/02/08/rendering-images-in-markdown-preview-of-hugo-site/"&gt;Rendering Images in Markdown Preview of Hugo Site&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Unity - Basic - Media</title><link>https://HoshikawaRyuukou.github.io/posts/unity---basic---media/</link><pubDate>Thu, 23 Jan 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---basic---media/</guid><description>&lt;h2 id="audio"&gt;Audio&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Unity - Basic - Media</title><link>https://HoshikawaRyuukou.github.io/posts/_single/unity---basic---media/</link><pubDate>Thu, 23 Jan 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/unity---basic---media/</guid><description>&lt;h2 id="audio"&gt;Audio&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://sharpcoderblog.com/blog/unity-3d-audio-clip-import-settings-for-the-best-performance"&gt;Unity Audio Clip Import Settings For The Best Performance&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.raywenderlich.com/532-audio-tutorial-for-unity-the-audio-mixer"&gt;Audio tutorial for Unity: the Audio Mixer&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://johnleonardfrench.com/the-right-way-to-make-a-volume-slider-in-unity-using-logarithmic-conversion/"&gt;The right way to make a volume slider in Unity&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Unity - Basic - Editor</title><link>https://HoshikawaRyuukou.github.io/posts/unity---basic---editor/</link><pubDate>Wed, 22 Jan 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---basic---editor/</guid><description>&lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Unity - Basic - Editor</title><link>https://HoshikawaRyuukou.github.io/posts/_single/unity---basic---editor/</link><pubDate>Wed, 22 Jan 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/unity---basic---editor/</guid><description>&lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://linkliu.github.io/game-tech-post/posts/%E5%9C%A8Unity%E7%BC%96%E8%BE%91%E5%99%A8%E4%B8%8D%E5%90%8C%E4%BD%8D%E7%BD%AE%E6%B7%BB%E5%8A%A0%E8%8F%9C%E5%8D%95/"&gt;在unity编辑器不同位置添加菜单&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://light11.hatenadiary.com/entry/2021/12/13/194147"&gt;SerializeReferenceをつけている型をリネーム・削除する時の注意点&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://forum.unity.com/threads/what-are-editorbuildsettings-config-objects-used-for-or-how-can-i-use-them.712031/"&gt;What are EditorBuildSettings config objects used for or how can I use them?&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://docs.unity.cn/cn/current/ScriptReference/EditorBuildSettings.TryGetConfigObject.html"&gt;EditorBuildSettings Example&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Unity - Basic - UI</title><link>https://HoshikawaRyuukou.github.io/posts/unity---basic---ui/</link><pubDate>Mon, 20 Jan 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---basic---ui/</guid><description>&lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Unity - Basic - UI</title><link>https://HoshikawaRyuukou.github.io/posts/_single/unity---basic---ui/</link><pubDate>Mon, 20 Jan 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/unity---basic---ui/</guid><description>&lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://shibuya24.info/entry/unity-ui-anchor"&gt;【Unity】3つだけでいい!?覚えるべきUIアンカー&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://shibuya24.info/entry/unity-ui-layout"&gt;【Unity基礎】スマホ向けゲームUIの作り方！基本的なUI配置から複数解像度対応まで解説&lt;/a&gt;&lt;/li&gt;
@@ -2064,10 +2075,10 @@ Scope(s):
 &lt;li&gt;&lt;a href="https://gametorrahod.com/textmeshpro-anatomy/"&gt;TextMeshPro Anatomy&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.bilibili.com/video/BV1oK411x7MG"&gt;[Unity干货]使用TextMeshPro动态字体节省时间&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://nekojara.city/unity-textmesh-pro-sprite-number"&gt;【Unity】TextMesh Proで数字をスプライト表示する&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Unity - Platform - Web - Issue</title><link>https://HoshikawaRyuukou.github.io/posts/unity---platform---web---issue/</link><pubDate>Sun, 19 Jan 2025 16:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---platform---web---issue/</guid><description>&lt;h2 id="error"&gt;Error&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Unity - Platform - Web - Issue</title><link>https://HoshikawaRyuukou.github.io/posts/_single/unity---platform---web---issue/</link><pubDate>Sun, 19 Jan 2025 16:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/unity---platform---web---issue/</guid><description>&lt;h2 id="error"&gt;Error&lt;/h2&gt;
 &lt;h3 id="error--failed-to-parse-binary-data-file-buildxxxdatabr"&gt;Error : Failed to parse binary data file Build/xxx.data.br&amp;hellip;&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Failed to parse binary data file Build/web.data.br (with &amp;ldquo;Content-Type: null&amp;rdquo;), because it is still brotli-compressed. It should have been uncompressed by the browser, but it was unable to do so since the web server provided the compressed content without specifying the HTTP Response Header &amp;ldquo;Content-Encoding: br&amp;rdquo; that would have informed the browser that decompression is needed. Please verify your web server hosting configuration to add the missing &amp;ldquo;Content-Encoding: br&amp;rdquo; HTTP Response Header.&lt;/p&gt;</description></item><item><title>Software Design - Principle - Inversion of Control (IoC)</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---principle---inversion-of-control-ioc/</link><pubDate>Thu, 16 Jan 2025 20:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---principle---inversion-of-control-ioc/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;Failed to parse binary data file Build/web.data.br (with &amp;ldquo;Content-Type: null&amp;rdquo;), because it is still brotli-compressed. It should have been uncompressed by the browser, but it was unable to do so since the web server provided the compressed content without specifying the HTTP Response Header &amp;ldquo;Content-Encoding: br&amp;rdquo; that would have informed the browser that decompression is needed. Please verify your web server hosting configuration to add the missing &amp;ldquo;Content-Encoding: br&amp;rdquo; HTTP Response Header.&lt;/p&gt;</description></item><item><title>Software Design - Principle - Inversion of Control (IoC)</title><link>https://HoshikawaRyuukou.github.io/posts/_single/software-design---principle---inversion-of-control-ioc/</link><pubDate>Thu, 16 Jan 2025 20:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/software-design---principle---inversion-of-control-ioc/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;「控制反轉（Inversion of Control, IoC）」這個詞常常讓人一頭霧水──到底反轉了什麼？&lt;/p&gt;
 &lt;p&gt;更麻煩的是，它還很容易和「依賴倒置（Dependency Inversion）」混淆 😅&lt;/p&gt;
 &lt;p&gt;如果你在開發時有出現以下這些疑惑，那麼你其實已經在思考 IoC 要解決的問題了：&lt;/p&gt;
@@ -2131,7 +2142,7 @@ Scope(s):
 &lt;p&gt;&lt;strong&gt;實作原理：&lt;/strong&gt; 需求方會直接呼叫容器的方法（例如 &lt;code&gt;container.resolve()&lt;/code&gt;），來取得所需的服務。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;優點：&lt;/strong&gt; 簡單直觀。&lt;/p&gt;</description></item><item><title>Software Design - Concept - Object Lifecycle Management</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---concept---object-lifecycle-management/</link><pubDate>Sat, 04 Jan 2025 21:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---concept---object-lifecycle-management/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;優點：&lt;/strong&gt; 簡單直觀。&lt;/p&gt;</description></item><item><title>Software Design - Concept - Object Lifecycle Management</title><link>https://HoshikawaRyuukou.github.io/posts/_single/software-design---concept---object-lifecycle-management/</link><pubDate>Sat, 04 Jan 2025 21:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/software-design---concept---object-lifecycle-management/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;物件生命週期管理（Object Lifecycle Management）&lt;strong&gt;是程式設計中的一個重要概念，它指的是有效控制和管理一個物件從&lt;/strong&gt;建立&lt;/strong&gt;、&lt;strong&gt;使用&lt;/strong&gt;到&lt;strong&gt;銷毀&lt;/strong&gt;的整個過程。良好的生命週期管理不僅能提升應用程式的效能，還能提高程式碼的可維護性，並有效地利用系統資源。&lt;/p&gt;
 &lt;h2 id="stage"&gt;Stage&lt;/h2&gt;
 &lt;ol&gt;
@@ -2162,7 +2173,7 @@ Scope(s):
 &lt;p&gt;範圍（Scoped）&lt;/p&gt;
 &lt;p&gt;這是一種介於瞬時和單例之間的模式。物件的生命週期被限制在一個特定的作用範圍內，例如一次 HTTP 請求或一個獨立的執行單元。在該範圍內，該物件都是唯一的；但當範圍結束時，該物件就會被銷毀。這種模式非常適合在單次請求中共享狀態，同時又確保不同請求之間不會互相干擾。&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title>Workflow – Clean Up Old GitHub Deployments</title><link>https://HoshikawaRyuukou.github.io/posts/workflow--clean-up-old-github-deployments/</link><pubDate>Wed, 13 Nov 2024 20:31:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow--clean-up-old-github-deployments/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ol&gt;</description></item><item><title>Workflow – Clean Up Old GitHub Deployments</title><link>https://HoshikawaRyuukou.github.io/posts/_single/workflow--clean-up-old-github-deployments/</link><pubDate>Wed, 13 Nov 2024 20:31:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/workflow--clean-up-old-github-deployments/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;透過 GitHub CLI (&lt;strong&gt;&lt;code&gt;gh&lt;/code&gt;&lt;/strong&gt;) 刪除一個儲存庫中&lt;strong&gt;最舊的部署（deployment）記錄&lt;/strong&gt;，保留最新的 10 筆。&lt;/p&gt;
 &lt;h2 id="operation"&gt;Operation&lt;/h2&gt;
 &lt;h3 id="登入"&gt;登入&lt;/h3&gt;
@@ -2210,7 +2221,7 @@ Scope(s):
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;code&gt;| ForEach-Object { ... }&lt;/code&gt;&lt;/p&gt;</description></item><item><title>GitHub - GitHub CLI</title><link>https://HoshikawaRyuukou.github.io/posts/github---github-cli/</link><pubDate>Tue, 12 Nov 2024 13:08:39 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/github---github-cli/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;| ForEach-Object { ... }&lt;/code&gt;&lt;/p&gt;</description></item><item><title>GitHub - GitHub CLI</title><link>https://HoshikawaRyuukou.github.io/posts/_single/github---github-cli/</link><pubDate>Tue, 12 Nov 2024 13:08:39 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/github---github-cli/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;GitHub 網頁面板上沒辦法執行刪除 deployment，得用 GitHub CLI 來操作😂。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2221,7 +2232,7 @@ Scope(s):
 &lt;h2 id="operation"&gt;Operation&lt;/h2&gt;
 &lt;h3 id="登入"&gt;登入&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;gh auth login
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Software Design - Pattern</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern/</link><pubDate>Tue, 01 Oct 2024 09:56:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Software Design - Pattern</title><link>https://HoshikawaRyuukou.github.io/posts/_single/software-design---pattern/</link><pubDate>Tue, 01 Oct 2024 09:56:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/software-design---pattern/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;在軟體工程中，&lt;strong&gt;設計模式&lt;/strong&gt;（Design Pattern）是解決常見問題的一套可重複使用的最佳實踐方案。它們就像是經驗豐富的工程師為特定情境寫下的「操作手冊」，能幫助我們寫出更具彈性、易於維護且可擴展的程式碼。&lt;/p&gt;
 &lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
 &lt;h3 id="factory"&gt;Factory&lt;/h3&gt;
@@ -2232,7 +2243,7 @@ Scope(s):
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://hackernoon.com/observer-vs-pub-sub-pattern-50d3b27f838c"&gt;Observer vs Pub-Sub pattern&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.semicolonandsons.com/code_diary/architecture/pub-sub-system-pros-and-cons"&gt;Pub sub system pros and cons&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Unity - Package - UniTask</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package---unitask/</link><pubDate>Tue, 24 Sep 2024 09:45:17 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package---unitask/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Unity - Package - UniTask</title><link>https://HoshikawaRyuukou.github.io/posts/_single/unity---package---unitask/</link><pubDate>Tue, 24 Sep 2024 09:45:17 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/unity---package---unitask/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;UniTask 是一個專為 Unity 設計的高效能非同步程式設計函式庫，它以 C# 的 &lt;code&gt;async/await&lt;/code&gt; 語法為基礎，旨在提供一個比 Unity 原生 Coroutine (協程) 和內建 Task 更高效能、更低記憶體消耗的非同步解決方案。&lt;/p&gt;
 &lt;p&gt;雖然 Unity 2023.1 版本已正式引入 &lt;code&gt;UnityEngine.Awaitable&lt;/code&gt;，為 &lt;code&gt;async/await&lt;/code&gt; 提供了官方支援，但目前 UniTask 的生態系（例如與其他常用函式庫的整合）依然更加成熟和廣泛，因此在專案中導入 UniTask 仍是主流且可靠的選擇。&lt;/p&gt;
 &lt;ul&gt;
@@ -2262,7 +2273,7 @@ Scope(s):
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;回傳值：從迂迴的 Callback 到直接 &lt;code&gt;await&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Unity - Package - LitMotion</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package---litmotion/</link><pubDate>Fri, 23 Aug 2024 10:08:39 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package---litmotion/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;回傳值：從迂迴的 Callback 到直接 &lt;code&gt;await&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Unity - Package - LitMotion</title><link>https://HoshikawaRyuukou.github.io/posts/_single/unity---package---litmotion/</link><pubDate>Fri, 23 Aug 2024 10:08:39 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/unity---package---litmotion/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;從 DOTween 轉換到 LitMotion 的過程很順利，特別是看中它「零記憶體配置」（Zero Allocation）的特性。加上它對 UniTask 和 R3 的良好支援。&lt;/p&gt;
 &lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
 &lt;ul&gt;
@@ -2274,7 +2285,7 @@ Scope(s):
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.karvan1230.com/entry/2025/07/01/200000"&gt;【Unity】2次ベジェ曲線を使ってLitMotionでジャンプ機能を実装する - 原カバンは鞄のお店ではありません。&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.karvan1230.com/entry/2024/05/07/215217"&gt;【Unity】Splineを利用してLitMotionでパス移動を実現する - 原カバンは鞄のお店ではありません。&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Chat - Profile - Studio</title><link>https://HoshikawaRyuukou.github.io/posts/chat---profile---studio/</link><pubDate>Tue, 13 Aug 2024 20:31:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/chat---profile---studio/</guid><description>&lt;h2 id="箱庭工作室-miniature-garden-studio"&gt;箱庭工作室 (Miniature Garden Studio)&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Chat - Profile - Studio</title><link>https://HoshikawaRyuukou.github.io/posts/_single/chat---profile---studio/</link><pubDate>Tue, 13 Aug 2024 20:31:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/chat---profile---studio/</guid><description>&lt;h2 id="箱庭工作室-miniature-garden-studio"&gt;箱庭工作室 (Miniature Garden Studio)&lt;/h2&gt;
 &lt;p&gt;這是我的工作室名，其核心思想是&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;每個創作都是一個精心構築的 &lt;strong&gt;箱庭/微型世界&lt;/strong&gt;，在有限的環境中創造豐富且深度的體驗，讓使用者能夠沉浸其中。&lt;/p&gt;
@@ -2286,7 +2297,7 @@ Scope(s):
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.ign.com.cn/ign-xiao-ke-tang/22014/feature/ignxiao-ke-tang-49xiang-ting"&gt;IGN小课堂#49：箱庭&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.gcores.com/articles/122163"&gt;从沙盒和开放世界谈起，说说日本的箱庭设计理念&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Algorithm - Sampling - Alias Method</title><link>https://HoshikawaRyuukou.github.io/posts/algorithm---sampling---alias-method/</link><pubDate>Sun, 04 Aug 2024 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/algorithm---sampling---alias-method/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Algorithm - Sampling - Alias Method</title><link>https://HoshikawaRyuukou.github.io/posts/_single/algorithm---sampling---alias-method/</link><pubDate>Sun, 04 Aug 2024 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/algorithm---sampling---alias-method/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;別名方法是一種眾所周知的演算法，用於從任意離散機率分佈中進行恆定時間採樣，該演算法依賴於簡單的預先計算的查找表。&lt;/p&gt;
 &lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
 &lt;ul&gt;
@@ -2319,7 +2330,7 @@ Scope(s):
 &lt;h3 id="構建別名表"&gt;&lt;strong&gt;構建別名表&lt;/strong&gt;：&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;初始狀態：&lt;/p&gt;</description></item><item><title>OS - File System - Symbolic Link</title><link>https://HoshikawaRyuukou.github.io/posts/os---file-system---symbolic-link/</link><pubDate>Wed, 10 Jul 2024 09:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/os---file-system---symbolic-link/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;初始狀態：&lt;/p&gt;</description></item><item><title>OS - File System - Symbolic Link</title><link>https://HoshikawaRyuukou.github.io/posts/_single/os---file-system---symbolic-link/</link><pubDate>Wed, 10 Jul 2024 09:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/os---file-system---symbolic-link/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;符號連結本身只是一個檔案，但它的內容指向另一個檔案或資料夾的路徑。當你存取這個符號連結時，作業系統會自動將你導向到它所指向的目標。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2329,7 +2340,7 @@ Scope(s):
 &lt;ol&gt;
 &lt;li&gt;使用 &lt;strong&gt;cmd&lt;/strong&gt;（需管理員權限）：&lt;a href="https://learn.microsoft.com/zh-tw/windows-server/administration/windows-commands/mklink"&gt;mklink&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;使用 &lt;strong&gt;PowerShell&lt;/strong&gt;（需管理員權限）：&lt;a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/new-item?view=powershell-7.5#example-7-create-a-symbolic-link-to-a-file-or-folder"&gt;Create a symbolic link to a file or folder&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title>Software Development - Document - README</title><link>https://HoshikawaRyuukou.github.io/posts/software-development---document---readme/</link><pubDate>Tue, 18 Jun 2024 21:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-development---document---readme/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ol&gt;</description></item><item><title>Software Development - Document - README</title><link>https://HoshikawaRyuukou.github.io/posts/_single/software-development---document---readme/</link><pubDate>Tue, 18 Jun 2024 21:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/software-development---document---readme/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;最近我從 Unity 轉向了 Node.js，因此花了不少時間在 npm 上尋找合適的套件。大部分的 README 寫得很清晰，但也有少數讓人摸不著頭緒。這讓我意識到，&lt;strong&gt;README 就是專案的門面&lt;/strong&gt;。&lt;/p&gt;
 &lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
 &lt;ul&gt;
@@ -2340,7 +2351,7 @@ Scope(s):
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://gist.github.com/PurpleBooth/109311bb0361f32d87a2"&gt;README-Template.md&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.readme-templates.com/"&gt;GitHub README Templates&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Chat - Career - Software Engineer</title><link>https://HoshikawaRyuukou.github.io/posts/chat---career---software-engineer/</link><pubDate>Thu, 30 May 2024 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/chat---career---software-engineer/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Chat - Career - Software Engineer</title><link>https://HoshikawaRyuukou.github.io/posts/_single/chat---career---software-engineer/</link><pubDate>Thu, 30 May 2024 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/chat---career---software-engineer/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;後端：深入且穩定&lt;/li&gt;
 &lt;li&gt;前端：廣泛且彈性&lt;/li&gt;
@@ -2355,11 +2366,11 @@ Scope(s):
 &lt;li&gt;&lt;a href="https://github.com/labuladong/fucking-algorithm?tab=readme-ov-file"&gt;fucking-algorithm&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/krahets/hello-algo"&gt;hello-algo&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/TheAlgorithms"&gt;The Algorithms&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Unity - Basic - Animation</title><link>https://HoshikawaRyuukou.github.io/posts/unity---basic---animation/</link><pubDate>Tue, 23 Apr 2024 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---basic---animation/</guid><description>&lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Unity - Basic - Animation</title><link>https://HoshikawaRyuukou.github.io/posts/_single/unity---basic---animation/</link><pubDate>Tue, 23 Apr 2024 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/unity---basic---animation/</guid><description>&lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=MMWm3JokFdg"&gt;Unity Animation | 動畫 | 15分鐘介紹 Animation Clip、Animator Controller 以及 State Machines&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=7ioLrW8QFcI"&gt;Unity Blend Trees | 10分鐘介紹混合樹 1D 和 2D Freeform Directional&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Unity - Coding - Renaming</title><link>https://HoshikawaRyuukou.github.io/posts/unity---coding---renaming/</link><pubDate>Wed, 27 Mar 2024 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---coding---renaming/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Unity - Coding - Renaming</title><link>https://HoshikawaRyuukou.github.io/posts/_single/unity---coding---renaming/</link><pubDate>Wed, 27 Mar 2024 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/unity---coding---renaming/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Rider 能更好處理 Unity 開發環境的大小事，但你知道的費用&amp;hellip; 👀&lt;/li&gt;
 &lt;li&gt;處理 Renaming 事務一律切到 Visual Studio，因為 VS Code 的支援很不到位。&lt;/li&gt;
@@ -2385,7 +2396,7 @@ Scope(s):
 &lt;ol&gt;
 &lt;li&gt;對著 Type 右鍵 - &lt;strong&gt;快速動作與重構&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;選擇 &lt;strong&gt;移到命名空間&lt;/strong&gt;（這樣所有的參考都會連動修改）&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title>Unity - Coding - Managed code stripping</title><link>https://HoshikawaRyuukou.github.io/posts/unity---coding---managed-code-stripping/</link><pubDate>Tue, 26 Mar 2024 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---coding---managed-code-stripping/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ol&gt;</description></item><item><title>Unity - Coding - Managed code stripping</title><link>https://HoshikawaRyuukou.github.io/posts/_single/unity---coding---managed-code-stripping/</link><pubDate>Tue, 26 Mar 2024 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/unity---coding---managed-code-stripping/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;在構建過程中，Unity 通過稱為託管代碼剝離的過程刪除未使用或無法訪問的代碼，這可以顯著減小應用程式的最終大小。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;File -&amp;gt; Build Settings -&amp;gt; Player Settings -&amp;gt; Optimization -&amp;gt; Managed Stripping Level&lt;/p&gt;
@@ -2423,7 +2434,7 @@ Scope(s):
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;lt;type&lt;/span&gt; &lt;span style="color:#75af00"&gt;fullname=&lt;/span&gt;&lt;span style="color:#d88200"&gt;&amp;#34;UnityEngine.Rigidbody2D&amp;#34;&lt;/span&gt; &lt;span style="color:#75af00"&gt;preserve=&lt;/span&gt;&lt;span style="color:#d88200"&gt;&amp;#34;all&amp;#34;&lt;/span&gt;&lt;span style="color:#f92672"&gt;/&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;lt;/assembly&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;&amp;lt;/linker&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Assets - Game</title><link>https://HoshikawaRyuukou.github.io/posts/assets---game/</link><pubDate>Sun, 11 Feb 2024 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/assets---game/</guid><description>&lt;h2 id="extracting"&gt;Extracting&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Assets - Game</title><link>https://HoshikawaRyuukou.github.io/posts/_single/assets---game/</link><pubDate>Sun, 11 Feb 2024 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/assets---game/</guid><description>&lt;h2 id="extracting"&gt;Extracting&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/AssetRipper/AssetRipper"&gt;AssetRipper/AssetRipper&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -2432,7 +2443,7 @@ Scope(s):
 &lt;li&gt;&lt;a href="https://github.com/28598519a/TSK_AssetDL"&gt;28598519a/TSK_AssetDL&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/ZM-Kimu/Blue-Archive-Asset-Downloader"&gt;ZM-Kimu/Blue-Archive-Asset-Downloader&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/Deathemonic/BA-AD"&gt;Deathemonic/BA-AD&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Unity - Package Manager - Modify a Package</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---modify-a-package/</link><pubDate>Fri, 12 Jan 2024 12:46:15 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---modify-a-package/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Unity - Package Manager - Modify a Package</title><link>https://HoshikawaRyuukou.github.io/posts/_single/unity---package-manager---modify-a-package/</link><pubDate>Fri, 12 Jan 2024 12:46:15 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/unity---package-manager---modify-a-package/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;客製化 Unity 官方 / git 直接導入 的 Package&lt;/p&gt;
 &lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
 &lt;ul&gt;
@@ -2443,7 +2454,7 @@ Scope(s):
 &lt;ol&gt;
 &lt;li&gt;至 &lt;code&gt;ProjrctRoot\Library\PackageCache&lt;/code&gt; 找到目標的 Package&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;剪下貼上&lt;/strong&gt;至 &lt;code&gt;ProjrctRoot\Packages&lt;/code&gt; 即可&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title>Unity - Package - External Dependency Manager for Unity (EDM4U)</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package---external-dependency-manager-for-unity-edm4u/</link><pubDate>Wed, 08 Nov 2023 12:46:15 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package---external-dependency-manager-for-unity-edm4u/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ol&gt;</description></item><item><title>Unity - Packages - External Dependency Manager for Unity (EDM4U)</title><link>https://HoshikawaRyuukou.github.io/posts/unity-packages-external-dependency-manager-for-unity/</link><pubDate>Wed, 08 Nov 2023 12:46:15 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-packages-external-dependency-manager-for-unity/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;Google 停止維護 Game Package Registry (GPR) 導致不能直接使用 Package Manager 導入包。必須到封存檔網站下載「.tgz」手動導入。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://developers.google.com/unity/archive?hl=zh-tw#external_dependency_manager_for_unity"&gt;Google Unity 套件&lt;/a&gt;&lt;/li&gt;
@@ -2454,18 +2465,18 @@ Scope(s):
 &lt;p&gt;&lt;code&gt;Assets &amp;gt; External Dependency Manager &amp;gt; Android Resolver &amp;gt; Settings&lt;/code&gt;
 啟用這三個 Patch&lt;/p&gt;
 &lt;p&gt;
- &lt;img src="https://HoshikawaRyuukou.github.io/images/blog/EDM4U_01.png" alt="EDM4U_01"&gt;
+ &lt;img src="EDM4U_01.webp" alt=""&gt;
 
 &lt;/p&gt;
 &lt;p&gt;並至 &lt;code&gt;Player Settings &amp;gt; Publishing Settings&lt;/code&gt;
 啟用以下選項&lt;/p&gt;
 &lt;p&gt;
- &lt;img src="https://HoshikawaRyuukou.github.io/images/blog/EDM4U_02.png" alt="EDM4U_02"&gt;
+ &lt;img src="EDM4U_02.webp" alt=""&gt;
 
 &lt;/p&gt;
 &lt;h2 id="auto-resolution"&gt;Auto Resolution&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;Assets &amp;gt; External Dependency Manager &amp;gt; Android Resolver &amp;gt; Force Resolve&lt;/code&gt;
-後會去收集專案&lt;strong&gt;所有 Editor 資料夾&lt;/strong&gt;下的 *&lt;strong&gt;Dependencies.xml&lt;/strong&gt; 加到 mainTemplate 中&lt;/p&gt;</description></item><item><title>Git - Rebase</title><link>https://HoshikawaRyuukou.github.io/posts/git---rebase/</link><pubDate>Sun, 16 Jul 2023 10:08:39 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/git---rebase/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+後會去收集專案&lt;strong&gt;所有 Editor 資料夾&lt;/strong&gt;下的 *&lt;strong&gt;Dependencies.xml&lt;/strong&gt; 加到 mainTemplate 中&lt;/p&gt;</description></item><item><title>Git - Rebase</title><link>https://HoshikawaRyuukou.github.io/posts/_single/git---rebase/</link><pubDate>Sun, 16 Jul 2023 10:08:39 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/git---rebase/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;過去常以為 &lt;code&gt;rebase&lt;/code&gt; 是像「剪下貼上」的操作，但實際上更像是「複製貼上」，它會將一系列的 Commit 複製一份，並重新套用在新的基底上，因此會產生新的 SHA-1 值。&lt;/p&gt;
 &lt;h3 id="主要情境與特性"&gt;&lt;strong&gt;主要情境與特性&lt;/strong&gt;&lt;/h3&gt;
 &lt;ul&gt;
@@ -2497,7 +2508,7 @@ Scope(s):
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;使用 &lt;code&gt;ORIG_HEAD&lt;/code&gt; 快速回溯&lt;/strong&gt; 由於 Git 在執行 &lt;code&gt;reset&lt;/code&gt; 等具風險的操作時，會額外將上一個 HEAD 的位置記錄在 &lt;code&gt;ORIG_HEAD&lt;/code&gt; 中。因此，你也可以直接執行以下指令來快速達到相同的效果：&lt;/p&gt;</description></item><item><title>GitHub - Pull Request</title><link>https://HoshikawaRyuukou.github.io/posts/github---pull-request/</link><pubDate>Fri, 14 Jul 2023 10:08:39 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/github---pull-request/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;使用 &lt;code&gt;ORIG_HEAD&lt;/code&gt; 快速回溯&lt;/strong&gt; 由於 Git 在執行 &lt;code&gt;reset&lt;/code&gt; 等具風險的操作時，會額外將上一個 HEAD 的位置記錄在 &lt;code&gt;ORIG_HEAD&lt;/code&gt; 中。因此，你也可以直接執行以下指令來快速達到相同的效果：&lt;/p&gt;</description></item><item><title>GitHub - Pull Request</title><link>https://HoshikawaRyuukou.github.io/posts/_single/github---pull-request/</link><pubDate>Fri, 14 Jul 2023 10:08:39 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/github---pull-request/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;有些環境也稱為合併請求（Merge Request）。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2507,7 +2518,7 @@ Scope(s):
 &lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://gitbook.tw/chapters/github/pull-request"&gt;與其它開發者的互動 - 使用 Pull Request（PR）&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Git - Reapply .gitignore</title><link>https://HoshikawaRyuukou.github.io/posts/git---reapply-.gitignore/</link><pubDate>Fri, 14 Jul 2023 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/git---reapply-.gitignore/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Git - Reapply .gitignore</title><link>https://HoshikawaRyuukou.github.io/posts/_single/git---reapply-.gitignore/</link><pubDate>Fri, 14 Jul 2023 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/git---reapply-.gitignore/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;當你一開始沒 ignore 到某些檔案，後來補上 .gitignore，卻發現 Git 還是繼續追蹤那些檔案。&lt;/p&gt;
 &lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 先清掉 Git 的快取（不會刪檔，只是取消追蹤）&lt;/span&gt;
@@ -2518,7 +2529,7 @@ Scope(s):
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 然後提交變更&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git commit -m &lt;span style="color:#d88200"&gt;&amp;#34;Reapply .gitignore rules&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Unity - Basic - Preprocessor Directives</title><link>https://HoshikawaRyuukou.github.io/posts/unity---basic---preprocessor-directives/</link><pubDate>Fri, 07 Jul 2023 16:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---basic---preprocessor-directives/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Unity - Basic - Preprocessor Directives</title><link>https://HoshikawaRyuukou.github.io/posts/_single/unity---basic---preprocessor-directives/</link><pubDate>Fri, 07 Jul 2023 16:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/unity---basic---preprocessor-directives/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;在口語交流中，我們常用 &lt;strong&gt;&lt;code&gt;Define&lt;/code&gt;&lt;/strong&gt; 來稱呼，但正式名稱其實是 &lt;strong&gt;前置處理器指示詞（Preprocessor Directives）&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;我最近接手一個舊專案時，發現裡面大量使用了 &lt;strong&gt;條件式編譯&lt;/strong&gt;。例如：&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-csharp" data-lang="csharp"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#if&lt;/span&gt; &lt;span style="color:#111"&gt;DEBUG&lt;/span&gt;
@@ -2563,7 +2574,7 @@ Scope(s):
 &lt;h2 id="practice"&gt;Practice&lt;/h2&gt;
 &lt;p&gt;原則上能避免就避免使用，通常可以透過 &lt;strong&gt;條件分支&lt;/strong&gt;、&lt;strong&gt;策略模式&lt;/strong&gt; 或 &lt;strong&gt;依賴注入&lt;/strong&gt; 來更清楚地表達邏輯，並提升程式的可維護性。&lt;/p&gt;
 &lt;h3 id="-允許--少量使用-unity_editor-在-monobehaviour"&gt;✅ 允許 — 少量使用 &lt;code&gt;UNITY_EDITOR&lt;/code&gt; 在 MonoBehaviour&lt;/h3&gt;
-&lt;p&gt;某些情境下需要針對編輯器做額外處理(客製編輯器)，這算是合理的使用方式：&lt;/p&gt;</description></item><item><title>Software Design - Pattern - Service Locator</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---service-locator/</link><pubDate>Wed, 28 Jun 2023 16:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---service-locator/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;某些情境下需要針對編輯器做額外處理(客製編輯器)，這算是合理的使用方式：&lt;/p&gt;</description></item><item><title>Software Design - Pattern - Service Locator</title><link>https://HoshikawaRyuukou.github.io/posts/_single/software-design---pattern---service-locator/</link><pubDate>Wed, 28 Jun 2023 16:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/software-design---pattern---service-locator/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Service Locator&lt;/strong&gt; 是一種 &lt;strong&gt;依賴尋找（Dependency Lookup）&lt;/strong&gt; 的實作方式，它確實屬於控制反轉（IoC）的一種。&lt;/p&gt;
 &lt;p&gt;過去我曾頻繁使用這個模式，當時對於 DI（依賴注入）與 IoC 的概念還不熟悉，只覺得它讓依賴的取用變得非常方便，因為你可以在任何地方直接這樣取得所需物件：&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-csharp" data-lang="csharp"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00a8c8"&gt;var&lt;/span&gt; &lt;span style="color:#111"&gt;target&lt;/span&gt; &lt;span style="color:#111"&gt;=&lt;/span&gt; &lt;span style="color:#111"&gt;ServiceLocator&lt;/span&gt;&lt;span style="color:#111"&gt;.&lt;/span&gt;&lt;span style="color:#111"&gt;Resovle&lt;/span&gt;&lt;span style="color:#111"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#111"&gt;Target&lt;/span&gt;&lt;span style="color:#111"&gt;&amp;gt;();&lt;/span&gt;
@@ -2655,7 +2666,7 @@ Scope(s):
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#111"&gt;text&lt;/span&gt;&lt;span style="color:#111"&gt;.&lt;/span&gt;&lt;span style="color:#111"&gt;text&lt;/span&gt; &lt;span style="color:#111"&gt;=&lt;/span&gt; &lt;span style="color:#111"&gt;moneyFormatConverter&lt;/span&gt;&lt;span style="color:#111"&gt;.&lt;/span&gt;&lt;span style="color:#111"&gt;Convert&lt;/span&gt;&lt;span style="color:#111"&gt;(&lt;/span&gt;&lt;span style="color:#111"&gt;moneyValue&lt;/span&gt;&lt;span style="color:#111"&gt;);&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#111"&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Unity - Basic - Assembly Definition (Asmdef)</title><link>https://HoshikawaRyuukou.github.io/posts/unity---basic---assembly-definition-asmdef/</link><pubDate>Mon, 19 Jun 2023 12:46:15 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---basic---assembly-definition-asmdef/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Unity - Basic - Assembly Definition (Asmdef)</title><link>https://HoshikawaRyuukou.github.io/posts/_single/unity---basic---assembly-definition-asmdef/</link><pubDate>Mon, 19 Jun 2023 12:46:15 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/unity---basic---assembly-definition-asmdef/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Assembly Definition (asmdef)&lt;/strong&gt; 檔案是 Unity 用來組織和管理專案程式碼的工具。它能將你的腳本分組，形成多個獨立的「&lt;strong&gt;程式集 (Assembly)&lt;/strong&gt;」。&lt;/p&gt;
 &lt;p&gt;在沒有使用 &lt;code&gt;asmdef&lt;/code&gt; 的情況下，Unity 會將所有腳本編譯成一個單一、龐大的 &lt;strong&gt;Assembly-CSharp.dll&lt;/strong&gt; 程式集。這會導致兩個主要問題：&lt;/p&gt;
 &lt;ul&gt;
@@ -2687,7 +2698,7 @@ Scope(s):
 &lt;p&gt;Unity 的 &lt;strong&gt;Package Manager&lt;/strong&gt; 系統正是建立在 &lt;code&gt;asmdef&lt;/code&gt; 的基礎上。每個 Unity 套件都必須使用 &lt;code&gt;asmdef&lt;/code&gt; 來定義其程式集結構，確保套件內的程式碼與專案其他部分相互獨立，只透過明確的引用進行互動。&lt;/p&gt;
 &lt;p&gt;這也是為什麼你在使用或開發 Unity 套件時，會看到每個功能模組都有其對應的 &lt;code&gt;asmdef&lt;/code&gt; 檔案。&lt;/p&gt;
 &lt;h2 id="常見的結構runtime-與-editor"&gt;常見的結構：Runtime 與 Editor&lt;/h2&gt;
-&lt;p&gt;在許多 Unity 專案和套件中，最常見的 &lt;code&gt;asmdef&lt;/code&gt; 結構是將程式碼區分為 &lt;strong&gt;Runtime&lt;/strong&gt; 和 &lt;strong&gt;Editor&lt;/strong&gt; 兩部分：&lt;/p&gt;</description></item><item><title>Unity - Editor - Scripted Importer</title><link>https://HoshikawaRyuukou.github.io/posts/unity---editor---scripted-importer/</link><pubDate>Sat, 27 May 2023 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---editor---scripted-importer/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;在許多 Unity 專案和套件中，最常見的 &lt;code&gt;asmdef&lt;/code&gt; 結構是將程式碼區分為 &lt;strong&gt;Runtime&lt;/strong&gt; 和 &lt;strong&gt;Editor&lt;/strong&gt; 兩部分：&lt;/p&gt;</description></item><item><title>Unity - Editor - Scripted Importer</title><link>https://HoshikawaRyuukou.github.io/posts/_single/unity---editor---scripted-importer/</link><pubDate>Sat, 27 May 2023 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/unity---editor---scripted-importer/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;為 Unity 本身不支持的文件格式編寫自定義資源導入器，從而添加支持。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2713,7 +2724,36 @@ Scope(s):
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#111"&gt;ctx&lt;/span&gt;&lt;span style="color:#111"&gt;.&lt;/span&gt;&lt;span style="color:#111"&gt;SetMainObject&lt;/span&gt;&lt;span style="color:#111"&gt;(&lt;/span&gt; &lt;span style="color:#111"&gt;subAsset&lt;/span&gt; &lt;span style="color:#111"&gt;);&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#111"&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Unity - Basic - DontDestroyOnLoad</title><link>https://HoshikawaRyuukou.github.io/posts/unity---basic---dontdestroyonload/</link><pubDate>Mon, 20 Mar 2023 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---basic---dontdestroyonload/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Unity - Package Manager - Sample Workflow</title><link>https://HoshikawaRyuukou.github.io/posts/unity-package-manager-sample-workflow/</link><pubDate>Sun, 09 Apr 2023 11:10:39 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-package-manager-sample-workflow/</guid><description>&lt;h2 id="package-samples"&gt;Package Samples&lt;/h2&gt;
+&lt;p&gt;對應有些模組的操作比較複雜繁瑣，有時需要有一些 Sample 做參考。官方 Package Manager 有個 &amp;ldquo;半套&amp;rdquo; Sample 工作流，讓人不是很舒服。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://docs.unity3d.com/2021.3/Documentation/Manual/cus-samples.html"&gt;官方文件&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Sample 資料夾後面加了波浪號 (&lt;del&gt;) 告訴 Unity 忽略 Samples&lt;/del&gt; 文件夾中的內容，此類文件夾不使用.meta文件進行跟踪。忽略 Samples~ 對 Package 使用者是好的，畢竟不是每個人都需要。&lt;/p&gt;
+&lt;p&gt;
+ &lt;img src="images/Unity_Package_BasicStructure.webp" alt="Unity_Package_BasicStructure"&gt;
+
+&lt;/p&gt;
+&lt;p&gt;但對 Package 開發者，畢竟 Samples 也是要進版控的，而這樣改名的作法會徒增一些重命名的提交也有點煩躁(除非在修改 Sample 的過程中完全不提交)。原先想說寫個 Samples ↔ Samples~ 切換的腳本就好，會一直有 meta 檔的警告(刪掉/改名都還是在)。&lt;/p&gt;
+&lt;p&gt;
+ &lt;img src="images/Unity_PackageManager_MetaWarning.webp" alt="Unity_PackageManager_MetaWarning"&gt;
+
+&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://forum.unity.com/threads/samples-in-packages-manual-setup.623080/#post-4991561"&gt;官方作法&lt;/a&gt; 論壇中的某篇討論才記載他們的做法(倒是加到文件中阿&amp;hellip;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在內部確實使用了名為 Samples 的文件夾 (沒有 Samples~ )&lt;/li&gt;
+&lt;li&gt;在推送新包版本之前通過腳本對其進行重命名(透過 CI )&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://medium.com/openupm/how-to-maintain-upm-package-part-1-7b4daf88d4c4"&gt;OpenUPM&lt;/a&gt; 的作者也是使用類似的工作流，總之我也調整為上述的方式。&lt;/p&gt;
+&lt;h2 id="透過-github-actions-workflow-調整目錄名"&gt;透過 GitHub Actions Workflow 調整目錄名&lt;/h2&gt;
+&lt;p&gt;我不熟 GitHub Actions/ YAML/ 文件操作，但這種初階的操作就交由 chatgpt 代勞，幫我省去不少實驗成本。這裡的操作只是堪用，應該有更好的方式。&lt;/p&gt;
+&lt;p&gt;以下是我要求的條件&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;想透過 GitHub Actions 中的 workflow 完成&lt;/li&gt;
+&lt;li&gt;如果 forPackage 分支已存在則將其刪除&lt;/li&gt;
+&lt;li&gt;從 main 建立新的 forPackage 分支&lt;/li&gt;
+&lt;li&gt;Assets/Modules 的所有子目錄(同時有 &amp;ldquo;package.json&amp;rdquo; 與 &amp;ldquo;Samples&amp;quot;資料夾)，將該子目錄的 &amp;ldquo;Samples資料夾&amp;rdquo; 重新命名 為 &amp;ldquo;Samples~資料夾&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;並提交更新&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;將產出的 yml 做一點微調即可。主要文件操作的出錯率很高，find 指令似乎是有些眉角，等有空再回頭研究。&lt;/p&gt;</description></item><item><title>Unity - Basic - DontDestroyOnLoad</title><link>https://HoshikawaRyuukou.github.io/posts/_single/unity---basic---dontdestroyonload/</link><pubDate>Mon, 20 Mar 2023 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/unity---basic---dontdestroyonload/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;「在尚未深入依賴注入框架前，我常使用它來管理跨場景的資源。」&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;「當然，在小專案中，它仍是一個相當方便實用的工具。」&lt;/strong&gt;&lt;/li&gt;
@@ -2733,7 +2773,7 @@ Scope(s):
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;記憶體洩漏&lt;/strong&gt;：如果一個 &lt;code&gt;DontDestroyOnLoad&lt;/code&gt; 物件在後續場景中不再需要，但沒有手動銷毀，它會一直存在於記憶體中。這會造成&lt;strong&gt;記憶體佔用增加&lt;/strong&gt;，導致遊戲效能下降，甚至出現記憶體洩漏。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;場景耦合&lt;/strong&gt;：&lt;code&gt;DontDestroyOnLoad&lt;/code&gt; 會打破 Unity 場景應有的&lt;strong&gt;獨立性&lt;/strong&gt;。當場景之間存在大量共享物件時，會增加它們之間的依賴性（&lt;strong&gt;高耦合&lt;/strong&gt;），使得程式碼難以管理、維護和測試。&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title>Software Design - Architecture - Modularization</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---architecture---modularization/</link><pubDate>Wed, 22 Feb 2023 20:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---architecture---modularization/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ol&gt;</description></item><item><title>Software Design - Architecture - Modularization</title><link>https://HoshikawaRyuukou.github.io/posts/_single/software-design---architecture---modularization/</link><pubDate>Wed, 22 Feb 2023 20:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/software-design---architecture---modularization/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;對於軟體模組化，我個人傾向採用漸進式的策略。不同的專案規模，從單一功能的小型專案到多功能的中型專案，各自有其適合的模組化方案。&lt;/p&gt;
 &lt;p&gt;在深入探討之前，強烈建議先參考以下連結中的圖表，這對於理解 Clean Architecture 的實際應用細節至關重要：&lt;/p&gt;
 &lt;ul&gt;
@@ -2757,7 +2797,7 @@ Scope(s):
 &lt;li&gt;&lt;a href="https://www.kamilgrzybek.com/design/modular-monolith-primer/"&gt;Modular Monolith architecture&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="thinking"&gt;Thinking&lt;/h2&gt;
-&lt;p&gt;以下我將以一個新的 Unity 專案為例，說明我的模組化實踐過程。&lt;/p&gt;</description></item><item><title>Unity - Basic - Misc</title><link>https://HoshikawaRyuukou.github.io/posts/unity---basic---misc/</link><pubDate>Mon, 20 Feb 2023 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---basic---misc/</guid><description>&lt;h2 id="camera"&gt;Camera&lt;/h2&gt;
+&lt;p&gt;以下我將以一個新的 Unity 專案為例，說明我的模組化實踐過程。&lt;/p&gt;</description></item><item><title>Unity - Basic - Misc</title><link>https://HoshikawaRyuukou.github.io/posts/_single/unity---basic---misc/</link><pubDate>Mon, 20 Feb 2023 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/unity---basic---misc/</guid><description>&lt;h2 id="camera"&gt;Camera&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://pressstart.vip/tutorials/2018/06/6/37/understanding-orthographic-size.html"&gt;Understanding Orthographic Size&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://blog.lujun.co/2019/06/02/unity_camera_clear_flags/#"&gt;探寻 Unity Camera 属性之 Clear Flags&lt;/a&gt;&lt;/li&gt;
@@ -2766,7 +2806,7 @@ Scope(s):
 &lt;h2 id="screen"&gt;Screen&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://gamedevbeginner.com/how-to-capture-the-screen-in-unity-3-methods/"&gt;How to capture the screen in Unity (3 methods)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Software Design - Architecture - Clean Architecture</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---architecture---clean-architecture/</link><pubDate>Sat, 04 Feb 2023 20:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---architecture---clean-architecture/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Software Design - Architecture - Clean Architecture</title><link>https://HoshikawaRyuukou.github.io/posts/_single/software-design---architecture---clean-architecture/</link><pubDate>Sat, 04 Feb 2023 20:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/software-design---architecture---clean-architecture/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;談到 Clean Architecture (CA)，我們總會先看到 Uncle Bob 的這張經典分層圖：&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html"&gt;
  &lt;img src="https://blog.cleancoder.com/uncle-bob/images/2012-08-13-the-clean-architecture/CleanArchitecture.jpg" alt="CA Layers"&gt;
@@ -2793,7 +2833,7 @@ Scope(s):
 &lt;li&gt;&lt;a href="https://dev.to/bespoyasov/clean-architecture-on-frontend-4311"&gt;Clean Architecture on Frontend&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id="discussion"&gt;Discussion&lt;/h3&gt;
-&lt;p&gt;&lt;em&gt;以下參考資料著重於觀念釐清（可能會帶有較重的教條色彩），以及初期探索時容易踩坑的地方與相關討論串。&lt;/em&gt;&lt;/p&gt;</description></item><item><title>Software Design - Pattern - Guard Clauses</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---guard-clauses/</link><pubDate>Tue, 10 Jan 2023 21:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---guard-clauses/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;以下參考資料著重於觀念釐清（可能會帶有較重的教條色彩），以及初期探索時容易踩坑的地方與相關討論串。&lt;/em&gt;&lt;/p&gt;</description></item><item><title>Software Design - Pattern - Guard Clauses</title><link>https://HoshikawaRyuukou.github.io/posts/_single/software-design---pattern---guard-clauses/</link><pubDate>Tue, 10 Jan 2023 21:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/software-design---pattern---guard-clauses/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;符合 Fail Fast 原則，驗證條件並在不滿足條件時立即停止執行。&lt;/li&gt;
 &lt;li&gt;增加可讀性(更扁平)，減少了巢狀判斷。&lt;/li&gt;
@@ -2819,7 +2859,7 @@ Scope(s):
 &lt;li&gt;&lt;a href="https://codeopinion.com/stop-using-trivial-guard-clauses-try-this-instead/"&gt;Stop using trivial Guard Clauses! Try this instead&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;文章作者避免瑣碎 Guard 的方式，是使用 Value Object，來避免域接受到無效參數。(YT評論區也建議閱讀，有許多不錯的討論)&lt;/p&gt;
-&lt;p&gt;但不可否認的 Guard Clause 作法在大多情況下是有益的。&lt;/p&gt;</description></item><item><title>Software Design - Pattern - Data Transfer Object (DTO)</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---data-transfer-object-dto/</link><pubDate>Sun, 11 Dec 2022 21:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---data-transfer-object-dto/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;但不可否認的 Guard Clause 作法在大多情況下是有益的。&lt;/p&gt;</description></item><item><title>Software Design - Pattern - Data Transfer Object (DTO)</title><link>https://HoshikawaRyuukou.github.io/posts/_single/software-design---pattern---data-transfer-object-dto/</link><pubDate>Sun, 11 Dec 2022 21:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/software-design---pattern---data-transfer-object-dto/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;DTO，即數據傳輸物件，是在系統各層（如 API 層與業務邏輯層）或不同服務之間傳遞資料的專用物件。它像一個純粹的「數據包裹」，只負責承載數據，不包含任何業務邏輯。&lt;/p&gt;
 &lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
 &lt;ul&gt;
@@ -2845,7 +2885,7 @@ Scope(s):
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id="trade-off"&gt;Trade-off&lt;/h2&gt;
-&lt;p&gt;需要額外定義 DTO 類別與轉換邏輯，增加了程式碼量。在極簡單的應用中可能顯得過度設計。&lt;/p&gt;</description></item><item><title>Software Design - Pattern - Model View Presenter (MVP)</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---model-view-presenter-mvp/</link><pubDate>Sat, 10 Dec 2022 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---pattern---model-view-presenter-mvp/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;需要額外定義 DTO 類別與轉換邏輯，增加了程式碼量。在極簡單的應用中可能顯得過度設計。&lt;/p&gt;</description></item><item><title>Software Design - Pattern - Model View Presenter (MVP)</title><link>https://HoshikawaRyuukou.github.io/posts/_single/software-design---pattern---model-view-presenter-mvp/</link><pubDate>Sat, 10 Dec 2022 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/software-design---pattern---model-view-presenter-mvp/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;在 Unity 開發中，MVP（Model-View-Presenter）是我最常用的架構模式。相比之下，MVC（Model-View-Controller）在實作上常有模糊地帶，Controller 容易與 View 過度耦合；而 MVVM（Model-View-ViewModel）則仰賴 Data Binding 機制的支援，會限制 View 的寫法與彈性。&lt;/p&gt;
 &lt;p&gt;MVP 的概念相對純粹，能清楚劃分各層的責任。在「關注點分離」（Separation of Concerns）的原則下，MVP 的構成如下：&lt;/p&gt;
 &lt;ul&gt;
@@ -2864,7 +2904,7 @@ Scope(s):
 &lt;h2 id="dependency"&gt;Dependency&lt;/h2&gt;
 &lt;p&gt;在 MVP 模式中，Presenter 與 View 的互動方式主要有兩種，其核心差異在於「依賴方向」。&lt;/p&gt;
 &lt;h3 id="1-view-依賴-presenter-supervising-controller"&gt;1. View 依賴 Presenter (Supervising Controller)&lt;/h3&gt;
-&lt;p&gt;在這種做法中，View 會持有 Presenter 的引用。當發生使用者操作（如按鈕點擊），View 直接呼叫 Presenter 的方法處理。&lt;/p&gt;</description></item><item><title>Assets</title><link>https://HoshikawaRyuukou.github.io/posts/assets/</link><pubDate>Tue, 22 Nov 2022 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/assets/</guid><description>&lt;h2 id="audio"&gt;Audio&lt;/h2&gt;
+&lt;p&gt;在這種做法中，View 會持有 Presenter 的引用。當發生使用者操作（如按鈕點擊），View 直接呼叫 Presenter 的方法處理。&lt;/p&gt;</description></item><item><title>Assets</title><link>https://HoshikawaRyuukou.github.io/posts/_single/assets/</link><pubDate>Tue, 22 Nov 2022 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/assets/</guid><description>&lt;h2 id="audio"&gt;Audio&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://maou.audio/"&gt;魔王魂&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://soundeffect-lab.info/"&gt;効果音ラボ&lt;/a&gt;&lt;/li&gt;
@@ -2914,4 +2954,4 @@ Scope(s):
 &lt;li&gt;&lt;a href="https://itch.io/game-assets"&gt;itch.io&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.kenney.nl/assets"&gt;Kenney&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://opengameart.org/"&gt;Opengameart&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title/><link>https://HoshikawaRyuukou.github.io/posts/%E9%9B%9C%E8%AB%87---%E6%AF%8F%E6%97%A5%E6%AF%8F%E5%91%A8%E6%83%85%E5%A0%B1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/%E9%9B%9C%E8%AB%87---%E6%AF%8F%E6%97%A5%E6%AF%8F%E5%91%A8%E6%83%85%E5%A0%B1/</guid><description/></item><item><title/><link>https://HoshikawaRyuukou.github.io/posts/%E9%9B%9C%E8%AB%87---%E8%BF%91%E6%9C%9F%E5%BC%95%E6%93%8E%E5%A4%A7%E5%BB%A0%E7%9A%84%E7%99%BC%E5%B1%95%E5%B8%83%E5%B1%80/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/%E9%9B%9C%E8%AB%87---%E8%BF%91%E6%9C%9F%E5%BC%95%E6%93%8E%E5%A4%A7%E5%BB%A0%E7%9A%84%E7%99%BC%E5%B1%95%E5%B8%83%E5%B1%80/</guid><description/></item></channel></rss>
+&lt;/ul&gt;</description></item></channel></rss>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Package_Manager on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/package_manager/</link><description>Recent content in Package_Manager on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Wed, 19 Mar 2025 12:46:15 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/package_manager/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Package Manager</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package-manager/</link><pubDate>Wed, 19 Mar 2025 12:46:15 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package-manager/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Package_Manager on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/package_manager/</link><description>Recent content in Package_Manager on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Wed, 19 Mar 2025 12:46:15 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/package_manager/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Package Manager</title><link>https://HoshikawaRyuukou.github.io/posts/_single/unity---package-manager/</link><pubDate>Wed, 19 Mar 2025 12:46:15 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/unity---package-manager/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Unity Package Manager (UPM) 的設計理念，是向現代軟體開發的 「套件管理系統」
 看齊，最主要的借鏡對象就是網頁開發領域的 NPM (Node Package Manager)。&lt;/p&gt;
@@ -37,7 +37,7 @@ Scope(s):
 &lt;h2 id="package-template"&gt;Package Template&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/IvanMurzak/Unity-Package-Template"&gt;GitHub - IvanMurzak/Unity-Package-Template: Template Unity Package for OpenUPM and NPMJS. Supports UPM (Unity Package Manager) with versioning.&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Unity - Package Manager - Modify a Package</title><link>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---modify-a-package/</link><pubDate>Fri, 12 Jan 2024 12:46:15 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---package-manager---modify-a-package/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Unity - Package Manager - Modify a Package</title><link>https://HoshikawaRyuukou.github.io/posts/_single/unity---package-manager---modify-a-package/</link><pubDate>Fri, 12 Jan 2024 12:46:15 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/unity---package-manager---modify-a-package/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;客製化 Unity 官方 / git 直接導入 的 Package&lt;/p&gt;
 &lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
 &lt;ul&gt;
@@ -48,4 +48,33 @@ Scope(s):
 &lt;ol&gt;
 &lt;li&gt;至 &lt;code&gt;ProjrctRoot\Library\PackageCache&lt;/code&gt; 找到目標的 Package&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;剪下貼上&lt;/strong&gt;至 &lt;code&gt;ProjrctRoot\Packages&lt;/code&gt; 即可&lt;/li&gt;
-&lt;/ol&gt;</description></item></channel></rss>
+&lt;/ol&gt;</description></item><item><title>Unity - Package Manager - Sample Workflow</title><link>https://HoshikawaRyuukou.github.io/posts/unity-package-manager-sample-workflow/</link><pubDate>Sun, 09 Apr 2023 11:10:39 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity-package-manager-sample-workflow/</guid><description>&lt;h2 id="package-samples"&gt;Package Samples&lt;/h2&gt;
+&lt;p&gt;對應有些模組的操作比較複雜繁瑣，有時需要有一些 Sample 做參考。官方 Package Manager 有個 &amp;ldquo;半套&amp;rdquo; Sample 工作流，讓人不是很舒服。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://docs.unity3d.com/2021.3/Documentation/Manual/cus-samples.html"&gt;官方文件&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Sample 資料夾後面加了波浪號 (&lt;del&gt;) 告訴 Unity 忽略 Samples&lt;/del&gt; 文件夾中的內容，此類文件夾不使用.meta文件進行跟踪。忽略 Samples~ 對 Package 使用者是好的，畢竟不是每個人都需要。&lt;/p&gt;
+&lt;p&gt;
+ &lt;img src="images/Unity_Package_BasicStructure.webp" alt="Unity_Package_BasicStructure"&gt;
+
+&lt;/p&gt;
+&lt;p&gt;但對 Package 開發者，畢竟 Samples 也是要進版控的，而這樣改名的作法會徒增一些重命名的提交也有點煩躁(除非在修改 Sample 的過程中完全不提交)。原先想說寫個 Samples ↔ Samples~ 切換的腳本就好，會一直有 meta 檔的警告(刪掉/改名都還是在)。&lt;/p&gt;
+&lt;p&gt;
+ &lt;img src="images/Unity_PackageManager_MetaWarning.webp" alt="Unity_PackageManager_MetaWarning"&gt;
+
+&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://forum.unity.com/threads/samples-in-packages-manual-setup.623080/#post-4991561"&gt;官方作法&lt;/a&gt; 論壇中的某篇討論才記載他們的做法(倒是加到文件中阿&amp;hellip;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在內部確實使用了名為 Samples 的文件夾 (沒有 Samples~ )&lt;/li&gt;
+&lt;li&gt;在推送新包版本之前通過腳本對其進行重命名(透過 CI )&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://medium.com/openupm/how-to-maintain-upm-package-part-1-7b4daf88d4c4"&gt;OpenUPM&lt;/a&gt; 的作者也是使用類似的工作流，總之我也調整為上述的方式。&lt;/p&gt;
+&lt;h2 id="透過-github-actions-workflow-調整目錄名"&gt;透過 GitHub Actions Workflow 調整目錄名&lt;/h2&gt;
+&lt;p&gt;我不熟 GitHub Actions/ YAML/ 文件操作，但這種初階的操作就交由 chatgpt 代勞，幫我省去不少實驗成本。這裡的操作只是堪用，應該有更好的方式。&lt;/p&gt;
+&lt;p&gt;以下是我要求的條件&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;想透過 GitHub Actions 中的 workflow 完成&lt;/li&gt;
+&lt;li&gt;如果 forPackage 分支已存在則將其刪除&lt;/li&gt;
+&lt;li&gt;從 main 建立新的 forPackage 分支&lt;/li&gt;
+&lt;li&gt;Assets/Modules 的所有子目錄(同時有 &amp;ldquo;package.json&amp;rdquo; 與 &amp;ldquo;Samples&amp;quot;資料夾)，將該子目錄的 &amp;ldquo;Samples資料夾&amp;rdquo; 重新命名 為 &amp;ldquo;Samples~資料夾&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;並提交更新&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;將產出的 yml 做一點微調即可。主要文件操作的出錯率很高，find 指令似乎是有些眉角，等有空再回頭研究。&lt;/p&gt;</description></item></channel></rss>

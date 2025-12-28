@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GitHub on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/github/</link><description>Recent content in GitHub on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Mon, 18 Aug 2025 20:38:51 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/github/index.xml" rel="self" type="application/rss+xml"/><item><title>Workflow – Host Unity Web Game on GitHub Pages</title><link>https://HoshikawaRyuukou.github.io/posts/workflow--host-unity-web-game-on-github-pages/</link><pubDate>Mon, 18 Aug 2025 20:38:51 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow--host-unity-web-game-on-github-pages/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Github on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/github/</link><description>Recent content in Github on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Mon, 18 Aug 2025 20:38:51 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/github/index.xml" rel="self" type="application/rss+xml"/><item><title>Workflow – Host Unity Web Game on GitHub Pages</title><link>https://HoshikawaRyuukou.github.io/posts/_single/workflow--host-unity-web-game-on-github-pages/</link><pubDate>Mon, 18 Aug 2025 20:38:51 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/workflow--host-unity-web-game-on-github-pages/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;⚠️ 在 Unity 中需啟用 &lt;strong&gt;Decompression Fallback&lt;/strong&gt;（因 GitHub Pages 不支援壓縮檔案）。&lt;/li&gt;
 &lt;li&gt;⚠️ &lt;strong&gt;僅 Public Repository&lt;/strong&gt; 可免費使用 GitHub Pages。&lt;/li&gt;
@@ -19,7 +19,7 @@
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;project-root/ 
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;├── .git
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;└── Builds/
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Chat - Personal Knowledge Management</title><link>https://HoshikawaRyuukou.github.io/posts/chat---personal-knowledge-management/</link><pubDate>Thu, 07 Aug 2025 09:56:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/chat---personal-knowledge-management/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Chat - Personal Knowledge Management</title><link>https://HoshikawaRyuukou.github.io/posts/_single/chat---personal-knowledge-management/</link><pubDate>Thu, 07 Aug 2025 09:56:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/chat---personal-knowledge-management/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;我對理想的筆記工具有四個核心要求：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -50,7 +50,7 @@
 &lt;p&gt;&lt;strong&gt;舊流程：&lt;/strong&gt; 筆記內容與 Hugo 專案深度耦合。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;新流程：&lt;/strong&gt; 將筆記視為一個獨立的專案，作為唯一的數據源（&lt;strong&gt;Single Source of Truth&lt;/strong&gt;）。Hugo 僅作為靜態網站的生成工具，不再直接編輯文章，而是接收 Obsidian 匯出的結果。&lt;/p&gt;</description></item><item><title>GitHub - SSH Key</title><link>https://HoshikawaRyuukou.github.io/posts/github---ssh-key/</link><pubDate>Sun, 02 Feb 2025 10:08:39 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/github---ssh-key/</guid><description>&lt;h2 id="configuration"&gt;Configuration&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;新流程：&lt;/strong&gt; 將筆記視為一個獨立的專案，作為唯一的數據源（&lt;strong&gt;Single Source of Truth&lt;/strong&gt;）。Hugo 僅作為靜態網站的生成工具，不再直接編輯文章，而是接收 Obsidian 匯出的結果。&lt;/p&gt;</description></item><item><title>GitHub - SSH Key</title><link>https://HoshikawaRyuukou.github.io/posts/_single/github---ssh-key/</link><pubDate>Sun, 02 Feb 2025 10:08:39 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/github---ssh-key/</guid><description>&lt;h2 id="configuration"&gt;Configuration&lt;/h2&gt;
 &lt;p&gt;在 GitHub 上設定 SSH Key 主要有兩個情境：&lt;/p&gt;
 &lt;h3 id="1-新增至個人帳戶"&gt;1. 新增至個人帳戶&lt;/h3&gt;
 &lt;ul&gt;
@@ -61,7 +61,7 @@
 &lt;ul&gt;
 &lt;li&gt;適用情境：您的 SSH Key &lt;strong&gt;僅需存取組織下某個特定的儲存庫&lt;/strong&gt;，而非整個帳戶。&lt;/li&gt;
 &lt;li&gt;設定位置：&lt;code&gt;GitHub 組織 &amp;gt; 目標 Repository &amp;gt; Settings &amp;gt; Deploy keys&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Workflow – Build and Deploy Hugo Site</title><link>https://HoshikawaRyuukou.github.io/posts/workflow--build-and-deploy-hugo-site/</link><pubDate>Thu, 30 Jan 2025 14:12:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow--build-and-deploy-hugo-site/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Workflow – Build and Deploy Hugo Site</title><link>https://HoshikawaRyuukou.github.io/posts/_single/workflow--build-and-deploy-hugo-site/</link><pubDate>Thu, 30 Jan 2025 14:12:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/workflow--build-and-deploy-hugo-site/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;當 &lt;code&gt;main&lt;/code&gt; 分支有 push，或有 pull request 時，會自動用 Hugo 生成靜態網站，並將 &lt;code&gt;public&lt;/code&gt; 目錄的內容部署到 GitHub Pages。&lt;/p&gt;
 &lt;h2 id="operation"&gt;Operation&lt;/h2&gt;
 &lt;ol&gt;
@@ -103,7 +103,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;with&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;github_token&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;${{ secrets.GITHUB_TOKEN }}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;publish_dir&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;./public&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Workflow – Clean Up Old GitHub Deployments</title><link>https://HoshikawaRyuukou.github.io/posts/workflow--clean-up-old-github-deployments/</link><pubDate>Wed, 13 Nov 2024 20:31:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow--clean-up-old-github-deployments/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Workflow – Clean Up Old GitHub Deployments</title><link>https://HoshikawaRyuukou.github.io/posts/_single/workflow--clean-up-old-github-deployments/</link><pubDate>Wed, 13 Nov 2024 20:31:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/workflow--clean-up-old-github-deployments/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;透過 GitHub CLI (&lt;strong&gt;&lt;code&gt;gh&lt;/code&gt;&lt;/strong&gt;) 刪除一個儲存庫中&lt;strong&gt;最舊的部署（deployment）記錄&lt;/strong&gt;，保留最新的 10 筆。&lt;/p&gt;
 &lt;h2 id="operation"&gt;Operation&lt;/h2&gt;
 &lt;h3 id="登入"&gt;登入&lt;/h3&gt;
@@ -151,7 +151,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;code&gt;| ForEach-Object { ... }&lt;/code&gt;&lt;/p&gt;</description></item><item><title>GitHub - GitHub CLI</title><link>https://HoshikawaRyuukou.github.io/posts/github---github-cli/</link><pubDate>Tue, 12 Nov 2024 13:08:39 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/github---github-cli/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;| ForEach-Object { ... }&lt;/code&gt;&lt;/p&gt;</description></item><item><title>GitHub - GitHub CLI</title><link>https://HoshikawaRyuukou.github.io/posts/_single/github---github-cli/</link><pubDate>Tue, 12 Nov 2024 13:08:39 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/github---github-cli/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;GitHub 網頁面板上沒辦法執行刪除 deployment，得用 GitHub CLI 來操作😂。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -162,7 +162,7 @@
 &lt;h2 id="operation"&gt;Operation&lt;/h2&gt;
 &lt;h3 id="登入"&gt;登入&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;gh auth login
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>GitHub - Pull Request</title><link>https://HoshikawaRyuukou.github.io/posts/github---pull-request/</link><pubDate>Fri, 14 Jul 2023 10:08:39 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/github---pull-request/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>GitHub - Pull Request</title><link>https://HoshikawaRyuukou.github.io/posts/_single/github---pull-request/</link><pubDate>Fri, 14 Jul 2023 10:08:39 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/github---pull-request/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;有些環境也稱為合併請求（Merge Request）。&lt;/p&gt;
 &lt;/blockquote&gt;

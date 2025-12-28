@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Side_Project on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/side_project/</link><description>Recent content in Side_Project on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 09 Oct 2025 21:56:55 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/side_project/index.xml" rel="self" type="application/rss+xml"/><item><title>Side Project - Web Visual Novel - Fieldwork</title><link>https://HoshikawaRyuukou.github.io/posts/side-project---web-visual-novel---fieldwork/</link><pubDate>Thu, 09 Oct 2025 21:56:55 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/side-project---web-visual-novel---fieldwork/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Side_Project on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/side_project/</link><description>Recent content in Side_Project on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 09 Oct 2025 21:56:55 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/side_project/index.xml" rel="self" type="application/rss+xml"/><item><title>Side Project - Web Visual Novel - Fieldwork</title><link>https://HoshikawaRyuukou.github.io/posts/_single/side-project---web-visual-novel---fieldwork/</link><pubDate>Thu, 09 Oct 2025 21:56:55 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/side-project---web-visual-novel---fieldwork/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;稍微調查了一下現存的 Web 視覺小說方案。&lt;br&gt;
 不意外地，大部分是用 React 寫的。&lt;/p&gt;
 &lt;p&gt;目前的階段主要是先循過一輪，看看主流生態是用什麼技術堆出來的，順便了解一下有哪些常備功能是必須要有的。&lt;/p&gt;
@@ -37,7 +37,7 @@
 &lt;h3 id="editor"&gt;Editor&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/MangoButtermilch/dialogue-editor"&gt;GitHub - MangoButtermilch/dialogue-editor: Web based tool to generate non linear dialogues.&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Side Project - Photo Puzzle</title><link>https://HoshikawaRyuukou.github.io/posts/side-project---photo-puzzle/</link><pubDate>Sat, 20 Sep 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/side-project---photo-puzzle/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Side Project - Photo Puzzle</title><link>https://HoshikawaRyuukou.github.io/posts/_single/side-project---photo-puzzle/</link><pubDate>Sat, 20 Sep 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/side-project---photo-puzzle/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;此專案已開源，完整設計思路請參見 repo。&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/hoshikawaryuukou/MGSP_PhotoPuzzle"&gt;GitHub - hoshikawaryuukou/MGSP_PhotoPuzzle&lt;/a&gt;&lt;/li&gt;
@@ -56,7 +56,7 @@
 &lt;li&gt;&lt;strong&gt;設定挑戰&lt;/strong&gt;：選擇盤面大小，系統自動載入隨機圖片&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;交換碎片&lt;/strong&gt;：點選第一塊拼圖碎片，再點選第二塊，兩者位置即會交換&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;完成挑戰&lt;/strong&gt;：持續交換直到所有碎片歸位，還原完整圖像即獲勝！&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title>Side Project - Track Piece</title><link>https://HoshikawaRyuukou.github.io/posts/side-project---track-piece/</link><pubDate>Sun, 31 Aug 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/side-project---track-piece/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ol&gt;</description></item><item><title>Side Project - Track Piece</title><link>https://HoshikawaRyuukou.github.io/posts/_single/side-project---track-piece/</link><pubDate>Sun, 31 Aug 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/side-project---track-piece/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;此專案已開源，完整設計思路請參見 repo。&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/hoshikawaryuukou/MGSP_TrackPiece"&gt;GitHub - hoshikawaryuukou/MGSP_TrackPiece&lt;/a&gt;&lt;/li&gt;

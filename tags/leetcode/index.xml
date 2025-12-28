@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>LeetCode on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/leetcode/</link><description>Recent content in LeetCode on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 13 Mar 2025 15:03:00 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/leetcode/index.xml" rel="self" type="application/rss+xml"/><item><title>LeetCode 85 - Maximal Rectangle</title><link>https://HoshikawaRyuukou.github.io/posts/leetcode-85---maximal-rectangle/</link><pubDate>Thu, 13 Mar 2025 15:03:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/leetcode-85---maximal-rectangle/</guid><description>&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>LeetCode on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/leetcode/</link><description>Recent content in LeetCode on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 13 Mar 2025 15:03:00 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/leetcode/index.xml" rel="self" type="application/rss+xml"/><item><title>LeetCode 85 - Maximal Rectangle</title><link>https://HoshikawaRyuukou.github.io/posts/leetcode-85-maximal-rectangle/</link><pubDate>Thu, 13 Mar 2025 15:03:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/leetcode-85-maximal-rectangle/</guid><description>&lt;h2 id="description"&gt;Description&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://leetcode.cn/problems/maximal-rectangle/description/"&gt;85. 最大矩形&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -68,9 +68,9 @@
  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;
- &lt;img src="https://HoshikawaRyuukou.github.io/images/blog/Leetcode85.png" alt="Leetcode85"&gt;
+ &lt;img src="images/Leetcode85.webp" alt="Leetcode85"&gt;
 
-&lt;/p&gt;</description></item><item><title>LeetCode 84 - Largest Rectangle in Histogram</title><link>https://HoshikawaRyuukou.github.io/posts/leetcode-84---largest-rectangle-in-histogram/</link><pubDate>Thu, 13 Mar 2025 11:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/leetcode-84---largest-rectangle-in-histogram/</guid><description>&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;/p&gt;</description></item><item><title>LeetCode 84 - Largest Rectangle in Histogram</title><link>https://HoshikawaRyuukou.github.io/posts/leetcode-84-largest-rectangle-in-histogram/</link><pubDate>Thu, 13 Mar 2025 11:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/leetcode-84-largest-rectangle-in-histogram/</guid><description>&lt;h2 id="description"&gt;Description&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://leetcode.cn/problems/largest-rectangle-in-histogram/description/"&gt;84. 柱状图中最大的矩形&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;

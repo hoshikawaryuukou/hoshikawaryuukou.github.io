@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Architecture on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/architecture/</link><description>Recent content in Architecture on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sun, 05 Oct 2025 22:16:53 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/architecture/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Architecture - Client Research</title><link>https://HoshikawaRyuukou.github.io/posts/unity---architecture---client-research/</link><pubDate>Sun, 05 Oct 2025 22:16:53 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---architecture---client-research/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Architecture on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/architecture/</link><description>Recent content in Architecture on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sun, 05 Oct 2025 22:16:53 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/architecture/index.xml" rel="self" type="application/rss+xml"/><item><title>Unity - Architecture - Client Research</title><link>https://HoshikawaRyuukou.github.io/posts/_single/unity---architecture---client-research/</link><pubDate>Sun, 05 Oct 2025 22:16:53 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/unity---architecture---client-research/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;在設計一個&lt;strong&gt;真正符合自身需求&lt;/strong&gt;的架構過程中，我查閱了許多開發者與企業的設計分享。
 不同規模、不同組織背景下，策略與取捨自然各不相同。&lt;/p&gt;
 &lt;p&gt;這些實作未必人人適用，但往往能從中擷取值得借鑑的部分。
@@ -48,7 +48,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href="https://sg.wantedly.com/companies/endroll/post_articles/883646"&gt;ENDROLL の Unity アーキテクチャとかの話 | 株式会社ENDROLL&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Unity - Architecture - Fundamental Client</title><link>https://HoshikawaRyuukou.github.io/posts/unity---architecture---fundamental-client/</link><pubDate>Thu, 02 Oct 2025 11:39:32 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/unity---architecture---fundamental-client/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://sg.wantedly.com/companies/endroll/post_articles/883646"&gt;ENDROLL の Unity アーキテクチャとかの話 | 株式会社ENDROLL&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Unity - Architecture - Fundamental Client</title><link>https://HoshikawaRyuukou.github.io/posts/_single/unity---architecture---fundamental-client/</link><pubDate>Thu, 02 Oct 2025 11:39:32 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/unity---architecture---fundamental-client/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;因應 AI 輔助開發的浪潮，我將個人最熟悉的輕量級應用開發模式進行了系統化的整理與規範。&lt;/p&gt;
 &lt;p&gt;這個架構的核心理念是讓 AI 扮演「填空者」的角色。開發者預先定義好應用的骨架與規範，而 AI 則專注於填充細部的實作邏輯。如此一來，開發者便能在自己熟悉的框架下，快速理解並整合 AI 的產出，有效降低驗證與重構的認知成本。&lt;/p&gt;
 &lt;p&gt;關於這個架構的詳細構成請參考以下文檔&lt;/p&gt;
@@ -83,7 +83,7 @@
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;實作外部能力 (Infrastructure)&lt;/strong&gt;
-我會開始實作之前在 Core 層定義的 &lt;code&gt;Port&lt;/code&gt; 介面。例如，用 &lt;code&gt;PlayerPrefs&lt;/code&gt; 來實作 &lt;code&gt;ISaveGamePort&lt;/code&gt;。因為 Core 只依賴介面，未來要換成雲端存檔也很容易。&lt;/p&gt;</description></item><item><title>Software Design - Architecture - Unity Slot Game Client</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---architecture---unity-slot-game-client/</link><pubDate>Mon, 30 Jun 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---architecture---unity-slot-game-client/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+我會開始實作之前在 Core 層定義的 &lt;code&gt;Port&lt;/code&gt; 介面。例如，用 &lt;code&gt;PlayerPrefs&lt;/code&gt; 來實作 &lt;code&gt;ISaveGamePort&lt;/code&gt;。因為 Core 只依賴介面，未來要換成雲端存檔也很容易。&lt;/p&gt;</description></item><item><title>Software Design - Architecture - Unity Slot Game Client</title><link>https://HoshikawaRyuukou.github.io/posts/_single/software-design---architecture---unity-slot-game-client/</link><pubDate>Mon, 30 Jun 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/software-design---architecture---unity-slot-game-client/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;前端開發時，「狀態管理」一直是個大哉問。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -159,7 +159,7 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;一個操作觸發多處改變（One-to-Many Updates）&lt;br&gt;
-例如：用戶點擊「開始」後，同時啟動動畫、鎖定按鈕、重置分數、播放音效。&lt;/p&gt;</description></item><item><title>Software Design - Architecture - Modularization</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---architecture---modularization/</link><pubDate>Wed, 22 Feb 2023 20:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---architecture---modularization/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+例如：用戶點擊「開始」後，同時啟動動畫、鎖定按鈕、重置分數、播放音效。&lt;/p&gt;</description></item><item><title>Software Design - Architecture - Modularization</title><link>https://HoshikawaRyuukou.github.io/posts/_single/software-design---architecture---modularization/</link><pubDate>Wed, 22 Feb 2023 20:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/software-design---architecture---modularization/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;對於軟體模組化，我個人傾向採用漸進式的策略。不同的專案規模，從單一功能的小型專案到多功能的中型專案，各自有其適合的模組化方案。&lt;/p&gt;
 &lt;p&gt;在深入探討之前，強烈建議先參考以下連結中的圖表，這對於理解 Clean Architecture 的實際應用細節至關重要：&lt;/p&gt;
 &lt;ul&gt;
@@ -183,7 +183,7 @@
 &lt;li&gt;&lt;a href="https://www.kamilgrzybek.com/design/modular-monolith-primer/"&gt;Modular Monolith architecture&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="thinking"&gt;Thinking&lt;/h2&gt;
-&lt;p&gt;以下我將以一個新的 Unity 專案為例，說明我的模組化實踐過程。&lt;/p&gt;</description></item><item><title>Software Design - Architecture - Clean Architecture</title><link>https://HoshikawaRyuukou.github.io/posts/software-design---architecture---clean-architecture/</link><pubDate>Sat, 04 Feb 2023 20:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/software-design---architecture---clean-architecture/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;以下我將以一個新的 Unity 專案為例，說明我的模組化實踐過程。&lt;/p&gt;</description></item><item><title>Software Design - Architecture - Clean Architecture</title><link>https://HoshikawaRyuukou.github.io/posts/_single/software-design---architecture---clean-architecture/</link><pubDate>Sat, 04 Feb 2023 20:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/software-design---architecture---clean-architecture/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;談到 Clean Architecture (CA)，我們總會先看到 Uncle Bob 的這張經典分層圖：&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html"&gt;
  &lt;img src="https://blog.cleancoder.com/uncle-bob/images/2012-08-13-the-clean-architecture/CleanArchitecture.jpg" alt="CA Layers"&gt;

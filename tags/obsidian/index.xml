@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/obsidian/</link><description>Recent content in Obsidian on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Wed, 20 Aug 2025 09:56:18 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>Obsidian - Plugins</title><link>https://HoshikawaRyuukou.github.io/posts/obsidian---plugins/</link><pubDate>Wed, 20 Aug 2025 09:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/obsidian---plugins/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/obsidian/</link><description>Recent content in Obsidian on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Wed, 20 Aug 2025 09:56:18 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>Obsidian - Plugins</title><link>https://HoshikawaRyuukou.github.io/posts/_single/obsidian---plugins/</link><pubDate>Wed, 20 Aug 2025 09:56:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/obsidian---plugins/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;紀錄目前在使用的外掛。&lt;/p&gt;
 &lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
 &lt;h3 id="auto-link-title"&gt;Auto Link Title&lt;/h3&gt;
@@ -14,7 +14,7 @@
 &lt;ul&gt;
 &lt;li&gt;批量處理圖片。&lt;/li&gt;
 &lt;li&gt;支援剪貼簿直接貼上圖片，並將圖片放置指定位置。&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Obsidian - CSS Snippets</title><link>https://HoshikawaRyuukou.github.io/posts/obsidian---css-snippets/</link><pubDate>Fri, 15 Aug 2025 20:00:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/obsidian---css-snippets/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Obsidian - CSS Snippets</title><link>https://HoshikawaRyuukou.github.io/posts/_single/obsidian---css-snippets/</link><pubDate>Fri, 15 Aug 2025 20:00:18 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/obsidian---css-snippets/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;試過幾款主題，但沒有特別喜歡的，感覺還是用預設主題就好。&lt;/p&gt;
 &lt;p&gt;不過，Markdown 的顯示樣式還是想稍微調整一下。&lt;/p&gt;
 &lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
@@ -57,7 +57,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;.&lt;/span&gt;&lt;span style="color:#75af00"&gt;markdown-preview-view&lt;/span&gt; &lt;span style="color:#f92672"&gt;ol&lt;/span&gt; &lt;span style="color:#111"&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#00a8c8"&gt;margin-bottom&lt;/span&gt;&lt;span style="color:#111"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;0.5&lt;/span&gt;&lt;span style="color:#00a8c8"&gt;em&lt;/span&gt;&lt;span style="color:#111"&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Workflow – Mirroring Obsidian Notes to Hugo</title><link>https://HoshikawaRyuukou.github.io/posts/workflow--mirror-obsidian-notes-to-hugo/</link><pubDate>Wed, 13 Aug 2025 20:31:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/workflow--mirror-obsidian-notes-to-hugo/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Workflow – Mirroring Obsidian Notes to Hugo</title><link>https://HoshikawaRyuukou.github.io/posts/_single/workflow--mirror-obsidian-notes-to-hugo/</link><pubDate>Wed, 13 Aug 2025 20:31:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/workflow--mirror-obsidian-notes-to-hugo/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;使用 &lt;code&gt;robocopy&lt;/code&gt; 以鏡像方式，將 &lt;code&gt;obsidian-notes&lt;/code&gt; 中的 &lt;code&gt;posts&lt;/code&gt; 與 &lt;code&gt;images&lt;/code&gt; 資料夾，同步到 Hugo 專案的對應目錄。&lt;/p&gt;
 &lt;h2 id="operation"&gt;Operation&lt;/h2&gt;
 &lt;ol&gt;
@@ -121,7 +121,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pause
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;endlocal
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Chat - Personal Knowledge Management</title><link>https://HoshikawaRyuukou.github.io/posts/chat---personal-knowledge-management/</link><pubDate>Thu, 07 Aug 2025 09:56:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/chat---personal-knowledge-management/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Chat - Personal Knowledge Management</title><link>https://HoshikawaRyuukou.github.io/posts/_single/chat---personal-knowledge-management/</link><pubDate>Thu, 07 Aug 2025 09:56:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/chat---personal-knowledge-management/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;我對理想的筆記工具有四個核心要求：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;

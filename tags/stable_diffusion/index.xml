@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Stable_Diffusion on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/stable_diffusion/</link><description>Recent content in Stable_Diffusion on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 12 Jun 2025 10:00:00 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/stable_diffusion/index.xml" rel="self" type="application/rss+xml"/><item><title>Stable Diffusion - Inpainting</title><link>https://HoshikawaRyuukou.github.io/posts/stable-diffusion---inpainting/</link><pubDate>Thu, 12 Jun 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/stable-diffusion---inpainting/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Stable_Diffusion on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/stable_diffusion/</link><description>Recent content in Stable_Diffusion on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Thu, 12 Jun 2025 10:00:00 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/stable_diffusion/index.xml" rel="self" type="application/rss+xml"/><item><title>Stable Diffusion - Inpainting</title><link>https://HoshikawaRyuukou.github.io/posts/_single/stable-diffusion---inpainting/</link><pubDate>Thu, 12 Jun 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/stable-diffusion---inpainting/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;目前並未特別使用進階修圖技巧。若圖片瑕疵可透過簡單塗色與描邊處理，即會嘗試修復。&lt;/p&gt;
 &lt;p&gt;若瑕疵較嚴重，則多半直接放棄並重新生成 —— 通常下一張會更好。&lt;/p&gt;
 &lt;h2 id="modification"&gt;Modification&lt;/h2&gt;
@@ -18,7 +18,7 @@
 &lt;li&gt;&lt;code&gt;0.3 ~ 0.5&lt;/code&gt;：適度改變結構與細節，適合嘗試新的構圖或調整 seed 取得更好結果。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Stable Diffusion - Quick Start</title><link>https://HoshikawaRyuukou.github.io/posts/stable-diffusion---quick-start/</link><pubDate>Mon, 17 Feb 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/stable-diffusion---quick-start/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Stable Diffusion - Quick Start</title><link>https://HoshikawaRyuukou.github.io/posts/_single/stable-diffusion---quick-start/</link><pubDate>Mon, 17 Feb 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/stable-diffusion---quick-start/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;⚠️ 這是一篇新手導引，目的不在於精準解釋。&lt;/li&gt;
 &lt;li&gt;⚠️ &lt;strong&gt;Checkpoint&lt;/strong&gt; 一般會提供推薦的參數設置，建議依據模型的特性調整，以獲得最佳效果。&lt;/li&gt;
@@ -70,7 +70,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="sampler--schedule"&gt;Sampler + Schedule&lt;/h2&gt;
-&lt;p&gt;Sampler 是從雜訊圖到成品的&lt;strong&gt;去噪算法&lt;/strong&gt;。&lt;/p&gt;</description></item><item><title>Stable Diffusion - Env</title><link>https://HoshikawaRyuukou.github.io/posts/stable-diffusion---env/</link><pubDate>Mon, 10 Feb 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/stable-diffusion---env/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;p&gt;Sampler 是從雜訊圖到成品的&lt;strong&gt;去噪算法&lt;/strong&gt;。&lt;/p&gt;</description></item><item><title>Stable Diffusion - Env</title><link>https://HoshikawaRyuukou.github.io/posts/_single/stable-diffusion---env/</link><pubDate>Mon, 10 Feb 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/stable-diffusion---env/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;⚠️ 以下皆須安裝指定版本不可貿然升級。&lt;/p&gt;
 &lt;p&gt;目前產圖只使用到 Forge + SDXL 。&lt;/p&gt;
 &lt;h2 id="local-deployment"&gt;Local deployment&lt;/h2&gt;
@@ -96,7 +96,7 @@
 &lt;li&gt;&lt;a href="https://github.com/Physton/sd-webui-prompt-all-in-one"&gt;Physton/sd-webui-prompt-all-in-one&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/Bing-su/adetailer"&gt;Bing-su/adetailer&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/yankooliveira/sd-webui-photopea-embed"&gt;yankooliveira/sd-webui-photopea-embed&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Stable Diffusion - Illustrious XL</title><link>https://HoshikawaRyuukou.github.io/posts/stable-diffusion---illustrious-xl/</link><pubDate>Thu, 06 Feb 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/stable-diffusion---illustrious-xl/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Stable Diffusion - Illustrious XL</title><link>https://HoshikawaRyuukou.github.io/posts/_single/stable-diffusion---illustrious-xl/</link><pubDate>Thu, 06 Feb 2025 10:00:00 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/stable-diffusion---illustrious-xl/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
 &lt;p&gt;目前 Stable Diffusion 只拿來自娛自樂 😃。&lt;/p&gt;
 &lt;h2 id="core-working-principles"&gt;Core Working Principles&lt;/h2&gt;
 &lt;p&gt;Stable Diffusion 主要包含三個核心技術：&lt;/p&gt;
