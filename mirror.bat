@@ -14,8 +14,10 @@ if /I not "%RUN_SYNC%"=="Y" (
 set "SCRIPT_DIR=%~dp0"
 
 :: Set relative paths
-set "SRC_POSTS=%SCRIPT_DIR%..\obsidian-notes\blog"
+set "SRC_POSTS=%SCRIPT_DIR%..\obsidian-notes\posts"
 set "DST_POSTS=%SCRIPT_DIR%content\posts"
+set "SRC_RES=%SCRIPT_DIR%..\obsidian-notes\res"
+set "DST_RES=%SCRIPT_DIR%static\res"
 
 :: Check if source path exists
 echo Checking source path...
@@ -33,6 +35,9 @@ echo Starting synchronization...
 :: Run synchronization
 echo Syncing posts directory...
 robocopy "%SRC_POSTS%" "%DST_POSTS%" /MIR
+
+echo Syncing res directory...
+robocopy "%SRC_RES%" "%DST_RES%" /MIR
 
 echo.
 echo Synchronization complete!
