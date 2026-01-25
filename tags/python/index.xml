@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Python on 識之箱庭</title><link>https://HoshikawaRyuukou.github.io/tags/python/</link><description>Recent content in Python on 識之箱庭</description><generator>Hugo</generator><language>zh-tw</language><copyright>HoshikawaRyuukou</copyright><lastBuildDate>Sun, 14 Sep 2025 17:12:40 +0800</lastBuildDate><atom:link href="https://HoshikawaRyuukou.github.io/tags/python/index.xml" rel="self" type="application/rss+xml"/><item><title>Python</title><link>https://HoshikawaRyuukou.github.io/posts/_single/python/</link><pubDate>Sun, 14 Sep 2025 17:12:40 +0800</pubDate><guid>https://HoshikawaRyuukou.github.io/posts/_single/python/</guid><description>&lt;h2 id="quick-chat"&gt;Quick Chat&lt;/h2&gt;
-&lt;p&gt;當初想學 Python，卻常常卡在版本跟依賴的混亂。現在再回來，生態整合好多了，總算可以專心在「學」這件事上。&lt;/p&gt;
-&lt;h2 id="guide"&gt;Guide&lt;/h2&gt;
-&lt;h3 id="env"&gt;Env&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=aVXs8lb7i9U"&gt;用uv管理Python的一切！ - YouTube&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=jd1aRE5pJWc"&gt;从pip到uv：一口气梳理现代Python项目管理全流程！ - YouTube&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=2m0Ygyzli5I"&gt;build + hatchling 15分钟搞懂Python项目结构和打包 - YouTube&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item></channel></rss>
